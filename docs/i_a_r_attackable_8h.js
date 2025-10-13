@@ -5,10 +5,10 @@ var _i_a_r_attackable_8h =
     [ "FARAttackParameters", "struct_f_a_r_attack_parameters.html", "struct_f_a_r_attack_parameters" ],
     [ "UARAttackable", "class_u_a_r_attackable.html", null ],
     [ "IARAttackable", "class_i_a_r_attackable.html", "class_i_a_r_attackable" ],
-    [ "UE_API", "_i_a_r_attackable_8h.html#a578eb926c8aecdf908e1338b2e893458", null ],
-    [ "ARRanger::Battle::EARAttackResult", "_i_a_r_attackable_8h.html#a97980e6bd92e9cc6363390b38d6fa0d1", [
-      [ "Success", "_i_a_r_attackable_8h.html#a97980e6bd92e9cc6363390b38d6fa0d1a505a83f220c02df2f85c3810cd9ceb38", null ],
-      [ "Inmune", "_i_a_r_attackable_8h.html#a97980e6bd92e9cc6363390b38d6fa0d1a34c686558f302e40e6330193a9818639", null ],
-      [ "Rebound", "_i_a_r_attackable_8h.html#a97980e6bd92e9cc6363390b38d6fa0d1a8bae56d3db3fb4f6d0f1b3af394ec95b", null ]
+    [ "UE_API", "i_a_r_attackable_8h.html#a578eb926c8aecdf908e1338b2e893458", null ],
+    [ "ARRanger::Battle::EARAttackResult", "i_a_r_attackable_8h.html#a97980e6bd92e9cc6363390b38d6fa0d1", [
+      [ "Success", "i_a_r_attackable_8h.html#a97980e6bd92e9cc6363390b38d6fa0d1a505a83f220c02df2f85c3810cd9ceb38", null ],
+      [ "Inmune", "i_a_r_attackable_8h.html#a97980e6bd92e9cc6363390b38d6fa0d1a34c686558f302e40e6330193a9818639", null ],
+      [ "Rebound", "i_a_r_attackable_8h.html#a97980e6bd92e9cc6363390b38d6fa0d1a8bae56d3db3fb4f6d0f1b3af394ec95b", null ]
     ] ]
 ];

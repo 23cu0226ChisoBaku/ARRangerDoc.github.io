@@ -22,5 +22,5 @@ var searchData=
   ['getremainingenemiesinphase_19',['GetRemainingEnemiesInPhase',['../class_a_battle_event_field.html#aa23f9bda30096cb94e03856bab1ccdc0',1,'ABattleEventField']]],
   ['getresultnum_20',['GetResultNum',['../struct_f_range_detector_evaluation_result.html#a976cbe0568d3bfa3dfc09c7677d7e5f5',1,'FRangeDetectorEvaluationResult']]],
   ['getspawnphases_21',['GetSpawnPhases',['../class_a_enemy_spawner.html#aff9058451a625a0e677b0fd89675133b',1,'AEnemySpawner']]],
-  ['gettypehash_22',['GetTypeHash',['../_a_r_pawn_init_data_8h.html#a8d3ef262fce4cb2513aca37081127085',1,'ARPawnInitData.h']]]
+  ['gettypehash_22',['GetTypeHash',['../a_r_pawn_init_data_8h.html#a8d3ef262fce4cb2513aca37081127085',1,'ARPawnInitData.h']]]
 ];
