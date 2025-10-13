@@ -21,7 +21,7 @@ var dir_db3cb373904af9b89e7076f054460257 =
     [ "RangeDetector", "dir_c0089451310e7ce54afa505237c8cf33.html", "dir_c0089451310e7ce54afa505237c8cf33" ],
     [ "Repositories", "dir_b6357fb6577fe900a022f9223387b92c.html", "dir_b6357fb6577fe900a022f9223387b92c" ],
     [ "RepositoryAssetMaster", "dir_609cc5112ca9e74a63b451e49acc3ae1.html", "dir_609cc5112ca9e74a63b451e49acc3ae1" ],
-    [ "HitStopHelper.h", "hit_stop_helper_8h_source.html", null ],
-    [ "ISpecialAttractInterface.h", "i_special_attract_interface_8h_source.html", null ],
-    [ "SpecialAttackAttractActor.h", "special_attack_attract_actor_8h_source.html", null ]
+    [ "HitStopHelper.h", "_hit_stop_helper_8h_source.html", null ],
+    [ "ISpecialAttractInterface.h", "_i_special_attract_interface_8h_source.html", null ],
+    [ "SpecialAttackAttractActor.h", "_special_attack_attract_actor_8h_source.html", null ]
 ];
