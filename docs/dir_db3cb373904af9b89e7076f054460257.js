@@ -18,10 +18,11 @@ var dir_db3cb373904af9b89e7076f054460257 =
     [ "Player", "dir_8475640ccfaf0c5c7d47f7b9b3f58fa0.html", "dir_8475640ccfaf0c5c7d47f7b9b3f58fa0" ],
     [ "PlayerComponents", "dir_28eec089792dfe882602e26bcf38c549.html", "dir_28eec089792dfe882602e26bcf38c549" ],
     [ "PlayerObservation", "dir_698c3ea7eb522393dadf4b4cc2736814.html", "dir_698c3ea7eb522393dadf4b4cc2736814" ],
+    [ "Presentation", "dir_401dd666bdbe9eb27126734a1be92b73.html", "dir_401dd666bdbe9eb27126734a1be92b73" ],
     [ "RangeDetector", "dir_c0089451310e7ce54afa505237c8cf33.html", "dir_c0089451310e7ce54afa505237c8cf33" ],
     [ "Repositories", "dir_b6357fb6577fe900a022f9223387b92c.html", "dir_b6357fb6577fe900a022f9223387b92c" ],
     [ "RepositoryAssetMaster", "dir_609cc5112ca9e74a63b451e49acc3ae1.html", "dir_609cc5112ca9e74a63b451e49acc3ae1" ],
-    [ "HitStopHelper.h", "_hit_stop_helper_8h_source.html", null ],
-    [ "ISpecialAttractInterface.h", "_i_special_attract_interface_8h_source.html", null ],
-    [ "SpecialAttackAttractActor.h", "_special_attack_attract_actor_8h_source.html", null ]
+    [ "HitStopHelper.h", "_hit_stop_helper_8h.html", "_hit_stop_helper_8h" ],
+    [ "ISpecialAttractInterface.h", "_i_special_attract_interface_8h.html", "_i_special_attract_interface_8h" ],
+    [ "SpecialAttackAttractActor.h", "_special_attack_attract_actor_8h.html", "_special_attack_attract_actor_8h" ]
 ];

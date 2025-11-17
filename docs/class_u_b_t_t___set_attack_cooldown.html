@@ -91,6 +91,8 @@ $(function(){initNavTree('class_u_b_t_t___set_attack_cooldown.html','','class_u_
   <div class="headertitle"><div class="title">UBTT_SetAttackCooldown Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_b_t_t___set_attack_cooldown_8h_source.html">BTT_SetAttackCooldown.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for UBTT_SetAttackCooldown:</div>
 <div class="dyncontent">
@@ -98,6 +100,10 @@ Inheritance diagram for UBTT_SetAttackCooldown:</div>
   <img src="class_u_b_t_t___set_attack_cooldown.png" alt=""/>
  </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a73b1abceb1c756a6dd9dd3b76f61b2d6" id="r_a73b1abceb1c756a6dd9dd3b76f61b2d6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a73b1abceb1c756a6dd9dd3b76f61b2d6">UBTT_SetAttackCooldown</a> ()</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pro-methods" class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a5e70dc6b90975262e712d74628e0027d" id="r_a5e70dc6b90975262e712d74628e0027d"><td class="memItemLeft" align="right" valign="top">virtual EBTNodeResult::Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5e70dc6b90975262e712d74628e0027d">ExecuteTask</a> (UBehaviorTreeComponent &amp;OwnerComp, uint8 *NodeMemory) override</td></tr>
@@ -106,6 +112,10 @@ Protected Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 id="header-pro-attribs" class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a2a19cf47d41334cce344c51f99197207" id="r_a2a19cf47d41334cce344c51f99197207"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a19cf47d41334cce344c51f99197207">CooldownTime</a> = 5.0f</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a42e13fe7133496a088557620e26468fd" id="r_a42e13fe7133496a088557620e26468fd"><td class="memItemLeft" align="right" valign="top">FTimerHandle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a42e13fe7133496a088557620e26468fd">m_coolDownTimerHandle</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -127,14 +137,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_b_t_t___set_attack_cooldown_8cpp_source.html#l00007">7</a> of file <a class="el" href="_b_t_t___set_attack_cooldown_8cpp_source.html">BTT_SetAttackCooldown.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">    8</span>{</div>
-<div class="line"><span class="lineno">    9</span>    NodeName = TEXT(<span class="stringliteral">&quot;Set Attack Cooldown&quot;</span>);</div>
-<div class="line"><span class="lineno">   10</span>  <span class="comment">// Use this to safe TimerHandler for every node</span></div>
-<div class="line"><span class="lineno">   11</span>  bCreateNodeInstance = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">   12</span> </div>
-<div class="line"><span class="lineno">   13</span>  m_coolDownTimerHandle.Invalidate();</div>
-<div class="line"><span class="lineno">   14</span>}</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
@@ -167,23 +170,7 @@ Protected Attributes</h2></td></tr>
 <p>Start UBTTaskNode Interface </p>
 
 <p class="definition">Definition at line <a class="el" href="_b_t_t___set_attack_cooldown_8cpp_source.html#l00016">16</a> of file <a class="el" href="_b_t_t___set_attack_cooldown_8cpp_source.html">BTT_SetAttackCooldown.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   17</span>{</div>
-<div class="line"><span class="lineno">   18</span>  UBlackboardComponent* BB = OwnerComp.GetBlackboardComponent();</div>
-<div class="line"><span class="lineno">   19</span>  <span class="keywordflow">if</span> (BB == <span class="keyword">nullptr</span>)</div>
-<div class="line"><span class="lineno">   20</span>  {</div>
-<div class="line"><span class="lineno">   21</span>    <span class="keywordflow">return</span> EBTNodeResult::Failed;</div>
-<div class="line"><span class="lineno">   22</span>  } </div>
-<div class="line"><span class="lineno">   23</span> </div>
-<div class="line"><span class="lineno">   24</span>  BB-&gt;SetValueAsBool(TEXT(<span class="stringliteral">&quot;CanAttack&quot;</span>), <span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">   25</span> </div>
-<div class="line"><span class="lineno">   26</span>  OwnerComp.GetWorld()-&gt;GetTimerManager().SetTimer(m_coolDownTimerHandle, [BB]()</div>
-<div class="line"><span class="lineno">   27</span>    {</div>
-<div class="line"><span class="lineno">   28</span>      BB-&gt;SetValueAsBool(TEXT(<span class="stringliteral">&quot;CanAttack&quot;</span>), <span class="keyword">true</span>);</div>
-<div class="line"><span class="lineno">   29</span>    }, CooldownTime, <span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">   30</span> </div>
-<div class="line"><span class="lineno">   31</span>  <span class="keywordflow">return</span> EBTNodeResult::Succeeded;</div>
-<div class="line"><span class="lineno">   32</span>}</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a123733854f950c5c29336712cdeb1287" name="a123733854f950c5c29336712cdeb1287"></a>
@@ -211,14 +198,7 @@ Protected Attributes</h2></td></tr>
 <p>End UBTTaskNode Interface Start UBTNode Interface </p>
 
 <p class="definition">Definition at line <a class="el" href="_b_t_t___set_attack_cooldown_8cpp_source.html#l00034">34</a> of file <a class="el" href="_b_t_t___set_attack_cooldown_8cpp_source.html">BTT_SetAttackCooldown.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   35</span>{</div>
-<div class="line"><span class="lineno">   36</span>  <span class="keywordflow">if</span> (m_coolDownTimerHandle.IsValid())</div>
-<div class="line"><span class="lineno">   37</span>  {</div>
-<div class="line"><span class="lineno">   38</span>    OwnerComp.GetWorld()-&gt;GetTimerManager().ClearTimer(m_coolDownTimerHandle);</div>
-<div class="line"><span class="lineno">   39</span>    m_coolDownTimerHandle.Invalidate();</div>
-<div class="line"><span class="lineno">   40</span>  }</div>
-<div class="line"><span class="lineno">   41</span>}</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
@@ -246,9 +226,34 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a42e13fe7133496a088557620e26468fd" name="a42e13fe7133496a088557620e26468fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42e13fe7133496a088557620e26468fd">&#9670;&#160;</a></span>m_coolDownTimerHandle</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FTimerHandle UBTT_SetAttackCooldown::m_coolDownTimerHandle</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>End UBTNode Interface </p>
+
+<p class="definition">Definition at line <a class="el" href="_b_t_t___set_attack_cooldown_8h_source.html#l00029">29</a> of file <a class="el" href="_b_t_t___set_attack_cooldown_8h_source.html">BTT_SetAttackCooldown.h</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>H:/GithubRepository/ARRanger/Source/ARRanger/Public/Enemy/BTT/<a class="el" href="_b_t_t___set_attack_cooldown_8h_source.html">BTT_SetAttackCooldown.h</a></li>
-<li>H:/GithubRepository/ARRanger/Source/ARRanger/Private/Enemy/<a class="el" href="_b_t_t___set_attack_cooldown_8cpp_source.html">BTT_SetAttackCooldown.cpp</a></li>
+<li>D:/GithubRepository/ARRanger/Source/ARRanger/Public/Enemy/BTT/<a class="el" href="_b_t_t___set_attack_cooldown_8h_source.html">BTT_SetAttackCooldown.h</a></li>
+<li>D:/GithubRepository/ARRanger/Source/ARRanger/Private/Enemy/<a class="el" href="_b_t_t___set_attack_cooldown_8cpp_source.html">BTT_SetAttackCooldown.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

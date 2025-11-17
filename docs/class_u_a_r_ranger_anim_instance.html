@@ -91,6 +91,8 @@ $(function(){initNavTree('class_u_a_r_ranger_anim_instance.html','','class_u_a_r
   <div class="headertitle"><div class="title">UARRangerAnimInstance Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_a_r_ranger_anim_instance_8h_source.html">ARRangerAnimInstance.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for UARRangerAnimInstance:</div>
 <div class="dyncontent">
@@ -110,8 +112,8 @@ Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pro-methods" class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a3429482ec1dc21de6636519498bd1482" id="r_a3429482ec1dc21de6636519498bd1482"><td class="memItemLeft" align="right" valign="top">virtual UE_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3429482ec1dc21de6636519498bd1482">NativeUpdateAnimation</a> (float DeltaSeconds) override</td></tr>
-<tr class="memitem:a57409298d5faa66ca62c1b511d60f5e2" id="r_a57409298d5faa66ca62c1b511d60f5e2"><td class="memItemLeft" align="right" valign="top">virtual UE_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a57409298d5faa66ca62c1b511d60f5e2">NativePostEvaluateAnimation</a> () override</td></tr>
+<tr class="memitem:a3429482ec1dc21de6636519498bd1482" id="r_a3429482ec1dc21de6636519498bd1482"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_a_r_ranger_anim_instance_8h.html#a578eb926c8aecdf908e1338b2e893458">UE_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3429482ec1dc21de6636519498bd1482">NativeUpdateAnimation</a> (float DeltaSeconds) override</td></tr>
+<tr class="memitem:a57409298d5faa66ca62c1b511d60f5e2" id="r_a57409298d5faa66ca62c1b511d60f5e2"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_a_r_ranger_anim_instance_8h.html#a578eb926c8aecdf908e1338b2e893458">UE_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a57409298d5faa66ca62c1b511d60f5e2">NativePostEvaluateAnimation</a> () override</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -141,15 +143,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_a_r_ranger_anim_instance_8cpp_source.html#l00019">19</a> of file <a class="el" href="_a_r_ranger_anim_instance_8cpp_source.html">ARRangerAnimInstance.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   20</span>{</div>
-<div class="line"><span class="lineno">   21</span>  Super::NativePostEvaluateAnimation();</div>
-<div class="line"><span class="lineno">   22</span> </div>
-<div class="line"><span class="lineno">   23</span>  <span class="keywordflow">if</span> (!IsFalled)</div>
-<div class="line"><span class="lineno">   24</span>  {</div>
-<div class="line"><span class="lineno">   25</span>    InFallingTime = 0.0f;</div>
-<div class="line"><span class="lineno">   26</span>  }</div>
-<div class="line"><span class="lineno">   27</span>}</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a3429482ec1dc21de6636519498bd1482" name="a3429482ec1dc21de6636519498bd1482"></a>
@@ -176,21 +170,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_a_r_ranger_anim_instance_8cpp_source.html#l00003">3</a> of file <a class="el" href="_a_r_ranger_anim_instance_8cpp_source.html">ARRangerAnimInstance.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">    4</span>{</div>
-<div class="line"><span class="lineno">    5</span>  Super::NativeUpdateAnimation(DeltaSeconds);</div>
-<div class="line"><span class="lineno">    6</span> </div>
-<div class="line"><span class="lineno">    7</span>  UAnimMontage* curtMontage = GetCurrentActiveMontage();</div>
-<div class="line"><span class="lineno">    8</span>  <span class="keywordflow">if</span> ((curtMontage != <span class="keyword">nullptr</span>) &amp;&amp; !FMath::IsNearlyEqual(Montage_GetPlayRate(curtMontage), AnimModifiedSpeed))</div>
-<div class="line"><span class="lineno">    9</span>  {</div>
-<div class="line"><span class="lineno">   10</span>    Montage_SetPlayRate(curtMontage, AnimModifiedSpeed);</div>
-<div class="line"><span class="lineno">   11</span>  }</div>
-<div class="line"><span class="lineno">   12</span> </div>
-<div class="line"><span class="lineno">   13</span>  <span class="keywordflow">if</span> (IsFalled)</div>
-<div class="line"><span class="lineno">   14</span>  {</div>
-<div class="line"><span class="lineno">   15</span>    InFallingTime += DeltaSeconds;</div>
-<div class="line"><span class="lineno">   16</span>  }</div>
-<div class="line"><span class="lineno">   17</span>}</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
@@ -307,8 +287,8 @@ Protected Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>H:/GithubRepository/ARRanger/Source/ARRanger/Public/Animations/<a class="el" href="_a_r_ranger_anim_instance_8h_source.html">ARRangerAnimInstance.h</a></li>
-<li>H:/GithubRepository/ARRanger/Source/ARRanger/Private/Animations/<a class="el" href="_a_r_ranger_anim_instance_8cpp_source.html">ARRangerAnimInstance.cpp</a></li>
+<li>D:/GithubRepository/ARRanger/Source/ARRanger/Public/Animations/<a class="el" href="_a_r_ranger_anim_instance_8h_source.html">ARRangerAnimInstance.h</a></li>
+<li>D:/GithubRepository/ARRanger/Source/ARRanger/Private/Animations/<a class="el" href="_a_r_ranger_anim_instance_8cpp_source.html">ARRangerAnimInstance.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

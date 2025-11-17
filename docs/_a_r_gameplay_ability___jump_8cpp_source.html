@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ARRanger: H:/GithubRepository/ARRanger/Source/ARRanger/Private/ActionAbilities/Abilities/ARGameplayAbility_Jump.cpp Source File</title>
+<title>ARRanger: D:/GithubRepository/ARRanger/Source/ARRanger/Private/ActionAbilities/Abilities/ARGameplayAbility_Jump.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -91,17 +91,19 @@ $(function(){initNavTree('_a_r_gameplay_ability___jump_8cpp_source.html','','');
   <div class="headertitle"><div class="title">ARGameplayAbility_Jump.cpp</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Fill out your copyright notice in the Description page of Project Settings.</span></div>
+<a href="_a_r_gameplay_ability___jump_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Fill out your copyright notice in the Description page of Project Settings.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;ActionAbilities/Abilities/ARGameplayAbility_Jump.h&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="_a_r_gameplay_ability___jump_8h.html">ActionAbilities/Abilities/ARGameplayAbility_Jump.h</a>&quot;</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;GameFramework/Character.h&quot;</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>UARGameplayAbility_Jump::UARGameplayAbility_Jump()</div>
+<div class="foldopen" id="foldopen00008" data-start="{" data-end="}">
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_u_a_r_gameplay_ability___jump.html#afe474087f5b3d2f270fca9537dca6293">    8</a></span><a class="code hl_function" href="class_u_a_r_gameplay_ability___jump.html#afe474087f5b3d2f270fca9537dca6293">UARGameplayAbility_Jump::UARGameplayAbility_Jump</a>()</div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>{</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>  InstancingPolicy = EGameplayAbilityInstancingPolicy::InstancedPerActor;</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>}</div>
+</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
 <div class="foldopen" id="foldopen00013" data-start="{" data-end="}">
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_u_a_r_gameplay_ability___jump.html#ad04a58df8157fbdc24292c54ab56cef5">   13</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="class_u_a_r_gameplay_ability___jump.html#ad04a58df8157fbdc24292c54ab56cef5">UARGameplayAbility_Jump::CanActivateAbility</a>(</div>
@@ -127,31 +129,36 @@ $(function(){initNavTree('_a_r_gameplay_ability___jump_8cpp_source.html','','');
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>}</div>
 </div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keywordtype">void</span> UARGameplayAbility_Jump::ActivateAbility(</div>
+<div class="foldopen" id="foldopen00035" data-start="{" data-end="}">
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="class_u_a_r_gameplay_ability___jump.html#a60b41802c62a72245df9e71bf1a930dc">   35</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_u_a_r_gameplay_ability___jump.html#a60b41802c62a72245df9e71bf1a930dc">UARGameplayAbility_Jump::ActivateAbility</a>(</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                        <span class="keyword">const</span> FGameplayAbilitySpecHandle Handle,</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                        <span class="keyword">const</span> FGameplayAbilityActorInfo* ActorInfo,</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                        <span class="keyword">const</span> FGameplayAbilityActivationInfo ActivationInfo,</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                        <span class="keyword">const</span> FGameplayEventData* TriggerEventData</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                    )</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>{</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  CharacterJumpStart();</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  <a class="code hl_function" href="class_u_a_r_gameplay_ability___jump.html#abf3eb32d65cc63d22591283d133eaf27">CharacterJumpStart</a>();</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  Super::ActivateAbility(Handle, ActorInfo, ActivationInfo, TriggerEventData);</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>}</div>
+</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="keywordtype">void</span> UARGameplayAbility_Jump::EndAbility(</div>
+<div class="foldopen" id="foldopen00047" data-start="{" data-end="}">
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="class_u_a_r_gameplay_ability___jump.html#ab187358fc02d4976581b603159111e30">   47</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_u_a_r_gameplay_ability___jump.html#ab187358fc02d4976581b603159111e30">UARGameplayAbility_Jump::EndAbility</a>(</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                        <span class="keyword">const</span> FGameplayAbilitySpecHandle Handle,</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                        <span class="keyword">const</span> FGameplayAbilityActorInfo* ActorInfo,</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                        <span class="keyword">const</span> FGameplayAbilityActivationInfo ActivationInfo,</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                        <span class="keywordtype">bool</span> bReplicateEndAbility, <span class="keywordtype">bool</span> bWasCancelled</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                    )</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>{</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  CharacterJumpEnd();</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  <a class="code hl_function" href="class_u_a_r_gameplay_ability___jump.html#a381b8e06b7ede1e78508eea1efdfde02">CharacterJumpEnd</a>();</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  Super::EndAbility(Handle, ActorInfo, ActivationInfo, bReplicateEndAbility, bWasCancelled);</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>} </div>
+</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="keywordtype">void</span> UARGameplayAbility_Jump::CharacterJumpStart()</div>
+<div class="foldopen" id="foldopen00059" data-start="{" data-end="}">
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="class_u_a_r_gameplay_ability___jump.html#abf3eb32d65cc63d22591283d133eaf27">   59</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_u_a_r_gameplay_ability___jump.html#abf3eb32d65cc63d22591283d133eaf27">UARGameplayAbility_Jump::CharacterJumpStart</a>()</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>{</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  <span class="keywordflow">if</span> (ACharacter* character = ::Cast&lt;ACharacter&gt;(GetAvatarActorFromActorInfo()))</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  {</div>
@@ -164,8 +171,10 @@ $(function(){initNavTree('_a_r_gameplay_ability___jump_8cpp_source.html','','');
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    }</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  }</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>}</div>
+</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="keywordtype">void</span> UARGameplayAbility_Jump::CharacterJumpEnd()</div>
+<div class="foldopen" id="foldopen00073" data-start="{" data-end="}">
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="class_u_a_r_gameplay_ability___jump.html#a381b8e06b7ede1e78508eea1efdfde02">   73</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_u_a_r_gameplay_ability___jump.html#a381b8e06b7ede1e78508eea1efdfde02">UARGameplayAbility_Jump::CharacterJumpEnd</a>()</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>{</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  <span class="keywordflow">if</span> (ACharacter* character = ::Cast&lt;ACharacter&gt;(GetAvatarActorFromActorInfo()))</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  {</div>
@@ -176,22 +185,32 @@ $(function(){initNavTree('_a_r_gameplay_ability___jump_8cpp_source.html','','');
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    }</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  }</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>}</div>
+</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment">// Bind this to OnLanded</span></div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="keywordtype">void</span> UARGameplayAbility_Jump::OnCharacterLanded(<span class="keyword">const</span> FHitResult&amp; HitResult)</div>
+<div class="foldopen" id="foldopen00086" data-start="{" data-end="}">
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="class_u_a_r_gameplay_ability___jump.html#a6c394f21283cd2cb0c3834c5b8aaa60c">   86</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_u_a_r_gameplay_ability___jump.html#a6c394f21283cd2cb0c3834c5b8aaa60c">UARGameplayAbility_Jump::OnCharacterLanded</a>(<span class="keyword">const</span> FHitResult&amp; HitResult)</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>{</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  <span class="keyword">const</span> <span class="keywordtype">bool</span> bReplicateEndAbility = <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  <span class="keyword">const</span> <span class="keywordtype">bool</span> bWasCanceled = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  EndAbility(CurrentSpecHandle, CurrentActorInfo, CurrentActivationInfo, bReplicateEndAbility, bWasCanceled);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  <a class="code hl_function" href="class_u_a_r_gameplay_ability___jump.html#ab187358fc02d4976581b603159111e30">EndAbility</a>(CurrentSpecHandle, CurrentActorInfo, CurrentActivationInfo, bReplicateEndAbility, bWasCanceled);</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>}</div>
+</div>
+<div class="ttc" id="a_a_r_gameplay_ability___jump_8h_html"><div class="ttname"><a href="_a_r_gameplay_ability___jump_8h.html">ARGameplayAbility_Jump.h</a></div></div>
+<div class="ttc" id="aclass_u_a_r_gameplay_ability___jump_html_a381b8e06b7ede1e78508eea1efdfde02"><div class="ttname"><a href="class_u_a_r_gameplay_ability___jump.html#a381b8e06b7ede1e78508eea1efdfde02">UARGameplayAbility_Jump::CharacterJumpEnd</a></div><div class="ttdeci">void CharacterJumpEnd()</div><div class="ttdef"><b>Definition</b> <a href="#l00073">ARGameplayAbility_Jump.cpp:73</a></div></div>
+<div class="ttc" id="aclass_u_a_r_gameplay_ability___jump_html_a60b41802c62a72245df9e71bf1a930dc"><div class="ttname"><a href="class_u_a_r_gameplay_ability___jump.html#a60b41802c62a72245df9e71bf1a930dc">UARGameplayAbility_Jump::ActivateAbility</a></div><div class="ttdeci">virtual UE_API void ActivateAbility(const FGameplayAbilitySpecHandle Handle, const FGameplayAbilityActorInfo *ActorInfo, const FGameplayAbilityActivationInfo ActivationInfo, const FGameplayEventData *TriggerEventData) override</div><div class="ttdef"><b>Definition</b> <a href="#l00035">ARGameplayAbility_Jump.cpp:35</a></div></div>
+<div class="ttc" id="aclass_u_a_r_gameplay_ability___jump_html_a6c394f21283cd2cb0c3834c5b8aaa60c"><div class="ttname"><a href="class_u_a_r_gameplay_ability___jump.html#a6c394f21283cd2cb0c3834c5b8aaa60c">UARGameplayAbility_Jump::OnCharacterLanded</a></div><div class="ttdeci">void OnCharacterLanded(const FHitResult &amp;HitResult)</div><div class="ttdef"><b>Definition</b> <a href="#l00086">ARGameplayAbility_Jump.cpp:86</a></div></div>
+<div class="ttc" id="aclass_u_a_r_gameplay_ability___jump_html_ab187358fc02d4976581b603159111e30"><div class="ttname"><a href="class_u_a_r_gameplay_ability___jump.html#ab187358fc02d4976581b603159111e30">UARGameplayAbility_Jump::EndAbility</a></div><div class="ttdeci">virtual UE_API void EndAbility(const FGameplayAbilitySpecHandle Handle, const FGameplayAbilityActorInfo *ActorInfo, const FGameplayAbilityActivationInfo ActivationInfo, bool bReplicateEndAbility, bool bWasCancelled) override</div><div class="ttdef"><b>Definition</b> <a href="#l00047">ARGameplayAbility_Jump.cpp:47</a></div></div>
+<div class="ttc" id="aclass_u_a_r_gameplay_ability___jump_html_abf3eb32d65cc63d22591283d133eaf27"><div class="ttname"><a href="class_u_a_r_gameplay_ability___jump.html#abf3eb32d65cc63d22591283d133eaf27">UARGameplayAbility_Jump::CharacterJumpStart</a></div><div class="ttdeci">void CharacterJumpStart()</div><div class="ttdef"><b>Definition</b> <a href="#l00059">ARGameplayAbility_Jump.cpp:59</a></div></div>
 <div class="ttc" id="aclass_u_a_r_gameplay_ability___jump_html_ad04a58df8157fbdc24292c54ab56cef5"><div class="ttname"><a href="class_u_a_r_gameplay_ability___jump.html#ad04a58df8157fbdc24292c54ab56cef5">UARGameplayAbility_Jump::CanActivateAbility</a></div><div class="ttdeci">virtual UE_API bool CanActivateAbility(const FGameplayAbilitySpecHandle Handle, const FGameplayAbilityActorInfo *ActorInfo, const FGameplayTagContainer *SourceTags=nullptr, const FGameplayTagContainer *TargetTags=nullptr, OUT FGameplayTagContainer *OptionalRelevantTags=nullptr) const override</div><div class="ttdef"><b>Definition</b> <a href="#l00013">ARGameplayAbility_Jump.cpp:13</a></div></div>
+<div class="ttc" id="aclass_u_a_r_gameplay_ability___jump_html_afe474087f5b3d2f270fca9537dca6293"><div class="ttname"><a href="class_u_a_r_gameplay_ability___jump.html#afe474087f5b3d2f270fca9537dca6293">UARGameplayAbility_Jump::UARGameplayAbility_Jump</a></div><div class="ttdeci">UE_API UARGameplayAbility_Jump()</div><div class="ttdef"><b>Definition</b> <a href="#l00008">ARGameplayAbility_Jump.cpp:8</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="dir_db4b63894235d986ff0886d3d7147fc4.html">GithubRepository</a></li><li class="navelem"><a href="dir_b7f76808a72ae9b06e23f4ba1d7ec8e0.html">ARRanger</a></li><li class="navelem"><a href="dir_22deff83e5e51399b4644a6ac5e50e58.html">Source</a></li><li class="navelem"><a href="dir_765ba4c51118e23b05fd567f675cd5c3.html">ARRanger</a></li><li class="navelem"><a href="dir_01ca0bd49608f959e3dafd2b38229153.html">Private</a></li><li class="navelem"><a href="dir_7347bf27e0fff870dc6262931afa618b.html">ActionAbilities</a></li><li class="navelem"><a href="dir_150aeb6c983542720f9cd7e67a13ae3c.html">Abilities</a></li><li class="navelem"><b>ARGameplayAbility_Jump.cpp</b></li>
+    <li class="navelem"><a href="dir_db4b63894235d986ff0886d3d7147fc4.html">GithubRepository</a></li><li class="navelem"><a href="dir_b7f76808a72ae9b06e23f4ba1d7ec8e0.html">ARRanger</a></li><li class="navelem"><a href="dir_22deff83e5e51399b4644a6ac5e50e58.html">Source</a></li><li class="navelem"><a href="dir_765ba4c51118e23b05fd567f675cd5c3.html">ARRanger</a></li><li class="navelem"><a href="dir_01ca0bd49608f959e3dafd2b38229153.html">Private</a></li><li class="navelem"><a href="dir_7347bf27e0fff870dc6262931afa618b.html">ActionAbilities</a></li><li class="navelem"><a href="dir_150aeb6c983542720f9cd7e67a13ae3c.html">Abilities</a></li><li class="navelem"><a href="_a_r_gameplay_ability___jump_8cpp.html">ARGameplayAbility_Jump.cpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>

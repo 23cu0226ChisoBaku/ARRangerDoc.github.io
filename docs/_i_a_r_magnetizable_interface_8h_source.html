@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ARRanger: H:/GithubRepository/ARRanger/Source/ARRanger/Public/Magnetic/IARMagnetizableInterface.h Source File</title>
+<title>ARRanger: D:/GithubRepository/ARRanger/Source/ARRanger/Public/Magnetic/IARMagnetizableInterface.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -91,7 +91,7 @@ $(function(){initNavTree('_i_a_r_magnetizable_interface_8h_source.html','',''); 
   <div class="headertitle"><div class="title">IARMagnetizableInterface.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">//*************************************************</span></div>
+<a href="_i_a_r_magnetizable_interface_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">//*************************************************</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// 斥力・引力の磁気性質を管理するインターフェース</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">//*************************************************</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
@@ -101,7 +101,7 @@ $(function(){initNavTree('_i_a_r_magnetizable_interface_8h_source.html','',''); 
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;IARMagnetizableInterface.generated.h&quot;</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#define UE_API ARRANGER_API</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="_i_a_r_magnetizable_interface_8h.html#a578eb926c8aecdf908e1338b2e893458">   11</a></span><span class="preprocessor">#define UE_API ARRANGER_API</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span></div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>UINTERFACE(Blueprintable)</div>
 <div class="foldopen" id="foldopen00017" data-start="{" data-end="};">
@@ -114,13 +114,15 @@ $(function(){initNavTree('_i_a_r_magnetizable_interface_8h_source.html','',''); 
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">/*</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">* 斥力引力状態(磁性)</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">*/</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>UENUM(MinimalAPI)</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">enum class</span> EARMagnetismType : uint8</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>UENUM(MinimalAPI, BlueprintType)</div>
+<div class="foldopen" id="foldopen00026" data-start="{" data-end="};">
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="_i_a_r_magnetizable_interface_8h.html#a760a20e19f697a134dbd351d65fd9d6b">   26</a></span>enum class <a class="code hl_enumeration" href="_i_a_r_magnetizable_interface_8h.html#a760a20e19f697a134dbd351d65fd9d6b">EARMagnetismType</a> : uint8</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>{</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    None = 0,       <span class="comment">// 何もない状態(デフォルト値)</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    Attraction = 1, <span class="comment">// 引力状態</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    Repulsion = 2,  <span class="comment">// 斥力状態</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="_i_a_r_magnetizable_interface_8h.html#a760a20e19f697a134dbd351d65fd9d6ba6adf97f83acf6453d4a6a4b1070f3754">   28</a></span>    <a class="code hl_enumvalue" href="_a_r_sound_play_library_8h.html#ac7812ff4152433b10159b675391ce1cda6adf97f83acf6453d4a6a4b1070f3754">None</a> = 0,       <span class="comment">// 何もない状態(デフォルト値)</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="_i_a_r_magnetizable_interface_8h.html#a760a20e19f697a134dbd351d65fd9d6baecbec02dfa9970243de47d41fd032608">   29</a></span>    <a class="code hl_enumvalue" href="_i_a_r_magnetizable_interface_8h.html#a760a20e19f697a134dbd351d65fd9d6baecbec02dfa9970243de47d41fd032608">Attraction</a> = 1, <span class="comment">// 引力状態</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="_i_a_r_magnetizable_interface_8h.html#a760a20e19f697a134dbd351d65fd9d6ba98c28e90ede447a5427eb742d0837d77">   30</a></span>    <a class="code hl_enumvalue" href="_i_a_r_magnetizable_interface_8h.html#a760a20e19f697a134dbd351d65fd9d6ba98c28e90ede447a5427eb742d0837d77">Repulsion</a> = 2,  <span class="comment">// 斥力状態</span></div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>};</div>
+</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span></div>
 <div class="foldopen" id="foldopen00036" data-start="{" data-end="};">
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="struct_f_a_r_magnetic_force_result.html">   36</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_f_a_r_magnetic_force_result.html">FARMagneticForceResult</a></div>
@@ -140,42 +142,53 @@ $(function(){initNavTree('_i_a_r_magnetizable_interface_8h_source.html','',''); 
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="comment">/*</span></div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">    * @brief 引力の磁性を保持している時の処理</span></div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">    */</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    ARRANGER_API <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnAttractionEvaluated(<span class="keyword">const</span> <a class="code hl_struct" href="struct_f_a_r_magnetic_force_result.html">FARMagneticForceResult</a>&amp; Result) {}</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="class_i_a_r_magnetizable_interface.html#a98fbd183a72af3e606b4a8a5806a877f">   55</a></span>    ARRANGER_API <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_i_a_r_magnetizable_interface.html#a98fbd183a72af3e606b4a8a5806a877f">OnAttractionEvaluated</a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_f_a_r_magnetic_force_result.html">FARMagneticForceResult</a>&amp; Result) {}</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="comment">/*</span></div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">    * @brief 斥力の磁性を保持している時の処理</span></div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">    */</span></div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    ARRANGER_API <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnRepulsionEvaluated(<span class="keyword">const</span> <a class="code hl_struct" href="struct_f_a_r_magnetic_force_result.html">FARMagneticForceResult</a>&amp; Result) {}</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="class_i_a_r_magnetizable_interface.html#a858c55478cb5a044c39e7b3cbe96edfb">   60</a></span>    ARRANGER_API <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_i_a_r_magnetizable_interface.html#a858c55478cb5a044c39e7b3cbe96edfb">OnRepulsionEvaluated</a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_f_a_r_magnetic_force_result.html">FARMagneticForceResult</a>&amp; Result) {}</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="comment">/*</span></div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment">    * @brief アクターを取得するための関数</span></div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">    * </span></div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">    * @return アクターポインタ</span></div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">    */</span></div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    ARRANGER_API <span class="keyword">virtual</span> AActor* GetActor() { <span class="keywordflow">return</span> <span class="keyword">nullptr</span>; }</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="class_i_a_r_magnetizable_interface.html#a0d9680a821a0e25438c506696ea5fa7f">   67</a></span>    ARRANGER_API <span class="keyword">virtual</span> AActor* <a class="code hl_function" href="class_i_a_r_magnetizable_interface.html#a0d9680a821a0e25438c506696ea5fa7f">GetActor</a>() { <span class="keywordflow">return</span> <span class="keyword">nullptr</span>; }</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="comment">/*</span></div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">    * @brief 新しい磁性に変化させる</span></div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment">    *</span></div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment">    * @return 変化先の磁性</span></div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment">    */</span></div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keywordtype">void</span> SetMagnetismType(EARMagnetismType newARMagnetismType) { Type = newARMagnetismType; }</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="class_i_a_r_magnetizable_interface.html#a636f2e12ad7c45765e2f57b29eb80878">   74</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_i_a_r_magnetizable_interface.html#a636f2e12ad7c45765e2f57b29eb80878">SetMagnetismType</a>(<a class="code hl_enumeration" href="_i_a_r_magnetizable_interface_8h.html#a760a20e19f697a134dbd351d65fd9d6b">EARMagnetismType</a> newARMagnetismType) { <a class="code hl_variable" href="class_i_a_r_magnetizable_interface.html#a8a19ee5c521256533ef8d332ecb6a792">Type</a> = newARMagnetismType; }</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    </div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="comment">/*</span></div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment">    * @brief 現在の磁性を取得する</span></div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment">    * </span></div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment">    * @return 現在の磁性</span></div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment">    */</span></div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    EARMagnetismType GetMagnetismType()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> Type; }</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="class_i_a_r_magnetizable_interface.html#a02be84512faf14040407cc67b954bda9">   81</a></span>    <a class="code hl_enumeration" href="_i_a_r_magnetizable_interface_8h.html#a760a20e19f697a134dbd351d65fd9d6b">EARMagnetismType</a> <a class="code hl_function" href="class_i_a_r_magnetizable_interface.html#a02be84512faf14040407cc67b954bda9">GetMagnetismType</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_i_a_r_magnetizable_interface.html#a8a19ee5c521256533ef8d332ecb6a792">Type</a>; }</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="keyword">private</span>:</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    EARMagnetismType Type = EARMagnetismType::None;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="class_i_a_r_magnetizable_interface.html#a8a19ee5c521256533ef8d332ecb6a792">   85</a></span>    <a class="code hl_enumeration" href="_i_a_r_magnetizable_interface_8h.html#a760a20e19f697a134dbd351d65fd9d6b">EARMagnetismType</a> <a class="code hl_variable" href="class_i_a_r_magnetizable_interface.html#a8a19ee5c521256533ef8d332ecb6a792">Type</a> = <a class="code hl_enumvalue" href="_i_a_r_magnetizable_interface_8h.html#a760a20e19f697a134dbd351d65fd9d6ba6adf97f83acf6453d4a6a4b1070f3754">EARMagnetismType::None</a>;</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>};</div>
 </div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="preprocessor">#undef UE_API</span></div>
+<div class="ttc" id="a_a_r_sound_play_library_8h_html_ac7812ff4152433b10159b675391ce1cda6adf97f83acf6453d4a6a4b1070f3754"><div class="ttname"><a href="_a_r_sound_play_library_8h.html#ac7812ff4152433b10159b675391ce1cda6adf97f83acf6453d4a6a4b1070f3754">EARSoundEffectType::None</a></div><div class="ttdeci">@ None</div><div class="ttdef"><b>Definition</b> <a href="_a_r_sound_play_library_8h_source.html#l00032">ARSoundPlayLibrary.h:32</a></div></div>
+<div class="ttc" id="a_i_a_r_magnetizable_interface_8h_html_a760a20e19f697a134dbd351d65fd9d6b"><div class="ttname"><a href="_i_a_r_magnetizable_interface_8h.html#a760a20e19f697a134dbd351d65fd9d6b">EARMagnetismType</a></div><div class="ttdeci">EARMagnetismType</div><div class="ttdef"><b>Definition</b> <a href="#l00026">IARMagnetizableInterface.h:27</a></div></div>
+<div class="ttc" id="a_i_a_r_magnetizable_interface_8h_html_a760a20e19f697a134dbd351d65fd9d6ba6adf97f83acf6453d4a6a4b1070f3754"><div class="ttname"><a href="_i_a_r_magnetizable_interface_8h.html#a760a20e19f697a134dbd351d65fd9d6ba6adf97f83acf6453d4a6a4b1070f3754">EARMagnetismType::None</a></div><div class="ttdeci">@ None</div><div class="ttdef"><b>Definition</b> <a href="#l00028">IARMagnetizableInterface.h:28</a></div></div>
+<div class="ttc" id="a_i_a_r_magnetizable_interface_8h_html_a760a20e19f697a134dbd351d65fd9d6ba98c28e90ede447a5427eb742d0837d77"><div class="ttname"><a href="_i_a_r_magnetizable_interface_8h.html#a760a20e19f697a134dbd351d65fd9d6ba98c28e90ede447a5427eb742d0837d77">EARMagnetismType::Repulsion</a></div><div class="ttdeci">@ Repulsion</div><div class="ttdef"><b>Definition</b> <a href="#l00030">IARMagnetizableInterface.h:30</a></div></div>
+<div class="ttc" id="a_i_a_r_magnetizable_interface_8h_html_a760a20e19f697a134dbd351d65fd9d6baecbec02dfa9970243de47d41fd032608"><div class="ttname"><a href="_i_a_r_magnetizable_interface_8h.html#a760a20e19f697a134dbd351d65fd9d6baecbec02dfa9970243de47d41fd032608">EARMagnetismType::Attraction</a></div><div class="ttdeci">@ Attraction</div><div class="ttdef"><b>Definition</b> <a href="#l00029">IARMagnetizableInterface.h:29</a></div></div>
 <div class="ttc" id="aclass_i_a_r_magnetizable_interface_html"><div class="ttname"><a href="class_i_a_r_magnetizable_interface.html">IARMagnetizableInterface</a></div><div class="ttdef"><b>Definition</b> <a href="#l00046">IARMagnetizableInterface.h:47</a></div></div>
+<div class="ttc" id="aclass_i_a_r_magnetizable_interface_html_a02be84512faf14040407cc67b954bda9"><div class="ttname"><a href="class_i_a_r_magnetizable_interface.html#a02be84512faf14040407cc67b954bda9">IARMagnetizableInterface::GetMagnetismType</a></div><div class="ttdeci">EARMagnetismType GetMagnetismType() const</div><div class="ttdef"><b>Definition</b> <a href="#l00081">IARMagnetizableInterface.h:81</a></div></div>
+<div class="ttc" id="aclass_i_a_r_magnetizable_interface_html_a0d9680a821a0e25438c506696ea5fa7f"><div class="ttname"><a href="class_i_a_r_magnetizable_interface.html#a0d9680a821a0e25438c506696ea5fa7f">IARMagnetizableInterface::GetActor</a></div><div class="ttdeci">virtual ARRANGER_API AActor * GetActor()</div><div class="ttdef"><b>Definition</b> <a href="#l00067">IARMagnetizableInterface.h:67</a></div></div>
+<div class="ttc" id="aclass_i_a_r_magnetizable_interface_html_a636f2e12ad7c45765e2f57b29eb80878"><div class="ttname"><a href="class_i_a_r_magnetizable_interface.html#a636f2e12ad7c45765e2f57b29eb80878">IARMagnetizableInterface::SetMagnetismType</a></div><div class="ttdeci">void SetMagnetismType(EARMagnetismType newARMagnetismType)</div><div class="ttdef"><b>Definition</b> <a href="#l00074">IARMagnetizableInterface.h:74</a></div></div>
+<div class="ttc" id="aclass_i_a_r_magnetizable_interface_html_a858c55478cb5a044c39e7b3cbe96edfb"><div class="ttname"><a href="class_i_a_r_magnetizable_interface.html#a858c55478cb5a044c39e7b3cbe96edfb">IARMagnetizableInterface::OnRepulsionEvaluated</a></div><div class="ttdeci">virtual ARRANGER_API void OnRepulsionEvaluated(const FARMagneticForceResult &amp;Result)</div><div class="ttdef"><b>Definition</b> <a href="#l00060">IARMagnetizableInterface.h:60</a></div></div>
+<div class="ttc" id="aclass_i_a_r_magnetizable_interface_html_a8a19ee5c521256533ef8d332ecb6a792"><div class="ttname"><a href="class_i_a_r_magnetizable_interface.html#a8a19ee5c521256533ef8d332ecb6a792">IARMagnetizableInterface::Type</a></div><div class="ttdeci">EARMagnetismType Type</div><div class="ttdef"><b>Definition</b> <a href="#l00085">IARMagnetizableInterface.h:85</a></div></div>
+<div class="ttc" id="aclass_i_a_r_magnetizable_interface_html_a98fbd183a72af3e606b4a8a5806a877f"><div class="ttname"><a href="class_i_a_r_magnetizable_interface.html#a98fbd183a72af3e606b4a8a5806a877f">IARMagnetizableInterface::OnAttractionEvaluated</a></div><div class="ttdeci">virtual ARRANGER_API void OnAttractionEvaluated(const FARMagneticForceResult &amp;Result)</div><div class="ttdef"><b>Definition</b> <a href="#l00055">IARMagnetizableInterface.h:55</a></div></div>
 <div class="ttc" id="aclass_u_a_r_magnetizable_interface_html"><div class="ttname"><a href="class_u_a_r_magnetizable_interface.html">UARMagnetizableInterface</a></div><div class="ttdef"><b>Definition</b> <a href="#l00017">IARMagnetizableInterface.h:18</a></div></div>
 <div class="ttc" id="astruct_f_a_r_magnetic_force_result_html"><div class="ttname"><a href="struct_f_a_r_magnetic_force_result.html">FARMagneticForceResult</a></div><div class="ttdoc">Magnetic result from AR physics engine simulation.</div><div class="ttdef"><b>Definition</b> <a href="#l00036">IARMagnetizableInterface.h:37</a></div></div>
 <div class="ttc" id="astruct_f_a_r_magnetic_force_result_html_a50ccd1951776af1f051166185f8997be"><div class="ttname"><a href="struct_f_a_r_magnetic_force_result.html#a50ccd1951776af1f051166185f8997be">FARMagneticForceResult::FinalForce</a></div><div class="ttdeci">FVector FinalForce</div><div class="ttdef"><b>Definition</b> <a href="#l00039">IARMagnetizableInterface.h:39</a></div></div>
@@ -185,7 +198,7 @@ $(function(){initNavTree('_i_a_r_magnetizable_interface_8h_source.html','',''); 
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="dir_db4b63894235d986ff0886d3d7147fc4.html">GithubRepository</a></li><li class="navelem"><a href="dir_b7f76808a72ae9b06e23f4ba1d7ec8e0.html">ARRanger</a></li><li class="navelem"><a href="dir_22deff83e5e51399b4644a6ac5e50e58.html">Source</a></li><li class="navelem"><a href="dir_765ba4c51118e23b05fd567f675cd5c3.html">ARRanger</a></li><li class="navelem"><a href="dir_db3cb373904af9b89e7076f054460257.html">Public</a></li><li class="navelem"><a href="dir_371689625d4917b602c3cd1288cf8238.html">Magnetic</a></li><li class="navelem"><b>IARMagnetizableInterface.h</b></li>
+    <li class="navelem"><a href="dir_db4b63894235d986ff0886d3d7147fc4.html">GithubRepository</a></li><li class="navelem"><a href="dir_b7f76808a72ae9b06e23f4ba1d7ec8e0.html">ARRanger</a></li><li class="navelem"><a href="dir_22deff83e5e51399b4644a6ac5e50e58.html">Source</a></li><li class="navelem"><a href="dir_765ba4c51118e23b05fd567f675cd5c3.html">ARRanger</a></li><li class="navelem"><a href="dir_db3cb373904af9b89e7076f054460257.html">Public</a></li><li class="navelem"><a href="dir_371689625d4917b602c3cd1288cf8238.html">Magnetic</a></li><li class="navelem"><a href="_i_a_r_magnetizable_interface_8h.html">IARMagnetizableInterface.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>

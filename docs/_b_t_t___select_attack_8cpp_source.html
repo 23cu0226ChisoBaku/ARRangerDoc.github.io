@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ARRanger: H:/GithubRepository/ARRanger/Source/ARRanger/Private/Enemy/BTT/BTT_SelectAttack.cpp Source File</title>
+<title>ARRanger: D:/GithubRepository/ARRanger/Source/ARRanger/Private/Enemy/BTT/BTT_SelectAttack.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -91,15 +91,18 @@ $(function(){initNavTree('_b_t_t___select_attack_8cpp_source.html','',''); });
   <div class="headertitle"><div class="title">BTT_SelectAttack.cpp</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;Enemy/BTT/BTT_SelectAttack.h&quot;</span></div>
+<a href="_b_t_t___select_attack_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;<a class="code" href="_b_t_t___select_attack_8h.html">Enemy/BTT/BTT_SelectAttack.h</a>&quot;</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;BehaviorTree/BlackboardComponent.h&quot;</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>UBTT_SelectAttack::UBTT_SelectAttack()</div>
+<div class="foldopen" id="foldopen00004" data-start="{" data-end="}">
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="class_u_b_t_t___select_attack.html#a9d1c496e341a85d7b7df25370623046a">    4</a></span><a class="code hl_function" href="class_u_b_t_t___select_attack.html#a9d1c496e341a85d7b7df25370623046a">UBTT_SelectAttack::UBTT_SelectAttack</a>()</div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>{</div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>  NodeName = TEXT(<span class="stringliteral">&quot;Choose Attack&quot;</span>);</div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>}</div>
+</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>EBTNodeResult::Type UBTT_SelectAttack::ExecuteTask(UBehaviorTreeComponent&amp; OwnerComp, uint8* NodeMemory)</div>
+<div class="foldopen" id="foldopen00009" data-start="{" data-end="}">
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_u_b_t_t___select_attack.html#a9bf7e16cdfbd3b4f3cb1c2c882dba384">    9</a></span>EBTNodeResult::Type <a class="code hl_function" href="class_u_b_t_t___select_attack.html#a9bf7e16cdfbd3b4f3cb1c2c882dba384">UBTT_SelectAttack::ExecuteTask</a>(UBehaviorTreeComponent&amp; OwnerComp, uint8* NodeMemory)</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>{</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>  UBlackboardComponent* BB = OwnerComp.GetBlackboardComponent();</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>  <span class="keywordflow">if</span> (BB == <span class="keyword">nullptr</span>)</div>
@@ -107,13 +110,13 @@ $(function(){initNavTree('_b_t_t___select_attack_8cpp_source.html','',''); });
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keywordflow">return</span> EBTNodeResult::Failed;</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>  }</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  EAttackType ChosenAttack = EAttackType::None;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  EAttackType LastAttack = (EAttackType)BB-&gt;GetValueAsEnum(<span class="stringliteral">&quot;LastAttackType&quot;</span>);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  <a class="code hl_enumeration" href="_enemy_attack_types_8h.html#a00054baf5253f9c153770c4634198ab0">EAttackType</a> ChosenAttack = EAttackType::None;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  <a class="code hl_enumeration" href="_enemy_attack_types_8h.html#a00054baf5253f9c153770c4634198ab0">EAttackType</a> LastAttack = (<a class="code hl_enumeration" href="_enemy_attack_types_8h.html#a00054baf5253f9c153770c4634198ab0">EAttackType</a>)BB-&gt;GetValueAsEnum(<span class="stringliteral">&quot;LastAttackType&quot;</span>);</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  <span class="keywordflow">if</span> (WeightedAttacks.Num() &gt; 0)</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_u_b_t_t___select_attack.html#a26af90ec79e9b7aa1280d99b00455ac6">WeightedAttacks</a>.Num() &gt; 0)</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  {</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordtype">float</span> TotalWeight = 0.f;</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; [ attackType, weight ] : WeightedAttacks)</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; [ attackType, weight ] : <a class="code hl_variable" href="class_u_b_t_t___select_attack.html#a26af90ec79e9b7aa1280d99b00455ac6">WeightedAttacks</a>)</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    {</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>      <span class="keywordflow">if</span> ((attackType == EAttackType::Roar) &amp;&amp; (LastAttack == EAttackType::Roar))</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>      {</div>
@@ -128,7 +131,7 @@ $(function(){initNavTree('_b_t_t___select_attack_8cpp_source.html','',''); });
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>      <span class="keyword">const</span> <span class="keywordtype">float</span> Rand = FMath::FRandRange(0.f, TotalWeight);</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>      <span class="keywordtype">float</span> Accum = 0.f;</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>      <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; [ attackType, weight ] : WeightedAttacks)</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>      <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; [ attackType, weight ] : <a class="code hl_variable" href="class_u_b_t_t___select_attack.html#a26af90ec79e9b7aa1280d99b00455ac6">WeightedAttacks</a>)</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>      {</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="keywordflow">if</span> ((attackType == EAttackType::Roar) &amp;&amp; (LastAttack == EAttackType::Roar))</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        {</div>
@@ -144,14 +147,14 @@ $(function(){initNavTree('_b_t_t___select_attack_8cpp_source.html','',''); });
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>      }</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    }</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  }</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (CandidateAttacks.Num() &gt; 0)</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_u_b_t_t___select_attack.html#ab95052e0831e101d5f8e59b5d3559fa6">CandidateAttacks</a>.Num() &gt; 0)</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  {</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    TArray&lt;EAttackType&gt; Filtered;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> EAttackType&amp; Attack : CandidateAttacks)</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <a class="code hl_enumeration" href="_enemy_attack_types_8h.html#a00054baf5253f9c153770c4634198ab0">EAttackType</a>&amp; <a class="code hl_enumvalue" href="_a_r_sound_play_library_8h.html#ac7812ff4152433b10159b675391ce1cdadcfafcb4323b102c7e204555d313ba0a">Attack</a> : <a class="code hl_variable" href="class_u_b_t_t___select_attack.html#ab95052e0831e101d5f8e59b5d3559fa6">CandidateAttacks</a>)</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    {</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>      <span class="keywordflow">if</span> (!(Attack == EAttackType::Roar &amp;&amp; LastAttack == EAttackType::Roar))</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>      <span class="keywordflow">if</span> (!(<a class="code hl_enumvalue" href="_a_r_sound_play_library_8h.html#ac7812ff4152433b10159b675391ce1cdadcfafcb4323b102c7e204555d313ba0a">Attack</a> == EAttackType::Roar &amp;&amp; LastAttack == EAttackType::Roar))</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>      {</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        Filtered.Add(Attack);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        Filtered.Add(<a class="code hl_enumvalue" href="_a_r_sound_play_library_8h.html#ac7812ff4152433b10159b675391ce1cdadcfafcb4323b102c7e204555d313ba0a">Attack</a>);</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>      }</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    }</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
@@ -177,13 +180,21 @@ $(function(){initNavTree('_b_t_t___select_attack_8cpp_source.html','',''); });
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  <span class="keywordflow">return</span> EBTNodeResult::Succeeded;</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>}</div>
+</div>
+<div class="ttc" id="a_a_r_sound_play_library_8h_html_ac7812ff4152433b10159b675391ce1cdadcfafcb4323b102c7e204555d313ba0a"><div class="ttname"><a href="_a_r_sound_play_library_8h.html#ac7812ff4152433b10159b675391ce1cdadcfafcb4323b102c7e204555d313ba0a">EARSoundEffectType::Attack</a></div><div class="ttdeci">@ Attack</div><div class="ttdef"><b>Definition</b> <a href="_a_r_sound_play_library_8h_source.html#l00034">ARSoundPlayLibrary.h:34</a></div></div>
+<div class="ttc" id="a_b_t_t___select_attack_8h_html"><div class="ttname"><a href="_b_t_t___select_attack_8h.html">BTT_SelectAttack.h</a></div></div>
+<div class="ttc" id="a_enemy_attack_types_8h_html_a00054baf5253f9c153770c4634198ab0"><div class="ttname"><a href="_enemy_attack_types_8h.html#a00054baf5253f9c153770c4634198ab0">EAttackType</a></div><div class="ttdeci">EAttackType</div><div class="ttdef"><b>Definition</b> <a href="_enemy_attack_types_8h_source.html#l00006">EnemyAttackTypes.h:7</a></div></div>
+<div class="ttc" id="aclass_u_b_t_t___select_attack_html_a26af90ec79e9b7aa1280d99b00455ac6"><div class="ttname"><a href="class_u_b_t_t___select_attack.html#a26af90ec79e9b7aa1280d99b00455ac6">UBTT_SelectAttack::WeightedAttacks</a></div><div class="ttdeci">TMap&lt; EAttackType, float &gt; WeightedAttacks</div><div class="ttdef"><b>Definition</b> <a href="_b_t_t___select_attack_8h_source.html#l00026">BTT_SelectAttack.h:26</a></div></div>
+<div class="ttc" id="aclass_u_b_t_t___select_attack_html_a9bf7e16cdfbd3b4f3cb1c2c882dba384"><div class="ttname"><a href="class_u_b_t_t___select_attack.html#a9bf7e16cdfbd3b4f3cb1c2c882dba384">UBTT_SelectAttack::ExecuteTask</a></div><div class="ttdeci">virtual EBTNodeResult::Type ExecuteTask(UBehaviorTreeComponent &amp;OwnerComp, uint8 *NodeMemory) override</div><div class="ttdef"><b>Definition</b> <a href="#l00009">BTT_SelectAttack.cpp:9</a></div></div>
+<div class="ttc" id="aclass_u_b_t_t___select_attack_html_a9d1c496e341a85d7b7df25370623046a"><div class="ttname"><a href="class_u_b_t_t___select_attack.html#a9d1c496e341a85d7b7df25370623046a">UBTT_SelectAttack::UBTT_SelectAttack</a></div><div class="ttdeci">UBTT_SelectAttack()</div><div class="ttdef"><b>Definition</b> <a href="#l00004">BTT_SelectAttack.cpp:4</a></div></div>
+<div class="ttc" id="aclass_u_b_t_t___select_attack_html_ab95052e0831e101d5f8e59b5d3559fa6"><div class="ttname"><a href="class_u_b_t_t___select_attack.html#ab95052e0831e101d5f8e59b5d3559fa6">UBTT_SelectAttack::CandidateAttacks</a></div><div class="ttdeci">TArray&lt; EAttackType &gt; CandidateAttacks</div><div class="ttdef"><b>Definition</b> <a href="_b_t_t___select_attack_8h_source.html#l00022">BTT_SelectAttack.h:22</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="dir_db4b63894235d986ff0886d3d7147fc4.html">GithubRepository</a></li><li class="navelem"><a href="dir_b7f76808a72ae9b06e23f4ba1d7ec8e0.html">ARRanger</a></li><li class="navelem"><a href="dir_22deff83e5e51399b4644a6ac5e50e58.html">Source</a></li><li class="navelem"><a href="dir_765ba4c51118e23b05fd567f675cd5c3.html">ARRanger</a></li><li class="navelem"><a href="dir_01ca0bd49608f959e3dafd2b38229153.html">Private</a></li><li class="navelem"><a href="dir_4e4d5c07696158b389eb767e6619f01b.html">Enemy</a></li><li class="navelem"><a href="dir_e065dd7123b7c0af7e4e4422720f965e.html">BTT</a></li><li class="navelem"><b>BTT_SelectAttack.cpp</b></li>
+    <li class="navelem"><a href="dir_db4b63894235d986ff0886d3d7147fc4.html">GithubRepository</a></li><li class="navelem"><a href="dir_b7f76808a72ae9b06e23f4ba1d7ec8e0.html">ARRanger</a></li><li class="navelem"><a href="dir_22deff83e5e51399b4644a6ac5e50e58.html">Source</a></li><li class="navelem"><a href="dir_765ba4c51118e23b05fd567f675cd5c3.html">ARRanger</a></li><li class="navelem"><a href="dir_01ca0bd49608f959e3dafd2b38229153.html">Private</a></li><li class="navelem"><a href="dir_4e4d5c07696158b389eb767e6619f01b.html">Enemy</a></li><li class="navelem"><a href="dir_e065dd7123b7c0af7e4e4422720f965e.html">BTT</a></li><li class="navelem"><a href="_b_t_t___select_attack_8cpp.html">BTT_SelectAttack.cpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>

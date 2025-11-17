@@ -56,26 +56,18 @@ var hierarchy =
     [ "ARRanger::Editor::FARMagneticParamEditHelper", "struct_a_r_ranger_1_1_editor_1_1_f_a_r_magnetic_param_edit_helper.html", null ],
     [ "FARMagneticParamEditHelper", "struct_f_a_r_magnetic_param_edit_helper.html", null ],
     [ "FARMagneticTickObjectEntry", "struct_f_a_r_magnetic_tick_object_entry.html", null ],
-    [ "FARPhysicsCancellationParam", "struct_f_a_r_physics_cancellation_param.html", null ],
     [ "ARRanger::Private::FARPhysicsCore", "struct_a_r_ranger_1_1_private_1_1_f_a_r_physics_core.html", null ],
     [ "FARPhysicsEngineInitializationParameters", "struct_f_a_r_physics_engine_initialization_parameters.html", null ],
-    [ "FARPhysicsEngineProxy", "class_f_a_r_physics_engine_proxy.html", null ],
     [ "FARPhysicsEvaluationResult", "struct_f_a_r_physics_evaluation_result.html", null ],
     [ "FARPhysicsRegistry", "struct_f_a_r_physics_registry.html", null ],
-    [ "FARPhysicsSimulationParam", "struct_f_a_r_physics_simulation_param.html", null ],
     [ "FARPhysicsTickFunctionInterface", "class_f_a_r_physics_tick_function_interface.html", [
       [ "FARPhysicsTickFunction", "class_f_a_r_physics_tick_function.html", null ]
-    ] ],
-    [ "ARRanger::Physics::FARPhysicsTickManagerInterface", "class_a_r_ranger_1_1_physics_1_1_f_a_r_physics_tick_manager_interface.html", [
-      [ "FARPhysicsTickManager", "class_f_a_r_physics_tick_manager.html", null ]
-    ] ],
-    [ "FARPhysicsTickManagerInterface", "class_f_a_r_physics_tick_manager_interface.html", [
-      [ "FARPhysicsTickManager", "class_f_a_r_physics_tick_manager.html", null ]
     ] ],
     [ "FARPhysicsTickParameters", "struct_f_a_r_physics_tick_parameters.html", null ],
     [ "ARRanger::Physics::FARPhysicsTickTask", "class_a_r_ranger_1_1_physics_1_1_f_a_r_physics_tick_task.html", null ],
     [ "FARPhysicsTickTask", "class_f_a_r_physics_tick_task.html", null ],
     [ "FARPhysicsUnregistry", "struct_f_a_r_physics_unregistry.html", null ],
+    [ "FARPlayerModel", "struct_f_a_r_player_model.html", null ],
     [ "ARRanger::Repository::FARRepositoryManager", "class_a_r_ranger_1_1_repository_1_1_f_a_r_repository_manager.html", null ],
     [ "FARRepositoryManager", "class_f_a_r_repository_manager.html", null ],
     [ "FARSoundBaseSettingParameters", "struct_f_a_r_sound_base_setting_parameters.html", [
@@ -100,6 +92,9 @@ var hierarchy =
     [ "ARRanger::Private::FCountLimiter< FARPhysicsEngine, 1 >", "class_a_r_ranger_1_1_private_1_1_f_count_limiter.html", [
       [ "FARPhysicsEngine", "class_f_a_r_physics_engine.html", null ]
     ] ],
+    [ "ARRanger::Private::FCountLimiter< FARPhysicsTickManager, 1 >", "class_a_r_ranger_1_1_private_1_1_f_count_limiter.html", [
+      [ "FARPhysicsTickManager", "class_f_a_r_physics_tick_manager.html", null ]
+    ] ],
     [ "FDetectorAssetEntry", "struct_f_detector_asset_entry.html", null ],
     [ "FDetectorTarget", "struct_f_detector_target.html", null ],
     [ "UAnimNotifyState_DetectRange::FDetectTickObject", "class_u_anim_notify_state___detect_range_1_1_f_detect_tick_object.html", [
@@ -113,6 +108,7 @@ var hierarchy =
     [ "FGABlueprintableHoldHandle", "struct_f_g_a_blueprintable_hold_handle.html", null ],
     [ "FGANotify_ImpactResult", "struct_f_g_a_notify___impact_result.html", null ],
     [ "AARRangerPlayerController::FHoldSpec", "struct_a_a_r_ranger_player_controller_1_1_f_hold_spec.html", null ],
+    [ "FARPhysicsTickFunctionInterface::FInternalData", "struct_f_a_r_physics_tick_function_interface_1_1_f_internal_data.html", null ],
     [ "ARRanger::Physics::FMagneticParameterDTO", "struct_a_r_ranger_1_1_physics_1_1_f_magnetic_parameter_d_t_o.html", null ],
     [ "FMagneticParameterDTO", "struct_f_magnetic_parameter_d_t_o.html", null ],
     [ "ARRanger::Physics::FMagneticParameters", "struct_a_r_ranger_1_1_physics_1_1_f_magnetic_parameters.html", null ],
@@ -157,7 +153,13 @@ var hierarchy =
       [ "AMagnetizableActor", "class_a_magnetizable_actor.html", null ]
     ] ],
     [ "IARPhysicsSystemHost", "class_i_a_r_physics_system_host.html", [
-      [ "AARRangerCharacter", "class_a_a_r_ranger_character.html", null ]
+      [ "UARPlayerPresenter", "class_u_a_r_player_presenter.html", null ]
+    ] ],
+    [ "ARRanger::Physics::IARPhysicsTickManagerInterface", "class_a_r_ranger_1_1_physics_1_1_i_a_r_physics_tick_manager_interface.html", [
+      [ "FARPhysicsTickManager", "class_f_a_r_physics_tick_manager.html", null ]
+    ] ],
+    [ "IARPhysicsTickManagerInterface", "class_i_a_r_physics_tick_manager_interface.html", [
+      [ "FARPhysicsTickManager", "class_f_a_r_physics_tick_manager.html", null ]
     ] ],
     [ "ARRanger::Repository::IARRepositoryInterface", "class_a_r_ranger_1_1_repository_1_1_i_a_r_repository_interface.html", [
       [ "ARRanger::Repository::IARRepositoryGateway< UObject *, ARRanger::Physics::FMagneticParameterDTO >", "class_a_r_ranger_1_1_repository_1_1_i_a_r_repository_gateway.html", null ],
@@ -192,6 +194,9 @@ var hierarchy =
         [ "ARRanger::FSoundEffectRegistry", "class_a_r_ranger_1_1_f_sound_effect_registry.html", null ]
       ] ]
     ] ],
+    [ "IPhysicsTaskRegistrar", "class_i_physics_task_registrar.html", [
+      [ "AARPhysicsTickProcessorActor", "class_a_a_r_physics_tick_processor_actor.html", null ]
+    ] ],
     [ "IPropertyTypeCustomization", null, [
       [ "FRangeDetectorTargetCustomization", "class_f_range_detector_target_customization.html", null ]
     ] ],
@@ -206,6 +211,8 @@ var hierarchy =
       [ "ARRanger", "class_a_r_ranger.html", null ],
       [ "ARRangerEditor", "class_a_r_ranger_editor.html", null ]
     ] ],
+    [ "ARRanger::FObserverProxyNode::PrivateToken", "struct_a_r_ranger_1_1_f_observer_proxy_node_1_1_private_token.html", null ],
+    [ "ARRanger::Input::FARInputBufferState::PrivateToken", "struct_a_r_ranger_1_1_input_1_1_f_a_r_input_buffer_state_1_1_private_token.html", null ],
     [ "ARRanger::Detector::FRangeDetectorFilter::ProtectedToken", "struct_a_r_ranger_1_1_detector_1_1_f_range_detector_filter_1_1_protected_token.html", null ],
     [ "SCompoundWidget", null, [
       [ "SMagneticParamEditPanelWidget", "class_s_magnetic_param_edit_panel_widget.html", null ]
@@ -306,6 +313,7 @@ var hierarchy =
       [ "UARPhysicsSystemHost", "class_u_a_r_physics_system_host.html", null ],
       [ "UAudioPlayer", "class_u_audio_player.html", null ],
       [ "UObservableSubjectInterface", "class_u_observable_subject_interface.html", null ],
+      [ "UPhysicsTaskRegistrar", "class_u_physics_task_registrar.html", null ],
       [ "USpecialAttractInterface", "class_u_special_attract_interface.html", null ]
     ] ],
     [ "UMStateInstance", null, [
@@ -320,6 +328,7 @@ var hierarchy =
         ] ]
       ] ],
       [ "UARPlayerInputBuffer", "class_u_a_r_player_input_buffer.html", null ],
+      [ "UARPlayerPresenter", "class_u_a_r_player_presenter.html", null ],
       [ "UBlueprintObserverProxyRegistry", "class_u_blueprint_observer_proxy_registry.html", null ]
     ] ],
     [ "UPrimaryDataAsset", null, [

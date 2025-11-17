@@ -91,9 +91,13 @@ $(function(){initNavTree('class_f_outline_system.html','','class_f_outline_syste
   <div class="headertitle"><div class="title">FOutlineSystem Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_outline_system_8h_source.html">OutlineSystem.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a82fb2a5e34f73963fa243167e27fd6df" id="r_a82fb2a5e34f73963fa243167e27fd6df"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82fb2a5e34f73963fa243167e27fd6df">FOutlineSystem</a> ()</td></tr>
+<tr class="memitem:a5dac1ffb2813846420d77b364b851769" id="r_a5dac1ffb2813846420d77b364b851769"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5dac1ffb2813846420d77b364b851769">~FOutlineSystem</a> ()=default</td></tr>
 <tr class="memitem:a9722effac01f91b4a722ddcf06a293b6" id="r_a9722effac01f91b4a722ddcf06a293b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9722effac01f91b4a722ddcf06a293b6">CreateTickingActor</a> (UWorld *world, TSubclassOf&lt; <a class="el" href="class_a_outline_tick_actor.html">AOutlineTickActor</a> &gt; Subclass=nullptr)</td></tr>
 <tr class="memitem:a6df91964c9ca015cc26f5d02cfd94b14" id="r_a6df91964c9ca015cc26f5d02cfd94b14"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6df91964c9ca015cc26f5d02cfd94b14">BlinkOutlineActorAtCursorDelegate</a> (AActor *targetObject)</td></tr>
 <tr class="memitem:a2027493eccb7fd158a62bc36ef134d8c" id="r_a2027493eccb7fd158a62bc36ef134d8c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2027493eccb7fd158a62bc36ef134d8c">StopBlinkOutlineActorAtCursorDelegate</a> (AActor *targetObject)</td></tr>
@@ -103,6 +107,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af18b1b35aa7bd14894a70f59a188762e" id="r_af18b1b35aa7bd14894a70f59a188762e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af18b1b35aa7bd14894a70f59a188762e">RemoveBlinkingOutlineActor</a> (AActor *targetObject)</td></tr>
 <tr class="memitem:aa2cd917455cfa2a8d15fcc6b9df9145c" id="r_aa2cd917455cfa2a8d15fcc6b9df9145c"><td class="memItemLeft" align="right" valign="top">const TArray&lt; TWeakObjectPtr&lt; AActor &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa2cd917455cfa2a8d15fcc6b9df9145c">GetOutlineActors</a> () const</td></tr>
 <tr class="memitem:a65ab68b08bef51990408ceb4027c4b68" id="r_a65ab68b08bef51990408ceb4027c4b68"><td class="memItemLeft" align="right" valign="top">const TArray&lt; TWeakObjectPtr&lt; AActor &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a65ab68b08bef51990408ceb4027c4b68">GetBlinkingOutlineActors</a> () const</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a0477faafedcfac7d2981f4f5ea77871c" id="r_a0477faafedcfac7d2981f4f5ea77871c"><td class="memItemLeft" align="right" valign="top">TWeakObjectPtr&lt; <a class="el" href="class_a_outline_tick_actor.html">AOutlineTickActor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0477faafedcfac7d2981f4f5ea77871c">m_TickActor</a></td></tr>
+<tr class="memitem:ab592ff306bb75877437d14f27c840f9e" id="r_ab592ff306bb75877437d14f27c840f9e"><td class="memItemLeft" align="right" valign="top">TArray&lt; TWeakObjectPtr&lt; AActor &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab592ff306bb75877437d14f27c840f9e">m_OutlineActors</a></td></tr>
+<tr class="memitem:a40fddbd0b9e55f3648fa3da272a6f52f" id="r_a40fddbd0b9e55f3648fa3da272a6f52f"><td class="memItemLeft" align="right" valign="top">TArray&lt; TWeakObjectPtr&lt; AActor &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a40fddbd0b9e55f3648fa3da272a6f52f">m_BlinkingOutlineActors</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -124,10 +134,32 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_outline_system_8cpp_source.html#l00009">9</a> of file <a class="el" href="_outline_system_8cpp_source.html">OutlineSystem.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   10</span>    : m_TickActor{ <span class="keyword">nullptr</span> }</div>
-<div class="line"><span class="lineno">   11</span>{</div>
-<div class="line"><span class="lineno">   12</span>}</div>
-</div><!-- fragment -->
+
+</div>
+</div>
+<a id="a5dac1ffb2813846420d77b364b851769" name="a5dac1ffb2813846420d77b364b851769"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dac1ffb2813846420d77b364b851769">&#9670;&#160;</a></span>~FOutlineSystem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FOutlineSystem::~FOutlineSystem </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel default">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
@@ -147,18 +179,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_outline_system_8cpp_source.html#l00108">108</a> of file <a class="el" href="_outline_system_8cpp_source.html">OutlineSystem.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  109</span>{</div>
-<div class="line"><span class="lineno">  110</span>    <span class="keywordflow">if</span> (targetObject == <span class="keyword">nullptr</span> || !m_TickActor.IsValid() || m_TickActor == <span class="keyword">nullptr</span>){<span class="keywordflow">return</span>;}</div>
-<div class="line"><span class="lineno">  111</span> </div>
-<div class="line"><span class="lineno">  112</span>    <span class="comment">// すでに点滅アウトラインに入っていなければ追加</span></div>
-<div class="line"><span class="lineno">  113</span>    <span class="keywordflow">if</span> (!m_BlinkingOutlineActors.Contains(targetObject))</div>
-<div class="line"><span class="lineno">  114</span>    {</div>
-<div class="line"><span class="lineno">  115</span>        m_BlinkingOutlineActors.Add(targetObject);</div>
-<div class="line"><span class="lineno">  116</span>        m_TickActor-&gt;AddBlinkingActor(targetObject);</div>
-<div class="line"><span class="lineno">  117</span>        m_TickActor-&gt;OnIsUpBlinkingActors();</div>
-<div class="line"><span class="lineno">  118</span>    }</div>
-<div class="line"><span class="lineno">  119</span>}</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a5083edc10093f024426d17081ac3f3df" name="a5083edc10093f024426d17081ac3f3df"></a>
@@ -177,14 +198,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_outline_system_8cpp_source.html#l00080">80</a> of file <a class="el" href="_outline_system_8cpp_source.html">OutlineSystem.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   81</span>{</div>
-<div class="line"><span class="lineno">   82</span>    <span class="keywordflow">if</span> (targetObject != <span class="keyword">nullptr</span> &amp;&amp; !m_OutlineActors.Contains(targetObject))</div>
-<div class="line"><span class="lineno">   83</span>    {</div>
-<div class="line"><span class="lineno">   84</span>        m_OutlineActors.Add(targetObject);</div>
-<div class="line"><span class="lineno">   85</span>        m_TickActor-&gt;OnIsUpOutlineActors();</div>
-<div class="line"><span class="lineno">   86</span>    }</div>
-<div class="line"><span class="lineno">   87</span>}</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a6df91964c9ca015cc26f5d02cfd94b14" name="a6df91964c9ca015cc26f5d02cfd94b14"></a>
@@ -203,13 +217,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_outline_system_8cpp_source.html#l00050">50</a> of file <a class="el" href="_outline_system_8cpp_source.html">OutlineSystem.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   51</span>{</div>
-<div class="line"><span class="lineno">   52</span>    <span class="keywordflow">if</span>(targetObject != <span class="keyword">nullptr</span>)</div>
-<div class="line"><span class="lineno">   53</span>    {</div>
-<div class="line"><span class="lineno">   54</span>        m_TickActor-&gt;SetBlinkOutlineActorAtCursor(targetObject);            </div>
-<div class="line"><span class="lineno">   55</span>    }</div>
-<div class="line"><span class="lineno">   56</span>}</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a9722effac01f91b4a722ddcf06a293b6" name="a9722effac01f91b4a722ddcf06a293b6"></a>
@@ -232,33 +240,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_outline_system_8cpp_source.html#l00017">17</a> of file <a class="el" href="_outline_system_8cpp_source.html">OutlineSystem.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   18</span>{</div>
-<div class="line"><span class="lineno">   19</span>    <span class="keywordflow">if</span> (!m_TickActor.IsValid() &amp;&amp; world)</div>
-<div class="line"><span class="lineno">   20</span>    {</div>
-<div class="line"><span class="lineno">   21</span>        FActorSpawnParameters Params;</div>
-<div class="line"><span class="lineno">   22</span>        Params.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AlwaysSpawn;</div>
-<div class="line"><span class="lineno">   23</span> </div>
-<div class="line"><span class="lineno">   24</span>        <span class="keywordflow">if</span> (Subclass == <span class="keyword">nullptr</span>)</div>
-<div class="line"><span class="lineno">   25</span>        {</div>
-<div class="line"><span class="lineno">   26</span>            Subclass = AOutlineTickActor::StaticClass();</div>
-<div class="line"><span class="lineno">   27</span>        }</div>
-<div class="line"><span class="lineno">   28</span>        m_TickActor = world-&gt;SpawnActor&lt;AOutlineTickActor&gt;(</div>
-<div class="line"><span class="lineno">   29</span>            Subclass, FVector(0.f), FRotator::ZeroRotator, Params</div>
-<div class="line"><span class="lineno">   30</span>        );</div>
-<div class="line"><span class="lineno">   31</span> </div>
-<div class="line"><span class="lineno">   32</span>        <span class="comment">// アウトラインを適用させるオブジェクト配列のポインタを渡す</span></div>
-<div class="line"><span class="lineno">   33</span>        <span class="keywordflow">if</span> (m_TickActor.IsValid())</div>
-<div class="line"><span class="lineno">   34</span>        {</div>
-<div class="line"><span class="lineno">   35</span>            m_TickActor-&gt;BindOutlineActorArrays(&amp;m_OutlineActors, &amp;m_BlinkingOutlineActors);</div>
-<div class="line"><span class="lineno">   36</span>            <span class="comment">// コールバックを登録</span></div>
-<div class="line"><span class="lineno">   37</span>            m_TickActor-&gt;OnRequestRemoveBlinkingActor = [<span class="keyword">this</span>](AActor* actor)</div>
-<div class="line"><span class="lineno">   38</span>            {</div>
-<div class="line"><span class="lineno">   39</span>                this-&gt;RemoveBlinkingOutlineActor(actor);</div>
-<div class="line"><span class="lineno">   40</span>            };</div>
-<div class="line"><span class="lineno">   41</span>        }</div>
-<div class="line"><span class="lineno">   42</span>    }</div>
-<div class="line"><span class="lineno">   43</span>}</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a65ab68b08bef51990408ceb4027c4b68" name="a65ab68b08bef51990408ceb4027c4b68"></a>
@@ -285,8 +267,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_outline_system_8h_source.html#l00074">74</a> of file <a class="el" href="_outline_system_8h_source.html">OutlineSystem.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   74</span>{ <span class="keywordflow">return</span> m_BlinkingOutlineActors; }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="aa2cd917455cfa2a8d15fcc6b9df9145c" name="aa2cd917455cfa2a8d15fcc6b9df9145c"></a>
@@ -313,8 +294,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_outline_system_8h_source.html#l00069">69</a> of file <a class="el" href="_outline_system_8h_source.html">OutlineSystem.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   69</span>{ <span class="keywordflow">return</span> m_OutlineActors; }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="af18b1b35aa7bd14894a70f59a188762e" name="af18b1b35aa7bd14894a70f59a188762e"></a>
@@ -333,16 +313,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_outline_system_8cpp_source.html#l00126">126</a> of file <a class="el" href="_outline_system_8cpp_source.html">OutlineSystem.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  127</span>{</div>
-<div class="line"><span class="lineno">  128</span>    <span class="keywordflow">if</span> (m_TickActor.IsValid())</div>
-<div class="line"><span class="lineno">  129</span>    {</div>
-<div class="line"><span class="lineno">  130</span>        <span class="keywordflow">if</span> (m_TickActor != <span class="keyword">nullptr</span>)</div>
-<div class="line"><span class="lineno">  131</span>        {</div>
-<div class="line"><span class="lineno">  132</span>            m_BlinkingOutlineActors.Remove(targetObject);</div>
-<div class="line"><span class="lineno">  133</span>        }</div>
-<div class="line"><span class="lineno">  134</span>    }</div>
-<div class="line"><span class="lineno">  135</span>}</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="af9622df829da6d2061a20efcc759f411" name="af9622df829da6d2061a20efcc759f411"></a>
@@ -361,14 +332,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_outline_system_8cpp_source.html#l00094">94</a> of file <a class="el" href="_outline_system_8cpp_source.html">OutlineSystem.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   95</span>{</div>
-<div class="line"><span class="lineno">   96</span>    <span class="keywordflow">if</span>(targetObject != <span class="keyword">nullptr</span> &amp;&amp; m_OutlineActors.Contains(targetObject))</div>
-<div class="line"><span class="lineno">   97</span>    {</div>
-<div class="line"><span class="lineno">   98</span>        m_OutlineActors.Remove(targetObject);</div>
-<div class="line"><span class="lineno">   99</span>        m_TickActor-&gt;OnIsUpOutlineActors();</div>
-<div class="line"><span class="lineno">  100</span>    }</div>
-<div class="line"><span class="lineno">  101</span>}</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a2027493eccb7fd158a62bc36ef134d8c" name="a2027493eccb7fd158a62bc36ef134d8c"></a>
@@ -387,22 +351,85 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_outline_system_8cpp_source.html#l00063">63</a> of file <a class="el" href="_outline_system_8cpp_source.html">OutlineSystem.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   64</span>{</div>
-<div class="line"><span class="lineno">   65</span>    <span class="keywordflow">if</span>(targetObject != <span class="keyword">nullptr</span>)</div>
-<div class="line"><span class="lineno">   66</span>    {</div>
-<div class="line"><span class="lineno">   67</span>        m_TickActor-&gt;UnsetBlinkOutlineActorAtCursor(targetObject);          </div>
-<div class="line"><span class="lineno">   68</span>    }</div>
-<div class="line"><span class="lineno">   69</span>    <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">   70</span>    {</div>
-<div class="line"><span class="lineno">   71</span>        m_TickActor-&gt;UnsetBlinkOutlineActorAtCursor(<span class="keyword">nullptr</span>);</div>
-<div class="line"><span class="lineno">   72</span>    }</div>
-<div class="line"><span class="lineno">   73</span>}</div>
-</div><!-- fragment -->
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
+<a id="a40fddbd0b9e55f3648fa3da272a6f52f" name="a40fddbd0b9e55f3648fa3da272a6f52f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40fddbd0b9e55f3648fa3da272a6f52f">&#9670;&#160;</a></span>m_BlinkingOutlineActors</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TArray&lt;TWeakObjectPtr&lt;AActor&gt; &gt; FOutlineSystem::m_BlinkingOutlineActors</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_outline_system_8h_source.html#l00083">83</a> of file <a class="el" href="_outline_system_8h_source.html">OutlineSystem.h</a>.</p>
+
+</div>
+</div>
+<a id="ab592ff306bb75877437d14f27c840f9e" name="ab592ff306bb75877437d14f27c840f9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab592ff306bb75877437d14f27c840f9e">&#9670;&#160;</a></span>m_OutlineActors</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TArray&lt;TWeakObjectPtr&lt;AActor&gt; &gt; FOutlineSystem::m_OutlineActors</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_outline_system_8h_source.html#l00081">81</a> of file <a class="el" href="_outline_system_8h_source.html">OutlineSystem.h</a>.</p>
+
+</div>
+</div>
+<a id="a0477faafedcfac7d2981f4f5ea77871c" name="a0477faafedcfac7d2981f4f5ea77871c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0477faafedcfac7d2981f4f5ea77871c">&#9670;&#160;</a></span>m_TickActor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TWeakObjectPtr&lt;<a class="el" href="class_a_outline_tick_actor.html">AOutlineTickActor</a>&gt; FOutlineSystem::m_TickActor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_outline_system_8h_source.html#l00078">78</a> of file <a class="el" href="_outline_system_8h_source.html">OutlineSystem.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>H:/GithubRepository/ARRanger/Source/ARRanger/Public/BlinkingSystem/<a class="el" href="_outline_system_8h_source.html">OutlineSystem.h</a></li>
-<li>H:/GithubRepository/ARRanger/Source/ARRanger/Private/BlinkingSystem/<a class="el" href="_outline_system_8cpp_source.html">OutlineSystem.cpp</a></li>
+<li>D:/GithubRepository/ARRanger/Source/ARRanger/Public/BlinkingSystem/<a class="el" href="_outline_system_8h_source.html">OutlineSystem.h</a></li>
+<li>D:/GithubRepository/ARRanger/Source/ARRanger/Private/BlinkingSystem/<a class="el" href="_outline_system_8cpp_source.html">OutlineSystem.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

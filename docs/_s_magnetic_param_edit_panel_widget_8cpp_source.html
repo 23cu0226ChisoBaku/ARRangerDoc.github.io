@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ARRanger: H:/GithubRepository/ARRanger/Source/ARRangerEditor/Private/MagneticParamEdit/SMagneticParamEditPanelWidget.cpp Source File</title>
+<title>ARRanger: D:/GithubRepository/ARRanger/Source/ARRangerEditor/Private/MagneticParamEdit/SMagneticParamEditPanelWidget.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -91,15 +91,15 @@ $(function(){initNavTree('_s_magnetic_param_edit_panel_widget_8cpp_source.html',
   <div class="headertitle"><div class="title">SMagneticParamEditPanelWidget.cpp</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Fill out your copyright notice in the Description page of Project Settings.</span></div>
+<a href="_s_magnetic_param_edit_panel_widget_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Fill out your copyright notice in the Description page of Project Settings.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;MagneticParamEdit/SMagneticParamEditPanelWidget.h&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="_s_magnetic_param_edit_panel_widget_8h.html">MagneticParamEdit/SMagneticParamEditPanelWidget.h</a>&quot;</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;Repositories/IARRepositoryInterface.h&quot;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;Physics/DataTransfer/MagneticParameterDTO.h&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="_i_a_r_repository_interface_8h.html">Repositories/IARRepositoryInterface.h</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="_magnetic_parameter_d_t_o_8h.html">Physics/DataTransfer/MagneticParameterDTO.h</a>&quot;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#define LOCTEXT_NAMESPACE &quot;MagneticParamEditPanel&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="_s_magnetic_param_edit_panel_widget_8cpp.html#a0de3ae51f3a629a8e5d113f1b9390da7">    9</a></span><span class="preprocessor">#define LOCTEXT_NAMESPACE &quot;MagneticParamEditPanel&quot;</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">using </span><a class="code hl_struct" href="struct_a_r_ranger_1_1_physics_1_1_f_magnetic_parameter_d_t_o.html">ARRanger::Physics::FMagneticParameterDTO</a>;</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
@@ -108,7 +108,7 @@ $(function(){initNavTree('_s_magnetic_param_edit_panel_widget_8cpp_source.html',
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>{</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>  bCanSupportFocus = <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  RepositoryConnection = InArgs._RepositoryConnection;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  <a class="code hl_variable" href="class_s_magnetic_param_edit_panel_widget.html#a80d7b605d82f2e8cff85f47fce705cde">RepositoryConnection</a> = InArgs._RepositoryConnection;</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  <span class="keyword">const</span> FMargin ContentPadding = FMargin{500.0f, 300.0f};</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  <span class="keyword">const</span> FVector2D BackgroundSize = FVector2D{500.0, 500.0};</div>
@@ -119,10 +119,10 @@ $(function(){initNavTree('_s_magnetic_param_edit_panel_widget_8cpp_source.html',
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  TSharedPtr&lt;SVerticalBox&gt; VerticalBox = SNew(SVerticalBox);</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <span class="keywordflow">if</span> (RepositoryConnection != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_s_magnetic_param_edit_panel_widget.html#a80d7b605d82f2e8cff85f47fce705cde">RepositoryConnection</a> != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  {</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    TArray&lt;FMagneticParameterDTO&gt; repositoryDatas{};</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">const</span> int32 dataNum = RepositoryConnection-&gt;FindAll(repositoryDatas);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">const</span> int32 dataNum = <a class="code hl_variable" href="class_s_magnetic_param_edit_panel_widget.html#a80d7b605d82f2e8cff85f47fce705cde">RepositoryConnection</a>-&gt;FindAll(repositoryDatas);</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordflow">for</span> (int32 idx = 0; idx &lt; dataNum; ++idx)</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    {</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>      <span class="keywordtype">float</span> test = repositoryDatas[idx].MagneticCharge;</div>
@@ -159,18 +159,29 @@ $(function(){initNavTree('_s_magnetic_param_edit_panel_widget_8cpp_source.html',
 </div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="keywordtype">void</span> SMagneticParamEditPanelWidget::SetRepository(RepositoryTypePtr InRepositoryConnection)</div>
+<div class="foldopen" id="foldopen00067" data-start="{" data-end="}">
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="class_s_magnetic_param_edit_panel_widget.html#af46a733150a4743b14fb6f60e89a5e6e">   67</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_s_magnetic_param_edit_panel_widget.html#af46a733150a4743b14fb6f60e89a5e6e">SMagneticParamEditPanelWidget::SetRepository</a>(<a class="code hl_typedef" href="class_s_magnetic_param_edit_panel_widget.html#af9f358bfe3b0b32af948dae30f7bddbd">RepositoryTypePtr</a> InRepositoryConnection)</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>{</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  RepositoryConnection = InRepositoryConnection;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  <a class="code hl_variable" href="class_s_magnetic_param_edit_panel_widget.html#a80d7b605d82f2e8cff85f47fce705cde">RepositoryConnection</a> = InRepositoryConnection;</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>}</div>
+</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="keywordtype">void</span> SMagneticParamEditPanelWidget::ResetRepository()</div>
+<div class="foldopen" id="foldopen00072" data-start="{" data-end="}">
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="class_s_magnetic_param_edit_panel_widget.html#ad6e0b766a4d966f3c6006faad89e98de">   72</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_s_magnetic_param_edit_panel_widget.html#ad6e0b766a4d966f3c6006faad89e98de">SMagneticParamEditPanelWidget::ResetRepository</a>()</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>{</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  RepositoryConnection = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  <a class="code hl_variable" href="class_s_magnetic_param_edit_panel_widget.html#a80d7b605d82f2e8cff85f47fce705cde">RepositoryConnection</a> = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>}</div>
+</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="preprocessor">#undef LOCTEXT_NAMESPACE</span></div>
+<div class="ttc" id="a_i_a_r_repository_interface_8h_html"><div class="ttname"><a href="_i_a_r_repository_interface_8h.html">IARRepositoryInterface.h</a></div></div>
+<div class="ttc" id="a_magnetic_parameter_d_t_o_8h_html"><div class="ttname"><a href="_magnetic_parameter_d_t_o_8h.html">MagneticParameterDTO.h</a></div></div>
+<div class="ttc" id="a_s_magnetic_param_edit_panel_widget_8h_html"><div class="ttname"><a href="_s_magnetic_param_edit_panel_widget_8h.html">SMagneticParamEditPanelWidget.h</a></div></div>
+<div class="ttc" id="aclass_s_magnetic_param_edit_panel_widget_html_a80d7b605d82f2e8cff85f47fce705cde"><div class="ttname"><a href="class_s_magnetic_param_edit_panel_widget.html#a80d7b605d82f2e8cff85f47fce705cde">SMagneticParamEditPanelWidget::RepositoryConnection</a></div><div class="ttdeci">RepositoryTypePtr RepositoryConnection</div><div class="ttdef"><b>Definition</b> <a href="_s_magnetic_param_edit_panel_widget_8h_source.html#l00053">SMagneticParamEditPanelWidget.h:53</a></div></div>
+<div class="ttc" id="aclass_s_magnetic_param_edit_panel_widget_html_ad6e0b766a4d966f3c6006faad89e98de"><div class="ttname"><a href="class_s_magnetic_param_edit_panel_widget.html#ad6e0b766a4d966f3c6006faad89e98de">SMagneticParamEditPanelWidget::ResetRepository</a></div><div class="ttdeci">void ResetRepository()</div><div class="ttdef"><b>Definition</b> <a href="#l00072">SMagneticParamEditPanelWidget.cpp:72</a></div></div>
 <div class="ttc" id="aclass_s_magnetic_param_edit_panel_widget_html_ad9bb8572159e84591e44598f7da0d66e"><div class="ttname"><a href="class_s_magnetic_param_edit_panel_widget.html#ad9bb8572159e84591e44598f7da0d66e">SMagneticParamEditPanelWidget::Construct</a></div><div class="ttdeci">void Construct(const FArguments &amp;InArgs)</div><div class="ttdef"><b>Definition</b> <a href="#l00013">SMagneticParamEditPanelWidget.cpp:13</a></div></div>
+<div class="ttc" id="aclass_s_magnetic_param_edit_panel_widget_html_af46a733150a4743b14fb6f60e89a5e6e"><div class="ttname"><a href="class_s_magnetic_param_edit_panel_widget.html#af46a733150a4743b14fb6f60e89a5e6e">SMagneticParamEditPanelWidget::SetRepository</a></div><div class="ttdeci">void SetRepository(RepositoryTypePtr InRepositoryConnection)</div><div class="ttdef"><b>Definition</b> <a href="#l00067">SMagneticParamEditPanelWidget.cpp:67</a></div></div>
+<div class="ttc" id="aclass_s_magnetic_param_edit_panel_widget_html_af9f358bfe3b0b32af948dae30f7bddbd"><div class="ttname"><a href="class_s_magnetic_param_edit_panel_widget.html#af9f358bfe3b0b32af948dae30f7bddbd">SMagneticParamEditPanelWidget::RepositoryTypePtr</a></div><div class="ttdeci">RepositoryType * RepositoryTypePtr</div><div class="ttdef"><b>Definition</b> <a href="_s_magnetic_param_edit_panel_widget_8h_source.html#l00034">SMagneticParamEditPanelWidget.h:34</a></div></div>
 <div class="ttc" id="astruct_a_r_ranger_1_1_physics_1_1_f_magnetic_parameter_d_t_o_html"><div class="ttname"><a href="struct_a_r_ranger_1_1_physics_1_1_f_magnetic_parameter_d_t_o.html">ARRanger::Physics::FMagneticParameterDTO</a></div><div class="ttdef"><b>Definition</b> <a href="_magnetic_parameter_d_t_o_8h_source.html#l00013">MagneticParameterDTO.h:14</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -178,7 +189,7 @@ $(function(){initNavTree('_s_magnetic_param_edit_panel_widget_8cpp_source.html',
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="dir_db4b63894235d986ff0886d3d7147fc4.html">GithubRepository</a></li><li class="navelem"><a href="dir_b7f76808a72ae9b06e23f4ba1d7ec8e0.html">ARRanger</a></li><li class="navelem"><a href="dir_22deff83e5e51399b4644a6ac5e50e58.html">Source</a></li><li class="navelem"><a href="dir_b1f31d90d2a5911a91151fd74ddfcc6d.html">ARRangerEditor</a></li><li class="navelem"><a href="dir_9ff807e0bf40c074c8e40c7fab738312.html">Private</a></li><li class="navelem"><a href="dir_a0d04fd278543f237a9cc8ee0c10d8db.html">MagneticParamEdit</a></li><li class="navelem"><b>SMagneticParamEditPanelWidget.cpp</b></li>
+    <li class="navelem"><a href="dir_db4b63894235d986ff0886d3d7147fc4.html">GithubRepository</a></li><li class="navelem"><a href="dir_b7f76808a72ae9b06e23f4ba1d7ec8e0.html">ARRanger</a></li><li class="navelem"><a href="dir_22deff83e5e51399b4644a6ac5e50e58.html">Source</a></li><li class="navelem"><a href="dir_b1f31d90d2a5911a91151fd74ddfcc6d.html">ARRangerEditor</a></li><li class="navelem"><a href="dir_9ff807e0bf40c074c8e40c7fab738312.html">Private</a></li><li class="navelem"><a href="dir_a0d04fd278543f237a9cc8ee0c10d8db.html">MagneticParamEdit</a></li><li class="navelem"><a href="_s_magnetic_param_edit_panel_widget_8cpp.html">SMagneticParamEditPanelWidget.cpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>

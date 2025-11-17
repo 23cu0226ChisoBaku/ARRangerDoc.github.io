@@ -91,6 +91,8 @@ $(function(){initNavTree('class_i_audio_player.html','','class_i_audio_player-me
   <div class="headertitle"><div class="title">IAudioPlayer Class Reference<span class="mlabels"><span class="mlabel abstract">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_i_audio_player_8h_source.html">IAudioPlayer.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for IAudioPlayer:</div>
 <div class="dyncontent">
@@ -104,19 +106,77 @@ Inheritance diagram for IAudioPlayer:</div>
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae2d871b7c86d92914fe64fc3bd935b29" id="r_ae2d871b7c86d92914fe64fc3bd935b29"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_f_sound_effect_handle.html">FSoundEffectHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae2d871b7c86d92914fe64fc3bd935b29">PlaySE3D</a> (const FString &amp;, float Pitch=1.0f, const FVector &amp;location=FVector::ZeroVector)=0</td></tr>
-<tr class="memitem:a501f79d92403f43cededdc31d90c6763" id="r_a501f79d92403f43cededdc31d90c6763"><td class="memItemLeft" align="right" valign="top"><a id="a501f79d92403f43cededdc31d90c6763" name="a501f79d92403f43cededdc31d90c6763"></a>
-virtual <a class="el" href="class_f_sound_effect_handle.html">FSoundEffectHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>PlaySE</b> (const FString &amp;, float Pitch=1.0f)=0</td></tr>
-<tr class="memitem:a27ee65d5a85878f902c8b390243e193a" id="r_a27ee65d5a85878f902c8b390243e193a"><td class="memItemLeft" align="right" valign="top"><a id="a27ee65d5a85878f902c8b390243e193a" name="a27ee65d5a85878f902c8b390243e193a"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>StopSE</b> (const <a class="el" href="class_f_sound_effect_handle.html">FSoundEffectHandle</a> &amp;)=0</td></tr>
-<tr class="memitem:a52215535bc20c713651467e75d1ec796" id="r_a52215535bc20c713651467e75d1ec796"><td class="memItemLeft" align="right" valign="top"><a id="a52215535bc20c713651467e75d1ec796" name="a52215535bc20c713651467e75d1ec796"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>PlayBGM</b> (const FString &amp;, float Pitch=1.0f)=0</td></tr>
-<tr class="memitem:afa69b4795b9c8de8cbc41325686297d9" id="r_afa69b4795b9c8de8cbc41325686297d9"><td class="memItemLeft" align="right" valign="top"><a id="afa69b4795b9c8de8cbc41325686297d9" name="afa69b4795b9c8de8cbc41325686297d9"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>StopBGM</b> ()=0</td></tr>
+<tr class="memitem:a501f79d92403f43cededdc31d90c6763" id="r_a501f79d92403f43cededdc31d90c6763"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_f_sound_effect_handle.html">FSoundEffectHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a501f79d92403f43cededdc31d90c6763">PlaySE</a> (const FString &amp;, float Pitch=1.0f)=0</td></tr>
+<tr class="memitem:a27ee65d5a85878f902c8b390243e193a" id="r_a27ee65d5a85878f902c8b390243e193a"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a27ee65d5a85878f902c8b390243e193a">StopSE</a> (const <a class="el" href="class_f_sound_effect_handle.html">FSoundEffectHandle</a> &amp;)=0</td></tr>
+<tr class="memitem:a52215535bc20c713651467e75d1ec796" id="r_a52215535bc20c713651467e75d1ec796"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a52215535bc20c713651467e75d1ec796">PlayBGM</a> (const FString &amp;, float Pitch=1.0f)=0</td></tr>
+<tr class="memitem:afa69b4795b9c8de8cbc41325686297d9" id="r_afa69b4795b9c8de8cbc41325686297d9"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afa69b4795b9c8de8cbc41325686297d9">StopBGM</a> ()=0</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock">
 <p class="definition">Definition at line <a class="el" href="_i_audio_player_8h_source.html#l00023">23</a> of file <a class="el" href="_i_audio_player_8h_source.html">IAudioPlayer.h</a>.</p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="a52215535bc20c713651467e75d1ec796" name="a52215535bc20c713651467e75d1ec796"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52215535bc20c713651467e75d1ec796">&#9670;&#160;</a></span>PlayBGM()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void IAudioPlayer::PlayBGM </td>
+          <td>(</td>
+          <td class="paramtype">const FString &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>Pitch</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1.0f</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="class_u_a_r_audio_system.html#adca66de5df58b84df0ae00e3a052d86d">UARAudioSystem</a>.</p>
+
+</div>
+</div>
+<a id="a501f79d92403f43cededdc31d90c6763" name="a501f79d92403f43cededdc31d90c6763"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a501f79d92403f43cededdc31d90c6763">&#9670;&#160;</a></span>PlaySE()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_f_sound_effect_handle.html">FSoundEffectHandle</a> IAudioPlayer::PlaySE </td>
+          <td>(</td>
+          <td class="paramtype">const FString &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>Pitch</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1.0f</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="class_u_a_r_audio_system.html#afb53f03b013b31a08f11907b5c0db844">UARAudioSystem</a>.</p>
+
+</div>
+</div>
 <a id="ae2d871b7c86d92914fe64fc3bd935b29" name="ae2d871b7c86d92914fe64fc3bd935b29"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae2d871b7c86d92914fe64fc3bd935b29">&#9670;&#160;</a></span>PlaySE3D()</h2>
 
@@ -153,8 +213,62 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>StopBGM</b> (
 
 </div>
 </div>
+<a id="afa69b4795b9c8de8cbc41325686297d9" name="afa69b4795b9c8de8cbc41325686297d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa69b4795b9c8de8cbc41325686297d9">&#9670;&#160;</a></span>StopBGM()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool IAudioPlayer::StopBGM </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="class_u_a_r_audio_system.html#ac28013baefa35dd87eee55f4cb765523">UARAudioSystem</a>.</p>
+
+</div>
+</div>
+<a id="a27ee65d5a85878f902c8b390243e193a" name="a27ee65d5a85878f902c8b390243e193a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27ee65d5a85878f902c8b390243e193a">&#9670;&#160;</a></span>StopSE()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool IAudioPlayer::StopSE </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_f_sound_effect_handle.html">FSoundEffectHandle</a> &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="class_u_a_r_audio_system.html#a7ff780396b2e2fb7f97d15c48953a0a6">UARAudioSystem</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>H:/GithubRepository/ARRanger/Source/ARRanger/Public/AudioSystem/<a class="el" href="_i_audio_player_8h_source.html">IAudioPlayer.h</a></li>
+<li>D:/GithubRepository/ARRanger/Source/ARRanger/Public/AudioSystem/<a class="el" href="_i_audio_player_8h_source.html">IAudioPlayer.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

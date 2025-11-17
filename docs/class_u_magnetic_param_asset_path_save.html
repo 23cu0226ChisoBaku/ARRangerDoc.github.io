@@ -91,6 +91,8 @@ $(function(){initNavTree('class_u_magnetic_param_asset_path_save.html','','class
   <div class="headertitle"><div class="title">UMagneticParamAssetPathSave Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_magnetic_param_asset_path_save_8h_source.html">MagneticParamAssetPathSave.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for UMagneticParamAssetPathSave:</div>
 <div class="dyncontent">
@@ -102,6 +104,11 @@ Inheritance diagram for UMagneticParamAssetPathSave:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a596373c5ce49bd5285436a559b77b1e5" id="r_a596373c5ce49bd5285436a559b77b1e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a596373c5ce49bd5285436a559b77b1e5">Save</a> (const FString &amp;NewAssetPath, bool bForceUpdateAssetView=true)</td></tr>
 <tr class="memitem:af59a2b2a0f23bc2999415d8333134303" id="r_af59a2b2a0f23bc2999415d8333134303"><td class="memItemLeft" align="right" valign="top">FString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af59a2b2a0f23bc2999415d8333134303">GetAssetPath</a> () const</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a0ad25a50a6572c7ef23328d2ea930921" id="r_a0ad25a50a6572c7ef23328d2ea930921"><td class="memItemLeft" align="right" valign="top">FString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ad25a50a6572c7ef23328d2ea930921">MagneticParamListAssetPath</a></td></tr>
+<tr class="memitem:a049c9907c32b75cb95ce8d67f2233e2c" id="r_a049c9907c32b75cb95ce8d67f2233e2c"><td class="memItemLeft" align="right" valign="top">TSoftObjectPtr&lt; class UDataAsset &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a049c9907c32b75cb95ce8d67f2233e2c">TargetAsset_ViewOnly</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -123,10 +130,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_magnetic_param_asset_path_save_8cpp_source.html#l00019">19</a> of file <a class="el" href="_magnetic_param_asset_path_save_8cpp_source.html">MagneticParamAssetPathSave.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   20</span>{</div>
-<div class="line"><span class="lineno">   21</span>  <span class="keywordflow">return</span> MagneticParamListAssetPath;</div>
-<div class="line"><span class="lineno">   22</span>}</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a596373c5ce49bd5285436a559b77b1e5" name="a596373c5ce49bd5285436a559b77b1e5"></a>
@@ -149,26 +153,61 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_magnetic_param_asset_path_save_8cpp_source.html#l00003">3</a> of file <a class="el" href="_magnetic_param_asset_path_save_8cpp_source.html">MagneticParamAssetPathSave.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">    4</span>{</div>
-<div class="line"><span class="lineno">    5</span>  <span class="keywordflow">if</span> (MagneticParamListAssetPath == NewAssetPath)</div>
-<div class="line"><span class="lineno">    6</span>  {</div>
-<div class="line"><span class="lineno">    7</span>    UE_LOG(LogTemp, Warning, TEXT(<span class="stringliteral">&quot;Will not save because path is same.Path: [%s]&quot;</span>), *NewAssetPath);</div>
-<div class="line"><span class="lineno">    8</span>    <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">    9</span>  }</div>
-<div class="line"><span class="lineno">   10</span> </div>
-<div class="line"><span class="lineno">   11</span>  MagneticParamListAssetPath = NewAssetPath;</div>
-<div class="line"><span class="lineno">   12</span> </div>
-<div class="line"><span class="lineno">   13</span>  <span class="keywordflow">if</span> (bForceUpdateAssetView)</div>
-<div class="line"><span class="lineno">   14</span>  {</div>
-<div class="line"><span class="lineno">   15</span>    TargetAsset_ViewOnly = TSoftObjectPtr{ FSoftObjectPath{MagneticParamListAssetPath} };</div>
-<div class="line"><span class="lineno">   16</span>  }</div>
-<div class="line"><span class="lineno">   17</span>}</div>
-</div><!-- fragment -->
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
+<a id="a0ad25a50a6572c7ef23328d2ea930921" name="a0ad25a50a6572c7ef23328d2ea930921"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ad25a50a6572c7ef23328d2ea930921">&#9670;&#160;</a></span>MagneticParamListAssetPath</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FString UMagneticParamAssetPathSave::MagneticParamListAssetPath</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_magnetic_param_asset_path_save_8h_source.html#l00016">16</a> of file <a class="el" href="_magnetic_param_asset_path_save_8h_source.html">MagneticParamAssetPathSave.h</a>.</p>
+
+</div>
+</div>
+<a id="a049c9907c32b75cb95ce8d67f2233e2c" name="a049c9907c32b75cb95ce8d67f2233e2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a049c9907c32b75cb95ce8d67f2233e2c">&#9670;&#160;</a></span>TargetAsset_ViewOnly</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TSoftObjectPtr&lt;class UDataAsset&gt; UMagneticParamAssetPathSave::TargetAsset_ViewOnly</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_magnetic_param_asset_path_save_8h_source.html#l00019">19</a> of file <a class="el" href="_magnetic_param_asset_path_save_8h_source.html">MagneticParamAssetPathSave.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>H:/GithubRepository/ARRanger/Source/ARRangerEditor/Private/MagneticParamEdit/<a class="el" href="_magnetic_param_asset_path_save_8h_source.html">MagneticParamAssetPathSave.h</a></li>
-<li>H:/GithubRepository/ARRanger/Source/ARRangerEditor/Private/MagneticParamEdit/<a class="el" href="_magnetic_param_asset_path_save_8cpp_source.html">MagneticParamAssetPathSave.cpp</a></li>
+<li>D:/GithubRepository/ARRanger/Source/ARRangerEditor/Private/MagneticParamEdit/<a class="el" href="_magnetic_param_asset_path_save_8h_source.html">MagneticParamAssetPathSave.h</a></li>
+<li>D:/GithubRepository/ARRanger/Source/ARRangerEditor/Private/MagneticParamEdit/<a class="el" href="_magnetic_param_asset_path_save_8cpp_source.html">MagneticParamAssetPathSave.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

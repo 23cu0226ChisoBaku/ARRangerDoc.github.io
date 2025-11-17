@@ -91,6 +91,8 @@ $(function(){initNavTree('class_f_a_r_ranger_editor_module.html','','class_f_a_r
   <div class="headertitle"><div class="title">FARRangerEditorModule Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_a_r_ranger_editor_module_8h_source.html">ARRangerEditorModule.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for FARRangerEditorModule:</div>
 <div class="dyncontent">
@@ -102,11 +104,168 @@ Inheritance diagram for FARRangerEditorModule:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a043735e8ea696ed2622e569e1ca19959" id="r_a043735e8ea696ed2622e569e1ca19959"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a043735e8ea696ed2622e569e1ca19959">StartupModule</a> () override</td></tr>
 <tr class="memitem:acfbf0c97e9c1ca37ea891ec52de77257" id="r_acfbf0c97e9c1ca37ea891ec52de77257"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acfbf0c97e9c1ca37ea891ec52de77257">ShutdownModule</a> () override</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a3c5f616e4b1328ba76bda8fcc5a500dd" id="r_a3c5f616e4b1328ba76bda8fcc5a500dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3c5f616e4b1328ba76bda8fcc5a500dd">RegisterPropertyTypeCustomizations</a> ()</td></tr>
+<tr class="memitem:a8338113b2252cfae4125cf9750636164" id="r_a8338113b2252cfae4125cf9750636164"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8338113b2252cfae4125cf9750636164">RegisterCustomPropertyTypeLayout</a> (FName PropertyTypeName, FOnGetPropertyTypeCustomizationInstance PropertyTypeLayoutDelegate)</td></tr>
+<tr class="memitem:adaa97e2d63f28da258a68d6c77945edb" id="r_adaa97e2d63f28da258a68d6c77945edb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adaa97e2d63f28da258a68d6c77945edb">RegisterComponentVisualizers</a> ()</td></tr>
+<tr class="memitem:acad8753795da3d47b866a004b7bed935" id="r_acad8753795da3d47b866a004b7bed935"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acad8753795da3d47b866a004b7bed935">RegisterCustomComponentVisualizer</a> (FName ClassName, TSharedPtr&lt; FComponentVisualizer &gt; VisualizerPtr)</td></tr>
+<tr class="memitem:a9261d01a25ba43a9fe080641be1480e3" id="r_a9261d01a25ba43a9fe080641be1480e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9261d01a25ba43a9fe080641be1480e3">UnregisterComponentVisualizers</a> ()</td></tr>
+<tr class="memitem:a2ad5341f6516fed08732c97039180032" id="r_a2ad5341f6516fed08732c97039180032"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2ad5341f6516fed08732c97039180032">ExtendAnimEditor</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ad6d57c3fd3a0ecfc1f424b571421d8a5" id="r_ad6d57c3fd3a0ecfc1f424b571421d8a5"><td class="memItemLeft" align="right" valign="top">TSet&lt; FName &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad6d57c3fd3a0ecfc1f424b571421d8a5">m_registeredPropertyTypes</a></td></tr>
+<tr class="memitem:a5cefb76912da4476f4f4022acb1dc12f" id="r_a5cefb76912da4476f4f4022acb1dc12f"><td class="memItemLeft" align="right" valign="top">TSet&lt; FName &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5cefb76912da4476f4f4022acb1dc12f">m_registeredComponentVisualizerTypes</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock">
 <p class="definition">Definition at line <a class="el" href="_a_r_ranger_editor_module_8h_source.html#l00009">9</a> of file <a class="el" href="_a_r_ranger_editor_module_8h_source.html">ARRangerEditorModule.h</a>.</p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="a2ad5341f6516fed08732c97039180032" name="a2ad5341f6516fed08732c97039180032"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ad5341f6516fed08732c97039180032">&#9670;&#160;</a></span>ExtendAnimEditor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FARRangerEditorModule::ExtendAnimEditor </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_a_r_ranger_editor_module_8cpp_source.html#l00136">136</a> of file <a class="el" href="_a_r_ranger_editor_module_8cpp_source.html">ARRangerEditorModule.cpp</a>.</p>
+
+</div>
+</div>
+<a id="adaa97e2d63f28da258a68d6c77945edb" name="adaa97e2d63f28da258a68d6c77945edb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adaa97e2d63f28da258a68d6c77945edb">&#9670;&#160;</a></span>RegisterComponentVisualizers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FARRangerEditorModule::RegisterComponentVisualizers </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_a_r_ranger_editor_module_8cpp_source.html#l00107">107</a> of file <a class="el" href="_a_r_ranger_editor_module_8cpp_source.html">ARRangerEditorModule.cpp</a>.</p>
+
+</div>
+</div>
+<a id="acad8753795da3d47b866a004b7bed935" name="acad8753795da3d47b866a004b7bed935"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acad8753795da3d47b866a004b7bed935">&#9670;&#160;</a></span>RegisterCustomComponentVisualizer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FARRangerEditorModule::RegisterCustomComponentVisualizer </td>
+          <td>(</td>
+          <td class="paramtype">FName</td>          <td class="paramname"><span class="paramname"><em>ClassName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TSharedPtr&lt; FComponentVisualizer &gt;</td>          <td class="paramname"><span class="paramname"><em>VisualizerPtr</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_a_r_ranger_editor_module_8cpp_source.html#l00112">112</a> of file <a class="el" href="_a_r_ranger_editor_module_8cpp_source.html">ARRangerEditorModule.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8338113b2252cfae4125cf9750636164" name="a8338113b2252cfae4125cf9750636164"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8338113b2252cfae4125cf9750636164">&#9670;&#160;</a></span>RegisterCustomPropertyTypeLayout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FARRangerEditorModule::RegisterCustomPropertyTypeLayout </td>
+          <td>(</td>
+          <td class="paramtype">FName</td>          <td class="paramname"><span class="paramname"><em>PropertyTypeName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FOnGetPropertyTypeCustomizationInstance</td>          <td class="paramname"><span class="paramname"><em>PropertyTypeLayoutDelegate</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_a_r_ranger_editor_module_8cpp_source.html#l00098">98</a> of file <a class="el" href="_a_r_ranger_editor_module_8cpp_source.html">ARRangerEditorModule.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3c5f616e4b1328ba76bda8fcc5a500dd" name="a3c5f616e4b1328ba76bda8fcc5a500dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c5f616e4b1328ba76bda8fcc5a500dd">&#9670;&#160;</a></span>RegisterPropertyTypeCustomizations()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FARRangerEditorModule::RegisterPropertyTypeCustomizations </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_a_r_ranger_editor_module_8cpp_source.html#l00093">93</a> of file <a class="el" href="_a_r_ranger_editor_module_8cpp_source.html">ARRangerEditorModule.cpp</a>.</p>
+
+</div>
+</div>
 <a id="acfbf0c97e9c1ca37ea891ec52de77257" name="acfbf0c97e9c1ca37ea891ec52de77257"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acfbf0c97e9c1ca37ea891ec52de77257">&#9670;&#160;</a></span>ShutdownModule()</h2>
 
@@ -131,21 +290,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_a_r_ranger_editor_module_8cpp_source.html#l00077">77</a> of file <a class="el" href="_a_r_ranger_editor_module_8cpp_source.html">ARRangerEditorModule.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   78</span>{</div>
-<div class="line"><span class="lineno">   79</span>  <span class="keywordflow">if</span> (FModuleManager::Get().IsModuleLoaded(PROPERTY_EDITOR_NAME))</div>
-<div class="line"><span class="lineno">   80</span>  {</div>
-<div class="line"><span class="lineno">   81</span>    FPropertyEditorModule&amp; propertyModule = FModuleManager::GetModuleChecked&lt;FPropertyEditorModule&gt;(PROPERTY_EDITOR_NAME);</div>
-<div class="line"><span class="lineno">   82</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; propertyTypeName : m_registeredPropertyTypes)</div>
-<div class="line"><span class="lineno">   83</span>    {</div>
-<div class="line"><span class="lineno">   84</span>      propertyModule.UnregisterCustomPropertyTypeLayout(propertyTypeName);</div>
-<div class="line"><span class="lineno">   85</span>    }</div>
-<div class="line"><span class="lineno">   86</span> </div>
-<div class="line"><span class="lineno">   87</span>    propertyModule.NotifyCustomizationModuleChanged();</div>
-<div class="line"><span class="lineno">   88</span>  }</div>
-<div class="line"><span class="lineno">   89</span> </div>
-<div class="line"><span class="lineno">   90</span> </div>
-<div class="line"><span class="lineno">   91</span>}</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a043735e8ea696ed2622e569e1ca19959" name="a043735e8ea696ed2622e569e1ca19959"></a>
@@ -172,23 +317,88 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_a_r_ranger_editor_module_8cpp_source.html#l00064">64</a> of file <a class="el" href="_a_r_ranger_editor_module_8cpp_source.html">ARRangerEditorModule.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   65</span>{</div>
-<div class="line"><span class="lineno">   66</span>  RegisterComponentVisualizers();</div>
-<div class="line"><span class="lineno">   67</span> </div>
-<div class="line"><span class="lineno">   68</span>  RegisterPropertyTypeCustomizations();</div>
-<div class="line"><span class="lineno">   69</span> </div>
-<div class="line"><span class="lineno">   70</span>  FPropertyEditorModule&amp; propertyModule = FModuleManager::GetModuleChecked&lt;FPropertyEditorModule&gt;(PROPERTY_EDITOR_NAME);</div>
-<div class="line"><span class="lineno">   71</span>  propertyModule.NotifyCustomizationModuleChanged();</div>
-<div class="line"><span class="lineno">   72</span> </div>
-<div class="line"><span class="lineno">   73</span>  ExtendAnimEditor();</div>
-<div class="line"><span class="lineno">   74</span> </div>
-<div class="line"><span class="lineno">   75</span>}</div>
-</div><!-- fragment -->
+
+</div>
+</div>
+<a id="a9261d01a25ba43a9fe080641be1480e3" name="a9261d01a25ba43a9fe080641be1480e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9261d01a25ba43a9fe080641be1480e3">&#9670;&#160;</a></span>UnregisterComponentVisualizers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FARRangerEditorModule::UnregisterComponentVisualizers </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_a_r_ranger_editor_module_8cpp_source.html#l00125">125</a> of file <a class="el" href="_a_r_ranger_editor_module_8cpp_source.html">ARRangerEditorModule.cpp</a>.</p>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
+<a id="a5cefb76912da4476f4f4022acb1dc12f" name="a5cefb76912da4476f4f4022acb1dc12f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cefb76912da4476f4f4022acb1dc12f">&#9670;&#160;</a></span>m_registeredComponentVisualizerTypes</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TSet&lt; FName &gt; FARRangerEditorModule::m_registeredComponentVisualizerTypes</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_a_r_ranger_editor_module_8h_source.html#l00031">31</a> of file <a class="el" href="_a_r_ranger_editor_module_8h_source.html">ARRangerEditorModule.h</a>.</p>
+
+</div>
+</div>
+<a id="ad6d57c3fd3a0ecfc1f424b571421d8a5" name="ad6d57c3fd3a0ecfc1f424b571421d8a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6d57c3fd3a0ecfc1f424b571421d8a5">&#9670;&#160;</a></span>m_registeredPropertyTypes</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TSet&lt; FName &gt; FARRangerEditorModule::m_registeredPropertyTypes</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_a_r_ranger_editor_module_8h_source.html#l00029">29</a> of file <a class="el" href="_a_r_ranger_editor_module_8h_source.html">ARRangerEditorModule.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>H:/GithubRepository/ARRanger/Source/ARRangerEditor/Public/<a class="el" href="_a_r_ranger_editor_module_8h_source.html">ARRangerEditorModule.h</a></li>
-<li>H:/GithubRepository/ARRanger/Source/ARRangerEditor/Private/<a class="el" href="_a_r_ranger_editor_module_8cpp_source.html">ARRangerEditorModule.cpp</a></li>
+<li>D:/GithubRepository/ARRanger/Source/ARRangerEditor/Public/<a class="el" href="_a_r_ranger_editor_module_8h_source.html">ARRangerEditorModule.h</a></li>
+<li>D:/GithubRepository/ARRanger/Source/ARRangerEditor/Private/<a class="el" href="_a_r_ranger_editor_module_8cpp_source.html">ARRangerEditorModule.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

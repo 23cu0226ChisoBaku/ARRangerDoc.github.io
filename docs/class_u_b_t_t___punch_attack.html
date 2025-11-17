@@ -91,6 +91,8 @@ $(function(){initNavTree('class_u_b_t_t___punch_attack.html','','class_u_b_t_t__
   <div class="headertitle"><div class="title">UBTT_PunchAttack Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_b_t_t___punch_attack_8h_source.html">BTT_PunchAttack.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for UBTT_PunchAttack:</div>
 <div class="dyncontent">
@@ -100,6 +102,7 @@ Inheritance diagram for UBTT_PunchAttack:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ab86b9690c67591c510e5a6579bbf889d" id="r_ab86b9690c67591c510e5a6579bbf889d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab86b9690c67591c510e5a6579bbf889d">UBTT_PunchAttack</a> ()</td></tr>
 <tr class="memitem:aade63ce6803e76272484e4b165a77ab9" id="r_aade63ce6803e76272484e4b165a77ab9"><td class="memItemLeft" align="right" valign="top">virtual EBTNodeResult::Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aade63ce6803e76272484e4b165a77ab9">ExecuteTask</a> (UBehaviorTreeComponent &amp;OwnerComp, uint8 *NodeMemory) override</td></tr>
 <tr class="memitem:a1f7959b0f414d75ce333626b4f1c623f" id="r_a1f7959b0f414d75ce333626b4f1c623f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1f7959b0f414d75ce333626b4f1c623f">OnMontageEnded</a> (UAnimMontage *Montage, bool bInterrupted, UBehaviorTreeComponent *OwnerComp)</td></tr>
 </table><table class="memberdecls">
@@ -131,10 +134,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_b_t_t___punch_attack_8cpp_source.html#l00010">10</a> of file <a class="el" href="_b_t_t___punch_attack_8cpp_source.html">BTT_PunchAttack.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   11</span>{</div>
-<div class="line"><span class="lineno">   12</span>    NodeName = TEXT(<span class="stringliteral">&quot;Punch Attack&quot;</span>);</div>
-<div class="line"><span class="lineno">   13</span>}</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
@@ -166,33 +166,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_b_t_t___punch_attack_8cpp_source.html#l00015">15</a> of file <a class="el" href="_b_t_t___punch_attack_8cpp_source.html">BTT_PunchAttack.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   16</span>{</div>
-<div class="line"><span class="lineno">   17</span>  <span class="keywordflow">if</span> (AttackMontage == <span class="keyword">nullptr</span>)</div>
-<div class="line"><span class="lineno">   18</span>  {</div>
-<div class="line"><span class="lineno">   19</span>    <span class="keywordflow">return</span> EBTNodeResult::Failed;</div>
-<div class="line"><span class="lineno">   20</span>  }</div>
-<div class="line"><span class="lineno">   21</span> </div>
-<div class="line"><span class="lineno">   22</span>  AAIController* AIController = OwnerComp.GetAIOwner();</div>
-<div class="line"><span class="lineno">   23</span>  <span class="keywordflow">if</span> (AIController != <span class="keyword">nullptr</span>)</div>
-<div class="line"><span class="lineno">   24</span>  {</div>
-<div class="line"><span class="lineno">   25</span>    <span class="keywordflow">if</span> (ACharacter* AICharacter = Cast&lt;ACharacter&gt;(AIController-&gt;GetPawn()))</div>
-<div class="line"><span class="lineno">   26</span>    {</div>
-<div class="line"><span class="lineno">   27</span>      <span class="keywordflow">if</span> (UAnimInstance* AnimInstance = AICharacter-&gt;GetMesh()-&gt;GetAnimInstance())</div>
-<div class="line"><span class="lineno">   28</span>      {</div>
-<div class="line"><span class="lineno">   29</span>        AnimInstance-&gt;Montage_Play(AttackMontage);</div>
-<div class="line"><span class="lineno">   30</span>  </div>
-<div class="line"><span class="lineno">   31</span>        FOnMontageEnded EndDelegate;</div>
-<div class="line"><span class="lineno">   32</span>        EndDelegate.BindUObject(<span class="keyword">this</span>, &amp;UBTT_PunchAttack::OnMontageEnded, &amp;OwnerComp);</div>
-<div class="line"><span class="lineno">   33</span>        AnimInstance-&gt;Montage_SetEndDelegate(EndDelegate, AttackMontage);</div>
-<div class="line"><span class="lineno">   34</span>  </div>
-<div class="line"><span class="lineno">   35</span>        <span class="keywordflow">return</span> EBTNodeResult::InProgress;       </div>
-<div class="line"><span class="lineno">   36</span>      }</div>
-<div class="line"><span class="lineno">   37</span>    }</div>
-<div class="line"><span class="lineno">   38</span>  }</div>
-<div class="line"><span class="lineno">   39</span> </div>
-<div class="line"><span class="lineno">   40</span>  <span class="keywordflow">return</span> EBTNodeResult::Failed;</div>
-<div class="line"><span class="lineno">   41</span>}</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a1f7959b0f414d75ce333626b4f1c623f" name="a1f7959b0f414d75ce333626b4f1c623f"></a>
@@ -220,10 +194,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_b_t_t___punch_attack_8cpp_source.html#l00043">43</a> of file <a class="el" href="_b_t_t___punch_attack_8cpp_source.html">BTT_PunchAttack.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   44</span>{</div>
-<div class="line"><span class="lineno">   45</span>  FinishLatentTask(*OwnerComp, EBTNodeResult::Succeeded);</div>
-<div class="line"><span class="lineno">   46</span>}</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
@@ -348,8 +319,8 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>H:/GithubRepository/ARRanger/Source/ARRanger/Public/Enemy/BTT/<a class="el" href="_b_t_t___punch_attack_8h_source.html">BTT_PunchAttack.h</a></li>
-<li>H:/GithubRepository/ARRanger/Source/ARRanger/Private/Enemy/<a class="el" href="_b_t_t___punch_attack_8cpp_source.html">BTT_PunchAttack.cpp</a></li>
+<li>D:/GithubRepository/ARRanger/Source/ARRanger/Public/Enemy/BTT/<a class="el" href="_b_t_t___punch_attack_8h_source.html">BTT_PunchAttack.h</a></li>
+<li>D:/GithubRepository/ARRanger/Source/ARRanger/Private/Enemy/<a class="el" href="_b_t_t___punch_attack_8cpp_source.html">BTT_PunchAttack.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

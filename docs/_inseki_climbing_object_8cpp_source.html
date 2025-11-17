@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ARRanger: H:/GithubRepository/ARRanger/Source/ARRanger/Private/Magnetic/InsekiClimbingObject.cpp Source File</title>
+<title>ARRanger: D:/GithubRepository/ARRanger/Source/ARRanger/Private/Magnetic/InsekiClimbingObject.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -91,44 +91,58 @@ $(function(){initNavTree('_inseki_climbing_object_8cpp_source.html','',''); });
   <div class="headertitle"><div class="title">InsekiClimbingObject.cpp</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;Magnetic/InsekiClimbingObject.h&quot;</span></div>
+<a href="_inseki_climbing_object_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;<a class="code" href="_inseki_climbing_object_8h.html">Magnetic/InsekiClimbingObject.h</a>&quot;</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;Components/BoxComponent.h&quot;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>AInsekiClimbingObject::AInsekiClimbingObject()</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    : ClimbTrigger(nullptr)</div>
+<div class="foldopen" id="foldopen00005" data-start="{" data-end="}">
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_a_inseki_climbing_object.html#a5dd0a55f74a3bbf4b70cb14d64de23a6">    5</a></span><a class="code hl_function" href="class_a_inseki_climbing_object.html#a5dd0a55f74a3bbf4b70cb14d64de23a6">AInsekiClimbingObject::AInsekiClimbingObject</a>()</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    : <a class="code hl_variable" href="class_a_inseki_climbing_object.html#ac56505c104316671b13f8aa43219487a">ClimbTrigger</a>(nullptr)</div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>{</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    PrimaryActorTick.bCanEverTick = <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    ClimbTrigger = CreateDefaultSubobject&lt;UBoxComponent&gt;(TEXT(<span class="stringliteral">&quot;ClimbTrigger&quot;</span>));</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    RootComponent = ClimbTrigger;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <a class="code hl_variable" href="class_a_inseki_climbing_object.html#ac56505c104316671b13f8aa43219487a">ClimbTrigger</a> = CreateDefaultSubobject&lt;UBoxComponent&gt;(TEXT(<span class="stringliteral">&quot;ClimbTrigger&quot;</span>));</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    RootComponent = <a class="code hl_variable" href="class_a_inseki_climbing_object.html#ac56505c104316671b13f8aa43219487a">ClimbTrigger</a>;</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    ClimbTrigger-&gt;SetCollisionProfileName(TEXT(<span class="stringliteral">&quot;Trigger&quot;</span>));</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    ClimbTrigger-&gt;SetGenerateOverlapEvents(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <a class="code hl_variable" href="class_a_inseki_climbing_object.html#ac56505c104316671b13f8aa43219487a">ClimbTrigger</a>-&gt;SetCollisionProfileName(TEXT(<span class="stringliteral">&quot;Trigger&quot;</span>));</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <a class="code hl_variable" href="class_a_inseki_climbing_object.html#ac56505c104316671b13f8aa43219487a">ClimbTrigger</a>-&gt;SetGenerateOverlapEvents(<span class="keyword">true</span>);</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>}</div>
+</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keywordtype">void</span> AInsekiClimbingObject::BeginPlay()</div>
+<div class="foldopen" id="foldopen00017" data-start="{" data-end="}">
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_a_inseki_climbing_object.html#a05447537194cfa13aeb42c9ee2935395">   17</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_a_inseki_climbing_object.html#a05447537194cfa13aeb42c9ee2935395">AInsekiClimbingObject::BeginPlay</a>()</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>{</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    Super::BeginPlay();</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>}</div>
+</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keywordtype">void</span> AInsekiClimbingObject::Tick(<span class="keywordtype">float</span> DeltaTime)</div>
+<div class="foldopen" id="foldopen00022" data-start="{" data-end="}">
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_a_inseki_climbing_object.html#acd5c7d771e0e3a37d6cf6942808e33a1">   22</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_a_inseki_climbing_object.html#acd5c7d771e0e3a37d6cf6942808e33a1">AInsekiClimbingObject::Tick</a>(<span class="keywordtype">float</span> DeltaTime)</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>{</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    Super::Tick(DeltaTime);</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>}</div>
+</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>FVector AInsekiClimbingObject::GetClimbNormal()</div>
+<div class="foldopen" id="foldopen00027" data-start="{" data-end="}">
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="class_a_inseki_climbing_object.html#a522bc5a953d62bc303ca5c38b2ece4e0">   27</a></span>FVector <a class="code hl_function" href="class_a_inseki_climbing_object.html#a522bc5a953d62bc303ca5c38b2ece4e0">AInsekiClimbingObject::GetClimbNormal</a>()</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>{</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="comment">// �f�t�H���g�ł͏����</span></div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordflow">return</span> GetActorUpVector();</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>}</div>
+</div>
+<div class="ttc" id="a_inseki_climbing_object_8h_html"><div class="ttname"><a href="_inseki_climbing_object_8h.html">InsekiClimbingObject.h</a></div></div>
+<div class="ttc" id="aclass_a_inseki_climbing_object_html_a05447537194cfa13aeb42c9ee2935395"><div class="ttname"><a href="class_a_inseki_climbing_object.html#a05447537194cfa13aeb42c9ee2935395">AInsekiClimbingObject::BeginPlay</a></div><div class="ttdeci">virtual void BeginPlay() override</div><div class="ttdef"><b>Definition</b> <a href="#l00017">InsekiClimbingObject.cpp:17</a></div></div>
+<div class="ttc" id="aclass_a_inseki_climbing_object_html_a522bc5a953d62bc303ca5c38b2ece4e0"><div class="ttname"><a href="class_a_inseki_climbing_object.html#a522bc5a953d62bc303ca5c38b2ece4e0">AInsekiClimbingObject::GetClimbNormal</a></div><div class="ttdeci">FVector GetClimbNormal()</div><div class="ttdef"><b>Definition</b> <a href="#l00027">InsekiClimbingObject.cpp:27</a></div></div>
+<div class="ttc" id="aclass_a_inseki_climbing_object_html_a5dd0a55f74a3bbf4b70cb14d64de23a6"><div class="ttname"><a href="class_a_inseki_climbing_object.html#a5dd0a55f74a3bbf4b70cb14d64de23a6">AInsekiClimbingObject::AInsekiClimbingObject</a></div><div class="ttdeci">AInsekiClimbingObject()</div><div class="ttdef"><b>Definition</b> <a href="#l00005">InsekiClimbingObject.cpp:5</a></div></div>
+<div class="ttc" id="aclass_a_inseki_climbing_object_html_ac56505c104316671b13f8aa43219487a"><div class="ttname"><a href="class_a_inseki_climbing_object.html#ac56505c104316671b13f8aa43219487a">AInsekiClimbingObject::ClimbTrigger</a></div><div class="ttdeci">class UBoxComponent * ClimbTrigger</div><div class="ttdef"><b>Definition</b> <a href="_inseki_climbing_object_8h_source.html#l00018">InsekiClimbingObject.h:18</a></div></div>
+<div class="ttc" id="aclass_a_inseki_climbing_object_html_acd5c7d771e0e3a37d6cf6942808e33a1"><div class="ttname"><a href="class_a_inseki_climbing_object.html#acd5c7d771e0e3a37d6cf6942808e33a1">AInsekiClimbingObject::Tick</a></div><div class="ttdeci">virtual void Tick(float DeltaTime) override</div><div class="ttdef"><b>Definition</b> <a href="#l00022">InsekiClimbingObject.cpp:22</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="dir_db4b63894235d986ff0886d3d7147fc4.html">GithubRepository</a></li><li class="navelem"><a href="dir_b7f76808a72ae9b06e23f4ba1d7ec8e0.html">ARRanger</a></li><li class="navelem"><a href="dir_22deff83e5e51399b4644a6ac5e50e58.html">Source</a></li><li class="navelem"><a href="dir_765ba4c51118e23b05fd567f675cd5c3.html">ARRanger</a></li><li class="navelem"><a href="dir_01ca0bd49608f959e3dafd2b38229153.html">Private</a></li><li class="navelem"><a href="dir_69fa43efb7e6ea0413985402a3f5f423.html">Magnetic</a></li><li class="navelem"><b>InsekiClimbingObject.cpp</b></li>
+    <li class="navelem"><a href="dir_db4b63894235d986ff0886d3d7147fc4.html">GithubRepository</a></li><li class="navelem"><a href="dir_b7f76808a72ae9b06e23f4ba1d7ec8e0.html">ARRanger</a></li><li class="navelem"><a href="dir_22deff83e5e51399b4644a6ac5e50e58.html">Source</a></li><li class="navelem"><a href="dir_765ba4c51118e23b05fd567f675cd5c3.html">ARRanger</a></li><li class="navelem"><a href="dir_01ca0bd49608f959e3dafd2b38229153.html">Private</a></li><li class="navelem"><a href="dir_69fa43efb7e6ea0413985402a3f5f423.html">Magnetic</a></li><li class="navelem"><a href="_inseki_climbing_object_8cpp.html">InsekiClimbingObject.cpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>

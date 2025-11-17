@@ -91,6 +91,8 @@ $(function(){initNavTree('class_a_battle_event_field.html','','class_a_battle_ev
   <div class="headertitle"><div class="title">ABattleEventField Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_battle_event_field_8h_source.html">BattleEventField.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for ABattleEventField:</div>
 <div class="dyncontent">
@@ -100,6 +102,7 @@ Inheritance diagram for ABattleEventField:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ac376337be91edfa78a361aee192692fc" id="r_ac376337be91edfa78a361aee192692fc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac376337be91edfa78a361aee192692fc">ABattleEventField</a> ()</td></tr>
 <tr class="memitem:a89306bf0dc480cf14cd75fb9dbf1c928" id="r_a89306bf0dc480cf14cd75fb9dbf1c928"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a89306bf0dc480cf14cd75fb9dbf1c928">BeginPlay</a> () override</td></tr>
 <tr class="memitem:a829b4dd1f1b875a77fe13f5bcdafdb5d" id="r_a829b4dd1f1b875a77fe13f5bcdafdb5d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a829b4dd1f1b875a77fe13f5bcdafdb5d">Tick</a> (float deltaTime) override</td></tr>
 <tr class="memitem:aa05f64d12608f1d7bb6633e122f4daaf" id="r_aa05f64d12608f1d7bb6633e122f4daaf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa05f64d12608f1d7bb6633e122f4daaf">ActiveEventField</a> ()</td></tr>
@@ -110,16 +113,50 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a4cd50653416a31cd148d154eed54069b"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在のフィールドの残りの敵数を取得  <br /></td></tr>
 <tr class="memitem:aa23f9bda30096cb94e03856bab1ccdc0" id="r_aa23f9bda30096cb94e03856bab1ccdc0"><td class="memItemLeft" align="right" valign="top">int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa23f9bda30096cb94e03856bab1ccdc0">GetRemainingEnemiesInPhase</a> () const</td></tr>
 <tr class="memdesc:aa23f9bda30096cb94e03856bab1ccdc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在のフェーズの残りの敵数を取得  <br /></td></tr>
-<tr class="memitem:a0dc88df26f6b04e8d55bf7269c75fdc7" id="r_a0dc88df26f6b04e8d55bf7269c75fdc7"><td class="memItemLeft" align="right" valign="top"><a id="a0dc88df26f6b04e8d55bf7269c75fdc7" name="a0dc88df26f6b04e8d55bf7269c75fdc7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>EventEndingPhase</b> (int32 currentPhase)</td></tr>
-<tr class="memitem:a619b7f8bc4073007ad987254a3d1f574" id="r_a619b7f8bc4073007ad987254a3d1f574"><td class="memItemLeft" align="right" valign="top"><a id="a619b7f8bc4073007ad987254a3d1f574" name="a619b7f8bc4073007ad987254a3d1f574"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>EventStartingPhase</b> (int32 currentPhase)</td></tr>
+<tr class="memitem:a0dc88df26f6b04e8d55bf7269c75fdc7" id="r_a0dc88df26f6b04e8d55bf7269c75fdc7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0dc88df26f6b04e8d55bf7269c75fdc7">EventEndingPhase</a> (int32 currentPhase)</td></tr>
+<tr class="memitem:a619b7f8bc4073007ad987254a3d1f574" id="r_a619b7f8bc4073007ad987254a3d1f574"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a619b7f8bc4073007ad987254a3d1f574">EventStartingPhase</a> (int32 currentPhase)</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:ad7320d60e7baeaaccc7a3389027d591e" id="r_ad7320d60e7baeaaccc7a3389027d591e"><td class="memItemLeft" align="right" valign="top">FOnSpawnersCollected&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad7320d60e7baeaaccc7a3389027d591e">OnSpawnersCollected</a></td></tr>
 <tr class="memitem:a4d037d3cefe724e5e45596388317875b" id="r_a4d037d3cefe724e5e45596388317875b"><td class="memItemLeft" align="right" valign="top">FBattleEventStarted&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d037d3cefe724e5e45596388317875b">OnBattleEventStart</a></td></tr>
 <tr class="memitem:ae4ecb30457ca3272de72aa718e98ab71" id="r_ae4ecb30457ca3272de72aa718e98ab71"><td class="memItemLeft" align="right" valign="top">FBattleEventEnded&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae4ecb30457ca3272de72aa718e98ab71">OnBattleEventEnd</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a305810251279dc1f0dc983c14ef63a67" id="r_a305810251279dc1f0dc983c14ef63a67"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a305810251279dc1f0dc983c14ef63a67">OnEnemyDestroyed</a> ()</td></tr>
+<tr class="memdesc:a305810251279dc1f0dc983c14ef63a67"><td class="mdescLeft">&#160;</td><td class="mdescRight">敵が破棄された際に呼ばれる  <br /></td></tr>
+<tr class="memitem:a910e9d54320ff15667bd1af067b19097" id="r_a910e9d54320ff15667bd1af067b19097"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a910e9d54320ff15667bd1af067b19097">OnFieldBeginOverlap</a> (UPrimitiveComponent *overlappedComp, AActor *otherActor, UPrimitiveComponent *otherComp, int32 otherBodyIndex, bool bFromSweep, const FHitResult &amp;sweepResult)</td></tr>
+<tr class="memdesc:a910e9d54320ff15667bd1af067b19097"><td class="mdescLeft">&#160;</td><td class="mdescRight">オーバーラップ関数  <br /></td></tr>
+<tr class="memitem:a5b0a58fd4d7865289838420653706723" id="r_a5b0a58fd4d7865289838420653706723"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b0a58fd4d7865289838420653706723">GetPrimitiveComponents</a> ()</td></tr>
+<tr class="memdesc:a5b0a58fd4d7865289838420653706723"><td class="mdescLeft">&#160;</td><td class="mdescRight">自身のバトルフィールドの範囲(コリジョン)を取得する関数  <br /></td></tr>
+<tr class="memitem:a58cb52a57b39aa2b8ccbd2360e54ccaa" id="r_a58cb52a57b39aa2b8ccbd2360e54ccaa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a58cb52a57b39aa2b8ccbd2360e54ccaa">CollectSpawners</a> ()</td></tr>
+<tr class="memdesc:a58cb52a57b39aa2b8ccbd2360e54ccaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">範囲内のスポナーを取得する  <br /></td></tr>
+<tr class="memitem:a9e50019932905d043f6bdf837b77d6b3" id="r_a9e50019932905d043f6bdf837b77d6b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9e50019932905d043f6bdf837b77d6b3">ActiveCageCollision</a> (bool enable)</td></tr>
+<tr class="memdesc:a9e50019932905d043f6bdf837b77d6b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">見えない壁(鳥かご)の当たり判定を 有効 / 無効にする  <br /></td></tr>
+<tr class="memitem:ae56e263805b8732f3715cebf036b7c6c" id="r_ae56e263805b8732f3715cebf036b7c6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae56e263805b8732f3715cebf036b7c6c">StartNextPhase</a> ()</td></tr>
+<tr class="memdesc:ae56e263805b8732f3715cebf036b7c6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">次のフェーズがスタートするときに処理  <br /></td></tr>
+<tr class="memitem:acaad12bcb2745c4a64d3466b748857fe" id="r_acaad12bcb2745c4a64d3466b748857fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acaad12bcb2745c4a64d3466b748857fe">RequestSpawn</a> ()</td></tr>
+<tr class="memdesc:acaad12bcb2745c4a64d3466b748857fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">範囲内のスポナーに対して敵の生成を促す  <br /></td></tr>
+<tr class="memitem:a9ce1508589468cbde9836d811be7ae80" id="r_a9ce1508589468cbde9836d811be7ae80"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9ce1508589468cbde9836d811be7ae80">OnStartBattleEvent</a> ()</td></tr>
+<tr class="memdesc:a9ce1508589468cbde9836d811be7ae80"><td class="mdescLeft">&#160;</td><td class="mdescRight">バトルイベントが開始されるときの処理  <br /></td></tr>
+<tr class="memitem:acf727ce242762fb62c7c1dc87cb8ab41" id="r_acf727ce242762fb62c7c1dc87cb8ab41"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf727ce242762fb62c7c1dc87cb8ab41">OnEndBattleEvent</a> ()</td></tr>
+<tr class="memdesc:acf727ce242762fb62c7c1dc87cb8ab41"><td class="mdescLeft">&#160;</td><td class="mdescRight">バトルイベントが終了するときの処理  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a510b1864d8164fc943fc600672611a1a" id="r_a510b1864d8164fc943fc600672611a1a"><td class="memItemLeft" align="right" valign="top">TArray&lt; TObjectPtr&lt; <a class="el" href="class_a_battle_event_cage.html">ABattleEventCage</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a510b1864d8164fc943fc600672611a1a">m_CageActors</a></td></tr>
+<tr class="memitem:a6c50c00c273d4c92a7091956822ebcd8" id="r_a6c50c00c273d4c92a7091956822ebcd8"><td class="memItemLeft" align="right" valign="top">TObjectPtr&lt; ANiagaraActor &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6c50c00c273d4c92a7091956822ebcd8">m_BarrierEffectActor</a></td></tr>
+<tr class="memitem:a512d6e0617eee7cffb134b2424b487e3" id="r_a512d6e0617eee7cffb134b2424b487e3"><td class="memItemLeft" align="right" valign="top">TSet&lt; TObjectPtr&lt; <a class="el" href="class_a_enemy_spawner.html">AEnemySpawner</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a512d6e0617eee7cffb134b2424b487e3">m_Spawners</a></td></tr>
+<tr class="memitem:a93ca35276f8afc5270ee9d44f161c2d3" id="r_a93ca35276f8afc5270ee9d44f161c2d3"><td class="memItemLeft" align="right" valign="top">TSet&lt; TObjectPtr&lt; UPrimitiveComponent &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a93ca35276f8afc5270ee9d44f161c2d3">m_PrimitiveComponents</a></td></tr>
+<tr class="memitem:a7d5dd0c19a4e3d4a20fbadd1b711946f" id="r_a7d5dd0c19a4e3d4a20fbadd1b711946f"><td class="memItemLeft" align="right" valign="top">TArray&lt; <a class="el" href="_spawn_phase_8h.html#af248dcfa91d52bb9d10f8c477ab85e0d">ESpawnPhase</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7d5dd0c19a4e3d4a20fbadd1b711946f">m_FieldPhases</a></td></tr>
+<tr class="memitem:a04deeac3c87b723471d70fff2a906a25" id="r_a04deeac3c87b723471d70fff2a906a25"><td class="memItemLeft" align="right" valign="top">TObjectPtr&lt; AActor &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a04deeac3c87b723471d70fff2a906a25">m_Player</a></td></tr>
+<tr class="memitem:a7c812cfbed397e24432994f752970d96" id="r_a7c812cfbed397e24432994f752970d96"><td class="memItemLeft" align="right" valign="top">TObjectPtr&lt; UNiagaraComponent &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7c812cfbed397e24432994f752970d96">m_BarrierEffectComp</a></td></tr>
+<tr class="memitem:a09be362504d38401610b174099462705" id="r_a09be362504d38401610b174099462705"><td class="memItemLeft" align="right" valign="top">int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a09be362504d38401610b174099462705">m_CurrentPhaseIndex</a></td></tr>
+<tr class="memitem:a02d4ae7f722210b7fae1a0c40f4a8eb4" id="r_a02d4ae7f722210b7fae1a0c40f4a8eb4"><td class="memItemLeft" align="right" valign="top">int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a02d4ae7f722210b7fae1a0c40f4a8eb4">m_RemainingEnemiesInField</a></td></tr>
+<tr class="memitem:a1ec5564c2afd3edda3bac64faf331072" id="r_a1ec5564c2afd3edda3bac64faf331072"><td class="memItemLeft" align="right" valign="top">int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ec5564c2afd3edda3bac64faf331072">m_RemainingEnemiesInPhase</a></td></tr>
+<tr class="memitem:a8e0437862966fa1724fe84faaeb44a44" id="r_a8e0437862966fa1724fe84faaeb44a44"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8e0437862966fa1724fe84faaeb44a44">m_IsActiveField</a></td></tr>
+<tr class="memitem:ab56807eef006a9d55e2e1fb4fa908e69" id="r_ab56807eef006a9d55e2e1fb4fa908e69"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab56807eef006a9d55e2e1fb4fa908e69">m_EventTriggered</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -141,20 +178,45 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_battle_event_field_8cpp_source.html#l00017">17</a> of file <a class="el" href="_battle_event_field_8cpp_source.html">BattleEventField.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   18</span>    : m_Player(<span class="keyword">nullptr</span>)               </div>
-<div class="line"><span class="lineno">   19</span>    , m_RemainingEnemiesInField(0) </div>
-<div class="line"><span class="lineno">   20</span>    , m_RemainingEnemiesInPhase(0)    </div>
-<div class="line"><span class="lineno">   21</span>    , m_CurrentPhaseIndex(0)</div>
-<div class="line"><span class="lineno">   22</span>    , m_IsActiveField(<span class="keyword">false</span>)</div>
-<div class="line"><span class="lineno">   23</span>    , m_EventTriggered(<span class="keyword">false</span>)</div>
-<div class="line"><span class="lineno">   24</span> </div>
-<div class="line"><span class="lineno">   25</span>{</div>
-<div class="line"><span class="lineno">   26</span>    PrimaryActorTick.bCanEverTick = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">   27</span>}</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="a9e50019932905d043f6bdf837b77d6b3" name="a9e50019932905d043f6bdf837b77d6b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e50019932905d043f6bdf837b77d6b3">&#9670;&#160;</a></span>ActiveCageCollision()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ABattleEventField::ActiveCageCollision </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>enable</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>見えない壁(鳥かご)の当たり判定を 有効 / 無効にする </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">有効</td><td>or 無効 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_battle_event_field_8cpp_source.html#l00235">235</a> of file <a class="el" href="_battle_event_field_8cpp_source.html">BattleEventField.cpp</a>.</p>
+
+</div>
+</div>
 <a id="aa05f64d12608f1d7bb6633e122f4daaf" name="aa05f64d12608f1d7bb6633e122f4daaf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa05f64d12608f1d7bb6633e122f4daaf">&#9670;&#160;</a></span>ActiveEventField()</h2>
 
@@ -173,20 +235,7 @@ Public Attributes</h2></td></tr>
 <p>イベントフィールドを稼働させる </p>
 
 <p class="definition">Definition at line <a class="el" href="_battle_event_field_8cpp_source.html#l00171">171</a> of file <a class="el" href="_battle_event_field_8cpp_source.html">BattleEventField.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  172</span>{</div>
-<div class="line"><span class="lineno">  173</span>    <span class="keywordflow">if</span> (m_IsActiveField)</div>
-<div class="line"><span class="lineno">  174</span>    {</div>
-<div class="line"><span class="lineno">  175</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  176</span>    }</div>
-<div class="line"><span class="lineno">  177</span> </div>
-<div class="line"><span class="lineno">  178</span>    <span class="comment">/*現在のフェーズ数を更新*/</span></div>
-<div class="line"><span class="lineno">  179</span>    ++m_CurrentPhaseIndex;</div>
-<div class="line"><span class="lineno">  180</span> </div>
-<div class="line"><span class="lineno">  181</span>    m_IsActiveField = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  182</span>    <span class="comment">/*スポナーに敵の生成を促す*/</span></div>
-<div class="line"><span class="lineno">  183</span>    RequestSpawn();</div>
-<div class="line"><span class="lineno">  184</span>}</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a89306bf0dc480cf14cd75fb9dbf1c928" name="a89306bf0dc480cf14cd75fb9dbf1c928"></a>
@@ -213,41 +262,99 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_battle_event_field_8cpp_source.html#l00029">29</a> of file <a class="el" href="_battle_event_field_8cpp_source.html">BattleEventField.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   30</span>{</div>
-<div class="line"><span class="lineno">   31</span>    Super::BeginPlay();</div>
-<div class="line"><span class="lineno">   32</span> </div>
-<div class="line"><span class="lineno">   33</span>    <span class="comment">/*Tick処理を無効化*/</span></div>
-<div class="line"><span class="lineno">   34</span>    SetActorTickEnabled(<span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">   35</span> </div>
-<div class="line"><span class="lineno">   36</span>    <span class="comment">/*バトルフィールド範囲用（コリジョン）コンポーネントを全て取得*/</span></div>
-<div class="line"><span class="lineno">   37</span>    GetPrimitiveComponents();</div>
-<div class="line"><span class="lineno">   38</span> </div>
-<div class="line"><span class="lineno">   39</span>    <span class="comment">/*各範囲コリンジョンコンポーネントににオーバーラップ関数をバインド*/</span></div>
-<div class="line"><span class="lineno">   40</span>    <span class="keywordflow">for</span> (UPrimitiveComponent* primComp : m_PrimitiveComponents)</div>
-<div class="line"><span class="lineno">   41</span>    {</div>
-<div class="line"><span class="lineno">   42</span>        <span class="keywordflow">if</span> (primComp == <span class="keyword">nullptr</span>) </div>
-<div class="line"><span class="lineno">   43</span>        {</div>
-<div class="line"><span class="lineno">   44</span>            <span class="keywordflow">continue</span>;</div>
-<div class="line"><span class="lineno">   45</span>        }</div>
-<div class="line"><span class="lineno">   46</span>        primComp-&gt;OnComponentBeginOverlap.AddDynamic(<span class="keyword">this</span>, &amp;ABattleEventField::OnFieldBeginOverlap);</div>
-<div class="line"><span class="lineno">   47</span>    }</div>
-<div class="line"><span class="lineno">   48</span> </div>
-<div class="line"><span class="lineno">   49</span>    <span class="comment">/*バリアエフェクトのコンポーネントを取得する*/</span> </div>
-<div class="line"><span class="lineno">   50</span>    <span class="keywordflow">if</span>(m_BarrierEffectActor != <span class="keyword">nullptr</span>)</div>
-<div class="line"><span class="lineno">   51</span>    {</div>
-<div class="line"><span class="lineno">   52</span>        UNiagaraComponent* niagaraComp = m_BarrierEffectActor-&gt;GetNiagaraComponent();</div>
-<div class="line"><span class="lineno">   53</span>        <span class="keywordflow">if</span> (niagaraComp)</div>
-<div class="line"><span class="lineno">   54</span>        {</div>
-<div class="line"><span class="lineno">   55</span>            m_BarrierEffectComp = niagaraComp;</div>
-<div class="line"><span class="lineno">   56</span>            <span class="comment">/*最初はナイアガラを再生しない*/</span></div>
-<div class="line"><span class="lineno">   57</span>            m_BarrierEffectComp-&gt;bAutoActivate = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">   58</span>        }</div>
-<div class="line"><span class="lineno">   59</span>    }</div>
-<div class="line"><span class="lineno">   60</span>    </div>
-<div class="line"><span class="lineno">   61</span>    <span class="comment">/*次フレームで範囲内のスポナーを取得*/</span></div>
-<div class="line"><span class="lineno">   62</span>    GetWorld()-&gt;GetTimerManager().SetTimerForNextTick(<span class="keyword">this</span>, &amp;ABattleEventField::CollectSpawners);</div>
-<div class="line"><span class="lineno">   63</span>}</div>
-</div><!-- fragment -->
+
+</div>
+</div>
+<a id="a58cb52a57b39aa2b8ccbd2360e54ccaa" name="a58cb52a57b39aa2b8ccbd2360e54ccaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58cb52a57b39aa2b8ccbd2360e54ccaa">&#9670;&#160;</a></span>CollectSpawners()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ABattleEventField::CollectSpawners </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>範囲内のスポナーを取得する </p>
+
+<p class="definition">Definition at line <a class="el" href="_battle_event_field_8cpp_source.html#l00118">118</a> of file <a class="el" href="_battle_event_field_8cpp_source.html">BattleEventField.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a0dc88df26f6b04e8d55bf7269c75fdc7" name="a0dc88df26f6b04e8d55bf7269c75fdc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0dc88df26f6b04e8d55bf7269c75fdc7">&#9670;&#160;</a></span>EventEndingPhase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ABattleEventField::EventEndingPhase </td>
+          <td>(</td>
+          <td class="paramtype">int32</td>          <td class="paramname"><span class="paramname"><em>currentPhase</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a619b7f8bc4073007ad987254a3d1f574" name="a619b7f8bc4073007ad987254a3d1f574"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a619b7f8bc4073007ad987254a3d1f574">&#9670;&#160;</a></span>EventStartingPhase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ABattleEventField::EventStartingPhase </td>
+          <td>(</td>
+          <td class="paramtype">int32</td>          <td class="paramname"><span class="paramname"><em>currentPhase</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5b0a58fd4d7865289838420653706723" name="a5b0a58fd4d7865289838420653706723"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b0a58fd4d7865289838420653706723">&#9670;&#160;</a></span>GetPrimitiveComponents()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ABattleEventField::GetPrimitiveComponents </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>自身のバトルフィールドの範囲(コリジョン)を取得する関数 </p>
+
+<p class="definition">Definition at line <a class="el" href="_battle_event_field_8cpp_source.html#l00098">98</a> of file <a class="el" href="_battle_event_field_8cpp_source.html">BattleEventField.cpp</a>.</p>
+
 </div>
 </div>
 <a id="a4cd50653416a31cd148d154eed54069b" name="a4cd50653416a31cd148d154eed54069b"></a>
@@ -277,8 +384,7 @@ Public Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>現在のフィールドの残りの敵数 </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_battle_event_field_8h_source.html#l00049">49</a> of file <a class="el" href="_battle_event_field_8h_source.html">BattleEventField.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   49</span>{ <span class="keywordflow">return</span> m_RemainingEnemiesInField;}</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="aa23f9bda30096cb94e03856bab1ccdc0" name="aa23f9bda30096cb94e03856bab1ccdc0"></a>
@@ -308,8 +414,7 @@ Public Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>現在のフェーズの残りの敵数 </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_battle_event_field_8h_source.html#l00056">56</a> of file <a class="el" href="_battle_event_field_8h_source.html">BattleEventField.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   56</span>{ <span class="keywordflow">return</span> m_RemainingEnemiesInPhase;}</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a3ba544197e827f4e1eaff5f94b2c5d68" name="a3ba544197e827f4e1eaff5f94b2c5d68"></a>
@@ -339,8 +444,207 @@ Public Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>フィールドがアクティブになったかどう </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_battle_event_field_8h_source.html#l00042">42</a> of file <a class="el" href="_battle_event_field_8h_source.html">BattleEventField.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   42</span>{ <span class="keywordflow">return</span> m_IsActiveField; }</div>
-</div><!-- fragment -->
+
+</div>
+</div>
+<a id="acf727ce242762fb62c7c1dc87cb8ab41" name="acf727ce242762fb62c7c1dc87cb8ab41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf727ce242762fb62c7c1dc87cb8ab41">&#9670;&#160;</a></span>OnEndBattleEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ABattleEventField::OnEndBattleEvent </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>バトルイベントが終了するときの処理 </p>
+
+<p class="definition">Definition at line <a class="el" href="_battle_event_field_8cpp_source.html#l00211">211</a> of file <a class="el" href="_battle_event_field_8cpp_source.html">BattleEventField.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a305810251279dc1f0dc983c14ef63a67" name="a305810251279dc1f0dc983c14ef63a67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a305810251279dc1f0dc983c14ef63a67">&#9670;&#160;</a></span>OnEnemyDestroyed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ABattleEventField::OnEnemyDestroyed </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>敵が破棄された際に呼ばれる </p>
+
+<p class="definition">Definition at line <a class="el" href="_battle_event_field_8cpp_source.html#l00291">291</a> of file <a class="el" href="_battle_event_field_8cpp_source.html">BattleEventField.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a910e9d54320ff15667bd1af067b19097" name="a910e9d54320ff15667bd1af067b19097"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a910e9d54320ff15667bd1af067b19097">&#9670;&#160;</a></span>OnFieldBeginOverlap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ABattleEventField::OnFieldBeginOverlap </td>
+          <td>(</td>
+          <td class="paramtype">UPrimitiveComponent *</td>          <td class="paramname"><span class="paramname"><em>overlappedComp</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AActor *</td>          <td class="paramname"><span class="paramname"><em>otherActor</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UPrimitiveComponent *</td>          <td class="paramname"><span class="paramname"><em>otherComp</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32</td>          <td class="paramname"><span class="paramname"><em>otherBodyIndex</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bFromSweep</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const FHitResult &amp;</td>          <td class="paramname"><span class="paramname"><em>sweepResult</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>オーバーラップ関数 </p>
+<p>オーバーラップ開始関数 </p>
+
+<p class="definition">Definition at line <a class="el" href="_battle_event_field_8cpp_source.html#l00322">322</a> of file <a class="el" href="_battle_event_field_8cpp_source.html">BattleEventField.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9ce1508589468cbde9836d811be7ae80" name="a9ce1508589468cbde9836d811be7ae80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ce1508589468cbde9836d811be7ae80">&#9670;&#160;</a></span>OnStartBattleEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ABattleEventField::OnStartBattleEvent </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>バトルイベントが開始されるときの処理 </p>
+
+<p class="definition">Definition at line <a class="el" href="_battle_event_field_8cpp_source.html#l00189">189</a> of file <a class="el" href="_battle_event_field_8cpp_source.html">BattleEventField.cpp</a>.</p>
+
+</div>
+</div>
+<a id="acaad12bcb2745c4a64d3466b748857fe" name="acaad12bcb2745c4a64d3466b748857fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acaad12bcb2745c4a64d3466b748857fe">&#9670;&#160;</a></span>RequestSpawn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ABattleEventField::RequestSpawn </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>範囲内のスポナーに対して敵の生成を促す </p>
+
+<p class="definition">Definition at line <a class="el" href="_battle_event_field_8cpp_source.html#l00251">251</a> of file <a class="el" href="_battle_event_field_8cpp_source.html">BattleEventField.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae56e263805b8732f3715cebf036b7c6c" name="ae56e263805b8732f3715cebf036b7c6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae56e263805b8732f3715cebf036b7c6c">&#9670;&#160;</a></span>StartNextPhase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ABattleEventField::StartNextPhase </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>次のフェーズがスタートするときに処理 </p>
+<p>フェーズがスタートするときに処理 </p>
+
+<p class="definition">Definition at line <a class="el" href="_battle_event_field_8cpp_source.html#l00281">281</a> of file <a class="el" href="_battle_event_field_8cpp_source.html">BattleEventField.cpp</a>.</p>
+
 </div>
 </div>
 <a id="a829b4dd1f1b875a77fe13f5bcdafdb5d" name="a829b4dd1f1b875a77fe13f5bcdafdb5d"></a>
@@ -367,38 +671,298 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_battle_event_field_8cpp_source.html#l00065">65</a> of file <a class="el" href="_battle_event_field_8cpp_source.html">BattleEventField.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   66</span>{</div>
-<div class="line"><span class="lineno">   67</span>    Super::Tick(deltaTime);</div>
-<div class="line"><span class="lineno">   68</span> </div>
-<div class="line"><span class="lineno">   69</span>    <span class="keywordflow">if</span> (m_Player == <span class="keyword">nullptr</span>)</div>
-<div class="line"><span class="lineno">   70</span>    {</div>
-<div class="line"><span class="lineno">   71</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">   72</span>    }</div>
-<div class="line"><span class="lineno">   73</span> </div>
-<div class="line"><span class="lineno">   74</span>    <span class="comment">/*どれか一つのフィールドコリジョンにプレイヤーが完全に入っているか*/</span></div>
-<div class="line"><span class="lineno">   75</span>    FBox playerBox = m_Player-&gt;GetComponentsBoundingBox();</div>
-<div class="line"><span class="lineno">   76</span>    <span class="keywordflow">for</span> (UPrimitiveComponent* primComp : m_PrimitiveComponents)</div>
-<div class="line"><span class="lineno">   77</span>    {</div>
-<div class="line"><span class="lineno">   78</span>        <span class="keywordflow">if</span> (primComp == <span class="keyword">nullptr</span>)</div>
-<div class="line"><span class="lineno">   79</span>        {</div>
-<div class="line"><span class="lineno">   80</span>            <span class="keywordflow">continue</span>;</div>
-<div class="line"><span class="lineno">   81</span>        }</div>
-<div class="line"><span class="lineno">   82</span> </div>
-<div class="line"><span class="lineno">   83</span>        FBox fieldBox = primComp-&gt;Bounds.GetBox();</div>
-<div class="line"><span class="lineno">   84</span> </div>
-<div class="line"><span class="lineno">   85</span>        <span class="comment">/*完全に入っていたらイベント開始*/</span></div>
-<div class="line"><span class="lineno">   86</span>        <span class="keywordflow">if</span> (fieldBox.IsInside(playerBox))</div>
-<div class="line"><span class="lineno">   87</span>        {</div>
-<div class="line"><span class="lineno">   88</span>            <span class="comment">/*バトルイベント開始処理*/</span></div>
-<div class="line"><span class="lineno">   89</span>            OnStartBattleEvent();</div>
-<div class="line"><span class="lineno">   90</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">   91</span>        }</div>
-<div class="line"><span class="lineno">   92</span>    }</div>
-<div class="line"><span class="lineno">   93</span>}</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
+<a id="a6c50c00c273d4c92a7091956822ebcd8" name="a6c50c00c273d4c92a7091956822ebcd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c50c00c273d4c92a7091956822ebcd8">&#9670;&#160;</a></span>m_BarrierEffectActor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TObjectPtr&lt;ANiagaraActor&gt; ABattleEventField::m_BarrierEffectActor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_battle_event_field_8h_source.html#l00133">133</a> of file <a class="el" href="_battle_event_field_8h_source.html">BattleEventField.h</a>.</p>
+
+</div>
+</div>
+<a id="a7c812cfbed397e24432994f752970d96" name="a7c812cfbed397e24432994f752970d96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c812cfbed397e24432994f752970d96">&#9670;&#160;</a></span>m_BarrierEffectComp</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TObjectPtr&lt;UNiagaraComponent&gt; ABattleEventField::m_BarrierEffectComp</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_battle_event_field_8h_source.html#l00144">144</a> of file <a class="el" href="_battle_event_field_8h_source.html">BattleEventField.h</a>.</p>
+
+</div>
+</div>
+<a id="a510b1864d8164fc943fc600672611a1a" name="a510b1864d8164fc943fc600672611a1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a510b1864d8164fc943fc600672611a1a">&#9670;&#160;</a></span>m_CageActors</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TArray&lt;TObjectPtr&lt;<a class="el" href="class_a_battle_event_cage.html">ABattleEventCage</a>&gt; &gt; ABattleEventField::m_CageActors</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_battle_event_field_8h_source.html#l00131">131</a> of file <a class="el" href="_battle_event_field_8h_source.html">BattleEventField.h</a>.</p>
+
+</div>
+</div>
+<a id="a09be362504d38401610b174099462705" name="a09be362504d38401610b174099462705"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09be362504d38401610b174099462705">&#9670;&#160;</a></span>m_CurrentPhaseIndex</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32 ABattleEventField::m_CurrentPhaseIndex</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_battle_event_field_8h_source.html#l00146">146</a> of file <a class="el" href="_battle_event_field_8h_source.html">BattleEventField.h</a>.</p>
+
+</div>
+</div>
+<a id="ab56807eef006a9d55e2e1fb4fa908e69" name="ab56807eef006a9d55e2e1fb4fa908e69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab56807eef006a9d55e2e1fb4fa908e69">&#9670;&#160;</a></span>m_EventTriggered</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ABattleEventField::m_EventTriggered</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_battle_event_field_8h_source.html#l00154">154</a> of file <a class="el" href="_battle_event_field_8h_source.html">BattleEventField.h</a>.</p>
+
+</div>
+</div>
+<a id="a7d5dd0c19a4e3d4a20fbadd1b711946f" name="a7d5dd0c19a4e3d4a20fbadd1b711946f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d5dd0c19a4e3d4a20fbadd1b711946f">&#9670;&#160;</a></span>m_FieldPhases</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TArray&lt;<a class="el" href="_spawn_phase_8h.html#af248dcfa91d52bb9d10f8c477ab85e0d">ESpawnPhase</a>&gt; ABattleEventField::m_FieldPhases</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_battle_event_field_8h_source.html#l00140">140</a> of file <a class="el" href="_battle_event_field_8h_source.html">BattleEventField.h</a>.</p>
+
+</div>
+</div>
+<a id="a8e0437862966fa1724fe84faaeb44a44" name="a8e0437862966fa1724fe84faaeb44a44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e0437862966fa1724fe84faaeb44a44">&#9670;&#160;</a></span>m_IsActiveField</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ABattleEventField::m_IsActiveField</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_battle_event_field_8h_source.html#l00152">152</a> of file <a class="el" href="_battle_event_field_8h_source.html">BattleEventField.h</a>.</p>
+
+</div>
+</div>
+<a id="a04deeac3c87b723471d70fff2a906a25" name="a04deeac3c87b723471d70fff2a906a25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04deeac3c87b723471d70fff2a906a25">&#9670;&#160;</a></span>m_Player</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TObjectPtr&lt;AActor&gt; ABattleEventField::m_Player</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_battle_event_field_8h_source.html#l00142">142</a> of file <a class="el" href="_battle_event_field_8h_source.html">BattleEventField.h</a>.</p>
+
+</div>
+</div>
+<a id="a93ca35276f8afc5270ee9d44f161c2d3" name="a93ca35276f8afc5270ee9d44f161c2d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93ca35276f8afc5270ee9d44f161c2d3">&#9670;&#160;</a></span>m_PrimitiveComponents</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TSet&lt;TObjectPtr&lt;UPrimitiveComponent&gt; &gt; ABattleEventField::m_PrimitiveComponents</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_battle_event_field_8h_source.html#l00138">138</a> of file <a class="el" href="_battle_event_field_8h_source.html">BattleEventField.h</a>.</p>
+
+</div>
+</div>
+<a id="a02d4ae7f722210b7fae1a0c40f4a8eb4" name="a02d4ae7f722210b7fae1a0c40f4a8eb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02d4ae7f722210b7fae1a0c40f4a8eb4">&#9670;&#160;</a></span>m_RemainingEnemiesInField</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32 ABattleEventField::m_RemainingEnemiesInField</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_battle_event_field_8h_source.html#l00148">148</a> of file <a class="el" href="_battle_event_field_8h_source.html">BattleEventField.h</a>.</p>
+
+</div>
+</div>
+<a id="a1ec5564c2afd3edda3bac64faf331072" name="a1ec5564c2afd3edda3bac64faf331072"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ec5564c2afd3edda3bac64faf331072">&#9670;&#160;</a></span>m_RemainingEnemiesInPhase</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32 ABattleEventField::m_RemainingEnemiesInPhase</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_battle_event_field_8h_source.html#l00150">150</a> of file <a class="el" href="_battle_event_field_8h_source.html">BattleEventField.h</a>.</p>
+
+</div>
+</div>
+<a id="a512d6e0617eee7cffb134b2424b487e3" name="a512d6e0617eee7cffb134b2424b487e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a512d6e0617eee7cffb134b2424b487e3">&#9670;&#160;</a></span>m_Spawners</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TSet&lt;TObjectPtr&lt;<a class="el" href="class_a_enemy_spawner.html">AEnemySpawner</a>&gt; &gt; ABattleEventField::m_Spawners</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_battle_event_field_8h_source.html#l00136">136</a> of file <a class="el" href="_battle_event_field_8h_source.html">BattleEventField.h</a>.</p>
+
+</div>
+</div>
 <a id="ae4ecb30457ca3272de72aa718e98ab71" name="ae4ecb30457ca3272de72aa718e98ab71"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae4ecb30457ca3272de72aa718e98ab71">&#9670;&#160;</a></span>OnBattleEventEnd</h2>
 
@@ -448,8 +1012,8 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>H:/GithubRepository/ARRanger/Source/ARRanger/Public/BattleEvent/<a class="el" href="_battle_event_field_8h_source.html">BattleEventField.h</a></li>
-<li>H:/GithubRepository/ARRanger/Source/ARRanger/Private/BattleEvent/<a class="el" href="_battle_event_field_8cpp_source.html">BattleEventField.cpp</a></li>
+<li>D:/GithubRepository/ARRanger/Source/ARRanger/Public/BattleEvent/<a class="el" href="_battle_event_field_8h_source.html">BattleEventField.h</a></li>
+<li>D:/GithubRepository/ARRanger/Source/ARRanger/Private/BattleEvent/<a class="el" href="_battle_event_field_8cpp_source.html">BattleEventField.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

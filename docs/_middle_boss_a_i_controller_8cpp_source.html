@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ARRanger: H:/GithubRepository/ARRanger/Source/ARRanger/Private/Enemy/MiddleBossAIController.cpp Source File</title>
+<title>ARRanger: D:/GithubRepository/ARRanger/Source/ARRanger/Private/Enemy/MiddleBossAIController.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -91,8 +91,8 @@ $(function(){initNavTree('_middle_boss_a_i_controller_8cpp_source.html','',''); 
   <div class="headertitle"><div class="title">MiddleBossAIController.cpp</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;Enemy/MiddleBossAIController.h&quot;</span></div>
+<a href="_middle_boss_a_i_controller_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;<a class="code" href="_middle_boss_a_i_controller_8h.html">Enemy/MiddleBossAIController.h</a>&quot;</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;BehaviorTree/BlackboardComponent.h&quot;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;BehaviorTree/BehaviorTree.h&quot;</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;Kismet/GameplayStatics.h&quot;</span></div>
@@ -101,47 +101,52 @@ $(function(){initNavTree('_middle_boss_a_i_controller_8cpp_source.html','',''); 
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;Perception/AISense_Sight.h&quot;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;Perception/AISense.h&quot;</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;Perception/AIPerceptionTypes.h&quot;</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;Enemy/Enemy_Zako.h&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="_enemy___zako_8h.html">Enemy/Enemy_Zako.h</a>&quot;</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>AMiddleBossAIController::AMiddleBossAIController()</div>
+<div class="foldopen" id="foldopen00013" data-start="{" data-end="}">
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_a_middle_boss_a_i_controller.html#afe006d951b92e3f4eda7263076f52faa">   13</a></span><a class="code hl_function" href="class_a_middle_boss_a_i_controller.html#afe006d951b92e3f4eda7263076f52faa">AMiddleBossAIController::AMiddleBossAIController</a>()</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>{</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>  <span class="keyword">static</span> ConstructorHelpers::FObjectFinder&lt;UBlackboardData&gt; BBAsset(TEXT(<span class="stringliteral">&quot;/Game/Enemy/BB_MiddleEnemy.BB_MiddleEnemy&quot;</span>));</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  <span class="keyword">static</span> ConstructorHelpers::FObjectFinder&lt;UBehaviorTree&gt; BTAsset(TEXT(<span class="stringliteral">&quot;/Game/Enemy/BT_MiddleEnemy.BT_MiddleEnemy&quot;</span>));</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  <span class="keywordflow">if</span> (BBAsset.Succeeded()) {</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>      BlackboardAsset = BBAsset.Object;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>      <a class="code hl_variable" href="class_a_zako_a_i_controller.html#aee0ef040691e695875b0a2bf63a5808b">BlackboardAsset</a> = BBAsset.Object;</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  }</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  <span class="keywordflow">if</span> (BTAsset.Succeeded()) {</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>      BehaviorTreeAsset = BTAsset.Object;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>      <a class="code hl_variable" href="class_a_zako_a_i_controller.html#aedbb7f3d23d85cfa221cf3537933f089">BehaviorTreeAsset</a> = BTAsset.Object;</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  }</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  SightConfig-&gt;SightRadius = 2000.0f;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  SightConfig-&gt;LoseSightRadius = 2500.0f;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  SightConfig-&gt;PeripheralVisionAngleDegrees = 120.0f;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  <a class="code hl_variable" href="class_a_zako_a_i_controller.html#a7e35560a95101f2bc3a9557edc4b6c2f">SightConfig</a>-&gt;SightRadius = 2000.0f;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  <a class="code hl_variable" href="class_a_zako_a_i_controller.html#a7e35560a95101f2bc3a9557edc4b6c2f">SightConfig</a>-&gt;LoseSightRadius = 2500.0f;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <a class="code hl_variable" href="class_a_zako_a_i_controller.html#a7e35560a95101f2bc3a9557edc4b6c2f">SightConfig</a>-&gt;PeripheralVisionAngleDegrees = 120.0f;</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>}</div>
+</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keywordtype">void</span> AMiddleBossAIController::BeginPlay()</div>
+<div class="foldopen" id="foldopen00033" data-start="{" data-end="}">
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="class_a_middle_boss_a_i_controller.html#a1e21fee7c95b0c5095ed8d8d5080197f">   33</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_a_middle_boss_a_i_controller.html#a1e21fee7c95b0c5095ed8d8d5080197f">AMiddleBossAIController::BeginPlay</a>()</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>{</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  Super::BeginPlay();</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <span class="keywordflow">if</span> (BlackboardAsset &amp;&amp; BehaviorTreeAsset)</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_a_zako_a_i_controller.html#aee0ef040691e695875b0a2bf63a5808b">BlackboardAsset</a> &amp;&amp; <a class="code hl_variable" href="class_a_zako_a_i_controller.html#aedbb7f3d23d85cfa221cf3537933f089">BehaviorTreeAsset</a>)</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  {</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    RunBehaviorTree(BehaviorTreeAsset);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    RunBehaviorTree(<a class="code hl_variable" href="class_a_zako_a_i_controller.html#aedbb7f3d23d85cfa221cf3537933f089">BehaviorTreeAsset</a>);</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  }</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>}</div>
+</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keywordtype">void</span> AMiddleBossAIController::StopChasing()</div>
+<div class="foldopen" id="foldopen00043" data-start="{" data-end="}">
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="class_a_middle_boss_a_i_controller.html#ab3a6540f1ef9c34bebd6936a4e13ed04">   43</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_a_middle_boss_a_i_controller.html#ab3a6540f1ef9c34bebd6936a4e13ed04">AMiddleBossAIController::StopChasing</a>()</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>{</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    UBlackboardComponent* BB = GetBlackboardComponent();</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordflow">if</span> (BB)</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    {</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>      GetWorld()-&gt;GetTimerManager().SetTimer(</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>          LostSightTimerHandle,[BB, <span class="keyword">this</span>]()</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>          <a class="code hl_variable" href="class_a_zako_a_i_controller.html#a354ddef997733cd3f24ea47e8a0fe607">LostSightTimerHandle</a>,[BB, <span class="keyword">this</span>]()</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>          {</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            BB-&gt;ClearValue(TargetActorKey);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            BB-&gt;ClearValue(<a class="code hl_variable" href="class_a_zako_a_i_controller.html#ad551f636ce833141853fe070c99baf89">TargetActorKey</a>);</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            BB-&gt;SetValueAsBool(<span class="stringliteral">&quot;IsPlayerDetected&quot;</span>, <span class="keyword">false</span>);</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>          },</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>          5.0f,</div>
@@ -149,8 +154,10 @@ $(function(){initNavTree('_middle_boss_a_i_controller_8cpp_source.html','',''); 
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>      );</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    }</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>}</div>
+</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="keywordtype">void</span> AMiddleBossAIController::BroadcastAlert(AActor* SeenActor)</div>
+<div class="foldopen" id="foldopen00060" data-start="{" data-end="}">
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="class_a_middle_boss_a_i_controller.html#abb5cf6195dcf029005f93b8d160b2226">   60</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_a_middle_boss_a_i_controller.html#abb5cf6195dcf029005f93b8d160b2226">AMiddleBossAIController::BroadcastAlert</a>(AActor* SeenActor)</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>{</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  Super::BroadcastAlert(SeenActor);</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
@@ -159,13 +166,25 @@ $(function(){initNavTree('_middle_boss_a_i_controller_8cpp_source.html','',''); 
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    BB-&gt;SetValueAsBool(<span class="stringliteral">&quot;IsEnraged&quot;</span>, <span class="keyword">true</span>);</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  }</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>}</div>
+</div>
+<div class="ttc" id="a_enemy___zako_8h_html"><div class="ttname"><a href="_enemy___zako_8h.html">Enemy_Zako.h</a></div></div>
+<div class="ttc" id="a_middle_boss_a_i_controller_8h_html"><div class="ttname"><a href="_middle_boss_a_i_controller_8h.html">MiddleBossAIController.h</a></div></div>
+<div class="ttc" id="aclass_a_middle_boss_a_i_controller_html_a1e21fee7c95b0c5095ed8d8d5080197f"><div class="ttname"><a href="class_a_middle_boss_a_i_controller.html#a1e21fee7c95b0c5095ed8d8d5080197f">AMiddleBossAIController::BeginPlay</a></div><div class="ttdeci">virtual void BeginPlay() override</div><div class="ttdef"><b>Definition</b> <a href="#l00033">MiddleBossAIController.cpp:33</a></div></div>
+<div class="ttc" id="aclass_a_middle_boss_a_i_controller_html_ab3a6540f1ef9c34bebd6936a4e13ed04"><div class="ttname"><a href="class_a_middle_boss_a_i_controller.html#ab3a6540f1ef9c34bebd6936a4e13ed04">AMiddleBossAIController::StopChasing</a></div><div class="ttdeci">virtual void StopChasing() override</div><div class="ttdef"><b>Definition</b> <a href="#l00043">MiddleBossAIController.cpp:43</a></div></div>
+<div class="ttc" id="aclass_a_middle_boss_a_i_controller_html_abb5cf6195dcf029005f93b8d160b2226"><div class="ttname"><a href="class_a_middle_boss_a_i_controller.html#abb5cf6195dcf029005f93b8d160b2226">AMiddleBossAIController::BroadcastAlert</a></div><div class="ttdeci">virtual void BroadcastAlert(AActor *SeenActor) override</div><div class="ttdef"><b>Definition</b> <a href="#l00060">MiddleBossAIController.cpp:60</a></div></div>
+<div class="ttc" id="aclass_a_middle_boss_a_i_controller_html_afe006d951b92e3f4eda7263076f52faa"><div class="ttname"><a href="class_a_middle_boss_a_i_controller.html#afe006d951b92e3f4eda7263076f52faa">AMiddleBossAIController::AMiddleBossAIController</a></div><div class="ttdeci">AMiddleBossAIController()</div><div class="ttdef"><b>Definition</b> <a href="#l00013">MiddleBossAIController.cpp:13</a></div></div>
+<div class="ttc" id="aclass_a_zako_a_i_controller_html_a354ddef997733cd3f24ea47e8a0fe607"><div class="ttname"><a href="class_a_zako_a_i_controller.html#a354ddef997733cd3f24ea47e8a0fe607">AZakoAIController::LostSightTimerHandle</a></div><div class="ttdeci">FTimerHandle LostSightTimerHandle</div><div class="ttdef"><b>Definition</b> <a href="_zako_a_i_controller_8h_source.html#l00049">ZakoAIController.h:49</a></div></div>
+<div class="ttc" id="aclass_a_zako_a_i_controller_html_a7e35560a95101f2bc3a9557edc4b6c2f"><div class="ttname"><a href="class_a_zako_a_i_controller.html#a7e35560a95101f2bc3a9557edc4b6c2f">AZakoAIController::SightConfig</a></div><div class="ttdeci">TObjectPtr&lt; UAISenseConfig_Sight &gt; SightConfig</div><div class="ttdef"><b>Definition</b> <a href="_zako_a_i_controller_8h_source.html#l00032">ZakoAIController.h:32</a></div></div>
+<div class="ttc" id="aclass_a_zako_a_i_controller_html_ad551f636ce833141853fe070c99baf89"><div class="ttname"><a href="class_a_zako_a_i_controller.html#ad551f636ce833141853fe070c99baf89">AZakoAIController::TargetActorKey</a></div><div class="ttdeci">FName TargetActorKey</div><div class="ttdef"><b>Definition</b> <a href="_zako_a_i_controller_8h_source.html#l00041">ZakoAIController.h:41</a></div></div>
+<div class="ttc" id="aclass_a_zako_a_i_controller_html_aedbb7f3d23d85cfa221cf3537933f089"><div class="ttname"><a href="class_a_zako_a_i_controller.html#aedbb7f3d23d85cfa221cf3537933f089">AZakoAIController::BehaviorTreeAsset</a></div><div class="ttdeci">TObjectPtr&lt; UBehaviorTree &gt; BehaviorTreeAsset</div><div class="ttdef"><b>Definition</b> <a href="_zako_a_i_controller_8h_source.html#l00038">ZakoAIController.h:38</a></div></div>
+<div class="ttc" id="aclass_a_zako_a_i_controller_html_aee0ef040691e695875b0a2bf63a5808b"><div class="ttname"><a href="class_a_zako_a_i_controller.html#aee0ef040691e695875b0a2bf63a5808b">AZakoAIController::BlackboardAsset</a></div><div class="ttdeci">TObjectPtr&lt; UBlackboardData &gt; BlackboardAsset</div><div class="ttdef"><b>Definition</b> <a href="_zako_a_i_controller_8h_source.html#l00035">ZakoAIController.h:35</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="dir_db4b63894235d986ff0886d3d7147fc4.html">GithubRepository</a></li><li class="navelem"><a href="dir_b7f76808a72ae9b06e23f4ba1d7ec8e0.html">ARRanger</a></li><li class="navelem"><a href="dir_22deff83e5e51399b4644a6ac5e50e58.html">Source</a></li><li class="navelem"><a href="dir_765ba4c51118e23b05fd567f675cd5c3.html">ARRanger</a></li><li class="navelem"><a href="dir_01ca0bd49608f959e3dafd2b38229153.html">Private</a></li><li class="navelem"><a href="dir_4e4d5c07696158b389eb767e6619f01b.html">Enemy</a></li><li class="navelem"><b>MiddleBossAIController.cpp</b></li>
+    <li class="navelem"><a href="dir_db4b63894235d986ff0886d3d7147fc4.html">GithubRepository</a></li><li class="navelem"><a href="dir_b7f76808a72ae9b06e23f4ba1d7ec8e0.html">ARRanger</a></li><li class="navelem"><a href="dir_22deff83e5e51399b4644a6ac5e50e58.html">Source</a></li><li class="navelem"><a href="dir_765ba4c51118e23b05fd567f675cd5c3.html">ARRanger</a></li><li class="navelem"><a href="dir_01ca0bd49608f959e3dafd2b38229153.html">Private</a></li><li class="navelem"><a href="dir_4e4d5c07696158b389eb767e6619f01b.html">Enemy</a></li><li class="navelem"><a href="_middle_boss_a_i_controller_8cpp.html">MiddleBossAIController.cpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>

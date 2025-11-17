@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ARRanger: H:/GithubRepository/ARRanger/Source/ARRanger/Public/PlayerObservation/Core/ObserverProxyRegistryMisc.h Source File</title>
+<title>ARRanger: D:/GithubRepository/ARRanger/Source/ARRanger/Public/PlayerObservation/Core/ObserverProxyRegistryMisc.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -91,16 +91,16 @@ $(function(){initNavTree('_observer_proxy_registry_misc_8h_source.html','',''); 
   <div class="headertitle"><div class="title">ObserverProxyRegistryMisc.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<a href="_observer_proxy_registry_misc_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#ifndef _AR_PLAYER_OBSERVATION_OBSERVER_PROXY_REGISTRY_MISC_</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#define _AR_PLAYER_OBSERVATION_OBSERVER_PROXY_REGISTRY_MISC_</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="_observer_proxy_registry_misc_8h.html#ab06faca793e6ea4976682fd42d8a1c25">    4</a></span><span class="preprocessor">#define _AR_PLAYER_OBSERVATION_OBSERVER_PROXY_REGISTRY_MISC_</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;type_traits&gt;</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_a_r_ranger.html">ARRanger</a></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>{</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>  <span class="keyword">class </span><a class="code hl_class" href="class_a_r_ranger_1_1_i_observer_registry.html">IObserverRegistry</a>;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>  <span class="keyword">class </span>IObserverRegistry;</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>}</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> RegistryType&gt;</div>
@@ -112,13 +112,15 @@ $(function(){initNavTree('_observer_proxy_registry_misc_8h_source.html','',''); 
 </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">template</span>&lt;<a class="code hl_concept" href="concept_registry_concept.html">RegistryConcept</a> RegistryType, <span class="keyword">typename</span>... ArgTypes&gt;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>TSharedPtr&lt;ARRanger::IObserverRegistry&gt; MakeRegistry(ArgTypes&amp;&amp;... Args)</div>
+<div class="foldopen" id="foldopen00020" data-start="{" data-end="}">
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="_observer_proxy_registry_misc_8h.html#ae6ac25a2f0d09f7872885d0b16cfaf8d">   20</a></span>TSharedPtr&lt;ARRanger::IObserverRegistry&gt; <a class="code hl_function" href="_observer_proxy_registry_misc_8h.html#ae6ac25a2f0d09f7872885d0b16cfaf8d">MakeRegistry</a>(ArgTypes&amp;&amp;... Args)</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>{</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  return ::StaticCastSharedPtr&lt;ARRanger::IObserverRegistry&gt;(::MakeShared&lt;RegistryType&gt;(::Forward&lt;ArgTypes&gt;(Args)...).ToSharedPtr());</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>}</div>
+</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#endif </span><span class="comment">// _AR_PLAYER_OBSERVATION_OBSERVER_PROXY_REGISTRY_MISC_</span></div>
-<div class="ttc" id="aclass_a_r_ranger_1_1_i_observer_registry_html"><div class="ttname"><a href="class_a_r_ranger_1_1_i_observer_registry.html">ARRanger::IObserverRegistry</a></div><div class="ttdef"><b>Definition</b> <a href="_i_observer_registry_8h_source.html#l00011">IObserverRegistry.h:12</a></div></div>
+<div class="ttc" id="a_observer_proxy_registry_misc_8h_html_ae6ac25a2f0d09f7872885d0b16cfaf8d"><div class="ttname"><a href="_observer_proxy_registry_misc_8h.html#ae6ac25a2f0d09f7872885d0b16cfaf8d">MakeRegistry</a></div><div class="ttdeci">TSharedPtr&lt; ARRanger::IObserverRegistry &gt; MakeRegistry(ArgTypes &amp;&amp;... Args)</div><div class="ttdef"><b>Definition</b> <a href="#l00020">ObserverProxyRegistryMisc.h:20</a></div></div>
 <div class="ttc" id="aconcept_registry_concept_html"><div class="ttname"><a href="concept_registry_concept.html">RegistryConcept</a></div><div class="ttdef"><b>Definition</b> <a href="#l00014">ObserverProxyRegistryMisc.h:14</a></div></div>
 <div class="ttc" id="anamespace_a_r_ranger_html"><div class="ttname"><a href="namespace_a_r_ranger.html">ARRanger</a></div><div class="ttdef"><b>Definition</b> <a href="_a_r_gameplay_tags_8cpp_source.html#l00004">ARGameplayTags.cpp:5</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -127,7 +129,7 @@ $(function(){initNavTree('_observer_proxy_registry_misc_8h_source.html','',''); 
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="dir_db4b63894235d986ff0886d3d7147fc4.html">GithubRepository</a></li><li class="navelem"><a href="dir_b7f76808a72ae9b06e23f4ba1d7ec8e0.html">ARRanger</a></li><li class="navelem"><a href="dir_22deff83e5e51399b4644a6ac5e50e58.html">Source</a></li><li class="navelem"><a href="dir_765ba4c51118e23b05fd567f675cd5c3.html">ARRanger</a></li><li class="navelem"><a href="dir_db3cb373904af9b89e7076f054460257.html">Public</a></li><li class="navelem"><a href="dir_698c3ea7eb522393dadf4b4cc2736814.html">PlayerObservation</a></li><li class="navelem"><a href="dir_38735aed14f61cc61b20c5e696b4ba5d.html">Core</a></li><li class="navelem"><b>ObserverProxyRegistryMisc.h</b></li>
+    <li class="navelem"><a href="dir_db4b63894235d986ff0886d3d7147fc4.html">GithubRepository</a></li><li class="navelem"><a href="dir_b7f76808a72ae9b06e23f4ba1d7ec8e0.html">ARRanger</a></li><li class="navelem"><a href="dir_22deff83e5e51399b4644a6ac5e50e58.html">Source</a></li><li class="navelem"><a href="dir_765ba4c51118e23b05fd567f675cd5c3.html">ARRanger</a></li><li class="navelem"><a href="dir_db3cb373904af9b89e7076f054460257.html">Public</a></li><li class="navelem"><a href="dir_698c3ea7eb522393dadf4b4cc2736814.html">PlayerObservation</a></li><li class="navelem"><a href="dir_38735aed14f61cc61b20c5e696b4ba5d.html">Core</a></li><li class="navelem"><a href="_observer_proxy_registry_misc_8h.html">ObserverProxyRegistryMisc.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>

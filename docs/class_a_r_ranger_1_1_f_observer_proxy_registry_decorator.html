@@ -91,6 +91,8 @@ $(function(){initNavTree('class_a_r_ranger_1_1_f_observer_proxy_registry_decorat
   <div class="headertitle"><div class="title">ARRanger::FObserverProxyRegistryDecorator Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_observer_proxy_registry_decorator_8h_source.html">ObserverProxyRegistryDecorator.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for ARRanger::FObserverProxyRegistryDecorator:</div>
 <div class="dyncontent">
@@ -104,12 +106,20 @@ Inheritance diagram for ARRanger::FObserverProxyRegistryDecorator:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:adde8895eaec699b6489b16c26d11471e" id="r_adde8895eaec699b6489b16c26d11471e"><td class="memItemLeft" align="right" valign="top">ARRANGER_API&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adde8895eaec699b6489b16c26d11471e">FObserverProxyRegistryDecorator</a> ()</td></tr>
 <tr class="memitem:ae055f8f6c68b814dc2fb2e4a8210a574" id="r_ae055f8f6c68b814dc2fb2e4a8210a574"><td class="memItemLeft" align="right" valign="top">ARRANGER_API&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae055f8f6c68b814dc2fb2e4a8210a574">FObserverProxyRegistryDecorator</a> (const TSharedPtr&lt; <a class="el" href="class_a_r_ranger_1_1_i_observer_registry.html">IObserverRegistry</a> &gt; &amp;Registry)</td></tr>
+<tr class="memitem:afb094e9a4270cc13dfcb51f5959e2a33" id="r_afb094e9a4270cc13dfcb51f5959e2a33"><td class="memItemLeft" align="right" valign="top">ARRANGER_API&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afb094e9a4270cc13dfcb51f5959e2a33">~FObserverProxyRegistryDecorator</a> ()</td></tr>
 <tr class="memitem:a595b2d233bb789a520cebbbc685bf3f8" id="r_a595b2d233bb789a520cebbbc685bf3f8"><td class="memItemLeft" align="right" valign="top">ARRANGER_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a595b2d233bb789a520cebbbc685bf3f8">RegisterObserverProxy</a> (const TSharedPtr&lt; <a class="el" href="class_a_r_ranger_1_1_f_observer_list_node.html">FObserverListNode</a> &gt; &amp;Observers) override final</td></tr>
+<tr class="inherit_header pub_methods_class_a_r_ranger_1_1_i_observer_registry"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_a_r_ranger_1_1_i_observer_registry')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Member Functions inherited from <a class="el" href="class_a_r_ranger_1_1_i_observer_registry.html">ARRanger::IObserverRegistry</a></td></tr>
+<tr class="memitem:a44151758364bbcba426c6c49f1889e0a inherit pub_methods_class_a_r_ranger_1_1_i_observer_registry" id="r_a44151758364bbcba426c6c49f1889e0a"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_r_ranger_1_1_i_observer_registry.html#a44151758364bbcba426c6c49f1889e0a">~IObserverRegistry</a> ()=default</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pro-methods" class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:afe32914956a0428c1faaed0e354808f1" id="r_afe32914956a0428c1faaed0e354808f1"><td class="memItemLeft" align="right" valign="top">virtual ARRANGER_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afe32914956a0428c1faaed0e354808f1">OnRegisterObserverProxy</a> (const TSharedPtr&lt; <a class="el" href="class_a_r_ranger_1_1_f_observer_list_node.html">FObserverListNode</a> &gt; &amp;Observers)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a7d43919e87458e91641914716a6f7e88" id="r_a7d43919e87458e91641914716a6f7e88"><td class="memItemLeft" align="right" valign="top">TSharedPtr&lt; <a class="el" href="class_a_r_ranger_1_1_i_observer_registry.html">IObserverRegistry</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7d43919e87458e91641914716a6f7e88">m_registry</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -131,9 +141,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_observer_proxy_registry_decorator_8cpp_source.html#l00009">9</a> of file <a class="el" href="_observer_proxy_registry_decorator_8cpp_source.html">ObserverProxyRegistryDecorator.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   10</span>  : m_registry{<span class="keyword">nullptr</span>}</div>
-<div class="line"><span class="lineno">   11</span>{ }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="ae055f8f6c68b814dc2fb2e4a8210a574" name="ae055f8f6c68b814dc2fb2e4a8210a574"></a>
@@ -160,9 +168,32 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_observer_proxy_registry_decorator_8cpp_source.html#l00013">13</a> of file <a class="el" href="_observer_proxy_registry_decorator_8cpp_source.html">ObserverProxyRegistryDecorator.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   14</span>  : m_registry{Registry}</div>
-<div class="line"><span class="lineno">   15</span>{ }</div>
-</div><!-- fragment -->
+
+</div>
+</div>
+<a id="afb094e9a4270cc13dfcb51f5959e2a33" name="afb094e9a4270cc13dfcb51f5959e2a33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb094e9a4270cc13dfcb51f5959e2a33">&#9670;&#160;</a></span>~FObserverProxyRegistryDecorator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ARRanger::FObserverProxyRegistryDecorator::~FObserverProxyRegistryDecorator </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel default">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
@@ -189,11 +220,10 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Reimplemented in <a class="el" href="class_a_r_ranger_1_1_f_sound_effect_registry.html#a161a832d086f3df4995d28a05a990af6">ARRanger::FSoundEffectRegistry</a>.</p>
+
 <p class="definition">Definition at line <a class="el" href="_observer_proxy_registry_decorator_8cpp_source.html#l00029">29</a> of file <a class="el" href="_observer_proxy_registry_decorator_8cpp_source.html">ObserverProxyRegistryDecorator.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   30</span>{</div>
-<div class="line"><span class="lineno">   31</span>  <span class="comment">// Empty implementation</span></div>
-<div class="line"><span class="lineno">   32</span>}</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a595b2d233bb789a520cebbbc685bf3f8" name="a595b2d233bb789a520cebbbc685bf3f8"></a>
@@ -220,23 +250,40 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Start of <a class="el" href="class_a_r_ranger_1_1_i_observer_registry.html">IObserverRegistry</a> interface </p>
 
-<p>Implements <a class="el" href="class_a_r_ranger_1_1_i_observer_registry.html">ARRanger::IObserverRegistry</a>.</p>
+<p>Implements <a class="el" href="class_a_r_ranger_1_1_i_observer_registry.html#af704788228e3b24e7fc7796b6b583c98">ARRanger::IObserverRegistry</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_observer_proxy_registry_decorator_8cpp_source.html#l00019">19</a> of file <a class="el" href="_observer_proxy_registry_decorator_8cpp_source.html">ObserverProxyRegistryDecorator.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   20</span>{</div>
-<div class="line"><span class="lineno">   21</span>  OnRegisterObserverProxy(Observers);</div>
-<div class="line"><span class="lineno">   22</span> </div>
-<div class="line"><span class="lineno">   23</span>  <span class="keywordflow">if</span> (m_registry.IsValid())</div>
-<div class="line"><span class="lineno">   24</span>  {</div>
-<div class="line"><span class="lineno">   25</span>    m_registry-&gt;RegisterObserverProxy(Observers);</div>
-<div class="line"><span class="lineno">   26</span>  }</div>
-<div class="line"><span class="lineno">   27</span>}</div>
-</div><!-- fragment -->
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
+<a id="a7d43919e87458e91641914716a6f7e88" name="a7d43919e87458e91641914716a6f7e88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d43919e87458e91641914716a6f7e88">&#9670;&#160;</a></span>m_registry</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TSharedPtr&lt;<a class="el" href="class_a_r_ranger_1_1_i_observer_registry.html">IObserverRegistry</a>&gt; ARRanger::FObserverProxyRegistryDecorator::m_registry</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_observer_proxy_registry_decorator_8h_source.html#l00025">25</a> of file <a class="el" href="_observer_proxy_registry_decorator_8h_source.html">ObserverProxyRegistryDecorator.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>H:/GithubRepository/ARRanger/Source/ARRanger/Public/PlayerObservation/Core/<a class="el" href="_observer_proxy_registry_decorator_8h_source.html">ObserverProxyRegistryDecorator.h</a></li>
-<li>H:/GithubRepository/ARRanger/Source/ARRanger/Private/PlayerObservation/Core/<a class="el" href="_observer_proxy_registry_decorator_8cpp_source.html">ObserverProxyRegistryDecorator.cpp</a></li>
+<li>D:/GithubRepository/ARRanger/Source/ARRanger/Public/PlayerObservation/Core/<a class="el" href="_observer_proxy_registry_decorator_8h_source.html">ObserverProxyRegistryDecorator.h</a></li>
+<li>D:/GithubRepository/ARRanger/Source/ARRanger/Private/PlayerObservation/Core/<a class="el" href="_observer_proxy_registry_decorator_8cpp_source.html">ObserverProxyRegistryDecorator.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

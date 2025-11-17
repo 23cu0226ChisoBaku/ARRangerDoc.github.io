@@ -88,38 +88,64 @@ $(function(){initNavTree('class_f_a_r_physics_tick_manager.html','','class_f_a_r
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">FARPhysicsTickManager Class Reference</div></div>
+  <div class="headertitle"><div class="title">FARPhysicsTickManager Class Reference<span class="mlabels"><span class="mlabel final">final</span></span></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>実際の物理TickManager  
+ <a href="#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for FARPhysicsTickManager:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="class_f_a_r_physics_tick_manager.png" usemap="#FARPhysicsTickManager_map" alt=""/>
   <map id="FARPhysicsTickManager_map" name="FARPhysicsTickManager_map">
-<area href="class_a_r_ranger_1_1_physics_1_1_f_a_r_physics_tick_manager_interface.html" alt="ARRanger::Physics::FARPhysicsTickManagerInterface" shape="rect" coords="0,0,319,24"/>
+<area href="class_a_r_ranger_1_1_physics_1_1_i_a_r_physics_tick_manager_interface.html" title="Interface of ARPhysics tick manager." alt="ARRanger::Physics::IARPhysicsTickManagerInterface" shape="rect" coords="0,0,383,24"/>
+<area href="class_a_r_ranger_1_1_private_1_1_f_count_limiter.html" alt="ARRanger::Private::FCountLimiter&lt; FARPhysicsTickManager, 1 &gt;" shape="rect" coords="393,0,776,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:add4bff42f3ce5a2f864af388b020d5d9" id="r_add4bff42f3ce5a2f864af388b020d5d9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#add4bff42f3ce5a2f864af388b020d5d9">~FARPhysicsTickManager</a> ()</td></tr>
 <tr class="memitem:ab48583dc4159cd7a6af421a37e0371b2" id="r_ab48583dc4159cd7a6af421a37e0371b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab48583dc4159cd7a6af421a37e0371b2">AddARPhysicsTickFunction</a> (<a class="el" href="class_f_a_r_physics_tick_function_interface.html">FARPhysicsTickFunctionInterface</a> *TickFunction)</td></tr>
 <tr class="memitem:a95df74e90a8492d9843313a844f7334d" id="r_a95df74e90a8492d9843313a844f7334d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a95df74e90a8492d9843313a844f7334d">RemoveARPhysicsTickFunction</a> (<a class="el" href="class_f_a_r_physics_tick_function_interface.html">FARPhysicsTickFunctionInterface</a> *TickFunction)</td></tr>
-<tr class="memitem:a3b292d8d00ecf8ee6a7476cec1ae1cd9" id="r_a3b292d8d00ecf8ee6a7476cec1ae1cd9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b292d8d00ecf8ee6a7476cec1ae1cd9">ExecuteARPhysicsTick</a> (EARPhysicsTickType TickType, const <a class="el" href="struct_f_a_r_physics_tick_parameters.html">FARPhysicsTickParameters</a> &amp;Params) override</td></tr>
-<tr class="memitem:a8f404d7e2ccd5d06cad618c7de36c8c0" id="r_a8f404d7e2ccd5d06cad618c7de36c8c0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_r_ranger_1_1_physics_1_1_f_a_r_physics_tick_task.html">FARPhysicsTickTask</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f404d7e2ccd5d06cad618c7de36c8c0">GetValidTickTask</a> (EARPhysicsTickType TickType)</td></tr>
+<tr class="memitem:a3b292d8d00ecf8ee6a7476cec1ae1cd9" id="r_a3b292d8d00ecf8ee6a7476cec1ae1cd9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b292d8d00ecf8ee6a7476cec1ae1cd9">ExecuteARPhysicsTick</a> (<a class="el" href="_a_r_physics_tick_types_8h.html#a2ca69442b049c2b8e082b97cb145ac2b">EARPhysicsTickType</a> TickType, const <a class="el" href="struct_f_a_r_physics_tick_parameters.html">FARPhysicsTickParameters</a> &amp;Params) override</td></tr>
+<tr class="memdesc:a3b292d8d00ecf8ee6a7476cec1ae1cd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">特定TickタイプのTickタスクを実行する  <br /></td></tr>
+<tr class="memitem:a8f404d7e2ccd5d06cad618c7de36c8c0" id="r_a8f404d7e2ccd5d06cad618c7de36c8c0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_r_ranger_1_1_physics_1_1_f_a_r_physics_tick_task.html">FARPhysicsTickTask</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f404d7e2ccd5d06cad618c7de36c8c0">GetValidTickTask</a> (<a class="el" href="_a_r_physics_tick_types_8h.html#a2ca69442b049c2b8e082b97cb145ac2b">EARPhysicsTickType</a> TickType)</td></tr>
 <tr class="memitem:a5aced51d8964f5d4b21a20d68c900ffd" id="r_a5aced51d8964f5d4b21a20d68c900ffd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_r_ranger_1_1_physics_1_1_f_a_r_physics_tick_task.html">FARPhysicsTickTask</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5aced51d8964f5d4b21a20d68c900ffd">AllocateTickTasks</a> ()</td></tr>
 <tr class="memitem:af3a9917e2a9f988ea704690a9cf0bb48" id="r_af3a9917e2a9f988ea704690a9cf0bb48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af3a9917e2a9f988ea704690a9cf0bb48">DeinitializeTickTasks</a> () override</td></tr>
+<tr class="memdesc:af3a9917e2a9f988ea704690a9cf0bb48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tickタスクを全て解読する 全てのTickタスクが止まる  <br /></td></tr>
 <tr class="memitem:a7e9089d0f8aef8227b0446f7372647b7" id="r_a7e9089d0f8aef8227b0446f7372647b7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e9089d0f8aef8227b0446f7372647b7">HasTickFunction</a> (<a class="el" href="class_f_a_r_physics_tick_function_interface.html">FARPhysicsTickFunctionInterface</a> *TickFunction)</td></tr>
+<tr class="inherit_header pub_methods_class_a_r_ranger_1_1_physics_1_1_i_a_r_physics_tick_manager_interface"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_a_r_ranger_1_1_physics_1_1_i_a_r_physics_tick_manager_interface')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Member Functions inherited from <a class="el" href="class_a_r_ranger_1_1_physics_1_1_i_a_r_physics_tick_manager_interface.html">ARRanger::Physics::IARPhysicsTickManagerInterface</a></td></tr>
+<tr class="memitem:adff1c30d1ce9cdfcea72ff6784c7f4ff inherit pub_methods_class_a_r_ranger_1_1_physics_1_1_i_a_r_physics_tick_manager_interface" id="r_adff1c30d1ce9cdfcea72ff6784c7f4ff"><td class="memItemLeft" align="right" valign="top">virtual ARRANGER_API&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_r_ranger_1_1_physics_1_1_i_a_r_physics_tick_manager_interface.html#adff1c30d1ce9cdfcea72ff6784c7f4ff">~IARPhysicsTickManagerInterface</a> ()=default</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ab751dcdccd254608489a5953aaf1737e" id="r_ab751dcdccd254608489a5953aaf1737e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_f_a_r_physics_tick_manager.html">FARPhysicsTickManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab751dcdccd254608489a5953aaf1737e">Get</a> ()</td></tr>
-<tr class="inherit_header pub_static_methods_class_a_r_ranger_1_1_physics_1_1_f_a_r_physics_tick_manager_interface"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_static_methods_class_a_r_ranger_1_1_physics_1_1_f_a_r_physics_tick_manager_interface')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Static Public Member Functions inherited from <a class="el" href="class_a_r_ranger_1_1_physics_1_1_f_a_r_physics_tick_manager_interface.html">ARRanger::Physics::FARPhysicsTickManagerInterface</a></td></tr>
-<tr class="memitem:a5712cc9992c1642fe9091c4671f8e9db inherit pub_static_methods_class_a_r_ranger_1_1_physics_1_1_f_a_r_physics_tick_manager_interface" id="r_a5712cc9992c1642fe9091c4671f8e9db"><td class="memItemLeft" align="right" valign="top">static ARRANGER_API <a class="el" href="class_a_r_ranger_1_1_physics_1_1_f_a_r_physics_tick_manager_interface.html">FARPhysicsTickManagerInterface</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_r_ranger_1_1_physics_1_1_f_a_r_physics_tick_manager_interface.html#a5712cc9992c1642fe9091c4671f8e9db">Get</a> ()</td></tr>
+<tr class="inherit_header pub_static_methods_class_a_r_ranger_1_1_physics_1_1_i_a_r_physics_tick_manager_interface"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_static_methods_class_a_r_ranger_1_1_physics_1_1_i_a_r_physics_tick_manager_interface')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Static Public Member Functions inherited from <a class="el" href="class_a_r_ranger_1_1_physics_1_1_i_a_r_physics_tick_manager_interface.html">ARRanger::Physics::IARPhysicsTickManagerInterface</a></td></tr>
+<tr class="memitem:a6438a3155a215d33fdce175b385d64c3 inherit pub_static_methods_class_a_r_ranger_1_1_physics_1_1_i_a_r_physics_tick_manager_interface" id="r_a6438a3155a215d33fdce175b385d64c3"><td class="memItemLeft" align="right" valign="top">static ARRANGER_API <a class="el" href="class_a_r_ranger_1_1_physics_1_1_i_a_r_physics_tick_manager_interface.html">IARPhysicsTickManagerInterface</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_r_ranger_1_1_physics_1_1_i_a_r_physics_tick_manager_interface.html#a6438a3155a215d33fdce175b385d64c3">Get</a> ()</td></tr>
+<tr class="memdesc:a6438a3155a215d33fdce175b385d64c3 inherit pub_static_methods_class_a_r_ranger_1_1_physics_1_1_i_a_r_physics_tick_manager_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">TickManagerインターフェイスを取得（シングルトン）  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a021d6c437acc42baec909e53e4a553cd" id="r_a021d6c437acc42baec909e53e4a553cd"><td class="memItemLeft" align="right" valign="top">TMap&lt; <a class="el" href="_a_r_physics_tick_types_8h.html#a2ca69442b049c2b8e082b97cb145ac2b">EARPhysicsTickType</a>, <a class="el" href="class_a_r_ranger_1_1_physics_1_1_f_a_r_physics_tick_task.html">FARPhysicsTickTask</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a021d6c437acc42baec909e53e4a553cd">m_tickTasks</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-inherited" class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_methods_class_a_r_ranger_1_1_private_1_1_f_count_limiter"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_a_r_ranger_1_1_private_1_1_f_count_limiter')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Private Member Functions inherited from <a class="el" href="class_a_r_ranger_1_1_private_1_1_f_count_limiter.html">ARRanger::Private::FCountLimiter&lt; FARPhysicsTickManager, 1 &gt;</a></td></tr>
+<tr class="memitem:a3d28df4fa06dcb580352b6ccbc69c1d7 inherit pub_methods_class_a_r_ranger_1_1_private_1_1_f_count_limiter" id="r_a3d28df4fa06dcb580352b6ccbc69c1d7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_r_ranger_1_1_private_1_1_f_count_limiter.html#a3d28df4fa06dcb580352b6ccbc69c1d7">FCountLimiter</a> ()</td></tr>
+<tr class="memitem:a8d7039c5a2d2cc9ea453debe6ed909f1 inherit pub_methods_class_a_r_ranger_1_1_private_1_1_f_count_limiter" id="r_a8d7039c5a2d2cc9ea453debe6ed909f1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_r_ranger_1_1_private_1_1_f_count_limiter.html#a8d7039c5a2d2cc9ea453debe6ed909f1">~FCountLimiter</a> ()</td></tr>
+<tr class="inherit_header pub_static_methods_class_a_r_ranger_1_1_private_1_1_f_count_limiter"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_static_methods_class_a_r_ranger_1_1_private_1_1_f_count_limiter')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Static Private Member Functions inherited from <a class="el" href="class_a_r_ranger_1_1_private_1_1_f_count_limiter.html">ARRanger::Private::FCountLimiter&lt; FARPhysicsTickManager, 1 &gt;</a></td></tr>
+<tr class="memitem:aa843e1f26a4da53b16aa01d6bfd2b946 inherit pub_static_methods_class_a_r_ranger_1_1_private_1_1_f_count_limiter" id="r_aa843e1f26a4da53b16aa01d6bfd2b946"><td class="memItemLeft" align="right" valign="top">static uint8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_r_ranger_1_1_private_1_1_f_count_limiter.html#aa843e1f26a4da53b16aa01d6bfd2b946">GetMaxSize</a> ()</td></tr>
+<tr class="memdesc:aa843e1f26a4da53b16aa01d6bfd2b946 inherit pub_static_methods_class_a_r_ranger_1_1_private_1_1_f_count_limiter"><td class="mdescLeft">&#160;</td><td class="mdescRight">最大数を取得  <br /></td></tr>
+<tr class="memitem:a59f1aa43d464d10da27a56a9175262d3 inherit pub_static_methods_class_a_r_ranger_1_1_private_1_1_f_count_limiter" id="r_a59f1aa43d464d10da27a56a9175262d3"><td class="memItemLeft" align="right" valign="top">static uint8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_r_ranger_1_1_private_1_1_f_count_limiter.html#a59f1aa43d464d10da27a56a9175262d3">GetCreatedObjectNum</a> ()</td></tr>
+<tr class="memdesc:a59f1aa43d464d10da27a56a9175262d3 inherit pub_static_methods_class_a_r_ranger_1_1_private_1_1_f_count_limiter"><td class="mdescLeft">&#160;</td><td class="mdescRight">生成されたインスタンスの数  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_a_r_physics_tick_manager_8cpp_source.html#l00007">7</a> of file <a class="el" href="_a_r_physics_tick_manager_8cpp_source.html">ARPhysicsTickManager.cpp</a>.</p>
+<div class="textblock"><p>実際の物理TickManager </p>
+
+<p class="definition">Definition at line <a class="el" href="_a_r_physics_tick_manager_8cpp_source.html#l00013">13</a> of file <a class="el" href="_a_r_physics_tick_manager_8cpp_source.html">ARPhysicsTickManager.cpp</a>.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="add4bff42f3ce5a2f864af388b020d5d9" name="add4bff42f3ce5a2f864af388b020d5d9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#add4bff42f3ce5a2f864af388b020d5d9">&#9670;&#160;</a></span>~FARPhysicsTickManager()</h2>
@@ -144,11 +170,8 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_a_r_physics_tick_manager_8cpp_source.html#l00010">10</a> of file <a class="el" href="_a_r_physics_tick_manager_8cpp_source.html">ARPhysicsTickManager.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   11</span>    {</div>
-<div class="line"><span class="lineno">   12</span>      DeinitializeTickTasks();</div>
-<div class="line"><span class="lineno">   13</span>    }</div>
-</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="_a_r_physics_tick_manager_8cpp_source.html#l00020">20</a> of file <a class="el" href="_a_r_physics_tick_manager_8cpp_source.html">ARPhysicsTickManager.cpp</a>.</p>
+
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
@@ -175,14 +198,8 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_a_r_physics_tick_manager_8cpp_source.html#l00021">21</a> of file <a class="el" href="_a_r_physics_tick_manager_8cpp_source.html">ARPhysicsTickManager.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   22</span>    {</div>
-<div class="line"><span class="lineno">   23</span>      check(TickFunction != <span class="keyword">nullptr</span>)</div>
-<div class="line"><span class="lineno">   24</span> </div>
-<div class="line"><span class="lineno">   25</span>      FARPhysicsTickTask* task = GetValidTickTask(TickFunction-&gt;PhysicsTickType);</div>
-<div class="line"><span class="lineno">   26</span>      task-&gt;AddTickFunction(TickFunction);  </div>
-<div class="line"><span class="lineno">   27</span>    }</div>
-</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="_a_r_physics_tick_manager_8cpp_source.html#l00031">31</a> of file <a class="el" href="_a_r_physics_tick_manager_8cpp_source.html">ARPhysicsTickManager.cpp</a>.</p>
+
 </div>
 </div>
 <a id="a5aced51d8964f5d4b21a20d68c900ffd" name="a5aced51d8964f5d4b21a20d68c900ffd"></a>
@@ -208,11 +225,8 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_a_r_physics_tick_manager_8cpp_source.html#l00055">55</a> of file <a class="el" href="_a_r_physics_tick_manager_8cpp_source.html">ARPhysicsTickManager.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   56</span>    {</div>
-<div class="line"><span class="lineno">   57</span>      <span class="keywordflow">return</span> <span class="keyword">new</span> FARPhysicsTickTask{};</div>
-<div class="line"><span class="lineno">   58</span>    }</div>
-</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="_a_r_physics_tick_manager_8cpp_source.html#l00063">63</a> of file <a class="el" href="_a_r_physics_tick_manager_8cpp_source.html">ARPhysicsTickManager.cpp</a>.</p>
+
 </div>
 </div>
 <a id="af3a9917e2a9f988ea704690a9cf0bb48" name="af3a9917e2a9f988ea704690a9cf0bb48"></a>
@@ -238,18 +252,12 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="class_a_r_ranger_1_1_physics_1_1_f_a_r_physics_tick_manager_interface.html">ARRanger::Physics::FARPhysicsTickManagerInterface</a>.</p>
+<p>Tickタスクを全て解読する 全てのTickタスクが止まる </p>
 
-<p class="definition">Definition at line <a class="el" href="_a_r_physics_tick_manager_8cpp_source.html#l00060">60</a> of file <a class="el" href="_a_r_physics_tick_manager_8cpp_source.html">ARPhysicsTickManager.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   61</span>    {</div>
-<div class="line"><span class="lineno">   62</span>      <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; [ _ , task] : m_tickTasks)</div>
-<div class="line"><span class="lineno">   63</span>      {</div>
-<div class="line"><span class="lineno">   64</span>        <span class="keyword">delete</span> task;</div>
-<div class="line"><span class="lineno">   65</span>      }</div>
-<div class="line"><span class="lineno">   66</span> </div>
-<div class="line"><span class="lineno">   67</span>      m_tickTasks.Reset();</div>
-<div class="line"><span class="lineno">   68</span>    }</div>
-</div><!-- fragment -->
+<p>Implements <a class="el" href="class_a_r_ranger_1_1_physics_1_1_i_a_r_physics_tick_manager_interface.html#a84d86a33548369968ef0e35aff018df0">ARRanger::Physics::IARPhysicsTickManagerInterface</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_a_r_physics_tick_manager_8cpp_source.html#l00068">68</a> of file <a class="el" href="_a_r_physics_tick_manager_8cpp_source.html">ARPhysicsTickManager.cpp</a>.</p>
+
 </div>
 </div>
 <a id="a3b292d8d00ecf8ee6a7476cec1ae1cd9" name="a3b292d8d00ecf8ee6a7476cec1ae1cd9"></a>
@@ -264,7 +272,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void FARPhysicsTickManager::ExecuteARPhysicsTick </td>
           <td>(</td>
-          <td class="paramtype">EARPhysicsTickType</td>          <td class="paramname"><span class="paramname"><em>TickType</em></span>, </td>
+          <td class="paramtype"><a class="el" href="_a_r_physics_tick_types_8h.html#a2ca69442b049c2b8e082b97cb145ac2b">EARPhysicsTickType</a></td>          <td class="paramname"><span class="paramname"><em>TickType</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -279,16 +287,19 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="class_a_r_ranger_1_1_physics_1_1_f_a_r_physics_tick_manager_interface.html">ARRanger::Physics::FARPhysicsTickManagerInterface</a>.</p>
+<p>特定TickタイプのTickタスクを実行する </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">TickType</td><td></td></tr>
+    <tr><td class="paramname">Params</td><td>Tickパラメータ構造体 </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p class="definition">Definition at line <a class="el" href="_a_r_physics_tick_manager_8cpp_source.html#l00037">37</a> of file <a class="el" href="_a_r_physics_tick_manager_8cpp_source.html">ARPhysicsTickManager.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   38</span>    {</div>
-<div class="line"><span class="lineno">   39</span>      <span class="keywordflow">if</span> (m_tickTasks.Contains(TickType))</div>
-<div class="line"><span class="lineno">   40</span>      {</div>
-<div class="line"><span class="lineno">   41</span>        m_tickTasks[TickType]-&gt;ExecuteTask(Params);</div>
-<div class="line"><span class="lineno">   42</span>      }</div>
-<div class="line"><span class="lineno">   43</span>    }</div>
-</div><!-- fragment -->
+<p>Implements <a class="el" href="class_a_r_ranger_1_1_physics_1_1_i_a_r_physics_tick_manager_interface.html#af9335ad08ff1e14877e6577a2285bcac">ARRanger::Physics::IARPhysicsTickManagerInterface</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_a_r_physics_tick_manager_8cpp_source.html#l00045">45</a> of file <a class="el" href="_a_r_physics_tick_manager_8cpp_source.html">ARPhysicsTickManager.cpp</a>.</p>
+
 </div>
 </div>
 <a id="ab751dcdccd254608489a5953aaf1737e" name="ab751dcdccd254608489a5953aaf1737e"></a>
@@ -314,12 +325,8 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_a_r_physics_tick_manager_8cpp_source.html#l00015">15</a> of file <a class="el" href="_a_r_physics_tick_manager_8cpp_source.html">ARPhysicsTickManager.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   16</span>    {</div>
-<div class="line"><span class="lineno">   17</span>      <span class="keyword">static</span> FARPhysicsTickManager s_instance;</div>
-<div class="line"><span class="lineno">   18</span>      <span class="keywordflow">return</span> s_instance;</div>
-<div class="line"><span class="lineno">   19</span>    }  </div>
-</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="_a_r_physics_tick_manager_8cpp_source.html#l00025">25</a> of file <a class="el" href="_a_r_physics_tick_manager_8cpp_source.html">ARPhysicsTickManager.cpp</a>.</p>
+
 </div>
 </div>
 <a id="a8f404d7e2ccd5d06cad618c7de36c8c0" name="a8f404d7e2ccd5d06cad618c7de36c8c0"></a>
@@ -334,7 +341,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="class_a_r_ranger_1_1_physics_1_1_f_a_r_physics_tick_task.html">FARPhysicsTickTask</a> * FARPhysicsTickManager::GetValidTickTask </td>
           <td>(</td>
-          <td class="paramtype">EARPhysicsTickType</td>          <td class="paramname"><span class="paramname"><em>TickType</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="_a_r_physics_tick_types_8h.html#a2ca69442b049c2b8e082b97cb145ac2b">EARPhysicsTickType</a></td>          <td class="paramname"><span class="paramname"><em>TickType</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -345,16 +352,8 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_a_r_physics_tick_manager_8cpp_source.html#l00045">45</a> of file <a class="el" href="_a_r_physics_tick_manager_8cpp_source.html">ARPhysicsTickManager.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   46</span>    {</div>
-<div class="line"><span class="lineno">   47</span>      <span class="keywordflow">if</span> (!m_tickTasks.Contains(TickType))</div>
-<div class="line"><span class="lineno">   48</span>      {</div>
-<div class="line"><span class="lineno">   49</span>        m_tickTasks.Emplace(TickType, AllocateTickTasks());</div>
-<div class="line"><span class="lineno">   50</span>      }</div>
-<div class="line"><span class="lineno">   51</span> </div>
-<div class="line"><span class="lineno">   52</span>      <span class="keywordflow">return</span> m_tickTasks[TickType];</div>
-<div class="line"><span class="lineno">   53</span>    }</div>
-</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="_a_r_physics_tick_manager_8cpp_source.html#l00053">53</a> of file <a class="el" href="_a_r_physics_tick_manager_8cpp_source.html">ARPhysicsTickManager.cpp</a>.</p>
+
 </div>
 </div>
 <a id="a7e9089d0f8aef8227b0446f7372647b7" name="a7e9089d0f8aef8227b0446f7372647b7"></a>
@@ -380,14 +379,8 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_a_r_physics_tick_manager_8cpp_source.html#l00070">70</a> of file <a class="el" href="_a_r_physics_tick_manager_8cpp_source.html">ARPhysicsTickManager.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   71</span>    {</div>
-<div class="line"><span class="lineno">   72</span>      check(TickFunction != <span class="keyword">nullptr</span>);</div>
-<div class="line"><span class="lineno">   73</span> </div>
-<div class="line"><span class="lineno">   74</span>      FARPhysicsTickTask* task = GetValidTickTask(TickFunction-&gt;PhysicsTickType);</div>
-<div class="line"><span class="lineno">   75</span>      <span class="keywordflow">return</span> ((task != <span class="keyword">nullptr</span>) &amp;&amp; task-&gt;HasTickFunction(TickFunction));</div>
-<div class="line"><span class="lineno">   76</span>    }</div>
-</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="_a_r_physics_tick_manager_8cpp_source.html#l00078">78</a> of file <a class="el" href="_a_r_physics_tick_manager_8cpp_source.html">ARPhysicsTickManager.cpp</a>.</p>
+
 </div>
 </div>
 <a id="a95df74e90a8492d9843313a844f7334d" name="a95df74e90a8492d9843313a844f7334d"></a>
@@ -413,18 +406,37 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_a_r_physics_tick_manager_8cpp_source.html#l00029">29</a> of file <a class="el" href="_a_r_physics_tick_manager_8cpp_source.html">ARPhysicsTickManager.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   30</span>    {</div>
-<div class="line"><span class="lineno">   31</span>      check(TickFunction != <span class="keyword">nullptr</span>)</div>
-<div class="line"><span class="lineno">   32</span> </div>
-<div class="line"><span class="lineno">   33</span>      FARPhysicsTickTask* task = GetValidTickTask(TickFunction-&gt;PhysicsTickType);</div>
-<div class="line"><span class="lineno">   34</span>      task-&gt;RemoveTickFunction(TickFunction); </div>
-<div class="line"><span class="lineno">   35</span>    }</div>
-</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="_a_r_physics_tick_manager_8cpp_source.html#l00038">38</a> of file <a class="el" href="_a_r_physics_tick_manager_8cpp_source.html">ARPhysicsTickManager.cpp</a>.</p>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
+<a id="a021d6c437acc42baec909e53e4a553cd" name="a021d6c437acc42baec909e53e4a553cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a021d6c437acc42baec909e53e4a553cd">&#9670;&#160;</a></span>m_tickTasks</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TMap&lt;<a class="el" href="_a_r_physics_tick_types_8h.html#a2ca69442b049c2b8e082b97cb145ac2b">EARPhysicsTickType</a>, <a class="el" href="class_a_r_ranger_1_1_physics_1_1_f_a_r_physics_tick_task.html">FARPhysicsTickTask</a>*&gt; FARPhysicsTickManager::m_tickTasks</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_a_r_physics_tick_manager_8cpp_source.html#l00087">87</a> of file <a class="el" href="_a_r_physics_tick_manager_8cpp_source.html">ARPhysicsTickManager.cpp</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>H:/GithubRepository/ARRanger/Source/ARRanger/Private/Physics/Core/<a class="el" href="_a_r_physics_tick_manager_8cpp_source.html">ARPhysicsTickManager.cpp</a></li>
+<li>D:/GithubRepository/ARRanger/Source/ARRanger/Private/Physics/Core/<a class="el" href="_a_r_physics_tick_manager_8cpp_source.html">ARPhysicsTickManager.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

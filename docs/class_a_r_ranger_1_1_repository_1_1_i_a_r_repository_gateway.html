@@ -91,6 +91,8 @@ $(function(){initNavTree('class_a_r_ranger_1_1_repository_1_1_i_a_r_repository_g
   <div class="headertitle"><div class="title">ARRanger::Repository::IARRepositoryGateway&lt; RepositoryIDType, DataType &gt; Class Template Reference<span class="mlabels"><span class="mlabel abstract">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_i_a_r_repository_interface_8h_source.html">IARRepositoryInterface.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for ARRanger::Repository::IARRepositoryGateway&lt; RepositoryIDType, DataType &gt;:</div>
 <div class="dyncontent">
@@ -103,28 +105,230 @@ Inheritance diagram for ARRanger::Repository::IARRepositoryGateway&lt; Repositor
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8d7bfd05eb974515d26395fba29890c5" id="r_a8d7bfd05eb974515d26395fba29890c5"><td class="memItemLeft" align="right" valign="top"><a id="a8d7bfd05eb974515d26395fba29890c5" name="a8d7bfd05eb974515d26395fba29890c5"></a>
-virtual ARRANGER_API bool&#160;</td><td class="memItemRight" valign="bottom"><b>Find</b> (RepositoryIDType ID, DataType &amp;OutData) const =0</td></tr>
-<tr class="memitem:ac71ed91be54d5ce189bf53fe0b59882d" id="r_ac71ed91be54d5ce189bf53fe0b59882d"><td class="memItemLeft" align="right" valign="top"><a id="ac71ed91be54d5ce189bf53fe0b59882d" name="ac71ed91be54d5ce189bf53fe0b59882d"></a>
-virtual ARRANGER_API int32&#160;</td><td class="memItemRight" valign="bottom"><b>FindAll</b> (TArray&lt; DataType &gt; &amp;OutAllDatas) const =0</td></tr>
-<tr class="memitem:ae6f8ae8ba75db868c3435c29fc739011" id="r_ae6f8ae8ba75db868c3435c29fc739011"><td class="memItemLeft" align="right" valign="top"><a id="ae6f8ae8ba75db868c3435c29fc739011" name="ae6f8ae8ba75db868c3435c29fc739011"></a>
-virtual ARRANGER_API bool&#160;</td><td class="memItemRight" valign="bottom"><b>Add</b> (RepositoryIDType ID, const DataType &amp;InData)=0</td></tr>
-<tr class="memitem:a0b1425dbb22741aa300248a99a72c270" id="r_a0b1425dbb22741aa300248a99a72c270"><td class="memItemLeft" align="right" valign="top"><a id="a0b1425dbb22741aa300248a99a72c270" name="a0b1425dbb22741aa300248a99a72c270"></a>
-virtual ARRANGER_API bool&#160;</td><td class="memItemRight" valign="bottom"><b>Save</b> (RepositoryIDType ID, const DataType &amp;InData)=0</td></tr>
-<tr class="memitem:aeb0e221596848025fba7ed00c01bd669" id="r_aeb0e221596848025fba7ed00c01bd669"><td class="memItemLeft" align="right" valign="top"><a id="aeb0e221596848025fba7ed00c01bd669" name="aeb0e221596848025fba7ed00c01bd669"></a>
-virtual ARRANGER_API bool&#160;</td><td class="memItemRight" valign="bottom"><b>Delete</b> (RepositoryIDType ID)=0</td></tr>
-<tr class="memitem:a8ef4e59bd8098b559e263728cfe93cc8" id="r_a8ef4e59bd8098b559e263728cfe93cc8"><td class="memItemLeft" align="right" valign="top"><a id="a8ef4e59bd8098b559e263728cfe93cc8" name="a8ef4e59bd8098b559e263728cfe93cc8"></a>
-virtual ARRANGER_API bool&#160;</td><td class="memItemRight" valign="bottom"><b>Exist</b> (RepositoryIDType ID) const =0</td></tr>
+<tr class="memitem:ad384e691eb6b59bb6e9761d3f9fe7762" id="r_ad384e691eb6b59bb6e9761d3f9fe7762"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad384e691eb6b59bb6e9761d3f9fe7762">~IARRepositoryGateway</a> ()=default</td></tr>
+<tr class="memitem:a8d7bfd05eb974515d26395fba29890c5" id="r_a8d7bfd05eb974515d26395fba29890c5"><td class="memItemLeft" align="right" valign="top">virtual ARRANGER_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8d7bfd05eb974515d26395fba29890c5">Find</a> (RepositoryIDType ID, DataType &amp;OutData) const =0</td></tr>
+<tr class="memitem:ac71ed91be54d5ce189bf53fe0b59882d" id="r_ac71ed91be54d5ce189bf53fe0b59882d"><td class="memItemLeft" align="right" valign="top">virtual ARRANGER_API int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac71ed91be54d5ce189bf53fe0b59882d">FindAll</a> (TArray&lt; DataType &gt; &amp;OutAllDatas) const =0</td></tr>
+<tr class="memitem:ae6f8ae8ba75db868c3435c29fc739011" id="r_ae6f8ae8ba75db868c3435c29fc739011"><td class="memItemLeft" align="right" valign="top">virtual ARRANGER_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae6f8ae8ba75db868c3435c29fc739011">Add</a> (RepositoryIDType ID, const DataType &amp;InData)=0</td></tr>
+<tr class="memitem:a0b1425dbb22741aa300248a99a72c270" id="r_a0b1425dbb22741aa300248a99a72c270"><td class="memItemLeft" align="right" valign="top">virtual ARRANGER_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0b1425dbb22741aa300248a99a72c270">Save</a> (RepositoryIDType ID, const DataType &amp;InData)=0</td></tr>
+<tr class="memitem:aeb0e221596848025fba7ed00c01bd669" id="r_aeb0e221596848025fba7ed00c01bd669"><td class="memItemLeft" align="right" valign="top">virtual ARRANGER_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb0e221596848025fba7ed00c01bd669">Delete</a> (RepositoryIDType ID)=0</td></tr>
+<tr class="memitem:a8ef4e59bd8098b559e263728cfe93cc8" id="r_a8ef4e59bd8098b559e263728cfe93cc8"><td class="memItemLeft" align="right" valign="top">virtual ARRANGER_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8ef4e59bd8098b559e263728cfe93cc8">Exist</a> (RepositoryIDType ID) const =0</td></tr>
 <tr class="inherit_header pub_methods_class_a_r_ranger_1_1_repository_1_1_i_a_r_repository_interface"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_a_r_ranger_1_1_repository_1_1_i_a_r_repository_interface')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Member Functions inherited from <a class="el" href="class_a_r_ranger_1_1_repository_1_1_i_a_r_repository_interface.html">ARRanger::Repository::IARRepositoryInterface</a></td></tr>
-<tr class="memitem:ae8c9d2b53d45ffecfe303c137df33a15 inherit pub_methods_class_a_r_ranger_1_1_repository_1_1_i_a_r_repository_interface" id="r_ae8c9d2b53d45ffecfe303c137df33a15"><td class="memItemLeft" align="right" valign="top">
-virtual ARRANGER_API FString&#160;</td><td class="memItemRight" valign="bottom"><b>GetRepositoryName</b> () const =0</td></tr>
+<tr class="memitem:a8c7c4f711ff74a06ec533a3263bbb9f8 inherit pub_methods_class_a_r_ranger_1_1_repository_1_1_i_a_r_repository_interface" id="r_a8c7c4f711ff74a06ec533a3263bbb9f8"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_r_ranger_1_1_repository_1_1_i_a_r_repository_interface.html#a8c7c4f711ff74a06ec533a3263bbb9f8">~IARRepositoryInterface</a> ()=default</td></tr>
+<tr class="memitem:ae8c9d2b53d45ffecfe303c137df33a15 inherit pub_methods_class_a_r_ranger_1_1_repository_1_1_i_a_r_repository_interface" id="r_ae8c9d2b53d45ffecfe303c137df33a15"><td class="memItemLeft" align="right" valign="top">virtual ARRANGER_API FString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_r_ranger_1_1_repository_1_1_i_a_r_repository_interface.html#ae8c9d2b53d45ffecfe303c137df33a15">GetRepositoryName</a> () const =0</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename RepositoryIDType, typename DataType&gt;<br />
 class ARRanger::Repository::IARRepositoryGateway&lt; RepositoryIDType, DataType &gt;</div>
 <p class="definition">Definition at line <a class="el" href="_i_a_r_repository_interface_8h_source.html#l00023">23</a> of file <a class="el" href="_i_a_r_repository_interface_8h_source.html">IARRepositoryInterface.h</a>.</p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
-<li>H:/GithubRepository/ARRanger/Source/ARRanger/Public/Repositories/<a class="el" href="_i_a_r_repository_interface_8h_source.html">IARRepositoryInterface.h</a></li>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ad384e691eb6b59bb6e9761d3f9fe7762" name="ad384e691eb6b59bb6e9761d3f9fe7762"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad384e691eb6b59bb6e9761d3f9fe7762">&#9670;&#160;</a></span>~IARRepositoryGateway()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename RepositoryIDType, typename DataType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_a_r_ranger_1_1_repository_1_1_i_a_r_repository_gateway.html">ARRanger::Repository::IARRepositoryGateway</a>&lt; RepositoryIDType, DataType &gt;::~<a class="el" href="class_a_r_ranger_1_1_repository_1_1_i_a_r_repository_gateway.html">IARRepositoryGateway</a> </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span><span class="mlabel default">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="ae6f8ae8ba75db868c3435c29fc739011" name="ae6f8ae8ba75db868c3435c29fc739011"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6f8ae8ba75db868c3435c29fc739011">&#9670;&#160;</a></span>Add()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename RepositoryIDType, typename DataType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual ARRANGER_API bool <a class="el" href="class_a_r_ranger_1_1_repository_1_1_i_a_r_repository_gateway.html">ARRanger::Repository::IARRepositoryGateway</a>&lt; RepositoryIDType, DataType &gt;::Add </td>
+          <td>(</td>
+          <td class="paramtype">RepositoryIDType</td>          <td class="paramname"><span class="paramname"><em>ID</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const DataType &amp;</td>          <td class="paramname"><span class="paramname"><em>InData</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeb0e221596848025fba7ed00c01bd669" name="aeb0e221596848025fba7ed00c01bd669"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb0e221596848025fba7ed00c01bd669">&#9670;&#160;</a></span>Delete()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename RepositoryIDType, typename DataType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual ARRANGER_API bool <a class="el" href="class_a_r_ranger_1_1_repository_1_1_i_a_r_repository_gateway.html">ARRanger::Repository::IARRepositoryGateway</a>&lt; RepositoryIDType, DataType &gt;::Delete </td>
+          <td>(</td>
+          <td class="paramtype">RepositoryIDType</td>          <td class="paramname"><span class="paramname"><em>ID</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="class_a_r_ranger_1_1_physics_1_1_f_a_r_physics_magnetic_parameters_repository.html#a2bf1d6b7b59c44dd234536dcc2da5ded">ARRanger::Physics::FARPhysicsMagneticParametersRepository</a>, and <a class="el" href="class_f_a_r_physics_magnetic_parameters_repository.html#a2bf1d6b7b59c44dd234536dcc2da5ded">FARPhysicsMagneticParametersRepository</a>.</p>
+
+</div>
+</div>
+<a id="a8ef4e59bd8098b559e263728cfe93cc8" name="a8ef4e59bd8098b559e263728cfe93cc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ef4e59bd8098b559e263728cfe93cc8">&#9670;&#160;</a></span>Exist()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename RepositoryIDType, typename DataType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual ARRANGER_API bool <a class="el" href="class_a_r_ranger_1_1_repository_1_1_i_a_r_repository_gateway.html">ARRanger::Repository::IARRepositoryGateway</a>&lt; RepositoryIDType, DataType &gt;::Exist </td>
+          <td>(</td>
+          <td class="paramtype">RepositoryIDType</td>          <td class="paramname"><span class="paramname"><em>ID</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="class_a_r_ranger_1_1_physics_1_1_f_a_r_physics_magnetic_parameters_repository.html#a9a8eb76bcef48fc1fe1241615c132492">ARRanger::Physics::FARPhysicsMagneticParametersRepository</a>, and <a class="el" href="class_f_a_r_physics_magnetic_parameters_repository.html#a9a8eb76bcef48fc1fe1241615c132492">FARPhysicsMagneticParametersRepository</a>.</p>
+
+</div>
+</div>
+<a id="a8d7bfd05eb974515d26395fba29890c5" name="a8d7bfd05eb974515d26395fba29890c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d7bfd05eb974515d26395fba29890c5">&#9670;&#160;</a></span>Find()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename RepositoryIDType, typename DataType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual ARRANGER_API bool <a class="el" href="class_a_r_ranger_1_1_repository_1_1_i_a_r_repository_gateway.html">ARRanger::Repository::IARRepositoryGateway</a>&lt; RepositoryIDType, DataType &gt;::Find </td>
+          <td>(</td>
+          <td class="paramtype">RepositoryIDType</td>          <td class="paramname"><span class="paramname"><em>ID</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DataType &amp;</td>          <td class="paramname"><span class="paramname"><em>OutData</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac71ed91be54d5ce189bf53fe0b59882d" name="ac71ed91be54d5ce189bf53fe0b59882d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac71ed91be54d5ce189bf53fe0b59882d">&#9670;&#160;</a></span>FindAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename RepositoryIDType, typename DataType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual ARRANGER_API int32 <a class="el" href="class_a_r_ranger_1_1_repository_1_1_i_a_r_repository_gateway.html">ARRanger::Repository::IARRepositoryGateway</a>&lt; RepositoryIDType, DataType &gt;::FindAll </td>
+          <td>(</td>
+          <td class="paramtype">TArray&lt; DataType &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>OutAllDatas</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0b1425dbb22741aa300248a99a72c270" name="a0b1425dbb22741aa300248a99a72c270"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b1425dbb22741aa300248a99a72c270">&#9670;&#160;</a></span>Save()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename RepositoryIDType, typename DataType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual ARRANGER_API bool <a class="el" href="class_a_r_ranger_1_1_repository_1_1_i_a_r_repository_gateway.html">ARRanger::Repository::IARRepositoryGateway</a>&lt; RepositoryIDType, DataType &gt;::Save </td>
+          <td>(</td>
+          <td class="paramtype">RepositoryIDType</td>          <td class="paramname"><span class="paramname"><em>ID</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const DataType &amp;</td>          <td class="paramname"><span class="paramname"><em>InData</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>D:/GithubRepository/ARRanger/Source/ARRanger/Public/Repositories/<a class="el" href="_i_a_r_repository_interface_8h_source.html">IARRepositoryInterface.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -139,7 +343,7 @@ class ARRanger::Repository::IARRepositoryGateway&lt; RepositoryIDType, DataType 
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="namespace_a_r_ranger.html">ARRanger</a></li><li class="navelem"><b>Repository</b></li><li class="navelem"><a href="class_a_r_ranger_1_1_repository_1_1_i_a_r_repository_gateway.html">IARRepositoryGateway</a></li>
+    <li class="navelem"><a href="namespace_a_r_ranger.html">ARRanger</a></li><li class="navelem"><a href="namespace_a_r_ranger_1_1_repository.html">Repository</a></li><li class="navelem"><a href="class_a_r_ranger_1_1_repository_1_1_i_a_r_repository_gateway.html">IARRepositoryGateway</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>

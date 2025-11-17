@@ -91,6 +91,8 @@ $(function(){initNavTree('class_u_b_t_t___set_chasing.html','','class_u_b_t_t___
   <div class="headertitle"><div class="title">UBTT_SetChasing Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_b_t_t___set_chasing_8h_source.html">BTT_SetChasing.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for UBTT_SetChasing:</div>
 <div class="dyncontent">
@@ -98,6 +100,10 @@ Inheritance diagram for UBTT_SetChasing:</div>
   <img src="class_u_b_t_t___set_chasing.png" alt=""/>
  </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a635075fb7a003295ac649ec4ee089ac0" id="r_a635075fb7a003295ac649ec4ee089ac0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a635075fb7a003295ac649ec4ee089ac0">UBTT_SetChasing</a> ()</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pro-methods" class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:ab698a6c07191ae75523c56b2bc2255be" id="r_ab698a6c07191ae75523c56b2bc2255be"><td class="memItemLeft" align="right" valign="top">virtual EBTNodeResult::Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab698a6c07191ae75523c56b2bc2255be">ExecuteTask</a> (UBehaviorTreeComponent &amp;OwnerComp, uint8 *NodeMemory) override</td></tr>
@@ -127,10 +133,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_b_t_t___set_chasing_8cpp_source.html#l00008">8</a> of file <a class="el" href="_b_t_t___set_chasing_8cpp_source.html">BTT_SetChasing.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">    9</span>{</div>
-<div class="line"><span class="lineno">   10</span>  NodeName = TEXT(<span class="stringliteral">&quot;Set Chasing State&quot;</span>);</div>
-<div class="line"><span class="lineno">   11</span>}</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
@@ -162,27 +165,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_b_t_t___set_chasing_8cpp_source.html#l00013">13</a> of file <a class="el" href="_b_t_t___set_chasing_8cpp_source.html">BTT_SetChasing.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   14</span>{</div>
-<div class="line"><span class="lineno">   15</span>  <span class="keywordflow">if</span> (AAIController* AICon = OwnerComp.GetAIOwner())</div>
-<div class="line"><span class="lineno">   16</span>  {</div>
-<div class="line"><span class="lineno">   17</span>    <span class="keywordflow">if</span> (ACharacter* Char = Cast&lt;ACharacter&gt;(AICon-&gt;GetPawn()))</div>
-<div class="line"><span class="lineno">   18</span>    {</div>
-<div class="line"><span class="lineno">   19</span>      <span class="keywordflow">if</span> (USkeletalMeshComponent* Mesh = Char-&gt;GetMesh())</div>
-<div class="line"><span class="lineno">   20</span>      {</div>
-<div class="line"><span class="lineno">   21</span>        <span class="keywordflow">if</span> (UEnemyAnimInstance* EnemyAnim = Cast&lt;UEnemyAnimInstance&gt;(Mesh-&gt;GetAnimInstance()))</div>
-<div class="line"><span class="lineno">   22</span>        {</div>
-<div class="line"><span class="lineno">   23</span>          EnemyAnim-&gt;bIsChasing = bChasing;</div>
-<div class="line"><span class="lineno">   24</span>          EnemyAnim-&gt;bIsSearch = bIsSearch;</div>
-<div class="line"><span class="lineno">   25</span>          <span class="keywordflow">return</span> EBTNodeResult::Succeeded;</div>
-<div class="line"><span class="lineno">   26</span>        }</div>
-<div class="line"><span class="lineno">   27</span>      }</div>
-<div class="line"><span class="lineno">   28</span> </div>
-<div class="line"><span class="lineno">   29</span>    }</div>
-<div class="line"><span class="lineno">   30</span>  }</div>
-<div class="line"><span class="lineno">   31</span> </div>
-<div class="line"><span class="lineno">   32</span>  <span class="keywordflow">return</span> EBTNodeResult::Failed;</div>
-<div class="line"><span class="lineno">   33</span>}</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
@@ -235,8 +218,8 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>H:/GithubRepository/ARRanger/Source/ARRanger/Public/Enemy/BTT/<a class="el" href="_b_t_t___set_chasing_8h_source.html">BTT_SetChasing.h</a></li>
-<li>H:/GithubRepository/ARRanger/Source/ARRanger/Private/Enemy/<a class="el" href="_b_t_t___set_chasing_8cpp_source.html">BTT_SetChasing.cpp</a></li>
+<li>D:/GithubRepository/ARRanger/Source/ARRanger/Public/Enemy/BTT/<a class="el" href="_b_t_t___set_chasing_8h_source.html">BTT_SetChasing.h</a></li>
+<li>D:/GithubRepository/ARRanger/Source/ARRanger/Private/Enemy/<a class="el" href="_b_t_t___set_chasing_8cpp_source.html">BTT_SetChasing.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

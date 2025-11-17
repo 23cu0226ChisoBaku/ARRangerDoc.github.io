@@ -105,7 +105,7 @@ Inheritance diagram for UARInputMappingContext:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae9c9978d8c3a0917c50d48b336fcffcd" id="r_ae9c9978d8c3a0917c50d48b336fcffcd"><td class="memItemLeft" align="right" valign="top">UE_API UInputMappingContext *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae9c9978d8c3a0917c50d48b336fcffcd">FindIMCWithTag</a> (const FGameplayTag &amp;InTag) const</td></tr>
+<tr class="memitem:ae9c9978d8c3a0917c50d48b336fcffcd" id="r_ae9c9978d8c3a0917c50d48b336fcffcd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_a_r_input_mapping_context_8h.html#a578eb926c8aecdf908e1338b2e893458">UE_API</a> UInputMappingContext *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae9c9978d8c3a0917c50d48b336fcffcd">FindIMCWithTag</a> (const FGameplayTag &amp;InTag) const</td></tr>
 <tr class="memdesc:ae9c9978d8c3a0917c50d48b336fcffcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find InputMappingContext by signature tag.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
@@ -140,33 +140,10 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>UInputMappingContext Found UE native InputMappingContext</dd></dl>
-<p><a class="el" href="_a_r_input_mapping_context_8cpp_source.html">ARInputMappingContext.cpp</a> </p>
+<p><a class="el" href="_a_r_input_mapping_context_8cpp.html">ARInputMappingContext.cpp</a> </p>
 
 <p class="definition">Definition at line <a class="el" href="_a_r_input_mapping_context_8cpp_source.html#l00013">13</a> of file <a class="el" href="_a_r_input_mapping_context_8cpp_source.html">ARInputMappingContext.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   14</span>{</div>
-<div class="line"><span class="lineno">   15</span>  <span class="keyword">auto</span> searchByTagLambda = [&amp;InTag](<span class="keyword">const</span> FARInputMappingContextAndTag&amp; Element)</div>
-<div class="line"><span class="lineno">   16</span>  {</div>
-<div class="line"><span class="lineno">   17</span>    <span class="keywordflow">return</span> Element.InputStateTag.MatchesTagExact(InTag);</div>
-<div class="line"><span class="lineno">   18</span>  };</div>
-<div class="line"><span class="lineno">   19</span> </div>
-<div class="line"><span class="lineno">   20</span>  <span class="keyword">const</span> FARInputMappingContextAndTag* foundElement = <a class="code hl_variable" href="#a2b53cca66e377e5d451e02817a8be64e">InputMappingContexts</a>.FindByPredicate(searchByTagLambda);</div>
-<div class="line"><span class="lineno">   21</span> </div>
-<div class="line"><span class="lineno">   22</span>  <span class="keywordflow">if</span> (foundElement != <span class="keyword">nullptr</span>)</div>
-<div class="line"><span class="lineno">   23</span>  {</div>
-<div class="line"><span class="lineno">   24</span>    <span class="keywordflow">return</span> foundElement-&gt;<a class="code hl_variable" href="struct_f_a_r_input_mapping_context_and_tag.html#a0655784864cc140ee6f582471ea45546">InputMapping</a>.LoadSynchronous();</div>
-<div class="line"><span class="lineno">   25</span>  }</div>
-<div class="line"><span class="lineno">   26</span> </div>
-<div class="line"><span class="lineno">   27</span><span class="preprocessor">#if WITH_EDITOR</span></div>
-<div class="line"><span class="lineno">   28</span> </div>
-<div class="line"><span class="lineno">   29</span>  UE_LOG(LogARInput, Error, TEXT(<span class="stringliteral">&quot;InputMappingContext with Tag: [%s] is not found.&quot;</span>), *InTag.ToString());</div>
-<div class="line"><span class="lineno">   30</span> </div>
-<div class="line"><span class="lineno">   31</span><span class="preprocessor">#endif </span></div>
-<div class="line"><span class="lineno">   32</span> </div>
-<div class="line"><span class="lineno">   33</span>  <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">   34</span>}</div>
-<div class="ttc" id="aclass_u_a_r_input_mapping_context_html_a2b53cca66e377e5d451e02817a8be64e"><div class="ttname"><a href="#a2b53cca66e377e5d451e02817a8be64e">UARInputMappingContext::InputMappingContexts</a></div><div class="ttdeci">TArray&lt; FARInputMappingContextAndTag &gt; InputMappingContexts</div><div class="ttdef"><b>Definition</b> <a href="_a_r_input_mapping_context_8h_source.html#l00057">ARInputMappingContext.h:57</a></div></div>
-<div class="ttc" id="astruct_f_a_r_input_mapping_context_and_tag_html_a0655784864cc140ee6f582471ea45546"><div class="ttname"><a href="struct_f_a_r_input_mapping_context_and_tag.html#a0655784864cc140ee6f582471ea45546">FARInputMappingContextAndTag::InputMapping</a></div><div class="ttdeci">TSoftObjectPtr&lt; UInputMappingContext &gt; InputMapping</div><div class="ttdef"><b>Definition</b> <a href="_a_r_input_mapping_context_8h_source.html#l00029">ARInputMappingContext.h:29</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
@@ -188,8 +165,8 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>H:/GithubRepository/ARRanger/Source/ARRanger/Public/Input/<a class="el" href="_a_r_input_mapping_context_8h_source.html">ARInputMappingContext.h</a></li>
-<li>H:/GithubRepository/ARRanger/Source/ARRanger/Private/Input/<a class="el" href="_a_r_input_mapping_context_8cpp_source.html">ARInputMappingContext.cpp</a></li>
+<li>D:/GithubRepository/ARRanger/Source/ARRanger/Public/Input/<a class="el" href="_a_r_input_mapping_context_8h_source.html">ARInputMappingContext.h</a></li>
+<li>D:/GithubRepository/ARRanger/Source/ARRanger/Private/Input/<a class="el" href="_a_r_input_mapping_context_8cpp_source.html">ARInputMappingContext.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

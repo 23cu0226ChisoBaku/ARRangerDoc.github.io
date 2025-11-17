@@ -91,6 +91,8 @@ $(function(){initNavTree('class_u_blinking_outline_world_subsystem.html','','cla
   <div class="headertitle"><div class="title">UBlinkingOutlineWorldSubsystem Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_blinking_outline_world_subsystem_8h_source.html">BlinkingOutlineWorldSubsystem.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for UBlinkingOutlineWorldSubsystem:</div>
 <div class="dyncontent">
@@ -105,11 +107,49 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7532daecb3d322bbf93898a24b6af3e9" id="r_a7532daecb3d322bbf93898a24b6af3e9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7532daecb3d322bbf93898a24b6af3e9">Deinitialize</a> () override</td></tr>
 <tr class="memitem:a39ef45196a1766c40be40ff28d2190b9" id="r_a39ef45196a1766c40be40ff28d2190b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a39ef45196a1766c40be40ff28d2190b9">SetupBlinkingSystem</a> (UWorld *World, UDetectorMagnetizableComponent *lineTraceComp, TSubclassOf&lt; <a class="el" href="class_a_outline_tick_actor.html">AOutlineTickActor</a> &gt; tickActorClass)</td></tr>
 <tr class="memitem:a318ae1c74c2f30af0af45bed43b19a06" id="r_a318ae1c74c2f30af0af45bed43b19a06"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_outline_system.html">FOutlineSystem</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a318ae1c74c2f30af0af45bed43b19a06">GetBlinkingOutlineSystem</a> () const</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a03cce8c025107b64a818e6a1a59c337a" id="r_a03cce8c025107b64a818e6a1a59c337a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a03cce8c025107b64a818e6a1a59c337a">BindBlinkingMagnetizableObjectDelegate</a> ()</td></tr>
+<tr class="memitem:a5acf5bec8b88b4cff4f87264f007b3d3" id="r_a5acf5bec8b88b4cff4f87264f007b3d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5acf5bec8b88b4cff4f87264f007b3d3">UnBindDelegate</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:aa86f40c17a87950080a1a5d42ffd5724" id="r_aa86f40c17a87950080a1a5d42ffd5724"><td class="memItemLeft" align="right" valign="top">TObjectPtr&lt; UDetectorMagnetizableComponent &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa86f40c17a87950080a1a5d42ffd5724">m_DetectorMagnetizableComponent</a></td></tr>
+<tr class="memitem:aa85ebf4fe29908826d9a5f204c43d424" id="r_aa85ebf4fe29908826d9a5f204c43d424"><td class="memItemLeft" align="right" valign="top">TSubclassOf&lt; <a class="el" href="class_a_outline_tick_actor.html">AOutlineTickActor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa85ebf4fe29908826d9a5f204c43d424">m_TickActorClass</a></td></tr>
+<tr class="memitem:ab162c0eec5383553e8f25c81b3c1c855" id="r_ab162c0eec5383553e8f25c81b3c1c855"><td class="memItemLeft" align="right" valign="top">TUniquePtr&lt; class <a class="el" href="class_f_outline_system.html">FOutlineSystem</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab162c0eec5383553e8f25c81b3c1c855">m_OutlineSystem</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock">
 <p class="definition">Definition at line <a class="el" href="_blinking_outline_world_subsystem_8h_source.html#l00020">20</a> of file <a class="el" href="_blinking_outline_world_subsystem_8h_source.html">BlinkingOutlineWorldSubsystem.h</a>.</p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="a03cce8c025107b64a818e6a1a59c337a" name="a03cce8c025107b64a818e6a1a59c337a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03cce8c025107b64a818e6a1a59c337a">&#9670;&#160;</a></span>BindBlinkingMagnetizableObjectDelegate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UBlinkingOutlineWorldSubsystem::BindBlinkingMagnetizableObjectDelegate </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_blinking_outline_world_subsystem_8cpp_source.html#l00047">47</a> of file <a class="el" href="_blinking_outline_world_subsystem_8cpp_source.html">BlinkingOutlineWorldSubsystem.cpp</a>.</p>
+
+</div>
+</div>
 <a id="a7532daecb3d322bbf93898a24b6af3e9" name="a7532daecb3d322bbf93898a24b6af3e9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7532daecb3d322bbf93898a24b6af3e9">&#9670;&#160;</a></span>Deinitialize()</h2>
 
@@ -134,12 +174,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_blinking_outline_world_subsystem_8cpp_source.html#l00020">20</a> of file <a class="el" href="_blinking_outline_world_subsystem_8cpp_source.html">BlinkingOutlineWorldSubsystem.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   21</span>{</div>
-<div class="line"><span class="lineno">   22</span>    UnBindDelegate();</div>
-<div class="line"><span class="lineno">   23</span>    m_OutlineSystem.Reset();</div>
-<div class="line"><span class="lineno">   24</span>    Super::Deinitialize();</div>
-<div class="line"><span class="lineno">   25</span>}</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a318ae1c74c2f30af0af45bed43b19a06" name="a318ae1c74c2f30af0af45bed43b19a06"></a>
@@ -166,8 +201,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_blinking_outline_world_subsystem_8h_source.html#l00036">36</a> of file <a class="el" href="_blinking_outline_world_subsystem_8h_source.html">BlinkingOutlineWorldSubsystem.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   36</span>{ <span class="keywordflow">return</span> m_OutlineSystem.Get(); }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a8dc477ea478252a913174487eb7c4886" name="a8dc477ea478252a913174487eb7c4886"></a>
@@ -196,10 +230,7 @@ Public Member Functions</h2></td></tr>
 <p>初期化処理 </p>
 
 <p class="definition">Definition at line <a class="el" href="_blinking_outline_world_subsystem_8cpp_source.html#l00012">12</a> of file <a class="el" href="_blinking_outline_world_subsystem_8cpp_source.html">BlinkingOutlineWorldSubsystem.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   13</span>{</div>
-<div class="line"><span class="lineno">   14</span>    Super::Initialize(Collection);</div>
-<div class="line"><span class="lineno">   15</span>}</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a39ef45196a1766c40be40ff28d2190b9" name="a39ef45196a1766c40be40ff28d2190b9"></a>
@@ -227,27 +258,112 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_blinking_outline_world_subsystem_8cpp_source.html#l00027">27</a> of file <a class="el" href="_blinking_outline_world_subsystem_8cpp_source.html">BlinkingOutlineWorldSubsystem.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   28</span>{</div>
-<div class="line"><span class="lineno">   29</span>    <span class="keywordflow">if</span> (world == <span class="keyword">nullptr</span> || detectorMagnetizableComp == <span class="keyword">nullptr</span> || tickActorClass == <span class="keyword">nullptr</span>)</div>
-<div class="line"><span class="lineno">   30</span>    {</div>
-<div class="line"><span class="lineno">   31</span>        UE_LOG(LogTemp, Warning, TEXT(<span class="stringliteral">&quot;BlinkingOutlineWorldSubsystem: Setup failed due to null parameters.&quot;</span>));</div>
-<div class="line"><span class="lineno">   32</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">   33</span>    }</div>
-<div class="line"><span class="lineno">   34</span> </div>
-<div class="line"><span class="lineno">   35</span>    m_OutlineSystem = MakeUnique&lt;FOutlineSystem&gt;();</div>
-<div class="line"><span class="lineno">   36</span>    m_OutlineSystem-&gt;CreateTickingActor(world, tickActorClass);</div>
-<div class="line"><span class="lineno">   37</span> </div>
-<div class="line"><span class="lineno">   38</span>    m_DetectorMagnetizableComponent = detectorMagnetizableComp;</div>
-<div class="line"><span class="lineno">   39</span>    m_TickActorClass = tickActorClass;</div>
-<div class="line"><span class="lineno">   40</span> </div>
-<div class="line"><span class="lineno">   41</span>    BindBlinkingMagnetizableObjectDelegate();</div>
-<div class="line"><span class="lineno">   42</span>}</div>
-</div><!-- fragment -->
+
+</div>
+</div>
+<a id="a5acf5bec8b88b4cff4f87264f007b3d3" name="a5acf5bec8b88b4cff4f87264f007b3d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5acf5bec8b88b4cff4f87264f007b3d3">&#9670;&#160;</a></span>UnBindDelegate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UBlinkingOutlineWorldSubsystem::UnBindDelegate </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_blinking_outline_world_subsystem_8cpp_source.html#l00079">79</a> of file <a class="el" href="_blinking_outline_world_subsystem_8cpp_source.html">BlinkingOutlineWorldSubsystem.cpp</a>.</p>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
+<a id="aa86f40c17a87950080a1a5d42ffd5724" name="aa86f40c17a87950080a1a5d42ffd5724"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa86f40c17a87950080a1a5d42ffd5724">&#9670;&#160;</a></span>m_DetectorMagnetizableComponent</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TObjectPtr&lt;UDetectorMagnetizableComponent&gt; UBlinkingOutlineWorldSubsystem::m_DetectorMagnetizableComponent</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_blinking_outline_world_subsystem_8h_source.html#l00053">53</a> of file <a class="el" href="_blinking_outline_world_subsystem_8h_source.html">BlinkingOutlineWorldSubsystem.h</a>.</p>
+
+</div>
+</div>
+<a id="ab162c0eec5383553e8f25c81b3c1c855" name="ab162c0eec5383553e8f25c81b3c1c855"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab162c0eec5383553e8f25c81b3c1c855">&#9670;&#160;</a></span>m_OutlineSystem</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TUniquePtr&lt;class <a class="el" href="class_f_outline_system.html">FOutlineSystem</a>&gt; UBlinkingOutlineWorldSubsystem::m_OutlineSystem</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_blinking_outline_world_subsystem_8h_source.html#l00057">57</a> of file <a class="el" href="_blinking_outline_world_subsystem_8h_source.html">BlinkingOutlineWorldSubsystem.h</a>.</p>
+
+</div>
+</div>
+<a id="aa85ebf4fe29908826d9a5f204c43d424" name="aa85ebf4fe29908826d9a5f204c43d424"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa85ebf4fe29908826d9a5f204c43d424">&#9670;&#160;</a></span>m_TickActorClass</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TSubclassOf&lt;<a class="el" href="class_a_outline_tick_actor.html">AOutlineTickActor</a>&gt; UBlinkingOutlineWorldSubsystem::m_TickActorClass</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_blinking_outline_world_subsystem_8h_source.html#l00055">55</a> of file <a class="el" href="_blinking_outline_world_subsystem_8h_source.html">BlinkingOutlineWorldSubsystem.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>H:/GithubRepository/ARRanger/Source/ARRanger/Public/BlinkingSystem/<a class="el" href="_blinking_outline_world_subsystem_8h_source.html">BlinkingOutlineWorldSubsystem.h</a></li>
-<li>H:/GithubRepository/ARRanger/Source/ARRanger/Private/BlinkingSystem/<a class="el" href="_blinking_outline_world_subsystem_8cpp_source.html">BlinkingOutlineWorldSubsystem.cpp</a></li>
+<li>D:/GithubRepository/ARRanger/Source/ARRanger/Public/BlinkingSystem/<a class="el" href="_blinking_outline_world_subsystem_8h_source.html">BlinkingOutlineWorldSubsystem.h</a></li>
+<li>D:/GithubRepository/ARRanger/Source/ARRanger/Private/BlinkingSystem/<a class="el" href="_blinking_outline_world_subsystem_8cpp_source.html">BlinkingOutlineWorldSubsystem.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -103,39 +103,62 @@ Inheritance diagram for UARPhysicsTickObject:</div>
   <img src="class_u_a_r_physics_tick_object.png" usemap="#UARPhysicsTickObject_map" alt=""/>
   <map id="UARPhysicsTickObject_map" name="UARPhysicsTickObject_map">
 <area href="class_u_a_r_magnetic_tick_object.html" alt="UARMagneticTickObject" shape="rect" coords="107,112,311,136"/>
-<area href="class_u_a_r_magnetic_attraction_tick_object.html" alt="UARMagneticAttractionTickObject" shape="rect" coords="0,168,204,192"/>
-<area href="class_u_a_r_magnetic_repulsion_tick_object.html" alt="UARMagneticRepulsionTickObject" shape="rect" coords="214,168,418,192"/>
+<area href="class_u_a_r_magnetic_attraction_tick_object.html" title="引力TickObject" alt="UARMagneticAttractionTickObject" shape="rect" coords="0,168,204,192"/>
+<area href="class_u_a_r_magnetic_repulsion_tick_object.html" title="斥力TickObject" alt="UARMagneticRepulsionTickObject" shape="rect" coords="214,168,418,192"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a466ef7384cabef77e99b55c0b52e0e15" id="r_a466ef7384cabef77e99b55c0b52e0e15"><td class="memItemLeft" align="right" valign="top">ARRANGER_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a466ef7384cabef77e99b55c0b52e0e15">RegisterPhysicsTickFunction</a> ()</td></tr>
-<tr class="memitem:ae0b0e990bb8296cefa40ad31cb668b96" id="r_ae0b0e990bb8296cefa40ad31cb668b96"><td class="memItemLeft" align="right" valign="top">ARRANGER_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae0b0e990bb8296cefa40ad31cb668b96">TickPhysics</a> (const <a class="el" href="struct_f_a_r_physics_tick_parameters.html">FARPhysicsTickParameters</a> &amp;TickParams)</td></tr>
-<tr class="memitem:a8747fd0bfa301b8a94983eba13423564" id="r_a8747fd0bfa301b8a94983eba13423564"><td class="memItemLeft" align="right" valign="top">ARRANGER_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8747fd0bfa301b8a94983eba13423564">UnregisterPhysicsTickFunction</a> ()</td></tr>
-<tr class="memitem:a1dae49300ffb0f3bf3689ea84ef86c4f" id="r_a1dae49300ffb0f3bf3689ea84ef86c4f"><td class="memItemLeft" align="right" valign="top">ARRANGER_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1dae49300ffb0f3bf3689ea84ef86c4f">SetFrequency</a> (EARPhysicsTickFrequency InFrequency)</td></tr>
+<tr class="memitem:a647e054fa1867d6805a050f6b51a6d92" id="r_a647e054fa1867d6805a050f6b51a6d92"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_a_r_physics_tick_object_8h.html#a2e99ed47f8c8d0b61ab9a3327c804ca0">ARPHYSIC_API</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a647e054fa1867d6805a050f6b51a6d92">UARPhysicsTickObject</a> ()</td></tr>
+<tr class="memitem:a466ef7384cabef77e99b55c0b52e0e15" id="r_a466ef7384cabef77e99b55c0b52e0e15"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_a_r_physics_tick_object_8h.html#a2e99ed47f8c8d0b61ab9a3327c804ca0">ARPHYSIC_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a466ef7384cabef77e99b55c0b52e0e15">RegisterPhysicsTickFunction</a> ()</td></tr>
+<tr class="memdesc:a466ef7384cabef77e99b55c0b52e0e15"><td class="mdescLeft">&#160;</td><td class="mdescRight">TickFunctionオブジェクトをマネージャーに登録する  <br /></td></tr>
+<tr class="memitem:ae0b0e990bb8296cefa40ad31cb668b96" id="r_ae0b0e990bb8296cefa40ad31cb668b96"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_a_r_physics_tick_object_8h.html#a2e99ed47f8c8d0b61ab9a3327c804ca0">ARPHYSIC_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae0b0e990bb8296cefa40ad31cb668b96">TickPhysics</a> (const <a class="el" href="struct_f_a_r_physics_tick_parameters.html">FARPhysicsTickParameters</a> &amp;TickParams)</td></tr>
+<tr class="memdesc:ae0b0e990bb8296cefa40ad31cb668b96"><td class="mdescLeft">&#160;</td><td class="mdescRight">物理タスクTick関数。FARPhysicsTickFunctionに呼ばれる  <br /></td></tr>
+<tr class="memitem:a8747fd0bfa301b8a94983eba13423564" id="r_a8747fd0bfa301b8a94983eba13423564"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_a_r_physics_tick_object_8h.html#a2e99ed47f8c8d0b61ab9a3327c804ca0">ARPHYSIC_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8747fd0bfa301b8a94983eba13423564">UnregisterPhysicsTickFunction</a> ()</td></tr>
+<tr class="memdesc:a8747fd0bfa301b8a94983eba13423564"><td class="mdescLeft">&#160;</td><td class="mdescRight">登録したTickを解読する  <br /></td></tr>
+<tr class="memitem:a455467581af7628a25417e0d17e5d1e7" id="r_a455467581af7628a25417e0d17e5d1e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_a_r_physics_tick_object_8h.html#a2e99ed47f8c8d0b61ab9a3327c804ca0">ARPHYSIC_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a455467581af7628a25417e0d17e5d1e7">SetFrequency</a> (<a class="el" href="_a_r_physics_types_8h.html#a006012f2e9913202756652bb76b1fe0c">EPhysicsExecuteFrequency</a> InFrequency)</td></tr>
+<tr class="memdesc:a455467581af7628a25417e0d17e5d1e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tickの更新頻度を設定する  <br /></td></tr>
 <tr class="memitem:a84e714d18255b3aac987512821d6c502" id="r_a84e714d18255b3aac987512821d6c502"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_f_a_r_physics_evaluation_result.html">FARPhysicsEvaluationResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a84e714d18255b3aac987512821d6c502">GetLastFrameResult</a> () const</td></tr>
+<tr class="memdesc:a84e714d18255b3aac987512821d6c502"><td class="mdescLeft">&#160;</td><td class="mdescRight">前のフレームに評価された結果を返す  <br /></td></tr>
 <tr class="memitem:a76beb5b87dc27cfb153a32355ba98e49" id="r_a76beb5b87dc27cfb153a32355ba98e49"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_f_a_r_physics_evaluation_result.html">FARPhysicsEvaluationResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a76beb5b87dc27cfb153a32355ba98e49">GetEvaluatedResult</a> () const</td></tr>
+<tr class="memdesc:a76beb5b87dc27cfb153a32355ba98e49"><td class="mdescLeft">&#160;</td><td class="mdescRight">今のフレームに評価された結果を返す ※評価の途中で呼ばれたら前のフレームの結果が返される  <br /></td></tr>
 <tr class="memitem:a120d99ba9b6c691c66dfc0d278e80dab" id="r_a120d99ba9b6c691c66dfc0d278e80dab"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a120d99ba9b6c691c66dfc0d278e80dab">IsCurrentFrameEvaluateFinished</a> () const</td></tr>
+<tr class="memdesc:a120d99ba9b6c691c66dfc0d278e80dab"><td class="mdescLeft">&#160;</td><td class="mdescRight">今のフレーム評価が完了したかを確認する  <br /></td></tr>
 <tr class="memitem:ab89e5bc7781b56f6885a3ed3cdf722c2" id="r_ab89e5bc7781b56f6885a3ed3cdf722c2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab89e5bc7781b56f6885a3ed3cdf722c2">IsTickFunctionRegistered</a> () const</td></tr>
-<tr class="memitem:af0f247f8fd4d5d9eb133e3dfa058d181" id="r_af0f247f8fd4d5d9eb133e3dfa058d181"><td class="memItemLeft" align="right" valign="top"><a id="af0f247f8fd4d5d9eb133e3dfa058d181" name="af0f247f8fd4d5d9eb133e3dfa058d181"></a>
-ARRANGER_API void&#160;</td><td class="memItemRight" valign="bottom"><b>TickOnBlueprint</b> (float DeltaTime, float Total, <a class="el" href="struct_f_a_r_physics_evaluation_result.html">FARPhysicsEvaluationResult</a> &amp;Result)</td></tr>
+<tr class="memitem:a4a0b76b5f4853650657edd516d3544d5" id="r_a4a0b76b5f4853650657edd516d3544d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_a_r_physics_tick_object_8h.html#a2e99ed47f8c8d0b61ab9a3327c804ca0">ARPHYSIC_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4a0b76b5f4853650657edd516d3544d5">TickOnBlueprint</a> (float DeltaTime, <a class="el" href="struct_f_a_r_physics_evaluation_result.html">FARPhysicsEvaluationResult</a> &amp;Result)</td></tr>
+<tr class="memdesc:a4a0b76b5f4853650657edd516d3544d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tickのブループリント部分実装  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pro-methods" class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:ab81fd2e3978ac14621481e42ab4636bc" id="r_ab81fd2e3978ac14621481e42ab4636bc"><td class="memItemLeft" align="right" valign="top">virtual ARRANGER_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab81fd2e3978ac14621481e42ab4636bc">BeginDestroy</a> () override</td></tr>
-<tr class="memitem:a648623486f7b5c21d814d2d75849be31" id="r_a648623486f7b5c21d814d2d75849be31"><td class="memItemLeft" align="right" valign="top">virtual ARRANGER_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a648623486f7b5c21d814d2d75849be31">OnBeginTickObject</a> ()</td></tr>
-<tr class="memitem:a696bf586415e85b58845b49d7bbdb7d4" id="r_a696bf586415e85b58845b49d7bbdb7d4"><td class="memItemLeft" align="right" valign="top">virtual ARRANGER_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a696bf586415e85b58845b49d7bbdb7d4">OnTick</a> (const <a class="el" href="struct_f_a_r_physics_tick_parameters.html">FARPhysicsTickParameters</a> &amp;TickParams, <a class="el" href="struct_f_a_r_physics_evaluation_result.html">FARPhysicsEvaluationResult</a> &amp;Result)</td></tr>
-<tr class="memitem:a4c176891b980cc502a9a4b62e73152a2" id="r_a4c176891b980cc502a9a4b62e73152a2"><td class="memItemLeft" align="right" valign="top">virtual ARRANGER_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4c176891b980cc502a9a4b62e73152a2">OnEndTickObject</a> ()</td></tr>
+<tr class="memitem:ab81fd2e3978ac14621481e42ab4636bc" id="r_ab81fd2e3978ac14621481e42ab4636bc"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_a_r_physics_tick_object_8h.html#a2e99ed47f8c8d0b61ab9a3327c804ca0">ARPHYSIC_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab81fd2e3978ac14621481e42ab4636bc">BeginDestroy</a> () override</td></tr>
+<tr class="memitem:ad746468bea203a7112de82dc3aa472d5" id="r_ad746468bea203a7112de82dc3aa472d5"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_a_r_physics_tick_object_8h.html#a2e99ed47f8c8d0b61ab9a3327c804ca0">ARPHYSIC_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad746468bea203a7112de82dc3aa472d5">OnPreTickObject</a> ()</td></tr>
+<tr class="memitem:abf7a17c0416cad88e53690b25f6640f5" id="r_abf7a17c0416cad88e53690b25f6640f5"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_a_r_physics_tick_object_8h.html#a2e99ed47f8c8d0b61ab9a3327c804ca0">ARPHYSIC_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abf7a17c0416cad88e53690b25f6640f5">OnTick</a> (const <a class="el" href="struct_f_a_r_physics_tick_parameters.html">FARPhysicsTickParameters</a> &amp;TickParams, <a class="el" href="struct_f_a_r_physics_evaluation_result.html">FARPhysicsEvaluationResult</a> &amp;Result)</td></tr>
+<tr class="memitem:aa453f297b2d2b5f5b2395cc8093f0acf" id="r_aa453f297b2d2b5f5b2395cc8093f0acf"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_a_r_physics_tick_object_8h.html#a2e99ed47f8c8d0b61ab9a3327c804ca0">ARPHYSIC_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa453f297b2d2b5f5b2395cc8093f0acf">OnPostTickObject</a> ()</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pro-attribs" class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a9b834805f3e7870ff2c53acecea899d3" id="r_a9b834805f3e7870ff2c53acecea899d3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_a_r_physics_tick_function.html">FARPhysicsTickFunction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9b834805f3e7870ff2c53acecea899d3">PrimaryPhysicsTick</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:ab614fd5cedb212115e8f00e6f562c66d" id="r_ab614fd5cedb212115e8f00e6f562c66d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab614fd5cedb212115e8f00e6f562c66d">PreTickObject</a> ()</td></tr>
+<tr class="memdesc:ab614fd5cedb212115e8f00e6f562c66d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tickが呼ばれる前に実行する OnPreTickObjectを呼び出す  <br /></td></tr>
+<tr class="memitem:a57044cb9cb93730ab389d521152397f6" id="r_a57044cb9cb93730ab389d521152397f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a57044cb9cb93730ab389d521152397f6">Tick</a> (const <a class="el" href="struct_f_a_r_physics_tick_parameters.html">FARPhysicsTickParameters</a> &amp;TickParams)</td></tr>
+<tr class="memdesc:a57044cb9cb93730ab389d521152397f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">TickFunctionが登録されたら毎フレーム呼び出される OnTickが呼ばれる  <br /></td></tr>
+<tr class="memitem:a6c11a4936543f20deb24b66e7b2dd8b0" id="r_a6c11a4936543f20deb24b66e7b2dd8b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6c11a4936543f20deb24b66e7b2dd8b0">PostTickObject</a> ()</td></tr>
+<tr class="memdesc:a6c11a4936543f20deb24b66e7b2dd8b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tickが呼ばれた後に実行する OnPostTickObjectを呼び出す  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a32b778145ffddf776ce663804c83491b" id="r_a32b778145ffddf776ce663804c83491b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_f_a_r_physics_evaluation_result.html">FARPhysicsEvaluationResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a32b778145ffddf776ce663804c83491b">PreviousResult</a></td></tr>
+<tr class="memitem:a81f2d175aac0826c6d667437dd5e7bb2" id="r_a81f2d175aac0826c6d667437dd5e7bb2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_f_a_r_physics_evaluation_result.html">FARPhysicsEvaluationResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a81f2d175aac0826c6d667437dd5e7bb2">EvaluatedResult</a></td></tr>
+<tr class="memitem:aac3b803d3f95afc6542f7f30766dc2d2" id="r_aac3b803d3f95afc6542f7f30766dc2d2"><td class="memItemLeft" align="right" valign="top">uint8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac3b803d3f95afc6542f7f30766dc2d2">bIsEvaluateFinishedCurrentFrame</a>: 1 = false</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>AR物理Tickオブジェクト </p>
 
-<p class="definition">Definition at line <a class="el" href="_a_r_physics_tick_object_8h_source.html#l00030">30</a> of file <a class="el" href="_a_r_physics_tick_object_8h_source.html">ARPhysicsTickObject.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_a_r_physics_tick_object_8h_source.html#l00038">38</a> of file <a class="el" href="_a_r_physics_tick_object_8h_source.html">ARPhysicsTickObject.h</a>.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a647e054fa1867d6805a050f6b51a6d92" name="a647e054fa1867d6805a050f6b51a6d92"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a647e054fa1867d6805a050f6b51a6d92">&#9670;&#160;</a></span>UARPhysicsTickObject()</h2>
@@ -152,12 +175,8 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_a_r_physics_tick_object_8cpp_source.html#l00008">8</a> of file <a class="el" href="_a_r_physics_tick_object_8cpp_source.html">ARPhysicsTickObject.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">    9</span>  : PreviousResult{}</div>
-<div class="line"><span class="lineno">   10</span>  , EvaluatedResult{}</div>
-<div class="line"><span class="lineno">   11</span>  , m_internalData{::MakeUnique&lt;FInternalData&gt;()}</div>
-<div class="line"><span class="lineno">   12</span>{ }</div>
-</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="_a_r_physics_tick_object_8cpp_source.html#l00006">6</a> of file <a class="el" href="_a_r_physics_tick_object_8cpp_source.html">ARPhysicsTickObject.cpp</a>.</p>
+
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
@@ -185,13 +204,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Start UObject interface </p>
 
-<p class="definition">Definition at line <a class="el" href="_a_r_physics_tick_object_8cpp_source.html#l00081">81</a> of file <a class="el" href="_a_r_physics_tick_object_8cpp_source.html">ARPhysicsTickObject.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   82</span>{</div>
-<div class="line"><span class="lineno">   83</span>  UnregisterPhysicsTickFunction();</div>
-<div class="line"><span class="lineno">   84</span> </div>
-<div class="line"><span class="lineno">   85</span>  Super::BeginDestroy();</div>
-<div class="line"><span class="lineno">   86</span>}</div>
-</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="_a_r_physics_tick_object_8cpp_source.html#l00070">70</a> of file <a class="el" href="_a_r_physics_tick_object_8cpp_source.html">ARPhysicsTickObject.cpp</a>.</p>
+
 </div>
 </div>
 <a id="a76beb5b87dc27cfb153a32355ba98e49" name="a76beb5b87dc27cfb153a32355ba98e49"></a>
@@ -217,9 +231,11 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_a_r_physics_tick_object_8h_source.html#l00056">56</a> of file <a class="el" href="_a_r_physics_tick_object_8h_source.html">ARPhysicsTickObject.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   56</span>{ <span class="keywordflow">return</span> EvaluatedResult; }</div>
-</div><!-- fragment -->
+<p>今のフレームに評価された結果を返す ※評価の途中で呼ばれたら前のフレームの結果が返される </p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="struct_f_a_r_physics_evaluation_result.html" title="AR物理評価結果構造体">FARPhysicsEvaluationResult</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_a_r_physics_tick_object_8h_source.html#l00083">83</a> of file <a class="el" href="_a_r_physics_tick_object_8h_source.html">ARPhysicsTickObject.h</a>.</p>
+
 </div>
 </div>
 <a id="a84e714d18255b3aac987512821d6c502" name="a84e714d18255b3aac987512821d6c502"></a>
@@ -245,9 +261,11 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_a_r_physics_tick_object_8h_source.html#l00055">55</a> of file <a class="el" href="_a_r_physics_tick_object_8h_source.html">ARPhysicsTickObject.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   55</span>{ <span class="keywordflow">return</span> PreviousResult; }</div>
-</div><!-- fragment -->
+<p>前のフレームに評価された結果を返す </p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="struct_f_a_r_physics_evaluation_result.html" title="AR物理評価結果構造体">FARPhysicsEvaluationResult</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_a_r_physics_tick_object_8h_source.html#l00076">76</a> of file <a class="el" href="_a_r_physics_tick_object_8h_source.html">ARPhysicsTickObject.h</a>.</p>
+
 </div>
 </div>
 <a id="a120d99ba9b6c691c66dfc0d278e80dab" name="a120d99ba9b6c691c66dfc0d278e80dab"></a>
@@ -273,9 +291,11 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_a_r_physics_tick_object_8h_source.html#l00057">57</a> of file <a class="el" href="_a_r_physics_tick_object_8h_source.html">ARPhysicsTickObject.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   57</span>{ <span class="keywordflow">return</span> m_internalData.IsValid() &amp;&amp; m_internalData-&gt;bIsEvaluateFinishedCurrentFrame; }</div>
-</div><!-- fragment -->
+<p>今のフレーム評価が完了したかを確認する </p>
+<dl class="section return"><dt>Returns</dt><dd>評価が完了したら true,それ以外は false </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_a_r_physics_tick_object_8h_source.html#l00089">89</a> of file <a class="el" href="_a_r_physics_tick_object_8h_source.html">ARPhysicsTickObject.h</a>.</p>
+
 </div>
 </div>
 <a id="ab89e5bc7781b56f6885a3ed3cdf722c2" name="ab89e5bc7781b56f6885a3ed3cdf722c2"></a>
@@ -301,13 +321,12 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_a_r_physics_tick_object_8h_source.html#l00058">58</a> of file <a class="el" href="_a_r_physics_tick_object_8h_source.html">ARPhysicsTickObject.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   58</span>{ <span class="keywordflow">return</span> PrimaryPhysicsTick.IsTickFunctionRegistered(); }</div>
-</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="_a_r_physics_tick_object_8h_source.html#l00091">91</a> of file <a class="el" href="_a_r_physics_tick_object_8h_source.html">ARPhysicsTickObject.h</a>.</p>
+
 </div>
 </div>
-<a id="a648623486f7b5c21d814d2d75849be31" name="a648623486f7b5c21d814d2d75849be31"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a648623486f7b5c21d814d2d75849be31">&#9670;&#160;</a></span>OnBeginTickObject()</h2>
+<a id="aa453f297b2d2b5f5b2395cc8093f0acf" name="aa453f297b2d2b5f5b2395cc8093f0acf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa453f297b2d2b5f5b2395cc8093f0acf">&#9670;&#160;</a></span>OnPostTickObject()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -316,7 +335,36 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual ARRANGER_API void UARPhysicsTickObject::OnBeginTickObject </td>
+          <td class="memname">virtual <a class="el" href="_a_r_physics_tick_object_8h.html#a2e99ed47f8c8d0b61ab9a3327c804ca0">ARPHYSIC_API</a> void UARPhysicsTickObject::OnPostTickObject </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="class_u_a_r_magnetic_attraction_tick_object.html#a28ebee55ad2d4dfcfcacc4b2cc9228d0">UARMagneticAttractionTickObject</a>, <a class="el" href="class_u_a_r_magnetic_repulsion_tick_object.html#a67c7254fe81af6c8e7849eebbbcc6abb">UARMagneticRepulsionTickObject</a>, and <a class="el" href="class_u_a_r_magnetic_tick_object.html#a1a7f9b6addbde20a7270ab35659e7c1e">UARMagneticTickObject</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_a_r_physics_tick_object_8h_source.html#l00129">129</a> of file <a class="el" href="_a_r_physics_tick_object_8h_source.html">ARPhysicsTickObject.h</a>.</p>
+
+</div>
+</div>
+<a id="ad746468bea203a7112de82dc3aa472d5" name="ad746468bea203a7112de82dc3aa472d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad746468bea203a7112de82dc3aa472d5">&#9670;&#160;</a></span>OnPreTickObject()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="_a_r_physics_tick_object_8h.html#a2e99ed47f8c8d0b61ab9a3327c804ca0">ARPHYSIC_API</a> void UARPhysicsTickObject::OnPreTickObject </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -330,13 +378,12 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>End UObject interface </p>
 
-<p class="definition">Definition at line <a class="el" href="_a_r_physics_tick_object_8h_source.html#l00073">73</a> of file <a class="el" href="_a_r_physics_tick_object_8h_source.html">ARPhysicsTickObject.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   73</span>{ }</div>
-</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="_a_r_physics_tick_object_8h_source.html#l00127">127</a> of file <a class="el" href="_a_r_physics_tick_object_8h_source.html">ARPhysicsTickObject.h</a>.</p>
+
 </div>
 </div>
-<a id="a4c176891b980cc502a9a4b62e73152a2" name="a4c176891b980cc502a9a4b62e73152a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c176891b980cc502a9a4b62e73152a2">&#9670;&#160;</a></span>OnEndTickObject()</h2>
+<a id="abf7a17c0416cad88e53690b25f6640f5" name="abf7a17c0416cad88e53690b25f6640f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf7a17c0416cad88e53690b25f6640f5">&#9670;&#160;</a></span>OnTick()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -345,37 +392,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual ARRANGER_API void UARPhysicsTickObject::OnEndTickObject </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented in <a class="el" href="class_u_a_r_magnetic_attraction_tick_object.html#aa8dffc1f1af5d99bfbde264786272eb5">UARMagneticAttractionTickObject</a>, <a class="el" href="class_u_a_r_magnetic_repulsion_tick_object.html#a3d44f59dad5a2299502c425e04894cf9">UARMagneticRepulsionTickObject</a>, and <a class="el" href="class_u_a_r_magnetic_tick_object.html#af114a9a25bfe7007d7759063a3e97c3a">UARMagneticTickObject</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="_a_r_physics_tick_object_8h_source.html#l00075">75</a> of file <a class="el" href="_a_r_physics_tick_object_8h_source.html">ARPhysicsTickObject.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   75</span>{ }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a696bf586415e85b58845b49d7bbdb7d4" name="a696bf586415e85b58845b49d7bbdb7d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a696bf586415e85b58845b49d7bbdb7d4">&#9670;&#160;</a></span>OnTick()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual ARRANGER_API void UARPhysicsTickObject::OnTick </td>
+          <td class="memname">virtual <a class="el" href="_a_r_physics_tick_object_8h.html#a2e99ed47f8c8d0b61ab9a3327c804ca0">ARPHYSIC_API</a> void UARPhysicsTickObject::OnTick </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="struct_f_a_r_physics_tick_parameters.html">FARPhysicsTickParameters</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>TickParams</em></span>, </td>
         </tr>
@@ -394,9 +411,66 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="class_u_a_r_magnetic_attraction_tick_object.html#a58e54e5f6e5521123b6f28322da3c99d">UARMagneticAttractionTickObject</a>, and <a class="el" href="class_u_a_r_magnetic_repulsion_tick_object.html#a33c42276654fe3edd956fa12b8ac934a">UARMagneticRepulsionTickObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_a_r_physics_tick_object_8h_source.html#l00074">74</a> of file <a class="el" href="_a_r_physics_tick_object_8h_source.html">ARPhysicsTickObject.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   74</span>{ }</div>
-</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="_a_r_physics_tick_object_8h_source.html#l00128">128</a> of file <a class="el" href="_a_r_physics_tick_object_8h_source.html">ARPhysicsTickObject.h</a>.</p>
+
+</div>
+</div>
+<a id="a6c11a4936543f20deb24b66e7b2dd8b0" name="a6c11a4936543f20deb24b66e7b2dd8b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c11a4936543f20deb24b66e7b2dd8b0">&#9670;&#160;</a></span>PostTickObject()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UARPhysicsTickObject::PostTickObject </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Tickが呼ばれた後に実行する OnPostTickObjectを呼び出す </p>
+
+<p class="definition">Definition at line <a class="el" href="_a_r_physics_tick_object_8cpp_source.html#l00062">62</a> of file <a class="el" href="_a_r_physics_tick_object_8cpp_source.html">ARPhysicsTickObject.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab614fd5cedb212115e8f00e6f562c66d" name="ab614fd5cedb212115e8f00e6f562c66d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab614fd5cedb212115e8f00e6f562c66d">&#9670;&#160;</a></span>PreTickObject()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UARPhysicsTickObject::PreTickObject </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Tickが呼ばれる前に実行する OnPreTickObjectを呼び出す </p>
+
+<p class="definition">Definition at line <a class="el" href="_a_r_physics_tick_object_8cpp_source.html#l00036">36</a> of file <a class="el" href="_a_r_physics_tick_object_8cpp_source.html">ARPhysicsTickObject.cpp</a>.</p>
+
 </div>
 </div>
 <a id="a466ef7384cabef77e99b55c0b52e0e15" name="a466ef7384cabef77e99b55c0b52e0e15"></a>
@@ -414,19 +488,14 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_a_r_physics_tick_object_8cpp_source.html#l00014">14</a> of file <a class="el" href="_a_r_physics_tick_object_8cpp_source.html">ARPhysicsTickObject.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   15</span>{</div>
-<div class="line"><span class="lineno">   16</span>  check(!PrimaryPhysicsTick.IsTickFunctionRegistered());</div>
-<div class="line"><span class="lineno">   17</span> </div>
-<div class="line"><span class="lineno">   18</span>  PrimaryPhysicsTick.TargetObject = <span class="keyword">this</span>;</div>
-<div class="line"><span class="lineno">   19</span>  PrimaryPhysicsTick.SetEnable(<span class="keyword">true</span>);</div>
-<div class="line"><span class="lineno">   20</span>  PrimaryPhysicsTick.RegisterPhysicsTickFunction();</div>
-<div class="line"><span class="lineno">   21</span>}</div>
-</div><!-- fragment -->
+<p>TickFunctionオブジェクトをマネージャーに登録する </p>
+
+<p class="definition">Definition at line <a class="el" href="_a_r_physics_tick_object_8cpp_source.html#l00011">11</a> of file <a class="el" href="_a_r_physics_tick_object_8cpp_source.html">ARPhysicsTickObject.cpp</a>.</p>
+
 </div>
 </div>
-<a id="a1dae49300ffb0f3bf3689ea84ef86c4f" name="a1dae49300ffb0f3bf3689ea84ef86c4f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1dae49300ffb0f3bf3689ea84ef86c4f">&#9670;&#160;</a></span>SetFrequency()</h2>
+<a id="a455467581af7628a25417e0d17e5d1e7" name="a455467581af7628a25417e0d17e5d1e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a455467581af7628a25417e0d17e5d1e7">&#9670;&#160;</a></span>SetFrequency()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -434,17 +503,80 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="memname">void UARPhysicsTickObject::SetFrequency </td>
           <td>(</td>
-          <td class="paramtype">EARPhysicsTickFrequency</td>          <td class="paramname"><span class="paramname"><em>InFrequency</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="_a_r_physics_types_8h.html#a006012f2e9913202756652bb76b1fe0c">EPhysicsExecuteFrequency</a></td>          <td class="paramname"><span class="paramname"><em>InFrequency</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_a_r_physics_tick_object_8cpp_source.html#l00037">37</a> of file <a class="el" href="_a_r_physics_tick_object_8cpp_source.html">ARPhysicsTickObject.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   38</span>{</div>
-<div class="line"><span class="lineno">   39</span>  PrimaryPhysicsTick.Frequency = InFrequency;</div>
-<div class="line"><span class="lineno">   40</span>}</div>
-</div><!-- fragment -->
+<p>Tickの更新頻度を設定する </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">InFrequency</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_a_r_physics_tick_object_8cpp_source.html#l00031">31</a> of file <a class="el" href="_a_r_physics_tick_object_8cpp_source.html">ARPhysicsTickObject.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a57044cb9cb93730ab389d521152397f6" name="a57044cb9cb93730ab389d521152397f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57044cb9cb93730ab389d521152397f6">&#9670;&#160;</a></span>Tick()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UARPhysicsTickObject::Tick </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_f_a_r_physics_tick_parameters.html">FARPhysicsTickParameters</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>TickParams</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>TickFunctionが登録されたら毎フレーム呼び出される OnTickが呼ばれる </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">TickParams</td><td>Tickパラメータ構造体 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_a_r_physics_tick_object_8cpp_source.html#l00043">43</a> of file <a class="el" href="_a_r_physics_tick_object_8cpp_source.html">ARPhysicsTickObject.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a4a0b76b5f4853650657edd516d3544d5" name="a4a0b76b5f4853650657edd516d3544d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a0b76b5f4853650657edd516d3544d5">&#9670;&#160;</a></span>TickOnBlueprint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_a_r_physics_tick_object_8h.html#a2e99ed47f8c8d0b61ab9a3327c804ca0">ARPHYSIC_API</a> void UARPhysicsTickObject::TickOnBlueprint </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>DeltaTime</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_f_a_r_physics_evaluation_result.html">FARPhysicsEvaluationResult</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>Result</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tickのブループリント部分実装 </p>
+
 </div>
 </div>
 <a id="ae0b0e990bb8296cefa40ad31cb668b96" name="ae0b0e990bb8296cefa40ad31cb668b96"></a>
@@ -462,15 +594,16 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_a_r_physics_tick_object_8cpp_source.html#l00023">23</a> of file <a class="el" href="_a_r_physics_tick_object_8cpp_source.html">ARPhysicsTickObject.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   24</span>{</div>
-<div class="line"><span class="lineno">   25</span>  BeginTickObject();</div>
-<div class="line"><span class="lineno">   26</span> </div>
-<div class="line"><span class="lineno">   27</span>  Tick(TickParams);</div>
-<div class="line"><span class="lineno">   28</span> </div>
-<div class="line"><span class="lineno">   29</span>  EndTickObject();</div>
-<div class="line"><span class="lineno">   30</span>}</div>
-</div><!-- fragment -->
+<p>物理タスクTick関数。FARPhysicsTickFunctionに呼ばれる </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">TickParams</td><td>Tickパラメータ構造体 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_a_r_physics_tick_object_8cpp_source.html#l00019">19</a> of file <a class="el" href="_a_r_physics_tick_object_8cpp_source.html">ARPhysicsTickObject.cpp</a>.</p>
+
 </div>
 </div>
 <a id="a8747fd0bfa301b8a94983eba13423564" name="a8747fd0bfa301b8a94983eba13423564"></a>
@@ -488,14 +621,86 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_a_r_physics_tick_object_8cpp_source.html#l00032">32</a> of file <a class="el" href="_a_r_physics_tick_object_8cpp_source.html">ARPhysicsTickObject.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   33</span>{</div>
-<div class="line"><span class="lineno">   34</span>  PrimaryPhysicsTick.UnregisterPhysicsTickFunction();</div>
-<div class="line"><span class="lineno">   35</span>}</div>
-</div><!-- fragment -->
+<p>登録したTickを解読する </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="#a466ef7384cabef77e99b55c0b52e0e15" title="TickFunctionオブジェクトをマネージャーに登録する">RegisterPhysicsTickFunction</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_a_r_physics_tick_object_8cpp_source.html#l00026">26</a> of file <a class="el" href="_a_r_physics_tick_object_8cpp_source.html">ARPhysicsTickObject.cpp</a>.</p>
+
 </div>
 </div>
 <a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
+<a id="aac3b803d3f95afc6542f7f30766dc2d2" name="aac3b803d3f95afc6542f7f30766dc2d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac3b803d3f95afc6542f7f30766dc2d2">&#9670;&#160;</a></span>bIsEvaluateFinishedCurrentFrame</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8 UARPhysicsTickObject::bIsEvaluateFinishedCurrentFrame</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_a_r_physics_tick_object_8h_source.html#l00138">138</a> of file <a class="el" href="_a_r_physics_tick_object_8h_source.html">ARPhysicsTickObject.h</a>.</p>
+
+</div>
+</div>
+<a id="a81f2d175aac0826c6d667437dd5e7bb2" name="a81f2d175aac0826c6d667437dd5e7bb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81f2d175aac0826c6d667437dd5e7bb2">&#9670;&#160;</a></span>EvaluatedResult</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_f_a_r_physics_evaluation_result.html">FARPhysicsEvaluationResult</a> UARPhysicsTickObject::EvaluatedResult</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_a_r_physics_tick_object_8h_source.html#l00136">136</a> of file <a class="el" href="_a_r_physics_tick_object_8h_source.html">ARPhysicsTickObject.h</a>.</p>
+
+</div>
+</div>
+<a id="a32b778145ffddf776ce663804c83491b" name="a32b778145ffddf776ce663804c83491b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32b778145ffddf776ce663804c83491b">&#9670;&#160;</a></span>PreviousResult</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_f_a_r_physics_evaluation_result.html">FARPhysicsEvaluationResult</a> UARPhysicsTickObject::PreviousResult</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_a_r_physics_tick_object_8h_source.html#l00133">133</a> of file <a class="el" href="_a_r_physics_tick_object_8h_source.html">ARPhysicsTickObject.h</a>.</p>
+
+</div>
+</div>
 <a id="a9b834805f3e7870ff2c53acecea899d3" name="a9b834805f3e7870ff2c53acecea899d3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9b834805f3e7870ff2c53acecea899d3">&#9670;&#160;</a></span>PrimaryPhysicsTick</h2>
 
@@ -515,14 +720,15 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Tick function to call TickPhysics </p>
 
-<p class="definition">Definition at line <a class="el" href="_a_r_physics_tick_object_8h_source.html#l00035">35</a> of file <a class="el" href="_a_r_physics_tick_object_8h_source.html">ARPhysicsTickObject.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_a_r_physics_tick_object_8h_source.html#l00044">44</a> of file <a class="el" href="_a_r_physics_tick_object_8h_source.html">ARPhysicsTickObject.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>H:/GithubRepository/ARRanger/Source/ARRanger/Public/Physics/Core/<a class="el" href="_a_r_physics_tick_object_8h_source.html">ARPhysicsTickObject.h</a></li>
-<li>H:/GithubRepository/ARRanger/Source/ARRanger/Private/Physics/Core/<a class="el" href="_a_r_physics_tick_object_8cpp_source.html">ARPhysicsTickObject.cpp</a></li>
+<li>D:/GithubRepository/ARRanger/Source/ARRanger/Public/Physics/Core/<a class="el" href="_a_r_physics_tick_object_8h_source.html">ARPhysicsTickObject.h</a></li>
+<li>D:/GithubRepository/ARRanger/Source/ARRanger/Private/Physics/Core/<a class="el" href="_a_r_physics_tick_object_8cpp_source.html">ARPhysicsTickObject.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -91,6 +91,8 @@ $(function(){initNavTree('class_u_a_r_anim_notify___ability_cancelable.html','',
   <div class="headertitle"><div class="title">UARAnimNotify_AbilityCancelable Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_a_r_anim_notify___ability_cancelable_8h_source.html">ARAnimNotify_AbilityCancelable.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for UARAnimNotify_AbilityCancelable:</div>
 <div class="dyncontent">
@@ -100,9 +102,13 @@ Inheritance diagram for UARAnimNotify_AbilityCancelable:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae432b7de9ad8d1bfdcbfbe5334a05101" id="r_ae432b7de9ad8d1bfdcbfbe5334a05101"><td class="memItemLeft" align="right" valign="top">UE_API&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae432b7de9ad8d1bfdcbfbe5334a05101">UARAnimNotify_AbilityCancelable</a> (const FObjectInitializer &amp;ObjectInitializer=FObjectInitializer::Get())</td></tr>
-<tr class="memitem:adcd5d51523a8f4822ff6a21cde33f1a2" id="r_adcd5d51523a8f4822ff6a21cde33f1a2"><td class="memItemLeft" align="right" valign="top">virtual UE_API FString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adcd5d51523a8f4822ff6a21cde33f1a2">GetNotifyName_Implementation</a> () const override</td></tr>
-<tr class="memitem:ae0a4432450d8817aef02c5db666471cf" id="r_ae0a4432450d8817aef02c5db666471cf"><td class="memItemLeft" align="right" valign="top">virtual UE_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae0a4432450d8817aef02c5db666471cf">Notify</a> (USkeletalMeshComponent *MeshComp, UAnimSequenceBase *Animation, const FAnimNotifyEventReference &amp;EventReference) override</td></tr>
+<tr class="memitem:ae432b7de9ad8d1bfdcbfbe5334a05101" id="r_ae432b7de9ad8d1bfdcbfbe5334a05101"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_a_r_anim_notify___ability_cancelable_8h.html#a578eb926c8aecdf908e1338b2e893458">UE_API</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae432b7de9ad8d1bfdcbfbe5334a05101">UARAnimNotify_AbilityCancelable</a> (const FObjectInitializer &amp;ObjectInitializer=FObjectInitializer::Get())</td></tr>
+<tr class="memitem:adcd5d51523a8f4822ff6a21cde33f1a2" id="r_adcd5d51523a8f4822ff6a21cde33f1a2"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_a_r_anim_notify___ability_cancelable_8h.html#a578eb926c8aecdf908e1338b2e893458">UE_API</a> FString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adcd5d51523a8f4822ff6a21cde33f1a2">GetNotifyName_Implementation</a> () const override</td></tr>
+<tr class="memitem:ae0a4432450d8817aef02c5db666471cf" id="r_ae0a4432450d8817aef02c5db666471cf"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_a_r_anim_notify___ability_cancelable_8h.html#a578eb926c8aecdf908e1338b2e893458">UE_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae0a4432450d8817aef02c5db666471cf">Notify</a> (USkeletalMeshComponent *MeshComp, UAnimSequenceBase *Animation, const FAnimNotifyEventReference &amp;EventReference) override</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a74499c2cb8f265545d8dce3fd110a161" id="r_a74499c2cb8f265545d8dce3fd110a161"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_a_r_anim_notify___ability_cancelable_8h.html#adc0234e209aa2a601a7addbea92a0ac2">EARAbilityCancelType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a74499c2cb8f265545d8dce3fd110a161">CancelProcessType</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -124,10 +130,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_a_r_anim_notify___ability_cancelable_8cpp_source.html#l00008">8</a> of file <a class="el" href="_a_r_anim_notify___ability_cancelable_8cpp_source.html">ARAnimNotify_AbilityCancelable.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">    9</span>  : Super(ObjectInitializer)</div>
-<div class="line"><span class="lineno">   10</span>  , CancelProcessType(EARAbilityCancelType::Cancel)</div>
-<div class="line"><span class="lineno">   11</span>{ }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
@@ -156,10 +159,7 @@ Public Member Functions</h2></td></tr>
 <p>Start UAnimNotify interface </p>
 
 <p class="definition">Definition at line <a class="el" href="_a_r_anim_notify___ability_cancelable_8cpp_source.html#l00013">13</a> of file <a class="el" href="_a_r_anim_notify___ability_cancelable_8cpp_source.html">ARAnimNotify_AbilityCancelable.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   14</span>{</div>
-<div class="line"><span class="lineno">   15</span>  <span class="keywordflow">return</span> StaticEnum&lt;EARAbilityCancelType&gt;()-&gt;GetDisplayValueAsText(CancelProcessType).ToString();</div>
-<div class="line"><span class="lineno">   16</span>}</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="ae0a4432450d8817aef02c5db666471cf" name="ae0a4432450d8817aef02c5db666471cf"></a>
@@ -195,51 +195,38 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_a_r_anim_notify___ability_cancelable_8cpp_source.html#l00018">18</a> of file <a class="el" href="_a_r_anim_notify___ability_cancelable_8cpp_source.html">ARAnimNotify_AbilityCancelable.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   19</span>{</div>
-<div class="line"><span class="lineno">   20</span>  Super::Notify(MeshComp, Animation, EventReference);</div>
-<div class="line"><span class="lineno">   21</span> </div>
-<div class="line"><span class="lineno">   22</span>  AActor* ownerActor = MeshComp-&gt;GetOwner();</div>
-<div class="line"><span class="lineno">   23</span> </div>
-<div class="line"><span class="lineno">   24</span>  UARAbilitySystemComponent* AR_ASC = UARAbilitySystemComponent::FindARAbilitySystemComponent(ownerActor);</div>
-<div class="line"><span class="lineno">   25</span>  <span class="keywordflow">if</span> (AR_ASC != <span class="keyword">nullptr</span>)</div>
-<div class="line"><span class="lineno">   26</span>  {</div>
-<div class="line"><span class="lineno">   27</span>    <span class="comment">// TODO Notify to Set cancel state of ability</span></div>
-<div class="line"><span class="lineno">   28</span>    <span class="keyword">using </span>enum EARAbilityCancelType;</div>
-<div class="line"><span class="lineno">   29</span>    <span class="keywordflow">switch</span> (CancelProcessType)</div>
-<div class="line"><span class="lineno">   30</span>    {</div>
-<div class="line"><span class="lineno">   31</span>      <span class="keywordflow">case</span> Cancel:</div>
-<div class="line"><span class="lineno">   32</span>      {</div>
-<div class="line"><span class="lineno">   33</span>        AR_ASC-&gt;<a class="code hl_function" href="class_u_a_r_ability_system_component.html#abb338c170b458d13bbd947f6101c8df6">NotifyAbilityCancelable</a>();</div>
-<div class="line"><span class="lineno">   34</span>      }</div>
-<div class="line"><span class="lineno">   35</span>      <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">   36</span> </div>
-<div class="line"><span class="lineno">   37</span>      <span class="keywordflow">case</span> Block:</div>
-<div class="line"><span class="lineno">   38</span>      {</div>
-<div class="line"><span class="lineno">   39</span>        AR_ASC-&gt;<a class="code hl_function" href="class_u_a_r_ability_system_component.html#a1094dd44d391612de4824b4a6ae1d4d2">NotifyAbilityBlock</a>();</div>
-<div class="line"><span class="lineno">   40</span>      }</div>
-<div class="line"><span class="lineno">   41</span>      <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">   42</span> </div>
-<div class="line"><span class="lineno">   43</span>      <span class="keywordflow">default</span>:</div>
-<div class="line"><span class="lineno">   44</span>      {</div>
-<div class="line"><span class="lineno">   45</span>        <span class="comment">// Not implemented</span></div>
-<div class="line"><span class="lineno">   46</span>        checkSlow(<span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">   47</span>      }</div>
-<div class="line"><span class="lineno">   48</span>      <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">   49</span>    }</div>
-<div class="line"><span class="lineno">   50</span>  }</div>
-<div class="line"><span class="lineno">   51</span>  <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">   52</span>  {</div>
-<div class="line"><span class="lineno">   53</span>    UE_LOG(LogTemp, Error, TEXT(<span class="stringliteral">&quot;Can not find ASC.&quot;</span>));</div>
-<div class="line"><span class="lineno">   54</span>  }</div>
-<div class="line"><span class="lineno">   55</span>}</div>
-<div class="ttc" id="aclass_u_a_r_ability_system_component_html_a1094dd44d391612de4824b4a6ae1d4d2"><div class="ttname"><a href="class_u_a_r_ability_system_component.html#a1094dd44d391612de4824b4a6ae1d4d2">UARAbilitySystemComponent::NotifyAbilityBlock</a></div><div class="ttdeci">UE_API void NotifyAbilityBlock()</div><div class="ttdoc">現在のアビリティキャンセルをブロックすることを通知する</div><div class="ttdef"><b>Definition</b> <a href="_a_r_ability_system_component_8cpp_source.html#l00046">ARAbilitySystemComponent.cpp:46</a></div></div>
-<div class="ttc" id="aclass_u_a_r_ability_system_component_html_abb338c170b458d13bbd947f6101c8df6"><div class="ttname"><a href="class_u_a_r_ability_system_component.html#abb338c170b458d13bbd947f6101c8df6">UARAbilitySystemComponent::NotifyAbilityCancelable</a></div><div class="ttdeci">UE_API void NotifyAbilityCancelable()</div><div class="ttdoc">現在のアビリティがキャンセルできることを通知する</div><div class="ttdef"><b>Definition</b> <a href="_a_r_ability_system_component_8cpp_source.html#l00030">ARAbilitySystemComponent.cpp:30</a></div></div>
-</div><!-- fragment -->
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
+<a id="a74499c2cb8f265545d8dce3fd110a161" name="a74499c2cb8f265545d8dce3fd110a161"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74499c2cb8f265545d8dce3fd110a161">&#9670;&#160;</a></span>CancelProcessType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_a_r_anim_notify___ability_cancelable_8h.html#adc0234e209aa2a601a7addbea92a0ac2">EARAbilityCancelType</a> UARAnimNotify_AbilityCancelable::CancelProcessType</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>End UAnimNotify interface </p>
+
+<p class="definition">Definition at line <a class="el" href="_a_r_anim_notify___ability_cancelable_8h_source.html#l00038">38</a> of file <a class="el" href="_a_r_anim_notify___ability_cancelable_8h_source.html">ARAnimNotify_AbilityCancelable.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>H:/GithubRepository/ARRanger/Source/ARRanger/Public/Animations/AnimNotifies/<a class="el" href="_a_r_anim_notify___ability_cancelable_8h_source.html">ARAnimNotify_AbilityCancelable.h</a></li>
-<li>H:/GithubRepository/ARRanger/Source/ARRanger/Private/Animations/AnimNotifies/<a class="el" href="_a_r_anim_notify___ability_cancelable_8cpp_source.html">ARAnimNotify_AbilityCancelable.cpp</a></li>
+<li>D:/GithubRepository/ARRanger/Source/ARRanger/Public/Animations/AnimNotifies/<a class="el" href="_a_r_anim_notify___ability_cancelable_8h_source.html">ARAnimNotify_AbilityCancelable.h</a></li>
+<li>D:/GithubRepository/ARRanger/Source/ARRanger/Private/Animations/AnimNotifies/<a class="el" href="_a_r_anim_notify___ability_cancelable_8cpp_source.html">ARAnimNotify_AbilityCancelable.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

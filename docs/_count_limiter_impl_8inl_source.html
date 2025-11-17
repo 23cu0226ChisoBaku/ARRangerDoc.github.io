@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ARRanger: H:/GithubRepository/ARRanger/Source/ARRanger/Internal/CountLimiterImpl.inl Source File</title>
+<title>ARRanger: D:/GithubRepository/ARRanger/Source/ARRanger/Internal/CountLimiterImpl.inl Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -91,29 +91,36 @@ $(function(){initNavTree('_count_limiter_impl_8inl_source.html','',''); });
   <div class="headertitle"><div class="title">CountLimiterImpl.inl</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<a href="_count_limiter_impl_8inl.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#ifdef _INTERNAL_CNT_LIMITER_INLINE_PROTECTOR_</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">  #error Can not include this in another file</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#ifndef _INTERNAL_CNT_LIMITER_INLINE_PROTECTOR_</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#define _INTERNAL_CNT_LIMITER_INLINE_PROTECTOR_</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="_count_limiter_impl_8inl.html#a071ee42bb53c86fd3ed6cefcd9799286">    8</a></span><span class="preprocessor">#define _INTERNAL_CNT_LIMITER_INLINE_PROTECTOR_</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">namespace </span>ARRanger::Private</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_a_r_ranger_1_1_private.html">ARRanger::Private</a></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>{</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> UserType, u<span class="keywordtype">int</span>8 MaxSize&gt;</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>  FCountLimiter&lt;UserType, MaxSize&gt;::FCountLimiter()</div>
+<div class="foldopen" id="foldopen00013" data-start="{" data-end="}">
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_a_r_ranger_1_1_private_1_1_f_count_limiter.html#a3d28df4fa06dcb580352b6ccbc69c1d7">   13</a></span>  <a class="code hl_function" href="class_a_r_ranger_1_1_private_1_1_f_count_limiter.html#a3d28df4fa06dcb580352b6ccbc69c1d7">FCountLimiter&lt;UserType, MaxSize&gt;::FCountLimiter</a>()</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  {</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    ensureMsgf(UserType::NumInstance &lt; MaxSize, TEXT(<span class="stringliteral">&quot;Create too many instances. Type:[%hs]&quot;</span>), <span class="keyword">typeid</span>(UserType).name());</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    ++UserType::NumInstance;</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  }</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> UserType, u<span class="keywordtype">int</span>8 MaxSize&gt;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  FCountLimiter&lt;UserType, MaxSize&gt;::~FCountLimiter()</div>
+</div>
+<div class="foldopen" id="foldopen00018" data-start="{" data-end="}">
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_a_r_ranger_1_1_private_1_1_f_count_limiter.html#a3d28df4fa06dcb580352b6ccbc69c1d7">   18</a></span> </div>
+<div class="foldopen" id="foldopen00019" data-start="{" data-end="}">
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_a_r_ranger_1_1_private_1_1_f_count_limiter.html#a8d7039c5a2d2cc9ea453debe6ed909f1">   19</a></span>  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> UserType, u<span class="keywordtype">int</span>8 MaxSize&gt;</div>
+<div class="foldopen" id="foldopen00020" data-start="{" data-end="}">
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_a_r_ranger_1_1_private_1_1_f_count_limiter.html#a8d7039c5a2d2cc9ea453debe6ed909f1">   20</a></span>  <a class="code hl_function" href="class_a_r_ranger_1_1_private_1_1_f_count_limiter.html#a8d7039c5a2d2cc9ea453debe6ed909f1">FCountLimiter&lt;UserType, MaxSize&gt;::~FCountLimiter</a>()</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  {</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    --UserType::NumInstance;</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  }</div>
+</div>
+</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> UserType, u<span class="keywordtype">int</span>8 MaxSize&gt;</div>
 <div class="foldopen" id="foldopen00026" data-start="{" data-end="}">
@@ -135,15 +142,19 @@ $(function(){initNavTree('_count_limiter_impl_8inl_source.html','',''); });
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>}</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#endif </span><span class="comment">// _INTERNAL_CNT_LIMITER_INLINE_PROTECTOR_</span></div>
+</div>
+<div class="ttc" id="aclass_a_r_ranger_1_1_private_1_1_f_count_limiter_html_a3d28df4fa06dcb580352b6ccbc69c1d7"><div class="ttname"><a href="class_a_r_ranger_1_1_private_1_1_f_count_limiter.html#a3d28df4fa06dcb580352b6ccbc69c1d7">ARRanger::Private::FCountLimiter::FCountLimiter</a></div><div class="ttdeci">FCountLimiter()</div><div class="ttdef"><b>Definition</b> <a href="#l00013">CountLimiterImpl.inl:13</a></div></div>
 <div class="ttc" id="aclass_a_r_ranger_1_1_private_1_1_f_count_limiter_html_a59f1aa43d464d10da27a56a9175262d3"><div class="ttname"><a href="class_a_r_ranger_1_1_private_1_1_f_count_limiter.html#a59f1aa43d464d10da27a56a9175262d3">ARRanger::Private::FCountLimiter::GetCreatedObjectNum</a></div><div class="ttdeci">static uint8 GetCreatedObjectNum()</div><div class="ttdoc">生成されたインスタンスの数</div><div class="ttdef"><b>Definition</b> <a href="#l00032">CountLimiterImpl.inl:32</a></div></div>
+<div class="ttc" id="aclass_a_r_ranger_1_1_private_1_1_f_count_limiter_html_a8d7039c5a2d2cc9ea453debe6ed909f1"><div class="ttname"><a href="class_a_r_ranger_1_1_private_1_1_f_count_limiter.html#a8d7039c5a2d2cc9ea453debe6ed909f1">ARRanger::Private::FCountLimiter::~FCountLimiter</a></div><div class="ttdeci">~FCountLimiter()</div><div class="ttdef"><b>Definition</b> <a href="#l00020">CountLimiterImpl.inl:20</a></div></div>
 <div class="ttc" id="aclass_a_r_ranger_1_1_private_1_1_f_count_limiter_html_aa843e1f26a4da53b16aa01d6bfd2b946"><div class="ttname"><a href="class_a_r_ranger_1_1_private_1_1_f_count_limiter.html#aa843e1f26a4da53b16aa01d6bfd2b946">ARRanger::Private::FCountLimiter::GetMaxSize</a></div><div class="ttdeci">static uint8 GetMaxSize()</div><div class="ttdoc">最大数を取得</div><div class="ttdef"><b>Definition</b> <a href="#l00026">CountLimiterImpl.inl:26</a></div></div>
+<div class="ttc" id="anamespace_a_r_ranger_1_1_private_html"><div class="ttname"><a href="namespace_a_r_ranger_1_1_private.html">ARRanger::Private</a></div><div class="ttdef"><b>Definition</b> <a href="_count_limiter_8h_source.html#l00006">CountLimiter.h:7</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="dir_db4b63894235d986ff0886d3d7147fc4.html">GithubRepository</a></li><li class="navelem"><a href="dir_b7f76808a72ae9b06e23f4ba1d7ec8e0.html">ARRanger</a></li><li class="navelem"><a href="dir_22deff83e5e51399b4644a6ac5e50e58.html">Source</a></li><li class="navelem"><a href="dir_765ba4c51118e23b05fd567f675cd5c3.html">ARRanger</a></li><li class="navelem"><a href="dir_fe990f2f47a082fb4cba7a9f458c0a89.html">Internal</a></li><li class="navelem"><b>CountLimiterImpl.inl</b></li>
+    <li class="navelem"><a href="dir_db4b63894235d986ff0886d3d7147fc4.html">GithubRepository</a></li><li class="navelem"><a href="dir_b7f76808a72ae9b06e23f4ba1d7ec8e0.html">ARRanger</a></li><li class="navelem"><a href="dir_22deff83e5e51399b4644a6ac5e50e58.html">Source</a></li><li class="navelem"><a href="dir_765ba4c51118e23b05fd567f675cd5c3.html">ARRanger</a></li><li class="navelem"><a href="dir_fe990f2f47a082fb4cba7a9f458c0a89.html">Internal</a></li><li class="navelem"><a href="_count_limiter_impl_8inl.html">CountLimiterImpl.inl</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>

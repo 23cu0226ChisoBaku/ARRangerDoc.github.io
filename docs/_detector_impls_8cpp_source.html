@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ARRanger: H:/GithubRepository/ARRanger/Source/ARRanger/Private/RangeDetector/Core/DetectorImpls.cpp Source File</title>
+<title>ARRanger: D:/GithubRepository/ARRanger/Source/ARRanger/Private/RangeDetector/Core/DetectorImpls.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -91,142 +91,149 @@ $(function(){initNavTree('_detector_impls_8cpp_source.html','',''); });
   <div class="headertitle"><div class="title">DetectorImpls.cpp</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;<a class="code" href="_detector_impls_8h.html">RangeDetector/Core/DetectorImpls.h</a>&quot;</span></div>
+<a href="_detector_impls_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;<a class="code" href="_detector_impls_8h.html">RangeDetector/Core/DetectorImpls.h</a>&quot;</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="_primitive_detector_data_8h.html">RangeDetector/Core/PrimitiveDetectorData.h</a>&quot;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;RangeDetector/DetectorDatas/ConeDetectorData.h&quot;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;RangeDetector/DetectorDatas/CapsuleDetectorData.h&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="_cone_detector_data_8h.html">RangeDetector/DetectorDatas/ConeDetectorData.h</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="_capsule_detector_data_8h.html">RangeDetector/DetectorDatas/CapsuleDetectorData.h</a>&quot;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="_sphere_detector_data_8h.html">RangeDetector/DetectorDatas/SphereDetectorData.h</a>&quot;</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;RangeDetector/Utils/CollisionTraceFunctionLibrary.h&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="_collision_trace_function_library_8h.html">RangeDetector/Utils/CollisionTraceFunctionLibrary.h</a>&quot;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;Kismet/KismetSystemLibrary.h&quot;</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_a_r_ranger.html">ARRanger</a></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">namespace</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>{</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">namespace </span>Detector</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>{</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  int32 DetectTargetsImpl(UWorld* World, AActor* OriginActor, <span class="keyword">const</span> FVector&amp; InOriginLocation, <span class="keyword">const</span> FRotator&amp; InOriginRotation, <span class="keyword">const</span> FVector&amp; InOriginScale3D, <span class="keyword">const</span> UPrimitiveDetectorData&amp; InData, TArray&lt;AActor*&gt;&amp; OutResult)</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  {</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  }</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  int32 DetectTargetsImpl(UWorld* World, AActor* OriginActor, <span class="keyword">const</span> FVector&amp; InOriginLocation, <span class="keyword">const</span> FRotator&amp; InOriginRotation, <span class="keyword">const</span> FVector&amp; InOriginScale3D, <span class="keyword">const</span> UConeDetectorData&amp; InData, TArray&lt;AActor*&gt;&amp; OutResult)</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  {</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordflow">if</span> (World == <span class="keyword">nullptr</span>)</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    {</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>      <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    }</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    OutResult.Reset();</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    TArray&lt;FHitResult&gt; hitResults{};</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>  <span class="keyword">const</span> TArray&lt;TEnumAsByte&lt;EObjectTypeQuery&gt;&gt; g_objTypes</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    UEngineTypes::ConvertToObjectType(ECC_WorldStatic),</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    UEngineTypes::ConvertToObjectType(ECC_WorldDynamic),</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    UEngineTypes::ConvertToObjectType(ECC_Pawn),</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    UEngineTypes::ConvertToObjectType(ECC_PhysicsBody)</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  };</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>}</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_a_r_ranger.html">ARRanger</a></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>{</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_a_r_ranger_1_1_detector.html">Detector</a></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>{</div>
+<div class="foldopen" id="foldopen00027" data-start="{" data-end="}">
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="namespace_a_r_ranger_1_1_detector.html#a751ba5678abe84aaafd79924e62bf933">   27</a></span>  int32 <a class="code hl_function" href="namespace_a_r_ranger_1_1_detector.html#a751ba5678abe84aaafd79924e62bf933">DetectTargetsImpl</a>(UWorld* World, AActor* OriginActor, <span class="keyword">const</span> FVector&amp; InOriginLocation, <span class="keyword">const</span> FRotator&amp; InOriginRotation, <span class="keyword">const</span> FVector&amp; InOriginScale3D, <span class="keyword">const</span> <a class="code hl_class" href="class_u_primitive_detector_data.html">UPrimitiveDetectorData</a>&amp; InData, TArray&lt;AActor*&gt;&amp; OutResult)</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  {</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  }</div>
+</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="comment">// Ignore origin actor</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    TArray&lt;TObjectPtr&lt;AActor&gt;&gt; ignoreActors{};</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    ignoreActors.Add(OriginActor);</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keyword">const</span> FVector startPosition = InOriginLocation + InData.<a class="code hl_variable" href="class_u_primitive_detector_data.html#adcca1e56d35b0245d89caa97dac92254">CenterPositionOffset</a>;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">const</span> FRotator finalRotation = InOriginRotation + InData.<a class="code hl_variable" href="class_u_cone_detector_data.html#aaffc84e171d83439630d83843707800f">LocalDirectionRotator</a>;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> halfAngle = InData.ConeAngle / 2.0f;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> scale = InOriginScale3D.GetMax();</div>
+<div class="foldopen" id="foldopen00032" data-start="{" data-end="}">
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="namespace_a_r_ranger_1_1_detector.html#a9bab6a4af7b7449cc39eea90257d765f">   32</a></span>  int32 <a class="code hl_function" href="namespace_a_r_ranger_1_1_detector.html#a751ba5678abe84aaafd79924e62bf933">DetectTargetsImpl</a>(UWorld* World, AActor* OriginActor, <span class="keyword">const</span> FVector&amp; InOriginLocation, <span class="keyword">const</span> FRotator&amp; InOriginRotation, <span class="keyword">const</span> FVector&amp; InOriginScale3D, <span class="keyword">const</span> <a class="code hl_class" href="class_u_cone_detector_data.html">UConeDetectorData</a>&amp; InData, TArray&lt;AActor*&gt;&amp; OutResult)</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordflow">if</span> (World == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>      <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    }</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    OutResult.Reset();</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="comment">// TODO Channelに変更する</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">const</span> int32 resultNum = UCollisionTraceFunctionLibrary::SweepConeMulti(</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                              World, </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                              startPosition,</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                              finalRotation,</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                              InData.Height * scale,</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                              halfAngle,</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                              ignoreActors,</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                              hitResults);</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordflow">if</span> (resultNum &lt; 1)</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    {</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>      UE_LOG(LogTemp, Warning, TEXT(<span class="stringliteral">&quot;Cone hit nothing&quot;</span>));</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    }</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> FHitResult&amp; hitResult : hitResults)</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    {</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>      OutResult.AddUnique(hitResult.GetActor());</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    }</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordflow">return</span> resultNum;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  }</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  int32 DetectTargetsImpl(UWorld* World, AActor* OriginActor, <span class="keyword">const</span> FVector&amp; InOriginLocation, <span class="keyword">const</span> FRotator&amp; InOriginRotation, <span class="keyword">const</span> FVector&amp; InOriginScale3D, <span class="keyword">const</span> UCapsuleDetectorData&amp; InData, TArray&lt;AActor*&gt;&amp; OutResult)</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  {</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    check(World != <span class="keyword">nullptr</span>);</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keywordflow">if</span> (World == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    TArray&lt;FHitResult&gt; hitResults{};</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="comment">// Ignore origin actor</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    TArray&lt;TObjectPtr&lt;AActor&gt;&gt; ignoreActors{};</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    ignoreActors.Add(OriginActor);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keyword">const</span> FVector startPosition = InOriginLocation + InData.<a class="code hl_variable" href="class_u_primitive_detector_data.html#adcca1e56d35b0245d89caa97dac92254">CenterPositionOffset</a>;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keyword">const</span> FRotator finalRotation = InOriginRotation + InData.<a class="code hl_variable" href="class_u_cone_detector_data.html#aaffc84e171d83439630d83843707800f">LocalDirectionRotator</a>;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> halfAngle = InData.<a class="code hl_variable" href="class_u_cone_detector_data.html#a8744886ba965913d1b2fe50f66947ce5">ConeAngle</a> / 2.0f;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> scale = InOriginScale3D.GetMax();</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="comment">// TODO Channelに変更する</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keyword">const</span> int32 resultNum = <a class="code hl_function" href="class_u_collision_trace_function_library.html#a858b26aa6ad4ee47037fd071b862a7ce">UCollisionTraceFunctionLibrary::SweepConeMulti</a>(</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                              World, </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                              startPosition,</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                              finalRotation,</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                              InData.<a class="code hl_variable" href="class_u_cone_detector_data.html#a975109b7d7c4213740c5c789325a70f3">Height</a> * scale,</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                              halfAngle,</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                              ignoreActors,</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                              hitResults);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordflow">if</span> (resultNum &lt; 1)</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    {</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>      UE_LOG(LogTemp, Warning, TEXT(<span class="stringliteral">&quot;Cone hit nothing&quot;</span>));</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    }</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> FHitResult&amp; hitResult : hitResults)</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    {</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>      <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>      OutResult.AddUnique(hitResult.GetActor());</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    }</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    OutResult.Reset();</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    TArray&lt;AActor*&gt; hitActors{};</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="comment">// Ignore origin actor</span></div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    TArray&lt;TObjectPtr&lt;AActor&gt;&gt; ignoreActors{};</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    ignoreActors.Add(OriginActor);</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keyword">const</span> FVector startLoc = InOriginLocation + InData.<a class="code hl_variable" href="class_u_primitive_detector_data.html#adcca1e56d35b0245d89caa97dac92254">CenterPositionOffset</a>;</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> scale = InOriginScale3D.GetMax();</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    TArray&lt;TEnumAsByte&lt;EObjectTypeQuery&gt;&gt; objTypes{};</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    objTypes.Add(UEngineTypes::ConvertToObjectType(ECC_WorldStatic));</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    objTypes.Add(UEngineTypes::ConvertToObjectType(ECC_WorldDynamic));</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    objTypes.Add(UEngineTypes::ConvertToObjectType(ECC_Pawn));</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    objTypes.Add(UEngineTypes::ConvertToObjectType(ECC_PhysicsBody));</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="keyword">const</span> <span class="keywordtype">bool</span> bHit = UKismetSystemLibrary::CapsuleOverlapActors(</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                        OriginActor,</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                        startLoc,</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                        InData.CapsuleRadius * scale,</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                        InData.CapsuleHalfHeight * scale,</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>                        objTypes,</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>                        <span class="keyword">nullptr</span>,</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>                        ignoreActors,</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>                        hitActors</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>                      );</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    </div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <span class="keywordflow">if</span> (bHit)</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    {</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>      <span class="keywordflow">for</span> (AActor* actor : hitActors)</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>      {</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        OutResult.AddUnique(actor);</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>      }</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    }</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <span class="keywordflow">return</span> OutResult.Num();</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>  }</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>  int32 DetectTargetsImpl(UWorld* World, AActor* OriginActor, <span class="keyword">const</span> FVector&amp; InOriginLocation, <span class="keyword">const</span> FRotator&amp; InOriginRotation, <span class="keyword">const</span> FVector&amp; InOriginScale3D, <span class="keyword">const</span> USphereDetectorData&amp; InData, TArray&lt;AActor*&gt;&amp; OutResult)</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>  {</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    check(World != <span class="keyword">nullptr</span>);</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    <span class="keywordflow">if</span> (World == <span class="keyword">nullptr</span>)</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    {</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>      <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    }</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    OutResult.Reset();</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    TArray&lt;AActor*&gt; hitActors{};</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <span class="comment">// Ignore origin actor</span></div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    TArray&lt;TObjectPtr&lt;AActor&gt;&gt; ignoreActors{};</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    ignoreActors.Add(OriginActor);</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <span class="keyword">const</span> FVector originLoc = InOriginLocation + InData.<a class="code hl_variable" href="class_u_primitive_detector_data.html#adcca1e56d35b0245d89caa97dac92254">CenterPositionOffset</a>;</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> scale = InOriginScale3D.GetMax();</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    TArray&lt;TEnumAsByte&lt;EObjectTypeQuery&gt;&gt; objTypes{};</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    objTypes.Add(UEngineTypes::ConvertToObjectType(ECC_WorldStatic));</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    objTypes.Add(UEngineTypes::ConvertToObjectType(ECC_WorldDynamic));</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    objTypes.Add(UEngineTypes::ConvertToObjectType(ECC_Pawn));</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    objTypes.Add(UEngineTypes::ConvertToObjectType(ECC_PhysicsBody));</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keywordflow">return</span> resultNum;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  }</div>
+</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="foldopen" id="foldopen00075" data-start="{" data-end="}">
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="namespace_a_r_ranger_1_1_detector.html#ae5966a5f5370a4bcaa435c1b1ba1bd25">   75</a></span>  int32 <a class="code hl_function" href="namespace_a_r_ranger_1_1_detector.html#a751ba5678abe84aaafd79924e62bf933">DetectTargetsImpl</a>(UWorld* World, AActor* OriginActor, <span class="keyword">const</span> FVector&amp; InOriginLocation, <span class="keyword">const</span> FRotator&amp; InOriginRotation, <span class="keyword">const</span> FVector&amp; InOriginScale3D, <span class="keyword">const</span> <a class="code hl_class" href="class_u_capsule_detector_data.html">UCapsuleDetectorData</a>&amp; InData, TArray&lt;AActor*&gt;&amp; OutResult)</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  {</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    check(World != <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keywordflow">if</span> (World == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    {</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>      <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    }</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    OutResult.Reset();</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    TArray&lt;AActor*&gt; hitActors{};</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="comment">// Ignore origin actor</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    TArray&lt;TObjectPtr&lt;AActor&gt;&gt; ignoreActors{};</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    ignoreActors.Add(OriginActor);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="keyword">const</span> FVector startLoc = InOriginLocation + InData.<a class="code hl_variable" href="class_u_primitive_detector_data.html#adcca1e56d35b0245d89caa97dac92254">CenterPositionOffset</a>;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> scale = InOriginScale3D.GetMax();</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keyword">const</span> <span class="keywordtype">bool</span> bHit = UKismetSystemLibrary::CapsuleOverlapActors(</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>                        OriginActor,</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>                        startLoc,</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>                        InData.<a class="code hl_variable" href="class_u_capsule_detector_data.html#a3edf4231d992a034b5f94db22790d58c">CapsuleRadius</a> * scale,</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>                        InData.<a class="code hl_variable" href="class_u_capsule_detector_data.html#a64fc4e7ea25c738be158c01e3347fbd6">CapsuleHalfHeight</a> * scale,</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>                        g_objTypes,</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                        <span class="keyword">nullptr</span>,</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>                        ignoreActors,</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>                        hitActors</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>                      );</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <span class="keywordflow">if</span> (bHit)</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    {</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>      <span class="keywordflow">for</span> (AActor* actor : hitActors)</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>      {</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        OutResult.AddUnique(actor);</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>      }</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    }</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    <span class="keywordflow">return</span> OutResult.Num();</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>  }</div>
+</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="foldopen" id="foldopen00114" data-start="{" data-end="}">
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="namespace_a_r_ranger_1_1_detector.html#ae5909a7e22f9d6bcac7110ab2fc55383">  114</a></span>  int32 <a class="code hl_function" href="namespace_a_r_ranger_1_1_detector.html#a751ba5678abe84aaafd79924e62bf933">DetectTargetsImpl</a>(UWorld* World, AActor* OriginActor, <span class="keyword">const</span> FVector&amp; InOriginLocation, <span class="keyword">const</span> FRotator&amp; InOriginRotation, <span class="keyword">const</span> FVector&amp; InOriginScale3D, <span class="keyword">const</span> <a class="code hl_class" href="class_u_sphere_detector_data.html">USphereDetectorData</a>&amp; InData, TArray&lt;AActor*&gt;&amp; OutResult)</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>  {</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    check(World != <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <span class="keywordflow">if</span> (World == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    {</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>      <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    }</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    OutResult.Reset();</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    TArray&lt;AActor*&gt; hitActors{};</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    <span class="comment">// Ignore origin actor</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    TArray&lt;TObjectPtr&lt;AActor&gt;&gt; ignoreActors{};</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    ignoreActors.Add(OriginActor);</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    <span class="keyword">const</span> FVector originLoc = InOriginLocation + InData.<a class="code hl_variable" href="class_u_primitive_detector_data.html#adcca1e56d35b0245d89caa97dac92254">CenterPositionOffset</a>;</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> scale = InOriginScale3D.GetMax();</div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    <span class="keyword">const</span> <span class="keywordtype">bool</span> bHit = UKismetSystemLibrary::SphereOverlapActors(</div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>                        OriginActor,</div>
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>                        InOriginLocation,</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>                        InData.SphereRadius * scale,</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>                        objTypes,</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>                        InData.<a class="code hl_variable" href="class_u_sphere_detector_data.html#a55aef10d171d90cd42d726ece091c925">SphereRadius</a> * scale,</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>                        g_objTypes,</div>
 <div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>                        <span class="keyword">nullptr</span>,</div>
 <div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>                        ignoreActors,</div>
 <div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>                        hitActors</div>
@@ -241,6 +248,7 @@ $(function(){initNavTree('_detector_impls_8cpp_source.html','',''); });
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
 <div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    <span class="keywordflow">return</span> OutResult.Num();</div>
 <div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>  }</div>
+</div>
 <div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>} <span class="comment">// namespace ARRanger::Detector</span></div>
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
 <div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>} <span class="comment">// namespace ARRanger</span></div>
@@ -248,15 +256,27 @@ $(function(){initNavTree('_detector_impls_8cpp_source.html','',''); });
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span><a class="code hl_define" href="_primitive_detector_data_8h.html#a2633939f41d5b9dccc79aa7547d87015">DEFINE_PRIMITIVE_DETECTOR</a>(<a class="code hl_class" href="class_u_cone_detector_data.html">UConeDetectorData</a>)</div>
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span><a class="code hl_define" href="_primitive_detector_data_8h.html#a2633939f41d5b9dccc79aa7547d87015">DEFINE_PRIMITIVE_DETECTOR</a>(<a class="code hl_class" href="class_u_capsule_detector_data.html">UCapsuleDetectorData</a>)</div>
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span><a class="code hl_define" href="_primitive_detector_data_8h.html#a2633939f41d5b9dccc79aa7547d87015">DEFINE_PRIMITIVE_DETECTOR</a>(<a class="code hl_class" href="class_u_sphere_detector_data.html">USphereDetectorData</a>)</div>
+<div class="ttc" id="a_capsule_detector_data_8h_html"><div class="ttname"><a href="_capsule_detector_data_8h.html">CapsuleDetectorData.h</a></div></div>
+<div class="ttc" id="a_collision_trace_function_library_8h_html"><div class="ttname"><a href="_collision_trace_function_library_8h.html">CollisionTraceFunctionLibrary.h</a></div></div>
+<div class="ttc" id="a_cone_detector_data_8h_html"><div class="ttname"><a href="_cone_detector_data_8h.html">ConeDetectorData.h</a></div></div>
 <div class="ttc" id="a_detector_impls_8h_html"><div class="ttname"><a href="_detector_impls_8h.html">DetectorImpls.h</a></div><div class="ttdoc">DetectTargets implementation function&#39;s declarations.</div></div>
 <div class="ttc" id="a_primitive_detector_data_8h_html"><div class="ttname"><a href="_primitive_detector_data_8h.html">PrimitiveDetectorData.h</a></div><div class="ttdoc">Base class of all detector data.</div></div>
 <div class="ttc" id="a_primitive_detector_data_8h_html_a2633939f41d5b9dccc79aa7547d87015"><div class="ttname"><a href="_primitive_detector_data_8h.html#a2633939f41d5b9dccc79aa7547d87015">DEFINE_PRIMITIVE_DETECTOR</a></div><div class="ttdeci">#define DEFINE_PRIMITIVE_DETECTOR(DetectorType)</div><div class="ttdoc">Declarations of DECLARE_PRIMITIVE_DETECTOR.Use this for derived class (.cpp file)</div><div class="ttdef"><b>Definition</b> <a href="_primitive_detector_data_8h_source.html#l00037">PrimitiveDetectorData.h:37</a></div></div>
 <div class="ttc" id="a_sphere_detector_data_8h_html"><div class="ttname"><a href="_sphere_detector_data_8h.html">SphereDetectorData.h</a></div><div class="ttdoc">Sphere detector data.</div></div>
 <div class="ttc" id="aclass_u_capsule_detector_data_html"><div class="ttname"><a href="class_u_capsule_detector_data.html">UCapsuleDetectorData</a></div><div class="ttdef"><b>Definition</b> <a href="_capsule_detector_data_8h_source.html#l00012">CapsuleDetectorData.h:13</a></div></div>
+<div class="ttc" id="aclass_u_capsule_detector_data_html_a3edf4231d992a034b5f94db22790d58c"><div class="ttname"><a href="class_u_capsule_detector_data.html#a3edf4231d992a034b5f94db22790d58c">UCapsuleDetectorData::CapsuleRadius</a></div><div class="ttdeci">float CapsuleRadius</div><div class="ttdef"><b>Definition</b> <a href="_capsule_detector_data_8h_source.html#l00022">CapsuleDetectorData.h:22</a></div></div>
+<div class="ttc" id="aclass_u_capsule_detector_data_html_a64fc4e7ea25c738be158c01e3347fbd6"><div class="ttname"><a href="class_u_capsule_detector_data.html#a64fc4e7ea25c738be158c01e3347fbd6">UCapsuleDetectorData::CapsuleHalfHeight</a></div><div class="ttdeci">float CapsuleHalfHeight</div><div class="ttdef"><b>Definition</b> <a href="_capsule_detector_data_8h_source.html#l00019">CapsuleDetectorData.h:19</a></div></div>
+<div class="ttc" id="aclass_u_collision_trace_function_library_html_a858b26aa6ad4ee47037fd071b862a7ce"><div class="ttname"><a href="class_u_collision_trace_function_library.html#a858b26aa6ad4ee47037fd071b862a7ce">UCollisionTraceFunctionLibrary::SweepConeMulti</a></div><div class="ttdeci">static int32 SweepConeMulti(UWorld *World, const FVector &amp;StartPosition, const FRotator &amp;Direction, float ConeHeight, float ConeHalfAngle, const TArray&lt; TObjectPtr&lt; AActor &gt; &gt; &amp;ActorsToIgnore, TArray&lt; FHitResult &gt; &amp;OutHitResults)</div><div class="ttdef"><b>Definition</b> <a href="_collision_trace_function_library_8cpp_source.html#l00006">CollisionTraceFunctionLibrary.cpp:6</a></div></div>
 <div class="ttc" id="aclass_u_cone_detector_data_html"><div class="ttname"><a href="class_u_cone_detector_data.html">UConeDetectorData</a></div><div class="ttdef"><b>Definition</b> <a href="_cone_detector_data_8h_source.html#l00016">ConeDetectorData.h:17</a></div></div>
+<div class="ttc" id="aclass_u_cone_detector_data_html_a8744886ba965913d1b2fe50f66947ce5"><div class="ttname"><a href="class_u_cone_detector_data.html#a8744886ba965913d1b2fe50f66947ce5">UConeDetectorData::ConeAngle</a></div><div class="ttdeci">float ConeAngle</div><div class="ttdef"><b>Definition</b> <a href="_cone_detector_data_8h_source.html#l00032">ConeDetectorData.h:32</a></div></div>
+<div class="ttc" id="aclass_u_cone_detector_data_html_a975109b7d7c4213740c5c789325a70f3"><div class="ttname"><a href="class_u_cone_detector_data.html#a975109b7d7c4213740c5c789325a70f3">UConeDetectorData::Height</a></div><div class="ttdeci">float Height</div><div class="ttdef"><b>Definition</b> <a href="_cone_detector_data_8h_source.html#l00028">ConeDetectorData.h:28</a></div></div>
 <div class="ttc" id="aclass_u_cone_detector_data_html_aaffc84e171d83439630d83843707800f"><div class="ttname"><a href="class_u_cone_detector_data.html#aaffc84e171d83439630d83843707800f">UConeDetectorData::LocalDirectionRotator</a></div><div class="ttdeci">FRotator LocalDirectionRotator</div><div class="ttdef"><b>Definition</b> <a href="_cone_detector_data_8h_source.html#l00024">ConeDetectorData.h:24</a></div></div>
+<div class="ttc" id="aclass_u_primitive_detector_data_html"><div class="ttname"><a href="class_u_primitive_detector_data.html">UPrimitiveDetectorData</a></div><div class="ttdoc">Base class of all detector data Inherit this for specific type(Sphere,Capsule,etc....</div><div class="ttdef"><b>Definition</b> <a href="_primitive_detector_data_8h_source.html#l00054">PrimitiveDetectorData.h:55</a></div></div>
 <div class="ttc" id="aclass_u_primitive_detector_data_html_adcca1e56d35b0245d89caa97dac92254"><div class="ttname"><a href="class_u_primitive_detector_data.html#adcca1e56d35b0245d89caa97dac92254">UPrimitiveDetectorData::CenterPositionOffset</a></div><div class="ttdeci">FVector CenterPositionOffset</div><div class="ttdef"><b>Definition</b> <a href="_primitive_detector_data_8h_source.html#l00068">PrimitiveDetectorData.h:68</a></div></div>
 <div class="ttc" id="aclass_u_sphere_detector_data_html"><div class="ttname"><a href="class_u_sphere_detector_data.html">USphereDetectorData</a></div><div class="ttdoc">Sphere shape detector data class.</div><div class="ttdef"><b>Definition</b> <a href="_sphere_detector_data_8h_source.html#l00021">SphereDetectorData.h:22</a></div></div>
+<div class="ttc" id="aclass_u_sphere_detector_data_html_a55aef10d171d90cd42d726ece091c925"><div class="ttname"><a href="class_u_sphere_detector_data.html#a55aef10d171d90cd42d726ece091c925">USphereDetectorData::SphereRadius</a></div><div class="ttdeci">float SphereRadius</div><div class="ttdef"><b>Definition</b> <a href="_sphere_detector_data_8h_source.html#l00028">SphereDetectorData.h:28</a></div></div>
+<div class="ttc" id="anamespace_a_r_ranger_1_1_detector_html"><div class="ttname"><a href="namespace_a_r_ranger_1_1_detector.html">ARRanger::Detector</a></div><div class="ttdef"><b>Definition</b> <a href="_range_detector_filter_8cpp_source.html#l00008">RangeDetectorFilter.cpp:9</a></div></div>
+<div class="ttc" id="anamespace_a_r_ranger_1_1_detector_html_a751ba5678abe84aaafd79924e62bf933"><div class="ttname"><a href="namespace_a_r_ranger_1_1_detector.html#a751ba5678abe84aaafd79924e62bf933">ARRanger::Detector::DetectTargetsImpl</a></div><div class="ttdeci">int32 DetectTargetsImpl(UWorld *World, AActor *OriginActor, const FVector &amp;InOriginLocation, const FRotator &amp;InOriginRotation, const FVector &amp;InOriginScale3D, const UPrimitiveDetectorData &amp;InData, TArray&lt; AActor * &gt; &amp;OutResult)</div><div class="ttdef"><b>Definition</b> <a href="#l00027">DetectorImpls.cpp:27</a></div></div>
 <div class="ttc" id="anamespace_a_r_ranger_html"><div class="ttname"><a href="namespace_a_r_ranger.html">ARRanger</a></div><div class="ttdef"><b>Definition</b> <a href="_a_r_gameplay_tags_8cpp_source.html#l00004">ARGameplayTags.cpp:5</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -264,7 +284,7 @@ $(function(){initNavTree('_detector_impls_8cpp_source.html','',''); });
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="dir_db4b63894235d986ff0886d3d7147fc4.html">GithubRepository</a></li><li class="navelem"><a href="dir_b7f76808a72ae9b06e23f4ba1d7ec8e0.html">ARRanger</a></li><li class="navelem"><a href="dir_22deff83e5e51399b4644a6ac5e50e58.html">Source</a></li><li class="navelem"><a href="dir_765ba4c51118e23b05fd567f675cd5c3.html">ARRanger</a></li><li class="navelem"><a href="dir_01ca0bd49608f959e3dafd2b38229153.html">Private</a></li><li class="navelem"><a href="dir_e20e398f1a596ec84d9a43363640eedd.html">RangeDetector</a></li><li class="navelem"><a href="dir_e8a2688e97f9d9d3f64269d782ca1fed.html">Core</a></li><li class="navelem"><b>DetectorImpls.cpp</b></li>
+    <li class="navelem"><a href="dir_db4b63894235d986ff0886d3d7147fc4.html">GithubRepository</a></li><li class="navelem"><a href="dir_b7f76808a72ae9b06e23f4ba1d7ec8e0.html">ARRanger</a></li><li class="navelem"><a href="dir_22deff83e5e51399b4644a6ac5e50e58.html">Source</a></li><li class="navelem"><a href="dir_765ba4c51118e23b05fd567f675cd5c3.html">ARRanger</a></li><li class="navelem"><a href="dir_01ca0bd49608f959e3dafd2b38229153.html">Private</a></li><li class="navelem"><a href="dir_e20e398f1a596ec84d9a43363640eedd.html">RangeDetector</a></li><li class="navelem"><a href="dir_e8a2688e97f9d9d3f64269d782ca1fed.html">Core</a></li><li class="navelem"><a href="_detector_impls_8cpp.html">DetectorImpls.cpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>

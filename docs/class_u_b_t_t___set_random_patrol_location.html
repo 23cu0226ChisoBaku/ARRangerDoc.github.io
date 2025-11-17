@@ -91,6 +91,8 @@ $(function(){initNavTree('class_u_b_t_t___set_random_patrol_location.html','','c
   <div class="headertitle"><div class="title">UBTT_SetRandomPatrolLocation Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_b_t_t___set_random_patrol_location_8h_source.html">BTT_SetRandomPatrolLocation.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for UBTT_SetRandomPatrolLocation:</div>
 <div class="dyncontent">
@@ -100,6 +102,7 @@ Inheritance diagram for UBTT_SetRandomPatrolLocation:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a4ca3fbc4f0a7dc34fcf8979d444129ea" id="r_a4ca3fbc4f0a7dc34fcf8979d444129ea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ca3fbc4f0a7dc34fcf8979d444129ea">UBTT_SetRandomPatrolLocation</a> ()</td></tr>
 <tr class="memitem:a771d0a2aea7b0d73332e4e437e350dd0" id="r_a771d0a2aea7b0d73332e4e437e350dd0"><td class="memItemLeft" align="right" valign="top">virtual EBTNodeResult::Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a771d0a2aea7b0d73332e4e437e350dd0">ExecuteTask</a> (UBehaviorTreeComponent &amp;OwnerComp, uint8 *NodeMemory) override</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pro-attribs" class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
@@ -128,10 +131,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_b_t_t___set_random_patrol_location_8cpp_source.html#l00007">7</a> of file <a class="el" href="_b_t_t___set_random_patrol_location_8cpp_source.html">BTT_SetRandomPatrolLocation.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">    8</span>{</div>
-<div class="line"><span class="lineno">    9</span>    NodeName = TEXT(<span class="stringliteral">&quot;PatrolPosition&quot;</span>);</div>
-<div class="line"><span class="lineno">   10</span>}</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
@@ -163,51 +163,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_b_t_t___set_random_patrol_location_8cpp_source.html#l00012">12</a> of file <a class="el" href="_b_t_t___set_random_patrol_location_8cpp_source.html">BTT_SetRandomPatrolLocation.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   13</span>{</div>
-<div class="line"><span class="lineno">   14</span>  AAIController* AIController = OwnerComp.GetAIOwner();</div>
-<div class="line"><span class="lineno">   15</span>  <span class="keywordflow">if</span> (AIController == <span class="keyword">nullptr</span>)</div>
-<div class="line"><span class="lineno">   16</span>  {</div>
-<div class="line"><span class="lineno">   17</span>    <span class="keywordflow">return</span> EBTNodeResult::Succeeded;</div>
-<div class="line"><span class="lineno">   18</span>  }</div>
-<div class="line"><span class="lineno">   19</span> </div>
-<div class="line"><span class="lineno">   20</span>  APawn* AIPawn = AIController-&gt;GetPawn();</div>
-<div class="line"><span class="lineno">   21</span>  <span class="keywordflow">if</span> (AIPawn == <span class="keyword">nullptr</span>)</div>
-<div class="line"><span class="lineno">   22</span>  {</div>
-<div class="line"><span class="lineno">   23</span>    <span class="keywordflow">return</span> EBTNodeResult::Succeeded;</div>
-<div class="line"><span class="lineno">   24</span>  } </div>
-<div class="line"><span class="lineno">   25</span> </div>
-<div class="line"><span class="lineno">   26</span>  UNavigationSystemV1* NavSys = UNavigationSystemV1::GetCurrent(AIController-&gt;GetWorld());</div>
-<div class="line"><span class="lineno">   27</span>  <span class="keywordflow">if</span> (NavSys == <span class="keyword">nullptr</span>)</div>
-<div class="line"><span class="lineno">   28</span>  {</div>
-<div class="line"><span class="lineno">   29</span>    <span class="keywordflow">return</span> EBTNodeResult::Succeeded;</div>
-<div class="line"><span class="lineno">   30</span>  } </div>
-<div class="line"><span class="lineno">   31</span> </div>
-<div class="line"><span class="lineno">   32</span>  UBlackboardComponent* BlackboardComp = OwnerComp.GetBlackboardComponent();</div>
-<div class="line"><span class="lineno">   33</span>  <span class="keywordflow">if</span> (BlackboardComp == <span class="keyword">nullptr</span>)</div>
-<div class="line"><span class="lineno">   34</span>  {</div>
-<div class="line"><span class="lineno">   35</span>    <span class="keywordflow">return</span> EBTNodeResult::Succeeded;</div>
-<div class="line"><span class="lineno">   36</span>  } </div>
-<div class="line"><span class="lineno">   37</span> </div>
-<div class="line"><span class="lineno">   38</span>  FVector Origin = BlackboardComp-&gt;GetValueAsVector(PatrolOriginKey.SelectedKeyName);</div>
-<div class="line"><span class="lineno">   39</span>  <span class="keywordflow">if</span> (!BlackboardComp-&gt;IsVectorValueSet(PatrolOriginKey.SelectedKeyName))</div>
-<div class="line"><span class="lineno">   40</span>  {</div>
-<div class="line"><span class="lineno">   41</span>    Origin = AIPawn-&gt;GetActorLocation();</div>
-<div class="line"><span class="lineno">   42</span>    BlackboardComp-&gt;SetValueAsVector(PatrolOriginKey.SelectedKeyName, Origin);</div>
-<div class="line"><span class="lineno">   43</span>  }</div>
-<div class="line"><span class="lineno">   44</span> </div>
-<div class="line"><span class="lineno">   45</span>  FNavLocation RandomPatrolLocation{};</div>
-<div class="line"><span class="lineno">   46</span>  <span class="keywordflow">if</span> (NavSys-&gt;GetRandomPointInNavigableRadius(Origin, SearchRadius, RandomPatrolLocation))</div>
-<div class="line"><span class="lineno">   47</span>  {</div>
-<div class="line"><span class="lineno">   48</span>    BlackboardComp-&gt;SetValueAsVector(PatrolLocationKey.SelectedKeyName, RandomPatrolLocation.Location);</div>
-<div class="line"><span class="lineno">   49</span>  }</div>
-<div class="line"><span class="lineno">   50</span>  <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">   51</span>  {</div>
-<div class="line"><span class="lineno">   52</span>    BlackboardComp-&gt;SetValueAsVector(PatrolLocationKey.SelectedKeyName, Origin);</div>
-<div class="line"><span class="lineno">   53</span>  }</div>
-<div class="line"><span class="lineno">   54</span> </div>
-<div class="line"><span class="lineno">   55</span>  <span class="keywordflow">return</span> EBTNodeResult::Succeeded;</div>
-<div class="line"><span class="lineno">   56</span>}</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
@@ -284,8 +240,8 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>H:/GithubRepository/ARRanger/Source/ARRanger/Public/Enemy/BTT/<a class="el" href="_b_t_t___set_random_patrol_location_8h_source.html">BTT_SetRandomPatrolLocation.h</a></li>
-<li>H:/GithubRepository/ARRanger/Source/ARRanger/Private/Enemy/<a class="el" href="_b_t_t___set_random_patrol_location_8cpp_source.html">BTT_SetRandomPatrolLocation.cpp</a></li>
+<li>D:/GithubRepository/ARRanger/Source/ARRanger/Public/Enemy/BTT/<a class="el" href="_b_t_t___set_random_patrol_location_8h_source.html">BTT_SetRandomPatrolLocation.h</a></li>
+<li>D:/GithubRepository/ARRanger/Source/ARRanger/Private/Enemy/<a class="el" href="_b_t_t___set_random_patrol_location_8cpp_source.html">BTT_SetRandomPatrolLocation.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

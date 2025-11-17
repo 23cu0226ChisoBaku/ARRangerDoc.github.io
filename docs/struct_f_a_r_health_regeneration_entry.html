@@ -91,12 +91,14 @@ $(function(){initNavTree('struct_f_a_r_health_regeneration_entry.html','','struc
   <div class="headertitle"><div class="title">FARHealthRegenerationEntry Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_a_r_health_component_8h_source.html">ARHealthComponent.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a03288607522548c52eba9845fb98b4ea" id="r_a03288607522548c52eba9845fb98b4ea"><td class="memItemLeft" align="right" valign="top">UE_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a03288607522548c52eba9845fb98b4ea">ResetRegenerationState</a> ()</td></tr>
-<tr class="memitem:aad6fc0ca7fa4c725c7df8ee9e17f5b4e" id="r_aad6fc0ca7fa4c725c7df8ee9e17f5b4e"><td class="memItemLeft" align="right" valign="top">UE_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad6fc0ca7fa4c725c7df8ee9e17f5b4e">EvaluateRegeneration</a> (float DeltaTime)</td></tr>
-<tr class="memitem:a6830534dbe367c2c7bbdc3aa0e024a8a" id="r_a6830534dbe367c2c7bbdc3aa0e024a8a"><td class="memItemLeft" align="right" valign="top">UE_API float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6830534dbe367c2c7bbdc3aa0e024a8a">GetRegenerationSpeed</a> () const</td></tr>
+<tr class="memitem:a03288607522548c52eba9845fb98b4ea" id="r_a03288607522548c52eba9845fb98b4ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_a_r_health_component_8h.html#a578eb926c8aecdf908e1338b2e893458">UE_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a03288607522548c52eba9845fb98b4ea">ResetRegenerationState</a> ()</td></tr>
+<tr class="memitem:aad6fc0ca7fa4c725c7df8ee9e17f5b4e" id="r_aad6fc0ca7fa4c725c7df8ee9e17f5b4e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_a_r_health_component_8h.html#a578eb926c8aecdf908e1338b2e893458">UE_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad6fc0ca7fa4c725c7df8ee9e17f5b4e">EvaluateRegeneration</a> (float DeltaTime)</td></tr>
+<tr class="memitem:a6830534dbe367c2c7bbdc3aa0e024a8a" id="r_a6830534dbe367c2c7bbdc3aa0e024a8a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_a_r_health_component_8h.html#a578eb926c8aecdf908e1338b2e893458">UE_API</a> float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6830534dbe367c2c7bbdc3aa0e024a8a">GetRegenerationSpeed</a> () const</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -128,24 +130,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_a_r_health_component_8cpp_source.html#l00022">22</a> of file <a class="el" href="_a_r_health_component_8cpp_source.html">ARHealthComponent.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   23</span>{</div>
-<div class="line"><span class="lineno">   24</span>  <span class="keywordflow">if</span> (!bEnableRegeneration)</div>
-<div class="line"><span class="lineno">   25</span>  {</div>
-<div class="line"><span class="lineno">   26</span>    <span class="comment">// Start regeneration if delay is finished</span></div>
-<div class="line"><span class="lineno">   27</span>    RegenerationDelayTimeCnt += DeltaTime;</div>
-<div class="line"><span class="lineno">   28</span>    <span class="keywordflow">if</span> (RegenerationDelayTimeCnt &gt;= RegenerationDelay)</div>
-<div class="line"><span class="lineno">   29</span>    {</div>
-<div class="line"><span class="lineno">   30</span>      bEnableRegeneration = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">   31</span>    }</div>
-<div class="line"><span class="lineno">   32</span>  }</div>
-<div class="line"><span class="lineno">   33</span> </div>
-<div class="line"><span class="lineno">   34</span>  <span class="comment">// Evaluate regeneration curve</span></div>
-<div class="line"><span class="lineno">   35</span>  <span class="keywordflow">if</span> (bEnableRegeneration &amp;&amp; bUseRegenerationSpeedOverrideCurve)</div>
-<div class="line"><span class="lineno">   36</span>  {</div>
-<div class="line"><span class="lineno">   37</span>    RegenerationCurveEvaluationTimeValue += DeltaTime;</div>
-<div class="line"><span class="lineno">   38</span>  }</div>
-<div class="line"><span class="lineno">   39</span>}</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a6830534dbe367c2c7bbdc3aa0e024a8a" name="a6830534dbe367c2c7bbdc3aa0e024a8a"></a>
@@ -164,27 +149,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_a_r_health_component_8cpp_source.html#l00041">41</a> of file <a class="el" href="_a_r_health_component_8cpp_source.html">ARHealthComponent.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   42</span>{</div>
-<div class="line"><span class="lineno">   43</span>  <span class="comment">// Return 0 if it is still in delay state</span></div>
-<div class="line"><span class="lineno">   44</span>  <span class="keywordflow">if</span> (!bEnableRegeneration)</div>
-<div class="line"><span class="lineno">   45</span>  {</div>
-<div class="line"><span class="lineno">   46</span>    <span class="keywordflow">return</span> 0.0f;</div>
-<div class="line"><span class="lineno">   47</span>  }</div>
-<div class="line"><span class="lineno">   48</span> </div>
-<div class="line"><span class="lineno">   49</span>  <span class="keywordflow">if</span> (bUseRegenerationSpeedOverrideCurve)</div>
-<div class="line"><span class="lineno">   50</span>  {</div>
-<div class="line"><span class="lineno">   51</span>    UCurveFloat* targetCurve = OverrideCurve.LoadSynchronous();</div>
-<div class="line"><span class="lineno">   52</span>    <span class="keywordflow">if</span> (targetCurve != <span class="keyword">nullptr</span>)</div>
-<div class="line"><span class="lineno">   53</span>    {</div>
-<div class="line"><span class="lineno">   54</span>      <span class="keywordflow">return</span> targetCurve-&gt;GetFloatValue(RegenerationCurveEvaluationTimeValue);</div>
-<div class="line"><span class="lineno">   55</span>    }</div>
-<div class="line"><span class="lineno">   56</span>  }</div>
-<div class="line"><span class="lineno">   57</span>  <span class="comment">// Fallback to use constant value if we dont use curve to evaluate regeneration speed</span></div>
-<div class="line"><span class="lineno">   58</span> </div>
-<div class="line"><span class="lineno">   59</span>  <span class="keywordflow">return</span> RegenerationSpeed;</div>
-<div class="line"><span class="lineno">   60</span>  </div>
-<div class="line"><span class="lineno">   61</span>}</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a03288607522548c52eba9845fb98b4ea" name="a03288607522548c52eba9845fb98b4ea"></a>
@@ -203,16 +168,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_a_r_health_component_8cpp_source.html#l00011">11</a> of file <a class="el" href="_a_r_health_component_8cpp_source.html">ARHealthComponent.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   12</span>{</div>
-<div class="line"><span class="lineno">   13</span>  <span class="keywordflow">if</span> (bUseRegenerationSpeedOverrideCurve)</div>
-<div class="line"><span class="lineno">   14</span>  {</div>
-<div class="line"><span class="lineno">   15</span>    RegenerationCurveEvaluationTimeValue = 0.0f;</div>
-<div class="line"><span class="lineno">   16</span>  }</div>
-<div class="line"><span class="lineno">   17</span> </div>
-<div class="line"><span class="lineno">   18</span>  bEnableRegeneration = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">   19</span>  RegenerationDelayTimeCnt = 0.0f;</div>
-<div class="line"><span class="lineno">   20</span>}</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
@@ -329,8 +285,8 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
-<li>H:/GithubRepository/ARRanger/Source/ARRanger/Public/Character/<a class="el" href="_a_r_health_component_8h_source.html">ARHealthComponent.h</a></li>
-<li>H:/GithubRepository/ARRanger/Source/ARRanger/Private/Character/<a class="el" href="_a_r_health_component_8cpp_source.html">ARHealthComponent.cpp</a></li>
+<li>D:/GithubRepository/ARRanger/Source/ARRanger/Public/Character/<a class="el" href="_a_r_health_component_8h_source.html">ARHealthComponent.h</a></li>
+<li>D:/GithubRepository/ARRanger/Source/ARRanger/Private/Character/<a class="el" href="_a_r_health_component_8cpp_source.html">ARHealthComponent.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
