@@ -114,11 +114,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ad6215dc7bb7ba8d56be83049f5fc2107"><td class="mdescLeft">&#160;</td><td class="mdescRight">物理:磁力タスクを登録する（一回だけ計算する）  <br /></td></tr>
 <tr class="memitem:aa51bb1df9c73002df50a0e85e6c06b6b" id="r_aa51bb1df9c73002df50a0e85e6c06b6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa51bb1df9c73002df50a0e85e6c06b6b">Physics_UnregisterMagneticTask</a> (<a class="el" href="class_i_a_r_magnetizable_interface.html">IARMagnetizableInterface</a> *InSource, <a class="el" href="class_i_a_r_magnetizable_interface.html">IARMagnetizableInterface</a> *InTarget)</td></tr>
 <tr class="memdesc:aa51bb1df9c73002df50a0e85e6c06b6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">物理:磁力タスクを止める  <br /></td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a3ec84c964a5c56565ca4c8382f7f3758" id="r_a3ec84c964a5c56565ca4c8382f7f3758"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3ec84c964a5c56565ca4c8382f7f3758">Physics_RequestMagneticTaskImpl</a> (<a class="el" href="class_i_a_r_magnetizable_interface.html">IARMagnetizableInterface</a> *InSource, <a class="el" href="class_i_a_r_magnetizable_interface.html">IARMagnetizableInterface</a> *InTarget, <a class="el" href="_a_r_physics_types_8h.html#a006012f2e9913202756652bb76b1fe0c">EPhysicsExecuteFrequency</a> Frequency)</td></tr>
-<tr class="memdesc:a3ec84c964a5c56565ca4c8382f7f3758"><td class="mdescLeft">&#160;</td><td class="mdescRight">磁力タスク登録実装関数  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>AR物理システムサービスを提供するインターフェイス </p>
@@ -154,8 +149,12 @@ Private Member Functions</h2></td></tr>
 </dl>
 <p>計算を常に実行する、計算を止める場合はPhysics_UnregisterMagneticTaskを呼び出す </p><dl class="section see"><dt>See also</dt><dd>Physics_UnregisterMagneticTask(...) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_i_a_r_physics_system_host_8cpp_source.html#l00043">43</a> of file <a class="el" href="_i_a_r_physics_system_host_8cpp_source.html">IARPhysicsSystemHost.cpp</a>.</p>
-
+<p class="definition">Definition at line <a class="el" href="_i_a_r_physics_system_host_8cpp_source.html#l00042">42</a> of file <a class="el" href="_i_a_r_physics_system_host_8cpp_source.html">IARPhysicsSystemHost.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   43</span>{</div>
+<div class="line"><span class="lineno">   44</span>  Physics_RequestMagneticTaskImpl(InSource, InTarget, <a class="code hl_enumvalue" href="_a_r_physics_types_8h.html#a006012f2e9913202756652bb76b1fe0ca9c46d03dbb0d8654a1e7b2431dc47e01">EPhysicsExecuteFrequency::Constantly</a>);</div>
+<div class="line"><span class="lineno">   45</span>}</div>
+<div class="ttc" id="a_a_r_physics_types_8h_html_a006012f2e9913202756652bb76b1fe0ca9c46d03dbb0d8654a1e7b2431dc47e01"><div class="ttname"><a href="_a_r_physics_types_8h.html#a006012f2e9913202756652bb76b1fe0ca9c46d03dbb0d8654a1e7b2431dc47e01">EPhysicsExecuteFrequency::Constantly</a></div><div class="ttdeci">@ Constantly</div><div class="ttdef"><b>Definition</b> <a href="_a_r_physics_types_8h_source.html#l00012">ARPhysicsTypes.h:12</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad6215dc7bb7ba8d56be83049f5fc2107" name="ad6215dc7bb7ba8d56be83049f5fc2107"></a>
@@ -187,55 +186,12 @@ Private Member Functions</h2></td></tr>
 </dl>
 <p>計算を一回だけ実行するため、実行したら自動的に止める </p>
 
-<p class="definition">Definition at line <a class="el" href="_i_a_r_physics_system_host_8cpp_source.html#l00048">48</a> of file <a class="el" href="_i_a_r_physics_system_host_8cpp_source.html">IARPhysicsSystemHost.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a3ec84c964a5c56565ca4c8382f7f3758" name="a3ec84c964a5c56565ca4c8382f7f3758"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3ec84c964a5c56565ca4c8382f7f3758">&#9670;&#160;</a></span>Physics_RequestMagneticTaskImpl()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void IARPhysicsSystemHost::Physics_RequestMagneticTaskImpl </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_i_a_r_magnetizable_interface.html">IARMagnetizableInterface</a> *</td>          <td class="paramname"><span class="paramname"><em>InSource</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_i_a_r_magnetizable_interface.html">IARMagnetizableInterface</a> *</td>          <td class="paramname"><span class="paramname"><em>InTarget</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="_a_r_physics_types_8h.html#a006012f2e9913202756652bb76b1fe0c">EPhysicsExecuteFrequency</a></td>          <td class="paramname"><span class="paramname"><em>Frequency</em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>磁力タスク登録実装関数 </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">InSource</td><td>磁力対象 </td></tr>
-    <tr><td class="paramname">InTarget</td><td>磁力対象 </td></tr>
-    <tr><td class="paramname">Frequency</td><td>更新頻度 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd>EMagneticTaskFrequency </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="_i_a_r_physics_system_host_8cpp_source.html#l00063">63</a> of file <a class="el" href="_i_a_r_physics_system_host_8cpp_source.html">IARPhysicsSystemHost.cpp</a>.</p>
-
+<p class="definition">Definition at line <a class="el" href="_i_a_r_physics_system_host_8cpp_source.html#l00047">47</a> of file <a class="el" href="_i_a_r_physics_system_host_8cpp_source.html">IARPhysicsSystemHost.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   48</span>{</div>
+<div class="line"><span class="lineno">   49</span>  Physics_RequestMagneticTaskImpl(InSource, InTarget, <a class="code hl_enumvalue" href="_a_r_physics_types_8h.html#a006012f2e9913202756652bb76b1fe0cae1a9dc9f23534e63de9df0d540ac1611">EPhysicsExecuteFrequency::Once</a>);</div>
+<div class="line"><span class="lineno">   50</span>}</div>
+<div class="ttc" id="a_a_r_physics_types_8h_html_a006012f2e9913202756652bb76b1fe0cae1a9dc9f23534e63de9df0d540ac1611"><div class="ttname"><a href="_a_r_physics_types_8h.html#a006012f2e9913202756652bb76b1fe0cae1a9dc9f23534e63de9df0d540ac1611">EPhysicsExecuteFrequency::Once</a></div><div class="ttdeci">@ Once</div><div class="ttdef"><b>Definition</b> <a href="_a_r_physics_types_8h_source.html#l00011">ARPhysicsTypes.h:11</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa51bb1df9c73002df50a0e85e6c06b6b" name="aa51bb1df9c73002df50a0e85e6c06b6b"></a>
@@ -267,13 +223,26 @@ Private Member Functions</h2></td></tr>
 </dl>
 <p>Physics_RegisterMagneticTaskで登録されたタスクだけ止めることが </p><dl class="section see"><dt>See also</dt><dd>Physics_RegisterMagneticTask(...) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_i_a_r_physics_system_host_8cpp_source.html#l00053">53</a> of file <a class="el" href="_i_a_r_physics_system_host_8cpp_source.html">IARPhysicsSystemHost.cpp</a>.</p>
-
+<p class="definition">Definition at line <a class="el" href="_i_a_r_physics_system_host_8cpp_source.html#l00052">52</a> of file <a class="el" href="_i_a_r_physics_system_host_8cpp_source.html">IARPhysicsSystemHost.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   53</span>{</div>
+<div class="line"><span class="lineno">   54</span>  FARPhysicsUnregistry termination{};</div>
+<div class="line"><span class="lineno">   55</span>  termination.<a class="code hl_variable" href="struct_f_a_r_physics_unregistry.html#a5f1b37780c0da63996173437239c6079">Source</a> = InSource;</div>
+<div class="line"><span class="lineno">   56</span>  termination.<a class="code hl_variable" href="struct_f_a_r_physics_unregistry.html#ad252c15d933d8b462f726178ac622f19">Target</a> = InTarget;</div>
+<div class="line"><span class="lineno">   57</span>  termination.<a class="code hl_variable" href="struct_f_a_r_physics_unregistry.html#a5eacf5e6fe2c32d9b1f9db347045016a">Type</a> = <a class="code hl_enumvalue" href="_a_r_physics_system_8h.html#ac753896f47e664321cc05d9d99ea570ca952b4c42b5a2d344522cec94a035ccd2">EPhysicsUnregistryType::UnregisterMagnetic</a>;</div>
+<div class="line"><span class="lineno">   58</span> </div>
+<div class="line"><span class="lineno">   59</span>  GetPhysicsSystem().<a class="code hl_function" href="class_f_a_r_physics_system.html#a0cedaa929decd70117452e38c5120331">UnregisterPhysicsProcess</a>(termination);</div>
+<div class="line"><span class="lineno">   60</span>}</div>
+<div class="ttc" id="a_a_r_physics_system_8h_html_ac753896f47e664321cc05d9d99ea570ca952b4c42b5a2d344522cec94a035ccd2"><div class="ttname"><a href="_a_r_physics_system_8h.html#ac753896f47e664321cc05d9d99ea570ca952b4c42b5a2d344522cec94a035ccd2">EPhysicsUnregistryType::UnregisterMagnetic</a></div><div class="ttdeci">@ UnregisterMagnetic</div><div class="ttdef"><b>Definition</b> <a href="_a_r_physics_system_8h_source.html#l00037">ARPhysicsSystem.h:37</a></div></div>
+<div class="ttc" id="aclass_f_a_r_physics_system_html_a0cedaa929decd70117452e38c5120331"><div class="ttname"><a href="class_f_a_r_physics_system.html#a0cedaa929decd70117452e38c5120331">FARPhysicsSystem::UnregisterPhysicsProcess</a></div><div class="ttdeci">ARRANGER_API void UnregisterPhysicsProcess(const FARPhysicsUnregistry &amp;Unregistry)</div><div class="ttdoc">物理タスクの登録状態を解除する</div><div class="ttdef"><b>Definition</b> <a href="_a_r_physics_system_8cpp_source.html#l00053">ARPhysicsSystem.cpp:53</a></div></div>
+<div class="ttc" id="astruct_f_a_r_physics_unregistry_html_a5eacf5e6fe2c32d9b1f9db347045016a"><div class="ttname"><a href="struct_f_a_r_physics_unregistry.html#a5eacf5e6fe2c32d9b1f9db347045016a">FARPhysicsUnregistry::Type</a></div><div class="ttdeci">EPhysicsUnregistryType Type</div><div class="ttdef"><b>Definition</b> <a href="_a_r_physics_system_8h_source.html#l00081">ARPhysicsSystem.h:81</a></div></div>
+<div class="ttc" id="astruct_f_a_r_physics_unregistry_html_a5f1b37780c0da63996173437239c6079"><div class="ttname"><a href="struct_f_a_r_physics_unregistry.html#a5f1b37780c0da63996173437239c6079">FARPhysicsUnregistry::Source</a></div><div class="ttdeci">IARMagnetizableInterface * Source</div><div class="ttdef"><b>Definition</b> <a href="_a_r_physics_system_8h_source.html#l00075">ARPhysicsSystem.h:75</a></div></div>
+<div class="ttc" id="astruct_f_a_r_physics_unregistry_html_ad252c15d933d8b462f726178ac622f19"><div class="ttname"><a href="struct_f_a_r_physics_unregistry.html#ad252c15d933d8b462f726178ac622f19">FARPhysicsUnregistry::Target</a></div><div class="ttdeci">IARMagnetizableInterface * Target</div><div class="ttdef"><b>Definition</b> <a href="_a_r_physics_system_8h_source.html#l00078">ARPhysicsSystem.h:78</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>D:/GithubRepository/ARRanger/Source/ARRanger/Public/Physics/<a class="el" href="_i_a_r_physics_system_host_8h_source.html">IARPhysicsSystemHost.h</a></li>
-<li>D:/GithubRepository/ARRanger/Source/ARRanger/Private/Physics/<a class="el" href="_i_a_r_physics_system_host_8cpp_source.html">IARPhysicsSystemHost.cpp</a></li>
+<li>ARRanger/Public/Physics/<a class="el" href="_i_a_r_physics_system_host_8h_source.html">IARPhysicsSystemHost.h</a></li>
+<li>ARRanger/Private/Physics/<a class="el" href="_i_a_r_physics_system_host_8cpp_source.html">IARPhysicsSystemHost.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

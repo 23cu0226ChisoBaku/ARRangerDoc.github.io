@@ -105,9 +105,9 @@ Inheritance diagram for UARInputComponent:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:afe840982e6727487daddb3d382b6cab6" id="r_afe840982e6727487daddb3d382b6cab6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_a_r_input_component_8h.html#a578eb926c8aecdf908e1338b2e893458">UE_API</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afe840982e6727487daddb3d382b6cab6">UARInputComponent</a> (const FObjectInitializer &amp;ObjectInitializer=FObjectInitializer::Get())</td></tr>
+<tr class="memitem:afe840982e6727487daddb3d382b6cab6" id="r_afe840982e6727487daddb3d382b6cab6"><td class="memItemLeft" align="right" valign="top">ARRANGER_API&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afe840982e6727487daddb3d382b6cab6">UARInputComponent</a> (const FObjectInitializer &amp;ObjectInitializer=FObjectInitializer::Get())</td></tr>
 <tr class="memdesc:afe840982e6727487daddb3d382b6cab6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor of UE.  <br /></td></tr>
-<tr class="memitem:a26d4a4c0fbb78baa7e1bfbc3f29c424b" id="r_a26d4a4c0fbb78baa7e1bfbc3f29c424b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_a_r_input_component_8h.html#a578eb926c8aecdf908e1338b2e893458">UE_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a26d4a4c0fbb78baa7e1bfbc3f29c424b">RemoveBindings</a> (TArray&lt; uint32 &gt; &amp;OutBoundHandles)</td></tr>
+<tr class="memitem:a26d4a4c0fbb78baa7e1bfbc3f29c424b" id="r_a26d4a4c0fbb78baa7e1bfbc3f29c424b"><td class="memItemLeft" align="right" valign="top">ARRANGER_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a26d4a4c0fbb78baa7e1bfbc3f29c424b">RemoveBindings</a> (TArray&lt; uint32 &gt; &amp;OutBoundHandles)</td></tr>
 <tr class="memdesc:a26d4a4c0fbb78baa7e1bfbc3f29c424b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove input bindings with handles.  <br /></td></tr>
 <tr class="memitem:a81d67e99f5d4e3498c9dd7f703f601d5" id="r_a81d67e99f5d4e3498c9dd7f703f601d5"><td class="memTemplParams" colspan="2">template&lt;typename UserClass, typename PressedFuncType, typename ReleasedFuncType&gt; </td></tr>
 <tr class="memitem:a81d67e99f5d4e3498c9dd7f703f601d5 template"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a81d67e99f5d4e3498c9dd7f703f601d5">BindAbilityActions</a> (const <a class="el" href="class_u_a_r_input_config.html">UARInputConfig</a> *InInputConfig, UserClass *UserObject, PressedFuncType PressedFunc, ReleasedFuncType ReleasedFunc, TArray&lt; uint32 &gt; &amp;OutHandles)</td></tr>
@@ -140,7 +140,9 @@ Public Member Functions</h2></td></tr>
 <p><a class="el" href="_a_r_input_component_8cpp.html">ARInputComponent.cpp</a> </p>
 
 <p class="definition">Definition at line <a class="el" href="_a_r_input_component_8cpp_source.html#l00009">9</a> of file <a class="el" href="_a_r_input_component_8cpp_source.html">ARInputComponent.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   10</span>  :Super(ObjectInitializer)</div>
+<div class="line"><span class="lineno">   11</span>{ }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
@@ -203,7 +205,29 @@ template&lt;typename UserClass, typename PressedFuncType, typename ReleasedFuncT
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="_a_r_input_component_8h_source.html#l00064">64</a> of file <a class="el" href="_a_r_input_component_8h_source.html">ARInputComponent.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   65</span>{</div>
+<div class="line"><span class="lineno">   66</span>  check(InInputConfig != <span class="keyword">nullptr</span>);</div>
+<div class="line"><span class="lineno">   67</span>  <span class="keywordflow">for</span> (<span class="keyword">const</span> FARInputAction&amp; inputAction: InInputConfig-&gt;<a class="code hl_variable" href="class_u_a_r_input_config.html#a4e3bb4cba67f4ec7ed9bee4babcc8068">AbilityInputActions</a>)</div>
+<div class="line"><span class="lineno">   68</span>  {</div>
+<div class="line"><span class="lineno">   69</span>    <span class="keywordflow">if</span> ((inputAction.<a class="code hl_variable" href="struct_f_a_r_input_action.html#a5256e87b6d9b546a3a67691d60ee6864">InputAction</a> != <span class="keyword">nullptr</span>) &amp;&amp; inputAction.<a class="code hl_variable" href="struct_f_a_r_input_action.html#aabfed41dd765e08d5e4491ae790353b4">InputTag</a>.IsValid())</div>
+<div class="line"><span class="lineno">   70</span>    {</div>
+<div class="line"><span class="lineno">   71</span>      <span class="keywordflow">if</span> (PressedFunc != <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">   72</span>      {</div>
+<div class="line"><span class="lineno">   73</span>        OutHandles.AddUnique(BindAction(inputAction.<a class="code hl_variable" href="struct_f_a_r_input_action.html#a5256e87b6d9b546a3a67691d60ee6864">InputAction</a>, ETriggerEvent::Triggered, UserObject, PressedFunc, inputAction.<a class="code hl_variable" href="struct_f_a_r_input_action.html#aabfed41dd765e08d5e4491ae790353b4">InputTag</a>, inputAction.<a class="code hl_variable" href="struct_f_a_r_input_action.html#a7ab0ef58bb85970544d253173c40a9bd">bOverrideBufferIfStateChange</a>).GetHandle());</div>
+<div class="line"><span class="lineno">   74</span>      }</div>
+<div class="line"><span class="lineno">   75</span>  </div>
+<div class="line"><span class="lineno">   76</span>      <span class="keywordflow">if</span> (ReleasedFunc != <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">   77</span>      {</div>
+<div class="line"><span class="lineno">   78</span>        OutHandles.AddUnique(BindAction(inputAction.<a class="code hl_variable" href="struct_f_a_r_input_action.html#a5256e87b6d9b546a3a67691d60ee6864">InputAction</a>, ETriggerEvent::Completed, UserObject, ReleasedFunc, inputAction.<a class="code hl_variable" href="struct_f_a_r_input_action.html#aabfed41dd765e08d5e4491ae790353b4">InputTag</a>, inputAction.<a class="code hl_variable" href="struct_f_a_r_input_action.html#a7ab0ef58bb85970544d253173c40a9bd">bOverrideBufferIfStateChange</a>).GetHandle());</div>
+<div class="line"><span class="lineno">   79</span>      }</div>
+<div class="line"><span class="lineno">   80</span>    }</div>
+<div class="line"><span class="lineno">   81</span>  }</div>
+<div class="line"><span class="lineno">   82</span>} </div>
+<div class="ttc" id="aclass_u_a_r_input_config_html_a4e3bb4cba67f4ec7ed9bee4babcc8068"><div class="ttname"><a href="class_u_a_r_input_config.html#a4e3bb4cba67f4ec7ed9bee4babcc8068">UARInputConfig::AbilityInputActions</a></div><div class="ttdeci">TArray&lt; FARInputAction &gt; AbilityInputActions</div><div class="ttdef"><b>Definition</b> <a href="_a_r_input_config_8h_source.html#l00071">ARInputConfig.h:71</a></div></div>
+<div class="ttc" id="astruct_f_a_r_input_action_html_a5256e87b6d9b546a3a67691d60ee6864"><div class="ttname"><a href="struct_f_a_r_input_action.html#a5256e87b6d9b546a3a67691d60ee6864">FARInputAction::InputAction</a></div><div class="ttdeci">TObjectPtr&lt; const UInputAction &gt; InputAction</div><div class="ttdef"><b>Definition</b> <a href="_a_r_input_config_8h_source.html#l00026">ARInputConfig.h:26</a></div></div>
+<div class="ttc" id="astruct_f_a_r_input_action_html_a7ab0ef58bb85970544d253173c40a9bd"><div class="ttname"><a href="struct_f_a_r_input_action.html#a7ab0ef58bb85970544d253173c40a9bd">FARInputAction::bOverrideBufferIfStateChange</a></div><div class="ttdeci">bool bOverrideBufferIfStateChange</div><div class="ttdef"><b>Definition</b> <a href="_a_r_input_config_8h_source.html#l00033">ARInputConfig.h:33</a></div></div>
+<div class="ttc" id="astruct_f_a_r_input_action_html_aabfed41dd765e08d5e4491ae790353b4"><div class="ttname"><a href="struct_f_a_r_input_action.html#aabfed41dd765e08d5e4491ae790353b4">FARInputAction::InputTag</a></div><div class="ttdeci">FGameplayTag InputTag</div><div class="ttdef"><b>Definition</b> <a href="_a_r_input_config_8h_source.html#l00030">ARInputConfig.h:30</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="addeb990ba5965015ae8460adf522ffee" name="addeb990ba5965015ae8460adf522ffee"></a>
@@ -260,7 +284,17 @@ template&lt;typename UserClass, typename TriggeredFuncType&gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="_a_r_input_component_8h_source.html#l00085">85</a> of file <a class="el" href="_a_r_input_component_8h_source.html">ARInputComponent.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   86</span>{</div>
+<div class="line"><span class="lineno">   87</span>  check(InInputConfig != <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">   88</span>  if (const UInputAction* foundIA = InInputConfig-&gt;FindNativeInputAction(InInputTag))</div>
+<div class="line"><span class="lineno">   89</span>  {</div>
+<div class="line"><span class="lineno">   90</span>    <span class="keywordflow">if</span> (TriggeredFunc != <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">   91</span>    {</div>
+<div class="line"><span class="lineno">   92</span>      (void)BindAction(foundIA, InTriggerEvent, UserObject, TriggeredFunc, InInputTag);</div>
+<div class="line"><span class="lineno">   93</span>    }</div>
+<div class="line"><span class="lineno">   94</span>  }</div>
+<div class="line"><span class="lineno">   95</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a26d4a4c0fbb78baa7e1bfbc3f29c424b" name="a26d4a4c0fbb78baa7e1bfbc3f29c424b"></a>
@@ -287,12 +321,22 @@ template&lt;typename UserClass, typename TriggeredFuncType&gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="_a_r_input_component_8cpp_source.html#l00013">13</a> of file <a class="el" href="_a_r_input_component_8cpp_source.html">ARInputComponent.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   14</span>{</div>
+<div class="line"><span class="lineno">   15</span>  </div>
+<div class="line"><span class="lineno">   16</span>  <span class="keywordflow">for</span> (<span class="keyword">const</span> uint32 handle : OutBoundHandles)</div>
+<div class="line"><span class="lineno">   17</span>  {</div>
+<div class="line"><span class="lineno">   18</span>    <span class="comment">// Remove binding event</span></div>
+<div class="line"><span class="lineno">   19</span>    RemoveBindingByHandle(handle);</div>
+<div class="line"><span class="lineno">   20</span>  }</div>
+<div class="line"><span class="lineno">   21</span> </div>
+<div class="line"><span class="lineno">   22</span>  OutBoundHandles.Reset();</div>
+<div class="line"><span class="lineno">   23</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>D:/GithubRepository/ARRanger/Source/ARRanger/Public/Input/<a class="el" href="_a_r_input_component_8h_source.html">ARInputComponent.h</a></li>
-<li>D:/GithubRepository/ARRanger/Source/ARRanger/Private/Input/<a class="el" href="_a_r_input_component_8cpp_source.html">ARInputComponent.cpp</a></li>
+<li>ARRanger/Public/Input/<a class="el" href="_a_r_input_component_8h_source.html">ARInputComponent.h</a></li>
+<li>ARRanger/Private/Input/<a class="el" href="_a_r_input_component_8cpp_source.html">ARInputComponent.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

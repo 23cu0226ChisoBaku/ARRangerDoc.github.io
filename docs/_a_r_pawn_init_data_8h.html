@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ARRanger: D:/GithubRepository/ARRanger/Source/ARRanger/Public/Pawn/ARPawnInitData.h File Reference</title>
+<title>ARRanger: ARRanger/Public/Pawn/ARPawnInitData.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -115,8 +115,8 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a274591cc9726bb3092dce44da44c12ee" id="r_a274591cc9726bb3092dce44da44c12ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_a_r_gameplay_tags_8h.html#a578eb926c8aecdf908e1338b2e893458">UE_API</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a274591cc9726bb3092dce44da44c12ee">operator==</a> (const <a class="el" href="struct_f_charge_attack_leaf.html">FChargeAttackLeaf</a> &amp;Lhs, const <a class="el" href="struct_f_charge_attack_leaf.html">FChargeAttackLeaf</a> &amp;Rhs)</td></tr>
-<tr class="memitem:ad51cd70dff92074488ca27eb36db6cef" id="r_ad51cd70dff92074488ca27eb36db6cef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_a_r_gameplay_tags_8h.html#a578eb926c8aecdf908e1338b2e893458">UE_API</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad51cd70dff92074488ca27eb36db6cef">operator==</a> (const <a class="el" href="struct_f_charge_attack_branch_entry.html">FChargeAttackBranchEntry</a> &amp;Lhs, const <a class="el" href="struct_f_charge_attack_branch_entry.html">FChargeAttackBranchEntry</a> &amp;Rhs)</td></tr>
+<tr class="memitem:a5fa27b7af6c66bb213ce90ee982f2b84" id="r_a5fa27b7af6c66bb213ce90ee982f2b84"><td class="memItemLeft" align="right" valign="top">ARRANGER_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5fa27b7af6c66bb213ce90ee982f2b84">operator==</a> (const <a class="el" href="struct_f_charge_attack_leaf.html">FChargeAttackLeaf</a> &amp;Lhs, const <a class="el" href="struct_f_charge_attack_leaf.html">FChargeAttackLeaf</a> &amp;Rhs)</td></tr>
+<tr class="memitem:ab168151318283e7c244e4f0f9dc190e9" id="r_ab168151318283e7c244e4f0f9dc190e9"><td class="memItemLeft" align="right" valign="top">ARRANGER_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab168151318283e7c244e4f0f9dc190e9">operator==</a> (const <a class="el" href="struct_f_charge_attack_branch_entry.html">FChargeAttackBranchEntry</a> &amp;Lhs, const <a class="el" href="struct_f_charge_attack_branch_entry.html">FChargeAttackBranchEntry</a> &amp;Rhs)</td></tr>
 <tr class="memitem:a8d3ef262fce4cb2513aca37081127085" id="r_a8d3ef262fce4cb2513aca37081127085"><td class="memItemLeft" align="right" valign="top">__forceinline uint32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8d3ef262fce4cb2513aca37081127085">GetTypeHash</a> (const <a class="el" href="struct_f_charge_attack_leaf.html">FChargeAttackLeaf</a> &amp;Element)</td></tr>
 <tr class="memitem:a24e66719962b9954fadb862adc5be2f9" id="r_a24e66719962b9954fadb862adc5be2f9"><td class="memItemLeft" align="right" valign="top">__forceinline uint32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a24e66719962b9954fadb862adc5be2f9">GetTypeHash</a> (const <a class="el" href="struct_f_charge_attack_branch_entry.html">FChargeAttackBranchEntry</a> &amp;Element)</td></tr>
 </table>
@@ -158,7 +158,20 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_a_r_pawn_init_data_8h_source.html#l00098">98</a> of file <a class="el" href="_a_r_pawn_init_data_8h_source.html">ARPawnInitData.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   99</span>{</div>
+<div class="line"><span class="lineno">  100</span>  uint32 Hash = <a class="code hl_function" href="#a8d3ef262fce4cb2513aca37081127085">GetTypeHash</a>(Element.<a class="code hl_variable" href="struct_f_charge_attack_branch_entry.html#a95a695c785a60bbaff28c74df7438ee8">BranchTag</a>);</div>
+<div class="line"><span class="lineno">  101</span>  <span class="keywordflow">for</span> (<span class="keyword">const</span> <a class="code hl_struct" href="struct_f_charge_attack_leaf.html">FChargeAttackLeaf</a>&amp; leaf : Element.<a class="code hl_variable" href="struct_f_charge_attack_branch_entry.html#ac2c8a5907603d0745984d2fb16488b81">BranchLeaves</a>)</div>
+<div class="line"><span class="lineno">  102</span>  {</div>
+<div class="line"><span class="lineno">  103</span>    Hash = HashCombine(Hash, <a class="code hl_function" href="#a8d3ef262fce4cb2513aca37081127085">GetTypeHash</a>(leaf));</div>
+<div class="line"><span class="lineno">  104</span>  }</div>
+<div class="line"><span class="lineno">  105</span> </div>
+<div class="line"><span class="lineno">  106</span>  <span class="keywordflow">return</span> Hash;</div>
+<div class="line"><span class="lineno">  107</span>}</div>
+<div class="ttc" id="a_a_r_pawn_init_data_8h_html_a8d3ef262fce4cb2513aca37081127085"><div class="ttname"><a href="#a8d3ef262fce4cb2513aca37081127085">GetTypeHash</a></div><div class="ttdeci">__forceinline uint32 GetTypeHash(const FChargeAttackLeaf &amp;Element)</div><div class="ttdef"><b>Definition</b> <a href="_a_r_pawn_init_data_8h_source.html#l00092">ARPawnInitData.h:92</a></div></div>
+<div class="ttc" id="astruct_f_charge_attack_branch_entry_html_a95a695c785a60bbaff28c74df7438ee8"><div class="ttname"><a href="struct_f_charge_attack_branch_entry.html#a95a695c785a60bbaff28c74df7438ee8">FChargeAttackBranchEntry::BranchTag</a></div><div class="ttdeci">FGameplayTag BranchTag</div><div class="ttdef"><b>Definition</b> <a href="_a_r_pawn_init_data_8h_source.html#l00052">ARPawnInitData.h:52</a></div></div>
+<div class="ttc" id="astruct_f_charge_attack_branch_entry_html_ac2c8a5907603d0745984d2fb16488b81"><div class="ttname"><a href="struct_f_charge_attack_branch_entry.html#ac2c8a5907603d0745984d2fb16488b81">FChargeAttackBranchEntry::BranchLeaves</a></div><div class="ttdeci">TSet&lt; FChargeAttackLeaf &gt; BranchLeaves</div><div class="ttdef"><b>Definition</b> <a href="_a_r_pawn_init_data_8h_source.html#l00056">ARPawnInitData.h:56</a></div></div>
+<div class="ttc" id="astruct_f_charge_attack_leaf_html"><div class="ttname"><a href="struct_f_charge_attack_leaf.html">FChargeAttackLeaf</a></div><div class="ttdoc">Leaf data of charge attack.</div><div class="ttdef"><b>Definition</b> <a href="_a_r_pawn_init_data_8h_source.html#l00024">ARPawnInitData.h:25</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a8d3ef262fce4cb2513aca37081127085" name="a8d3ef262fce4cb2513aca37081127085"></a>
@@ -178,11 +191,15 @@ Functions</h2></td></tr>
 <p>Define to use these in TArray and TSet </p>
 
 <p class="definition">Definition at line <a class="el" href="_a_r_pawn_init_data_8h_source.html#l00092">92</a> of file <a class="el" href="_a_r_pawn_init_data_8h_source.html">ARPawnInitData.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   93</span>{</div>
+<div class="line"><span class="lineno">   94</span>  uint32 Hash = FCrc::MemCrc32(&amp;Element, <span class="keyword">sizeof</span>(<a class="code hl_struct" href="struct_f_charge_attack_leaf.html">FChargeAttackLeaf</a>));</div>
+<div class="line"><span class="lineno">   95</span>  <span class="keywordflow">return</span> Hash;</div>
+<div class="line"><span class="lineno">   96</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
-<a id="ad51cd70dff92074488ca27eb36db6cef" name="ad51cd70dff92074488ca27eb36db6cef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad51cd70dff92074488ca27eb36db6cef">&#9670;&#160;</a></span>operator==() <span class="overload">[1/2]</span></h2>
+<a id="ab168151318283e7c244e4f0f9dc190e9" name="ab168151318283e7c244e4f0f9dc190e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab168151318283e7c244e4f0f9dc190e9">&#9670;&#160;</a></span>operator==() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -191,7 +208,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_a_r_gameplay_tags_8h.html#a578eb926c8aecdf908e1338b2e893458">UE_API</a> bool operator== </td>
+          <td class="memname">ARRANGER_API bool operator== </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="struct_f_charge_attack_branch_entry.html">FChargeAttackBranchEntry</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>Lhs</em></span>, </td>
         </tr>
@@ -209,11 +226,15 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_a_r_pawn_init_data_8cpp_source.html#l00019">19</a> of file <a class="el" href="_a_r_pawn_init_data_8cpp_source.html">ARPawnInitData.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   20</span>{</div>
+<div class="line"><span class="lineno">   21</span>  <span class="comment">// Make Branch as an unique sign</span></div>
+<div class="line"><span class="lineno">   22</span>  <span class="keywordflow">return</span> (Lhs.<a class="code hl_variable" href="struct_f_charge_attack_branch_entry.html#a95a695c785a60bbaff28c74df7438ee8">BranchTag</a> == Rhs.<a class="code hl_variable" href="struct_f_charge_attack_branch_entry.html#a95a695c785a60bbaff28c74df7438ee8">BranchTag</a>);</div>
+<div class="line"><span class="lineno">   23</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
-<a id="a274591cc9726bb3092dce44da44c12ee" name="a274591cc9726bb3092dce44da44c12ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a274591cc9726bb3092dce44da44c12ee">&#9670;&#160;</a></span>operator==() <span class="overload">[2/2]</span></h2>
+<a id="a5fa27b7af6c66bb213ce90ee982f2b84" name="a5fa27b7af6c66bb213ce90ee982f2b84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fa27b7af6c66bb213ce90ee982f2b84">&#9670;&#160;</a></span>operator==() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -222,7 +243,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_a_r_gameplay_tags_8h.html#a578eb926c8aecdf908e1338b2e893458">UE_API</a> bool operator== </td>
+          <td class="memname">ARRANGER_API bool operator== </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="struct_f_charge_attack_leaf.html">FChargeAttackLeaf</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>Lhs</em></span>, </td>
         </tr>
@@ -241,7 +262,12 @@ Functions</h2></td></tr>
 <p>Define to use these in TArray and TSet </p>
 
 <p class="definition">Definition at line <a class="el" href="_a_r_pawn_init_data_8cpp_source.html#l00014">14</a> of file <a class="el" href="_a_r_pawn_init_data_8cpp_source.html">ARPawnInitData.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   15</span>{</div>
+<div class="line"><span class="lineno">   16</span>  <span class="keywordflow">return</span> (Lhs.<a class="code hl_variable" href="struct_f_charge_attack_leaf.html#aeedd12afc68d5e46e87c79dde16f07e9">TimeThreshold</a> == Rhs.<a class="code hl_variable" href="struct_f_charge_attack_leaf.html#aeedd12afc68d5e46e87c79dde16f07e9">TimeThreshold</a>) &amp;&amp; (Lhs.<a class="code hl_variable" href="struct_f_charge_attack_leaf.html#a4679a99003775924273c2b79a13e388a">AttackTag</a> == Rhs.<a class="code hl_variable" href="struct_f_charge_attack_leaf.html#a4679a99003775924273c2b79a13e388a">AttackTag</a>);</div>
+<div class="line"><span class="lineno">   17</span>}</div>
+<div class="ttc" id="astruct_f_charge_attack_leaf_html_a4679a99003775924273c2b79a13e388a"><div class="ttname"><a href="struct_f_charge_attack_leaf.html#a4679a99003775924273c2b79a13e388a">FChargeAttackLeaf::AttackTag</a></div><div class="ttdeci">FGameplayTag AttackTag</div><div class="ttdef"><b>Definition</b> <a href="_a_r_pawn_init_data_8h_source.html#l00038">ARPawnInitData.h:38</a></div></div>
+<div class="ttc" id="astruct_f_charge_attack_leaf_html_aeedd12afc68d5e46e87c79dde16f07e9"><div class="ttname"><a href="struct_f_charge_attack_leaf.html#aeedd12afc68d5e46e87c79dde16f07e9">FChargeAttackLeaf::TimeThreshold</a></div><div class="ttdeci">float TimeThreshold</div><div class="ttdef"><b>Definition</b> <a href="_a_r_pawn_init_data_8h_source.html#l00030">ARPawnInitData.h:30</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
@@ -257,7 +283,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="dir_db4b63894235d986ff0886d3d7147fc4.html">GithubRepository</a></li><li class="navelem"><a href="dir_b7f76808a72ae9b06e23f4ba1d7ec8e0.html">ARRanger</a></li><li class="navelem"><a href="dir_22deff83e5e51399b4644a6ac5e50e58.html">Source</a></li><li class="navelem"><a href="dir_765ba4c51118e23b05fd567f675cd5c3.html">ARRanger</a></li><li class="navelem"><a href="dir_db3cb373904af9b89e7076f054460257.html">Public</a></li><li class="navelem"><a href="dir_b2fb92f8f1f253d64ac93663e3b7fc1d.html">Pawn</a></li><li class="navelem"><a href="_a_r_pawn_init_data_8h.html">ARPawnInitData.h</a></li>
+    <li class="navelem"><a href="dir_da1fa48e9cd6aca15a5329e13710da8a.html">ARRanger</a></li><li class="navelem"><a href="dir_40412261475e0f2fb01e535afd9f97ea.html">Public</a></li><li class="navelem"><a href="dir_09045596f2d89b52582d55a13983596f.html">Pawn</a></li><li class="navelem"><a href="_a_r_pawn_init_data_8h.html">ARPawnInitData.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>

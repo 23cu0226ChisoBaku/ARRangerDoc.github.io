@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ARRanger: D:/GithubRepository/ARRanger/Source/ARRanger/Private/PlayerObservation/Core/ObserverProxyRegistryDecorator.cpp Source File</title>
+<title>ARRanger: ARRanger/Private/PlayerObservation/Core/ObserverProxyRegistryDecorator.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -101,13 +101,13 @@ $(function(){initNavTree('_observer_proxy_registry_decorator_8cpp_source.html','
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
 <div class="foldopen" id="foldopen00009" data-start="{" data-end="}">
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_a_r_ranger_1_1_f_observer_proxy_registry_decorator.html#adde8895eaec699b6489b16c26d11471e">    9</a></span><a class="code hl_function" href="class_a_r_ranger_1_1_f_observer_proxy_registry_decorator.html#adde8895eaec699b6489b16c26d11471e">FObserverProxyRegistryDecorator::FObserverProxyRegistryDecorator</a>()</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>  : <a class="code hl_variable" href="class_a_r_ranger_1_1_f_observer_proxy_registry_decorator.html#a7d43919e87458e91641914716a6f7e88">m_registry</a>{nullptr}</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>  : m_registry{nullptr}</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>{ }</div>
 </div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
 <div class="foldopen" id="foldopen00013" data-start="{" data-end="}">
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_a_r_ranger_1_1_f_observer_proxy_registry_decorator.html#ae055f8f6c68b814dc2fb2e4a8210a574">   13</a></span><a class="code hl_function" href="class_a_r_ranger_1_1_f_observer_proxy_registry_decorator.html#adde8895eaec699b6489b16c26d11471e">FObserverProxyRegistryDecorator::FObserverProxyRegistryDecorator</a>(<span class="keyword">const</span> TSharedPtr&lt;IObserverRegistry&gt;&amp; Registry)</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  : <a class="code hl_variable" href="class_a_r_ranger_1_1_f_observer_proxy_registry_decorator.html#a7d43919e87458e91641914716a6f7e88">m_registry</a>{Registry}</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  : m_registry{Registry}</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>{ }</div>
 </div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
@@ -118,9 +118,9 @@ $(function(){initNavTree('_observer_proxy_registry_decorator_8cpp_source.html','
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>{</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  <a class="code hl_function" href="class_a_r_ranger_1_1_f_observer_proxy_registry_decorator.html#afe32914956a0428c1faaed0e354808f1">OnRegisterObserverProxy</a>(Observers);</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_a_r_ranger_1_1_f_observer_proxy_registry_decorator.html#a7d43919e87458e91641914716a6f7e88">m_registry</a>.IsValid())</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  <span class="keywordflow">if</span> (m_registry.IsValid())</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  {</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <a class="code hl_variable" href="class_a_r_ranger_1_1_f_observer_proxy_registry_decorator.html#a7d43919e87458e91641914716a6f7e88">m_registry</a>-&gt;RegisterObserverProxy(Observers);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    m_registry-&gt;RegisterObserverProxy(Observers);</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  }</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>}</div>
 </div>
@@ -135,7 +135,6 @@ $(function(){initNavTree('_observer_proxy_registry_decorator_8cpp_source.html','
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>} <span class="comment">// namespace ARRanger</span></div>
 <div class="ttc" id="a_observer_proxy_registry_decorator_8h_html"><div class="ttname"><a href="_observer_proxy_registry_decorator_8h.html">ObserverProxyRegistryDecorator.h</a></div></div>
 <div class="ttc" id="aclass_a_r_ranger_1_1_f_observer_proxy_registry_decorator_html_a595b2d233bb789a520cebbbc685bf3f8"><div class="ttname"><a href="class_a_r_ranger_1_1_f_observer_proxy_registry_decorator.html#a595b2d233bb789a520cebbbc685bf3f8">ARRanger::FObserverProxyRegistryDecorator::RegisterObserverProxy</a></div><div class="ttdeci">ARRANGER_API void RegisterObserverProxy(const TSharedPtr&lt; FObserverListNode &gt; &amp;Observers) override final</div><div class="ttdef"><b>Definition</b> <a href="#l00019">ObserverProxyRegistryDecorator.cpp:19</a></div></div>
-<div class="ttc" id="aclass_a_r_ranger_1_1_f_observer_proxy_registry_decorator_html_a7d43919e87458e91641914716a6f7e88"><div class="ttname"><a href="class_a_r_ranger_1_1_f_observer_proxy_registry_decorator.html#a7d43919e87458e91641914716a6f7e88">ARRanger::FObserverProxyRegistryDecorator::m_registry</a></div><div class="ttdeci">TSharedPtr&lt; IObserverRegistry &gt; m_registry</div><div class="ttdef"><b>Definition</b> <a href="_observer_proxy_registry_decorator_8h_source.html#l00025">ObserverProxyRegistryDecorator.h:25</a></div></div>
 <div class="ttc" id="aclass_a_r_ranger_1_1_f_observer_proxy_registry_decorator_html_adde8895eaec699b6489b16c26d11471e"><div class="ttname"><a href="class_a_r_ranger_1_1_f_observer_proxy_registry_decorator.html#adde8895eaec699b6489b16c26d11471e">ARRanger::FObserverProxyRegistryDecorator::FObserverProxyRegistryDecorator</a></div><div class="ttdeci">ARRANGER_API FObserverProxyRegistryDecorator()</div><div class="ttdef"><b>Definition</b> <a href="#l00009">ObserverProxyRegistryDecorator.cpp:9</a></div></div>
 <div class="ttc" id="aclass_a_r_ranger_1_1_f_observer_proxy_registry_decorator_html_afb094e9a4270cc13dfcb51f5959e2a33"><div class="ttname"><a href="class_a_r_ranger_1_1_f_observer_proxy_registry_decorator.html#afb094e9a4270cc13dfcb51f5959e2a33">ARRanger::FObserverProxyRegistryDecorator::~FObserverProxyRegistryDecorator</a></div><div class="ttdeci">ARRANGER_API ~FObserverProxyRegistryDecorator()</div></div>
 <div class="ttc" id="aclass_a_r_ranger_1_1_f_observer_proxy_registry_decorator_html_afe32914956a0428c1faaed0e354808f1"><div class="ttname"><a href="class_a_r_ranger_1_1_f_observer_proxy_registry_decorator.html#afe32914956a0428c1faaed0e354808f1">ARRanger::FObserverProxyRegistryDecorator::OnRegisterObserverProxy</a></div><div class="ttdeci">virtual ARRANGER_API void OnRegisterObserverProxy(const TSharedPtr&lt; FObserverListNode &gt; &amp;Observers)</div><div class="ttdef"><b>Definition</b> <a href="#l00029">ObserverProxyRegistryDecorator.cpp:29</a></div></div>
@@ -146,7 +145,7 @@ $(function(){initNavTree('_observer_proxy_registry_decorator_8cpp_source.html','
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="dir_db4b63894235d986ff0886d3d7147fc4.html">GithubRepository</a></li><li class="navelem"><a href="dir_b7f76808a72ae9b06e23f4ba1d7ec8e0.html">ARRanger</a></li><li class="navelem"><a href="dir_22deff83e5e51399b4644a6ac5e50e58.html">Source</a></li><li class="navelem"><a href="dir_765ba4c51118e23b05fd567f675cd5c3.html">ARRanger</a></li><li class="navelem"><a href="dir_01ca0bd49608f959e3dafd2b38229153.html">Private</a></li><li class="navelem"><a href="dir_e69077c831682f147dadd5b5d1216506.html">PlayerObservation</a></li><li class="navelem"><a href="dir_137e6440795cc24c46fb32ff60f7c9ce.html">Core</a></li><li class="navelem"><a href="_observer_proxy_registry_decorator_8cpp.html">ObserverProxyRegistryDecorator.cpp</a></li>
+    <li class="navelem"><a href="dir_da1fa48e9cd6aca15a5329e13710da8a.html">ARRanger</a></li><li class="navelem"><a href="dir_6306d44ac889cfd8733274aed159ebe8.html">Private</a></li><li class="navelem"><a href="dir_f422ad64b2c1998d6c073d50b3d45eba.html">PlayerObservation</a></li><li class="navelem"><a href="dir_f8c6709490995734314a630cfb496c85.html">Core</a></li><li class="navelem"><a href="_observer_proxy_registry_decorator_8cpp.html">ObserverProxyRegistryDecorator.cpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>

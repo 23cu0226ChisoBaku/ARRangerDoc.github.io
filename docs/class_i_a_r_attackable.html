@@ -112,29 +112,34 @@ Inheritance diagram for IARAttackable:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a341e269f7155810629ec5dce290d9906" id="r_a341e269f7155810629ec5dce290d9906"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_i_a_r_attackable_8h.html#a578eb926c8aecdf908e1338b2e893458">UE_API</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a341e269f7155810629ec5dce290d9906">AttackTarget</a> (<a class="el" href="class_i_a_r_attacker_interface.html">IARAttackerInterface</a> *Attacker, <a class="el" href="struct_f_a_r_attack_parameters.html">FARAttackParameters</a> InAttackParams=<a class="el" href="struct_f_a_r_attack_parameters.html#ad2a4751c3a578c3c7bf6e13342e2cfb7">FARAttackParameters::GetBlank</a>())</td></tr>
+<tr class="memitem:a341e269f7155810629ec5dce290d9906" id="r_a341e269f7155810629ec5dce290d9906"><td class="memItemLeft" align="right" valign="top">ARRANGER_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a341e269f7155810629ec5dce290d9906">AttackTarget</a> (<a class="el" href="class_i_a_r_attacker_interface.html">IARAttackerInterface</a> *Attacker, <a class="el" href="struct_f_a_r_attack_parameters.html">FARAttackParameters</a> InAttackParams=<a class="el" href="struct_f_a_r_attack_parameters.html#ad2a4751c3a578c3c7bf6e13342e2cfb7">FARAttackParameters::GetBlank</a>())</td></tr>
 <tr class="memdesc:a341e269f7155810629ec5dce290d9906"><td class="mdescLeft">&#160;</td><td class="mdescRight">物を攻撃する  <br /></td></tr>
-<tr class="memitem:afbc9c736b2854217214766e5c52bf16b" id="r_afbc9c736b2854217214766e5c52bf16b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_i_a_r_attackable_8h.html#a578eb926c8aecdf908e1338b2e893458">UE_API</a> AActor *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afbc9c736b2854217214766e5c52bf16b">Attackable_GetActor</a> ()</td></tr>
-<tr class="memdesc:afbc9c736b2854217214766e5c52bf16b"><td class="mdescLeft">&#160;</td><td class="mdescRight">アクターを返す  <br /></td></tr>
-<tr class="memitem:a78f6f06c2ccb705a8b708bbb298c0652" id="r_a78f6f06c2ccb705a8b708bbb298c0652"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_i_a_r_attackable_8h.html#a578eb926c8aecdf908e1338b2e893458">UE_API</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a78f6f06c2ccb705a8b708bbb298c0652">CanAttack</a> ()</td></tr>
-<tr class="memdesc:a78f6f06c2ccb705a8b708bbb298c0652"><td class="mdescLeft">&#160;</td><td class="mdescRight">攻撃できるか  <br /></td></tr>
+<tr class="memitem:ad96f7c60ab08ebd53285a5433abd3a1b" id="r_ad96f7c60ab08ebd53285a5433abd3a1b"><td class="memItemLeft" align="right" valign="top">virtual ARRANGER_API AActor *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad96f7c60ab08ebd53285a5433abd3a1b">Attackable_GetActor</a> ()</td></tr>
+<tr class="memdesc:ad96f7c60ab08ebd53285a5433abd3a1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">アクターを返す  <br /></td></tr>
+<tr class="memitem:ac9035f96171fdf270edbd8c0bf6a9d64" id="r_ac9035f96171fdf270edbd8c0bf6a9d64"><td class="memItemLeft" align="right" valign="top">virtual ARRANGER_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac9035f96171fdf270edbd8c0bf6a9d64">CanAttack</a> ()</td></tr>
+<tr class="memdesc:ac9035f96171fdf270edbd8c0bf6a9d64"><td class="mdescLeft">&#160;</td><td class="mdescRight">攻撃できるか  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ae4e983001995b0ceb7811400c89ce260" id="r_ae4e983001995b0ceb7811400c89ce260"><td class="memItemLeft" align="right" valign="top">static ARRANGER_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae4e983001995b0ceb7811400c89ce260">IsActorAttackable</a> (const AActor *InActor)</td></tr>
+<tr class="memdesc:ae4e983001995b0ceb7811400c89ce260"><td class="mdescLeft">&#160;</td><td class="mdescRight">アクターが攻撃できるかを確認する  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pro-methods" class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a62ec80c41581046d3c40758c26243c52" id="r_a62ec80c41581046d3c40758c26243c52"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_i_a_r_attackable_8h.html#a578eb926c8aecdf908e1338b2e893458">UE_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a62ec80c41581046d3c40758c26243c52">OnPreAttacked</a> (const <a class="el" href="struct_f_a_r_attack_parameters.html">FARAttackParameters</a> &amp;InAttackParams, <a class="el" href="struct_a_r_ranger_1_1_battle_1_1_f_a_r_attack_result.html">ARRanger::Battle::FARAttackResult</a> &amp;OutAttackResult)</td></tr>
-<tr class="memdesc:a62ec80c41581046d3c40758c26243c52"><td class="mdescLeft">&#160;</td><td class="mdescRight">攻撃を受ける前に呼び出されるコールバック  <br /></td></tr>
-<tr class="memitem:a1c299a5915438d0f9aba95e3610c43d5" id="r_a1c299a5915438d0f9aba95e3610c43d5"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_i_a_r_attackable_8h.html#a578eb926c8aecdf908e1338b2e893458">UE_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1c299a5915438d0f9aba95e3610c43d5">OnPostAttacked</a> (const <a class="el" href="struct_f_a_r_attack_parameters.html">FARAttackParameters</a> &amp;InAttackParams)</td></tr>
-<tr class="memdesc:a1c299a5915438d0f9aba95e3610c43d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">攻撃を受けた後に呼び出されるコールバック  <br /></td></tr>
-<tr class="memitem:a4ecfb95446603c3d60bb373e5718d8e5" id="r_a4ecfb95446603c3d60bb373e5718d8e5"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_i_a_r_attackable_8h.html#a578eb926c8aecdf908e1338b2e893458">UE_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ecfb95446603c3d60bb373e5718d8e5">OnDamaged</a> (const <a class="el" href="struct_a_r_ranger_1_1_battle_1_1_f_a_r_damage_result.html">ARRanger::Battle::FARDamageResult</a> &amp;InDamageResult)</td></tr>
-<tr class="memdesc:a4ecfb95446603c3d60bb373e5718d8e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">ダメージ計算を済んだ時に呼び出されるコールバック  <br /></td></tr>
+<tr class="memitem:a60bdb3e5966fbfc2abd36374b956c67d" id="r_a60bdb3e5966fbfc2abd36374b956c67d"><td class="memItemLeft" align="right" valign="top">virtual ARRANGER_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a60bdb3e5966fbfc2abd36374b956c67d">OnPreAttacked</a> (const <a class="el" href="struct_f_a_r_attack_parameters.html">FARAttackParameters</a> &amp;InAttackParams, <a class="el" href="struct_a_r_ranger_1_1_battle_1_1_f_a_r_attack_result.html">ARRanger::Battle::FARAttackResult</a> &amp;OutAttackResult)</td></tr>
+<tr class="memdesc:a60bdb3e5966fbfc2abd36374b956c67d"><td class="mdescLeft">&#160;</td><td class="mdescRight">攻撃を受ける前に呼び出されるコールバック  <br /></td></tr>
+<tr class="memitem:a7836c7375627fc352fcaf4dd65e5c774" id="r_a7836c7375627fc352fcaf4dd65e5c774"><td class="memItemLeft" align="right" valign="top">virtual ARRANGER_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7836c7375627fc352fcaf4dd65e5c774">OnPostAttacked</a> (const <a class="el" href="struct_f_a_r_attack_parameters.html">FARAttackParameters</a> &amp;InAttackParams)</td></tr>
+<tr class="memdesc:a7836c7375627fc352fcaf4dd65e5c774"><td class="mdescLeft">&#160;</td><td class="mdescRight">攻撃を受けた後に呼び出されるコールバック  <br /></td></tr>
+<tr class="memitem:aa9dac7eb337526b4b774c61e5765fe95" id="r_aa9dac7eb337526b4b774c61e5765fe95"><td class="memItemLeft" align="right" valign="top">virtual ARRANGER_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa9dac7eb337526b4b774c61e5765fe95">OnDamaged</a> (const <a class="el" href="struct_a_r_ranger_1_1_battle_1_1_f_a_r_damage_result.html">ARRanger::Battle::FARDamageResult</a> &amp;InDamageResult)</td></tr>
+<tr class="memdesc:aa9dac7eb337526b4b774c61e5765fe95"><td class="mdescLeft">&#160;</td><td class="mdescRight">ダメージ計算を済んだ時に呼び出されるコールバック  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Interface for object that can be attacked in <a class="el" href="class_a_r_ranger.html">ARRanger</a> project. </p>
 
 <p class="definition">Definition at line <a class="el" href="_i_a_r_attackable_8h_source.html#l00132">132</a> of file <a class="el" href="_i_a_r_attackable_8h_source.html">IARAttackable.h</a>.</p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="afbc9c736b2854217214766e5c52bf16b" name="afbc9c736b2854217214766e5c52bf16b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afbc9c736b2854217214766e5c52bf16b">&#9670;&#160;</a></span>Attackable_GetActor()</h2>
+<a id="ad96f7c60ab08ebd53285a5433abd3a1b" name="ad96f7c60ab08ebd53285a5433abd3a1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad96f7c60ab08ebd53285a5433abd3a1b">&#9670;&#160;</a></span>Attackable_GetActor()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -143,7 +148,7 @@ Protected Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="_i_a_r_attackable_8h.html#a578eb926c8aecdf908e1338b2e893458">UE_API</a> AActor * IARAttackable::Attackable_GetActor </td>
+          <td class="memname">virtual ARRANGER_API AActor * IARAttackable::Attackable_GetActor </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -159,10 +164,11 @@ Protected Member Functions</h2></td></tr>
 <p>アクターを返す </p>
 <dl class="section return"><dt>Returns</dt><dd>AActor </dd></dl>
 
-<p>Reimplemented in <a class="el" href="class_a_a_r_ranger_character.html#a49614336e9a58d3bdb9bb7150d0c641d">AARRangerCharacter</a>, and <a class="el" href="class_a_empty_can.html#a8c47985cdd776ab1f16d55dd91058e0f">AEmptyCan</a>.</p>
+<p>Reimplemented in <a class="el" href="class_a_a_r_ranger_character.html#a82566fb2d4a7c90544b7b745f61c5df3">AARRangerCharacter</a>, and <a class="el" href="class_a_empty_can.html#a8c47985cdd776ab1f16d55dd91058e0f">AEmptyCan</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_i_a_r_attackable_8h_source.html#l00150">150</a> of file <a class="el" href="_i_a_r_attackable_8h_source.html">IARAttackable.h</a>.</p>
-
+<p class="definition">Definition at line <a class="el" href="_i_a_r_attackable_8h_source.html#l00158">158</a> of file <a class="el" href="_i_a_r_attackable_8h_source.html">IARAttackable.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  158</span>{ return ::Cast&lt;AActor&gt;(_getUObject()); }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a341e269f7155810629ec5dce290d9906" name="a341e269f7155810629ec5dce290d9906"></a>
@@ -194,16 +200,88 @@ Protected Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>成功だったらtrue, それ以外はfalseを返す </dd></dl>
 <p>Preattack Phase</p>
-<p>Notify attack state to attacker</p>
+<p>攻撃者に攻撃結果を通知する</p>
 <p>Postattack Phase</p>
 <p>Handle battle task</p>
 
-<p class="definition">Definition at line <a class="el" href="_battle_system_impl_8cpp_source.html#l00031">31</a> of file <a class="el" href="_battle_system_impl_8cpp_source.html">BattleSystemImpl.cpp</a>.</p>
-
+<p class="definition">Definition at line <a class="el" href="_battle_system_impl_8cpp_source.html#l00042">42</a> of file <a class="el" href="_battle_system_impl_8cpp_source.html">BattleSystemImpl.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   43</span>{</div>
+<div class="line"><span class="lineno">   44</span>  <span class="keyword">using namespace </span>ARRanger::Battle;</div>
+<div class="line"><span class="lineno">   45</span> </div>
+<div class="line"><span class="lineno">   46</span>  <span class="comment">// Attackerが存在しないため、Attackerへの通知を送らない</span></div>
+<div class="line"><span class="lineno">   47</span>  <span class="keywordflow">if</span> (Attacker == <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">   48</span>  {</div>
+<div class="line"><span class="lineno">   49</span>    <a class="code hl_define" href="_a_r_log_macro_8h.html#a3d4f50517e31a60a04976313355a47e3">AR_LOG</a>(LogARBattle, Error, TEXT(<span class="stringliteral">&quot;Attacker is INVALID!!!&quot;</span>));</div>
+<div class="line"><span class="lineno">   50</span>  }</div>
+<div class="line"><span class="lineno">   51</span></div>
+<div class="line"><span class="lineno">   53</span>  <span class="comment">// Use Instigator if Instigator is valid and bUseAttackerActor is false, otherwise use actor of IARAttackerInterface</span></div>
+<div class="line"><span class="lineno">   54</span>  <span class="keyword">const</span> <span class="keywordtype">bool</span> bUseIntigator = (InAttackParams.<a class="code hl_variable" href="struct_f_a_r_attack_parameters.html#a9f73a195c9e07c0a0db0eca32864d2ec">Instigator</a> != <span class="keyword">nullptr</span>) &amp;&amp; InAttackParams.<a class="code hl_variable" href="struct_f_a_r_attack_parameters.html#a1305f637d28752936de38e256418d2b6">bUseAttackerActor</a>;</div>
+<div class="line"><span class="lineno">   55</span>  <span class="keywordflow">if</span> (!bUseIntigator)</div>
+<div class="line"><span class="lineno">   56</span>  {</div>
+<div class="line"><span class="lineno">   57</span>    InAttackParams.<a class="code hl_variable" href="struct_f_a_r_attack_parameters.html#a9f73a195c9e07c0a0db0eca32864d2ec">Instigator</a> = Attacker != <span class="keyword">nullptr</span> ? Attacker-&gt;<a class="code hl_function" href="class_i_a_r_attacker_interface.html#af0e5f49c9fe5399e9877b26c598b4d60">GetActor</a>() : <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">   58</span>  }</div>
+<div class="line"><span class="lineno">   59</span> </div>
+<div class="line"><span class="lineno">   60</span>  FARAttackResult outAttackResult{};</div>
+<div class="line"><span class="lineno">   61</span>  <a class="code hl_function" href="#a60bdb3e5966fbfc2abd36374b956c67d">OnPreAttacked</a>(InAttackParams, outAttackResult);</div>
+<div class="line"><span class="lineno">   62</span></div>
+<div class="line"><span class="lineno">   64</span>  <span class="keywordflow">if</span> (Attacker != <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">   65</span>  {</div>
+<div class="line"><span class="lineno">   66</span>    FARAttackNotifyParameter notifyParams{};</div>
+<div class="line"><span class="lineno">   67</span>    notifyParams.<a class="code hl_variable" href="struct_a_r_ranger_1_1_battle_1_1_f_a_r_attack_notify_parameter.html#acaea6d5bd0997f5dc79499683aef4aa2">WeakAttackableObject</a> = _getUObject();</div>
+<div class="line"><span class="lineno">   68</span>    Attacker-&gt;<a class="code hl_function" href="class_i_a_r_attacker_interface.html#ad3dc17bfb7baa4d961034ab0dd945683">NotifyAttackResult</a>(outAttackResult.<a class="code hl_variable" href="struct_a_r_ranger_1_1_battle_1_1_f_a_r_attack_result.html#a5be6129ba70a28a3df80926dc2393473">Result</a>, notifyParams);</div>
+<div class="line"><span class="lineno">   69</span>  }</div>
+<div class="line"><span class="lineno">   70</span></div>
+<div class="line"><span class="lineno">   72</span>  <a class="code hl_function" href="#a7836c7375627fc352fcaf4dd65e5c774">OnPostAttacked</a>(InAttackParams);</div>
+<div class="line"><span class="lineno">   73</span>  </div>
+<div class="line"><span class="lineno">   75</span>  <span class="comment">// 攻撃が失敗したらバトルタスクを処理しない</span></div>
+<div class="line"><span class="lineno">   76</span>  <span class="keywordflow">if</span> (outAttackResult.<a class="code hl_variable" href="struct_a_r_ranger_1_1_battle_1_1_f_a_r_attack_result.html#a5be6129ba70a28a3df80926dc2393473">Result</a> != EARAttackResult::Success)</div>
+<div class="line"><span class="lineno">   77</span>  {</div>
+<div class="line"><span class="lineno">   78</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   79</span>  }</div>
+<div class="line"><span class="lineno">   80</span> </div>
+<div class="line"><span class="lineno">   81</span>  <span class="comment">// バトルタスクを処理する</span></div>
+<div class="line"><span class="lineno">   82</span>  FARBattleTask task{};</div>
+<div class="line"><span class="lineno">   83</span>  task.<a class="code hl_variable" href="struct_a_r_ranger_1_1_battle_1_1_f_a_r_battle_task.html#ab2452f5813622c1ba87af241e7fbe9d6">Instigator</a> = InAttackParams.<a class="code hl_variable" href="struct_f_a_r_attack_parameters.html#a9f73a195c9e07c0a0db0eca32864d2ec">Instigator</a>;</div>
+<div class="line"><span class="lineno">   84</span>  task.<a class="code hl_variable" href="struct_a_r_ranger_1_1_battle_1_1_f_a_r_battle_task.html#a761fdc7de5f72b052c4f2517377eb64f">Target</a> = this-&gt;<a class="code hl_function" href="#ad96f7c60ab08ebd53285a5433abd3a1b">Attackable_GetActor</a>();</div>
+<div class="line"><span class="lineno">   85</span>  task.<a class="code hl_variable" href="struct_a_r_ranger_1_1_battle_1_1_f_a_r_battle_task.html#a2d253a98373a77f052337cac8393ffa6">OriginDamage</a> = InAttackParams.<a class="code hl_variable" href="struct_f_a_r_attack_parameters.html#a34742eb583260e146b80c671f14e41d3">Damage</a>;</div>
+<div class="line"><span class="lineno">   86</span> </div>
+<div class="line"><span class="lineno">   87</span>  FARDamageResult damageResult{};</div>
+<div class="line"><span class="lineno">   88</span>  IBattleSystemInterface::Get().HandleBattleTask(task, damageResult);</div>
+<div class="line"><span class="lineno">   89</span> </div>
+<div class="line"><span class="lineno">   90</span>  <span class="comment">// ダメージ通知</span></div>
+<div class="line"><span class="lineno">   91</span>  damageResult.<a class="code hl_variable" href="struct_a_r_ranger_1_1_battle_1_1_f_a_r_damage_result.html#af3a549ed841d276444407f0e6e455658">FinalLaunchDirection</a> = InAttackParams.<a class="code hl_variable" href="struct_f_a_r_attack_parameters.html#a50e1872ea4af92a85f5ad2a89e89179c">LaunchDirection</a>;</div>
+<div class="line"><span class="lineno">   92</span>  damageResult.<a class="code hl_variable" href="struct_a_r_ranger_1_1_battle_1_1_f_a_r_damage_result.html#aaa19339924a8785ac8c32862b6ddb9bc">Instigator</a> = (Attacker != <span class="keyword">nullptr</span>) ? Attacker-&gt;<a class="code hl_function" href="class_i_a_r_attacker_interface.html#af0e5f49c9fe5399e9877b26c598b4d60">GetActor</a>() : <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">   93</span>  damageResult.<a class="code hl_variable" href="struct_a_r_ranger_1_1_battle_1_1_f_a_r_damage_result.html#a18e65168fc025e01b14d4b5f39da47fe">ImpactLocation</a> = InAttackParams.<a class="code hl_variable" href="struct_f_a_r_attack_parameters.html#a81ff037ccc5d37d447c6e73154876a46">ImpactLocation</a>;</div>
+<div class="line"><span class="lineno">   94</span>  <a class="code hl_function" href="#aa9dac7eb337526b4b774c61e5765fe95">OnDamaged</a>(damageResult);</div>
+<div class="line"><span class="lineno">   95</span> </div>
+<div class="line"><span class="lineno">   96</span>  <span class="comment">// Attack success</span></div>
+<div class="line"><span class="lineno">   97</span>  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   98</span>}</div>
+<div class="ttc" id="a_a_r_log_macro_8h_html_a3d4f50517e31a60a04976313355a47e3"><div class="ttname"><a href="_a_r_log_macro_8h.html#a3d4f50517e31a60a04976313355a47e3">AR_LOG</a></div><div class="ttdeci">#define AR_LOG(CategoryName, Verbosity, Format,...)</div><div class="ttdef"><b>Definition</b> <a href="_a_r_log_macro_8h_source.html#l00008">ARLogMacro.h:8</a></div></div>
+<div class="ttc" id="aclass_i_a_r_attackable_html_a60bdb3e5966fbfc2abd36374b956c67d"><div class="ttname"><a href="#a60bdb3e5966fbfc2abd36374b956c67d">IARAttackable::OnPreAttacked</a></div><div class="ttdeci">virtual ARRANGER_API void OnPreAttacked(const FARAttackParameters &amp;InAttackParams, ARRanger::Battle::FARAttackResult &amp;OutAttackResult)</div><div class="ttdoc">攻撃を受ける前に呼び出されるコールバック</div><div class="ttdef"><b>Definition</b> <a href="_i_a_r_attackable_8h_source.html#l00173">IARAttackable.h:173</a></div></div>
+<div class="ttc" id="aclass_i_a_r_attackable_html_a7836c7375627fc352fcaf4dd65e5c774"><div class="ttname"><a href="#a7836c7375627fc352fcaf4dd65e5c774">IARAttackable::OnPostAttacked</a></div><div class="ttdeci">virtual ARRANGER_API void OnPostAttacked(const FARAttackParameters &amp;InAttackParams)</div><div class="ttdoc">攻撃を受けた後に呼び出されるコールバック</div><div class="ttdef"><b>Definition</b> <a href="_i_a_r_attackable_8h_source.html#l00179">IARAttackable.h:179</a></div></div>
+<div class="ttc" id="aclass_i_a_r_attackable_html_aa9dac7eb337526b4b774c61e5765fe95"><div class="ttname"><a href="#aa9dac7eb337526b4b774c61e5765fe95">IARAttackable::OnDamaged</a></div><div class="ttdeci">virtual ARRANGER_API void OnDamaged(const ARRanger::Battle::FARDamageResult &amp;InDamageResult)</div><div class="ttdoc">ダメージ計算を済んだ時に呼び出されるコールバック</div><div class="ttdef"><b>Definition</b> <a href="_i_a_r_attackable_8h_source.html#l00185">IARAttackable.h:185</a></div></div>
+<div class="ttc" id="aclass_i_a_r_attackable_html_ad96f7c60ab08ebd53285a5433abd3a1b"><div class="ttname"><a href="#ad96f7c60ab08ebd53285a5433abd3a1b">IARAttackable::Attackable_GetActor</a></div><div class="ttdeci">virtual ARRANGER_API AActor * Attackable_GetActor()</div><div class="ttdoc">アクターを返す</div><div class="ttdef"><b>Definition</b> <a href="_i_a_r_attackable_8h_source.html#l00158">IARAttackable.h:158</a></div></div>
+<div class="ttc" id="aclass_i_a_r_attacker_interface_html_ad3dc17bfb7baa4d961034ab0dd945683"><div class="ttname"><a href="class_i_a_r_attacker_interface.html#ad3dc17bfb7baa4d961034ab0dd945683">IARAttackerInterface::NotifyAttackResult</a></div><div class="ttdeci">ARRANGER_API void NotifyAttackResult(ARRanger::Battle::EARAttackResult InResult, const ARRanger::Battle::FARAttackNotifyParameter &amp;InNotifyParams)</div><div class="ttdoc">攻撃結果通知送る</div><div class="ttdef"><b>Definition</b> <a href="_battle_system_impl_8cpp_source.html#l00106">BattleSystemImpl.cpp:106</a></div></div>
+<div class="ttc" id="aclass_i_a_r_attacker_interface_html_af0e5f49c9fe5399e9877b26c598b4d60"><div class="ttname"><a href="class_i_a_r_attacker_interface.html#af0e5f49c9fe5399e9877b26c598b4d60">IARAttackerInterface::GetActor</a></div><div class="ttdeci">virtual ARRANGER_API AActor * GetActor()</div><div class="ttdoc">攻撃者のアクターを返す</div><div class="ttdef"><b>Definition</b> <a href="_i_a_r_attacker_interface_8h_source.html#l00061">IARAttackerInterface.h:61</a></div></div>
+<div class="ttc" id="astruct_a_r_ranger_1_1_battle_1_1_f_a_r_attack_notify_parameter_html_acaea6d5bd0997f5dc79499683aef4aa2"><div class="ttname"><a href="struct_a_r_ranger_1_1_battle_1_1_f_a_r_attack_notify_parameter.html#acaea6d5bd0997f5dc79499683aef4aa2">ARRanger::Battle::FARAttackNotifyParameter::WeakAttackableObject</a></div><div class="ttdeci">TWeakObjectPtr WeakAttackableObject</div><div class="ttdef"><b>Definition</b> <a href="_i_a_r_attacker_interface_8h_source.html#l00034">IARAttackerInterface.h:34</a></div></div>
+<div class="ttc" id="astruct_a_r_ranger_1_1_battle_1_1_f_a_r_attack_result_html_a5be6129ba70a28a3df80926dc2393473"><div class="ttname"><a href="struct_a_r_ranger_1_1_battle_1_1_f_a_r_attack_result.html#a5be6129ba70a28a3df80926dc2393473">ARRanger::Battle::FARAttackResult::Result</a></div><div class="ttdeci">EARAttackResult Result</div><div class="ttdef"><b>Definition</b> <a href="_i_a_r_attackable_8h_source.html#l00049">IARAttackable.h:49</a></div></div>
+<div class="ttc" id="astruct_a_r_ranger_1_1_battle_1_1_f_a_r_battle_task_html_a2d253a98373a77f052337cac8393ffa6"><div class="ttname"><a href="struct_a_r_ranger_1_1_battle_1_1_f_a_r_battle_task.html#a2d253a98373a77f052337cac8393ffa6">ARRanger::Battle::FARBattleTask::OriginDamage</a></div><div class="ttdeci">float OriginDamage</div><div class="ttdef"><b>Definition</b> <a href="_i_battle_system_interface_8h_source.html#l00036">IBattleSystemInterface.h:36</a></div></div>
+<div class="ttc" id="astruct_a_r_ranger_1_1_battle_1_1_f_a_r_battle_task_html_a761fdc7de5f72b052c4f2517377eb64f"><div class="ttname"><a href="struct_a_r_ranger_1_1_battle_1_1_f_a_r_battle_task.html#a761fdc7de5f72b052c4f2517377eb64f">ARRanger::Battle::FARBattleTask::Target</a></div><div class="ttdeci">TObjectPtr&lt; AActor &gt; Target</div><div class="ttdef"><b>Definition</b> <a href="_i_battle_system_interface_8h_source.html#l00033">IBattleSystemInterface.h:33</a></div></div>
+<div class="ttc" id="astruct_a_r_ranger_1_1_battle_1_1_f_a_r_battle_task_html_ab2452f5813622c1ba87af241e7fbe9d6"><div class="ttname"><a href="struct_a_r_ranger_1_1_battle_1_1_f_a_r_battle_task.html#ab2452f5813622c1ba87af241e7fbe9d6">ARRanger::Battle::FARBattleTask::Instigator</a></div><div class="ttdeci">TObjectPtr&lt; AActor &gt; Instigator</div><div class="ttdef"><b>Definition</b> <a href="_i_battle_system_interface_8h_source.html#l00030">IBattleSystemInterface.h:30</a></div></div>
+<div class="ttc" id="astruct_a_r_ranger_1_1_battle_1_1_f_a_r_damage_result_html_a18e65168fc025e01b14d4b5f39da47fe"><div class="ttname"><a href="struct_a_r_ranger_1_1_battle_1_1_f_a_r_damage_result.html#a18e65168fc025e01b14d4b5f39da47fe">ARRanger::Battle::FARDamageResult::ImpactLocation</a></div><div class="ttdeci">FVector ImpactLocation</div><div class="ttdef"><b>Definition</b> <a href="_i_a_r_attackable_8h_source.html#l00067">IARAttackable.h:67</a></div></div>
+<div class="ttc" id="astruct_a_r_ranger_1_1_battle_1_1_f_a_r_damage_result_html_aaa19339924a8785ac8c32862b6ddb9bc"><div class="ttname"><a href="struct_a_r_ranger_1_1_battle_1_1_f_a_r_damage_result.html#aaa19339924a8785ac8c32862b6ddb9bc">ARRanger::Battle::FARDamageResult::Instigator</a></div><div class="ttdeci">TObjectPtr&lt; AActor &gt; Instigator</div><div class="ttdef"><b>Definition</b> <a href="_i_a_r_attackable_8h_source.html#l00061">IARAttackable.h:61</a></div></div>
+<div class="ttc" id="astruct_a_r_ranger_1_1_battle_1_1_f_a_r_damage_result_html_af3a549ed841d276444407f0e6e455658"><div class="ttname"><a href="struct_a_r_ranger_1_1_battle_1_1_f_a_r_damage_result.html#af3a549ed841d276444407f0e6e455658">ARRanger::Battle::FARDamageResult::FinalLaunchDirection</a></div><div class="ttdeci">FVector FinalLaunchDirection</div><div class="ttdef"><b>Definition</b> <a href="_i_a_r_attackable_8h_source.html#l00064">IARAttackable.h:64</a></div></div>
+<div class="ttc" id="astruct_f_a_r_attack_parameters_html_a1305f637d28752936de38e256418d2b6"><div class="ttname"><a href="struct_f_a_r_attack_parameters.html#a1305f637d28752936de38e256418d2b6">FARAttackParameters::bUseAttackerActor</a></div><div class="ttdeci">bool bUseAttackerActor</div><div class="ttdef"><b>Definition</b> <a href="_i_a_r_attackable_8h_source.html#l00109">IARAttackable.h:109</a></div></div>
+<div class="ttc" id="astruct_f_a_r_attack_parameters_html_a34742eb583260e146b80c671f14e41d3"><div class="ttname"><a href="struct_f_a_r_attack_parameters.html#a34742eb583260e146b80c671f14e41d3">FARAttackParameters::Damage</a></div><div class="ttdeci">float Damage</div><div class="ttdef"><b>Definition</b> <a href="_i_a_r_attackable_8h_source.html#l00102">IARAttackable.h:102</a></div></div>
+<div class="ttc" id="astruct_f_a_r_attack_parameters_html_a50e1872ea4af92a85f5ad2a89e89179c"><div class="ttname"><a href="struct_f_a_r_attack_parameters.html#a50e1872ea4af92a85f5ad2a89e89179c">FARAttackParameters::LaunchDirection</a></div><div class="ttdeci">FVector LaunchDirection</div><div class="ttdef"><b>Definition</b> <a href="_i_a_r_attackable_8h_source.html#l00094">IARAttackable.h:94</a></div></div>
+<div class="ttc" id="astruct_f_a_r_attack_parameters_html_a81ff037ccc5d37d447c6e73154876a46"><div class="ttname"><a href="struct_f_a_r_attack_parameters.html#a81ff037ccc5d37d447c6e73154876a46">FARAttackParameters::ImpactLocation</a></div><div class="ttdeci">FVector ImpactLocation</div><div class="ttdef"><b>Definition</b> <a href="_i_a_r_attackable_8h_source.html#l00098">IARAttackable.h:98</a></div></div>
+<div class="ttc" id="astruct_f_a_r_attack_parameters_html_a9f73a195c9e07c0a0db0eca32864d2ec"><div class="ttname"><a href="struct_f_a_r_attack_parameters.html#a9f73a195c9e07c0a0db0eca32864d2ec">FARAttackParameters::Instigator</a></div><div class="ttdeci">TObjectPtr&lt; AActor &gt; Instigator</div><div class="ttdef"><b>Definition</b> <a href="_i_a_r_attackable_8h_source.html#l00090">IARAttackable.h:90</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
-<a id="a78f6f06c2ccb705a8b708bbb298c0652" name="a78f6f06c2ccb705a8b708bbb298c0652"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a78f6f06c2ccb705a8b708bbb298c0652">&#9670;&#160;</a></span>CanAttack()</h2>
+<a id="ac9035f96171fdf270edbd8c0bf6a9d64" name="ac9035f96171fdf270edbd8c0bf6a9d64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9035f96171fdf270edbd8c0bf6a9d64">&#9670;&#160;</a></span>CanAttack()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -212,7 +290,7 @@ Protected Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="_i_a_r_attackable_8h.html#a578eb926c8aecdf908e1338b2e893458">UE_API</a> bool IARAttackable::CanAttack </td>
+          <td class="memname">virtual ARRANGER_API bool IARAttackable::CanAttack </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -230,12 +308,13 @@ Protected Member Functions</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="class_a_a_r_ranger_character.html#a6a7f444d20ae8fdce026c573e388fcff">AARRangerCharacter</a>, and <a class="el" href="class_a_enemy___zako.html#a26da33f35a88b1a1b2c23439346271cd">AEnemy_Zako</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_i_a_r_attackable_8h_source.html#l00156">156</a> of file <a class="el" href="_i_a_r_attackable_8h_source.html">IARAttackable.h</a>.</p>
-
+<p class="definition">Definition at line <a class="el" href="_i_a_r_attackable_8h_source.html#l00164">164</a> of file <a class="el" href="_i_a_r_attackable_8h_source.html">IARAttackable.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  164</span>{ <span class="keywordflow">return</span> <span class="keyword">true</span>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
-<a id="a4ecfb95446603c3d60bb373e5718d8e5" name="a4ecfb95446603c3d60bb373e5718d8e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4ecfb95446603c3d60bb373e5718d8e5">&#9670;&#160;</a></span>OnDamaged()</h2>
+<a id="ae4e983001995b0ceb7811400c89ce260" name="ae4e983001995b0ceb7811400c89ce260"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4e983001995b0ceb7811400c89ce260">&#9670;&#160;</a></span>IsActorAttackable()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -244,7 +323,52 @@ Protected Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="_i_a_r_attackable_8h.html#a578eb926c8aecdf908e1338b2e893458">UE_API</a> void IARAttackable::OnDamaged </td>
+          <td class="memname">bool IARAttackable::IsActorAttackable </td>
+          <td>(</td>
+          <td class="paramtype">const AActor *</td>          <td class="paramname"><span class="paramname"><em>InActor</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>アクターが攻撃できるかを確認する </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">InActor</td><td>アクター </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>アクターがIARAttackableを継承していればtrue, それ以外 false </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_battle_system_impl_8cpp_source.html#l00030">30</a> of file <a class="el" href="_battle_system_impl_8cpp_source.html">BattleSystemImpl.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   31</span>{</div>
+<div class="line"><span class="lineno">   32</span>  <span class="keywordflow">if</span> (InActor == <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">   33</span>  {</div>
+<div class="line"><span class="lineno">   34</span>    <span class="comment">// TODO Add error log</span></div>
+<div class="line"><span class="lineno">   35</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   36</span>  }</div>
+<div class="line"><span class="lineno">   37</span> </div>
+<div class="line"><span class="lineno">   38</span>  <span class="keywordflow">return</span> InActor-&gt;GetClass()-&gt;ImplementsInterface(UARAttackable::StaticClass());</div>
+<div class="line"><span class="lineno">   39</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa9dac7eb337526b4b774c61e5765fe95" name="aa9dac7eb337526b4b774c61e5765fe95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9dac7eb337526b4b774c61e5765fe95">&#9670;&#160;</a></span>OnDamaged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual ARRANGER_API void IARAttackable::OnDamaged </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="struct_a_r_ranger_1_1_battle_1_1_f_a_r_damage_result.html">ARRanger::Battle::FARDamageResult</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>InDamageResult</em></span></td><td>)</td>
           <td></td>
@@ -268,12 +392,13 @@ Protected Member Functions</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="class_a_a_r_ranger_character.html#acf4d0a6b542a0310490815ec4a727c1a">AARRangerCharacter</a>, <a class="el" href="class_a_enemy___middle_boss.html#aaff1819f1de3bbb5c488262454aaa083">AEnemy_MiddleBoss</a>, and <a class="el" href="class_a_enemy___zako.html#ae49b55417739b4e64103cbe68b341a44">AEnemy_Zako</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_i_a_r_attackable_8h_source.html#l00177">177</a> of file <a class="el" href="_i_a_r_attackable_8h_source.html">IARAttackable.h</a>.</p>
-
+<p class="definition">Definition at line <a class="el" href="_i_a_r_attackable_8h_source.html#l00185">185</a> of file <a class="el" href="_i_a_r_attackable_8h_source.html">IARAttackable.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  185</span>{ }</div>
+</div><!-- fragment -->
 </div>
 </div>
-<a id="a1c299a5915438d0f9aba95e3610c43d5" name="a1c299a5915438d0f9aba95e3610c43d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1c299a5915438d0f9aba95e3610c43d5">&#9670;&#160;</a></span>OnPostAttacked()</h2>
+<a id="a7836c7375627fc352fcaf4dd65e5c774" name="a7836c7375627fc352fcaf4dd65e5c774"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7836c7375627fc352fcaf4dd65e5c774">&#9670;&#160;</a></span>OnPostAttacked()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -282,7 +407,7 @@ Protected Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="_i_a_r_attackable_8h.html#a578eb926c8aecdf908e1338b2e893458">UE_API</a> void IARAttackable::OnPostAttacked </td>
+          <td class="memname">virtual ARRANGER_API void IARAttackable::OnPostAttacked </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="struct_f_a_r_attack_parameters.html">FARAttackParameters</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>InAttackParams</em></span></td><td>)</td>
           <td></td>
@@ -306,12 +431,13 @@ Protected Member Functions</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="class_a_a_r_ranger_character.html#aa3a7a32863c44389dd6532f7c76049b1">AARRangerCharacter</a>, <a class="el" href="class_a_empty_can.html#a4ee328ae06689fc58568341753be2298">AEmptyCan</a>, and <a class="el" href="class_a_enemy___zako.html#ae2cfd9e12d7ef93f0073dc216d8db7ae">AEnemy_Zako</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_i_a_r_attackable_8h_source.html#l00171">171</a> of file <a class="el" href="_i_a_r_attackable_8h_source.html">IARAttackable.h</a>.</p>
-
+<p class="definition">Definition at line <a class="el" href="_i_a_r_attackable_8h_source.html#l00179">179</a> of file <a class="el" href="_i_a_r_attackable_8h_source.html">IARAttackable.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  179</span>{ }</div>
+</div><!-- fragment -->
 </div>
 </div>
-<a id="a62ec80c41581046d3c40758c26243c52" name="a62ec80c41581046d3c40758c26243c52"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a62ec80c41581046d3c40758c26243c52">&#9670;&#160;</a></span>OnPreAttacked()</h2>
+<a id="a60bdb3e5966fbfc2abd36374b956c67d" name="a60bdb3e5966fbfc2abd36374b956c67d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60bdb3e5966fbfc2abd36374b956c67d">&#9670;&#160;</a></span>OnPreAttacked()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -320,7 +446,7 @@ Protected Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="_i_a_r_attackable_8h.html#a578eb926c8aecdf908e1338b2e893458">UE_API</a> void IARAttackable::OnPreAttacked </td>
+          <td class="memname">virtual ARRANGER_API void IARAttackable::OnPreAttacked </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="struct_f_a_r_attack_parameters.html">FARAttackParameters</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>InAttackParams</em></span>, </td>
         </tr>
@@ -355,13 +481,14 @@ Protected Member Functions</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="class_a_a_r_ranger_character.html#a1a06a2293bf0260cf4536ce5ee6ceb39">AARRangerCharacter</a>, <a class="el" href="class_a_empty_can.html#a7be48fe84f1d634dfa48c5779830e8d5">AEmptyCan</a>, and <a class="el" href="class_a_enemy___zako.html#abcbc6b3b70157443399bf3bbee2f3d7e">AEnemy_Zako</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_i_a_r_attackable_8h_source.html#l00165">165</a> of file <a class="el" href="_i_a_r_attackable_8h_source.html">IARAttackable.h</a>.</p>
-
+<p class="definition">Definition at line <a class="el" href="_i_a_r_attackable_8h_source.html#l00173">173</a> of file <a class="el" href="_i_a_r_attackable_8h_source.html">IARAttackable.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  173</span>{ }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>D:/GithubRepository/ARRanger/Source/ARRanger/Public/BattleSystem/<a class="el" href="_i_a_r_attackable_8h_source.html">IARAttackable.h</a></li>
-<li>D:/GithubRepository/ARRanger/Source/ARRanger/Private/BattleSystem/<a class="el" href="_battle_system_impl_8cpp_source.html">BattleSystemImpl.cpp</a></li>
+<li>ARRanger/Public/BattleSystem/<a class="el" href="_i_a_r_attackable_8h_source.html">IARAttackable.h</a></li>
+<li>ARRanger/Private/BattleSystem/<a class="el" href="_battle_system_impl_8cpp_source.html">BattleSystemImpl.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

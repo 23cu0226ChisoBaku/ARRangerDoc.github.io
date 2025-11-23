@@ -161,12 +161,69 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_collision_trace_function_library_8cpp_source.html#l00006">6</a> of file <a class="el" href="_collision_trace_function_library_8cpp_source.html">CollisionTraceFunctionLibrary.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">    7</span>{</div>
+<div class="line"><span class="lineno">    8</span>  <span class="keywordflow">if</span> (World == <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">    9</span>  {</div>
+<div class="line"><span class="lineno">   10</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">   11</span>  }</div>
+<div class="line"><span class="lineno">   12</span> </div>
+<div class="line"><span class="lineno">   13</span>  <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> bTraceComplex = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   14</span> </div>
+<div class="line"><span class="lineno">   15</span>  OutHitResults.Reset();</div>
+<div class="line"><span class="lineno">   16</span> </div>
+<div class="line"><span class="lineno">   17</span>  FCollisionQueryParams queryParams{SCENE_QUERY_STAT(<a class="code hl_function" href="#a858b26aa6ad4ee47037fd071b862a7ce">SweepConeMulti</a>), bTraceComplex};</div>
+<div class="line"><span class="lineno">   18</span>  queryParams.bReturnPhysicalMaterial = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   19</span>  queryParams.AddIgnoredActors(ActorsToIgnore);</div>
+<div class="line"><span class="lineno">   20</span> </div>
+<div class="line"><span class="lineno">   21</span>  FCollisionObjectQueryParams objQueryParams{};</div>
+<div class="line"><span class="lineno">   22</span>  objQueryParams.AddObjectTypesToQuery(ECC_WorldStatic);</div>
+<div class="line"><span class="lineno">   23</span>  objQueryParams.AddObjectTypesToQuery(ECC_WorldDynamic);</div>
+<div class="line"><span class="lineno">   24</span>  objQueryParams.AddObjectTypesToQuery(ECC_Pawn);</div>
+<div class="line"><span class="lineno">   25</span>  objQueryParams.AddObjectTypesToQuery(ECC_PhysicsBody);</div>
+<div class="line"><span class="lineno">   26</span> </div>
+<div class="line"><span class="lineno">   27</span>  TArray&lt;FHitResult&gt; HitResults{};</div>
+<div class="line"><span class="lineno">   28</span>  <span class="keyword">const</span> FVector endPosition = StartPosition + (Direction.Vector() * ConeHeight);</div>
+<div class="line"><span class="lineno">   29</span>  <span class="keyword">const</span> <span class="keywordtype">float</span> coneHalfAngleRad = FMath::DegreesToRadians(ConeHalfAngle);</div>
+<div class="line"><span class="lineno">   30</span>  <span class="keyword">const</span> <span class="keywordtype">float</span> coneBaseRadius = FMath::Tan(coneHalfAngleRad) * ConeHeight;</div>
+<div class="line"><span class="lineno">   31</span> </div>
+<div class="line"><span class="lineno">   32</span>  <span class="comment">// Use Sphere as an imaginary cone</span></div>
+<div class="line"><span class="lineno">   33</span>  <span class="keyword">const</span> FCollisionShape imaginarySphereSweep = FCollisionShape::MakeSphere(coneBaseRadius);</div>
+<div class="line"><span class="lineno">   34</span>  World-&gt;SweepMultiByObjectType(HitResults, StartPosition, endPosition, Direction.Quaternion(), objQueryParams, imaginarySphereSweep, queryParams);</div>
+<div class="line"><span class="lineno">   35</span> </div>
+<div class="line"><span class="lineno">   36</span>  <span class="comment">// Filter results that is not in cone</span></div>
+<div class="line"><span class="lineno">   37</span>  <span class="keywordflow">for</span> (<span class="keyword">const</span> FHitResult&amp; hitResult : HitResults)</div>
+<div class="line"><span class="lineno">   38</span>  {</div>
+<div class="line"><span class="lineno">   39</span>    <span class="keyword">const</span> FVector hitResultDirection = (hitResult.ImpactPoint - StartPosition).GetSafeNormal();</div>
+<div class="line"><span class="lineno">   40</span>    <span class="keyword">const</span> <span class="keywordtype">double</span> dot = FVector::DotProduct(Direction.Vector(), hitResultDirection);</div>
+<div class="line"><span class="lineno">   41</span>    <span class="keyword">const</span> <span class="keywordtype">double</span> angle = FMath::Acos(dot);</div>
+<div class="line"><span class="lineno">   42</span> </div>
+<div class="line"><span class="lineno">   43</span>    <span class="comment">// Hit is outside the angle of cone</span></div>
+<div class="line"><span class="lineno">   44</span>    <span class="keywordflow">if</span> (angle &gt; coneHalfAngleRad)</div>
+<div class="line"><span class="lineno">   45</span>    {</div>
+<div class="line"><span class="lineno">   46</span>      <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">   47</span>    }</div>
+<div class="line"><span class="lineno">   48</span> </div>
+<div class="line"><span class="lineno">   49</span>    <span class="keyword">const</span> <span class="keywordtype">double</span> distance = (hitResult.ImpactPoint - StartPosition).Length();</div>
+<div class="line"><span class="lineno">   50</span>    <span class="keyword">const</span> <span class="keywordtype">double</span> lengthAtAngle = ConeHeight / FMath::Cos(angle);</div>
+<div class="line"><span class="lineno">   51</span>    </div>
+<div class="line"><span class="lineno">   52</span>    <span class="comment">// Ignore hit beyond the cone&#39;s base</span></div>
+<div class="line"><span class="lineno">   53</span>    <span class="keywordflow">if</span> (distance &gt; lengthAtAngle)</div>
+<div class="line"><span class="lineno">   54</span>    {</div>
+<div class="line"><span class="lineno">   55</span>      <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">   56</span>    }</div>
+<div class="line"><span class="lineno">   57</span> </div>
+<div class="line"><span class="lineno">   58</span>    OutHitResults.Add(hitResult);</div>
+<div class="line"><span class="lineno">   59</span>  }</div>
+<div class="line"><span class="lineno">   60</span> </div>
+<div class="line"><span class="lineno">   61</span>  <span class="keywordflow">return</span> OutHitResults.Num();</div>
+<div class="line"><span class="lineno">   62</span>}</div>
+<div class="ttc" id="aclass_u_collision_trace_function_library_html_a858b26aa6ad4ee47037fd071b862a7ce"><div class="ttname"><a href="#a858b26aa6ad4ee47037fd071b862a7ce">UCollisionTraceFunctionLibrary::SweepConeMulti</a></div><div class="ttdeci">static int32 SweepConeMulti(UWorld *World, const FVector &amp;StartPosition, const FRotator &amp;Direction, float ConeHeight, float ConeHalfAngle, const TArray&lt; TObjectPtr&lt; AActor &gt; &gt; &amp;ActorsToIgnore, TArray&lt; FHitResult &gt; &amp;OutHitResults)</div><div class="ttdef"><b>Definition</b> <a href="_collision_trace_function_library_8cpp_source.html#l00006">CollisionTraceFunctionLibrary.cpp:6</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>D:/GithubRepository/ARRanger/Source/ARRanger/Public/RangeDetector/Utils/<a class="el" href="_collision_trace_function_library_8h_source.html">CollisionTraceFunctionLibrary.h</a></li>
-<li>D:/GithubRepository/ARRanger/Source/ARRanger/Private/RangeDetector/Utils/<a class="el" href="_collision_trace_function_library_8cpp_source.html">CollisionTraceFunctionLibrary.cpp</a></li>
+<li>ARRanger/Public/RangeDetector/Utils/<a class="el" href="_collision_trace_function_library_8h_source.html">CollisionTraceFunctionLibrary.h</a></li>
+<li>ARRanger/Private/RangeDetector/Utils/<a class="el" href="_collision_trace_function_library_8cpp_source.html">CollisionTraceFunctionLibrary.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

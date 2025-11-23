@@ -140,7 +140,12 @@ template&lt;typename UserType, uint8 MaxSize&gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_count_limiter_impl_8inl_source.html#l00013">13</a> of file <a class="el" href="_count_limiter_impl_8inl_source.html">CountLimiterImpl.inl</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   14</span>  {</div>
+<div class="line"><span class="lineno">   15</span>    <a class="code hl_class" href="class_a_r_ranger_1_1_private_1_1_f_count_limiter.html">ensureMsgf</a>(<a class="code hl_class" href="class_a_r_ranger_1_1_private_1_1_f_count_limiter.html">UserType::NumInstance</a> &lt; <a class="code hl_class" href="class_a_r_ranger_1_1_private_1_1_f_count_limiter.html">MaxSize</a>, <a class="code hl_class" href="class_a_r_ranger_1_1_private_1_1_f_count_limiter.html">TEXT</a>(<span class="stringliteral">&quot;Create too many instances. Type:[%hs]&quot;</span>), <span class="keyword">typeid</span>(<a class="code hl_class" href="class_a_r_ranger_1_1_private_1_1_f_count_limiter.html">UserType</a>).<a class="code hl_class" href="class_a_r_ranger_1_1_private_1_1_f_count_limiter.html">name</a>());</div>
+<div class="line"><span class="lineno">   16</span>    ++<a class="code hl_class" href="class_a_r_ranger_1_1_private_1_1_f_count_limiter.html">UserType::NumInstance</a>;</div>
+<div class="line"><span class="lineno">   17</span>  }</div>
+<div class="ttc" id="aclass_a_r_ranger_1_1_private_1_1_f_count_limiter_html"><div class="ttname"><a href="class_a_r_ranger_1_1_private_1_1_f_count_limiter.html">ARRanger::Private::FCountLimiter</a></div><div class="ttdoc">インスタンス生成の数を制限するクラス</div><div class="ttdef"><b>Definition</b> <a href="_count_limiter_8h_source.html#l00015">CountLimiter.h:16</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a8d7039c5a2d2cc9ea453debe6ed909f1" name="a8d7039c5a2d2cc9ea453debe6ed909f1"></a>
@@ -161,7 +166,10 @@ template&lt;typename UserType, uint8 MaxSize&gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_count_limiter_impl_8inl_source.html#l00020">20</a> of file <a class="el" href="_count_limiter_impl_8inl_source.html">CountLimiterImpl.inl</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   21</span>  {</div>
+<div class="line"><span class="lineno">   22</span>    --<a class="code hl_class" href="class_a_r_ranger_1_1_private_1_1_f_count_limiter.html">UserType::NumInstance</a>;</div>
+<div class="line"><span class="lineno">   23</span>  }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
@@ -194,7 +202,10 @@ template&lt;typename UserType, uint8 MaxSize&gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>使用クラスに定義した数カウンターを返す </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_count_limiter_impl_8inl_source.html#l00032">32</a> of file <a class="el" href="_count_limiter_impl_8inl_source.html">CountLimiterImpl.inl</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   33</span>  {</div>
+<div class="line"><span class="lineno">   34</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="class_a_r_ranger_1_1_private_1_1_f_count_limiter.html">UserType::NumInstance</a>;</div>
+<div class="line"><span class="lineno">   35</span>  }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa843e1f26a4da53b16aa01d6bfd2b946" name="aa843e1f26a4da53b16aa01d6bfd2b946"></a>
@@ -226,12 +237,15 @@ template&lt;typename UserType, uint8 MaxSize&gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>MaxSizeを返す </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_count_limiter_impl_8inl_source.html#l00026">26</a> of file <a class="el" href="_count_limiter_impl_8inl_source.html">CountLimiterImpl.inl</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   27</span>  {</div>
+<div class="line"><span class="lineno">   28</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="class_a_r_ranger_1_1_private_1_1_f_count_limiter.html">MaxSize</a>;</div>
+<div class="line"><span class="lineno">   29</span>  }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>D:/GithubRepository/ARRanger/Source/ARRanger/Internal/<a class="el" href="_count_limiter_8h_source.html">CountLimiter.h</a></li>
-<li>D:/GithubRepository/ARRanger/Source/ARRanger/Internal/<a class="el" href="_count_limiter_impl_8inl_source.html">CountLimiterImpl.inl</a></li>
+<li>ARRanger/Internal/<a class="el" href="_count_limiter_8h_source.html">CountLimiter.h</a></li>
+<li>ARRanger/Internal/<a class="el" href="_count_limiter_impl_8inl_source.html">CountLimiterImpl.inl</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

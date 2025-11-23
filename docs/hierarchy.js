@@ -57,9 +57,9 @@ var hierarchy =
     [ "FARMagneticParamEditHelper", "struct_f_a_r_magnetic_param_edit_helper.html", null ],
     [ "FARMagneticTickObjectEntry", "struct_f_a_r_magnetic_tick_object_entry.html", null ],
     [ "ARRanger::Private::FARPhysicsCore", "struct_a_r_ranger_1_1_private_1_1_f_a_r_physics_core.html", null ],
-    [ "FARPhysicsEngineInitializationParameters", "struct_f_a_r_physics_engine_initialization_parameters.html", null ],
     [ "FARPhysicsEvaluationResult", "struct_f_a_r_physics_evaluation_result.html", null ],
     [ "FARPhysicsRegistry", "struct_f_a_r_physics_registry.html", null ],
+    [ "FARPhysicsSystemInitializationParameters", "struct_f_a_r_physics_system_initialization_parameters.html", null ],
     [ "FARPhysicsTickFunctionInterface", "class_f_a_r_physics_tick_function_interface.html", [
       [ "FARPhysicsTickFunction", "class_f_a_r_physics_tick_function.html", null ]
     ] ],
@@ -89,8 +89,8 @@ var hierarchy =
       [ "FARRangeDetectorComponentVisualizer", "class_f_a_r_range_detector_component_visualizer.html", null ]
     ] ],
     [ "ARRanger::Private::FCountLimiter< UserType, MaxSize >", "class_a_r_ranger_1_1_private_1_1_f_count_limiter.html", null ],
-    [ "ARRanger::Private::FCountLimiter< FARPhysicsEngine, 1 >", "class_a_r_ranger_1_1_private_1_1_f_count_limiter.html", [
-      [ "FARPhysicsEngine", "class_f_a_r_physics_engine.html", null ]
+    [ "ARRanger::Private::FCountLimiter< FARPhysicsSystem, 1 >", "class_a_r_ranger_1_1_private_1_1_f_count_limiter.html", [
+      [ "FARPhysicsSystem", "class_f_a_r_physics_system.html", null ]
     ] ],
     [ "ARRanger::Private::FCountLimiter< FARPhysicsTickManager, 1 >", "class_a_r_ranger_1_1_private_1_1_f_count_limiter.html", [
       [ "FARPhysicsTickManager", "class_f_a_r_physics_tick_manager.html", null ]
@@ -108,7 +108,6 @@ var hierarchy =
     [ "FGABlueprintableHoldHandle", "struct_f_g_a_blueprintable_hold_handle.html", null ],
     [ "FGANotify_ImpactResult", "struct_f_g_a_notify___impact_result.html", null ],
     [ "AARRangerPlayerController::FHoldSpec", "struct_a_a_r_ranger_player_controller_1_1_f_hold_spec.html", null ],
-    [ "FARPhysicsTickFunctionInterface::FInternalData", "struct_f_a_r_physics_tick_function_interface_1_1_f_internal_data.html", null ],
     [ "ARRanger::Physics::FMagneticParameterDTO", "struct_a_r_ranger_1_1_physics_1_1_f_magnetic_parameter_d_t_o.html", null ],
     [ "FMagneticParameterDTO", "struct_f_magnetic_parameter_d_t_o.html", null ],
     [ "ARRanger::Physics::FMagneticParameters", "struct_a_r_ranger_1_1_physics_1_1_f_magnetic_parameters.html", null ],
@@ -184,7 +183,8 @@ var hierarchy =
       [ "FARRangerEditorModule", "class_f_a_r_ranger_editor_module.html", null ]
     ] ],
     [ "ARRanger::INotifyHandlerInterface", "struct_a_r_ranger_1_1_i_notify_handler_interface.html", [
-      [ "ARRanger::Player::FPlayerNotifyHandler", "class_a_r_ranger_1_1_player_1_1_f_player_notify_handler.html", null ]
+      [ "ARRanger::Player::FPlayerNotifyHandler", "class_a_r_ranger_1_1_player_1_1_f_player_notify_handler.html", null ],
+      [ "FNullNotifyHandler", "struct_f_null_notify_handler.html", null ]
     ] ],
     [ "IObservableSubjectInterface", "class_i_observable_subject_interface.html", [
       [ "AARRangerCharacter", "class_a_a_r_ranger_character.html", null ]
@@ -211,8 +211,6 @@ var hierarchy =
       [ "ARRanger", "class_a_r_ranger.html", null ],
       [ "ARRangerEditor", "class_a_r_ranger_editor.html", null ]
     ] ],
-    [ "ARRanger::FObserverProxyNode::PrivateToken", "struct_a_r_ranger_1_1_f_observer_proxy_node_1_1_private_token.html", null ],
-    [ "ARRanger::Input::FARInputBufferState::PrivateToken", "struct_a_r_ranger_1_1_input_1_1_f_a_r_input_buffer_state_1_1_private_token.html", null ],
     [ "ARRanger::Detector::FRangeDetectorFilter::ProtectedToken", "struct_a_r_ranger_1_1_detector_1_1_f_range_detector_filter_1_1_protected_token.html", null ],
     [ "SCompoundWidget", null, [
       [ "SMagneticParamEditPanelWidget", "class_s_magnetic_param_edit_panel_widget.html", null ]

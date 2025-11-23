@@ -1,38 +1,8 @@
 var class_a_inseki_game_mode =
 [
-    [ "EGameResultState", "class_a_inseki_game_mode.html#ab20cc156f206fa4fda0ccbf1eb26046b", [
-      [ "GameClear", "class_a_inseki_game_mode.html#ab20cc156f206fa4fda0ccbf1eb26046ba426ecc235b51df508b7fa9fac092dec9", null ],
-      [ "GameOver", "class_a_inseki_game_mode.html#ab20cc156f206fa4fda0ccbf1eb26046ba6c900190b9115b9f61e76f43b4aa29e6", null ]
-    ] ],
     [ "AInsekiGameMode", "class_a_inseki_game_mode.html#ae09ed2183acfd6d50c18f9a144bd64cc", null ],
-    [ "ARGameOver", "class_a_inseki_game_mode.html#aa518ac5abec3aeacdd7579bae8dbb662", null ],
     [ "BeginPlay", "class_a_inseki_game_mode.html#ad6f61f63cc4ea69cc9c674fe097571b6", null ],
     [ "EndPlay", "class_a_inseki_game_mode.html#a3a7c03911e2b0a84c687c7182aed452f", null ],
-    [ "InitializeARPhysics", "class_a_inseki_game_mode.html#a8b0f5eec2dc4b1c9afb31d06f1e33838", null ],
-    [ "InitializeEvents", "class_a_inseki_game_mode.html#ab1fb1998f69219e2deca186068bdae9e", null ],
-    [ "InitializeObserver", "class_a_inseki_game_mode.html#a860781950994a2a8b0c84f9808d17ddc", null ],
-    [ "InitializeOnMapEnemies", "class_a_inseki_game_mode.html#a7a0644b741f5e04e4f679c556449597f", null ],
-    [ "OnEndBattleEvent", "class_a_inseki_game_mode.html#ae67eac4e5f4c8d6b90d3bda834d9b512", null ],
     [ "OnEnemyDead", "class_a_inseki_game_mode.html#ae02f05c0135a6d691b7ec55861aef81e", null ],
-    [ "OnEnemySpawned", "class_a_inseki_game_mode.html#ae85ba2526a494f7e3ca58268a7fd651a", null ],
-    [ "OnResetCommandSent", "class_a_inseki_game_mode.html#a9ca3aa201e9c5f7c07fe430fdc51d882", null ],
-    [ "OnStartBattleEvent", "class_a_inseki_game_mode.html#aa045aa3c8cafcc9d5a30531a96385b81", null ],
-    [ "ProcessGameResult", "class_a_inseki_game_mode.html#a537ca3602a149a16d3d9757795baa9e8", null ],
-    [ "RegisterBattleEventDelegate", "class_a_inseki_game_mode.html#a3d7f330b0363deaa35fcc1733c8f6417", null ],
-    [ "SetGameUserSettings", "class_a_inseki_game_mode.html#ab1ea8895e04c4bf7fc9cac8310dc9366", null ],
-    [ "UninitializeAliveEnemies", "class_a_inseki_game_mode.html#aa0cb7232fa4862f399102dc7412a1cf1", null ],
-    [ "UninitializeARPhysics", "class_a_inseki_game_mode.html#a2634be7f19c20ac246dea53a757f386a", null ],
-    [ "UninitializeEvents", "class_a_inseki_game_mode.html#add0f012e3b0deac3824f36639ab6841f", null ],
-    [ "UnregisterBattleEventDelegate", "class_a_inseki_game_mode.html#a8a4477a2edd437e276942fb2e47034e5", null ],
-    [ "UnsetGameUserSettings", "class_a_inseki_game_mode.html#a9e0acd3310bb01a84fe62e10fb89d4a2", null ],
-    [ "bGameResultHandled", "class_a_inseki_game_mode.html#a06027f92007d5a71bff79b142124b6d7", null ],
-    [ "BossPtr", "class_a_inseki_game_mode.html#ae7dfb178103794ea89cbb89abaa7a6aa", null ],
-    [ "EnemyCount", "class_a_inseki_game_mode.html#a2c1b229d6e6f449cccb46fcf850d4f1d", null ],
-    [ "GameResultTimerHandle", "class_a_inseki_game_mode.html#ac4348a046fca2c1b275ba57808240143", null ],
-    [ "NotifyHandler", "class_a_inseki_game_mode.html#ad1f55edcb7f771264cd1a329fd925926", null ],
-    [ "OutlineTickActorClass", "class_a_inseki_game_mode.html#af641cb84ba5086aaa1a9d148a2259e7b", null ],
-    [ "ProcessorActor", "class_a_inseki_game_mode.html#ab7ea0875c842501eabb27a039a25a63f", null ],
-    [ "ProcessorActorClass", "class_a_inseki_game_mode.html#a7aea1451af42f5d045b1718a44c2cb04", null ],
-    [ "SoundEffectData", "class_a_inseki_game_mode.html#a5ef149c45e958bdd80a5beb1ae42c3e8", null ],
-    [ "Subjects", "class_a_inseki_game_mode.html#add1af67858c6576041347783eb86221a", null ]
+    [ "SoundEffectData", "class_a_inseki_game_mode.html#a5ef149c45e958bdd80a5beb1ae42c3e8", null ]
 ];

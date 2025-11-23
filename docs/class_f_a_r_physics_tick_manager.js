@@ -7,6 +7,5 @@ var class_f_a_r_physics_tick_manager =
     [ "ExecuteARPhysicsTick", "class_f_a_r_physics_tick_manager.html#a3b292d8d00ecf8ee6a7476cec1ae1cd9", null ],
     [ "GetValidTickTask", "class_f_a_r_physics_tick_manager.html#a8f404d7e2ccd5d06cad618c7de36c8c0", null ],
     [ "HasTickFunction", "class_f_a_r_physics_tick_manager.html#a7e9089d0f8aef8227b0446f7372647b7", null ],
-    [ "RemoveARPhysicsTickFunction", "class_f_a_r_physics_tick_manager.html#a95df74e90a8492d9843313a844f7334d", null ],
-    [ "m_tickTasks", "class_f_a_r_physics_tick_manager.html#a021d6c437acc42baec909e53e4a553cd", null ]
+    [ "RemoveARPhysicsTickFunction", "class_f_a_r_physics_tick_manager.html#a95df74e90a8492d9843313a844f7334d", null ]
 ];

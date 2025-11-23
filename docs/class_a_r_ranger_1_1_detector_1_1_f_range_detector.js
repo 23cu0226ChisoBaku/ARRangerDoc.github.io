@@ -5,9 +5,7 @@ var class_a_r_ranger_1_1_detector_1_1_f_range_detector =
     [ "FRangeDetector", "class_a_r_ranger_1_1_detector_1_1_f_range_detector.html#ac9c1c5bc41514f3ef73dacf519a07c66", null ],
     [ "FRangeDetector", "class_a_r_ranger_1_1_detector_1_1_f_range_detector.html#a62a12f632450e315dc5d597f5fd60464", null ],
     [ "AddFilter", "class_a_r_ranger_1_1_detector_1_1_f_range_detector.html#ada5b8194cf89792632b539b26ba9ed57", null ],
-    [ "CheckFilterValidation", "class_a_r_ranger_1_1_detector_1_1_f_range_detector.html#a050c9fcb9783808aecca6e67bc5d782f", null ],
     [ "Evaluate", "class_a_r_ranger_1_1_detector_1_1_f_range_detector.html#ae83839e4cb9e5f6e3d65d24661ca59d6", null ],
-    [ "FilterResult", "class_a_r_ranger_1_1_detector_1_1_f_range_detector.html#a30fa3f065e3879720a93a557b93c5a3c", null ],
     [ "GetData_Const", "class_a_r_ranger_1_1_detector_1_1_f_range_detector.html#abad0c0bb0f63a2333129fce21da40a36", null ],
     [ "GetDataTagString", "class_a_r_ranger_1_1_detector_1_1_f_range_detector.html#a412298f31f44eefdc5daaf8bc9fcc4e6", null ],
     [ "GetEvaluatedResult", "class_a_r_ranger_1_1_detector_1_1_f_range_detector.html#a4a61ec22653abf2678c974734cda5d40", null ],
@@ -17,10 +15,5 @@ var class_a_r_ranger_1_1_detector_1_1_f_range_detector =
     [ "operator=", "class_a_r_ranger_1_1_detector_1_1_f_range_detector.html#a716feb23294e0faec9b598e4b5d2de04", null ],
     [ "RemoveAllFilters", "class_a_r_ranger_1_1_detector_1_1_f_range_detector.html#a4fc3a3858edbba189ef3b5118f1ed7bc", null ],
     [ "RemoveFilter", "class_a_r_ranger_1_1_detector_1_1_f_range_detector.html#a0e5d08fdf26c39b3012394d3f9c9a83f", null ],
-    [ "SetEnable", "class_a_r_ranger_1_1_detector_1_1_f_range_detector.html#a4fbd2e7af9ff23a1013daf4a9260ca92", null ],
-    [ "bIsActivated", "class_a_r_ranger_1_1_detector_1_1_f_range_detector.html#ae9d399bb6e3483ef02be6a92fc635ef6", null ],
-    [ "m_constData", "class_a_r_ranger_1_1_detector_1_1_f_range_detector.html#ab5a79b021650d156b3acbc30a2b996bf", null ],
-    [ "m_evaluatedResult", "class_a_r_ranger_1_1_detector_1_1_f_range_detector.html#a66891be8d72d7da35371b90d595e01f7", null ],
-    [ "m_filters", "class_a_r_ranger_1_1_detector_1_1_f_range_detector.html#aa7981e631d988cb01bb0ee758b367ff9", null ],
-    [ "m_priority", "class_a_r_ranger_1_1_detector_1_1_f_range_detector.html#ab363ed959fc142759db310a42ccfc47e", null ]
+    [ "SetEnable", "class_a_r_ranger_1_1_detector_1_1_f_range_detector.html#a4fbd2e7af9ff23a1013daf4a9260ca92", null ]
 ];

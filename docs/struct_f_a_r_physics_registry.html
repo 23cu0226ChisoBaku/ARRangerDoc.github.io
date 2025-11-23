@@ -95,7 +95,7 @@ $(function(){initNavTree('struct_f_a_r_physics_registry.html','','struct_f_a_r_p
 <p>物理タスク登録パラメータ  
  <a href="#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="_a_r_physics_engine_8h_source.html">ARPhysicsEngine.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="_a_r_physics_system_8h_source.html">ARPhysicsSystem.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -106,13 +106,13 @@ Public Member Functions</h2></td></tr>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a55e9c1787bb397a15b52021663c0546d" id="r_a55e9c1787bb397a15b52021663c0546d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_i_a_r_magnetizable_interface.html">IARMagnetizableInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a55e9c1787bb397a15b52021663c0546d">Source</a> = nullptr</td></tr>
 <tr class="memitem:ab7f6c37d7c19e18ee5990b96d2e398b2" id="r_ab7f6c37d7c19e18ee5990b96d2e398b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_i_a_r_magnetizable_interface.html">IARMagnetizableInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab7f6c37d7c19e18ee5990b96d2e398b2">Target</a> = nullptr</td></tr>
-<tr class="memitem:a37b3b82acb58678387b6b24c414edb70" id="r_a37b3b82acb58678387b6b24c414edb70"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_a_r_physics_engine_8h.html#a4ae483a17b3d1e7c592eb15a968df477">EPhysicsRegistryType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a37b3b82acb58678387b6b24c414edb70">Type</a> = <a class="el" href="_a_r_physics_engine_8h.html#a4ae483a17b3d1e7c592eb15a968df477a6adf97f83acf6453d4a6a4b1070f3754">EPhysicsRegistryType::None</a></td></tr>
+<tr class="memitem:a37b3b82acb58678387b6b24c414edb70" id="r_a37b3b82acb58678387b6b24c414edb70"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_a_r_physics_system_8h.html#a4ae483a17b3d1e7c592eb15a968df477">EPhysicsRegistryType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a37b3b82acb58678387b6b24c414edb70">Type</a> = <a class="el" href="_a_r_physics_system_8h.html#a4ae483a17b3d1e7c592eb15a968df477a6adf97f83acf6453d4a6a4b1070f3754">EPhysicsRegistryType::None</a></td></tr>
 <tr class="memitem:ab89a87f619adb958730f8e0e3321aeb5" id="r_ab89a87f619adb958730f8e0e3321aeb5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_a_r_physics_types_8h.html#a006012f2e9913202756652bb76b1fe0c">EPhysicsExecuteFrequency</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab89a87f619adb958730f8e0e3321aeb5">Frequency</a> = <a class="el" href="_a_r_physics_types_8h.html#a006012f2e9913202756652bb76b1fe0cae1a9dc9f23534e63de9df0d540ac1611">EPhysicsExecuteFrequency::Once</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>物理タスク登録パラメータ </p>
 
-<p class="definition">Definition at line <a class="el" href="_a_r_physics_engine_8h_source.html#l00043">43</a> of file <a class="el" href="_a_r_physics_engine_8h_source.html">ARPhysicsEngine.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_a_r_physics_system_8h_source.html#l00043">43</a> of file <a class="el" href="_a_r_physics_system_8h_source.html">ARPhysicsSystem.h</a>.</p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="af3d0e2fc6e22a245d664c05c586086ec" name="af3d0e2fc6e22a245d664c05c586086ec"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af3d0e2fc6e22a245d664c05c586086ec">&#9670;&#160;</a></span>IsMagneticForceType()</h2>
@@ -140,8 +140,16 @@ Public Attributes</h2></td></tr>
 <p>物理タスク登録請求が磁力タイプか </p>
 <dl class="section return"><dt>Returns</dt><dd>引力斥力だとtrue,それ以外はfalse </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_a_r_physics_engine_8h_source.html#l00062">62</a> of file <a class="el" href="_a_r_physics_engine_8h_source.html">ARPhysicsEngine.h</a>.</p>
-
+<p class="definition">Definition at line <a class="el" href="_a_r_physics_system_8h_source.html#l00062">62</a> of file <a class="el" href="_a_r_physics_system_8h_source.html">ARPhysicsSystem.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   63</span>  {</div>
+<div class="line"><span class="lineno">   64</span>    <span class="keyword">using </span>enum <a class="code hl_enumeration" href="_a_r_physics_system_8h.html#a4ae483a17b3d1e7c592eb15a968df477">EPhysicsRegistryType</a>;</div>
+<div class="line"><span class="lineno">   65</span>    <span class="keywordflow">return</span> (<a class="code hl_variable" href="#a37b3b82acb58678387b6b24c414edb70">Type</a> == <a class="code hl_enumvalue" href="_a_r_physics_system_8h.html#a4ae483a17b3d1e7c592eb15a968df477afc66029e47ac67412ac74f3a63f9b25b">RequestAttraction</a>) || (<a class="code hl_variable" href="#a37b3b82acb58678387b6b24c414edb70">Type</a> == <a class="code hl_enumvalue" href="_a_r_physics_system_8h.html#a4ae483a17b3d1e7c592eb15a968df477a53c16c7d0cb27ae45408819165b192d1">RequestRepulsion</a>);</div>
+<div class="line"><span class="lineno">   66</span>  }</div>
+<div class="ttc" id="a_a_r_physics_system_8h_html_a4ae483a17b3d1e7c592eb15a968df477"><div class="ttname"><a href="_a_r_physics_system_8h.html#a4ae483a17b3d1e7c592eb15a968df477">EPhysicsRegistryType</a></div><div class="ttdeci">EPhysicsRegistryType</div><div class="ttdoc">物理タスク登録タイプ</div><div class="ttdef"><b>Definition</b> <a href="_a_r_physics_system_8h_source.html#l00024">ARPhysicsSystem.h:25</a></div></div>
+<div class="ttc" id="a_a_r_physics_system_8h_html_a4ae483a17b3d1e7c592eb15a968df477a53c16c7d0cb27ae45408819165b192d1"><div class="ttname"><a href="_a_r_physics_system_8h.html#a4ae483a17b3d1e7c592eb15a968df477a53c16c7d0cb27ae45408819165b192d1">EPhysicsRegistryType::RequestRepulsion</a></div><div class="ttdeci">@ RequestRepulsion</div><div class="ttdef"><b>Definition</b> <a href="_a_r_physics_system_8h_source.html#l00028">ARPhysicsSystem.h:28</a></div></div>
+<div class="ttc" id="a_a_r_physics_system_8h_html_a4ae483a17b3d1e7c592eb15a968df477afc66029e47ac67412ac74f3a63f9b25b"><div class="ttname"><a href="_a_r_physics_system_8h.html#a4ae483a17b3d1e7c592eb15a968df477afc66029e47ac67412ac74f3a63f9b25b">EPhysicsRegistryType::RequestAttraction</a></div><div class="ttdeci">@ RequestAttraction</div><div class="ttdef"><b>Definition</b> <a href="_a_r_physics_system_8h_source.html#l00027">ARPhysicsSystem.h:27</a></div></div>
+<div class="ttc" id="astruct_f_a_r_physics_registry_html_a37b3b82acb58678387b6b24c414edb70"><div class="ttname"><a href="#a37b3b82acb58678387b6b24c414edb70">FARPhysicsRegistry::Type</a></div><div class="ttdeci">EPhysicsRegistryType Type</div><div class="ttdef"><b>Definition</b> <a href="_a_r_physics_system_8h_source.html#l00052">ARPhysicsSystem.h:52</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
@@ -158,7 +166,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>実行頻度 </p>
 
-<p class="definition">Definition at line <a class="el" href="_a_r_physics_engine_8h_source.html#l00055">55</a> of file <a class="el" href="_a_r_physics_engine_8h_source.html">ARPhysicsEngine.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_a_r_physics_system_8h_source.html#l00055">55</a> of file <a class="el" href="_a_r_physics_system_8h_source.html">ARPhysicsSystem.h</a>.</p>
 
 </div>
 </div>
@@ -175,7 +183,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>磁力対象1 </p>
 
-<p class="definition">Definition at line <a class="el" href="_a_r_physics_engine_8h_source.html#l00046">46</a> of file <a class="el" href="_a_r_physics_engine_8h_source.html">ARPhysicsEngine.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_a_r_physics_system_8h_source.html#l00046">46</a> of file <a class="el" href="_a_r_physics_system_8h_source.html">ARPhysicsSystem.h</a>.</p>
 
 </div>
 </div>
@@ -192,7 +200,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>磁力対象2 </p>
 
-<p class="definition">Definition at line <a class="el" href="_a_r_physics_engine_8h_source.html#l00049">49</a> of file <a class="el" href="_a_r_physics_engine_8h_source.html">ARPhysicsEngine.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_a_r_physics_system_8h_source.html#l00049">49</a> of file <a class="el" href="_a_r_physics_system_8h_source.html">ARPhysicsSystem.h</a>.</p>
 
 </div>
 </div>
@@ -203,18 +211,18 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_a_r_physics_engine_8h.html#a4ae483a17b3d1e7c592eb15a968df477">EPhysicsRegistryType</a> FARPhysicsRegistry::Type = <a class="el" href="_a_r_physics_engine_8h.html#a4ae483a17b3d1e7c592eb15a968df477a6adf97f83acf6453d4a6a4b1070f3754">EPhysicsRegistryType::None</a></td>
+          <td class="memname"><a class="el" href="_a_r_physics_system_8h.html#a4ae483a17b3d1e7c592eb15a968df477">EPhysicsRegistryType</a> FARPhysicsRegistry::Type = <a class="el" href="_a_r_physics_system_8h.html#a4ae483a17b3d1e7c592eb15a968df477a6adf97f83acf6453d4a6a4b1070f3754">EPhysicsRegistryType::None</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>登録タイプ </p>
 
-<p class="definition">Definition at line <a class="el" href="_a_r_physics_engine_8h_source.html#l00052">52</a> of file <a class="el" href="_a_r_physics_engine_8h_source.html">ARPhysicsEngine.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_a_r_physics_system_8h_source.html#l00052">52</a> of file <a class="el" href="_a_r_physics_system_8h_source.html">ARPhysicsSystem.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>D:/GithubRepository/ARRanger/Source/ARRanger/Public/Physics/Core/<a class="el" href="_a_r_physics_engine_8h_source.html">ARPhysicsEngine.h</a></li>
+<li>ARRanger/Public/Physics/Core/<a class="el" href="_a_r_physics_system_8h_source.html">ARPhysicsSystem.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

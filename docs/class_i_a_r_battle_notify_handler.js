@@ -1,5 +1,5 @@
 var class_i_a_r_battle_notify_handler =
 [
-    [ "IsInBattle", "class_i_a_r_battle_notify_handler.html#ab132e7a00880a5a322be35141cb928b8", null ],
-    [ "NotifyBattleState", "class_i_a_r_battle_notify_handler.html#a9cf58227df159c3b7a4381b9c279bb11", null ]
+    [ "IsInBattle", "class_i_a_r_battle_notify_handler.html#a6e0d67d35ccb8d4aa8c3ab1f8b2afaca", null ],
+    [ "NotifyBattleState", "class_i_a_r_battle_notify_handler.html#ab43d62cbc7d54fd4bc09d4b661c62d22", null ]
 ];

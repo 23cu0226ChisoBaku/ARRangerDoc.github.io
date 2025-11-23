@@ -102,11 +102,11 @@ Inheritance diagram for UAT_TickUntilInputRelease:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1b07088623bc5ae80421547172aa9fcd" id="r_a1b07088623bc5ae80421547172aa9fcd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_a_t___tick_until_input_release_8h.html#a578eb926c8aecdf908e1338b2e893458">UE_API</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1b07088623bc5ae80421547172aa9fcd">UAT_TickUntilInputRelease</a> (const FObjectInitializer &amp;ObjectInitializer=FObjectInitializer::Get())</td></tr>
+<tr class="memitem:a1b07088623bc5ae80421547172aa9fcd" id="r_a1b07088623bc5ae80421547172aa9fcd"><td class="memItemLeft" align="right" valign="top">ARRANGER_API&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1b07088623bc5ae80421547172aa9fcd">UAT_TickUntilInputRelease</a> (const FObjectInitializer &amp;ObjectInitializer=FObjectInitializer::Get())</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ac36e3bf02df1a3f104128c11636e9887" id="r_ac36e3bf02df1a3f104128c11636e9887"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_a_t___tick_until_input_release_8h.html#a578eb926c8aecdf908e1338b2e893458">UE_API</a> <a class="el" href="class_u_a_t___tick_until_input_release.html">UAT_TickUntilInputRelease</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac36e3bf02df1a3f104128c11636e9887">TickUntilInputRelease</a> (UGameplayAbility *OwningAbility)</td></tr>
+<tr class="memitem:ac36e3bf02df1a3f104128c11636e9887" id="r_ac36e3bf02df1a3f104128c11636e9887"><td class="memItemLeft" align="right" valign="top">static ARRANGER_API <a class="el" href="class_u_a_t___tick_until_input_release.html">UAT_TickUntilInputRelease</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac36e3bf02df1a3f104128c11636e9887">TickUntilInputRelease</a> (UGameplayAbility *OwningAbility)</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -115,12 +115,6 @@ Public Attributes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 id="header-pro-attribs" class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a5dd6827611889298deef696167eef891" id="r_a5dd6827611889298deef696167eef891"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5dd6827611889298deef696167eef891">TotalTickTime</a></td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a13499521c5ec7670fbb4d91c4620ae40" id="r_a13499521c5ec7670fbb4d91c4620ae40"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a13499521c5ec7670fbb4d91c4620ae40">DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams</a> (FOnAbilityTaskTicked, float, DeltaTime, float, TotalTime)</td></tr>
-<tr class="memitem:a679ab378e28b1974e8da2ae1e07bfb54" id="r_a679ab378e28b1974e8da2ae1e07bfb54"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_a_t___tick_until_input_release_8h.html#a578eb926c8aecdf908e1338b2e893458">UE_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a679ab378e28b1974e8da2ae1e07bfb54">Activate</a> () override</td></tr>
-<tr class="memitem:a3d579a3a31677b99f97a6f86c8b33430" id="r_a3d579a3a31677b99f97a6f86c8b33430"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_a_t___tick_until_input_release_8h.html#a578eb926c8aecdf908e1338b2e893458">UE_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d579a3a31677b99f97a6f86c8b33430">TickTask</a> (float DeltaTime) override</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -143,109 +137,14 @@ Private Member Functions</h2></td></tr>
 <p>End UGameplayTask Interface </p>
 
 <p class="definition">Definition at line <a class="el" href="_a_t___tick_until_input_release_8cpp_source.html#l00006">6</a> of file <a class="el" href="_a_t___tick_until_input_release_8cpp_source.html">AT_TickUntilInputRelease.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">    7</span>  : Super(ObjectInitializer)</div>
+<div class="line"><span class="lineno">    8</span>{</div>
+<div class="line"><span class="lineno">    9</span>  bTickingTask = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   10</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="a679ab378e28b1974e8da2ae1e07bfb54" name="a679ab378e28b1974e8da2ae1e07bfb54"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a679ab378e28b1974e8da2ae1e07bfb54">&#9670;&#160;</a></span>Activate()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void UAT_TickUntilInputRelease::Activate </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel private">private</span><span class="mlabel virtual">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Start UGameplayTask Interface </p>
-
-<p class="definition">Definition at line <a class="el" href="_a_t___tick_until_input_release_8cpp_source.html#l00012">12</a> of file <a class="el" href="_a_t___tick_until_input_release_8cpp_source.html">AT_TickUntilInputRelease.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a13499521c5ec7670fbb4d91c4620ae40" name="a13499521c5ec7670fbb4d91c4620ae40"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a13499521c5ec7670fbb4d91c4620ae40">&#9670;&#160;</a></span>DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">UAT_TickUntilInputRelease::DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams </td>
-          <td>(</td>
-          <td class="paramtype">FOnAbilityTaskTicked</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">DeltaTime</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">TotalTime</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3d579a3a31677b99f97a6f86c8b33430" name="a3d579a3a31677b99f97a6f86c8b33430"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d579a3a31677b99f97a6f86c8b33430">&#9670;&#160;</a></span>TickTask()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void UAT_TickUntilInputRelease::TickTask </td>
-          <td>(</td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>DeltaTime</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel private">private</span><span class="mlabel virtual">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_a_t___tick_until_input_release_8cpp_source.html#l00018">18</a> of file <a class="el" href="_a_t___tick_until_input_release_8cpp_source.html">AT_TickUntilInputRelease.cpp</a>.</p>
-
-</div>
-</div>
 <a id="ac36e3bf02df1a3f104128c11636e9887" name="ac36e3bf02df1a3f104128c11636e9887"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac36e3bf02df1a3f104128c11636e9887">&#9670;&#160;</a></span>TickUntilInputRelease()</h2>
 
@@ -270,7 +169,15 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_a_t___tick_until_input_release_8cpp_source.html#l00030">30</a> of file <a class="el" href="_a_t___tick_until_input_release_8cpp_source.html">AT_TickUntilInputRelease.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   31</span>{</div>
+<div class="line"><span class="lineno">   32</span>  <a class="code hl_function" href="#a1b07088623bc5ae80421547172aa9fcd">UAT_TickUntilInputRelease</a>* task = NewAbilityTask&lt;UAT_TickUntilInputRelease&gt;(OwningAbility);</div>
+<div class="line"><span class="lineno">   33</span>  task-&gt;bTickingTask = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   34</span>  task-&gt;<a class="code hl_variable" href="#a5dd6827611889298deef696167eef891">TotalTickTime</a> = 0.0f;</div>
+<div class="line"><span class="lineno">   35</span>  <span class="keywordflow">return</span> task;</div>
+<div class="line"><span class="lineno">   36</span>}</div>
+<div class="ttc" id="aclass_u_a_t___tick_until_input_release_html_a1b07088623bc5ae80421547172aa9fcd"><div class="ttname"><a href="#a1b07088623bc5ae80421547172aa9fcd">UAT_TickUntilInputRelease::UAT_TickUntilInputRelease</a></div><div class="ttdeci">ARRANGER_API UAT_TickUntilInputRelease(const FObjectInitializer &amp;ObjectInitializer=FObjectInitializer::Get())</div><div class="ttdef"><b>Definition</b> <a href="_a_t___tick_until_input_release_8cpp_source.html#l00006">AT_TickUntilInputRelease.cpp:6</a></div></div>
+<div class="ttc" id="aclass_u_a_t___tick_until_input_release_html_a5dd6827611889298deef696167eef891"><div class="ttname"><a href="#a5dd6827611889298deef696167eef891">UAT_TickUntilInputRelease::TotalTickTime</a></div><div class="ttdeci">float TotalTickTime</div><div class="ttdef"><b>Definition</b> <a href="_a_t___tick_until_input_release_8h_source.html#l00036">AT_TickUntilInputRelease.h:36</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
@@ -315,8 +222,8 @@ Private Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>D:/GithubRepository/ARRanger/Source/ARRanger/Public/ActionAbilities/Tasks/<a class="el" href="_a_t___tick_until_input_release_8h_source.html">AT_TickUntilInputRelease.h</a></li>
-<li>D:/GithubRepository/ARRanger/Source/ARRanger/Private/ActionAbilities/Tasks/<a class="el" href="_a_t___tick_until_input_release_8cpp_source.html">AT_TickUntilInputRelease.cpp</a></li>
+<li>ARRanger/Public/ActionAbilities/Tasks/<a class="el" href="_a_t___tick_until_input_release_8h_source.html">AT_TickUntilInputRelease.h</a></li>
+<li>ARRanger/Private/ActionAbilities/Tasks/<a class="el" href="_a_t___tick_until_input_release_8cpp_source.html">AT_TickUntilInputRelease.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

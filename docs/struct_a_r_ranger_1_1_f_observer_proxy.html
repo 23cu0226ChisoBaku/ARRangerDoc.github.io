@@ -106,10 +106,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a29b1310018f342abe89f732114181959"><td class="mdescLeft">&#160;</td><td class="mdescRight">オブサーバー代理イベントを実行する  <br /></td></tr>
 <tr class="memitem:a6d25ddbe9e08f3432fbaec7cdc4694a1" id="r_a6d25ddbe9e08f3432fbaec7cdc4694a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6d25ddbe9e08f3432fbaec7cdc4694a1">SetObservationEvent</a> (const TDelegate&lt; void()&gt; &amp;ObservationEvent)</td></tr>
 <tr class="memitem:a306aa1b47cf0253378a7546127ca50e0" id="r_a306aa1b47cf0253378a7546127ca50e0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a306aa1b47cf0253378a7546127ca50e0">IsValid</a> () const</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:acdbcd22f26bc4c5db43318300113cf07" id="r_acdbcd22f26bc4c5db43318300113cf07"><td class="memItemLeft" align="right" valign="top">TDelegate&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acdbcd22f26bc4c5db43318300113cf07">m_observationEvent</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -131,7 +127,9 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_observer_proxy_8cpp_source.html#l00005">5</a> of file <a class="el" href="_observer_proxy_8cpp_source.html">ObserverProxy.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">    6</span>    : m_observationEvent{}</div>
+<div class="line"><span class="lineno">    7</span>  { }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a01b08e51dcffeebccfb5c6b2c24c6f09" name="a01b08e51dcffeebccfb5c6b2c24c6f09"></a>
@@ -228,7 +226,10 @@ Private Attributes</h2></td></tr>
 <p>オブサーバー代理イベントを実行する </p>
 
 <p class="definition">Definition at line <a class="el" href="_observer_proxy_8cpp_source.html#l00009">9</a> of file <a class="el" href="_observer_proxy_8cpp_source.html">ObserverProxy.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   10</span>  {</div>
+<div class="line"><span class="lineno">   11</span>    (void)m_observationEvent.ExecuteIfBound();</div>
+<div class="line"><span class="lineno">   12</span>  }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a306aa1b47cf0253378a7546127ca50e0" name="a306aa1b47cf0253378a7546127ca50e0"></a>
@@ -247,7 +248,10 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_observer_proxy_8cpp_source.html#l00020">20</a> of file <a class="el" href="_observer_proxy_8cpp_source.html">ObserverProxy.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   21</span>  {</div>
+<div class="line"><span class="lineno">   22</span>    <span class="keywordflow">return</span> m_observationEvent.IsBound();</div>
+<div class="line"><span class="lineno">   23</span>  }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a6ead65a1e97aba338aba470c4f2bb9dd" name="a6ead65a1e97aba338aba470c4f2bb9dd"></a>
@@ -316,37 +320,16 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_observer_proxy_8cpp_source.html#l00014">14</a> of file <a class="el" href="_observer_proxy_8cpp_source.html">ObserverProxy.cpp</a>.</p>
-
-</div>
-</div>
-<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
-<a id="acdbcd22f26bc4c5db43318300113cf07" name="acdbcd22f26bc4c5db43318300113cf07"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acdbcd22f26bc4c5db43318300113cf07">&#9670;&#160;</a></span>m_observationEvent</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">TDelegate&lt;void()&gt; ARRanger::FObserverProxy::m_observationEvent</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_observer_proxy_8h_source.html#l00025">25</a> of file <a class="el" href="_observer_proxy_8h_source.html">ObserverProxy.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   15</span>  {</div>
+<div class="line"><span class="lineno">   16</span>    m_observationEvent.Unbind();</div>
+<div class="line"><span class="lineno">   17</span>    m_observationEvent = ObservationEvent;</div>
+<div class="line"><span class="lineno">   18</span>  }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
-<li>D:/GithubRepository/ARRanger/Source/ARRanger/Public/PlayerObservation/<a class="el" href="_observer_proxy_8h_source.html">ObserverProxy.h</a></li>
-<li>D:/GithubRepository/ARRanger/Source/ARRanger/Private/PlayerObservation/<a class="el" href="_observer_proxy_8cpp_source.html">ObserverProxy.cpp</a></li>
+<li>ARRanger/Public/PlayerObservation/<a class="el" href="_observer_proxy_8h_source.html">ObserverProxy.h</a></li>
+<li>ARRanger/Private/PlayerObservation/<a class="el" href="_observer_proxy_8cpp_source.html">ObserverProxy.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

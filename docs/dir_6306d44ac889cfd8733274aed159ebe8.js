@@ -18,11 +18,12 @@ var dir_6306d44ac889cfd8733274aed159ebe8 =
     [ "Player", "dir_e4a94d35df0ebf380acf9507c50b500d.html", "dir_e4a94d35df0ebf380acf9507c50b500d" ],
     [ "PlayerComponents", "dir_21ef18526cc58b41027b2937a179343d.html", "dir_21ef18526cc58b41027b2937a179343d" ],
     [ "PlayerObservation", "dir_f422ad64b2c1998d6c073d50b3d45eba.html", "dir_f422ad64b2c1998d6c073d50b3d45eba" ],
+    [ "Presentation", "dir_f179f0cf9bd1f9513ba220064a88f905.html", "dir_f179f0cf9bd1f9513ba220064a88f905" ],
     [ "RangeDetector", "dir_6b1804a95b8900edaf8f152142755b48.html", "dir_6b1804a95b8900edaf8f152142755b48" ],
     [ "Repositories", "dir_14e9807dcc7e01015a267ee0b6326e58.html", "dir_14e9807dcc7e01015a267ee0b6326e58" ],
-    [ "ARRangerGlobals.cpp", "_a_r_ranger_globals_8cpp_source.html", null ],
-    [ "ARRangerGlobals.h", "_a_r_ranger_globals_8h_source.html", null ],
-    [ "HitStopHelper.cpp", "_hit_stop_helper_8cpp_source.html", null ],
-    [ "ISpecialAttractInterface.cpp", "_i_special_attract_interface_8cpp_source.html", null ],
-    [ "SpecialAttackAttractActor.cpp", "_special_attack_attract_actor_8cpp_source.html", null ]
+    [ "ARRangerGlobals.cpp", "_a_r_ranger_globals_8cpp.html", "_a_r_ranger_globals_8cpp" ],
+    [ "ARRangerGlobals.h", "_a_r_ranger_globals_8h.html", "_a_r_ranger_globals_8h" ],
+    [ "HitStopHelper.cpp", "_hit_stop_helper_8cpp.html", null ],
+    [ "ISpecialAttractInterface.cpp", "_i_special_attract_interface_8cpp.html", null ],
+    [ "SpecialAttackAttractActor.cpp", "_special_attack_attract_actor_8cpp.html", null ]
 ];

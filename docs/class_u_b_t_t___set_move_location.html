@@ -128,12 +128,52 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_b_t_t___set_move_location_8cpp_source.html#l00006">6</a> of file <a class="el" href="_b_t_t___set_move_location_8cpp_source.html">BTT_SetMoveLocation.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">    7</span>{</div>
+<div class="line"><span class="lineno">    8</span>    UBlackboardComponent* BB = OwnerComp.GetBlackboardComponent();</div>
+<div class="line"><span class="lineno">    9</span>    AActor* Target = Cast&lt;AActor&gt;(BB-&gt;GetValueAsObject(<span class="stringliteral">&quot;TargetActor&quot;</span>));</div>
+<div class="line"><span class="lineno">   10</span>    APawn* ControlledPawn = OwnerComp.GetAIOwner()-&gt;GetPawn();</div>
+<div class="line"><span class="lineno">   11</span> </div>
+<div class="line"><span class="lineno">   12</span>    <span class="keywordflow">if</span> (!Target || !ControlledPawn)</div>
+<div class="line"><span class="lineno">   13</span>    {</div>
+<div class="line"><span class="lineno">   14</span>        <span class="keywordflow">return</span> EBTNodeResult::Failed;</div>
+<div class="line"><span class="lineno">   15</span>    }</div>
+<div class="line"><span class="lineno">   16</span> </div>
+<div class="line"><span class="lineno">   17</span>    <span class="keywordtype">float</span> PreferredDistance = BB-&gt;GetValueAsFloat(<span class="stringliteral">&quot;PreferredDistance&quot;</span>);</div>
+<div class="line"><span class="lineno">   18</span> </div>
+<div class="line"><span class="lineno">   19</span>    <span class="comment">// 敵からプレイヤーへの方向ベクトル</span></div>
+<div class="line"><span class="lineno">   20</span>    FVector ToTarget = ControlledPawn-&gt;GetActorLocation() - Target-&gt;GetActorLocation();</div>
+<div class="line"><span class="lineno">   21</span> </div>
+<div class="line"><span class="lineno">   22</span>    <span class="keywordflow">if</span> (!ToTarget.IsNearlyZero())</div>
+<div class="line"><span class="lineno">   23</span>    {</div>
+<div class="line"><span class="lineno">   24</span>        ToTarget.Normalize();</div>
+<div class="line"><span class="lineno">   25</span> </div>
+<div class="line"><span class="lineno">   26</span>        <span class="comment">// プレイヤーの位置からPreferredDistance離れた位置を算出</span></div>
+<div class="line"><span class="lineno">   27</span>        FVector DesiredLocation = Target-&gt;GetActorLocation() + ToTarget * PreferredDistance;</div>
+<div class="line"><span class="lineno">   28</span> </div>
+<div class="line"><span class="lineno">   29</span>        <span class="comment">// NavMesh上に補正</span></div>
+<div class="line"><span class="lineno">   30</span>        UNavigationSystemV1* NavSys = FNavigationSystem::GetCurrent&lt;UNavigationSystemV1&gt;(GetWorld());</div>
+<div class="line"><span class="lineno">   31</span>        FNavLocation Projected;</div>
+<div class="line"><span class="lineno">   32</span>        <span class="keywordflow">if</span> (NavSys &amp;&amp; NavSys-&gt;ProjectPointToNavigation(DesiredLocation, Projected))</div>
+<div class="line"><span class="lineno">   33</span>        {</div>
+<div class="line"><span class="lineno">   34</span>            BB-&gt;SetValueAsVector(<span class="stringliteral">&quot;MoveLocation&quot;</span>, Projected.Location);</div>
+<div class="line"><span class="lineno">   35</span>            UE_LOG(LogTemp, Warning, TEXT(<span class="stringliteral">&quot;移動先(補正後): %s&quot;</span>), *Projected.Location.ToString());</div>
+<div class="line"><span class="lineno">   36</span>        }</div>
+<div class="line"><span class="lineno">   37</span>        <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">   38</span>        {</div>
+<div class="line"><span class="lineno">   39</span>            <span class="comment">// NavMesh外なら現在位置に退避</span></div>
+<div class="line"><span class="lineno">   40</span>            BB-&gt;SetValueAsVector(<span class="stringliteral">&quot;MoveLocation&quot;</span>, ControlledPawn-&gt;GetActorLocation());</div>
+<div class="line"><span class="lineno">   41</span>            UE_LOG(LogTemp, Error, TEXT(<span class="stringliteral">&quot;Invalid MoveLocation! 現在位置を代用&quot;</span>));</div>
+<div class="line"><span class="lineno">   42</span>        }</div>
+<div class="line"><span class="lineno">   43</span>    }</div>
+<div class="line"><span class="lineno">   44</span> </div>
+<div class="line"><span class="lineno">   45</span>    <span class="keywordflow">return</span> EBTNodeResult::Succeeded;</div>
+<div class="line"><span class="lineno">   46</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>D:/GithubRepository/ARRanger/Source/ARRanger/Public/Enemy/BTT/<a class="el" href="_b_t_t___set_move_location_8h_source.html">BTT_SetMoveLocation.h</a></li>
-<li>D:/GithubRepository/ARRanger/Source/ARRanger/Private/Enemy/BTT/<a class="el" href="_b_t_t___set_move_location_8cpp_source.html">BTT_SetMoveLocation.cpp</a></li>
+<li>ARRanger/Public/Enemy/BTT/<a class="el" href="_b_t_t___set_move_location_8h_source.html">BTT_SetMoveLocation.h</a></li>
+<li>ARRanger/Private/Enemy/BTT/<a class="el" href="_b_t_t___set_move_location_8cpp_source.html">BTT_SetMoveLocation.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

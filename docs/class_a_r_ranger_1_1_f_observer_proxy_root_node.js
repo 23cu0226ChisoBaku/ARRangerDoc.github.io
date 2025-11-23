@@ -7,6 +7,5 @@ var class_a_r_ranger_1_1_f_observer_proxy_root_node =
     [ "PushNodeFront", "class_a_r_ranger_1_1_f_observer_proxy_root_node.html#afa55c49cfc6b94e1bb6a24c4d004c49c", null ],
     [ "RemoveAll", "class_a_r_ranger_1_1_f_observer_proxy_root_node.html#ab3a3a7fc39aa906bbebf0fcfcf266c53", null ],
     [ "RemoveNodeBack", "class_a_r_ranger_1_1_f_observer_proxy_root_node.html#a9e46d3b86eedca2d6822ccf38852b55f", null ],
-    [ "RemoveNodeFront", "class_a_r_ranger_1_1_f_observer_proxy_root_node.html#ad56d48d448e0050c0f9d50e779c74a7d", null ],
-    [ "m_rootNode", "class_a_r_ranger_1_1_f_observer_proxy_root_node.html#a24f35729d676b79795aba997dd335195", null ]
+    [ "RemoveNodeFront", "class_a_r_ranger_1_1_f_observer_proxy_root_node.html#ad56d48d448e0050c0f9d50e779c74a7d", null ]
 ];

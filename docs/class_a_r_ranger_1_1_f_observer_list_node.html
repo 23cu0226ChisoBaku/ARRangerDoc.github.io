@@ -114,11 +114,6 @@ Public Member Functions</h2></td></tr>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a832e542087e99fb7a42d2875e9240e01" id="r_a832e542087e99fb7a42d2875e9240e01"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a832e542087e99fb7a42d2875e9240e01">FObserverListNode</a> ()</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:aedab620bd8e494ddd553ff7f00c62fc3" id="r_aedab620bd8e494ddd553ff7f00c62fc3"><td class="memItemLeft" align="right" valign="top">TSharedPtr&lt; <a class="el" href="class_a_r_ranger_1_1_f_observer_list_node.html">FObserverListNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aedab620bd8e494ddd553ff7f00c62fc3">m_nextNodePtr</a></td></tr>
-<tr class="memitem:a39defbbab4532966f68fc3137d484f89" id="r_a39defbbab4532966f68fc3137d484f89"><td class="memItemLeft" align="right" valign="top">TSharedPtr&lt; <a class="el" href="class_a_r_ranger_1_1_f_observer_proxy_root_node.html">FObserverProxyRootNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a39defbbab4532966f68fc3137d484f89">m_proxyRootNodePtr</a></td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-friends" class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:a41c298dd377df7744b912c8e2a7d064b" id="r_a41c298dd377df7744b912c8e2a7d064b"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a41c298dd377df7744b912c8e2a7d064b">FObserverListRootNode</a></td></tr>
@@ -151,7 +146,10 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_observer_list_node_8cpp_source.html#l00007">7</a> of file <a class="el" href="_observer_list_node_8cpp_source.html">ObserverListNode.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">    8</span>    : m_nextNodePtr{<span class="keyword">nullptr</span>}</div>
+<div class="line"><span class="lineno">    9</span>    , m_proxyRootNodePtr{<span class="keyword">nullptr</span>}</div>
+<div class="line"><span class="lineno">   10</span>  { }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a83ddec47497c382da22ff65e42928728" name="a83ddec47497c382da22ff65e42928728"></a>
@@ -170,7 +168,11 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_observer_list_node_8cpp_source.html#l00012">12</a> of file <a class="el" href="_observer_list_node_8cpp_source.html">ObserverListNode.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   13</span>  {</div>
+<div class="line"><span class="lineno">   14</span>    <a class="code hl_function" href="#a85922a45303e28e5f3073e3a205d735e">Reset</a>();</div>
+<div class="line"><span class="lineno">   15</span>  }</div>
+<div class="ttc" id="aclass_a_r_ranger_1_1_f_observer_list_node_html_a85922a45303e28e5f3073e3a205d735e"><div class="ttname"><a href="#a85922a45303e28e5f3073e3a205d735e">ARRanger::FObserverListNode::Reset</a></div><div class="ttdeci">void Reset()</div><div class="ttdef"><b>Definition</b> <a href="_observer_list_node_8cpp_source.html#l00055">ObserverListNode.cpp:55</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
@@ -190,7 +192,16 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_observer_list_node_8cpp_source.html#l00045">45</a> of file <a class="el" href="_observer_list_node_8cpp_source.html">ObserverListNode.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   46</span>  {</div>
+<div class="line"><span class="lineno">   47</span>    <span class="keywordflow">if</span> (m_proxyRootNodePtr == <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">   48</span>    {</div>
+<div class="line"><span class="lineno">   49</span>      <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   50</span>    }</div>
+<div class="line"><span class="lineno">   51</span> </div>
+<div class="line"><span class="lineno">   52</span>    m_proxyRootNodePtr-&gt;PushNodeBack(<a class="code hl_function" href="class_a_r_ranger_1_1_f_observer_proxy_root_node.html#ab68c2f13cf32e4581a7f5af85e380400">FObserverProxyRootNode::MakeNode</a>(NewObservationEvent));</div>
+<div class="line"><span class="lineno">   53</span>  }</div>
+<div class="ttc" id="aclass_a_r_ranger_1_1_f_observer_proxy_root_node_html_ab68c2f13cf32e4581a7f5af85e380400"><div class="ttname"><a href="class_a_r_ranger_1_1_f_observer_proxy_root_node.html#ab68c2f13cf32e4581a7f5af85e380400">ARRanger::FObserverProxyRootNode::MakeNode</a></div><div class="ttdeci">static TSharedPtr&lt; FObserverProxyNode &gt; MakeNode(const TDelegate&lt; void()&gt; &amp;NodeEvent)</div><div class="ttdef"><b>Definition</b> <a href="_observer_proxy_root_node_8cpp_source.html#l00012">ObserverProxyRootNode.cpp:12</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac7ab1c14fbf2a680d304c300d8eeddda" name="ac7ab1c14fbf2a680d304c300d8eeddda"></a>
@@ -209,7 +220,18 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_observer_list_node_8cpp_source.html#l00032">32</a> of file <a class="el" href="_observer_list_node_8cpp_source.html">ObserverListNode.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   33</span>  {</div>
+<div class="line"><span class="lineno">   34</span>    <span class="keywordflow">if</span> (m_proxyRootNodePtr != <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">   35</span>    {</div>
+<div class="line"><span class="lineno">   36</span>      m_proxyRootNodePtr-&gt;Evaluate();</div>
+<div class="line"><span class="lineno">   37</span>    }</div>
+<div class="line"><span class="lineno">   38</span> </div>
+<div class="line"><span class="lineno">   39</span>    <span class="keywordflow">if</span> (m_nextNodePtr != <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">   40</span>    {</div>
+<div class="line"><span class="lineno">   41</span>      m_nextNodePtr-&gt;Evaluate();</div>
+<div class="line"><span class="lineno">   42</span>    }</div>
+<div class="line"><span class="lineno">   43</span>  }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a36236b587df6d5860f0e4fba12716e77" name="a36236b587df6d5860f0e4fba12716e77"></a>
@@ -236,7 +258,8 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_observer_list_node_8h_source.html#l00025">25</a> of file <a class="el" href="_observer_list_node_8h_source.html">ObserverListNode.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   25</span>{ <span class="keywordflow">return</span> m_nextNodePtr.Get(); }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a82e93d6df5f96078b39c1ef4d334af72" name="a82e93d6df5f96078b39c1ef4d334af72"></a>
@@ -255,7 +278,20 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_observer_list_node_8cpp_source.html#l00017">17</a> of file <a class="el" href="_observer_list_node_8cpp_source.html">ObserverListNode.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   18</span>  {</div>
+<div class="line"><span class="lineno">   19</span>    <span class="keywordflow">if</span> (m_nextNodePtr != <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">   20</span>    {</div>
+<div class="line"><span class="lineno">   21</span>      <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   22</span>    }</div>
+<div class="line"><span class="lineno">   23</span> </div>
+<div class="line"><span class="lineno">   24</span>    <span class="keywordflow">if</span> (NextListNodePtr != <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">   25</span>    {</div>
+<div class="line"><span class="lineno">   26</span>      m_nextNodePtr = NextListNodePtr-&gt;AsShared();</div>
+<div class="line"><span class="lineno">   27</span>    }</div>
+<div class="line"><span class="lineno">   28</span> </div>
+<div class="line"><span class="lineno">   29</span>    m_proxyRootNodePtr = ::MakeShared&lt;FObserverProxyRootNode&gt;();</div>
+<div class="line"><span class="lineno">   30</span>  }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a85922a45303e28e5f3073e3a205d735e" name="a85922a45303e28e5f3073e3a205d735e"></a>
@@ -274,7 +310,15 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_observer_list_node_8cpp_source.html#l00055">55</a> of file <a class="el" href="_observer_list_node_8cpp_source.html">ObserverListNode.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   56</span>  {</div>
+<div class="line"><span class="lineno">   57</span>    <span class="keywordflow">if</span> (m_proxyRootNodePtr != <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">   58</span>    {</div>
+<div class="line"><span class="lineno">   59</span>      m_proxyRootNodePtr-&gt;RemoveAll();</div>
+<div class="line"><span class="lineno">   60</span>    }</div>
+<div class="line"><span class="lineno">   61</span> </div>
+<div class="line"><span class="lineno">   62</span>    m_nextNodePtr.Reset();</div>
+<div class="line"><span class="lineno">   63</span>  }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a7702ede59fc25a52ff1da8b490414347" name="a7702ede59fc25a52ff1da8b490414347"></a>
@@ -293,7 +337,15 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_observer_list_node_8cpp_source.html#l00065">65</a> of file <a class="el" href="_observer_list_node_8cpp_source.html">ObserverListNode.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   66</span>  {</div>
+<div class="line"><span class="lineno">   67</span>    <span class="keywordflow">if</span> (<span class="keyword">this</span> == NextListNodePtr.Get())</div>
+<div class="line"><span class="lineno">   68</span>    {</div>
+<div class="line"><span class="lineno">   69</span>      <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   70</span>    }</div>
+<div class="line"><span class="lineno">   71</span> </div>
+<div class="line"><span class="lineno">   72</span>    m_nextNodePtr = NextListNodePtr;</div>
+<div class="line"><span class="lineno">   73</span>  }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a name="doc-related-members" id="doc-related-members"></a><h2 id="header-doc-related-members" class="groupheader">Friends And Related Symbol Documentation</h2>
@@ -321,58 +373,9 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
-<a id="aedab620bd8e494ddd553ff7f00c62fc3" name="aedab620bd8e494ddd553ff7f00c62fc3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aedab620bd8e494ddd553ff7f00c62fc3">&#9670;&#160;</a></span>m_nextNodePtr</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">TSharedPtr&lt;<a class="el" href="class_a_r_ranger_1_1_f_observer_list_node.html">FObserverListNode</a>&gt; ARRanger::FObserverListNode::m_nextNodePtr</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_observer_list_node_8h_source.html#l00028">28</a> of file <a class="el" href="_observer_list_node_8h_source.html">ObserverListNode.h</a>.</p>
-
-</div>
-</div>
-<a id="a39defbbab4532966f68fc3137d484f89" name="a39defbbab4532966f68fc3137d484f89"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a39defbbab4532966f68fc3137d484f89">&#9670;&#160;</a></span>m_proxyRootNodePtr</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">TSharedPtr&lt;<a class="el" href="class_a_r_ranger_1_1_f_observer_proxy_root_node.html">FObserverProxyRootNode</a>&gt; ARRanger::FObserverListNode::m_proxyRootNodePtr</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_observer_list_node_8h_source.html#l00030">30</a> of file <a class="el" href="_observer_list_node_8h_source.html">ObserverListNode.h</a>.</p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>D:/GithubRepository/ARRanger/Source/ARRanger/Public/PlayerObservation/<a class="el" href="_observer_list_node_8h_source.html">ObserverListNode.h</a></li>
-<li>D:/GithubRepository/ARRanger/Source/ARRanger/Private/PlayerObservation/<a class="el" href="_observer_list_node_8cpp_source.html">ObserverListNode.cpp</a></li>
+<li>ARRanger/Public/PlayerObservation/<a class="el" href="_observer_list_node_8h_source.html">ObserverListNode.h</a></li>
+<li>ARRanger/Private/PlayerObservation/<a class="el" href="_observer_list_node_8cpp_source.html">ObserverListNode.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

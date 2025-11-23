@@ -8,7 +8,5 @@ var class_a_r_ranger_1_1_f_observer_list_node =
     [ "Initialize", "class_a_r_ranger_1_1_f_observer_list_node.html#a82e93d6df5f96078b39c1ef4d334af72", null ],
     [ "Reset", "class_a_r_ranger_1_1_f_observer_list_node.html#a85922a45303e28e5f3073e3a205d735e", null ],
     [ "SetNextListNode", "class_a_r_ranger_1_1_f_observer_list_node.html#a7702ede59fc25a52ff1da8b490414347", null ],
-    [ "FObserverListRootNode", "class_a_r_ranger_1_1_f_observer_list_node.html#a41c298dd377df7744b912c8e2a7d064b", null ],
-    [ "m_nextNodePtr", "class_a_r_ranger_1_1_f_observer_list_node.html#aedab620bd8e494ddd553ff7f00c62fc3", null ],
-    [ "m_proxyRootNodePtr", "class_a_r_ranger_1_1_f_observer_list_node.html#a39defbbab4532966f68fc3137d484f89", null ]
+    [ "FObserverListRootNode", "class_a_r_ranger_1_1_f_observer_list_node.html#a41c298dd377df7744b912c8e2a7d064b", null ]
 ];

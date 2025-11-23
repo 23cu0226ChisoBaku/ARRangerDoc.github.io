@@ -8,6 +8,5 @@ var struct_a_r_ranger_1_1_f_observer_proxy =
     [ "IsValid", "struct_a_r_ranger_1_1_f_observer_proxy.html#a306aa1b47cf0253378a7546127ca50e0", null ],
     [ "operator=", "struct_a_r_ranger_1_1_f_observer_proxy.html#a6ead65a1e97aba338aba470c4f2bb9dd", null ],
     [ "operator=", "struct_a_r_ranger_1_1_f_observer_proxy.html#a32a1dd69630ad042e5600ea6b2a9dfdb", null ],
-    [ "SetObservationEvent", "struct_a_r_ranger_1_1_f_observer_proxy.html#a6d25ddbe9e08f3432fbaec7cdc4694a1", null ],
-    [ "m_observationEvent", "struct_a_r_ranger_1_1_f_observer_proxy.html#acdbcd22f26bc4c5db43318300113cf07", null ]
+    [ "SetObservationEvent", "struct_a_r_ranger_1_1_f_observer_proxy.html#a6d25ddbe9e08f3432fbaec7cdc4694a1", null ]
 ];

@@ -130,7 +130,10 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_b_t_t___select_attack_8cpp_source.html#l00004">4</a> of file <a class="el" href="_b_t_t___select_attack_8cpp_source.html">BTT_SelectAttack.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">    5</span>{</div>
+<div class="line"><span class="lineno">    6</span>  NodeName = TEXT(<span class="stringliteral">&quot;Choose Attack&quot;</span>);</div>
+<div class="line"><span class="lineno">    7</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
@@ -162,7 +165,88 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_b_t_t___select_attack_8cpp_source.html#l00009">9</a> of file <a class="el" href="_b_t_t___select_attack_8cpp_source.html">BTT_SelectAttack.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   10</span>{</div>
+<div class="line"><span class="lineno">   11</span>  UBlackboardComponent* BB = OwnerComp.GetBlackboardComponent();</div>
+<div class="line"><span class="lineno">   12</span>  <span class="keywordflow">if</span> (BB == <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">   13</span>  {</div>
+<div class="line"><span class="lineno">   14</span>    <span class="keywordflow">return</span> EBTNodeResult::Failed;</div>
+<div class="line"><span class="lineno">   15</span>  }</div>
+<div class="line"><span class="lineno">   16</span> </div>
+<div class="line"><span class="lineno">   17</span>  <a class="code hl_enumeration" href="_enemy_attack_types_8h.html#a00054baf5253f9c153770c4634198ab0">EAttackType</a> ChosenAttack = EAttackType::None;</div>
+<div class="line"><span class="lineno">   18</span>  <a class="code hl_enumeration" href="_enemy_attack_types_8h.html#a00054baf5253f9c153770c4634198ab0">EAttackType</a> LastAttack = (<a class="code hl_enumeration" href="_enemy_attack_types_8h.html#a00054baf5253f9c153770c4634198ab0">EAttackType</a>)BB-&gt;GetValueAsEnum(<span class="stringliteral">&quot;LastAttackType&quot;</span>);</div>
+<div class="line"><span class="lineno">   19</span> </div>
+<div class="line"><span class="lineno">   20</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a26af90ec79e9b7aa1280d99b00455ac6">WeightedAttacks</a>.Num() &gt; 0)</div>
+<div class="line"><span class="lineno">   21</span>  {</div>
+<div class="line"><span class="lineno">   22</span>    <span class="keywordtype">float</span> TotalWeight = 0.f;</div>
+<div class="line"><span class="lineno">   23</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; [ attackType, weight ] : <a class="code hl_variable" href="#a26af90ec79e9b7aa1280d99b00455ac6">WeightedAttacks</a>)</div>
+<div class="line"><span class="lineno">   24</span>    {</div>
+<div class="line"><span class="lineno">   25</span>      <span class="keywordflow">if</span> ((attackType == EAttackType::Roar) &amp;&amp; (LastAttack == EAttackType::Roar))</div>
+<div class="line"><span class="lineno">   26</span>      {</div>
+<div class="line"><span class="lineno">   27</span>        <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">   28</span>      }</div>
+<div class="line"><span class="lineno">   29</span> </div>
+<div class="line"><span class="lineno">   30</span>      TotalWeight += weight;</div>
+<div class="line"><span class="lineno">   31</span>    }</div>
+<div class="line"><span class="lineno">   32</span> </div>
+<div class="line"><span class="lineno">   33</span>    <span class="keywordflow">if</span> (TotalWeight &gt; 0.f)</div>
+<div class="line"><span class="lineno">   34</span>    {</div>
+<div class="line"><span class="lineno">   35</span>      <span class="keyword">const</span> <span class="keywordtype">float</span> Rand = FMath::FRandRange(0.f, TotalWeight);</div>
+<div class="line"><span class="lineno">   36</span>      <span class="keywordtype">float</span> Accum = 0.f;</div>
+<div class="line"><span class="lineno">   37</span> </div>
+<div class="line"><span class="lineno">   38</span>      <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; [ attackType, weight ] : <a class="code hl_variable" href="#a26af90ec79e9b7aa1280d99b00455ac6">WeightedAttacks</a>)</div>
+<div class="line"><span class="lineno">   39</span>      {</div>
+<div class="line"><span class="lineno">   40</span>        <span class="keywordflow">if</span> ((attackType == EAttackType::Roar) &amp;&amp; (LastAttack == EAttackType::Roar))</div>
+<div class="line"><span class="lineno">   41</span>        {</div>
+<div class="line"><span class="lineno">   42</span>          <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">   43</span>        }</div>
+<div class="line"><span class="lineno">   44</span> </div>
+<div class="line"><span class="lineno">   45</span>        Accum += weight;</div>
+<div class="line"><span class="lineno">   46</span>        <span class="keywordflow">if</span> (Rand &lt;= Accum)</div>
+<div class="line"><span class="lineno">   47</span>        {</div>
+<div class="line"><span class="lineno">   48</span>          ChosenAttack = attackType;</div>
+<div class="line"><span class="lineno">   49</span>          <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   50</span>        }</div>
+<div class="line"><span class="lineno">   51</span>      }</div>
+<div class="line"><span class="lineno">   52</span>    }</div>
+<div class="line"><span class="lineno">   53</span>  }</div>
+<div class="line"><span class="lineno">   54</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="#ab95052e0831e101d5f8e59b5d3559fa6">CandidateAttacks</a>.Num() &gt; 0)</div>
+<div class="line"><span class="lineno">   55</span>  {</div>
+<div class="line"><span class="lineno">   56</span>    TArray&lt;EAttackType&gt; Filtered;</div>
+<div class="line"><span class="lineno">   57</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <a class="code hl_enumeration" href="_enemy_attack_types_8h.html#a00054baf5253f9c153770c4634198ab0">EAttackType</a>&amp; <a class="code hl_enumvalue" href="_a_r_sound_play_library_8h.html#ac7812ff4152433b10159b675391ce1cdadcfafcb4323b102c7e204555d313ba0a">Attack</a> : <a class="code hl_variable" href="#ab95052e0831e101d5f8e59b5d3559fa6">CandidateAttacks</a>)</div>
+<div class="line"><span class="lineno">   58</span>    {</div>
+<div class="line"><span class="lineno">   59</span>      <span class="keywordflow">if</span> (!(<a class="code hl_enumvalue" href="_a_r_sound_play_library_8h.html#ac7812ff4152433b10159b675391ce1cdadcfafcb4323b102c7e204555d313ba0a">Attack</a> == EAttackType::Roar &amp;&amp; LastAttack == EAttackType::Roar))</div>
+<div class="line"><span class="lineno">   60</span>      {</div>
+<div class="line"><span class="lineno">   61</span>        Filtered.Add(<a class="code hl_enumvalue" href="_a_r_sound_play_library_8h.html#ac7812ff4152433b10159b675391ce1cdadcfafcb4323b102c7e204555d313ba0a">Attack</a>);</div>
+<div class="line"><span class="lineno">   62</span>      }</div>
+<div class="line"><span class="lineno">   63</span>    }</div>
+<div class="line"><span class="lineno">   64</span> </div>
+<div class="line"><span class="lineno">   65</span>    <span class="keywordflow">if</span> (Filtered.Num() &gt; 0)</div>
+<div class="line"><span class="lineno">   66</span>    {</div>
+<div class="line"><span class="lineno">   67</span>      int32 Index = FMath::RandRange(0, Filtered.Num() - 1);</div>
+<div class="line"><span class="lineno">   68</span>      ChosenAttack = Filtered[Index];</div>
+<div class="line"><span class="lineno">   69</span>    }</div>
+<div class="line"><span class="lineno">   70</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">   71</span>    {</div>
+<div class="line"><span class="lineno">   72</span>      ChosenAttack = EAttackType::Roar;</div>
+<div class="line"><span class="lineno">   73</span>    }</div>
+<div class="line"><span class="lineno">   74</span>  }</div>
+<div class="line"><span class="lineno">   75</span>  <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">   76</span>  {</div>
+<div class="line"><span class="lineno">   77</span>    <span class="keywordflow">return</span> EBTNodeResult::Failed;</div>
+<div class="line"><span class="lineno">   78</span>  }</div>
+<div class="line"><span class="lineno">   79</span> </div>
+<div class="line"><span class="lineno">   80</span>  <span class="comment">// TODO Perform only punch for test purpose</span></div>
+<div class="line"><span class="lineno">   81</span>  BB-&gt;SetValueAsEnum(<span class="stringliteral">&quot;AttackType&quot;</span>, <span class="keyword">static_cast&lt;</span>uint8<span class="keyword">&gt;</span>(ChosenAttack));</div>
+<div class="line"><span class="lineno">   82</span>  BB-&gt;SetValueAsEnum(<span class="stringliteral">&quot;LastAttackType&quot;</span>, <span class="keyword">static_cast&lt;</span>uint8<span class="keyword">&gt;</span>(ChosenAttack));</div>
+<div class="line"><span class="lineno">   83</span> </div>
+<div class="line"><span class="lineno">   84</span>  <span class="keywordflow">return</span> EBTNodeResult::Succeeded;</div>
+<div class="line"><span class="lineno">   85</span> </div>
+<div class="line"><span class="lineno">   86</span>}</div>
+<div class="ttc" id="a_a_r_sound_play_library_8h_html_ac7812ff4152433b10159b675391ce1cdadcfafcb4323b102c7e204555d313ba0a"><div class="ttname"><a href="_a_r_sound_play_library_8h.html#ac7812ff4152433b10159b675391ce1cdadcfafcb4323b102c7e204555d313ba0a">EARSoundEffectType::Attack</a></div><div class="ttdeci">@ Attack</div><div class="ttdef"><b>Definition</b> <a href="_a_r_sound_play_library_8h_source.html#l00034">ARSoundPlayLibrary.h:34</a></div></div>
+<div class="ttc" id="a_enemy_attack_types_8h_html_a00054baf5253f9c153770c4634198ab0"><div class="ttname"><a href="_enemy_attack_types_8h.html#a00054baf5253f9c153770c4634198ab0">EAttackType</a></div><div class="ttdeci">EAttackType</div><div class="ttdef"><b>Definition</b> <a href="_enemy_attack_types_8h_source.html#l00006">EnemyAttackTypes.h:7</a></div></div>
+<div class="ttc" id="aclass_u_b_t_t___select_attack_html_a26af90ec79e9b7aa1280d99b00455ac6"><div class="ttname"><a href="#a26af90ec79e9b7aa1280d99b00455ac6">UBTT_SelectAttack::WeightedAttacks</a></div><div class="ttdeci">TMap&lt; EAttackType, float &gt; WeightedAttacks</div><div class="ttdef"><b>Definition</b> <a href="_b_t_t___select_attack_8h_source.html#l00026">BTT_SelectAttack.h:26</a></div></div>
+<div class="ttc" id="aclass_u_b_t_t___select_attack_html_ab95052e0831e101d5f8e59b5d3559fa6"><div class="ttname"><a href="#ab95052e0831e101d5f8e59b5d3559fa6">UBTT_SelectAttack::CandidateAttacks</a></div><div class="ttdeci">TArray&lt; EAttackType &gt; CandidateAttacks</div><div class="ttdef"><b>Definition</b> <a href="_b_t_t___select_attack_8h_source.html#l00022">BTT_SelectAttack.h:22</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
@@ -215,8 +299,8 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>D:/GithubRepository/ARRanger/Source/ARRanger/Public/Enemy/BTT/<a class="el" href="_b_t_t___select_attack_8h_source.html">BTT_SelectAttack.h</a></li>
-<li>D:/GithubRepository/ARRanger/Source/ARRanger/Private/Enemy/BTT/<a class="el" href="_b_t_t___select_attack_8cpp_source.html">BTT_SelectAttack.cpp</a></li>
+<li>ARRanger/Public/Enemy/BTT/<a class="el" href="_b_t_t___select_attack_8h_source.html">BTT_SelectAttack.h</a></li>
+<li>ARRanger/Private/Enemy/BTT/<a class="el" href="_b_t_t___select_attack_8cpp_source.html">BTT_SelectAttack.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

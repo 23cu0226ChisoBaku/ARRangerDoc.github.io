@@ -133,27 +133,6 @@ Public Attributes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 id="header-pro-methods" class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a3ceb99c0ed8139d3d1a4834f0c6c20a4" id="r_a3ceb99c0ed8139d3d1a4834f0c6c20a4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3ceb99c0ed8139d3d1a4834f0c6c20a4">BeginPlay</a> () override</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a54e2679aad753aae357735639c21f1c2" id="r_a54e2679aad753aae357735639c21f1c2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a54e2679aad753aae357735639c21f1c2">ContainsActor</a> (AActor *actor)</td></tr>
-<tr class="memdesc:a54e2679aad753aae357735639c21f1c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">m_BlinkingActors構造体配列の中に指定したアクターが存在するかどうかを返す  <br /></td></tr>
-<tr class="memitem:ac5a80e6a37ee5ea773ea051ecc3d58d9" id="r_ac5a80e6a37ee5ea773ea051ecc3d58d9"><td class="memItemLeft" align="right" valign="top">UMaterialInterface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac5a80e6a37ee5ea773ea051ecc3d58d9">GetOutlineMaterial</a> (AActor *targetActor)</td></tr>
-<tr class="memdesc:ac5a80e6a37ee5ea773ea051ecc3d58d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">そのアクターの状態にあったマテリアルを返す関数  <br /></td></tr>
-<tr class="memitem:ac8f1711d2207bb8c6f9bf2b5e015ce60" id="r_ac8f1711d2207bb8c6f9bf2b5e015ce60"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac8f1711d2207bb8c6f9bf2b5e015ce60">UpdateBlinkingTargets</a> ()</td></tr>
-<tr class="memdesc:ac8f1711d2207bb8c6f9bf2b5e015ce60"><td class="mdescLeft">&#160;</td><td class="mdescRight">点滅させる対象のアクターのデータ構造体から変更分を更新する  <br /></td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:afe4ebea73da505e9d3c2f2b430fa33c0" id="r_afe4ebea73da505e9d3c2f2b430fa33c0"><td class="memItemLeft" align="right" valign="top">TArray&lt; <a class="el" href="struct_f_blinking_target.html">FBlinkingTarget</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afe4ebea73da505e9d3c2f2b430fa33c0">m_OutlineActors</a></td></tr>
-<tr class="memitem:abc56416bf305587d6f1216ce29beaefb" id="r_abc56416bf305587d6f1216ce29beaefb"><td class="memItemLeft" align="right" valign="top">TArray&lt; <a class="el" href="struct_f_blinking_target.html">FBlinkingTarget</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abc56416bf305587d6f1216ce29beaefb">m_BlinkingActors</a></td></tr>
-<tr class="memitem:a9520c2530d683ef650595e4bc108c710" id="r_a9520c2530d683ef650595e4bc108c710"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_f_blink_data_set.html">FBlinkDataSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9520c2530d683ef650595e4bc108c710">m_BlinkDatas</a></td></tr>
-<tr class="memitem:a7148ae5f9e1063caeebef38776aa8a6d" id="r_a7148ae5f9e1063caeebef38776aa8a6d"><td class="memItemLeft" align="right" valign="top">TWeakObjectPtr&lt; AActor &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7148ae5f9e1063caeebef38776aa8a6d">m_BlinkingActorAtAtCursor</a></td></tr>
-<tr class="memitem:ac02d43a485908929c216b6421e4a1e4b" id="r_ac02d43a485908929c216b6421e4a1e4b"><td class="memItemLeft" align="right" valign="top">TArray&lt; TWeakObjectPtr&lt; AActor &gt; &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac02d43a485908929c216b6421e4a1e4b">m_OutlineActorsReference</a></td></tr>
-<tr class="memitem:ad7b8bb2571bb9577a5081f794851b76e" id="r_ad7b8bb2571bb9577a5081f794851b76e"><td class="memItemLeft" align="right" valign="top">TArray&lt; TWeakObjectPtr&lt; AActor &gt; &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad7b8bb2571bb9577a5081f794851b76e">m_BlinkingActorsReference</a></td></tr>
-<tr class="memitem:a8d93b5bae3533c7435cdd6354d6e453f" id="r_a8d93b5bae3533c7435cdd6354d6e453f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_blink_outline_functor.html">BlinkOutlineFunctor</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8d93b5bae3533c7435cdd6354d6e453f">m_BlinkOutlineFunctor</a></td></tr>
-<tr class="memitem:a09ab25fb325c08e7ab7f79347088daea" id="r_a09ab25fb325c08e7ab7f79347088daea"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a09ab25fb325c08e7ab7f79347088daea">m_IsUpOutlineActors</a></td></tr>
-<tr class="memitem:aed69f080c09ae112ed1ffa5b0fc6a747" id="r_aed69f080c09ae112ed1ffa5b0fc6a747"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aed69f080c09ae112ed1ffa5b0fc6a747">m_IsUpBlinkingActors</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>アウトラインの点滅処理を毎フレーム処理する </p>
@@ -176,7 +155,18 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_outline_tick_actor_8cpp_source.html#l00011">11</a> of file <a class="el" href="_outline_tick_actor_8cpp_source.html">OutlineTickActor.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   12</span>    : m_BlinkOutlineFunctor(<span class="keyword">new</span> BlinkOutlineFunctor()) </div>
+<div class="line"><span class="lineno">   13</span>{</div>
+<div class="line"><span class="lineno">   14</span>    PrimaryActorTick.bCanEverTick = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   15</span> </div>
+<div class="line"><span class="lineno">   16</span>    <span class="comment">// コールバック登録</span></div>
+<div class="line"><span class="lineno">   17</span>    m_BlinkOutlineFunctor-&gt;OnBlinkEnd = [<span class="keyword">this</span>](AActor* actor)</div>
+<div class="line"><span class="lineno">   18</span>    {</div>
+<div class="line"><span class="lineno">   19</span>        this-&gt;<a class="code hl_function" href="#a0492376362a1490c560c7c63e7de3562">RemoveBlinkingActor</a>(actor);</div>
+<div class="line"><span class="lineno">   20</span>    };</div>
+<div class="line"><span class="lineno">   21</span>}</div>
+<div class="ttc" id="aclass_a_outline_tick_actor_html_a0492376362a1490c560c7c63e7de3562"><div class="ttname"><a href="#a0492376362a1490c560c7c63e7de3562">AOutlineTickActor::RemoveBlinkingActor</a></div><div class="ttdeci">void RemoveBlinkingActor(AActor *removeActor)</div><div class="ttdoc">点滅をやめるアクターを配列から除外する(メッシュコンポーネントを除外する)</div><div class="ttdef"><b>Definition</b> <a href="_outline_tick_actor_8cpp_source.html#l00289">OutlineTickActor.cpp:289</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="abedb2d6c27f85356d51dc5b4b59842ee" name="abedb2d6c27f85356d51dc5b4b59842ee"></a>
@@ -195,7 +185,14 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_outline_tick_actor_8cpp_source.html#l00089">89</a> of file <a class="el" href="_outline_tick_actor_8cpp_source.html">OutlineTickActor.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   90</span>{</div>
+<div class="line"><span class="lineno">   91</span>    <span class="keywordflow">if</span>(m_BlinkOutlineFunctor != <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">   92</span>    {</div>
+<div class="line"><span class="lineno">   93</span>        <span class="keyword">delete</span> m_BlinkOutlineFunctor;</div>
+<div class="line"><span class="lineno">   94</span>        m_BlinkOutlineFunctor = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">   95</span>    }</div>
+<div class="line"><span class="lineno">   96</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
@@ -223,7 +220,37 @@ Private Attributes</h2></td></tr>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="_outline_tick_actor_8cpp_source.html#l00254">254</a> of file <a class="el" href="_outline_tick_actor_8cpp_source.html">OutlineTickActor.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  255</span>{</div>
+<div class="line"><span class="lineno">  256</span>    <span class="keywordflow">if</span> (newActor == <span class="keyword">nullptr</span>){ <span class="keywordflow">return</span>; }</div>
+<div class="line"><span class="lineno">  257</span> </div>
+<div class="line"><span class="lineno">  258</span>    <span class="comment">// すでに登録されているアクターかチェック</span></div>
+<div class="line"><span class="lineno">  259</span>    <span class="keywordflow">if</span>(ContainsActor(newActor)){<span class="keywordflow">return</span>;}</div>
+<div class="line"><span class="lineno">  260</span> </div>
+<div class="line"><span class="lineno">  261</span>    <span class="comment">// メッシュコンポーネントを取得</span></div>
+<div class="line"><span class="lineno">  262</span>    UMeshComponent* meshComponent = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  263</span>    TArray&lt;UMeshComponent*&gt; meshComponents;</div>
+<div class="line"><span class="lineno">  264</span>    newActor-&gt;GetComponents(meshComponents);</div>
+<div class="line"><span class="lineno">  265</span>    <span class="keywordflow">for</span> (UMeshComponent* comp : meshComponents)</div>
+<div class="line"><span class="lineno">  266</span>    {</div>
+<div class="line"><span class="lineno">  267</span>        <span class="keywordflow">if</span> (comp &amp;&amp; comp-&gt;ComponentHasTag(TEXT(<span class="stringliteral">&quot;OutLineMeshComponent&quot;</span>)))</div>
+<div class="line"><span class="lineno">  268</span>        {</div>
+<div class="line"><span class="lineno">  269</span>            meshComponent = comp;</div>
+<div class="line"><span class="lineno">  270</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  271</span>        }</div>
+<div class="line"><span class="lineno">  272</span>    }</div>
+<div class="line"><span class="lineno">  273</span>    <span class="keywordflow">if</span> (meshComponent == <span class="keyword">nullptr</span>){ <span class="keywordflow">return</span>; }</div>
+<div class="line"><span class="lineno">  274</span> </div>
+<div class="line"><span class="lineno">  275</span>    <span class="comment">// 構造体を作成して追加</span></div>
+<div class="line"><span class="lineno">  276</span>    FBlinkingTarget newTarget;</div>
+<div class="line"><span class="lineno">  277</span>    newTarget.<a class="code hl_variable" href="struct_f_blinking_target.html#a4eabacb754088a1dc2d5df74aa4b779c">_actor</a> = newActor;</div>
+<div class="line"><span class="lineno">  278</span>    newTarget.<a class="code hl_variable" href="struct_f_blinking_target.html#a3f170d6d374e886cb3bf5e45a1caa6c6">_meshComponent</a> = meshComponent;</div>
+<div class="line"><span class="lineno">  279</span> </div>
+<div class="line"><span class="lineno">  280</span>    <span class="comment">// 点滅させるアクターとして登録</span></div>
+<div class="line"><span class="lineno">  281</span>    m_BlinkingActors.Add(newTarget);</div>
+<div class="line"><span class="lineno">  282</span>}</div>
+<div class="ttc" id="astruct_f_blinking_target_html_a3f170d6d374e886cb3bf5e45a1caa6c6"><div class="ttname"><a href="struct_f_blinking_target.html#a3f170d6d374e886cb3bf5e45a1caa6c6">FBlinkingTarget::_meshComponent</a></div><div class="ttdeci">TObjectPtr&lt; UMeshComponent &gt; _meshComponent</div><div class="ttdef"><b>Definition</b> <a href="_outline_tick_actor_8h_source.html#l00027">OutlineTickActor.h:27</a></div></div>
+<div class="ttc" id="astruct_f_blinking_target_html_a4eabacb754088a1dc2d5df74aa4b779c"><div class="ttname"><a href="struct_f_blinking_target.html#a4eabacb754088a1dc2d5df74aa4b779c">FBlinkingTarget::_actor</a></div><div class="ttdeci">TObjectPtr&lt; AActor &gt; _actor</div><div class="ttdef"><b>Definition</b> <a href="_outline_tick_actor_8h_source.html#l00025">OutlineTickActor.h:25</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a3ceb99c0ed8139d3d1a4834f0c6c20a4" name="a3ceb99c0ed8139d3d1a4834f0c6c20a4"></a>
@@ -250,7 +277,10 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_outline_tick_actor_8cpp_source.html#l00022">22</a> of file <a class="el" href="_outline_tick_actor_8cpp_source.html">OutlineTickActor.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   23</span>{</div>
+<div class="line"><span class="lineno">   24</span>    Super::BeginPlay();</div>
+<div class="line"><span class="lineno">   25</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a8673bd9714881d1530d5c25db03e8ff2" name="a8673bd9714881d1530d5c25db03e8ff2"></a>
@@ -281,7 +311,13 @@ Private Attributes</h2></td></tr>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="_outline_tick_actor_8cpp_source.html#l00106">106</a> of file <a class="el" href="_outline_tick_actor_8cpp_source.html">OutlineTickActor.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  107</span>{</div>
+<div class="line"><span class="lineno">  108</span>    <span class="comment">// アウトライン</span></div>
+<div class="line"><span class="lineno">  109</span>    m_OutlineActorsReference = outlineActors;</div>
+<div class="line"><span class="lineno">  110</span>    <span class="comment">// ブリンキング   </span></div>
+<div class="line"><span class="lineno">  111</span>    m_BlinkingActorsReference = blinkingActors; </div>
+<div class="line"><span class="lineno">  112</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a88a9350ca6bea1c6374d39cfc6d433ac" name="a88a9350ca6bea1c6374d39cfc6d433ac"></a>
@@ -308,43 +344,42 @@ Private Attributes</h2></td></tr>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="_outline_tick_actor_8cpp_source.html#l00370">370</a> of file <a class="el" href="_outline_tick_actor_8cpp_source.html">OutlineTickActor.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a54e2679aad753aae357735639c21f1c2" name="a54e2679aad753aae357735639c21f1c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a54e2679aad753aae357735639c21f1c2">&#9670;&#160;</a></span>ContainsActor()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool AOutlineTickActor::ContainsActor </td>
-          <td>(</td>
-          <td class="paramtype">AActor *</td>          <td class="paramname"><span class="paramname"><em>actor</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>m_BlinkingActors構造体配列の中に指定したアクターが存在するかどうかを返す </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">探したいアクター</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>存在したいかどうか </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="_outline_tick_actor_8cpp_source.html#l00412">412</a> of file <a class="el" href="_outline_tick_actor_8cpp_source.html">OutlineTickActor.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  371</span>{</div>
+<div class="line"><span class="lineno">  372</span>    <span class="keywordflow">if</span> (m_BlinkingActorAtAtCursor == <span class="keyword">nullptr</span>) { <span class="keywordflow">return</span>; }</div>
+<div class="line"><span class="lineno">  373</span>    AMagnetizableActor* magnetActor = Cast&lt;AMagnetizableActor&gt;(m_BlinkingActorAtAtCursor);</div>
+<div class="line"><span class="lineno">  374</span>    <span class="keywordflow">if</span>(magnetActor == <span class="keyword">nullptr</span>) {<span class="keywordflow">return</span>;}</div>
+<div class="line"><span class="lineno">  375</span>    <span class="keywordflow">if</span>(magnetActor-&gt;<a class="code hl_function" href="class_i_a_r_magnetizable_interface.html#a02be84512faf14040407cc67b954bda9">GetMagnetismType</a>() != <a class="code hl_enumvalue" href="_i_a_r_magnetizable_interface_8h.html#a760a20e19f697a134dbd351d65fd9d6ba6adf97f83acf6453d4a6a4b1070f3754">EARMagnetismType::None</a>)</div>
+<div class="line"><span class="lineno">  376</span>    {</div>
+<div class="line"><span class="lineno">  377</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  378</span>    }</div>
+<div class="line"><span class="lineno">  379</span>    </div>
+<div class="line"><span class="lineno">  380</span>    <span class="comment">// メッシュコンポーネントを取得</span></div>
+<div class="line"><span class="lineno">  381</span>    UMeshComponent* meshComponent = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  382</span>    TArray&lt;UMeshComponent*&gt; meshComponents;</div>
+<div class="line"><span class="lineno">  383</span>    m_BlinkingActorAtAtCursor-&gt;GetComponents(meshComponents);</div>
+<div class="line"><span class="lineno">  384</span>    <span class="keywordflow">for</span> (UMeshComponent* comp : meshComponents)</div>
+<div class="line"><span class="lineno">  385</span>    {</div>
+<div class="line"><span class="lineno">  386</span>        <span class="keywordflow">if</span> (comp &amp;&amp; comp-&gt;ComponentHasTag(TEXT(<span class="stringliteral">&quot;OutLineMeshComponent&quot;</span>)))</div>
+<div class="line"><span class="lineno">  387</span>        {</div>
+<div class="line"><span class="lineno">  388</span>            meshComponent = comp;</div>
+<div class="line"><span class="lineno">  389</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  390</span>        }</div>
+<div class="line"><span class="lineno">  391</span>    }</div>
+<div class="line"><span class="lineno">  392</span>    <span class="keywordflow">if</span>(meshComponent == <span class="keyword">nullptr</span>){<span class="keywordflow">return</span>;}</div>
+<div class="line"><span class="lineno">  393</span> </div>
+<div class="line"><span class="lineno">  394</span>    AActor* targetActor = m_BlinkingActorAtAtCursor.Get();</div>
+<div class="line"><span class="lineno">  395</span>    <span class="keywordflow">if</span> (!targetActor) { <span class="keywordflow">return</span>; }</div>
+<div class="line"><span class="lineno">  396</span> </div>
+<div class="line"><span class="lineno">  397</span>    <span class="comment">//点滅処理</span></div>
+<div class="line"><span class="lineno">  398</span>    m_BlinkOutlineFunctor-&gt;OutlineBlink</div>
+<div class="line"><span class="lineno">  399</span>    (   targetActor, </div>
+<div class="line"><span class="lineno">  400</span>        meshComponent, </div>
+<div class="line"><span class="lineno">  401</span>        m_BlinkDatas.GetBlinkData(targetActor), </div>
+<div class="line"><span class="lineno">  402</span>        deltaTime);</div>
+<div class="line"><span class="lineno">  403</span>}</div>
+<div class="ttc" id="a_i_a_r_magnetizable_interface_8h_html_a760a20e19f697a134dbd351d65fd9d6ba6adf97f83acf6453d4a6a4b1070f3754"><div class="ttname"><a href="_i_a_r_magnetizable_interface_8h.html#a760a20e19f697a134dbd351d65fd9d6ba6adf97f83acf6453d4a6a4b1070f3754">EARMagnetismType::None</a></div><div class="ttdeci">@ None</div><div class="ttdef"><b>Definition</b> <a href="_i_a_r_magnetizable_interface_8h_source.html#l00028">IARMagnetizableInterface.h:28</a></div></div>
+<div class="ttc" id="aclass_i_a_r_magnetizable_interface_html_a02be84512faf14040407cc67b954bda9"><div class="ttname"><a href="class_i_a_r_magnetizable_interface.html#a02be84512faf14040407cc67b954bda9">IARMagnetizableInterface::GetMagnetismType</a></div><div class="ttdeci">EARMagnetismType GetMagnetismType() const</div><div class="ttdef"><b>Definition</b> <a href="_i_a_r_magnetizable_interface_8h_source.html#l00081">IARMagnetizableInterface.h:81</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a346d567c2948484b6ca9495727022fb4" name="a346d567c2948484b6ca9495727022fb4"></a>
@@ -371,43 +406,18 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_outline_tick_actor_8h_source.html#l00155">155</a> of file <a class="el" href="_outline_tick_actor_8h_source.html">OutlineTickActor.h</a>.</p>
-
-</div>
-</div>
-<a id="ac5a80e6a37ee5ea773ea051ecc3d58d9" name="ac5a80e6a37ee5ea773ea051ecc3d58d9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac5a80e6a37ee5ea773ea051ecc3d58d9">&#9670;&#160;</a></span>GetOutlineMaterial()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">UMaterialInterface * AOutlineTickActor::GetOutlineMaterial </td>
-          <td>(</td>
-          <td class="paramtype">AActor *</td>          <td class="paramname"><span class="paramname"><em>targetActor</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>そのアクターの状態にあったマテリアルを返す関数 </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">アウトラインを付ける対象アクター</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>アウトラインのマテリアル </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="_outline_tick_actor_8cpp_source.html#l00433">433</a> of file <a class="el" href="_outline_tick_actor_8cpp_source.html">OutlineTickActor.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  156</span>    {</div>
+<div class="line"><span class="lineno">  157</span>        TArray&lt;AActor*&gt; actors;</div>
+<div class="line"><span class="lineno">  158</span>        <span class="keywordflow">for</span> (<span class="keyword">const</span> FBlinkingTarget&amp; target : m_BlinkingActors)</div>
+<div class="line"><span class="lineno">  159</span>        {</div>
+<div class="line"><span class="lineno">  160</span>            <span class="keywordflow">if</span> (target._actor)</div>
+<div class="line"><span class="lineno">  161</span>            {</div>
+<div class="line"><span class="lineno">  162</span>                actors.Add(target._actor);</div>
+<div class="line"><span class="lineno">  163</span>            }</div>
+<div class="line"><span class="lineno">  164</span>        }</div>
+<div class="line"><span class="lineno">  165</span>        <span class="keywordflow">return</span> actors;</div>
+<div class="line"><span class="lineno">  166</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a4d6888dac79ed3ff9778e7e339155f10" name="a4d6888dac79ed3ff9778e7e339155f10"></a>
@@ -434,7 +444,8 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_outline_tick_actor_8h_source.html#l00169">169</a> of file <a class="el" href="_outline_tick_actor_8h_source.html">OutlineTickActor.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  169</span>{m_IsUpBlinkingActors = <span class="keyword">true</span>;}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a4f3fc14c480eb96d09c4bb9e9696633c" name="a4f3fc14c480eb96d09c4bb9e9696633c"></a>
@@ -461,7 +472,8 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_outline_tick_actor_8h_source.html#l00168">168</a> of file <a class="el" href="_outline_tick_actor_8h_source.html">OutlineTickActor.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  168</span>{m_IsUpOutlineActors = <span class="keyword">true</span>;}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a0492376362a1490c560c7c63e7de3562" name="a0492376362a1490c560c7c63e7de3562"></a>
@@ -488,7 +500,55 @@ Private Attributes</h2></td></tr>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="_outline_tick_actor_8cpp_source.html#l00289">289</a> of file <a class="el" href="_outline_tick_actor_8cpp_source.html">OutlineTickActor.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  290</span>{</div>
+<div class="line"><span class="lineno">  291</span>    <span class="keywordflow">if</span> (removeActor == <span class="keyword">nullptr</span>){ <span class="keywordflow">return</span>; }</div>
+<div class="line"><span class="lineno">  292</span> </div>
+<div class="line"><span class="lineno">  293</span>    <span class="comment">// 登録されているアクターかチェック</span></div>
+<div class="line"><span class="lineno">  294</span>    <span class="keywordflow">if</span>(!ContainsActor(removeActor)){ <span class="keywordflow">return</span>; }</div>
+<div class="line"><span class="lineno">  295</span> </div>
+<div class="line"><span class="lineno">  296</span>    <span class="comment">// オブジェクトのタイプをNoneに変化</span></div>
+<div class="line"><span class="lineno">  297</span>    <span class="keywordflow">if</span> (AMagnetizableActor* MagnetActor = Cast&lt;AMagnetizableActor&gt;(removeActor))</div>
+<div class="line"><span class="lineno">  298</span>    {</div>
+<div class="line"><span class="lineno">  299</span>        MagnetActor-&gt;SetMagnetismType(<a class="code hl_enumvalue" href="_i_a_r_magnetizable_interface_8h.html#a760a20e19f697a134dbd351d65fd9d6ba6adf97f83acf6453d4a6a4b1070f3754">EARMagnetismType::None</a>);</div>
+<div class="line"><span class="lineno">  300</span>    }</div>
+<div class="line"><span class="lineno">  301</span> </div>
+<div class="line"><span class="lineno">  302</span>    <span class="comment">// 妥協処理</span></div>
+<div class="line"><span class="lineno">  303</span>    <span class="keywordflow">if</span> (AMagnetizableActor* MagnetActor = Cast&lt;AMagnetizableActor&gt;(removeActor))</div>
+<div class="line"><span class="lineno">  304</span>    {</div>
+<div class="line"><span class="lineno">  305</span>        MagnetActor-&gt;DynamicBlinkMaterial = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  306</span>        MagnetActor-&gt;ElapsedBlinkTime = 0.f;</div>
+<div class="line"><span class="lineno">  307</span>        MagnetActor-&gt;SetCanSetMagnetismType(<span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">  308</span>    }   </div>
+<div class="line"><span class="lineno">  309</span>    </div>
+<div class="line"><span class="lineno">  310</span>    <span class="comment">// アウトライン解除</span></div>
+<div class="line"><span class="lineno">  311</span>    UMeshComponent* meshComp = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  312</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> FBlinkingTarget&amp; target : m_BlinkingActors)</div>
+<div class="line"><span class="lineno">  313</span>    {</div>
+<div class="line"><span class="lineno">  314</span>        <span class="keywordflow">if</span> (target._actor == removeActor)</div>
+<div class="line"><span class="lineno">  315</span>        {</div>
+<div class="line"><span class="lineno">  316</span>            meshComp = target._meshComponent;</div>
+<div class="line"><span class="lineno">  317</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  318</span>        }</div>
+<div class="line"><span class="lineno">  319</span>    }</div>
+<div class="line"><span class="lineno">  320</span>    <span class="keywordflow">if</span> (meshComp != <span class="keyword">nullptr</span> &amp;&amp; meshComp-&gt;GetOverlayMaterial() != <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">  321</span>    {</div>
+<div class="line"><span class="lineno">  322</span>        meshComp-&gt;SetOverlayMaterial(<span class="keyword">nullptr</span>);</div>
+<div class="line"><span class="lineno">  323</span>    }</div>
+<div class="line"><span class="lineno">  324</span> </div>
+<div class="line"><span class="lineno">  325</span>    <span class="comment">// 登録されている配列から削除する</span></div>
+<div class="line"><span class="lineno">  326</span>    m_BlinkingActors.RemoveAll([removeActor](<span class="keyword">const</span> FBlinkingTarget&amp; target) </div>
+<div class="line"><span class="lineno">  327</span>    {</div>
+<div class="line"><span class="lineno">  328</span>        <span class="keywordflow">return</span> target.<a class="code hl_variable" href="struct_f_blinking_target.html#a4eabacb754088a1dc2d5df74aa4b779c">_actor</a> == removeActor;</div>
+<div class="line"><span class="lineno">  329</span>    });</div>
+<div class="line"><span class="lineno">  330</span> </div>
+<div class="line"><span class="lineno">  331</span>    <span class="comment">// システム側の配列からも削除</span></div>
+<div class="line"><span class="lineno">  332</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="#aa3d6dba39e4e43c4352b69005e629ac2">OnRequestRemoveBlinkingActor</a> != <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">  333</span>    {</div>
+<div class="line"><span class="lineno">  334</span>        <a class="code hl_variable" href="#aa3d6dba39e4e43c4352b69005e629ac2">OnRequestRemoveBlinkingActor</a>(removeActor);</div>
+<div class="line"><span class="lineno">  335</span>    }</div>
+<div class="line"><span class="lineno">  336</span>}</div>
+<div class="ttc" id="aclass_a_outline_tick_actor_html_aa3d6dba39e4e43c4352b69005e629ac2"><div class="ttname"><a href="#aa3d6dba39e4e43c4352b69005e629ac2">AOutlineTickActor::OnRequestRemoveBlinkingActor</a></div><div class="ttdeci">TFunction&lt; void(AActor *)&gt; OnRequestRemoveBlinkingActor</div><div class="ttdef"><b>Definition</b> <a href="_outline_tick_actor_8h_source.html#l00172">OutlineTickActor.h:172</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a4074718df38be2910304679ebe1a8e25" name="a4074718df38be2910304679ebe1a8e25"></a>
@@ -515,7 +575,13 @@ Private Attributes</h2></td></tr>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="_outline_tick_actor_8cpp_source.html#l00343">343</a> of file <a class="el" href="_outline_tick_actor_8cpp_source.html">OutlineTickActor.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  344</span>{</div>
+<div class="line"><span class="lineno">  345</span>    <span class="keywordflow">if</span>(targetObject != <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">  346</span>    {</div>
+<div class="line"><span class="lineno">  347</span>        m_BlinkingActorAtAtCursor = targetObject;</div>
+<div class="line"><span class="lineno">  348</span>    }</div>
+<div class="line"><span class="lineno">  349</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a93548e6daf266d8d36068666e34698a7" name="a93548e6daf266d8d36068666e34698a7"></a>
@@ -542,7 +608,71 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_outline_tick_actor_8cpp_source.html#l00026">26</a> of file <a class="el" href="_outline_tick_actor_8cpp_source.html">OutlineTickActor.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   27</span>{</div>
+<div class="line"><span class="lineno">   28</span>    Super::Tick(DeltaTime);</div>
+<div class="line"><span class="lineno">   29</span> </div>
+<div class="line"><span class="lineno">   30</span>    <span class="comment">// 参照配列に変更があれば反映</span></div>
+<div class="line"><span class="lineno">   31</span>    <a class="code hl_function" href="#ac76dc6ef13573ee8e6bb29c64a91f2bc">UpdateOutlineTargets</a>();</div>
+<div class="line"><span class="lineno">   32</span>    <span class="comment">//UpdateBlinkingTargets();</span></div>
+<div class="line"><span class="lineno">   33</span> </div>
+<div class="line"><span class="lineno">   34</span>    <span class="keywordflow">if</span>(m_BlinkingActorAtAtCursor != <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">   35</span>    {</div>
+<div class="line"><span class="lineno">   36</span>        <a class="code hl_function" href="#a88a9350ca6bea1c6374d39cfc6d433ac">BlinkOutlineActorAtCursor</a>(DeltaTime);</div>
+<div class="line"><span class="lineno">   37</span>    }</div>
+<div class="line"><span class="lineno">   38</span> </div>
+<div class="line"><span class="lineno">   39</span>    <span class="comment">// 登録されたアクターにアウトラインを付け点滅させる</span></div>
+<div class="line"><span class="lineno">   40</span>    <span class="keywordflow">for</span> (int32 i = 0; i &lt; m_BlinkingActors.Num(); ++i)</div>
+<div class="line"><span class="lineno">   41</span>    {</div>
+<div class="line"><span class="lineno">   42</span>        <span class="keywordflow">if</span> (m_BlinkingActors[i]._actor == <span class="keyword">nullptr</span> || m_BlinkingActors[i]._meshComponent == <span class="keyword">nullptr</span> ) {<span class="keywordflow">continue</span>;}</div>
+<div class="line"><span class="lineno">   43</span>        </div>
+<div class="line"><span class="lineno">   44</span>        <span class="comment">/*点滅させる(引数：対象アクター, 対象アクターのコンポーネント, 対象アクターに対応した点滅に関するデータ, １フレームの時間)*/</span> </div>
+<div class="line"><span class="lineno">   45</span>        m_BlinkOutlineFunctor-&gt;OutlineBlink(</div>
+<div class="line"><span class="lineno">   46</span>            m_BlinkingActors[i]._actor,</div>
+<div class="line"><span class="lineno">   47</span>            m_BlinkingActors[i]._meshComponent,</div>
+<div class="line"><span class="lineno">   48</span>            m_BlinkDatas.GetBlinkData(m_BlinkingActors[i]._actor),</div>
+<div class="line"><span class="lineno">   49</span>            DeltaTime );</div>
+<div class="line"><span class="lineno">   50</span>    }</div>
+<div class="line"><span class="lineno">   51</span> </div>
+<div class="line"><span class="lineno">   52</span>    <span class="comment">/*デバッグ用*/</span></div>
+<div class="line"><span class="lineno">   53</span>    <span class="comment">// if (GEngine)</span></div>
+<div class="line"><span class="lineno">   54</span>    <span class="comment">// {</span></div>
+<div class="line"><span class="lineno">   55</span>    <span class="comment">//  for (int32 i = 0; i &lt; m_BlinkingActors.Num(); ++i)</span></div>
+<div class="line"><span class="lineno">   56</span>    <span class="comment">//  {</span></div>
+<div class="line"><span class="lineno">   57</span>    <span class="comment">//      const FBlinkingTarget&amp; Target = m_BlinkingActors[i];</span></div>
+<div class="line"><span class="lineno">   58</span>    <span class="comment">//      FString ActorName = Target._actor ? Target._actor-&gt;GetName() : TEXT(&quot;None&quot;);</span></div>
+<div class="line"><span class="lineno">   59</span> </div>
+<div class="line"><span class="lineno">   60</span>    <span class="comment">//      FString LogMessage = FString::Printf(TEXT(&quot;BlinkingActor[%d]: %s&quot;), i, *ActorName);</span></div>
+<div class="line"><span class="lineno">   61</span> </div>
+<div class="line"><span class="lineno">   62</span>    <span class="comment">//      GEngine-&gt;AddOnScreenDebugMessage(</span></div>
+<div class="line"><span class="lineno">   63</span>    <span class="comment">//          -1,                // Key (-1 = 自動割り当て)</span></div>
+<div class="line"><span class="lineno">   64</span>    <span class="comment">//          5.0f,              // 表示時間（秒）</span></div>
+<div class="line"><span class="lineno">   65</span>    <span class="comment">//          FColor::Green,     // 色</span></div>
+<div class="line"><span class="lineno">   66</span>    <span class="comment">//          LogMessage         // 表示内容</span></div>
+<div class="line"><span class="lineno">   67</span>    <span class="comment">//      );</span></div>
+<div class="line"><span class="lineno">   68</span>    <span class="comment">//  }</span></div>
+<div class="line"><span class="lineno">   69</span>    <span class="comment">// }</span></div>
+<div class="line"><span class="lineno">   70</span> </div>
+<div class="line"><span class="lineno">   71</span>    <span class="comment">// if (GEngine &amp;&amp; m_BlinkingActorsReference)</span></div>
+<div class="line"><span class="lineno">   72</span>    <span class="comment">// {</span></div>
+<div class="line"><span class="lineno">   73</span>    <span class="comment">//  for (int32 i = 0; i &lt; m_BlinkingActorsReference-&gt;Num(); ++i)</span></div>
+<div class="line"><span class="lineno">   74</span>    <span class="comment">//  {</span></div>
+<div class="line"><span class="lineno">   75</span>    <span class="comment">//      AActor* Target = (*m_BlinkingActorsReference)[i].Get();</span></div>
+<div class="line"><span class="lineno">   76</span>    <span class="comment">//      FString ActorName = Target ? Target-&gt;GetName() : TEXT(&quot;None&quot;);</span></div>
+<div class="line"><span class="lineno">   77</span> </div>
+<div class="line"><span class="lineno">   78</span>    <span class="comment">//      FString LogMessage = FString::Printf(TEXT(&quot;BlinkingActor[%d]: %s&quot;), i, *ActorName);</span></div>
+<div class="line"><span class="lineno">   79</span> </div>
+<div class="line"><span class="lineno">   80</span>    <span class="comment">//      GEngine-&gt;AddOnScreenDebugMessage(</span></div>
+<div class="line"><span class="lineno">   81</span>    <span class="comment">//          -1,                // Key (-1 = 自動割り当て)</span></div>
+<div class="line"><span class="lineno">   82</span>    <span class="comment">//          5.0f,              // 表示時間（秒）</span></div>
+<div class="line"><span class="lineno">   83</span>    <span class="comment">//          FColor::Blue,      // 色</span></div>
+<div class="line"><span class="lineno">   84</span>    <span class="comment">//          LogMessage         // 表示内容</span></div>
+<div class="line"><span class="lineno">   85</span>    <span class="comment">//      );</span></div>
+<div class="line"><span class="lineno">   86</span>    <span class="comment">//  }</span></div>
+<div class="line"><span class="lineno">   87</span>    <span class="comment">// }</span></div>
+<div class="line"><span class="lineno">   88</span>}</div>
+<div class="ttc" id="aclass_a_outline_tick_actor_html_a88a9350ca6bea1c6374d39cfc6d433ac"><div class="ttname"><a href="#a88a9350ca6bea1c6374d39cfc6d433ac">AOutlineTickActor::BlinkOutlineActorAtCursor</a></div><div class="ttdeci">void BlinkOutlineActorAtCursor(float deltaTime)</div><div class="ttdoc">カーソルのある付与可能なオブジェクトのアウトラインを点滅させる</div><div class="ttdef"><b>Definition</b> <a href="_outline_tick_actor_8cpp_source.html#l00370">OutlineTickActor.cpp:370</a></div></div>
+<div class="ttc" id="aclass_a_outline_tick_actor_html_ac76dc6ef13573ee8e6bb29c64a91f2bc"><div class="ttname"><a href="#ac76dc6ef13573ee8e6bb29c64a91f2bc">AOutlineTickActor::UpdateOutlineTargets</a></div><div class="ttdeci">void UpdateOutlineTargets()</div><div class="ttdoc">対象のオブジェクトにアウトラインを適用する</div><div class="ttdef"><b>Definition</b> <a href="_outline_tick_actor_8cpp_source.html#l00117">OutlineTickActor.cpp:117</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a77c70f029a7fd0c452fbdeaa4bd7d9cb" name="a77c70f029a7fd0c452fbdeaa4bd7d9cb"></a>
@@ -569,36 +699,14 @@ Private Attributes</h2></td></tr>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="_outline_tick_actor_8cpp_source.html#l00356">356</a> of file <a class="el" href="_outline_tick_actor_8cpp_source.html">OutlineTickActor.cpp</a>.</p>
-
-</div>
-</div>
-<a id="ac8f1711d2207bb8c6f9bf2b5e015ce60" name="ac8f1711d2207bb8c6f9bf2b5e015ce60"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac8f1711d2207bb8c6f9bf2b5e015ce60">&#9670;&#160;</a></span>UpdateBlinkingTargets()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void AOutlineTickActor::UpdateBlinkingTargets </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>点滅させる対象のアクターのデータ構造体から変更分を更新する </p>
-
-<p class="definition">Definition at line <a class="el" href="_outline_tick_actor_8cpp_source.html#l00207">207</a> of file <a class="el" href="_outline_tick_actor_8cpp_source.html">OutlineTickActor.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  357</span>{</div>
+<div class="line"><span class="lineno">  358</span>    m_BlinkingActorAtAtCursor = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  359</span>    <span class="keywordflow">if</span>(targetObject != <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">  360</span>    {</div>
+<div class="line"><span class="lineno">  361</span>        m_BlinkOutlineFunctor-&gt;ResetMaterialParam(targetObject);</div>
+<div class="line"><span class="lineno">  362</span>    }</div>
+<div class="line"><span class="lineno">  363</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac76dc6ef13573ee8e6bb29c64a91f2bc" name="ac76dc6ef13573ee8e6bb29c64a91f2bc"></a>
@@ -619,226 +727,94 @@ Private Attributes</h2></td></tr>
 <p>対象のオブジェクトにアウトラインを適用する </p>
 
 <p class="definition">Definition at line <a class="el" href="_outline_tick_actor_8cpp_source.html#l00117">117</a> of file <a class="el" href="_outline_tick_actor_8cpp_source.html">OutlineTickActor.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  118</span>{</div>
+<div class="line"><span class="lineno">  119</span>    <span class="keywordflow">if</span> (m_OutlineActorsReference == <span class="keyword">nullptr</span>) <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  120</span> </div>
+<div class="line"><span class="lineno">  121</span>    <span class="comment">// 新しい参照リスト（仮定：TArray&lt;AActor*&gt; など）</span></div>
+<div class="line"><span class="lineno">  122</span>    TArray&lt;TWeakObjectPtr&lt;AActor&gt;&gt;&amp; currentActors = *m_OutlineActorsReference;</div>
+<div class="line"><span class="lineno">  123</span> </div>
+<div class="line"><span class="lineno">  124</span>    <span class="comment">// すでに管理しているアクターと比較して差分を見つける</span></div>
+<div class="line"><span class="lineno">  125</span>    <span class="keywordflow">for</span> (TWeakObjectPtr&lt;AActor&gt; actorPtr : *m_OutlineActorsReference)</div>
+<div class="line"><span class="lineno">  126</span>    {</div>
+<div class="line"><span class="lineno">  127</span>        AActor* targetactor = actorPtr.Get();</div>
+<div class="line"><span class="lineno">  128</span>        <span class="keywordflow">if</span> (targetactor == <span class="keyword">nullptr</span>) <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">  129</span>    </div>
+<div class="line"><span class="lineno">  130</span>        <span class="comment">// タグ付きのメッシュコンポーネントを探す</span></div>
+<div class="line"><span class="lineno">  131</span>        UMeshComponent* meshComp = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  132</span>        TArray&lt;UMeshComponent*&gt; meshComponents;</div>
+<div class="line"><span class="lineno">  133</span>        targetactor-&gt;GetComponents(meshComponents);</div>
+<div class="line"><span class="lineno">  134</span>        <span class="keywordflow">for</span> (UMeshComponent* comp : meshComponents)</div>
+<div class="line"><span class="lineno">  135</span>        {</div>
+<div class="line"><span class="lineno">  136</span>            <span class="keywordflow">if</span> (comp &amp;&amp; comp-&gt;ComponentHasTag(TEXT(<span class="stringliteral">&quot;OutLineMeshComponent&quot;</span>)))</div>
+<div class="line"><span class="lineno">  137</span>            {</div>
+<div class="line"><span class="lineno">  138</span>                meshComp = comp;</div>
+<div class="line"><span class="lineno">  139</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  140</span>            }</div>
+<div class="line"><span class="lineno">  141</span>        }</div>
+<div class="line"><span class="lineno">  142</span> </div>
+<div class="line"><span class="lineno">  143</span>        <span class="keywordflow">if</span>(meshComp == <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">  144</span>        {</div>
+<div class="line"><span class="lineno">  145</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  146</span>        }</div>
+<div class="line"><span class="lineno">  147</span>        <span class="comment">// リストに合ってアウトラインが適用されていないオブジェクトにアウトラインを適用</span></div>
+<div class="line"><span class="lineno">  148</span>        <span class="keywordflow">if</span>(meshComp-&gt;GetOverlayMaterial() == <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">  149</span>        {</div>
+<div class="line"><span class="lineno">  150</span>            meshComp-&gt;SetOverlayMaterial(GetOutlineMaterial(targetactor));;</div>
+<div class="line"><span class="lineno">  151</span>        }</div>
+<div class="line"><span class="lineno">  152</span> </div>
+<div class="line"><span class="lineno">  153</span>        <span class="comment">// すでに追加済みかチェック</span></div>
+<div class="line"><span class="lineno">  154</span>        <span class="keywordtype">bool</span> bAlreadyRegistered = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  155</span>        <span class="keywordflow">for</span> (<span class="keyword">const</span> FBlinkingTarget&amp; target : m_OutlineActors)</div>
+<div class="line"><span class="lineno">  156</span>        {</div>
+<div class="line"><span class="lineno">  157</span>            <span class="keywordflow">if</span> (target._actor == targetactor)</div>
+<div class="line"><span class="lineno">  158</span>            {</div>
+<div class="line"><span class="lineno">  159</span>                bAlreadyRegistered = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  160</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  161</span>            }</div>
+<div class="line"><span class="lineno">  162</span>        }</div>
+<div class="line"><span class="lineno">  163</span>        <span class="keywordflow">if</span> (bAlreadyRegistered) {<span class="keywordflow">continue</span>;}</div>
+<div class="line"><span class="lineno">  164</span> </div>
+<div class="line"><span class="lineno">  165</span> </div>
+<div class="line"><span class="lineno">  166</span>        <span class="keywordflow">if</span> (meshComp == <span class="keyword">nullptr</span>) {<span class="keywordflow">continue</span>;}</div>
+<div class="line"><span class="lineno">  167</span> </div>
+<div class="line"><span class="lineno">  168</span>        <span class="comment">// アウトライン適用</span></div>
+<div class="line"><span class="lineno">  169</span>        meshComp-&gt;SetOverlayMaterial(GetOutlineMaterial(targetactor));</div>
+<div class="line"><span class="lineno">  170</span> </div>
+<div class="line"><span class="lineno">  171</span>        <span class="comment">// m_OutlineActors に追加</span></div>
+<div class="line"><span class="lineno">  172</span>        FBlinkingTarget newTarget;</div>
+<div class="line"><span class="lineno">  173</span>        newTarget.<a class="code hl_variable" href="struct_f_blinking_target.html#a4eabacb754088a1dc2d5df74aa4b779c">_actor</a> = targetactor;</div>
+<div class="line"><span class="lineno">  174</span>        newTarget.<a class="code hl_variable" href="struct_f_blinking_target.html#a3f170d6d374e886cb3bf5e45a1caa6c6">_meshComponent</a> = meshComp;</div>
+<div class="line"><span class="lineno">  175</span>        m_OutlineActors.Add(newTarget);</div>
+<div class="line"><span class="lineno">  176</span>    }</div>
+<div class="line"><span class="lineno">  177</span> </div>
+<div class="line"><span class="lineno">  178</span>    <span class="comment">// 削除するターゲットを一時保持</span></div>
+<div class="line"><span class="lineno">  179</span>    TArray&lt;int32&gt; RemovetargetsIndex;</div>
+<div class="line"><span class="lineno">  180</span>    <span class="comment">// リストからなくなったものは削除</span></div>
+<div class="line"><span class="lineno">  181</span>    <span class="keywordflow">for</span> (int32 i = m_OutlineActors.Num() - 1; i &gt;= 0; --i)</div>
+<div class="line"><span class="lineno">  182</span>    {</div>
+<div class="line"><span class="lineno">  183</span>        FBlinkingTarget&amp; target = m_OutlineActors[i];</div>
+<div class="line"><span class="lineno">  184</span>        <span class="keywordflow">if</span> (!target.<a class="code hl_variable" href="struct_f_blinking_target.html#a4eabacb754088a1dc2d5df74aa4b779c">_actor</a> || !currentActors.Contains(target.<a class="code hl_variable" href="struct_f_blinking_target.html#a4eabacb754088a1dc2d5df74aa4b779c">_actor</a>))</div>
+<div class="line"><span class="lineno">  185</span>        {</div>
+<div class="line"><span class="lineno">  186</span>            <span class="comment">// アウトライン解除</span></div>
+<div class="line"><span class="lineno">  187</span>            <span class="keywordflow">if</span> (target.<a class="code hl_variable" href="struct_f_blinking_target.html#a3f170d6d374e886cb3bf5e45a1caa6c6">_meshComponent</a>)</div>
+<div class="line"><span class="lineno">  188</span>            {</div>
+<div class="line"><span class="lineno">  189</span>                target.<a class="code hl_variable" href="struct_f_blinking_target.html#a3f170d6d374e886cb3bf5e45a1caa6c6">_meshComponent</a>-&gt;SetOverlayMaterial(<span class="keyword">nullptr</span>);</div>
+<div class="line"><span class="lineno">  190</span>            }</div>
+<div class="line"><span class="lineno">  191</span>            <span class="comment">// 削除するリストに追加する</span></div>
+<div class="line"><span class="lineno">  192</span>            RemovetargetsIndex.Add(i);</div>
+<div class="line"><span class="lineno">  193</span>        }</div>
+<div class="line"><span class="lineno">  194</span>    }</div>
+<div class="line"><span class="lineno">  195</span> </div>
+<div class="line"><span class="lineno">  196</span>    <span class="keywordflow">for</span>(int32 idx : RemovetargetsIndex)</div>
+<div class="line"><span class="lineno">  197</span>    {</div>
+<div class="line"><span class="lineno">  198</span>        <span class="comment">// リストから削除</span></div>
+<div class="line"><span class="lineno">  199</span>        m_OutlineActors.RemoveAt(idx);</div>
+<div class="line"><span class="lineno">  200</span>    }</div>
+<div class="line"><span class="lineno">  201</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
-<a id="a9520c2530d683ef650595e4bc108c710" name="a9520c2530d683ef650595e4bc108c710"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9520c2530d683ef650595e4bc108c710">&#9670;&#160;</a></span>m_BlinkDatas</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="struct_f_blink_data_set.html">FBlinkDataSet</a> AOutlineTickActor::m_BlinkDatas</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_outline_tick_actor_8h_source.html#l00204">204</a> of file <a class="el" href="_outline_tick_actor_8h_source.html">OutlineTickActor.h</a>.</p>
-
-</div>
-</div>
-<a id="a7148ae5f9e1063caeebef38776aa8a6d" name="a7148ae5f9e1063caeebef38776aa8a6d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7148ae5f9e1063caeebef38776aa8a6d">&#9670;&#160;</a></span>m_BlinkingActorAtAtCursor</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">TWeakObjectPtr&lt;AActor&gt; AOutlineTickActor::m_BlinkingActorAtAtCursor</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_outline_tick_actor_8h_source.html#l00206">206</a> of file <a class="el" href="_outline_tick_actor_8h_source.html">OutlineTickActor.h</a>.</p>
-
-</div>
-</div>
-<a id="abc56416bf305587d6f1216ce29beaefb" name="abc56416bf305587d6f1216ce29beaefb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abc56416bf305587d6f1216ce29beaefb">&#9670;&#160;</a></span>m_BlinkingActors</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">TArray&lt;<a class="el" href="struct_f_blinking_target.html">FBlinkingTarget</a>&gt; AOutlineTickActor::m_BlinkingActors</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_outline_tick_actor_8h_source.html#l00202">202</a> of file <a class="el" href="_outline_tick_actor_8h_source.html">OutlineTickActor.h</a>.</p>
-
-</div>
-</div>
-<a id="ad7b8bb2571bb9577a5081f794851b76e" name="ad7b8bb2571bb9577a5081f794851b76e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad7b8bb2571bb9577a5081f794851b76e">&#9670;&#160;</a></span>m_BlinkingActorsReference</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">TArray&lt;TWeakObjectPtr&lt;AActor&gt; &gt;* AOutlineTickActor::m_BlinkingActorsReference</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_outline_tick_actor_8h_source.html#l00208">208</a> of file <a class="el" href="_outline_tick_actor_8h_source.html">OutlineTickActor.h</a>.</p>
-
-</div>
-</div>
-<a id="a8d93b5bae3533c7435cdd6354d6e453f" name="a8d93b5bae3533c7435cdd6354d6e453f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8d93b5bae3533c7435cdd6354d6e453f">&#9670;&#160;</a></span>m_BlinkOutlineFunctor</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_blink_outline_functor.html">BlinkOutlineFunctor</a>* AOutlineTickActor::m_BlinkOutlineFunctor</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_outline_tick_actor_8h_source.html#l00209">209</a> of file <a class="el" href="_outline_tick_actor_8h_source.html">OutlineTickActor.h</a>.</p>
-
-</div>
-</div>
-<a id="aed69f080c09ae112ed1ffa5b0fc6a747" name="aed69f080c09ae112ed1ffa5b0fc6a747"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed69f080c09ae112ed1ffa5b0fc6a747">&#9670;&#160;</a></span>m_IsUpBlinkingActors</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool AOutlineTickActor::m_IsUpBlinkingActors</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_outline_tick_actor_8h_source.html#l00211">211</a> of file <a class="el" href="_outline_tick_actor_8h_source.html">OutlineTickActor.h</a>.</p>
-
-</div>
-</div>
-<a id="a09ab25fb325c08e7ab7f79347088daea" name="a09ab25fb325c08e7ab7f79347088daea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a09ab25fb325c08e7ab7f79347088daea">&#9670;&#160;</a></span>m_IsUpOutlineActors</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool AOutlineTickActor::m_IsUpOutlineActors</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_outline_tick_actor_8h_source.html#l00210">210</a> of file <a class="el" href="_outline_tick_actor_8h_source.html">OutlineTickActor.h</a>.</p>
-
-</div>
-</div>
-<a id="afe4ebea73da505e9d3c2f2b430fa33c0" name="afe4ebea73da505e9d3c2f2b430fa33c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afe4ebea73da505e9d3c2f2b430fa33c0">&#9670;&#160;</a></span>m_OutlineActors</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">TArray&lt;<a class="el" href="struct_f_blinking_target.html">FBlinkingTarget</a>&gt; AOutlineTickActor::m_OutlineActors</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_outline_tick_actor_8h_source.html#l00200">200</a> of file <a class="el" href="_outline_tick_actor_8h_source.html">OutlineTickActor.h</a>.</p>
-
-</div>
-</div>
-<a id="ac02d43a485908929c216b6421e4a1e4b" name="ac02d43a485908929c216b6421e4a1e4b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac02d43a485908929c216b6421e4a1e4b">&#9670;&#160;</a></span>m_OutlineActorsReference</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">TArray&lt;TWeakObjectPtr&lt;AActor&gt; &gt;* AOutlineTickActor::m_OutlineActorsReference</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_outline_tick_actor_8h_source.html#l00207">207</a> of file <a class="el" href="_outline_tick_actor_8h_source.html">OutlineTickActor.h</a>.</p>
-
-</div>
-</div>
 <a id="aa3d6dba39e4e43c4352b69005e629ac2" name="aa3d6dba39e4e43c4352b69005e629ac2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa3d6dba39e4e43c4352b69005e629ac2">&#9670;&#160;</a></span>OnRequestRemoveBlinkingActor</h2>
 
@@ -856,8 +832,8 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>D:/GithubRepository/ARRanger/Source/ARRanger/Public/BlinkingSystem/<a class="el" href="_outline_tick_actor_8h_source.html">OutlineTickActor.h</a></li>
-<li>D:/GithubRepository/ARRanger/Source/ARRanger/Private/BlinkingSystem/<a class="el" href="_outline_tick_actor_8cpp_source.html">OutlineTickActor.cpp</a></li>
+<li>ARRanger/Public/BlinkingSystem/<a class="el" href="_outline_tick_actor_8h_source.html">OutlineTickActor.h</a></li>
+<li>ARRanger/Private/BlinkingSystem/<a class="el" href="_outline_tick_actor_8cpp_source.html">OutlineTickActor.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

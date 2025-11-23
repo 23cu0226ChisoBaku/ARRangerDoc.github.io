@@ -96,17 +96,17 @@ $(function(){initNavTree('class_i_a_r_battle_notify_handler.html','','class_i_a_
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9cf58227df159c3b7a4381b9c279bb11" id="r_a9cf58227df159c3b7a4381b9c279bb11"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_i_a_r_battle_notify_handler_8h.html#a578eb926c8aecdf908e1338b2e893458">UE_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9cf58227df159c3b7a4381b9c279bb11">NotifyBattleState</a> (<a class="el" href="_i_a_r_battle_notify_handler_8h.html#ad8d843227c299ad6c01f7868e80ae313">EARBattleState</a> InState)</td></tr>
-<tr class="memdesc:a9cf58227df159c3b7a4381b9c279bb11"><td class="mdescLeft">&#160;</td><td class="mdescRight">戦闘状態通知を送る  <br /></td></tr>
-<tr class="memitem:ab132e7a00880a5a322be35141cb928b8" id="r_ab132e7a00880a5a322be35141cb928b8"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_i_a_r_battle_notify_handler_8h.html#a578eb926c8aecdf908e1338b2e893458">UE_API</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab132e7a00880a5a322be35141cb928b8">IsInBattle</a> () const</td></tr>
-<tr class="memdesc:ab132e7a00880a5a322be35141cb928b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">戦闘状態中かを確認する  <br /></td></tr>
+<tr class="memitem:ab43d62cbc7d54fd4bc09d4b661c62d22" id="r_ab43d62cbc7d54fd4bc09d4b661c62d22"><td class="memItemLeft" align="right" valign="top">virtual ARRANGER_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab43d62cbc7d54fd4bc09d4b661c62d22">NotifyBattleState</a> (<a class="el" href="_i_a_r_battle_notify_handler_8h.html#ad8d843227c299ad6c01f7868e80ae313">EARBattleState</a> InState)</td></tr>
+<tr class="memdesc:ab43d62cbc7d54fd4bc09d4b661c62d22"><td class="mdescLeft">&#160;</td><td class="mdescRight">戦闘状態通知を送る  <br /></td></tr>
+<tr class="memitem:a6e0d67d35ccb8d4aa8c3ab1f8b2afaca" id="r_a6e0d67d35ccb8d4aa8c3ab1f8b2afaca"><td class="memItemLeft" align="right" valign="top">virtual ARRANGER_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6e0d67d35ccb8d4aa8c3ab1f8b2afaca">IsInBattle</a> () const</td></tr>
+<tr class="memdesc:a6e0d67d35ccb8d4aa8c3ab1f8b2afaca"><td class="mdescLeft">&#160;</td><td class="mdescRight">戦闘状態中かを確認する  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock">
 <p class="definition">Definition at line <a class="el" href="_i_a_r_battle_notify_handler_8h_source.html#l00024">24</a> of file <a class="el" href="_i_a_r_battle_notify_handler_8h_source.html">IARBattleNotifyHandler.h</a>.</p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="ab132e7a00880a5a322be35141cb928b8" name="ab132e7a00880a5a322be35141cb928b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab132e7a00880a5a322be35141cb928b8">&#9670;&#160;</a></span>IsInBattle()</h2>
+<a id="a6e0d67d35ccb8d4aa8c3ab1f8b2afaca" name="a6e0d67d35ccb8d4aa8c3ab1f8b2afaca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e0d67d35ccb8d4aa8c3ab1f8b2afaca">&#9670;&#160;</a></span>IsInBattle()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -115,7 +115,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="_i_a_r_battle_notify_handler_8h.html#a578eb926c8aecdf908e1338b2e893458">UE_API</a> bool IARBattleNotifyHandler::IsInBattle </td>
+          <td class="memname">virtual ARRANGER_API bool IARBattleNotifyHandler::IsInBattle </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -132,11 +132,12 @@ Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>boolean </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_i_a_r_battle_notify_handler_8h_source.html#l00040">40</a> of file <a class="el" href="_i_a_r_battle_notify_handler_8h_source.html">IARBattleNotifyHandler.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   40</span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
-<a id="a9cf58227df159c3b7a4381b9c279bb11" name="a9cf58227df159c3b7a4381b9c279bb11"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9cf58227df159c3b7a4381b9c279bb11">&#9670;&#160;</a></span>NotifyBattleState()</h2>
+<a id="ab43d62cbc7d54fd4bc09d4b661c62d22" name="ab43d62cbc7d54fd4bc09d4b661c62d22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab43d62cbc7d54fd4bc09d4b661c62d22">&#9670;&#160;</a></span>NotifyBattleState()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -145,7 +146,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="_i_a_r_battle_notify_handler_8h.html#a578eb926c8aecdf908e1338b2e893458">UE_API</a> void IARBattleNotifyHandler::NotifyBattleState </td>
+          <td class="memname">virtual ARRANGER_API void IARBattleNotifyHandler::NotifyBattleState </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="_i_a_r_battle_notify_handler_8h.html#ad8d843227c299ad6c01f7868e80ae313">EARBattleState</a></td>          <td class="paramname"><span class="paramname"><em>InState</em></span></td><td>)</td>
           <td></td>
@@ -161,11 +162,12 @@ Public Member Functions</h2></td></tr>
 <p>戦闘状態通知を送る </p>
 
 <p class="definition">Definition at line <a class="el" href="_i_a_r_battle_notify_handler_8h_source.html#l00034">34</a> of file <a class="el" href="_i_a_r_battle_notify_handler_8h_source.html">IARBattleNotifyHandler.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   34</span>{}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>D:/GithubRepository/ARRanger/Source/ARRanger/Public/BattleSystem/<a class="el" href="_i_a_r_battle_notify_handler_8h_source.html">IARBattleNotifyHandler.h</a></li>
+<li>ARRanger/Public/BattleSystem/<a class="el" href="_i_a_r_battle_notify_handler_8h_source.html">IARBattleNotifyHandler.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

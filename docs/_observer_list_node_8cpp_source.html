@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ARRanger: D:/GithubRepository/ARRanger/Source/ARRanger/Private/PlayerObservation/ObserverListNode.cpp Source File</title>
+<title>ARRanger: ARRanger/Private/PlayerObservation/ObserverListNode.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -99,8 +99,8 @@ $(function(){initNavTree('_observer_list_node_8cpp_source.html','',''); });
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>{</div>
 <div class="foldopen" id="foldopen00007" data-start="{" data-end="}">
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_a_r_ranger_1_1_f_observer_list_node.html#a832e542087e99fb7a42d2875e9240e01">    7</a></span>  <a class="code hl_function" href="class_a_r_ranger_1_1_f_observer_list_node.html#a832e542087e99fb7a42d2875e9240e01">FObserverListNode::FObserverListNode</a>()</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    : <a class="code hl_variable" href="class_a_r_ranger_1_1_f_observer_list_node.html#aedab620bd8e494ddd553ff7f00c62fc3">m_nextNodePtr</a>{nullptr}</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    , <a class="code hl_variable" href="class_a_r_ranger_1_1_f_observer_list_node.html#a39defbbab4532966f68fc3137d484f89">m_proxyRootNodePtr</a>{nullptr}</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    : m_nextNodePtr{nullptr}</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    , m_proxyRootNodePtr{nullptr}</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>  { }</div>
 </div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
@@ -114,31 +114,31 @@ $(function(){initNavTree('_observer_list_node_8cpp_source.html','',''); });
 <div class="foldopen" id="foldopen00017" data-start="{" data-end="}">
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_a_r_ranger_1_1_f_observer_list_node.html#a82e93d6df5f96078b39c1ef4d334af72">   17</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_a_r_ranger_1_1_f_observer_list_node.html#a82e93d6df5f96078b39c1ef4d334af72">FObserverListNode::Initialize</a>(<a class="code hl_function" href="class_a_r_ranger_1_1_f_observer_list_node.html#a832e542087e99fb7a42d2875e9240e01">FObserverListNode</a>* NextListNodePtr)</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  {</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_a_r_ranger_1_1_f_observer_list_node.html#aedab620bd8e494ddd553ff7f00c62fc3">m_nextNodePtr</a> != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordflow">if</span> (m_nextNodePtr != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    {</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>      <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    }</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordflow">if</span> (NextListNodePtr != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    {</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>      <a class="code hl_variable" href="class_a_r_ranger_1_1_f_observer_list_node.html#aedab620bd8e494ddd553ff7f00c62fc3">m_nextNodePtr</a> = NextListNodePtr-&gt;AsShared();</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>      m_nextNodePtr = NextListNodePtr-&gt;AsShared();</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    }</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <a class="code hl_variable" href="class_a_r_ranger_1_1_f_observer_list_node.html#a39defbbab4532966f68fc3137d484f89">m_proxyRootNodePtr</a> = ::MakeShared&lt;FObserverProxyRootNode&gt;();</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    m_proxyRootNodePtr = ::MakeShared&lt;FObserverProxyRootNode&gt;();</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  }</div>
 </div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
 <div class="foldopen" id="foldopen00032" data-start="{" data-end="}">
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="class_a_r_ranger_1_1_f_observer_list_node.html#ac7ab1c14fbf2a680d304c300d8eeddda">   32</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_a_r_ranger_1_1_f_observer_list_node.html#ac7ab1c14fbf2a680d304c300d8eeddda">FObserverListNode::Evaluate</a>()</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  {</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_a_r_ranger_1_1_f_observer_list_node.html#a39defbbab4532966f68fc3137d484f89">m_proxyRootNodePtr</a> != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordflow">if</span> (m_proxyRootNodePtr != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    {</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>      <a class="code hl_variable" href="class_a_r_ranger_1_1_f_observer_list_node.html#a39defbbab4532966f68fc3137d484f89">m_proxyRootNodePtr</a>-&gt;Evaluate();</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>      m_proxyRootNodePtr-&gt;Evaluate();</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    }</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_a_r_ranger_1_1_f_observer_list_node.html#aedab620bd8e494ddd553ff7f00c62fc3">m_nextNodePtr</a> != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordflow">if</span> (m_nextNodePtr != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    {</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>      <a class="code hl_variable" href="class_a_r_ranger_1_1_f_observer_list_node.html#aedab620bd8e494ddd553ff7f00c62fc3">m_nextNodePtr</a>-&gt;Evaluate();</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>      m_nextNodePtr-&gt;Evaluate();</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    }</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  }</div>
 </div>
@@ -146,24 +146,24 @@ $(function(){initNavTree('_observer_list_node_8cpp_source.html','',''); });
 <div class="foldopen" id="foldopen00045" data-start="{" data-end="}">
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="class_a_r_ranger_1_1_f_observer_list_node.html#abf9cc7df8ad1859be81a4fe09d673768">   45</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_a_r_ranger_1_1_f_observer_list_node.html#abf9cc7df8ad1859be81a4fe09d673768">FObserverListNode::BindNewObserver</a>(<span class="keyword">const</span> TDelegate&lt;<span class="keywordtype">void</span>()&gt;&amp; NewObservationEvent)</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  {</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_a_r_ranger_1_1_f_observer_list_node.html#a39defbbab4532966f68fc3137d484f89">m_proxyRootNodePtr</a> == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordflow">if</span> (m_proxyRootNodePtr == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    {</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>      <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    }</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <a class="code hl_variable" href="class_a_r_ranger_1_1_f_observer_list_node.html#a39defbbab4532966f68fc3137d484f89">m_proxyRootNodePtr</a>-&gt;PushNodeBack(<a class="code hl_function" href="class_a_r_ranger_1_1_f_observer_proxy_root_node.html#ab68c2f13cf32e4581a7f5af85e380400">FObserverProxyRootNode::MakeNode</a>(NewObservationEvent));</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    m_proxyRootNodePtr-&gt;PushNodeBack(<a class="code hl_function" href="class_a_r_ranger_1_1_f_observer_proxy_root_node.html#ab68c2f13cf32e4581a7f5af85e380400">FObserverProxyRootNode::MakeNode</a>(NewObservationEvent));</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  }</div>
 </div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
 <div class="foldopen" id="foldopen00055" data-start="{" data-end="}">
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="class_a_r_ranger_1_1_f_observer_list_node.html#a85922a45303e28e5f3073e3a205d735e">   55</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_a_r_ranger_1_1_f_observer_list_node.html#a85922a45303e28e5f3073e3a205d735e">FObserverListNode::Reset</a>()</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  {</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_a_r_ranger_1_1_f_observer_list_node.html#a39defbbab4532966f68fc3137d484f89">m_proxyRootNodePtr</a> != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordflow">if</span> (m_proxyRootNodePtr != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    {</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>      <a class="code hl_variable" href="class_a_r_ranger_1_1_f_observer_list_node.html#a39defbbab4532966f68fc3137d484f89">m_proxyRootNodePtr</a>-&gt;RemoveAll();</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>      m_proxyRootNodePtr-&gt;RemoveAll();</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    }</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <a class="code hl_variable" href="class_a_r_ranger_1_1_f_observer_list_node.html#aedab620bd8e494ddd553ff7f00c62fc3">m_nextNodePtr</a>.Reset();</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    m_nextNodePtr.Reset();</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  }</div>
 </div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
@@ -175,13 +175,12 @@ $(function(){initNavTree('_observer_list_node_8cpp_source.html','',''); });
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>      <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    }</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <a class="code hl_variable" href="class_a_r_ranger_1_1_f_observer_list_node.html#aedab620bd8e494ddd553ff7f00c62fc3">m_nextNodePtr</a> = NextListNodePtr;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    m_nextNodePtr = NextListNodePtr;</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  }</div>
 </div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>}</div>
 <div class="ttc" id="a_observer_list_node_8h_html"><div class="ttname"><a href="_observer_list_node_8h.html">ObserverListNode.h</a></div></div>
 <div class="ttc" id="a_observer_proxy_root_node_8h_html"><div class="ttname"><a href="_observer_proxy_root_node_8h.html">ObserverProxyRootNode.h</a></div></div>
-<div class="ttc" id="aclass_a_r_ranger_1_1_f_observer_list_node_html_a39defbbab4532966f68fc3137d484f89"><div class="ttname"><a href="class_a_r_ranger_1_1_f_observer_list_node.html#a39defbbab4532966f68fc3137d484f89">ARRanger::FObserverListNode::m_proxyRootNodePtr</a></div><div class="ttdeci">TSharedPtr&lt; FObserverProxyRootNode &gt; m_proxyRootNodePtr</div><div class="ttdef"><b>Definition</b> <a href="_observer_list_node_8h_source.html#l00030">ObserverListNode.h:30</a></div></div>
 <div class="ttc" id="aclass_a_r_ranger_1_1_f_observer_list_node_html_a7702ede59fc25a52ff1da8b490414347"><div class="ttname"><a href="class_a_r_ranger_1_1_f_observer_list_node.html#a7702ede59fc25a52ff1da8b490414347">ARRanger::FObserverListNode::SetNextListNode</a></div><div class="ttdeci">void SetNextListNode(const TSharedPtr&lt; FObserverListNode &gt; NextListNodePtr)</div><div class="ttdef"><b>Definition</b> <a href="#l00065">ObserverListNode.cpp:65</a></div></div>
 <div class="ttc" id="aclass_a_r_ranger_1_1_f_observer_list_node_html_a82e93d6df5f96078b39c1ef4d334af72"><div class="ttname"><a href="class_a_r_ranger_1_1_f_observer_list_node.html#a82e93d6df5f96078b39c1ef4d334af72">ARRanger::FObserverListNode::Initialize</a></div><div class="ttdeci">void Initialize(FObserverListNode *NextListNodePtr=nullptr)</div><div class="ttdef"><b>Definition</b> <a href="#l00017">ObserverListNode.cpp:17</a></div></div>
 <div class="ttc" id="aclass_a_r_ranger_1_1_f_observer_list_node_html_a832e542087e99fb7a42d2875e9240e01"><div class="ttname"><a href="class_a_r_ranger_1_1_f_observer_list_node.html#a832e542087e99fb7a42d2875e9240e01">ARRanger::FObserverListNode::FObserverListNode</a></div><div class="ttdeci">FObserverListNode()</div><div class="ttdef"><b>Definition</b> <a href="#l00007">ObserverListNode.cpp:7</a></div></div>
@@ -189,7 +188,6 @@ $(function(){initNavTree('_observer_list_node_8cpp_source.html','',''); });
 <div class="ttc" id="aclass_a_r_ranger_1_1_f_observer_list_node_html_a85922a45303e28e5f3073e3a205d735e"><div class="ttname"><a href="class_a_r_ranger_1_1_f_observer_list_node.html#a85922a45303e28e5f3073e3a205d735e">ARRanger::FObserverListNode::Reset</a></div><div class="ttdeci">void Reset()</div><div class="ttdef"><b>Definition</b> <a href="#l00055">ObserverListNode.cpp:55</a></div></div>
 <div class="ttc" id="aclass_a_r_ranger_1_1_f_observer_list_node_html_abf9cc7df8ad1859be81a4fe09d673768"><div class="ttname"><a href="class_a_r_ranger_1_1_f_observer_list_node.html#abf9cc7df8ad1859be81a4fe09d673768">ARRanger::FObserverListNode::BindNewObserver</a></div><div class="ttdeci">void BindNewObserver(const TDelegate&lt; void()&gt; &amp;NewObservationEvent)</div><div class="ttdef"><b>Definition</b> <a href="#l00045">ObserverListNode.cpp:45</a></div></div>
 <div class="ttc" id="aclass_a_r_ranger_1_1_f_observer_list_node_html_ac7ab1c14fbf2a680d304c300d8eeddda"><div class="ttname"><a href="class_a_r_ranger_1_1_f_observer_list_node.html#ac7ab1c14fbf2a680d304c300d8eeddda">ARRanger::FObserverListNode::Evaluate</a></div><div class="ttdeci">void Evaluate()</div><div class="ttdef"><b>Definition</b> <a href="#l00032">ObserverListNode.cpp:32</a></div></div>
-<div class="ttc" id="aclass_a_r_ranger_1_1_f_observer_list_node_html_aedab620bd8e494ddd553ff7f00c62fc3"><div class="ttname"><a href="class_a_r_ranger_1_1_f_observer_list_node.html#aedab620bd8e494ddd553ff7f00c62fc3">ARRanger::FObserverListNode::m_nextNodePtr</a></div><div class="ttdeci">TSharedPtr&lt; FObserverListNode &gt; m_nextNodePtr</div><div class="ttdef"><b>Definition</b> <a href="_observer_list_node_8h_source.html#l00028">ObserverListNode.h:28</a></div></div>
 <div class="ttc" id="aclass_a_r_ranger_1_1_f_observer_proxy_root_node_html_ab68c2f13cf32e4581a7f5af85e380400"><div class="ttname"><a href="class_a_r_ranger_1_1_f_observer_proxy_root_node.html#ab68c2f13cf32e4581a7f5af85e380400">ARRanger::FObserverProxyRootNode::MakeNode</a></div><div class="ttdeci">static TSharedPtr&lt; FObserverProxyNode &gt; MakeNode(const TDelegate&lt; void()&gt; &amp;NodeEvent)</div><div class="ttdef"><b>Definition</b> <a href="_observer_proxy_root_node_8cpp_source.html#l00012">ObserverProxyRootNode.cpp:12</a></div></div>
 <div class="ttc" id="anamespace_a_r_ranger_html"><div class="ttname"><a href="namespace_a_r_ranger.html">ARRanger</a></div><div class="ttdef"><b>Definition</b> <a href="_a_r_gameplay_tags_8cpp_source.html#l00004">ARGameplayTags.cpp:5</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -198,7 +196,7 @@ $(function(){initNavTree('_observer_list_node_8cpp_source.html','',''); });
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="dir_db4b63894235d986ff0886d3d7147fc4.html">GithubRepository</a></li><li class="navelem"><a href="dir_b7f76808a72ae9b06e23f4ba1d7ec8e0.html">ARRanger</a></li><li class="navelem"><a href="dir_22deff83e5e51399b4644a6ac5e50e58.html">Source</a></li><li class="navelem"><a href="dir_765ba4c51118e23b05fd567f675cd5c3.html">ARRanger</a></li><li class="navelem"><a href="dir_01ca0bd49608f959e3dafd2b38229153.html">Private</a></li><li class="navelem"><a href="dir_e69077c831682f147dadd5b5d1216506.html">PlayerObservation</a></li><li class="navelem"><a href="_observer_list_node_8cpp.html">ObserverListNode.cpp</a></li>
+    <li class="navelem"><a href="dir_da1fa48e9cd6aca15a5329e13710da8a.html">ARRanger</a></li><li class="navelem"><a href="dir_6306d44ac889cfd8733274aed159ebe8.html">Private</a></li><li class="navelem"><a href="dir_f422ad64b2c1998d6c073d50b3d45eba.html">PlayerObservation</a></li><li class="navelem"><a href="_observer_list_node_8cpp.html">ObserverListNode.cpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>

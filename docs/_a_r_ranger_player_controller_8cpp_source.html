@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ARRanger: D:/GithubRepository/ARRanger/Source/ARRanger/Private/Player/ARRangerPlayerController.cpp Source File</title>
+<title>ARRanger: ARRanger/Private/Player/ARRangerPlayerController.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -132,44 +132,38 @@ $(function(){initNavTree('_a_r_ranger_player_controller_8cpp_source.html','','')
 </div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="foldopen" id="foldopen00042" data-start="{" data-end="}">
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="struct_f_g_a___hold_handle.html#aff18eb329b08a7a127aeebc64daf428b">   42</a></span><a class="code hl_function" href="struct_f_g_a___hold_handle.html#aff18eb329b08a7a127aeebc64daf428b">FGA_HoldHandle::FGA_HoldHandle</a>()</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>: <a class="code hl_variable" href="struct_f_g_a___hold_handle.html#a8b2e7638c30ed284754c5c559b6b7cb7">m_handleID</a>{INDEX_NONE}</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>FGA_HoldHandle::FGA_HoldHandle()</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>: m_handleID{INDEX_NONE}</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>{ }</div>
-</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="foldopen" id="foldopen00046" data-start="{" data-end="}">
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="struct_f_g_a___hold_handle.html#ab7259fcbefc3d00186c6d9aa6f1c1a8c">   46</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="struct_f_g_a___hold_handle.html#ab7259fcbefc3d00186c6d9aa6f1c1a8c">FGA_HoldHandle::GenerateNewHandle</a>()</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keywordtype">void</span> FGA_HoldHandle::GenerateNewHandle()</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>{</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  <span class="comment">// Try to generate</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <a class="code hl_variable" href="struct_f_g_a___hold_handle.html#a8b2e7638c30ed284754c5c559b6b7cb7">m_handleID</a> = gHoldHandle++;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  m_handleID = gHoldHandle++;</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  </div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="comment">// Make sure it will not generate InvalidHandle</span></div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  <span class="keywordflow">if</span> (!<a class="code hl_function" href="struct_f_g_a___hold_handle.html#aa6efbcf3e4527020ab8d31a10eb38487">IsValid</a>())</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  {</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <a class="code hl_function" href="struct_f_g_a___hold_handle.html#ab7259fcbefc3d00186c6d9aa6f1c1a8c">GenerateNewHandle</a>();</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    GenerateNewHandle();</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  }</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  </div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  check(<a class="code hl_function" href="struct_f_g_a___hold_handle.html#aa6efbcf3e4527020ab8d31a10eb38487">IsValid</a>());</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>}</div>
-</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="foldopen" id="foldopen00060" data-start="{" data-end="}">
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="struct_f_g_a___hold_handle.html#a1b7c9a2fd20e5248463d61c9974b92db">   60</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="struct_f_g_a___hold_handle.html#a1b7c9a2fd20e5248463d61c9974b92db">FGA_HoldHandle::Reset</a>()</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="keywordtype">void</span> FGA_HoldHandle::Reset()</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>{</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  <a class="code hl_variable" href="struct_f_g_a___hold_handle.html#a8b2e7638c30ed284754c5c559b6b7cb7">m_handleID</a> = INDEX_NONE;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  m_handleID = INDEX_NONE;</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>}</div>
-</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
 <div class="foldopen" id="foldopen00065" data-start="{" data-end="}">
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="struct_f_g_a___hold_handle.html#a7efe1e8c2bcbd261a36919b3bfe296f0">   65</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="_a_r_ranger_player_controller_8cpp.html#aef5a2a2eb62d20816ccff26e58d7d92f">operator==</a>(<span class="keyword">const</span> <a class="code hl_function" href="struct_f_g_a___hold_handle.html#aff18eb329b08a7a127aeebc64daf428b">FGA_HoldHandle</a>&amp; Lhs, <span class="keyword">const</span> <a class="code hl_function" href="struct_f_g_a___hold_handle.html#aff18eb329b08a7a127aeebc64daf428b">FGA_HoldHandle</a>&amp; Rhs)</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="struct_f_g_a___hold_handle.html#ac66af2c86374f38a6ef49eddb0d7c38d">   65</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="_a_r_ranger_player_controller_8cpp.html#aef5a2a2eb62d20816ccff26e58d7d92f">operator==</a>(<span class="keyword">const</span> FGA_HoldHandle&amp; Lhs, <span class="keyword">const</span> FGA_HoldHandle&amp; Rhs)</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>{</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  <span class="keywordflow">return</span> Lhs.<a class="code hl_variable" href="struct_f_g_a___hold_handle.html#a8b2e7638c30ed284754c5c559b6b7cb7">m_handleID</a> == Rhs.<a class="code hl_variable" href="struct_f_g_a___hold_handle.html#a8b2e7638c30ed284754c5c559b6b7cb7">m_handleID</a>;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  <span class="keywordflow">return</span> Lhs.m_handleID == Rhs.m_handleID;</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>}</div>
 </div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
 <div class="foldopen" id="foldopen00070" data-start="{" data-end="}">
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="struct_f_g_a___hold_handle.html#afa33592ff4573e5512a052694cb3814a">   70</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="_a_r_ranger_player_controller_8cpp.html#af2bba26b4ef07b8f2c7d7c7627dfa9cd">operator!=</a>(<span class="keyword">const</span> <a class="code hl_function" href="struct_f_g_a___hold_handle.html#aff18eb329b08a7a127aeebc64daf428b">FGA_HoldHandle</a>&amp; Lhs, <span class="keyword">const</span> <a class="code hl_function" href="struct_f_g_a___hold_handle.html#aff18eb329b08a7a127aeebc64daf428b">FGA_HoldHandle</a>&amp; Rhs)</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="struct_f_g_a___hold_handle.html#a4e3fec5005ee53c39b8044febe2afd01">   70</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="_a_r_ranger_player_controller_8cpp.html#af2bba26b4ef07b8f2c7d7c7627dfa9cd">operator!=</a>(<span class="keyword">const</span> FGA_HoldHandle&amp; Lhs, <span class="keyword">const</span> FGA_HoldHandle&amp; Rhs)</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>{</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  <span class="keywordflow">return</span> !(Lhs == Rhs);</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>}</div>
@@ -201,13 +195,13 @@ $(function(){initNavTree('_a_r_ranger_player_controller_8cpp_source.html','','')
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>{</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  Super::BeginPlay();</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_a_a_r_ranger_player_controller.html#a0aa2bec6b7b39d26a9e517d24d0db81b">PlayerPresenterClass</a> == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  <span class="keywordflow">if</span> (PlayerPresenterClass == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  {</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <a class="code hl_variable" href="class_a_a_r_ranger_player_controller.html#a0aa2bec6b7b39d26a9e517d24d0db81b">PlayerPresenterClass</a> = UARPlayerPresenter::StaticClass();</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    PlayerPresenterClass = UARPlayerPresenter::StaticClass();</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  }</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  <a class="code hl_variable" href="class_a_a_r_ranger_player_controller.html#a03705bd53d1a606ed9cd1fd5f8b1f71f">PlayerPresenter</a> = NewObject&lt;UARPlayerPresenter&gt;(<span class="keyword">this</span>, <a class="code hl_variable" href="class_a_a_r_ranger_player_controller.html#a0aa2bec6b7b39d26a9e517d24d0db81b">PlayerPresenterClass</a>);</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>  check(<a class="code hl_variable" href="class_a_a_r_ranger_player_controller.html#a03705bd53d1a606ed9cd1fd5f8b1f71f">PlayerPresenter</a> != <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  PlayerPresenter = NewObject&lt;UARPlayerPresenter&gt;(<span class="keyword">this</span>, PlayerPresenterClass);</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>  check(PlayerPresenter != <span class="keyword">nullptr</span>);</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>  <span class="keywordflow">if</span> (<a class="code hl_class" href="class_a_a_r_player_state.html">AARPlayerState</a>* ARPS = GetPlayerState&lt;AARPlayerState&gt;())</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>  {</div>
@@ -216,8 +210,8 @@ $(function(){initNavTree('_a_r_ranger_player_controller_8cpp_source.html','','')
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>  <span class="keywordflow">if</span> (<a class="code hl_class" href="class_a_a_r_ranger_character.html">AARRangerCharacter</a>* character = ::Cast&lt;AARRangerCharacter&gt;(GetPawn()))</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>  {</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <a class="code hl_variable" href="class_a_a_r_ranger_player_controller.html#a0f7944a0db2fa426e97519c34f54dbdc">OwningCharacter</a> = character;</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <a class="code hl_variable" href="class_a_a_r_ranger_player_controller.html#a03705bd53d1a606ed9cd1fd5f8b1f71f">PlayerPresenter</a>-&gt;Initialize(<a class="code hl_variable" href="class_a_a_r_ranger_player_controller.html#a0f7944a0db2fa426e97519c34f54dbdc">OwningCharacter</a>);</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    OwningCharacter = character;</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    PlayerPresenter-&gt;Initialize(OwningCharacter);</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>  }</div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>}</div>
 </div>
@@ -227,16 +221,16 @@ $(function(){initNavTree('_a_r_ranger_player_controller_8cpp_source.html','','')
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>{</div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>  Super::EndPlay(EndReason);</div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_a_a_r_ranger_player_controller.html#a1377861a48c94df60814e08fa06d103f">InputBuffer</a> != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>  <span class="keywordflow">if</span> (InputBuffer != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>  {</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    <a class="code hl_variable" href="class_a_a_r_ranger_player_controller.html#a1377861a48c94df60814e08fa06d103f">InputBuffer</a>-&gt;Uninitialize();</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    InputBuffer-&gt;Uninitialize();</div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>  }</div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_a_a_r_ranger_player_controller.html#a03705bd53d1a606ed9cd1fd5f8b1f71f">PlayerPresenter</a> != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>  <span class="keywordflow">if</span> (PlayerPresenter != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>  {</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    <a class="code hl_variable" href="class_a_a_r_ranger_player_controller.html#a03705bd53d1a606ed9cd1fd5f8b1f71f">PlayerPresenter</a>-&gt;Deinitialize();</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    <a class="code hl_variable" href="class_a_a_r_ranger_player_controller.html#a03705bd53d1a606ed9cd1fd5f8b1f71f">PlayerPresenter</a>-&gt;ConditionalBeginDestroy();</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    <a class="code hl_variable" href="class_a_a_r_ranger_player_controller.html#a03705bd53d1a606ed9cd1fd5f8b1f71f">PlayerPresenter</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    PlayerPresenter-&gt;Deinitialize();</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    PlayerPresenter-&gt;ConditionalBeginDestroy();</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    PlayerPresenter = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>  }</div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>} </div>
@@ -254,7 +248,7 @@ $(function(){initNavTree('_a_r_ranger_player_controller_8cpp_source.html','','')
 <div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>{</div>
 <div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>  Super::PostProcessInput(DeltaTime, bGamePaused);</div>
 <div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>  <a class="code hl_function" href="class_a_a_r_ranger_player_controller.html#a1f721d8795e4e9e5f8cbabdfbf63ccb6">EvaluateInputBuffer</a>(DeltaTime, bGamePaused);</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>  EvaluateInputBuffer(DeltaTime, bGamePaused);</div>
 <div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>  <a class="code hl_class" href="class_u_a_r_ability_system_component.html">UARAbilitySystemComponent</a>* ASC = <a class="code hl_function" href="class_a_a_r_ranger_player_controller.html#a3275eac73869ec4522d8e07d95eb1448">GetARASC</a>();</div>
 <div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>  <span class="keywordflow">if</span> (ASC != <span class="keyword">nullptr</span>)</div>
@@ -283,7 +277,7 @@ $(function(){initNavTree('_a_r_ranger_player_controller_8cpp_source.html','','')
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>  }</div>
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>  <span class="comment">// Initialize Input Buffer</span></div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>  <a class="code hl_function" href="class_a_a_r_ranger_player_controller.html#a134a0efd9cb04219b3e14a3699b4fcf0">InitializePlayerInputBuffer</a>();</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>  InitializePlayerInputBuffer();</div>
 <div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>}</div>
 </div>
 <div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span> </div>
@@ -298,23 +292,23 @@ $(function(){initNavTree('_a_r_ranger_player_controller_8cpp_source.html','','')
 <div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>    {</div>
 <div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    Subsystem-&gt;ClearAllMappings();</div>
 <div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span> </div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>    FGameplayTag defaultIMCTag = <a class="code hl_function" href="namespace_a_r_ranger_1_1_gameplay_tags.html#ad62dae2d04d07138afe5c35d178400fa">ARRanger::GameplayTags::FindExactTagByString</a>(DEFAULT_IMC_TAG_NAME);</div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>    <a class="code hl_function" href="class_a_a_r_ranger_player_controller.html#a9c5226c474d1ef2f9189fc71fa890140">SwitchNextIMC</a>(defaultIMCTag);</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>    FGameplayTag defaultIMCTag = <a class="code hl_function" href="namespace_a_r_ranger_1_1_gameplay_tags.html#aad6d43ce0e5a2342b83e951cd8cd7f5f">ARRanger::GameplayTags::FindExactTagByString</a>(DEFAULT_IMC_TAG_NAME);</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>    SwitchNextIMC(defaultIMCTag);</div>
 <div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>  }</div>
 <div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span> </div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>  <a class="code hl_function" href="class_a_a_r_ranger_player_controller.html#ac66d0a852d45f0f952b9cffe904e60dc">Initialize</a>();</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>  Initialize();</div>
 <div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>}</div>
 </div>
 <div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span> </div>
 <div class="foldopen" id="foldopen00188" data-start="{" data-end="}">
 <div class="line"><a id="l00188" name="l00188"></a><span class="lineno"><a class="line" href="class_a_a_r_ranger_player_controller.html#a469b2aaca9120aae7f904b1513d259b2">  188</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_a_a_r_ranger_player_controller.html#a469b2aaca9120aae7f904b1513d259b2">AARRangerPlayerController::OnGameplayAbilityActivate</a>(<span class="keyword">const</span> FGameplayTag&amp; InNextIMCTag)</div>
 <div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>{</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_a_a_r_ranger_player_controller.html#aa7c076a8aa8733cb71b3e386b998d8fe">InputMappingContext</a> == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>  <span class="keywordflow">if</span> (InputMappingContext == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>  {</div>
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>  }</div>
 <div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span> </div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>  <a class="code hl_function" href="class_a_a_r_ranger_player_controller.html#a9c5226c474d1ef2f9189fc71fa890140">SwitchNextIMC</a>(InNextIMCTag);</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>  SwitchNextIMC(InNextIMCTag);</div>
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>  </div>
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>}</div>
 </div>
@@ -322,7 +316,7 @@ $(function(){initNavTree('_a_r_ranger_player_controller_8cpp_source.html','','')
 <div class="foldopen" id="foldopen00199" data-start="{" data-end="}">
 <div class="line"><a id="l00199" name="l00199"></a><span class="lineno"><a class="line" href="class_a_a_r_ranger_player_controller.html#a13533d158a8972f98ef920f7526bdca3">  199</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_a_a_r_ranger_player_controller.html#a13533d158a8972f98ef920f7526bdca3">AARRangerPlayerController::OnGameplayAbilityEnd</a>(<span class="keywordtype">bool</span> bWasCanceled)</div>
 <div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>{</div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_a_a_r_ranger_player_controller.html#aa7c076a8aa8733cb71b3e386b998d8fe">InputMappingContext</a> == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>  <span class="keywordflow">if</span> (InputMappingContext == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>  {</div>
 <div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>  }</div>
@@ -330,8 +324,8 @@ $(function(){initNavTree('_a_r_ranger_player_controller_8cpp_source.html','','')
 <div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>  <span class="comment">// Return to default IMC if GA ends normally</span></div>
 <div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>  <span class="keywordflow">if</span> (!bWasCanceled)</div>
 <div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>  {</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>    FGameplayTag defaultIMCTag = <a class="code hl_function" href="namespace_a_r_ranger_1_1_gameplay_tags.html#ad62dae2d04d07138afe5c35d178400fa">ARRanger::GameplayTags::FindExactTagByString</a>(DEFAULT_IMC_TAG_NAME);</div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>    <a class="code hl_function" href="class_a_a_r_ranger_player_controller.html#a9c5226c474d1ef2f9189fc71fa890140">SwitchNextIMC</a>(defaultIMCTag);</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>    FGameplayTag defaultIMCTag = <a class="code hl_function" href="namespace_a_r_ranger_1_1_gameplay_tags.html#aad6d43ce0e5a2342b83e951cd8cd7f5f">ARRanger::GameplayTags::FindExactTagByString</a>(DEFAULT_IMC_TAG_NAME);</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>    SwitchNextIMC(defaultIMCTag);</div>
 <div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>  }</div>
 <div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>}</div>
 </div>
@@ -339,351 +333,328 @@ $(function(){initNavTree('_a_r_ranger_player_controller_8cpp_source.html','','')
 <div class="foldopen" id="foldopen00214" data-start="{" data-end="}">
 <div class="line"><a id="l00214" name="l00214"></a><span class="lineno"><a class="line" href="class_a_a_r_ranger_player_controller.html#af4b8c8b1771d8f1beb9bea11ea09bbf6">  214</a></span><a class="code hl_struct" href="struct_f_g_a_blueprintable_hold_handle.html">FGABlueprintableHoldHandle</a> <a class="code hl_function" href="class_a_a_r_ranger_player_controller.html#af4b8c8b1771d8f1beb9bea11ea09bbf6">AARRangerPlayerController::OnGameplayAbilityActivated_Hold</a>(FGameplayTag InActivatedAbilityTag, <span class="keywordtype">bool</span> bBlockInputTag, FGameplayTagContainer InInputBlockIgnoreTags)</div>
 <div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>{</div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span> </div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_a_a_r_ranger_player_controller.html#a03705bd53d1a606ed9cd1fd5f8b1f71f">PlayerPresenter</a> != <span class="keyword">nullptr</span>)</div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>  {</div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>    <a class="code hl_variable" href="class_a_a_r_ranger_player_controller.html#a03705bd53d1a606ed9cd1fd5f8b1f71f">PlayerPresenter</a>-&gt;HandleChargeStart();</div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>  }</div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>  </div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>  <span class="keywordflow">if</span> (bBlockInputTag)</div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>  {</div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>    <a class="code hl_struct" href="struct_a_a_r_ranger_player_controller_1_1_f_hold_spec.html">FHoldSpec</a> newHoldSpec{};</div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>    newHoldSpec.<a class="code hl_variable" href="struct_a_a_r_ranger_player_controller_1_1_f_hold_spec.html#a3a36d76309eaaa07940ce9bc5161cf55">Handle</a>.<a class="code hl_function" href="struct_f_g_a___hold_handle.html#ab7259fcbefc3d00186c6d9aa6f1c1a8c">GenerateNewHandle</a>();</div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>    newHoldSpec.<a class="code hl_variable" href="struct_a_a_r_ranger_player_controller_1_1_f_hold_spec.html#afe0c60e6ae981b0fd82f9ceb5c48f3dc">InputBlockIgnoreTags</a> = InInputBlockIgnoreTags;</div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span> </div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>    <a class="code hl_variable" href="class_a_a_r_ranger_player_controller.html#a1a691afea79e04c03744b29116da6029">m_holdSpecs</a>.Emplace(newHoldSpec);</div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span> </div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>    check(newHoldSpec.<a class="code hl_variable" href="struct_a_a_r_ranger_player_controller_1_1_f_hold_spec.html#a3a36d76309eaaa07940ce9bc5161cf55">Handle</a>.<a class="code hl_function" href="struct_f_g_a___hold_handle.html#aa6efbcf3e4527020ab8d31a10eb38487">IsValid</a>());</div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="struct_f_g_a_blueprintable_hold_handle.html">FGABlueprintableHoldHandle</a>{newHoldSpec.<a class="code hl_variable" href="struct_a_a_r_ranger_player_controller_1_1_f_hold_spec.html#a3a36d76309eaaa07940ce9bc5161cf55">Handle</a>};</div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>  }</div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span> </div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>  <span class="keywordflow">return</span> <a class="code hl_struct" href="struct_f_g_a_blueprintable_hold_handle.html">FGABlueprintableHoldHandle</a>{};</div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span> </div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>}</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>  <span class="keywordflow">if</span> (PlayerPresenter != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>  {</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>    PlayerPresenter-&gt;OnChargeStartHandled();</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>  }</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>  </div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>  <span class="keywordflow">if</span> (bBlockInputTag)</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>  {</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>    <a class="code hl_struct" href="struct_a_a_r_ranger_player_controller_1_1_f_hold_spec.html">FHoldSpec</a> newHoldSpec{};</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>    newHoldSpec.<a class="code hl_variable" href="struct_a_a_r_ranger_player_controller_1_1_f_hold_spec.html#a3a36d76309eaaa07940ce9bc5161cf55">Handle</a>.GenerateNewHandle();</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>    newHoldSpec.<a class="code hl_variable" href="struct_a_a_r_ranger_player_controller_1_1_f_hold_spec.html#afe0c60e6ae981b0fd82f9ceb5c48f3dc">InputBlockIgnoreTags</a> = InInputBlockIgnoreTags;</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span> </div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>    m_holdSpecs.Emplace(newHoldSpec);</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span> </div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>    check(newHoldSpec.<a class="code hl_variable" href="struct_a_a_r_ranger_player_controller_1_1_f_hold_spec.html#a3a36d76309eaaa07940ce9bc5161cf55">Handle</a>.<a class="code hl_function" href="struct_f_g_a___hold_handle.html#aa6efbcf3e4527020ab8d31a10eb38487">IsValid</a>());</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="struct_f_g_a_blueprintable_hold_handle.html">FGABlueprintableHoldHandle</a>{newHoldSpec.<a class="code hl_variable" href="struct_a_a_r_ranger_player_controller_1_1_f_hold_spec.html#a3a36d76309eaaa07940ce9bc5161cf55">Handle</a>};</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>  }</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span> </div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>  <span class="keywordflow">return</span> <a class="code hl_struct" href="struct_f_g_a_blueprintable_hold_handle.html">FGABlueprintableHoldHandle</a>{};</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span> </div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>}</div>
 </div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span> </div>
-<div class="foldopen" id="foldopen00238" data-start="{" data-end="}">
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno"><a class="line" href="class_a_a_r_ranger_player_controller.html#a1c2bf8972f6d198fda46da6acf9bcbdb">  238</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_a_a_r_ranger_player_controller.html#a1c2bf8972f6d198fda46da6acf9bcbdb">AARRangerPlayerController::OnGameplayAbilityTaskTicked_Holding</a>(FGameplayTag InTaskOwnerAbilityTag, <span class="keywordtype">float</span> HeldTime, <span class="keywordtype">float</span> DeltaTime)</div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>{</div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>  <span class="comment">// TODO Not implemented</span></div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>  <span class="keywordflow">if</span> (<a class="code hl_class" href="class_a_a_r_player_state.html">AARPlayerState</a>* ARPS = GetPlayerState&lt;AARPlayerState&gt;())</div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>  {</div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>    <span class="keywordflow">if</span> (UARChargeAttackComponent* CAC = ARPS-&gt;GetARChargeAttackComponent())</div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>    {</div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>      <span class="keyword">const</span> FGameplayTag attackTag = CAC-&gt;EvaluateCharge(HeldTime, InTaskOwnerAbilityTag);</div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>      <span class="keyword">const</span> <span class="keywordtype">float</span> nextChargeAttackTimeThreshold = CAC-&gt;GetNextChargeTimeThresholdByAttackTag(attackTag);</div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>      <span class="keyword">const</span> <span class="keywordtype">float</span> nextChargeAttackCost = CAC-&gt;GetNextChargeAttackCostByAttackTag(attackTag);</div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>      <span class="keyword">const</span> <span class="keywordtype">float</span> chargeAttackTimeThreshold = CAC-&gt;GetChargeTimeThresholdByAttackTag(attackTag);</div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>      <span class="keyword">const</span> <span class="keywordtype">float</span> chargeAttackCost = CAC-&gt;GetChargeTimeThresholdByAttackTag(attackTag);     </div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>    }</div>
-<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>  }</div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>}</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span> </div>
+<div class="foldopen" id="foldopen00237" data-start="{" data-end="}">
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno"><a class="line" href="class_a_a_r_ranger_player_controller.html#a1c2bf8972f6d198fda46da6acf9bcbdb">  237</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_a_a_r_ranger_player_controller.html#a1c2bf8972f6d198fda46da6acf9bcbdb">AARRangerPlayerController::OnGameplayAbilityTaskTicked_Holding</a>(FGameplayTag InTaskOwnerAbilityTag, <span class="keywordtype">float</span> HeldTime, <span class="keywordtype">float</span> DeltaTime)</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>{</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>  <span class="comment">// TODO Not implemented</span></div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>  <span class="keywordflow">if</span> (<a class="code hl_class" href="class_a_a_r_player_state.html">AARPlayerState</a>* ARPS = GetPlayerState&lt;AARPlayerState&gt;())</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>  {</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>    <span class="keywordflow">if</span> (UARChargeAttackComponent* CAC = ARPS-&gt;GetARChargeAttackComponent())</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>    {</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>      <span class="keyword">const</span> FGameplayTag attackTag = CAC-&gt;EvaluateCharge(HeldTime, InTaskOwnerAbilityTag);</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>      <span class="keyword">const</span> <span class="keywordtype">float</span> nextChargeAttackTimeThreshold = CAC-&gt;GetNextChargeTimeThresholdByAttackTag(attackTag);</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>      <span class="keyword">const</span> <span class="keywordtype">float</span> nextChargeAttackCost = CAC-&gt;GetNextChargeAttackCostByAttackTag(attackTag);</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>      <span class="keyword">const</span> <span class="keywordtype">float</span> chargeAttackTimeThreshold = CAC-&gt;GetChargeTimeThresholdByAttackTag(attackTag);</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>      <span class="keyword">const</span> <span class="keywordtype">float</span> chargeAttackCost = CAC-&gt;GetChargeTimeThresholdByAttackTag(attackTag);     </div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>    }</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>  }</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>}</div>
 </div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span> </div>
-<div class="foldopen" id="foldopen00254" data-start="{" data-end="}">
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno"><a class="line" href="class_a_a_r_ranger_player_controller.html#a74bd4028dd4d1d0a1fe0a305a84ed440">  254</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_a_a_r_ranger_player_controller.html#a74bd4028dd4d1d0a1fe0a305a84ed440">AARRangerPlayerController::OnGameplayAbilityEnded_Hold</a>(FGameplayTag InEndedAbilityTag, <a class="code hl_struct" href="struct_f_g_a_blueprintable_hold_handle.html">FGABlueprintableHoldHandle</a> InHandle, <span class="keywordtype">float</span> TimeHeld)</div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>{</div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>  <a class="code hl_function" href="class_a_a_r_ranger_player_controller.html#a539d5e580e12cd072e8f902392390409">ClearHoldSpec</a>(InHandle.<a class="code hl_variable" href="struct_f_g_a_blueprintable_hold_handle.html#a72b543b7a7f07e027745db5752b0cf66">Handle</a>);</div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span> </div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>  <span class="comment">// FIXME This logic is weird</span></div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_a_a_r_ranger_player_controller.html#af6f27be6c44bb9faa6b0143c3ff5b5b7">OnGameAbilityHeld</a>.IsBound())</div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>  {</div>
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>    FGameplayTag nextAbilityTag = <a class="code hl_variable" href="class_a_a_r_ranger_player_controller.html#af6f27be6c44bb9faa6b0143c3ff5b5b7">OnGameAbilityHeld</a>.Execute(TimeHeld, InEndedAbilityTag);</div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>    <span class="keywordflow">if</span> (nextAbilityTag.IsValid())</div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>    {</div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>      <span class="comment">// TODO Input buffer issue</span></div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>      <span class="comment">// NOTE: When we switch IMC, we clear all inputs.So this one will not be activated in some situation</span></div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>      <a class="code hl_function" href="class_a_a_r_ranger_player_controller.html#a5848ec51666c10f6ba4b5335afc97990">AbilityInputTagPressed</a>(nextAbilityTag);</div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>    }</div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>  }</div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span> </div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_a_a_r_ranger_player_controller.html#a03705bd53d1a606ed9cd1fd5f8b1f71f">PlayerPresenter</a> != <span class="keyword">nullptr</span>)</div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>  {</div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>    <a class="code hl_variable" href="class_a_a_r_ranger_player_controller.html#a03705bd53d1a606ed9cd1fd5f8b1f71f">PlayerPresenter</a>-&gt;HandleChargeEnd();</div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>  }</div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>}</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span> </div>
+<div class="foldopen" id="foldopen00253" data-start="{" data-end="}">
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno"><a class="line" href="class_a_a_r_ranger_player_controller.html#a74bd4028dd4d1d0a1fe0a305a84ed440">  253</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_a_a_r_ranger_player_controller.html#a74bd4028dd4d1d0a1fe0a305a84ed440">AARRangerPlayerController::OnGameplayAbilityEnded_Hold</a>(FGameplayTag InEndedAbilityTag, <a class="code hl_struct" href="struct_f_g_a_blueprintable_hold_handle.html">FGABlueprintableHoldHandle</a> InHandle, <span class="keywordtype">float</span> TimeHeld)</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>{</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>  <span class="keywordflow">if</span> (PlayerPresenter != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>  {</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>    PlayerPresenter-&gt;OnChargeEndHandled();</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>  }</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span> </div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>  <a class="code hl_function" href="class_a_a_r_ranger_player_controller.html#a539d5e580e12cd072e8f902392390409">ClearHoldSpec</a>(InHandle.<a class="code hl_variable" href="struct_f_g_a_blueprintable_hold_handle.html#a72b543b7a7f07e027745db5752b0cf66">Handle</a>);</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span> </div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>  <span class="comment">// FIXME Do not call pressed here.</span></div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_a_a_r_ranger_player_controller.html#af6f27be6c44bb9faa6b0143c3ff5b5b7">OnGameAbilityHeld</a>.IsBound())</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>  {</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>    <span class="keyword">const</span> FGameplayTag nextAbilityTag = <a class="code hl_variable" href="class_a_a_r_ranger_player_controller.html#af6f27be6c44bb9faa6b0143c3ff5b5b7">OnGameAbilityHeld</a>.Execute(TimeHeld, InEndedAbilityTag);</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>    <span class="keywordflow">if</span> (nextAbilityTag.IsValid())</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>    {</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>      <span class="comment">// TODO Input buffer issue</span></div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>      <span class="comment">// NOTE: When we switch IMC, we clear all inputs.So this one will not be activated in some situation</span></div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>      AbilityInputTagPressed(nextAbilityTag);</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>    }</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>  }</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span> </div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span> </div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>}</div>
 </div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span> </div>
-<div class="foldopen" id="foldopen00276" data-start="{" data-end="}">
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno"><a class="line" href="class_a_a_r_ranger_player_controller.html#a7d9d4dee37dcd7d45ba2a56b8e34a879">  276</a></span><a class="code hl_struct" href="struct_a_a_r_ranger_player_controller_1_1_f_hold_spec.html">AARRangerPlayerController::FHoldSpec</a>* <a class="code hl_function" href="class_a_a_r_ranger_player_controller.html#a7d9d4dee37dcd7d45ba2a56b8e34a879">AARRangerPlayerController::FindHoldSpecFromHandle</a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_f_g_a___hold_handle.html">FGA_HoldHandle</a>&amp; InHoldHandle)<span class="keyword"> const</span></div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>  <span class="keyword">auto</span> searchPred = [&amp;InHoldHandle](<span class="keyword">const</span> <a class="code hl_struct" href="struct_a_a_r_ranger_player_controller_1_1_f_hold_spec.html">FHoldSpec</a>&amp; Element)</div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>  {</div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>    <span class="keywordflow">return</span> Element.Handle == InHoldHandle;</div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>  };</div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span> </div>
-<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>  <span class="keywordflow">return</span> <span class="keyword">const_cast&lt;</span><a class="code hl_struct" href="struct_a_a_r_ranger_player_controller_1_1_f_hold_spec.html">FHoldSpec</a>*<span class="keyword">&gt;</span>(<a class="code hl_variable" href="class_a_a_r_ranger_player_controller.html#a1a691afea79e04c03744b29116da6029">m_holdSpecs</a>.FindByPredicate(searchPred));</div>
-<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>}</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span> </div>
+<div class="foldopen" id="foldopen00277" data-start="{" data-end="}">
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno"><a class="line" href="class_a_a_r_ranger_player_controller.html#a7d9d4dee37dcd7d45ba2a56b8e34a879">  277</a></span><a class="code hl_struct" href="struct_a_a_r_ranger_player_controller_1_1_f_hold_spec.html">AARRangerPlayerController::FHoldSpec</a>* <a class="code hl_function" href="class_a_a_r_ranger_player_controller.html#a7d9d4dee37dcd7d45ba2a56b8e34a879">AARRangerPlayerController::FindHoldSpecFromHandle</a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_f_g_a___hold_handle.html">FGA_HoldHandle</a>&amp; InHoldHandle)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span><span class="keyword"></span>{</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>  <span class="keyword">auto</span> searchPred = [&amp;InHoldHandle](<span class="keyword">const</span> <a class="code hl_struct" href="struct_a_a_r_ranger_player_controller_1_1_f_hold_spec.html">FHoldSpec</a>&amp; Element)</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>  {</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>    <span class="keywordflow">return</span> Element.Handle == InHoldHandle;</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>  };</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span> </div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>  <span class="keywordflow">return</span> <span class="keyword">const_cast&lt;</span><a class="code hl_struct" href="struct_a_a_r_ranger_player_controller_1_1_f_hold_spec.html">FHoldSpec</a>*<span class="keyword">&gt;</span>(m_holdSpecs.FindByPredicate(searchPred));</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>}</div>
 </div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span> </div>
-<div class="foldopen" id="foldopen00286" data-start="{" data-end="}">
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno"><a class="line" href="class_a_a_r_ranger_player_controller.html#a539d5e580e12cd072e8f902392390409">  286</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_a_a_r_ranger_player_controller.html#a539d5e580e12cd072e8f902392390409">AARRangerPlayerController::ClearHoldSpec</a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_f_g_a___hold_handle.html">FGA_HoldHandle</a>&amp; InHoldHandle)</div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>{</div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>  <a class="code hl_struct" href="struct_a_a_r_ranger_player_controller_1_1_f_hold_spec.html">FHoldSpec</a>* foundSpec = <a class="code hl_function" href="class_a_a_r_ranger_player_controller.html#a7d9d4dee37dcd7d45ba2a56b8e34a879">FindHoldSpecFromHandle</a>(InHoldHandle);</div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>  <span class="keywordflow">if</span> (foundSpec == <span class="keyword">nullptr</span>)</div>
-<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>  {</div>
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>    <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>  }</div>
-<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span> </div>
-<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>  <a class="code hl_variable" href="class_a_a_r_ranger_player_controller.html#a1a691afea79e04c03744b29116da6029">m_holdSpecs</a>.RemoveSingle(*foundSpec);</div>
-<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>  foundSpec = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>}</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span> </div>
+<div class="foldopen" id="foldopen00287" data-start="{" data-end="}">
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno"><a class="line" href="class_a_a_r_ranger_player_controller.html#a539d5e580e12cd072e8f902392390409">  287</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_a_a_r_ranger_player_controller.html#a539d5e580e12cd072e8f902392390409">AARRangerPlayerController::ClearHoldSpec</a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_f_g_a___hold_handle.html">FGA_HoldHandle</a>&amp; InHoldHandle)</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>{</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>  <a class="code hl_struct" href="struct_a_a_r_ranger_player_controller_1_1_f_hold_spec.html">FHoldSpec</a>* foundSpec = <a class="code hl_function" href="class_a_a_r_ranger_player_controller.html#a7d9d4dee37dcd7d45ba2a56b8e34a879">FindHoldSpecFromHandle</a>(InHoldHandle);</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>  <span class="keywordflow">if</span> (foundSpec == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>  {</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>    <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>  }</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span> </div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>  m_holdSpecs.RemoveSingle(*foundSpec);</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>  foundSpec = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>}</div>
 </div>
-<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span> </div>
-<div class="foldopen" id="foldopen00298" data-start="{" data-end="}">
-<div class="line"><a id="l00298" name="l00298"></a><span class="lineno"><a class="line" href="class_a_a_r_ranger_player_controller.html#a9c5226c474d1ef2f9189fc71fa890140">  298</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_a_a_r_ranger_player_controller.html#a9c5226c474d1ef2f9189fc71fa890140">AARRangerPlayerController::SwitchNextIMC</a>(<span class="keyword">const</span> FGameplayTag&amp; InNextIMCTag)</div>
-<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>{</div>
-<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_a_a_r_ranger_player_controller.html#aa7c076a8aa8733cb71b3e386b998d8fe">InputMappingContext</a> == <span class="keyword">nullptr</span>)</div>
-<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>  {</div>
-<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>    <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>  }</div>
-<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>  </div>
-<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>  UInputMappingContext* nextIMC = <a class="code hl_variable" href="class_a_a_r_ranger_player_controller.html#aa7c076a8aa8733cb71b3e386b998d8fe">InputMappingContext</a>-&gt;FindIMCWithTag(InNextIMCTag);</div>
-<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>  <span class="keywordflow">if</span> (nextIMC != <span class="keyword">nullptr</span> &amp;&amp; <a class="code hl_variable" href="class_a_a_r_ranger_player_controller.html#af3430013f947127ccb1a41c7337824b6">CurrentIMC</a> != nextIMC)</div>
-<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>  {</div>
-<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>    UEnhancedInputLocalPlayerSubsystem* Subsystem = ULocalPlayer::GetSubsystem&lt;UEnhancedInputLocalPlayerSubsystem&gt;(GetLocalPlayer());</div>
-<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>    <span class="keywordflow">if</span> (Subsystem != <span class="keyword">nullptr</span>)</div>
-<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>    {</div>
-<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>      Subsystem-&gt;RemoveMappingContext(<a class="code hl_variable" href="class_a_a_r_ranger_player_controller.html#af3430013f947127ccb1a41c7337824b6">CurrentIMC</a>);</div>
-<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>      Subsystem-&gt;AddMappingContext(nextIMC, 0);</div>
-<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>  </div>
-<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>      <a class="code hl_variable" href="class_a_a_r_ranger_player_controller.html#af3430013f947127ccb1a41c7337824b6">CurrentIMC</a> = nextIMC;</div>
-<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>    }</div>
-<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>  }</div>
-<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>}</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span> </div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span><span class="keywordtype">void</span> AARRangerPlayerController::SwitchNextIMC(<span class="keyword">const</span> FGameplayTag&amp; InNextIMCTag)</div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>{</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>  <span class="keywordflow">if</span> (InputMappingContext == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>  {</div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>    <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>  }</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>  </div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>  UInputMappingContext* nextIMC = InputMappingContext-&gt;FindIMCWithTag(InNextIMCTag);</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>  <span class="keywordflow">if</span> (nextIMC != <span class="keyword">nullptr</span> &amp;&amp; CurrentIMC != nextIMC)</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>  {</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>    UEnhancedInputLocalPlayerSubsystem* Subsystem = ULocalPlayer::GetSubsystem&lt;UEnhancedInputLocalPlayerSubsystem&gt;(GetLocalPlayer());</div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>    <span class="keywordflow">if</span> (Subsystem != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>    {</div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>      Subsystem-&gt;RemoveMappingContext(CurrentIMC);</div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>      Subsystem-&gt;AddMappingContext(nextIMC, 0);</div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>  </div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>      CurrentIMC = nextIMC;</div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>    }</div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>  }</div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>}</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span> </div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span><span class="keywordtype">void</span> AARRangerPlayerController::Initialize()</div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>{</div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>  <span class="keywordflow">if</span> (InputConfig == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>  {</div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>    UE_LOG(LogTemp, Error, TEXT(<span class="stringliteral">&quot;Invalid Player Input Config. InitializePlayerInput will not call&quot;</span>));</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>    <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>  }</div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span> </div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>  UARInputComponent* ARIC = ::Cast&lt;UARInputComponent&gt;(InputComponent);</div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>  check(ARIC != <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>  <span class="keywordflow">if</span> (ARIC == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>  {</div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>    UE_LOG(LogTemp, Error, TEXT(<span class="stringliteral">&quot;Unexpected input component class. Abilities will not be bound to their inputs.Use UARInputComponent or its subclass&quot;</span>));</div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>    <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>  }</div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span> </div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>  <span class="comment">// Bind input action to gameplay tag;</span></div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>  ARIC-&gt;<a class="code hl_function" href="class_u_a_r_input_component.html#a81d67e99f5d4e3498c9dd7f703f601d5">BindAbilityActions</a>(InputConfig, <span class="keyword">this</span>, &amp;AARRangerPlayerController::AbilityInputTagPressed, &amp;AARRangerPlayerController::AbilityInputTagReleased, m_bindHandles);</div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span> </div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>  <span class="comment">// Bind native input actions</span></div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>  ARIC-&gt;<a class="code hl_function" href="class_u_a_r_input_component.html#addeb990ba5965015ae8460adf522ffee">BindNativeAction</a>(InputConfig, ARRanger::GameplayTags::NativeInput_Move, ETriggerEvent::Triggered, <span class="keyword">this</span>, &amp;ThisClass::NativeInput_Move);</div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>  ARIC-&gt;<a class="code hl_function" href="class_u_a_r_input_component.html#addeb990ba5965015ae8460adf522ffee">BindNativeAction</a>(InputConfig, ARRanger::GameplayTags::NativeInput_LockOn, ETriggerEvent::Triggered, <span class="keyword">this</span>, &amp;ThisClass::NativeInput_ToggleLockOn);</div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>  ARIC-&gt;<a class="code hl_function" href="class_u_a_r_input_component.html#addeb990ba5965015ae8460adf522ffee">BindNativeAction</a>(InputConfig, ARRanger::GameplayTags::NativeInput_SwitchTarget_Left, ETriggerEvent::Triggered, <span class="keyword">this</span>, &amp;ThisClass::NativeInput_SwitchTarget_Left);</div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>  ARIC-&gt;<a class="code hl_function" href="class_u_a_r_input_component.html#addeb990ba5965015ae8460adf522ffee">BindNativeAction</a>(InputConfig, ARRanger::GameplayTags::NativeInput_SwitchTarget_Right, ETriggerEvent::Triggered, <span class="keyword">this</span>, &amp;ThisClass::NativeInput_SwitchTarget_Right);</div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>  ARIC-&gt;<a class="code hl_function" href="class_u_a_r_input_component.html#addeb990ba5965015ae8460adf522ffee">BindNativeAction</a>(InputConfig, ARRanger::GameplayTags::NativeInput_Transform, ETriggerEvent::Triggered, <span class="keyword">this</span>, &amp;ThisClass::NativeInput_Transform);</div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>  ARIC-&gt;<a class="code hl_function" href="class_u_a_r_input_component.html#addeb990ba5965015ae8460adf522ffee">BindNativeAction</a>(InputConfig, ARRanger::GameplayTags::NativeInput_ResetCamera, ETriggerEvent::Started, <span class="keyword">this</span>, &amp;ThisClass::NativeInput_ResetCamera);</div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span> </div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>  <span class="keywordflow">if</span> (InputBufferClass != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>  {</div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>    InputBuffer = ::NewObject&lt;UARPlayerInputBuffer&gt;(<span class="keyword">this</span>, InputBufferClass);</div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>    check(InputBuffer != <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>  }</div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>}</div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span> </div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span><span class="keywordtype">void</span> AARRangerPlayerController::InitializePlayerInputBuffer()</div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>{</div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>  check(InputBuffer != <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span> </div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>  InputBuffer-&gt;Initialize(<span class="keyword">this</span>);</div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>}</div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span> </div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span><span class="keywordtype">void</span> AARRangerPlayerController::AbilityInputTagPressed(FGameplayTag InInputTag, <span class="keywordtype">bool</span> bOverrideInputState)</div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>{</div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>  <span class="keywordflow">if</span> (<a class="code hl_function" href="class_a_a_r_ranger_player_controller.html#a98240edaab5beb571f71dce66f0c79f6">IsInputBlocked</a>(InInputTag))</div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>  {</div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>    <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>  }</div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span> </div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>  <span class="comment">// If buffer is invalid then handle input, otherwise use input buffer to handle input </span></div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>  <span class="keywordflow">if</span> (InputBuffer == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>  {</div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>    <a class="code hl_function" href="class_a_a_r_ranger_player_controller.html#aab6d6f4e370f290d765918ea58ddd283">OnAbilityInputTagPressedEvaluated</a>(InInputTag);</div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>  }</div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>  <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>  {</div>
+<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>    InputBuffer-&gt;HandleInputTagPressed(InInputTag, bOverrideInputState);</div>
+<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>  }</div>
+<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span> </div>
+<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>}</div>
+<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span> </div>
+<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span><span class="keywordtype">void</span> AARRangerPlayerController::AbilityInputTagReleased(FGameplayTag InInputTag, <span class="keywordtype">bool</span> bOverrideInputState)</div>
+<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>{</div>
+<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>  <span class="keywordflow">if</span> (<a class="code hl_function" href="class_a_a_r_ranger_player_controller.html#a98240edaab5beb571f71dce66f0c79f6">IsInputBlocked</a>(InInputTag))</div>
+<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>  {</div>
+<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>    <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>  }</div>
+<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span> </div>
+<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>  <span class="comment">// If buffer is invalid then handle input,otherwise use input buffer to handle input </span></div>
+<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>  <span class="keywordflow">if</span> (InputBuffer == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>  {</div>
+<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>    <a class="code hl_function" href="class_a_a_r_ranger_player_controller.html#a79afaf30bb6ab9f3feba6719bd74ce44">OnAbilityInputTagReleasedEvaluated</a>(InInputTag);</div>
+<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>  }</div>
+<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>  <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>  {</div>
+<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>    InputBuffer-&gt;HandleInputTagReleased(InInputTag, bOverrideInputState); </div>
+<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>  }</div>
+<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>}</div>
+<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span> </div>
+<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span><span class="keywordtype">void</span> AARRangerPlayerController::EvaluateInputBuffer(<span class="keyword">const</span> <span class="keywordtype">float</span> DeltaTime, <span class="keyword">const</span> <span class="keywordtype">bool</span> bGamePaused)</div>
+<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span>{</div>
+<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>  <span class="keywordflow">if</span> (InputBuffer != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span>  {</div>
+<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span>    InputBuffer-&gt;EvaluateBuffer(DeltaTime, bGamePaused);</div>
+<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span>  }</div>
+<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span>}</div>
+<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span> </div>
+<div class="foldopen" id="foldopen00406" data-start="{" data-end="}">
+<div class="line"><a id="l00406" name="l00406"></a><span class="lineno"><a class="line" href="class_a_a_r_ranger_player_controller.html#a98240edaab5beb571f71dce66f0c79f6">  406</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="class_a_a_r_ranger_player_controller.html#a98240edaab5beb571f71dce66f0c79f6">AARRangerPlayerController::IsInputBlocked</a>(<span class="keyword">const</span> FGameplayTag&amp; InInputTag)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span><span class="keyword"></span>{</div>
+<div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span>  <span class="keywordflow">if</span> (!InInputTag.IsValid())</div>
+<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>  {</div>
+<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>  }</div>
+<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span> </div>
+<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span>  <span class="comment">// TODO Temporary</span></div>
+<div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span>  <span class="comment">// NOTE Maybe not only holdspec can block input </span></div>
+<div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span>  <span class="keywordtype">bool</span> bInputBlocked = m_holdSpecs.Num() &gt; 0;</div>
+<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>  <span class="keywordflow">for</span> (<span class="keyword">const</span> <a class="code hl_struct" href="struct_a_a_r_ranger_player_controller_1_1_f_hold_spec.html">FHoldSpec</a>&amp; holdSpec : m_holdSpecs)</div>
+<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span>  {</div>
+<div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>    <span class="keywordflow">if</span> (holdSpec.Handle.IsValid() &amp;&amp; holdSpec.InputBlockIgnoreTags.HasTagExact(InInputTag))</div>
+<div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>    {</div>
+<div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span>      bInputBlocked = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span>      <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span>    }</div>
+<div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span>  }</div>
+<div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span>  </div>
+<div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span>  <span class="keywordflow">return</span> bInputBlocked;</div>
+<div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span>}</div>
 </div>
-<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span> </div>
-<div class="foldopen" id="foldopen00319" data-start="{" data-end="}">
-<div class="line"><a id="l00319" name="l00319"></a><span class="lineno"><a class="line" href="class_a_a_r_ranger_player_controller.html#ac66d0a852d45f0f952b9cffe904e60dc">  319</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_a_a_r_ranger_player_controller.html#ac66d0a852d45f0f952b9cffe904e60dc">AARRangerPlayerController::Initialize</a>()</div>
-<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>{</div>
-<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_a_a_r_ranger_player_controller.html#a8aa4fc12f670c6bb34dad8ed7932db51">InputConfig</a> == <span class="keyword">nullptr</span>)</div>
-<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>  {</div>
-<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>    UE_LOG(LogTemp, Error, TEXT(<span class="stringliteral">&quot;Invalid Player Input Config. InitializePlayerInput will not call&quot;</span>));</div>
-<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>    <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>  }</div>
-<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span> </div>
-<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>  <a class="code hl_class" href="class_u_a_r_input_component.html">UARInputComponent</a>* ARIC = ::Cast&lt;UARInputComponent&gt;(InputComponent);</div>
-<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>  check(ARIC != <span class="keyword">nullptr</span>);</div>
-<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>  <span class="keywordflow">if</span> (ARIC == <span class="keyword">nullptr</span>)</div>
-<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>  {</div>
-<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>    UE_LOG(LogTemp, Error, TEXT(<span class="stringliteral">&quot;Unexpected input component class. Abilities will not be bound to their inputs.Use UARInputComponent or its subclass&quot;</span>));</div>
-<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>    <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>  }</div>
-<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span> </div>
-<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>  <span class="comment">// Bind input action to gameplay tag;</span></div>
-<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>  ARIC-&gt;<a class="code hl_function" href="class_u_a_r_input_component.html#a81d67e99f5d4e3498c9dd7f703f601d5">BindAbilityActions</a>(<a class="code hl_variable" href="class_a_a_r_ranger_player_controller.html#a8aa4fc12f670c6bb34dad8ed7932db51">InputConfig</a>, <span class="keyword">this</span>, &amp;<a class="code hl_function" href="class_a_a_r_ranger_player_controller.html#a5848ec51666c10f6ba4b5335afc97990">AARRangerPlayerController::AbilityInputTagPressed</a>, &amp;<a class="code hl_function" href="class_a_a_r_ranger_player_controller.html#a06d1a3cb18da5931d411f5e3eb6efe3a">AARRangerPlayerController::AbilityInputTagReleased</a>, <a class="code hl_variable" href="class_a_a_r_ranger_player_controller.html#a6d1b1502f21ea896460de5530afc8daf">m_bindHandles</a>);</div>
-<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span> </div>
-<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>  <span class="comment">// Bind native input actions</span></div>
-<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>  ARIC-&gt;<a class="code hl_function" href="class_u_a_r_input_component.html#addeb990ba5965015ae8460adf522ffee">BindNativeAction</a>(<a class="code hl_variable" href="class_a_a_r_ranger_player_controller.html#a8aa4fc12f670c6bb34dad8ed7932db51">InputConfig</a>, ARRanger::GameplayTags::NativeInput_Move, ETriggerEvent::Triggered, <span class="keyword">this</span>, &amp;ThisClass::NativeInput_Move);</div>
-<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>  ARIC-&gt;<a class="code hl_function" href="class_u_a_r_input_component.html#addeb990ba5965015ae8460adf522ffee">BindNativeAction</a>(<a class="code hl_variable" href="class_a_a_r_ranger_player_controller.html#a8aa4fc12f670c6bb34dad8ed7932db51">InputConfig</a>, ARRanger::GameplayTags::NativeInput_LockOn, ETriggerEvent::Triggered, <span class="keyword">this</span>, &amp;ThisClass::NativeInput_ToggleLockOn);</div>
-<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>  ARIC-&gt;<a class="code hl_function" href="class_u_a_r_input_component.html#addeb990ba5965015ae8460adf522ffee">BindNativeAction</a>(<a class="code hl_variable" href="class_a_a_r_ranger_player_controller.html#a8aa4fc12f670c6bb34dad8ed7932db51">InputConfig</a>, ARRanger::GameplayTags::NativeInput_SwitchTarget_Left, ETriggerEvent::Triggered, <span class="keyword">this</span>, &amp;ThisClass::NativeInput_SwitchTarget_Left);</div>
-<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>  ARIC-&gt;<a class="code hl_function" href="class_u_a_r_input_component.html#addeb990ba5965015ae8460adf522ffee">BindNativeAction</a>(<a class="code hl_variable" href="class_a_a_r_ranger_player_controller.html#a8aa4fc12f670c6bb34dad8ed7932db51">InputConfig</a>, ARRanger::GameplayTags::NativeInput_SwitchTarget_Right, ETriggerEvent::Triggered, <span class="keyword">this</span>, &amp;ThisClass::NativeInput_SwitchTarget_Right);</div>
-<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>  ARIC-&gt;<a class="code hl_function" href="class_u_a_r_input_component.html#addeb990ba5965015ae8460adf522ffee">BindNativeAction</a>(<a class="code hl_variable" href="class_a_a_r_ranger_player_controller.html#a8aa4fc12f670c6bb34dad8ed7932db51">InputConfig</a>, ARRanger::GameplayTags::NativeInput_Transform, ETriggerEvent::Triggered, <span class="keyword">this</span>, &amp;ThisClass::NativeInput_Transform);</div>
-<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>  ARIC-&gt;<a class="code hl_function" href="class_u_a_r_input_component.html#addeb990ba5965015ae8460adf522ffee">BindNativeAction</a>(<a class="code hl_variable" href="class_a_a_r_ranger_player_controller.html#a8aa4fc12f670c6bb34dad8ed7932db51">InputConfig</a>, ARRanger::GameplayTags::NativeInput_ResetCamera, ETriggerEvent::Started, <span class="keyword">this</span>, &amp;ThisClass::NativeInput_ResetCamera);</div>
-<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span> </div>
-<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_a_a_r_ranger_player_controller.html#a54fc4d7995c8b7bffcc2a38de8da2ae1">InputBufferClass</a> != <span class="keyword">nullptr</span>)</div>
-<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>  {</div>
-<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>    <a class="code hl_variable" href="class_a_a_r_ranger_player_controller.html#a1377861a48c94df60814e08fa06d103f">InputBuffer</a> = ::NewObject&lt;UARPlayerInputBuffer&gt;(<span class="keyword">this</span>, <a class="code hl_variable" href="class_a_a_r_ranger_player_controller.html#a54fc4d7995c8b7bffcc2a38de8da2ae1">InputBufferClass</a>);</div>
-<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>    check(<a class="code hl_variable" href="class_a_a_r_ranger_player_controller.html#a1377861a48c94df60814e08fa06d103f">InputBuffer</a> != <span class="keyword">nullptr</span>);</div>
-<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>  }</div>
-<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>}</div>
+<div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span> </div>
+<div class="foldopen" id="foldopen00428" data-start="{" data-end="}">
+<div class="line"><a id="l00428" name="l00428"></a><span class="lineno"><a class="line" href="class_a_a_r_ranger_player_controller.html#aab6d6f4e370f290d765918ea58ddd283">  428</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_a_a_r_ranger_player_controller.html#aab6d6f4e370f290d765918ea58ddd283">AARRangerPlayerController::OnAbilityInputTagPressedEvaluated</a>(FGameplayTag InInputTag)</div>
+<div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span>{</div>
+<div class="line"><a id="l00430" name="l00430"></a><span class="lineno">  430</span>  <span class="keywordflow">if</span> (<a class="code hl_class" href="class_u_a_r_ability_system_component.html">UARAbilitySystemComponent</a>* ARASC = <a class="code hl_function" href="class_a_a_r_ranger_player_controller.html#a3275eac73869ec4522d8e07d95eb1448">GetARASC</a>())</div>
+<div class="line"><a id="l00431" name="l00431"></a><span class="lineno">  431</span>  {</div>
+<div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span>    ARASC-&gt;AbilityInputTagPressed(InInputTag);</div>
+<div class="line"><a id="l00433" name="l00433"></a><span class="lineno">  433</span>  }</div>
+<div class="line"><a id="l00434" name="l00434"></a><span class="lineno">  434</span>}</div>
 </div>
-<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span> </div>
-<div class="foldopen" id="foldopen00353" data-start="{" data-end="}">
-<div class="line"><a id="l00353" name="l00353"></a><span class="lineno"><a class="line" href="class_a_a_r_ranger_player_controller.html#a134a0efd9cb04219b3e14a3699b4fcf0">  353</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_a_a_r_ranger_player_controller.html#a134a0efd9cb04219b3e14a3699b4fcf0">AARRangerPlayerController::InitializePlayerInputBuffer</a>()</div>
-<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>{</div>
-<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>  check(<a class="code hl_variable" href="class_a_a_r_ranger_player_controller.html#a1377861a48c94df60814e08fa06d103f">InputBuffer</a> != <span class="keyword">nullptr</span>);</div>
-<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span> </div>
-<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>  <a class="code hl_variable" href="class_a_a_r_ranger_player_controller.html#a1377861a48c94df60814e08fa06d103f">InputBuffer</a>-&gt;Initialize(<span class="keyword">this</span>);</div>
-<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>}</div>
+<div class="line"><a id="l00435" name="l00435"></a><span class="lineno">  435</span> </div>
+<div class="foldopen" id="foldopen00436" data-start="{" data-end="}">
+<div class="line"><a id="l00436" name="l00436"></a><span class="lineno"><a class="line" href="class_a_a_r_ranger_player_controller.html#a79afaf30bb6ab9f3feba6719bd74ce44">  436</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_a_a_r_ranger_player_controller.html#a79afaf30bb6ab9f3feba6719bd74ce44">AARRangerPlayerController::OnAbilityInputTagReleasedEvaluated</a>(FGameplayTag InInputTag)</div>
+<div class="line"><a id="l00437" name="l00437"></a><span class="lineno">  437</span>{</div>
+<div class="line"><a id="l00438" name="l00438"></a><span class="lineno">  438</span>  <span class="keywordflow">if</span> (<a class="code hl_class" href="class_u_a_r_ability_system_component.html">UARAbilitySystemComponent</a>* ARASC = <a class="code hl_function" href="class_a_a_r_ranger_player_controller.html#a3275eac73869ec4522d8e07d95eb1448">GetARASC</a>())</div>
+<div class="line"><a id="l00439" name="l00439"></a><span class="lineno">  439</span>  {</div>
+<div class="line"><a id="l00440" name="l00440"></a><span class="lineno">  440</span>    ARASC-&gt;AbilityInputTagReleased(InInputTag);</div>
+<div class="line"><a id="l00441" name="l00441"></a><span class="lineno">  441</span>  }</div>
+<div class="line"><a id="l00442" name="l00442"></a><span class="lineno">  442</span>}</div>
 </div>
-<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span> </div>
-<div class="foldopen" id="foldopen00360" data-start="{" data-end="}">
-<div class="line"><a id="l00360" name="l00360"></a><span class="lineno"><a class="line" href="class_a_a_r_ranger_player_controller.html#a5848ec51666c10f6ba4b5335afc97990">  360</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_a_a_r_ranger_player_controller.html#a5848ec51666c10f6ba4b5335afc97990">AARRangerPlayerController::AbilityInputTagPressed</a>(FGameplayTag InInputTag, <span class="keywordtype">bool</span> bOverrideInputState)</div>
-<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>{</div>
-<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>  <span class="keywordflow">if</span> (<a class="code hl_function" href="class_a_a_r_ranger_player_controller.html#a98240edaab5beb571f71dce66f0c79f6">IsInputBlocked</a>(InInputTag))</div>
-<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>  {</div>
-<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>    <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>  }</div>
-<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span> </div>
-<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>  <span class="comment">// If buffer is invalid then handle input, otherwise use input buffer to handle input </span></div>
-<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_a_a_r_ranger_player_controller.html#a1377861a48c94df60814e08fa06d103f">InputBuffer</a> == <span class="keyword">nullptr</span>)</div>
-<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>  {</div>
-<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>    <a class="code hl_function" href="class_a_a_r_ranger_player_controller.html#aab6d6f4e370f290d765918ea58ddd283">OnAbilityInputTagPressedEvaluated</a>(InInputTag);</div>
-<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>  }</div>
-<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>  <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>  {</div>
-<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>    <a class="code hl_variable" href="class_a_a_r_ranger_player_controller.html#a1377861a48c94df60814e08fa06d103f">InputBuffer</a>-&gt;HandleInputTagPressed(InInputTag, bOverrideInputState);</div>
-<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>  }</div>
-<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span> </div>
-<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>}</div>
-</div>
-<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span> </div>
-<div class="foldopen" id="foldopen00379" data-start="{" data-end="}">
-<div class="line"><a id="l00379" name="l00379"></a><span class="lineno"><a class="line" href="class_a_a_r_ranger_player_controller.html#a06d1a3cb18da5931d411f5e3eb6efe3a">  379</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_a_a_r_ranger_player_controller.html#a06d1a3cb18da5931d411f5e3eb6efe3a">AARRangerPlayerController::AbilityInputTagReleased</a>(FGameplayTag InInputTag, <span class="keywordtype">bool</span> bOverrideInputState)</div>
-<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>{</div>
-<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>  <span class="keywordflow">if</span> (<a class="code hl_function" href="class_a_a_r_ranger_player_controller.html#a98240edaab5beb571f71dce66f0c79f6">IsInputBlocked</a>(InInputTag))</div>
-<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>  {</div>
-<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>    <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>  }</div>
-<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span> </div>
-<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>  <span class="comment">// If buffer is invalid then handle input,otherwise use input buffer to handle input </span></div>
-<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_a_a_r_ranger_player_controller.html#a1377861a48c94df60814e08fa06d103f">InputBuffer</a> == <span class="keyword">nullptr</span>)</div>
-<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>  {</div>
-<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>    <a class="code hl_function" href="class_a_a_r_ranger_player_controller.html#a79afaf30bb6ab9f3feba6719bd74ce44">OnAbilityInputTagReleasedEvaluated</a>(InInputTag);</div>
-<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>  }</div>
-<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>  <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>  {</div>
-<div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>    <a class="code hl_variable" href="class_a_a_r_ranger_player_controller.html#a1377861a48c94df60814e08fa06d103f">InputBuffer</a>-&gt;HandleInputTagReleased(InInputTag, bOverrideInputState); </div>
-<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>  }</div>
-<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>}</div>
-</div>
-<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span> </div>
-<div class="foldopen" id="foldopen00397" data-start="{" data-end="}">
-<div class="line"><a id="l00397" name="l00397"></a><span class="lineno"><a class="line" href="class_a_a_r_ranger_player_controller.html#a1f721d8795e4e9e5f8cbabdfbf63ccb6">  397</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_a_a_r_ranger_player_controller.html#a1f721d8795e4e9e5f8cbabdfbf63ccb6">AARRangerPlayerController::EvaluateInputBuffer</a>(<span class="keyword">const</span> <span class="keywordtype">float</span> DeltaTime, <span class="keyword">const</span> <span class="keywordtype">bool</span> bGamePaused)</div>
-<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span>{</div>
-<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_a_a_r_ranger_player_controller.html#a1377861a48c94df60814e08fa06d103f">InputBuffer</a> != <span class="keyword">nullptr</span>)</div>
-<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>  {</div>
-<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span>    <a class="code hl_variable" href="class_a_a_r_ranger_player_controller.html#a1377861a48c94df60814e08fa06d103f">InputBuffer</a>-&gt;EvaluateBuffer(DeltaTime, bGamePaused);</div>
-<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span>  }</div>
-<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span>}</div>
-</div>
-<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span> </div>
-<div class="foldopen" id="foldopen00405" data-start="{" data-end="}">
-<div class="line"><a id="l00405" name="l00405"></a><span class="lineno"><a class="line" href="class_a_a_r_ranger_player_controller.html#a98240edaab5beb571f71dce66f0c79f6">  405</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="class_a_a_r_ranger_player_controller.html#a98240edaab5beb571f71dce66f0c79f6">AARRangerPlayerController::IsInputBlocked</a>(<span class="keyword">const</span> FGameplayTag&amp; InInputTag)<span class="keyword"> const</span></div>
-<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span>  <span class="keywordflow">if</span> (!InInputTag.IsValid())</div>
-<div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span>  {</div>
-<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>  }</div>
-<div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span> </div>
-<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span>  <span class="comment">// TODO Temporary</span></div>
-<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span>  <span class="comment">// NOTE Maybe not only holdspec can block input </span></div>
-<div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span>  <span class="keywordtype">bool</span> bInputBlocked = <a class="code hl_variable" href="class_a_a_r_ranger_player_controller.html#a1a691afea79e04c03744b29116da6029">m_holdSpecs</a>.Num() &gt; 0;</div>
-<div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span>  <span class="keywordflow">for</span> (<span class="keyword">const</span> <a class="code hl_struct" href="struct_a_a_r_ranger_player_controller_1_1_f_hold_spec.html">FHoldSpec</a>&amp; holdSpec : <a class="code hl_variable" href="class_a_a_r_ranger_player_controller.html#a1a691afea79e04c03744b29116da6029">m_holdSpecs</a>)</div>
-<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>  {</div>
-<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span>    <span class="keywordflow">if</span> (holdSpec.Handle.IsValid() &amp;&amp; holdSpec.InputBlockIgnoreTags.HasTagExact(InInputTag))</div>
-<div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>    {</div>
-<div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>      bInputBlocked = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span>      <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span>    }</div>
-<div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span>  }</div>
-<div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span>  </div>
-<div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span>  <span class="keywordflow">return</span> bInputBlocked;</div>
-<div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span>}</div>
-</div>
-<div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span> </div>
-<div class="foldopen" id="foldopen00427" data-start="{" data-end="}">
-<div class="line"><a id="l00427" name="l00427"></a><span class="lineno"><a class="line" href="class_a_a_r_ranger_player_controller.html#aab6d6f4e370f290d765918ea58ddd283">  427</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_a_a_r_ranger_player_controller.html#aab6d6f4e370f290d765918ea58ddd283">AARRangerPlayerController::OnAbilityInputTagPressedEvaluated</a>(FGameplayTag InInputTag)</div>
-<div class="line"><a id="l00428" name="l00428"></a><span class="lineno">  428</span>{</div>
-<div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span>  <span class="keywordflow">if</span> (<a class="code hl_class" href="class_u_a_r_ability_system_component.html">UARAbilitySystemComponent</a>* ARASC = <a class="code hl_function" href="class_a_a_r_ranger_player_controller.html#a3275eac73869ec4522d8e07d95eb1448">GetARASC</a>())</div>
-<div class="line"><a id="l00430" name="l00430"></a><span class="lineno">  430</span>  {</div>
-<div class="line"><a id="l00431" name="l00431"></a><span class="lineno">  431</span>    ARASC-&gt;AbilityInputTagPressed(InInputTag);</div>
-<div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span>  }</div>
-<div class="line"><a id="l00433" name="l00433"></a><span class="lineno">  433</span>}</div>
-</div>
-<div class="line"><a id="l00434" name="l00434"></a><span class="lineno">  434</span> </div>
-<div class="foldopen" id="foldopen00435" data-start="{" data-end="}">
-<div class="line"><a id="l00435" name="l00435"></a><span class="lineno"><a class="line" href="class_a_a_r_ranger_player_controller.html#a79afaf30bb6ab9f3feba6719bd74ce44">  435</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_a_a_r_ranger_player_controller.html#a79afaf30bb6ab9f3feba6719bd74ce44">AARRangerPlayerController::OnAbilityInputTagReleasedEvaluated</a>(FGameplayTag InInputTag)</div>
-<div class="line"><a id="l00436" name="l00436"></a><span class="lineno">  436</span>{</div>
-<div class="line"><a id="l00437" name="l00437"></a><span class="lineno">  437</span>  <span class="keywordflow">if</span> (<a class="code hl_class" href="class_u_a_r_ability_system_component.html">UARAbilitySystemComponent</a>* ARASC = <a class="code hl_function" href="class_a_a_r_ranger_player_controller.html#a3275eac73869ec4522d8e07d95eb1448">GetARASC</a>())</div>
-<div class="line"><a id="l00438" name="l00438"></a><span class="lineno">  438</span>  {</div>
-<div class="line"><a id="l00439" name="l00439"></a><span class="lineno">  439</span>    ARASC-&gt;AbilityInputTagReleased(InInputTag);</div>
-<div class="line"><a id="l00440" name="l00440"></a><span class="lineno">  440</span>  }</div>
-<div class="line"><a id="l00441" name="l00441"></a><span class="lineno">  441</span>}</div>
-</div>
-<div class="line"><a id="l00442" name="l00442"></a><span class="lineno">  442</span> </div>
-<div class="foldopen" id="foldopen00443" data-start="{" data-end="}">
-<div class="line"><a id="l00443" name="l00443"></a><span class="lineno"><a class="line" href="class_a_a_r_ranger_player_controller.html#a0cae71a4dc36b94a79b7531263fdc27f">  443</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_a_a_r_ranger_player_controller.html#a0cae71a4dc36b94a79b7531263fdc27f">AARRangerPlayerController::NativeInput_Move</a>(<span class="keyword">const</span> FInputActionValue&amp; InputActionValue,  FGameplayTag InInputTag)</div>
-<div class="line"><a id="l00444" name="l00444"></a><span class="lineno">  444</span>{</div>
-<div class="line"><a id="l00445" name="l00445"></a><span class="lineno">  445</span>  <span class="keywordflow">if</span> (<a class="code hl_function" href="class_a_a_r_ranger_player_controller.html#a98240edaab5beb571f71dce66f0c79f6">IsInputBlocked</a>(InInputTag))</div>
-<div class="line"><a id="l00446" name="l00446"></a><span class="lineno">  446</span>  {</div>
-<div class="line"><a id="l00447" name="l00447"></a><span class="lineno">  447</span>    <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00448" name="l00448"></a><span class="lineno">  448</span>  }</div>
-<div class="line"><a id="l00449" name="l00449"></a><span class="lineno">  449</span> </div>
-<div class="line"><a id="l00450" name="l00450"></a><span class="lineno">  450</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_a_a_r_ranger_player_controller.html#a03705bd53d1a606ed9cd1fd5f8b1f71f">PlayerPresenter</a> != <span class="keyword">nullptr</span>)</div>
-<div class="line"><a id="l00451" name="l00451"></a><span class="lineno">  451</span>  {</div>
-<div class="line"><a id="l00452" name="l00452"></a><span class="lineno">  452</span>    <span class="keyword">const</span> FVector2D moveInput = InputActionValue.Get&lt;FVector2D&gt;();</div>
-<div class="line"><a id="l00453" name="l00453"></a><span class="lineno">  453</span>    <a class="code hl_variable" href="class_a_a_r_ranger_player_controller.html#a03705bd53d1a606ed9cd1fd5f8b1f71f">PlayerPresenter</a>-&gt;Input_HandleLeftStick(moveInput.X, moveInput.Y, <a class="code hl_variable" href="class_a_a_r_ranger_player_controller.html#acd1d2d786af01be9240fa8892c1f128a">MoveDeadZone</a>, <a class="code hl_variable" href="class_a_a_r_ranger_player_controller.html#aba065275fbde70b121b872cf1e669e90">MinInput</a>);</div>
-<div class="line"><a id="l00454" name="l00454"></a><span class="lineno">  454</span>  }</div>
-<div class="line"><a id="l00455" name="l00455"></a><span class="lineno">  455</span>}</div>
-</div>
-<div class="line"><a id="l00456" name="l00456"></a><span class="lineno">  456</span> </div>
-<div class="foldopen" id="foldopen00457" data-start="{" data-end="}">
-<div class="line"><a id="l00457" name="l00457"></a><span class="lineno"><a class="line" href="class_a_a_r_ranger_player_controller.html#a6cb1e574c0162757b47427192a7aa56a">  457</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_a_a_r_ranger_player_controller.html#a6cb1e574c0162757b47427192a7aa56a">AARRangerPlayerController::NativeInput_ToggleLockOn</a>(<span class="keyword">const</span> FInputActionValue&amp; InputActionValue,  FGameplayTag InInputTag)</div>
-<div class="line"><a id="l00458" name="l00458"></a><span class="lineno">  458</span>{</div>
-<div class="line"><a id="l00459" name="l00459"></a><span class="lineno">  459</span>  <span class="keywordflow">if</span> (<a class="code hl_function" href="class_a_a_r_ranger_player_controller.html#a98240edaab5beb571f71dce66f0c79f6">IsInputBlocked</a>(InInputTag))</div>
-<div class="line"><a id="l00460" name="l00460"></a><span class="lineno">  460</span>  {</div>
-<div class="line"><a id="l00461" name="l00461"></a><span class="lineno">  461</span>    <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00462" name="l00462"></a><span class="lineno">  462</span>  }</div>
-<div class="line"><a id="l00463" name="l00463"></a><span class="lineno">  463</span> </div>
-<div class="line"><a id="l00464" name="l00464"></a><span class="lineno">  464</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_a_a_r_ranger_player_controller.html#a0f7944a0db2fa426e97519c34f54dbdc">OwningCharacter</a> != <span class="keyword">nullptr</span>)</div>
-<div class="line"><a id="l00465" name="l00465"></a><span class="lineno">  465</span>  {</div>
-<div class="line"><a id="l00466" name="l00466"></a><span class="lineno">  466</span>    <span class="comment">// TODO Uncomment it when we finish debugging</span></div>
-<div class="line"><a id="l00467" name="l00467"></a><span class="lineno">  467</span>    <span class="comment">// OwningCharacter-&gt;ToggleLockOn();</span></div>
-<div class="line"><a id="l00468" name="l00468"></a><span class="lineno">  468</span>  }</div>
-<div class="line"><a id="l00469" name="l00469"></a><span class="lineno">  469</span>}</div>
-</div>
-<div class="line"><a id="l00470" name="l00470"></a><span class="lineno">  470</span> </div>
-<div class="foldopen" id="foldopen00471" data-start="{" data-end="}">
-<div class="line"><a id="l00471" name="l00471"></a><span class="lineno"><a class="line" href="class_a_a_r_ranger_player_controller.html#ae83e31c5cc99d6cec0952faf81aa511b">  471</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_a_a_r_ranger_player_controller.html#ae83e31c5cc99d6cec0952faf81aa511b">AARRangerPlayerController::NativeInput_SwitchTarget_Right</a>(<span class="keyword">const</span> FInputActionValue&amp; InputActionValue,  FGameplayTag InInputTag)</div>
-<div class="line"><a id="l00472" name="l00472"></a><span class="lineno">  472</span>{</div>
-<div class="line"><a id="l00473" name="l00473"></a><span class="lineno">  473</span>  <span class="keywordflow">if</span> (<a class="code hl_function" href="class_a_a_r_ranger_player_controller.html#a98240edaab5beb571f71dce66f0c79f6">IsInputBlocked</a>(InInputTag))</div>
-<div class="line"><a id="l00474" name="l00474"></a><span class="lineno">  474</span>  {</div>
-<div class="line"><a id="l00475" name="l00475"></a><span class="lineno">  475</span>    <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00476" name="l00476"></a><span class="lineno">  476</span>  }</div>
-<div class="line"><a id="l00477" name="l00477"></a><span class="lineno">  477</span> </div>
-<div class="line"><a id="l00478" name="l00478"></a><span class="lineno">  478</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_a_a_r_ranger_player_controller.html#a0f7944a0db2fa426e97519c34f54dbdc">OwningCharacter</a> != <span class="keyword">nullptr</span>)</div>
-<div class="line"><a id="l00479" name="l00479"></a><span class="lineno">  479</span>  {</div>
-<div class="line"><a id="l00480" name="l00480"></a><span class="lineno">  480</span>    <a class="code hl_variable" href="class_a_a_r_ranger_player_controller.html#a0f7944a0db2fa426e97519c34f54dbdc">OwningCharacter</a>-&gt;SwitchTargetRight();</div>
-<div class="line"><a id="l00481" name="l00481"></a><span class="lineno">  481</span>  }</div>
-<div class="line"><a id="l00482" name="l00482"></a><span class="lineno">  482</span>}</div>
-</div>
-<div class="line"><a id="l00483" name="l00483"></a><span class="lineno">  483</span> </div>
-<div class="foldopen" id="foldopen00484" data-start="{" data-end="}">
-<div class="line"><a id="l00484" name="l00484"></a><span class="lineno"><a class="line" href="class_a_a_r_ranger_player_controller.html#a39161ce072ac4f3272ce1cd0708bcdb1">  484</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_a_a_r_ranger_player_controller.html#a39161ce072ac4f3272ce1cd0708bcdb1">AARRangerPlayerController::NativeInput_SwitchTarget_Left</a>(<span class="keyword">const</span> FInputActionValue&amp; InputActionValue,  FGameplayTag InInputTag)</div>
-<div class="line"><a id="l00485" name="l00485"></a><span class="lineno">  485</span>{</div>
-<div class="line"><a id="l00486" name="l00486"></a><span class="lineno">  486</span>  <span class="keywordflow">if</span> (<a class="code hl_function" href="class_a_a_r_ranger_player_controller.html#a98240edaab5beb571f71dce66f0c79f6">IsInputBlocked</a>(InInputTag))</div>
-<div class="line"><a id="l00487" name="l00487"></a><span class="lineno">  487</span>  {</div>
-<div class="line"><a id="l00488" name="l00488"></a><span class="lineno">  488</span>    <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00489" name="l00489"></a><span class="lineno">  489</span>  }</div>
-<div class="line"><a id="l00490" name="l00490"></a><span class="lineno">  490</span> </div>
-<div class="line"><a id="l00491" name="l00491"></a><span class="lineno">  491</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_a_a_r_ranger_player_controller.html#a0f7944a0db2fa426e97519c34f54dbdc">OwningCharacter</a> != <span class="keyword">nullptr</span>)</div>
-<div class="line"><a id="l00492" name="l00492"></a><span class="lineno">  492</span>  {</div>
-<div class="line"><a id="l00493" name="l00493"></a><span class="lineno">  493</span>    <a class="code hl_variable" href="class_a_a_r_ranger_player_controller.html#a0f7944a0db2fa426e97519c34f54dbdc">OwningCharacter</a>-&gt;SwitchTargetLeft();</div>
-<div class="line"><a id="l00494" name="l00494"></a><span class="lineno">  494</span>  }</div>
-<div class="line"><a id="l00495" name="l00495"></a><span class="lineno">  495</span>}</div>
-</div>
-<div class="line"><a id="l00496" name="l00496"></a><span class="lineno">  496</span> </div>
-<div class="foldopen" id="foldopen00497" data-start="{" data-end="}">
-<div class="line"><a id="l00497" name="l00497"></a><span class="lineno"><a class="line" href="class_a_a_r_ranger_player_controller.html#a37c681eaa8a4df7e294d11ba7149b251">  497</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_a_a_r_ranger_player_controller.html#a37c681eaa8a4df7e294d11ba7149b251">AARRangerPlayerController::NativeInput_Transform</a>(<span class="keyword">const</span> FInputActionValue&amp; InputActionValue,  FGameplayTag InInputTag)</div>
-<div class="line"><a id="l00498" name="l00498"></a><span class="lineno">  498</span>{</div>
-<div class="line"><a id="l00499" name="l00499"></a><span class="lineno">  499</span>  <span class="keywordflow">if</span> (<a class="code hl_function" href="class_a_a_r_ranger_player_controller.html#a98240edaab5beb571f71dce66f0c79f6">IsInputBlocked</a>(InInputTag))</div>
-<div class="line"><a id="l00500" name="l00500"></a><span class="lineno">  500</span>  {</div>
-<div class="line"><a id="l00501" name="l00501"></a><span class="lineno">  501</span>    <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00502" name="l00502"></a><span class="lineno">  502</span>  }</div>
-<div class="line"><a id="l00503" name="l00503"></a><span class="lineno">  503</span> </div>
-<div class="line"><a id="l00504" name="l00504"></a><span class="lineno">  504</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_a_a_r_ranger_player_controller.html#a03705bd53d1a606ed9cd1fd5f8b1f71f">PlayerPresenter</a> != <span class="keyword">nullptr</span>)</div>
-<div class="line"><a id="l00505" name="l00505"></a><span class="lineno">  505</span>  {</div>
-<div class="line"><a id="l00506" name="l00506"></a><span class="lineno">  506</span>    <a class="code hl_variable" href="class_a_a_r_ranger_player_controller.html#a03705bd53d1a606ed9cd1fd5f8b1f71f">PlayerPresenter</a>-&gt;Input_HandleTransform();</div>
-<div class="line"><a id="l00507" name="l00507"></a><span class="lineno">  507</span>  }</div>
-<div class="line"><a id="l00508" name="l00508"></a><span class="lineno">  508</span>}</div>
-</div>
-<div class="line"><a id="l00509" name="l00509"></a><span class="lineno">  509</span> </div>
-<div class="foldopen" id="foldopen00510" data-start="{" data-end="}">
-<div class="line"><a id="l00510" name="l00510"></a><span class="lineno"><a class="line" href="class_a_a_r_ranger_player_controller.html#aa3ecf4e20fdaaf81186b5c4d417b19e0">  510</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_a_a_r_ranger_player_controller.html#aa3ecf4e20fdaaf81186b5c4d417b19e0">AARRangerPlayerController::NativeInput_ResetCamera</a>(<span class="keyword">const</span> FInputActionValue&amp; InputActionValue,  FGameplayTag InInputTag)</div>
-<div class="line"><a id="l00511" name="l00511"></a><span class="lineno">  511</span>{</div>
-<div class="line"><a id="l00512" name="l00512"></a><span class="lineno">  512</span>  <span class="keywordflow">if</span> (<a class="code hl_function" href="class_a_a_r_ranger_player_controller.html#a98240edaab5beb571f71dce66f0c79f6">IsInputBlocked</a>(InInputTag))</div>
-<div class="line"><a id="l00513" name="l00513"></a><span class="lineno">  513</span>  {</div>
-<div class="line"><a id="l00514" name="l00514"></a><span class="lineno">  514</span>    <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00515" name="l00515"></a><span class="lineno">  515</span>  }</div>
-<div class="line"><a id="l00516" name="l00516"></a><span class="lineno">  516</span> </div>
-<div class="line"><a id="l00517" name="l00517"></a><span class="lineno">  517</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_a_a_r_ranger_player_controller.html#a03705bd53d1a606ed9cd1fd5f8b1f71f">PlayerPresenter</a> != <span class="keyword">nullptr</span>)</div>
-<div class="line"><a id="l00518" name="l00518"></a><span class="lineno">  518</span>  {</div>
-<div class="line"><a id="l00519" name="l00519"></a><span class="lineno">  519</span>    <a class="code hl_variable" href="class_a_a_r_ranger_player_controller.html#a03705bd53d1a606ed9cd1fd5f8b1f71f">PlayerPresenter</a>-&gt;Input_HandleCameraReset();</div>
-<div class="line"><a id="l00520" name="l00520"></a><span class="lineno">  520</span>  }</div>
-<div class="line"><a id="l00521" name="l00521"></a><span class="lineno">  521</span>}</div>
-</div>
+<div class="line"><a id="l00443" name="l00443"></a><span class="lineno">  443</span> </div>
+<div class="line"><a id="l00444" name="l00444"></a><span class="lineno">  444</span><span class="keywordtype">void</span> AARRangerPlayerController::NativeInput_Move(<span class="keyword">const</span> FInputActionValue&amp; InputActionValue,  FGameplayTag InInputTag)</div>
+<div class="line"><a id="l00445" name="l00445"></a><span class="lineno">  445</span>{</div>
+<div class="line"><a id="l00446" name="l00446"></a><span class="lineno">  446</span>  <span class="keywordflow">if</span> (<a class="code hl_function" href="class_a_a_r_ranger_player_controller.html#a98240edaab5beb571f71dce66f0c79f6">IsInputBlocked</a>(InInputTag))</div>
+<div class="line"><a id="l00447" name="l00447"></a><span class="lineno">  447</span>  {</div>
+<div class="line"><a id="l00448" name="l00448"></a><span class="lineno">  448</span>    <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00449" name="l00449"></a><span class="lineno">  449</span>  }</div>
+<div class="line"><a id="l00450" name="l00450"></a><span class="lineno">  450</span> </div>
+<div class="line"><a id="l00451" name="l00451"></a><span class="lineno">  451</span>  <span class="keywordflow">if</span> (PlayerPresenter != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00452" name="l00452"></a><span class="lineno">  452</span>  {</div>
+<div class="line"><a id="l00453" name="l00453"></a><span class="lineno">  453</span>    <span class="keyword">const</span> FVector2D moveInput = InputActionValue.Get&lt;FVector2D&gt;();</div>
+<div class="line"><a id="l00454" name="l00454"></a><span class="lineno">  454</span>    PlayerPresenter-&gt;Input_HandleLeftStick(moveInput.X, moveInput.Y, MoveDeadZone, MinInput);</div>
+<div class="line"><a id="l00455" name="l00455"></a><span class="lineno">  455</span>  }</div>
+<div class="line"><a id="l00456" name="l00456"></a><span class="lineno">  456</span>}</div>
+<div class="line"><a id="l00457" name="l00457"></a><span class="lineno">  457</span> </div>
+<div class="line"><a id="l00458" name="l00458"></a><span class="lineno">  458</span><span class="keywordtype">void</span> AARRangerPlayerController::NativeInput_ToggleLockOn(<span class="keyword">const</span> FInputActionValue&amp; InputActionValue,  FGameplayTag InInputTag)</div>
+<div class="line"><a id="l00459" name="l00459"></a><span class="lineno">  459</span>{</div>
+<div class="line"><a id="l00460" name="l00460"></a><span class="lineno">  460</span>  <span class="keywordflow">if</span> (<a class="code hl_function" href="class_a_a_r_ranger_player_controller.html#a98240edaab5beb571f71dce66f0c79f6">IsInputBlocked</a>(InInputTag))</div>
+<div class="line"><a id="l00461" name="l00461"></a><span class="lineno">  461</span>  {</div>
+<div class="line"><a id="l00462" name="l00462"></a><span class="lineno">  462</span>    <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00463" name="l00463"></a><span class="lineno">  463</span>  }</div>
+<div class="line"><a id="l00464" name="l00464"></a><span class="lineno">  464</span> </div>
+<div class="line"><a id="l00465" name="l00465"></a><span class="lineno">  465</span>  <span class="keywordflow">if</span> (OwningCharacter != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00466" name="l00466"></a><span class="lineno">  466</span>  {</div>
+<div class="line"><a id="l00467" name="l00467"></a><span class="lineno">  467</span>    <span class="comment">// TODO Uncomment it when we finish debugging</span></div>
+<div class="line"><a id="l00468" name="l00468"></a><span class="lineno">  468</span>    <span class="comment">// OwningCharacter-&gt;ToggleLockOn();</span></div>
+<div class="line"><a id="l00469" name="l00469"></a><span class="lineno">  469</span>  }</div>
+<div class="line"><a id="l00470" name="l00470"></a><span class="lineno">  470</span>}</div>
+<div class="line"><a id="l00471" name="l00471"></a><span class="lineno">  471</span> </div>
+<div class="line"><a id="l00472" name="l00472"></a><span class="lineno">  472</span><span class="keywordtype">void</span> AARRangerPlayerController::NativeInput_SwitchTarget_Right(<span class="keyword">const</span> FInputActionValue&amp; InputActionValue,  FGameplayTag InInputTag)</div>
+<div class="line"><a id="l00473" name="l00473"></a><span class="lineno">  473</span>{</div>
+<div class="line"><a id="l00474" name="l00474"></a><span class="lineno">  474</span>  <span class="keywordflow">if</span> (<a class="code hl_function" href="class_a_a_r_ranger_player_controller.html#a98240edaab5beb571f71dce66f0c79f6">IsInputBlocked</a>(InInputTag))</div>
+<div class="line"><a id="l00475" name="l00475"></a><span class="lineno">  475</span>  {</div>
+<div class="line"><a id="l00476" name="l00476"></a><span class="lineno">  476</span>    <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00477" name="l00477"></a><span class="lineno">  477</span>  }</div>
+<div class="line"><a id="l00478" name="l00478"></a><span class="lineno">  478</span> </div>
+<div class="line"><a id="l00479" name="l00479"></a><span class="lineno">  479</span>  <span class="keywordflow">if</span> (OwningCharacter != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00480" name="l00480"></a><span class="lineno">  480</span>  {</div>
+<div class="line"><a id="l00481" name="l00481"></a><span class="lineno">  481</span>    OwningCharacter-&gt;SwitchTargetRight();</div>
+<div class="line"><a id="l00482" name="l00482"></a><span class="lineno">  482</span>  }</div>
+<div class="line"><a id="l00483" name="l00483"></a><span class="lineno">  483</span>}</div>
+<div class="line"><a id="l00484" name="l00484"></a><span class="lineno">  484</span> </div>
+<div class="line"><a id="l00485" name="l00485"></a><span class="lineno">  485</span><span class="keywordtype">void</span> AARRangerPlayerController::NativeInput_SwitchTarget_Left(<span class="keyword">const</span> FInputActionValue&amp; InputActionValue,  FGameplayTag InInputTag)</div>
+<div class="line"><a id="l00486" name="l00486"></a><span class="lineno">  486</span>{</div>
+<div class="line"><a id="l00487" name="l00487"></a><span class="lineno">  487</span>  <span class="keywordflow">if</span> (<a class="code hl_function" href="class_a_a_r_ranger_player_controller.html#a98240edaab5beb571f71dce66f0c79f6">IsInputBlocked</a>(InInputTag))</div>
+<div class="line"><a id="l00488" name="l00488"></a><span class="lineno">  488</span>  {</div>
+<div class="line"><a id="l00489" name="l00489"></a><span class="lineno">  489</span>    <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00490" name="l00490"></a><span class="lineno">  490</span>  }</div>
+<div class="line"><a id="l00491" name="l00491"></a><span class="lineno">  491</span> </div>
+<div class="line"><a id="l00492" name="l00492"></a><span class="lineno">  492</span>  <span class="keywordflow">if</span> (OwningCharacter != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00493" name="l00493"></a><span class="lineno">  493</span>  {</div>
+<div class="line"><a id="l00494" name="l00494"></a><span class="lineno">  494</span>    OwningCharacter-&gt;SwitchTargetLeft();</div>
+<div class="line"><a id="l00495" name="l00495"></a><span class="lineno">  495</span>  }</div>
+<div class="line"><a id="l00496" name="l00496"></a><span class="lineno">  496</span>}</div>
+<div class="line"><a id="l00497" name="l00497"></a><span class="lineno">  497</span> </div>
+<div class="line"><a id="l00498" name="l00498"></a><span class="lineno">  498</span><span class="keywordtype">void</span> AARRangerPlayerController::NativeInput_Transform(<span class="keyword">const</span> FInputActionValue&amp; InputActionValue,  FGameplayTag InInputTag)</div>
+<div class="line"><a id="l00499" name="l00499"></a><span class="lineno">  499</span>{</div>
+<div class="line"><a id="l00500" name="l00500"></a><span class="lineno">  500</span>  <span class="keywordflow">if</span> (<a class="code hl_function" href="class_a_a_r_ranger_player_controller.html#a98240edaab5beb571f71dce66f0c79f6">IsInputBlocked</a>(InInputTag))</div>
+<div class="line"><a id="l00501" name="l00501"></a><span class="lineno">  501</span>  {</div>
+<div class="line"><a id="l00502" name="l00502"></a><span class="lineno">  502</span>    <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00503" name="l00503"></a><span class="lineno">  503</span>  }</div>
+<div class="line"><a id="l00504" name="l00504"></a><span class="lineno">  504</span> </div>
+<div class="line"><a id="l00505" name="l00505"></a><span class="lineno">  505</span>  <span class="keywordflow">if</span> (PlayerPresenter != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00506" name="l00506"></a><span class="lineno">  506</span>  {</div>
+<div class="line"><a id="l00507" name="l00507"></a><span class="lineno">  507</span>    PlayerPresenter-&gt;Input_HandleTransform();</div>
+<div class="line"><a id="l00508" name="l00508"></a><span class="lineno">  508</span>  }</div>
+<div class="line"><a id="l00509" name="l00509"></a><span class="lineno">  509</span>}</div>
+<div class="line"><a id="l00510" name="l00510"></a><span class="lineno">  510</span> </div>
+<div class="line"><a id="l00511" name="l00511"></a><span class="lineno">  511</span><span class="keywordtype">void</span> AARRangerPlayerController::NativeInput_ResetCamera(<span class="keyword">const</span> FInputActionValue&amp; InputActionValue,  FGameplayTag InInputTag)</div>
+<div class="line"><a id="l00512" name="l00512"></a><span class="lineno">  512</span>{</div>
+<div class="line"><a id="l00513" name="l00513"></a><span class="lineno">  513</span>  <span class="keywordflow">if</span> (<a class="code hl_function" href="class_a_a_r_ranger_player_controller.html#a98240edaab5beb571f71dce66f0c79f6">IsInputBlocked</a>(InInputTag))</div>
+<div class="line"><a id="l00514" name="l00514"></a><span class="lineno">  514</span>  {</div>
+<div class="line"><a id="l00515" name="l00515"></a><span class="lineno">  515</span>    <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00516" name="l00516"></a><span class="lineno">  516</span>  }</div>
+<div class="line"><a id="l00517" name="l00517"></a><span class="lineno">  517</span> </div>
+<div class="line"><a id="l00518" name="l00518"></a><span class="lineno">  518</span>  <span class="keywordflow">if</span> (PlayerPresenter != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00519" name="l00519"></a><span class="lineno">  519</span>  {</div>
+<div class="line"><a id="l00520" name="l00520"></a><span class="lineno">  520</span>    PlayerPresenter-&gt;Input_HandleCameraReset();</div>
+<div class="line"><a id="l00521" name="l00521"></a><span class="lineno">  521</span>  }</div>
+<div class="line"><a id="l00522" name="l00522"></a><span class="lineno">  522</span>}</div>
 <div class="ttc" id="a_a_r_ability_system_component_8h_html"><div class="ttname"><a href="_a_r_ability_system_component_8h.html">ARAbilitySystemComponent.h</a></div></div>
 <div class="ttc" id="a_a_r_charge_attack_component_8h_html"><div class="ttname"><a href="_a_r_charge_attack_component_8h.html">ARChargeAttackComponent.h</a></div></div>
 <div class="ttc" id="a_a_r_gameplay_tags_8h_html"><div class="ttname"><a href="_a_r_gameplay_tags_8h.html">ARGameplayTags.h</a></div></div>
@@ -692,7 +663,7 @@ $(function(){initNavTree('_a_r_ranger_player_controller_8cpp_source.html','','')
 <div class="ttc" id="a_a_r_logging_header_8h_html"><div class="ttname"><a href="_a_r_logging_header_8h.html">ARLoggingHeader.h</a></div></div>
 <div class="ttc" id="a_a_r_pawn_init_component_8h_html"><div class="ttname"><a href="_a_r_pawn_init_component_8h.html">ARPawnInitComponent.h</a></div><div class="ttdoc">Initialize component of ARRanger project.</div></div>
 <div class="ttc" id="a_a_r_player_input_buffer_8h_html"><div class="ttname"><a href="_a_r_player_input_buffer_8h.html">ARPlayerInputBuffer.h</a></div></div>
-<div class="ttc" id="a_a_r_player_presenter_8h_html"><div class="ttname"><a href="_a_r_player_presenter_8h.html">ARPlayerPresenter.h</a></div></div>
+<div class="ttc" id="a_a_r_player_presenter_8h_html"><div class="ttname"><a href="_a_r_player_presenter_8h.html">ARPlayerPresenter.h</a></div><div class="ttdoc">プレイヤーのデータとビューを制御するプレゼンター（MVP）</div></div>
 <div class="ttc" id="a_a_r_player_state_8h_html"><div class="ttname"><a href="_a_r_player_state_8h.html">ARPlayerState.h</a></div></div>
 <div class="ttc" id="a_a_r_ranger_character_8h_html"><div class="ttname"><a href="_a_r_ranger_character_8h.html">ARRangerCharacter.h</a></div></div>
 <div class="ttc" id="a_a_r_ranger_player_controller_8cpp_html_aef5a2a2eb62d20816ccff26e58d7d92f"><div class="ttname"><a href="_a_r_ranger_player_controller_8cpp.html#aef5a2a2eb62d20816ccff26e58d7d92f">operator==</a></div><div class="ttdeci">bool operator==(const FGA_HoldHandle &amp;Lhs, const FGA_HoldHandle &amp;Rhs)</div><div class="ttdef"><b>Definition</b> <a href="#l00065">ARRangerPlayerController.cpp:65</a></div></div>
@@ -700,71 +671,42 @@ $(function(){initNavTree('_a_r_ranger_player_controller_8cpp_source.html','','')
 <div class="ttc" id="a_a_r_ranger_player_controller_8h_html"><div class="ttname"><a href="_a_r_ranger_player_controller_8h.html">ARRangerPlayerController.h</a></div><div class="ttdoc">Player controller for ARRanger project.</div></div>
 <div class="ttc" id="aclass_a_a_r_player_state_html"><div class="ttname"><a href="class_a_a_r_player_state.html">AARPlayerState</a></div><div class="ttdef"><b>Definition</b> <a href="_a_r_player_state_8h_source.html#l00020">ARPlayerState.h:21</a></div></div>
 <div class="ttc" id="aclass_a_a_r_ranger_character_html"><div class="ttname"><a href="class_a_a_r_ranger_character.html">AARRangerCharacter</a></div><div class="ttdef"><b>Definition</b> <a href="_a_r_ranger_character_8h_source.html#l00041">ARRangerCharacter.h:47</a></div></div>
-<div class="ttc" id="aclass_a_a_r_ranger_player_controller_html_a03705bd53d1a606ed9cd1fd5f8b1f71f"><div class="ttname"><a href="class_a_a_r_ranger_player_controller.html#a03705bd53d1a606ed9cd1fd5f8b1f71f">AARRangerPlayerController::PlayerPresenter</a></div><div class="ttdeci">TObjectPtr&lt; UARPlayerPresenter &gt; PlayerPresenter</div><div class="ttdef"><b>Definition</b> <a href="_a_r_ranger_player_controller_8h_source.html#l00223">ARRangerPlayerController.h:223</a></div></div>
-<div class="ttc" id="aclass_a_a_r_ranger_player_controller_html_a06d1a3cb18da5931d411f5e3eb6efe3a"><div class="ttname"><a href="class_a_a_r_ranger_player_controller.html#a06d1a3cb18da5931d411f5e3eb6efe3a">AARRangerPlayerController::AbilityInputTagReleased</a></div><div class="ttdeci">void AbilityInputTagReleased(FGameplayTag InInputTag, bool bOverrideInputState=true)</div><div class="ttdef"><b>Definition</b> <a href="#l00379">ARRangerPlayerController.cpp:379</a></div></div>
-<div class="ttc" id="aclass_a_a_r_ranger_player_controller_html_a0aa2bec6b7b39d26a9e517d24d0db81b"><div class="ttname"><a href="class_a_a_r_ranger_player_controller.html#a0aa2bec6b7b39d26a9e517d24d0db81b">AARRangerPlayerController::PlayerPresenterClass</a></div><div class="ttdeci">TSubclassOf&lt; UARPlayerPresenter &gt; PlayerPresenterClass</div><div class="ttdef"><b>Definition</b> <a href="_a_r_ranger_player_controller_8h_source.html#l00203">ARRangerPlayerController.h:203</a></div></div>
-<div class="ttc" id="aclass_a_a_r_ranger_player_controller_html_a0cae71a4dc36b94a79b7531263fdc27f"><div class="ttname"><a href="class_a_a_r_ranger_player_controller.html#a0cae71a4dc36b94a79b7531263fdc27f">AARRangerPlayerController::NativeInput_Move</a></div><div class="ttdeci">void NativeInput_Move(const FInputActionValue &amp;InputActionValue, FGameplayTag InInputTag)</div><div class="ttdef"><b>Definition</b> <a href="#l00443">ARRangerPlayerController.cpp:443</a></div></div>
-<div class="ttc" id="aclass_a_a_r_ranger_player_controller_html_a0ece2dd4edf78b6b69407323eb2584c9"><div class="ttname"><a href="class_a_a_r_ranger_player_controller.html#a0ece2dd4edf78b6b69407323eb2584c9">AARRangerPlayerController::BeginPlay</a></div><div class="ttdeci">virtual UE_API void BeginPlay() override</div><div class="ttdef"><b>Definition</b> <a href="#l00090">ARRangerPlayerController.cpp:90</a></div></div>
-<div class="ttc" id="aclass_a_a_r_ranger_player_controller_html_a0f7944a0db2fa426e97519c34f54dbdc"><div class="ttname"><a href="class_a_a_r_ranger_player_controller.html#a0f7944a0db2fa426e97519c34f54dbdc">AARRangerPlayerController::OwningCharacter</a></div><div class="ttdeci">TObjectPtr&lt; AARRangerCharacter &gt; OwningCharacter</div><div class="ttdef"><b>Definition</b> <a href="_a_r_ranger_player_controller_8h_source.html#l00220">ARRangerPlayerController.h:220</a></div></div>
-<div class="ttc" id="aclass_a_a_r_ranger_player_controller_html_a11f64b92e002d9b352da59cfb7a7d81f"><div class="ttname"><a href="class_a_a_r_ranger_player_controller.html#a11f64b92e002d9b352da59cfb7a7d81f">AARRangerPlayerController::OnPossess</a></div><div class="ttdeci">virtual UE_API void OnPossess(APawn *InPawn) override</div><div class="ttdef"><b>Definition</b> <a href="#l00153">ARRangerPlayerController.cpp:153</a></div></div>
-<div class="ttc" id="aclass_a_a_r_ranger_player_controller_html_a134a0efd9cb04219b3e14a3699b4fcf0"><div class="ttname"><a href="class_a_a_r_ranger_player_controller.html#a134a0efd9cb04219b3e14a3699b4fcf0">AARRangerPlayerController::InitializePlayerInputBuffer</a></div><div class="ttdeci">void InitializePlayerInputBuffer()</div><div class="ttdef"><b>Definition</b> <a href="#l00353">ARRangerPlayerController.cpp:353</a></div></div>
-<div class="ttc" id="aclass_a_a_r_ranger_player_controller_html_a13533d158a8972f98ef920f7526bdca3"><div class="ttname"><a href="class_a_a_r_ranger_player_controller.html#a13533d158a8972f98ef920f7526bdca3">AARRangerPlayerController::OnGameplayAbilityEnd</a></div><div class="ttdeci">UE_API void OnGameplayAbilityEnd(bool bWasCanceled)</div><div class="ttdoc">This function will be called if Gameplay ability is ended.</div><div class="ttdef"><b>Definition</b> <a href="#l00199">ARRangerPlayerController.cpp:199</a></div></div>
-<div class="ttc" id="aclass_a_a_r_ranger_player_controller_html_a1377861a48c94df60814e08fa06d103f"><div class="ttname"><a href="class_a_a_r_ranger_player_controller.html#a1377861a48c94df60814e08fa06d103f">AARRangerPlayerController::InputBuffer</a></div><div class="ttdeci">TObjectPtr&lt; UARPlayerInputBuffer &gt; InputBuffer</div><div class="ttdef"><b>Definition</b> <a href="_a_r_ranger_player_controller_8h_source.html#l00214">ARRangerPlayerController.h:214</a></div></div>
-<div class="ttc" id="aclass_a_a_r_ranger_player_controller_html_a1a691afea79e04c03744b29116da6029"><div class="ttname"><a href="class_a_a_r_ranger_player_controller.html#a1a691afea79e04c03744b29116da6029">AARRangerPlayerController::m_holdSpecs</a></div><div class="ttdeci">TArray&lt; FHoldSpec &gt; m_holdSpecs</div><div class="ttdef"><b>Definition</b> <a href="_a_r_ranger_player_controller_8h_source.html#l00225">ARRangerPlayerController.h:225</a></div></div>
-<div class="ttc" id="aclass_a_a_r_ranger_player_controller_html_a1c2bf8972f6d198fda46da6acf9bcbdb"><div class="ttname"><a href="class_a_a_r_ranger_player_controller.html#a1c2bf8972f6d198fda46da6acf9bcbdb">AARRangerPlayerController::OnGameplayAbilityTaskTicked_Holding</a></div><div class="ttdeci">UE_API void OnGameplayAbilityTaskTicked_Holding(FGameplayTag InTaskOwnerAbilityTag, float HeldTime, float DeltaTime)</div><div class="ttdoc">This function will be called if an input hold gameplay ability is ticking task.</div><div class="ttdef"><b>Definition</b> <a href="#l00238">ARRangerPlayerController.cpp:238</a></div></div>
-<div class="ttc" id="aclass_a_a_r_ranger_player_controller_html_a1f721d8795e4e9e5f8cbabdfbf63ccb6"><div class="ttname"><a href="class_a_a_r_ranger_player_controller.html#a1f721d8795e4e9e5f8cbabdfbf63ccb6">AARRangerPlayerController::EvaluateInputBuffer</a></div><div class="ttdeci">void EvaluateInputBuffer(const float DeltaTime, const bool bGamePaused)</div><div class="ttdef"><b>Definition</b> <a href="#l00397">ARRangerPlayerController.cpp:397</a></div></div>
-<div class="ttc" id="aclass_a_a_r_ranger_player_controller_html_a3275eac73869ec4522d8e07d95eb1448"><div class="ttname"><a href="class_a_a_r_ranger_player_controller.html#a3275eac73869ec4522d8e07d95eb1448">AARRangerPlayerController::GetARASC</a></div><div class="ttdeci">UE_API UARAbilitySystemComponent * GetARASC() const</div><div class="ttdef"><b>Definition</b> <a href="#l00132">ARRangerPlayerController.cpp:132</a></div></div>
-<div class="ttc" id="aclass_a_a_r_ranger_player_controller_html_a37c681eaa8a4df7e294d11ba7149b251"><div class="ttname"><a href="class_a_a_r_ranger_player_controller.html#a37c681eaa8a4df7e294d11ba7149b251">AARRangerPlayerController::NativeInput_Transform</a></div><div class="ttdeci">void NativeInput_Transform(const FInputActionValue &amp;InputActionValue, FGameplayTag InInputTag)</div><div class="ttdef"><b>Definition</b> <a href="#l00497">ARRangerPlayerController.cpp:497</a></div></div>
-<div class="ttc" id="aclass_a_a_r_ranger_player_controller_html_a39161ce072ac4f3272ce1cd0708bcdb1"><div class="ttname"><a href="class_a_a_r_ranger_player_controller.html#a39161ce072ac4f3272ce1cd0708bcdb1">AARRangerPlayerController::NativeInput_SwitchTarget_Left</a></div><div class="ttdeci">void NativeInput_SwitchTarget_Left(const FInputActionValue &amp;InputActionValue, FGameplayTag InInputTag)</div><div class="ttdef"><b>Definition</b> <a href="#l00484">ARRangerPlayerController.cpp:484</a></div></div>
-<div class="ttc" id="aclass_a_a_r_ranger_player_controller_html_a44e5aee1455e64023d5bd38daac3d83c"><div class="ttname"><a href="class_a_a_r_ranger_player_controller.html#a44e5aee1455e64023d5bd38daac3d83c">AARRangerPlayerController::SetupInputComponent</a></div><div class="ttdeci">virtual UE_API void SetupInputComponent() override</div><div class="ttdef"><b>Definition</b> <a href="#l00171">ARRangerPlayerController.cpp:171</a></div></div>
-<div class="ttc" id="aclass_a_a_r_ranger_player_controller_html_a469b2aaca9120aae7f904b1513d259b2"><div class="ttname"><a href="class_a_a_r_ranger_player_controller.html#a469b2aaca9120aae7f904b1513d259b2">AARRangerPlayerController::OnGameplayAbilityActivate</a></div><div class="ttdeci">UE_API void OnGameplayAbilityActivate(const FGameplayTag &amp;InNextIMCTag)</div><div class="ttdoc">This function will be called if Gameplay ability is activated.</div><div class="ttdef"><b>Definition</b> <a href="#l00188">ARRangerPlayerController.cpp:188</a></div></div>
-<div class="ttc" id="aclass_a_a_r_ranger_player_controller_html_a539d5e580e12cd072e8f902392390409"><div class="ttname"><a href="class_a_a_r_ranger_player_controller.html#a539d5e580e12cd072e8f902392390409">AARRangerPlayerController::ClearHoldSpec</a></div><div class="ttdeci">UE_API void ClearHoldSpec(const FGA_HoldHandle &amp;InHoldHandle)</div><div class="ttdef"><b>Definition</b> <a href="#l00286">ARRangerPlayerController.cpp:286</a></div></div>
-<div class="ttc" id="aclass_a_a_r_ranger_player_controller_html_a54fc4d7995c8b7bffcc2a38de8da2ae1"><div class="ttname"><a href="class_a_a_r_ranger_player_controller.html#a54fc4d7995c8b7bffcc2a38de8da2ae1">AARRangerPlayerController::InputBufferClass</a></div><div class="ttdeci">TSubclassOf&lt; UARPlayerInputBuffer &gt; InputBufferClass</div><div class="ttdef"><b>Definition</b> <a href="_a_r_ranger_player_controller_8h_source.html#l00194">ARRangerPlayerController.h:194</a></div></div>
-<div class="ttc" id="aclass_a_a_r_ranger_player_controller_html_a5848ec51666c10f6ba4b5335afc97990"><div class="ttname"><a href="class_a_a_r_ranger_player_controller.html#a5848ec51666c10f6ba4b5335afc97990">AARRangerPlayerController::AbilityInputTagPressed</a></div><div class="ttdeci">void AbilityInputTagPressed(FGameplayTag InInputTag, bool bOverrideInputState=true)</div><div class="ttdef"><b>Definition</b> <a href="#l00360">ARRangerPlayerController.cpp:360</a></div></div>
-<div class="ttc" id="aclass_a_a_r_ranger_player_controller_html_a6cb1e574c0162757b47427192a7aa56a"><div class="ttname"><a href="class_a_a_r_ranger_player_controller.html#a6cb1e574c0162757b47427192a7aa56a">AARRangerPlayerController::NativeInput_ToggleLockOn</a></div><div class="ttdeci">void NativeInput_ToggleLockOn(const FInputActionValue &amp;InputActionValue, FGameplayTag InInputTag)</div><div class="ttdef"><b>Definition</b> <a href="#l00457">ARRangerPlayerController.cpp:457</a></div></div>
-<div class="ttc" id="aclass_a_a_r_ranger_player_controller_html_a6d1b1502f21ea896460de5530afc8daf"><div class="ttname"><a href="class_a_a_r_ranger_player_controller.html#a6d1b1502f21ea896460de5530afc8daf">AARRangerPlayerController::m_bindHandles</a></div><div class="ttdeci">TArray&lt; uint32 &gt; m_bindHandles</div><div class="ttdef"><b>Definition</b> <a href="_a_r_ranger_player_controller_8h_source.html#l00227">ARRangerPlayerController.h:227</a></div></div>
-<div class="ttc" id="aclass_a_a_r_ranger_player_controller_html_a74bd4028dd4d1d0a1fe0a305a84ed440"><div class="ttname"><a href="class_a_a_r_ranger_player_controller.html#a74bd4028dd4d1d0a1fe0a305a84ed440">AARRangerPlayerController::OnGameplayAbilityEnded_Hold</a></div><div class="ttdeci">UE_API void OnGameplayAbilityEnded_Hold(FGameplayTag InEndedAbilityTag, FGABlueprintableHoldHandle InHandle, float TimeHeld)</div><div class="ttdoc">This function will be called if an input hold gameplay ability is ended.</div><div class="ttdef"><b>Definition</b> <a href="#l00254">ARRangerPlayerController.cpp:254</a></div></div>
-<div class="ttc" id="aclass_a_a_r_ranger_player_controller_html_a79afaf30bb6ab9f3feba6719bd74ce44"><div class="ttname"><a href="class_a_a_r_ranger_player_controller.html#a79afaf30bb6ab9f3feba6719bd74ce44">AARRangerPlayerController::OnAbilityInputTagReleasedEvaluated</a></div><div class="ttdeci">virtual UE_API void OnAbilityInputTagReleasedEvaluated(FGameplayTag InInputTag)</div><div class="ttdef"><b>Definition</b> <a href="#l00435">ARRangerPlayerController.cpp:435</a></div></div>
-<div class="ttc" id="aclass_a_a_r_ranger_player_controller_html_a7d9d4dee37dcd7d45ba2a56b8e34a879"><div class="ttname"><a href="class_a_a_r_ranger_player_controller.html#a7d9d4dee37dcd7d45ba2a56b8e34a879">AARRangerPlayerController::FindHoldSpecFromHandle</a></div><div class="ttdeci">UE_API FHoldSpec * FindHoldSpecFromHandle(const FGA_HoldHandle &amp;InHoldHandle) const</div><div class="ttdef"><b>Definition</b> <a href="#l00276">ARRangerPlayerController.cpp:276</a></div></div>
-<div class="ttc" id="aclass_a_a_r_ranger_player_controller_html_a8a9067701438dc823cf0ba6155a813f1"><div class="ttname"><a href="class_a_a_r_ranger_player_controller.html#a8a9067701438dc823cf0ba6155a813f1">AARRangerPlayerController::EndPlay</a></div><div class="ttdeci">virtual UE_API void EndPlay(const EEndPlayReason::Type EndReason) override</div><div class="ttdef"><b>Definition</b> <a href="#l00114">ARRangerPlayerController.cpp:114</a></div></div>
-<div class="ttc" id="aclass_a_a_r_ranger_player_controller_html_a8aa4fc12f670c6bb34dad8ed7932db51"><div class="ttname"><a href="class_a_a_r_ranger_player_controller.html#a8aa4fc12f670c6bb34dad8ed7932db51">AARRangerPlayerController::InputConfig</a></div><div class="ttdeci">TObjectPtr&lt; const UARInputConfig &gt; InputConfig</div><div class="ttdef"><b>Definition</b> <a href="_a_r_ranger_player_controller_8h_source.html#l00197">ARRangerPlayerController.h:197</a></div></div>
-<div class="ttc" id="aclass_a_a_r_ranger_player_controller_html_a98240edaab5beb571f71dce66f0c79f6"><div class="ttname"><a href="class_a_a_r_ranger_player_controller.html#a98240edaab5beb571f71dce66f0c79f6">AARRangerPlayerController::IsInputBlocked</a></div><div class="ttdeci">UE_API bool IsInputBlocked(const FGameplayTag &amp;InInputTag) const</div><div class="ttdef"><b>Definition</b> <a href="#l00405">ARRangerPlayerController.cpp:405</a></div></div>
-<div class="ttc" id="aclass_a_a_r_ranger_player_controller_html_a9c5226c474d1ef2f9189fc71fa890140"><div class="ttname"><a href="class_a_a_r_ranger_player_controller.html#a9c5226c474d1ef2f9189fc71fa890140">AARRangerPlayerController::SwitchNextIMC</a></div><div class="ttdeci">void SwitchNextIMC(const FGameplayTag &amp;InNextIMCTag)</div><div class="ttdef"><b>Definition</b> <a href="#l00298">ARRangerPlayerController.cpp:298</a></div></div>
-<div class="ttc" id="aclass_a_a_r_ranger_player_controller_html_aa3ecf4e20fdaaf81186b5c4d417b19e0"><div class="ttname"><a href="class_a_a_r_ranger_player_controller.html#aa3ecf4e20fdaaf81186b5c4d417b19e0">AARRangerPlayerController::NativeInput_ResetCamera</a></div><div class="ttdeci">void NativeInput_ResetCamera(const FInputActionValue &amp;InputActionValue, FGameplayTag InInputTag)</div><div class="ttdef"><b>Definition</b> <a href="#l00510">ARRangerPlayerController.cpp:510</a></div></div>
-<div class="ttc" id="aclass_a_a_r_ranger_player_controller_html_aa7c076a8aa8733cb71b3e386b998d8fe"><div class="ttname"><a href="class_a_a_r_ranger_player_controller.html#aa7c076a8aa8733cb71b3e386b998d8fe">AARRangerPlayerController::InputMappingContext</a></div><div class="ttdeci">TObjectPtr&lt; const UARInputMappingContext &gt; InputMappingContext</div><div class="ttdef"><b>Definition</b> <a href="_a_r_ranger_player_controller_8h_source.html#l00200">ARRangerPlayerController.h:200</a></div></div>
-<div class="ttc" id="aclass_a_a_r_ranger_player_controller_html_aab6d6f4e370f290d765918ea58ddd283"><div class="ttname"><a href="class_a_a_r_ranger_player_controller.html#aab6d6f4e370f290d765918ea58ddd283">AARRangerPlayerController::OnAbilityInputTagPressedEvaluated</a></div><div class="ttdeci">virtual UE_API void OnAbilityInputTagPressedEvaluated(FGameplayTag InInputTag)</div><div class="ttdef"><b>Definition</b> <a href="#l00427">ARRangerPlayerController.cpp:427</a></div></div>
-<div class="ttc" id="aclass_a_a_r_ranger_player_controller_html_aba065275fbde70b121b872cf1e669e90"><div class="ttname"><a href="class_a_a_r_ranger_player_controller.html#aba065275fbde70b121b872cf1e669e90">AARRangerPlayerController::MinInput</a></div><div class="ttdeci">float MinInput</div><div class="ttdef"><b>Definition</b> <a href="_a_r_ranger_player_controller_8h_source.html#l00211">ARRangerPlayerController.h:211</a></div></div>
-<div class="ttc" id="aclass_a_a_r_ranger_player_controller_html_ac66d0a852d45f0f952b9cffe904e60dc"><div class="ttname"><a href="class_a_a_r_ranger_player_controller.html#ac66d0a852d45f0f952b9cffe904e60dc">AARRangerPlayerController::Initialize</a></div><div class="ttdeci">void Initialize()</div><div class="ttdef"><b>Definition</b> <a href="#l00319">ARRangerPlayerController.cpp:319</a></div></div>
-<div class="ttc" id="aclass_a_a_r_ranger_player_controller_html_acd1d2d786af01be9240fa8892c1f128a"><div class="ttname"><a href="class_a_a_r_ranger_player_controller.html#acd1d2d786af01be9240fa8892c1f128a">AARRangerPlayerController::MoveDeadZone</a></div><div class="ttdeci">float MoveDeadZone</div><div class="ttdef"><b>Definition</b> <a href="_a_r_ranger_player_controller_8h_source.html#l00207">ARRangerPlayerController.h:207</a></div></div>
-<div class="ttc" id="aclass_a_a_r_ranger_player_controller_html_ae83e31c5cc99d6cec0952faf81aa511b"><div class="ttname"><a href="class_a_a_r_ranger_player_controller.html#ae83e31c5cc99d6cec0952faf81aa511b">AARRangerPlayerController::NativeInput_SwitchTarget_Right</a></div><div class="ttdeci">void NativeInput_SwitchTarget_Right(const FInputActionValue &amp;InputActionValue, FGameplayTag InInputTag)</div><div class="ttdef"><b>Definition</b> <a href="#l00471">ARRangerPlayerController.cpp:471</a></div></div>
-<div class="ttc" id="aclass_a_a_r_ranger_player_controller_html_ae8736152d02c017b717c0c244dcd2214"><div class="ttname"><a href="class_a_a_r_ranger_player_controller.html#ae8736152d02c017b717c0c244dcd2214">AARRangerPlayerController::PostProcessInput</a></div><div class="ttdeci">virtual UE_API void PostProcessInput(const float DeltaTime, const bool bGamePaused) override</div><div class="ttdef"><b>Definition</b> <a href="#l00137">ARRangerPlayerController.cpp:137</a></div></div>
-<div class="ttc" id="aclass_a_a_r_ranger_player_controller_html_af3430013f947127ccb1a41c7337824b6"><div class="ttname"><a href="class_a_a_r_ranger_player_controller.html#af3430013f947127ccb1a41c7337824b6">AARRangerPlayerController::CurrentIMC</a></div><div class="ttdeci">TObjectPtr&lt; UInputMappingContext &gt; CurrentIMC</div><div class="ttdef"><b>Definition</b> <a href="_a_r_ranger_player_controller_8h_source.html#l00217">ARRangerPlayerController.h:217</a></div></div>
-<div class="ttc" id="aclass_a_a_r_ranger_player_controller_html_af4b8c8b1771d8f1beb9bea11ea09bbf6"><div class="ttname"><a href="class_a_a_r_ranger_player_controller.html#af4b8c8b1771d8f1beb9bea11ea09bbf6">AARRangerPlayerController::OnGameplayAbilityActivated_Hold</a></div><div class="ttdeci">UE_API FGABlueprintableHoldHandle OnGameplayAbilityActivated_Hold(FGameplayTag InActivatedAbilityTag, bool bBlockInputTag, FGameplayTagContainer InInputBlockIgnoreTags)</div><div class="ttdoc">This function will be called if an input hold gameplay ability is activated.</div><div class="ttdef"><b>Definition</b> <a href="#l00214">ARRangerPlayerController.cpp:214</a></div></div>
+<div class="ttc" id="aclass_a_a_r_ranger_player_controller_html_a0ece2dd4edf78b6b69407323eb2584c9"><div class="ttname"><a href="class_a_a_r_ranger_player_controller.html#a0ece2dd4edf78b6b69407323eb2584c9">AARRangerPlayerController::BeginPlay</a></div><div class="ttdeci">virtual ARRANGER_API void BeginPlay() override</div><div class="ttdef"><b>Definition</b> <a href="#l00090">ARRangerPlayerController.cpp:90</a></div></div>
+<div class="ttc" id="aclass_a_a_r_ranger_player_controller_html_a11f64b92e002d9b352da59cfb7a7d81f"><div class="ttname"><a href="class_a_a_r_ranger_player_controller.html#a11f64b92e002d9b352da59cfb7a7d81f">AARRangerPlayerController::OnPossess</a></div><div class="ttdeci">virtual ARRANGER_API void OnPossess(APawn *InPawn) override</div><div class="ttdef"><b>Definition</b> <a href="#l00153">ARRangerPlayerController.cpp:153</a></div></div>
+<div class="ttc" id="aclass_a_a_r_ranger_player_controller_html_a13533d158a8972f98ef920f7526bdca3"><div class="ttname"><a href="class_a_a_r_ranger_player_controller.html#a13533d158a8972f98ef920f7526bdca3">AARRangerPlayerController::OnGameplayAbilityEnd</a></div><div class="ttdeci">ARRANGER_API void OnGameplayAbilityEnd(bool bWasCanceled)</div><div class="ttdoc">This function will be called if Gameplay ability is ended.</div><div class="ttdef"><b>Definition</b> <a href="#l00199">ARRangerPlayerController.cpp:199</a></div></div>
+<div class="ttc" id="aclass_a_a_r_ranger_player_controller_html_a1c2bf8972f6d198fda46da6acf9bcbdb"><div class="ttname"><a href="class_a_a_r_ranger_player_controller.html#a1c2bf8972f6d198fda46da6acf9bcbdb">AARRangerPlayerController::OnGameplayAbilityTaskTicked_Holding</a></div><div class="ttdeci">ARRANGER_API void OnGameplayAbilityTaskTicked_Holding(FGameplayTag InTaskOwnerAbilityTag, float HeldTime, float DeltaTime)</div><div class="ttdoc">This function will be called if an input hold gameplay ability is ticking task.</div><div class="ttdef"><b>Definition</b> <a href="#l00237">ARRangerPlayerController.cpp:237</a></div></div>
+<div class="ttc" id="aclass_a_a_r_ranger_player_controller_html_a3275eac73869ec4522d8e07d95eb1448"><div class="ttname"><a href="class_a_a_r_ranger_player_controller.html#a3275eac73869ec4522d8e07d95eb1448">AARRangerPlayerController::GetARASC</a></div><div class="ttdeci">ARRANGER_API UARAbilitySystemComponent * GetARASC() const</div><div class="ttdef"><b>Definition</b> <a href="#l00132">ARRangerPlayerController.cpp:132</a></div></div>
+<div class="ttc" id="aclass_a_a_r_ranger_player_controller_html_a44e5aee1455e64023d5bd38daac3d83c"><div class="ttname"><a href="class_a_a_r_ranger_player_controller.html#a44e5aee1455e64023d5bd38daac3d83c">AARRangerPlayerController::SetupInputComponent</a></div><div class="ttdeci">virtual ARRANGER_API void SetupInputComponent() override</div><div class="ttdef"><b>Definition</b> <a href="#l00171">ARRangerPlayerController.cpp:171</a></div></div>
+<div class="ttc" id="aclass_a_a_r_ranger_player_controller_html_a469b2aaca9120aae7f904b1513d259b2"><div class="ttname"><a href="class_a_a_r_ranger_player_controller.html#a469b2aaca9120aae7f904b1513d259b2">AARRangerPlayerController::OnGameplayAbilityActivate</a></div><div class="ttdeci">ARRANGER_API void OnGameplayAbilityActivate(const FGameplayTag &amp;InNextIMCTag)</div><div class="ttdoc">This function will be called if Gameplay ability is activated.</div><div class="ttdef"><b>Definition</b> <a href="#l00188">ARRangerPlayerController.cpp:188</a></div></div>
+<div class="ttc" id="aclass_a_a_r_ranger_player_controller_html_a539d5e580e12cd072e8f902392390409"><div class="ttname"><a href="class_a_a_r_ranger_player_controller.html#a539d5e580e12cd072e8f902392390409">AARRangerPlayerController::ClearHoldSpec</a></div><div class="ttdeci">ARRANGER_API void ClearHoldSpec(const FGA_HoldHandle &amp;InHoldHandle)</div><div class="ttdef"><b>Definition</b> <a href="#l00287">ARRangerPlayerController.cpp:287</a></div></div>
+<div class="ttc" id="aclass_a_a_r_ranger_player_controller_html_a74bd4028dd4d1d0a1fe0a305a84ed440"><div class="ttname"><a href="class_a_a_r_ranger_player_controller.html#a74bd4028dd4d1d0a1fe0a305a84ed440">AARRangerPlayerController::OnGameplayAbilityEnded_Hold</a></div><div class="ttdeci">ARRANGER_API void OnGameplayAbilityEnded_Hold(FGameplayTag InEndedAbilityTag, FGABlueprintableHoldHandle InHandle, float TimeHeld)</div><div class="ttdoc">This function will be called if an input hold gameplay ability is ended.</div><div class="ttdef"><b>Definition</b> <a href="#l00253">ARRangerPlayerController.cpp:253</a></div></div>
+<div class="ttc" id="aclass_a_a_r_ranger_player_controller_html_a79afaf30bb6ab9f3feba6719bd74ce44"><div class="ttname"><a href="class_a_a_r_ranger_player_controller.html#a79afaf30bb6ab9f3feba6719bd74ce44">AARRangerPlayerController::OnAbilityInputTagReleasedEvaluated</a></div><div class="ttdeci">virtual ARRANGER_API void OnAbilityInputTagReleasedEvaluated(FGameplayTag InInputTag)</div><div class="ttdef"><b>Definition</b> <a href="#l00436">ARRangerPlayerController.cpp:436</a></div></div>
+<div class="ttc" id="aclass_a_a_r_ranger_player_controller_html_a7d9d4dee37dcd7d45ba2a56b8e34a879"><div class="ttname"><a href="class_a_a_r_ranger_player_controller.html#a7d9d4dee37dcd7d45ba2a56b8e34a879">AARRangerPlayerController::FindHoldSpecFromHandle</a></div><div class="ttdeci">ARRANGER_API FHoldSpec * FindHoldSpecFromHandle(const FGA_HoldHandle &amp;InHoldHandle) const</div><div class="ttdef"><b>Definition</b> <a href="#l00277">ARRangerPlayerController.cpp:277</a></div></div>
+<div class="ttc" id="aclass_a_a_r_ranger_player_controller_html_a8a9067701438dc823cf0ba6155a813f1"><div class="ttname"><a href="class_a_a_r_ranger_player_controller.html#a8a9067701438dc823cf0ba6155a813f1">AARRangerPlayerController::EndPlay</a></div><div class="ttdeci">virtual ARRANGER_API void EndPlay(const EEndPlayReason::Type EndReason) override</div><div class="ttdef"><b>Definition</b> <a href="#l00114">ARRangerPlayerController.cpp:114</a></div></div>
+<div class="ttc" id="aclass_a_a_r_ranger_player_controller_html_a98240edaab5beb571f71dce66f0c79f6"><div class="ttname"><a href="class_a_a_r_ranger_player_controller.html#a98240edaab5beb571f71dce66f0c79f6">AARRangerPlayerController::IsInputBlocked</a></div><div class="ttdeci">ARRANGER_API bool IsInputBlocked(const FGameplayTag &amp;InInputTag) const</div><div class="ttdef"><b>Definition</b> <a href="#l00406">ARRangerPlayerController.cpp:406</a></div></div>
+<div class="ttc" id="aclass_a_a_r_ranger_player_controller_html_aab6d6f4e370f290d765918ea58ddd283"><div class="ttname"><a href="class_a_a_r_ranger_player_controller.html#aab6d6f4e370f290d765918ea58ddd283">AARRangerPlayerController::OnAbilityInputTagPressedEvaluated</a></div><div class="ttdeci">virtual ARRANGER_API void OnAbilityInputTagPressedEvaluated(FGameplayTag InInputTag)</div><div class="ttdef"><b>Definition</b> <a href="#l00428">ARRangerPlayerController.cpp:428</a></div></div>
+<div class="ttc" id="aclass_a_a_r_ranger_player_controller_html_ae8736152d02c017b717c0c244dcd2214"><div class="ttname"><a href="class_a_a_r_ranger_player_controller.html#ae8736152d02c017b717c0c244dcd2214">AARRangerPlayerController::PostProcessInput</a></div><div class="ttdeci">virtual ARRANGER_API void PostProcessInput(const float DeltaTime, const bool bGamePaused) override</div><div class="ttdef"><b>Definition</b> <a href="#l00137">ARRangerPlayerController.cpp:137</a></div></div>
+<div class="ttc" id="aclass_a_a_r_ranger_player_controller_html_af4b8c8b1771d8f1beb9bea11ea09bbf6"><div class="ttname"><a href="class_a_a_r_ranger_player_controller.html#af4b8c8b1771d8f1beb9bea11ea09bbf6">AARRangerPlayerController::OnGameplayAbilityActivated_Hold</a></div><div class="ttdeci">ARRANGER_API FGABlueprintableHoldHandle OnGameplayAbilityActivated_Hold(FGameplayTag InActivatedAbilityTag, bool bBlockInputTag, FGameplayTagContainer InInputBlockIgnoreTags)</div><div class="ttdoc">This function will be called if an input hold gameplay ability is activated.</div><div class="ttdef"><b>Definition</b> <a href="#l00214">ARRangerPlayerController.cpp:214</a></div></div>
 <div class="ttc" id="aclass_a_a_r_ranger_player_controller_html_af6f27be6c44bb9faa6b0143c3ff5b5b7"><div class="ttname"><a href="class_a_a_r_ranger_player_controller.html#af6f27be6c44bb9faa6b0143c3ff5b5b7">AARRangerPlayerController::OnGameAbilityHeld</a></div><div class="ttdeci">FOnGameplayAbilityHeld OnGameAbilityHeld</div><div class="ttdef"><b>Definition</b> <a href="_a_r_ranger_player_controller_8h_source.html#l00078">ARRangerPlayerController.h:78</a></div></div>
 <div class="ttc" id="aclass_u_a_r_ability_system_component_html"><div class="ttname"><a href="class_u_a_r_ability_system_component.html">UARAbilitySystemComponent</a></div><div class="ttdef"><b>Definition</b> <a href="_a_r_ability_system_component_8h_source.html#l00023">ARAbilitySystemComponent.h:24</a></div></div>
-<div class="ttc" id="aclass_u_a_r_ability_system_component_html_ac2fb90de417950197886fd0cd007df8e"><div class="ttname"><a href="class_u_a_r_ability_system_component.html#ac2fb90de417950197886fd0cd007df8e">UARAbilitySystemComponent::ProcessAbilityInputs</a></div><div class="ttdeci">UE_API void ProcessAbilityInputs(const FARAbilityInputProcessParameter &amp;InInputProcessParam)</div><div class="ttdoc">アビリティ入力を処理</div><div class="ttdef"><b>Definition</b> <a href="_a_r_ability_system_component_8cpp_source.html#l00062">ARAbilitySystemComponent.cpp:62</a></div></div>
-<div class="ttc" id="aclass_u_a_r_ability_system_component_html_ac89ad0a8db9c4635041701857320c494"><div class="ttname"><a href="class_u_a_r_ability_system_component.html#ac89ad0a8db9c4635041701857320c494">UARAbilitySystemComponent::FindARAbilitySystemComponent</a></div><div class="ttdeci">static UE_API UARAbilitySystemComponent * FindARAbilitySystemComponent(AActor *InActor)</div><div class="ttdef"><b>Definition</b> <a href="_a_r_ability_system_component_8cpp_source.html#l00222">ARAbilitySystemComponent.cpp:222</a></div></div>
-<div class="ttc" id="aclass_u_a_r_input_component_html"><div class="ttname"><a href="class_u_a_r_input_component.html">UARInputComponent</a></div><div class="ttdoc">Input component for binding specific input event with ARInputConfig.</div><div class="ttdef"><b>Definition</b> <a href="_a_r_input_component_8h_source.html#l00020">ARInputComponent.h:21</a></div></div>
+<div class="ttc" id="aclass_u_a_r_ability_system_component_html_ac2fb90de417950197886fd0cd007df8e"><div class="ttname"><a href="class_u_a_r_ability_system_component.html#ac2fb90de417950197886fd0cd007df8e">UARAbilitySystemComponent::ProcessAbilityInputs</a></div><div class="ttdeci">ARRANGER_API void ProcessAbilityInputs(const FARAbilityInputProcessParameter &amp;InInputProcessParam)</div><div class="ttdoc">アビリティ入力を処理</div><div class="ttdef"><b>Definition</b> <a href="_a_r_ability_system_component_8cpp_source.html#l00062">ARAbilitySystemComponent.cpp:62</a></div></div>
+<div class="ttc" id="aclass_u_a_r_ability_system_component_html_ac89ad0a8db9c4635041701857320c494"><div class="ttname"><a href="class_u_a_r_ability_system_component.html#ac89ad0a8db9c4635041701857320c494">UARAbilitySystemComponent::FindARAbilitySystemComponent</a></div><div class="ttdeci">static ARRANGER_API UARAbilitySystemComponent * FindARAbilitySystemComponent(AActor *InActor)</div><div class="ttdef"><b>Definition</b> <a href="_a_r_ability_system_component_8cpp_source.html#l00222">ARAbilitySystemComponent.cpp:222</a></div></div>
 <div class="ttc" id="aclass_u_a_r_input_component_html_a81d67e99f5d4e3498c9dd7f703f601d5"><div class="ttname"><a href="class_u_a_r_input_component.html#a81d67e99f5d4e3498c9dd7f703f601d5">UARInputComponent::BindAbilityActions</a></div><div class="ttdeci">void BindAbilityActions(const UARInputConfig *InInputConfig, UserClass *UserObject, PressedFuncType PressedFunc, ReleasedFuncType ReleasedFunc, TArray&lt; uint32 &gt; &amp;OutHandles)</div><div class="ttdoc">Bind ability actions to InputAction in UARInputConfig.</div><div class="ttdef"><b>Definition</b> <a href="_a_r_input_component_8h_source.html#l00064">ARInputComponent.h:64</a></div></div>
 <div class="ttc" id="aclass_u_a_r_input_component_html_addeb990ba5965015ae8460adf522ffee"><div class="ttname"><a href="class_u_a_r_input_component.html#addeb990ba5965015ae8460adf522ffee">UARInputComponent::BindNativeAction</a></div><div class="ttdeci">void BindNativeAction(const UARInputConfig *InInputConfig, const FGameplayTag &amp;InInputTag, ETriggerEvent InTriggerEvent, UserClass *UserObject, TriggeredFuncType TriggeredFunc)</div><div class="ttdoc">Bind native actions to InputAction.</div><div class="ttdef"><b>Definition</b> <a href="_a_r_input_component_8h_source.html#l00085">ARInputComponent.h:85</a></div></div>
 <div class="ttc" id="aclass_u_a_r_pawn_init_component_html"><div class="ttname"><a href="class_u_a_r_pawn_init_component.html">UARPawnInitComponent</a></div></div>
-<div class="ttc" id="anamespace_a_r_ranger_1_1_gameplay_tags_html_ad62dae2d04d07138afe5c35d178400fa"><div class="ttname"><a href="namespace_a_r_ranger_1_1_gameplay_tags.html#ad62dae2d04d07138afe5c35d178400fa">ARRanger::GameplayTags::FindExactTagByString</a></div><div class="ttdeci">FGameplayTag FindExactTagByString(const FString &amp;TagString)</div><div class="ttdoc">Find GameplayTag by string.</div><div class="ttdef"><b>Definition</b> <a href="_a_r_gameplay_tags_8cpp_source.html#l00051">ARGameplayTags.cpp:51</a></div></div>
+<div class="ttc" id="anamespace_a_r_ranger_1_1_gameplay_tags_html_aad6d43ce0e5a2342b83e951cd8cd7f5f"><div class="ttname"><a href="namespace_a_r_ranger_1_1_gameplay_tags.html#aad6d43ce0e5a2342b83e951cd8cd7f5f">ARRanger::GameplayTags::FindExactTagByString</a></div><div class="ttdeci">FGameplayTag FindExactTagByString(const FString &amp;TagString)</div><div class="ttdoc">Find GameplayTag by string.</div><div class="ttdef"><b>Definition</b> <a href="_a_r_gameplay_tags_8cpp_source.html#l00051">ARGameplayTags.cpp:51</a></div></div>
 <div class="ttc" id="astruct_a_a_r_ranger_player_controller_1_1_f_hold_spec_html"><div class="ttname"><a href="struct_a_a_r_ranger_player_controller_1_1_f_hold_spec.html">AARRangerPlayerController::FHoldSpec</a></div><div class="ttdef"><b>Definition</b> <a href="_a_r_ranger_player_controller_8h_source.html#l00081">ARRangerPlayerController.h:82</a></div></div>
-<div class="ttc" id="astruct_a_a_r_ranger_player_controller_1_1_f_hold_spec_html_a38f1f117d705eb18c2a926b2b863f504"><div class="ttname"><a href="struct_a_a_r_ranger_player_controller_1_1_f_hold_spec.html#a38f1f117d705eb18c2a926b2b863f504">AARRangerPlayerController::FHoldSpec::IsValid</a></div><div class="ttdeci">UE_API bool IsValid() const</div><div class="ttdef"><b>Definition</b> <a href="#l00075">ARRangerPlayerController.cpp:75</a></div></div>
+<div class="ttc" id="astruct_a_a_r_ranger_player_controller_1_1_f_hold_spec_html_a38f1f117d705eb18c2a926b2b863f504"><div class="ttname"><a href="struct_a_a_r_ranger_player_controller_1_1_f_hold_spec.html#a38f1f117d705eb18c2a926b2b863f504">AARRangerPlayerController::FHoldSpec::IsValid</a></div><div class="ttdeci">ARRANGER_API bool IsValid() const</div><div class="ttdef"><b>Definition</b> <a href="#l00075">ARRangerPlayerController.cpp:75</a></div></div>
 <div class="ttc" id="astruct_a_a_r_ranger_player_controller_1_1_f_hold_spec_html_a3a36d76309eaaa07940ce9bc5161cf55"><div class="ttname"><a href="struct_a_a_r_ranger_player_controller_1_1_f_hold_spec.html#a3a36d76309eaaa07940ce9bc5161cf55">AARRangerPlayerController::FHoldSpec::Handle</a></div><div class="ttdeci">FGA_HoldHandle Handle</div><div class="ttdef"><b>Definition</b> <a href="_a_r_ranger_player_controller_8h_source.html#l00083">ARRangerPlayerController.h:83</a></div></div>
-<div class="ttc" id="astruct_a_a_r_ranger_player_controller_1_1_f_hold_spec_html_a8a6ad484a2ee2378d6405a334cd4db7b"><div class="ttname"><a href="struct_a_a_r_ranger_player_controller_1_1_f_hold_spec.html#a8a6ad484a2ee2378d6405a334cd4db7b">AARRangerPlayerController::FHoldSpec::operator!=</a></div><div class="ttdeci">UE_API bool operator!=(const FHoldSpec &amp;Other) const</div><div class="ttdef"><b>Definition</b> <a href="#l00085">ARRangerPlayerController.cpp:85</a></div></div>
-<div class="ttc" id="astruct_a_a_r_ranger_player_controller_1_1_f_hold_spec_html_a8fb354ac14a2cc9c342fcb6d8cf8c2db"><div class="ttname"><a href="struct_a_a_r_ranger_player_controller_1_1_f_hold_spec.html#a8fb354ac14a2cc9c342fcb6d8cf8c2db">AARRangerPlayerController::FHoldSpec::operator==</a></div><div class="ttdeci">UE_API bool operator==(const FHoldSpec &amp;Other) const</div><div class="ttdef"><b>Definition</b> <a href="#l00080">ARRangerPlayerController.cpp:80</a></div></div>
+<div class="ttc" id="astruct_a_a_r_ranger_player_controller_1_1_f_hold_spec_html_a8a6ad484a2ee2378d6405a334cd4db7b"><div class="ttname"><a href="struct_a_a_r_ranger_player_controller_1_1_f_hold_spec.html#a8a6ad484a2ee2378d6405a334cd4db7b">AARRangerPlayerController::FHoldSpec::operator!=</a></div><div class="ttdeci">ARRANGER_API bool operator!=(const FHoldSpec &amp;Other) const</div><div class="ttdef"><b>Definition</b> <a href="#l00085">ARRangerPlayerController.cpp:85</a></div></div>
+<div class="ttc" id="astruct_a_a_r_ranger_player_controller_1_1_f_hold_spec_html_a8fb354ac14a2cc9c342fcb6d8cf8c2db"><div class="ttname"><a href="struct_a_a_r_ranger_player_controller_1_1_f_hold_spec.html#a8fb354ac14a2cc9c342fcb6d8cf8c2db">AARRangerPlayerController::FHoldSpec::operator==</a></div><div class="ttdeci">ARRANGER_API bool operator==(const FHoldSpec &amp;Other) const</div><div class="ttdef"><b>Definition</b> <a href="#l00080">ARRangerPlayerController.cpp:80</a></div></div>
 <div class="ttc" id="astruct_a_a_r_ranger_player_controller_1_1_f_hold_spec_html_afe0c60e6ae981b0fd82f9ceb5c48f3dc"><div class="ttname"><a href="struct_a_a_r_ranger_player_controller_1_1_f_hold_spec.html#afe0c60e6ae981b0fd82f9ceb5c48f3dc">AARRangerPlayerController::FHoldSpec::InputBlockIgnoreTags</a></div><div class="ttdeci">FGameplayTagContainer InputBlockIgnoreTags</div><div class="ttdef"><b>Definition</b> <a href="_a_r_ranger_player_controller_8h_source.html#l00085">ARRangerPlayerController.h:85</a></div></div>
 <div class="ttc" id="astruct_f_a_r_ability_input_process_parameter_html"><div class="ttname"><a href="struct_f_a_r_ability_input_process_parameter.html">FARAbilityInputProcessParameter</a></div><div class="ttdef"><b>Definition</b> <a href="_a_r_ability_system_component_8h_source.html#l00013">ARAbilitySystemComponent.h:14</a></div></div>
 <div class="ttc" id="astruct_f_a_r_ability_input_process_parameter_html_ae871c734308d91dd2508ea6219df7de5"><div class="ttname"><a href="struct_f_a_r_ability_input_process_parameter.html#ae871c734308d91dd2508ea6219df7de5">FARAbilityInputProcessParameter::bGamePaused</a></div><div class="ttdeci">bool bGamePaused</div><div class="ttdef"><b>Definition</b> <a href="_a_r_ability_system_component_8h_source.html#l00016">ARAbilitySystemComponent.h:16</a></div></div>
 <div class="ttc" id="astruct_f_a_r_ability_input_process_parameter_html_aff8f77d96ddd44455249abc9d4c9fa8f"><div class="ttname"><a href="struct_f_a_r_ability_input_process_parameter.html#aff8f77d96ddd44455249abc9d4c9fa8f">FARAbilityInputProcessParameter::DeltaTime</a></div><div class="ttdeci">float DeltaTime</div><div class="ttdef"><b>Definition</b> <a href="_a_r_ability_system_component_8h_source.html#l00015">ARAbilitySystemComponent.h:15</a></div></div>
 <div class="ttc" id="astruct_f_g_a___hold_handle_html"><div class="ttname"><a href="struct_f_g_a___hold_handle.html">FGA_HoldHandle</a></div><div class="ttdoc">Handle class for input hold Game ability.</div><div class="ttdef"><b>Definition</b> <a href="_a_r_ranger_player_controller_8h_source.html#l00032">ARRangerPlayerController.h:33</a></div></div>
-<div class="ttc" id="astruct_f_g_a___hold_handle_html_a1b7c9a2fd20e5248463d61c9974b92db"><div class="ttname"><a href="struct_f_g_a___hold_handle.html#a1b7c9a2fd20e5248463d61c9974b92db">FGA_HoldHandle::Reset</a></div><div class="ttdeci">void Reset()</div><div class="ttdef"><b>Definition</b> <a href="#l00060">ARRangerPlayerController.cpp:60</a></div></div>
-<div class="ttc" id="astruct_f_g_a___hold_handle_html_a8b2e7638c30ed284754c5c559b6b7cb7"><div class="ttname"><a href="struct_f_g_a___hold_handle.html#a8b2e7638c30ed284754c5c559b6b7cb7">FGA_HoldHandle::m_handleID</a></div><div class="ttdeci">int32 m_handleID</div><div class="ttdef"><b>Definition</b> <a href="_a_r_ranger_player_controller_8h_source.html#l00050">ARRangerPlayerController.h:50</a></div></div>
-<div class="ttc" id="astruct_f_g_a___hold_handle_html_a98118711ebde16a1579fec13a238c5a9"><div class="ttname"><a href="struct_f_g_a___hold_handle.html#a98118711ebde16a1579fec13a238c5a9">FGA_HoldHandle::InvalidHandle</a></div><div class="ttdeci">static UE_API const FGA_HoldHandle InvalidHandle</div><div class="ttdef"><b>Definition</b> <a href="_a_r_ranger_player_controller_8h_source.html#l00034">ARRangerPlayerController.h:34</a></div></div>
-<div class="ttc" id="astruct_f_g_a___hold_handle_html_aa6efbcf3e4527020ab8d31a10eb38487"><div class="ttname"><a href="struct_f_g_a___hold_handle.html#aa6efbcf3e4527020ab8d31a10eb38487">FGA_HoldHandle::IsValid</a></div><div class="ttdeci">UE_API bool IsValid() const</div><div class="ttdef"><b>Definition</b> <a href="#l00036">ARRangerPlayerController.cpp:36</a></div></div>
-<div class="ttc" id="astruct_f_g_a___hold_handle_html_ab7259fcbefc3d00186c6d9aa6f1c1a8c"><div class="ttname"><a href="struct_f_g_a___hold_handle.html#ab7259fcbefc3d00186c6d9aa6f1c1a8c">FGA_HoldHandle::GenerateNewHandle</a></div><div class="ttdeci">void GenerateNewHandle()</div><div class="ttdef"><b>Definition</b> <a href="#l00046">ARRangerPlayerController.cpp:46</a></div></div>
-<div class="ttc" id="astruct_f_g_a___hold_handle_html_aff18eb329b08a7a127aeebc64daf428b"><div class="ttname"><a href="struct_f_g_a___hold_handle.html#aff18eb329b08a7a127aeebc64daf428b">FGA_HoldHandle::FGA_HoldHandle</a></div><div class="ttdeci">FGA_HoldHandle()</div><div class="ttdef"><b>Definition</b> <a href="#l00042">ARRangerPlayerController.cpp:42</a></div></div>
+<div class="ttc" id="astruct_f_g_a___hold_handle_html_a98118711ebde16a1579fec13a238c5a9"><div class="ttname"><a href="struct_f_g_a___hold_handle.html#a98118711ebde16a1579fec13a238c5a9">FGA_HoldHandle::InvalidHandle</a></div><div class="ttdeci">static ARRANGER_API const FGA_HoldHandle InvalidHandle</div><div class="ttdef"><b>Definition</b> <a href="_a_r_ranger_player_controller_8h_source.html#l00034">ARRangerPlayerController.h:34</a></div></div>
+<div class="ttc" id="astruct_f_g_a___hold_handle_html_aa6efbcf3e4527020ab8d31a10eb38487"><div class="ttname"><a href="struct_f_g_a___hold_handle.html#aa6efbcf3e4527020ab8d31a10eb38487">FGA_HoldHandle::IsValid</a></div><div class="ttdeci">ARRANGER_API bool IsValid() const</div><div class="ttdef"><b>Definition</b> <a href="#l00036">ARRangerPlayerController.cpp:36</a></div></div>
 <div class="ttc" id="astruct_f_g_a_blueprintable_hold_handle_html"><div class="ttname"><a href="struct_f_g_a_blueprintable_hold_handle.html">FGABlueprintableHoldHandle</a></div><div class="ttdoc">Hold handle for Blueprint.</div><div class="ttdef"><b>Definition</b> <a href="_a_r_ranger_player_controller_8h_source.html#l00059">ARRangerPlayerController.h:60</a></div></div>
 <div class="ttc" id="astruct_f_g_a_blueprintable_hold_handle_html_a72b543b7a7f07e027745db5752b0cf66"><div class="ttname"><a href="struct_f_g_a_blueprintable_hold_handle.html#a72b543b7a7f07e027745db5752b0cf66">FGABlueprintableHoldHandle::Handle</a></div><div class="ttdeci">FGA_HoldHandle Handle</div><div class="ttdef"><b>Definition</b> <a href="_a_r_ranger_player_controller_8h_source.html#l00063">ARRangerPlayerController.h:63</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -773,7 +715,7 @@ $(function(){initNavTree('_a_r_ranger_player_controller_8cpp_source.html','','')
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="dir_db4b63894235d986ff0886d3d7147fc4.html">GithubRepository</a></li><li class="navelem"><a href="dir_b7f76808a72ae9b06e23f4ba1d7ec8e0.html">ARRanger</a></li><li class="navelem"><a href="dir_22deff83e5e51399b4644a6ac5e50e58.html">Source</a></li><li class="navelem"><a href="dir_765ba4c51118e23b05fd567f675cd5c3.html">ARRanger</a></li><li class="navelem"><a href="dir_01ca0bd49608f959e3dafd2b38229153.html">Private</a></li><li class="navelem"><a href="dir_68eb4e461b3d45aff5e8c1d1523fc281.html">Player</a></li><li class="navelem"><a href="_a_r_ranger_player_controller_8cpp.html">ARRangerPlayerController.cpp</a></li>
+    <li class="navelem"><a href="dir_da1fa48e9cd6aca15a5329e13710da8a.html">ARRanger</a></li><li class="navelem"><a href="dir_6306d44ac889cfd8733274aed159ebe8.html">Private</a></li><li class="navelem"><a href="dir_e4a94d35df0ebf380acf9507c50b500d.html">Player</a></li><li class="navelem"><a href="_a_r_ranger_player_controller_8cpp.html">ARRangerPlayerController.cpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>

@@ -11,9 +11,5 @@ var class_a_magnetizable_actor =
     [ "SetType", "class_a_magnetizable_actor.html#a0d653b5d7170c9afa96edd5e6b6bcc18", null ],
     [ "Tick", "class_a_magnetizable_actor.html#a94adcc8f227e1d9362c9321c9f1282ed", null ],
     [ "DynamicBlinkMaterial", "class_a_magnetizable_actor.html#af4e37d137b221f82e2bdac7da9ead1b8", null ],
-    [ "ElapsedBlinkTime", "class_a_magnetizable_actor.html#ab792f5428d131cad9108e8be643b6dfd", null ],
-    [ "m_CanMagneticForce", "class_a_magnetizable_actor.html#a26e12e705192914428ae0f290a67c740", null ],
-    [ "m_CanSetMagnetismType", "class_a_magnetizable_actor.html#a625d6d655202bee17350d4d89b23dcf0", null ],
-    [ "m_MagneticField", "class_a_magnetizable_actor.html#affae12810236846c76ac206a64e6f99f", null ],
-    [ "m_RootComponent", "class_a_magnetizable_actor.html#ab3dd6e2b1203b74cc305e72d5147d3a6", null ]
+    [ "ElapsedBlinkTime", "class_a_magnetizable_actor.html#ab792f5428d131cad9108e8be643b6dfd", null ]
 ];

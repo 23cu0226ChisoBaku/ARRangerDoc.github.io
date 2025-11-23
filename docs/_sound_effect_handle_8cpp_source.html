@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ARRanger: D:/GithubRepository/ARRanger/Source/ARRanger/Private/AudioSystem/SoundEffectHandle.cpp Source File</title>
+<title>ARRanger: ARRanger/Private/AudioSystem/SoundEffectHandle.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -124,19 +124,19 @@ $(function(){initNavTree('_sound_effect_handle_8cpp_source.html','',''); });
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
 <div class="foldopen" id="foldopen00032" data-start="{" data-end="}">
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="class_f_sound_effect_handle.html#a341b1165d1e73401865ce58f3bd3ee65">   32</a></span><a class="code hl_function" href="class_f_sound_effect_handle.html#a341b1165d1e73401865ce58f3bd3ee65">FSoundEffectHandle::FSoundEffectHandle</a>()</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  : <a class="code hl_variable" href="class_f_sound_effect_handle.html#add285aaf10bda0ae0f2c1719a9983298">m_uniqueID</a>{INVALID_HANDLE_ID}</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  , <a class="code hl_variable" href="class_f_sound_effect_handle.html#aab87d87ca3baa59593961a2be1e79092">m_audioComponent</a>{nullptr}</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  : m_uniqueID{INVALID_HANDLE_ID}</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  , m_audioComponent{nullptr}</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>{}</div>
 </div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
 <div class="foldopen" id="foldopen00037" data-start="{" data-end="}">
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="class_f_sound_effect_handle.html#a06012a0bfae7e7b956e2795ab4b2742d">   37</a></span><a class="code hl_function" href="class_f_sound_effect_handle.html#a341b1165d1e73401865ce58f3bd3ee65">FSoundEffectHandle::FSoundEffectHandle</a>(UAudioComponent* audioComp)</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  : <a class="code hl_variable" href="class_f_sound_effect_handle.html#add285aaf10bda0ae0f2c1719a9983298">m_uniqueID</a>{INVALID_HANDLE_ID}</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  , <a class="code hl_variable" href="class_f_sound_effect_handle.html#aab87d87ca3baa59593961a2be1e79092">m_audioComponent</a>{audioComp}</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  : m_uniqueID{INVALID_HANDLE_ID}</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  , m_audioComponent{audioComp}</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>{</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <span class="keywordflow">if</span> (audioComp != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  {</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <a class="code hl_variable" href="class_f_sound_effect_handle.html#add285aaf10bda0ae0f2c1719a9983298">m_uniqueID</a> = gHandleID++;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    m_uniqueID = gHandleID++;</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  }</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>}</div>
 </div>
@@ -144,32 +144,30 @@ $(function(){initNavTree('_sound_effect_handle_8cpp_source.html','',''); });
 <div class="foldopen" id="foldopen00047" data-start="{" data-end="}">
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="class_f_sound_effect_handle.html#a93fc3aba399f205ad2449d67a1e0d383">   47</a></span><a class="code hl_function" href="class_f_sound_effect_handle.html#a93fc3aba399f205ad2449d67a1e0d383">FSoundEffectHandle::~FSoundEffectHandle</a>()</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>{</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <a class="code hl_variable" href="class_f_sound_effect_handle.html#aab87d87ca3baa59593961a2be1e79092">m_audioComponent</a>.Reset();</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  m_audioComponent.Reset();</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>}</div>
 </div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
 <div class="foldopen" id="foldopen00052" data-start="{" data-end="}">
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="class_f_sound_effect_handle.html#a0fcee80df90f3e43876836647ce71df7">   52</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="class_f_sound_effect_handle.html#a0fcee80df90f3e43876836647ce71df7">FSoundEffectHandle::IsValid</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  <span class="keywordflow">return</span> <a class="code hl_variable" href="class_f_sound_effect_handle.html#add285aaf10bda0ae0f2c1719a9983298">m_uniqueID</a> != INVALID_HANDLE_ID &amp;&amp; </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>         <a class="code hl_variable" href="class_f_sound_effect_handle.html#aab87d87ca3baa59593961a2be1e79092">m_audioComponent</a>.IsValid();</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  <span class="keywordflow">return</span> m_uniqueID != INVALID_HANDLE_ID &amp;&amp; </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>         m_audioComponent.IsValid();</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>}</div>
 </div>
 <div class="ttc" id="a_sound_effect_handle_8h_html"><div class="ttname"><a href="_sound_effect_handle_8h.html">SoundEffectHandle.h</a></div></div>
 <div class="ttc" id="aclass_f_sound_effect_handle_html"><div class="ttname"><a href="class_f_sound_effect_handle.html">FSoundEffectHandle</a></div><div class="ttdef"><b>Definition</b> <a href="_sound_effect_handle_8h_source.html#l00024">SoundEffectHandle.h:25</a></div></div>
-<div class="ttc" id="aclass_f_sound_effect_handle_html_a0fcee80df90f3e43876836647ce71df7"><div class="ttname"><a href="class_f_sound_effect_handle.html#a0fcee80df90f3e43876836647ce71df7">FSoundEffectHandle::IsValid</a></div><div class="ttdeci">UE_API bool IsValid() const</div><div class="ttdef"><b>Definition</b> <a href="#l00052">SoundEffectHandle.cpp:52</a></div></div>
-<div class="ttc" id="aclass_f_sound_effect_handle_html_a341b1165d1e73401865ce58f3bd3ee65"><div class="ttname"><a href="class_f_sound_effect_handle.html#a341b1165d1e73401865ce58f3bd3ee65">FSoundEffectHandle::FSoundEffectHandle</a></div><div class="ttdeci">UE_API FSoundEffectHandle()</div><div class="ttdef"><b>Definition</b> <a href="#l00032">SoundEffectHandle.cpp:32</a></div></div>
-<div class="ttc" id="aclass_f_sound_effect_handle_html_a93fc3aba399f205ad2449d67a1e0d383"><div class="ttname"><a href="class_f_sound_effect_handle.html#a93fc3aba399f205ad2449d67a1e0d383">FSoundEffectHandle::~FSoundEffectHandle</a></div><div class="ttdeci">UE_API ~FSoundEffectHandle()</div><div class="ttdef"><b>Definition</b> <a href="#l00047">SoundEffectHandle.cpp:47</a></div></div>
-<div class="ttc" id="aclass_f_sound_effect_handle_html_aab87d87ca3baa59593961a2be1e79092"><div class="ttname"><a href="class_f_sound_effect_handle.html#aab87d87ca3baa59593961a2be1e79092">FSoundEffectHandle::m_audioComponent</a></div><div class="ttdeci">TWeakObjectPtr&lt; UAudioComponent &gt; m_audioComponent</div><div class="ttdoc">SE再生に使うAudioComponentへのポインタ</div><div class="ttdef"><b>Definition</b> <a href="_sound_effect_handle_8h_source.html#l00040">SoundEffectHandle.h:40</a></div></div>
-<div class="ttc" id="aclass_f_sound_effect_handle_html_add285aaf10bda0ae0f2c1719a9983298"><div class="ttname"><a href="class_f_sound_effect_handle.html#add285aaf10bda0ae0f2c1719a9983298">FSoundEffectHandle::m_uniqueID</a></div><div class="ttdeci">int64 m_uniqueID</div><div class="ttdoc">ハンドルユニークID</div><div class="ttdef"><b>Definition</b> <a href="_sound_effect_handle_8h_source.html#l00038">SoundEffectHandle.h:38</a></div></div>
-<div class="ttc" id="aclass_f_sound_effect_handle_html_ae63296a645a1b2744bb305e378c3e472"><div class="ttname"><a href="class_f_sound_effect_handle.html#ae63296a645a1b2744bb305e378c3e472">FSoundEffectHandle::InvalidHandle</a></div><div class="ttdeci">static UE_API const FSoundEffectHandle InvalidHandle</div><div class="ttdef"><b>Definition</b> <a href="_sound_effect_handle_8h_source.html#l00030">SoundEffectHandle.h:30</a></div></div>
+<div class="ttc" id="aclass_f_sound_effect_handle_html_a0fcee80df90f3e43876836647ce71df7"><div class="ttname"><a href="class_f_sound_effect_handle.html#a0fcee80df90f3e43876836647ce71df7">FSoundEffectHandle::IsValid</a></div><div class="ttdeci">ARRANGER_API bool IsValid() const</div><div class="ttdef"><b>Definition</b> <a href="#l00052">SoundEffectHandle.cpp:52</a></div></div>
+<div class="ttc" id="aclass_f_sound_effect_handle_html_a341b1165d1e73401865ce58f3bd3ee65"><div class="ttname"><a href="class_f_sound_effect_handle.html#a341b1165d1e73401865ce58f3bd3ee65">FSoundEffectHandle::FSoundEffectHandle</a></div><div class="ttdeci">ARRANGER_API FSoundEffectHandle()</div><div class="ttdef"><b>Definition</b> <a href="#l00032">SoundEffectHandle.cpp:32</a></div></div>
+<div class="ttc" id="aclass_f_sound_effect_handle_html_a93fc3aba399f205ad2449d67a1e0d383"><div class="ttname"><a href="class_f_sound_effect_handle.html#a93fc3aba399f205ad2449d67a1e0d383">FSoundEffectHandle::~FSoundEffectHandle</a></div><div class="ttdeci">ARRANGER_API ~FSoundEffectHandle()</div><div class="ttdef"><b>Definition</b> <a href="#l00047">SoundEffectHandle.cpp:47</a></div></div>
+<div class="ttc" id="aclass_f_sound_effect_handle_html_ae63296a645a1b2744bb305e378c3e472"><div class="ttname"><a href="class_f_sound_effect_handle.html#ae63296a645a1b2744bb305e378c3e472">FSoundEffectHandle::InvalidHandle</a></div><div class="ttdeci">static ARRANGER_API const FSoundEffectHandle InvalidHandle</div><div class="ttdef"><b>Definition</b> <a href="_sound_effect_handle_8h_source.html#l00030">SoundEffectHandle.h:30</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="dir_db4b63894235d986ff0886d3d7147fc4.html">GithubRepository</a></li><li class="navelem"><a href="dir_b7f76808a72ae9b06e23f4ba1d7ec8e0.html">ARRanger</a></li><li class="navelem"><a href="dir_22deff83e5e51399b4644a6ac5e50e58.html">Source</a></li><li class="navelem"><a href="dir_765ba4c51118e23b05fd567f675cd5c3.html">ARRanger</a></li><li class="navelem"><a href="dir_01ca0bd49608f959e3dafd2b38229153.html">Private</a></li><li class="navelem"><a href="dir_319db4fa72b0c37aef6e4154f62ac631.html">AudioSystem</a></li><li class="navelem"><a href="_sound_effect_handle_8cpp.html">SoundEffectHandle.cpp</a></li>
+    <li class="navelem"><a href="dir_da1fa48e9cd6aca15a5329e13710da8a.html">ARRanger</a></li><li class="navelem"><a href="dir_6306d44ac889cfd8733274aed159ebe8.html">Private</a></li><li class="navelem"><a href="dir_a7cc5bb2a7985fd60d8101288dd0e1a8.html">AudioSystem</a></li><li class="navelem"><a href="_sound_effect_handle_8cpp.html">SoundEffectHandle.cpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>

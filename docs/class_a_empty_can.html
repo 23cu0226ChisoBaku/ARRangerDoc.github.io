@@ -110,10 +110,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae172360c05139d02246e9b70e3d6f3d4" id="r_ae172360c05139d02246e9b70e3d6f3d4"><td class="memItemLeft" align="right" valign="top">virtual ARRANGER_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae172360c05139d02246e9b70e3d6f3d4">Tick</a> (float DeltaTime) override</td></tr>
 <tr class="memitem:a8c47985cdd776ab1f16d55dd91058e0f" id="r_a8c47985cdd776ab1f16d55dd91058e0f"><td class="memItemLeft" align="right" valign="top">virtual ARRANGER_API AActor *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c47985cdd776ab1f16d55dd91058e0f">Attackable_GetActor</a> () override</td></tr>
 <tr class="inherit_header pub_methods_class_i_a_r_attackable"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_i_a_r_attackable')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Member Functions inherited from <a class="el" href="class_i_a_r_attackable.html">IARAttackable</a></td></tr>
-<tr class="memitem:a341e269f7155810629ec5dce290d9906 inherit pub_methods_class_i_a_r_attackable" id="r_a341e269f7155810629ec5dce290d9906"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_i_a_r_attackable_8h.html#a578eb926c8aecdf908e1338b2e893458">UE_API</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_a_r_attackable.html#a341e269f7155810629ec5dce290d9906">AttackTarget</a> (<a class="el" href="class_i_a_r_attacker_interface.html">IARAttackerInterface</a> *Attacker, <a class="el" href="struct_f_a_r_attack_parameters.html">FARAttackParameters</a> InAttackParams=<a class="el" href="struct_f_a_r_attack_parameters.html#ad2a4751c3a578c3c7bf6e13342e2cfb7">FARAttackParameters::GetBlank</a>())</td></tr>
+<tr class="memitem:a341e269f7155810629ec5dce290d9906 inherit pub_methods_class_i_a_r_attackable" id="r_a341e269f7155810629ec5dce290d9906"><td class="memItemLeft" align="right" valign="top">ARRANGER_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_a_r_attackable.html#a341e269f7155810629ec5dce290d9906">AttackTarget</a> (<a class="el" href="class_i_a_r_attacker_interface.html">IARAttackerInterface</a> *Attacker, <a class="el" href="struct_f_a_r_attack_parameters.html">FARAttackParameters</a> InAttackParams=<a class="el" href="struct_f_a_r_attack_parameters.html#ad2a4751c3a578c3c7bf6e13342e2cfb7">FARAttackParameters::GetBlank</a>())</td></tr>
 <tr class="memdesc:a341e269f7155810629ec5dce290d9906 inherit pub_methods_class_i_a_r_attackable"><td class="mdescLeft">&#160;</td><td class="mdescRight">物を攻撃する  <br /></td></tr>
-<tr class="memitem:a78f6f06c2ccb705a8b708bbb298c0652 inherit pub_methods_class_i_a_r_attackable" id="r_a78f6f06c2ccb705a8b708bbb298c0652"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_i_a_r_attackable_8h.html#a578eb926c8aecdf908e1338b2e893458">UE_API</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_a_r_attackable.html#a78f6f06c2ccb705a8b708bbb298c0652">CanAttack</a> ()</td></tr>
-<tr class="memdesc:a78f6f06c2ccb705a8b708bbb298c0652 inherit pub_methods_class_i_a_r_attackable"><td class="mdescLeft">&#160;</td><td class="mdescRight">攻撃できるか  <br /></td></tr>
+<tr class="memitem:ac9035f96171fdf270edbd8c0bf6a9d64 inherit pub_methods_class_i_a_r_attackable" id="r_ac9035f96171fdf270edbd8c0bf6a9d64"><td class="memItemLeft" align="right" valign="top">virtual ARRANGER_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_a_r_attackable.html#ac9035f96171fdf270edbd8c0bf6a9d64">CanAttack</a> ()</td></tr>
+<tr class="memdesc:ac9035f96171fdf270edbd8c0bf6a9d64 inherit pub_methods_class_i_a_r_attackable"><td class="mdescLeft">&#160;</td><td class="mdescRight">攻撃できるか  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pro-methods" class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -122,17 +122,14 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a4ee328ae06689fc58568341753be2298" id="r_a4ee328ae06689fc58568341753be2298"><td class="memItemLeft" align="right" valign="top">virtual ARRANGER_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ee328ae06689fc58568341753be2298">OnPostAttacked</a> (const <a class="el" href="struct_f_a_r_attack_parameters.html">FARAttackParameters</a> &amp;InAttackParams) override</td></tr>
 <tr class="memdesc:a4ee328ae06689fc58568341753be2298"><td class="mdescLeft">&#160;</td><td class="mdescRight">攻撃を受けた後に呼び出されるコールバック  <br /></td></tr>
 <tr class="inherit_header pro_methods_class_i_a_r_attackable"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_class_i_a_r_attackable')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Protected Member Functions inherited from <a class="el" href="class_i_a_r_attackable.html">IARAttackable</a></td></tr>
-<tr class="memitem:a4ecfb95446603c3d60bb373e5718d8e5 inherit pro_methods_class_i_a_r_attackable" id="r_a4ecfb95446603c3d60bb373e5718d8e5"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_i_a_r_attackable_8h.html#a578eb926c8aecdf908e1338b2e893458">UE_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_a_r_attackable.html#a4ecfb95446603c3d60bb373e5718d8e5">OnDamaged</a> (const <a class="el" href="struct_a_r_ranger_1_1_battle_1_1_f_a_r_damage_result.html">ARRanger::Battle::FARDamageResult</a> &amp;InDamageResult)</td></tr>
-<tr class="memdesc:a4ecfb95446603c3d60bb373e5718d8e5 inherit pro_methods_class_i_a_r_attackable"><td class="mdescLeft">&#160;</td><td class="mdescRight">ダメージ計算を済んだ時に呼び出されるコールバック  <br /></td></tr>
+<tr class="memitem:aa9dac7eb337526b4b774c61e5765fe95 inherit pro_methods_class_i_a_r_attackable" id="r_aa9dac7eb337526b4b774c61e5765fe95"><td class="memItemLeft" align="right" valign="top">virtual ARRANGER_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_a_r_attackable.html#aa9dac7eb337526b4b774c61e5765fe95">OnDamaged</a> (const <a class="el" href="struct_a_r_ranger_1_1_battle_1_1_f_a_r_damage_result.html">ARRanger::Battle::FARDamageResult</a> &amp;InDamageResult)</td></tr>
+<tr class="memdesc:aa9dac7eb337526b4b774c61e5765fe95 inherit pro_methods_class_i_a_r_attackable"><td class="mdescLeft">&#160;</td><td class="mdescRight">ダメージ計算を済んだ時に呼び出されるコールバック  <br /></td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:aeb82cdea561a4c4c5f5ba1371628f2c4" id="r_aeb82cdea561a4c4c5f5ba1371628f2c4"><td class="memItemLeft" align="right" valign="top">ARRANGER_API float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb82cdea561a4c4c5f5ba1371628f2c4">GetFlyForceByDamage</a> ()</td></tr>
-<tr class="memdesc:aeb82cdea561a4c4c5f5ba1371628f2c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">ダメージ量に適した飛ぶ力を取得する  <br /></td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a92ed6da87fb08f74d75bfe176e37aa64" id="r_a92ed6da87fb08f74d75bfe176e37aa64"><td class="memItemLeft" align="right" valign="top">TObjectPtr&lt; UStaticMeshComponent &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a92ed6da87fb08f74d75bfe176e37aa64">MeshComponent</a></td></tr>
+<tr class="heading"><td colspan="2"><h2 id="header-inherited" class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_static_methods_class_i_a_r_attackable"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_static_methods_class_i_a_r_attackable')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Static Public Member Functions inherited from <a class="el" href="class_i_a_r_attackable.html">IARAttackable</a></td></tr>
+<tr class="memitem:ae4e983001995b0ceb7811400c89ce260 inherit pub_static_methods_class_i_a_r_attackable" id="r_ae4e983001995b0ceb7811400c89ce260"><td class="memItemLeft" align="right" valign="top">static ARRANGER_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_a_r_attackable.html#ae4e983001995b0ceb7811400c89ce260">IsActorAttackable</a> (const AActor *InActor)</td></tr>
+<tr class="memdesc:ae4e983001995b0ceb7811400c89ce260 inherit pub_static_methods_class_i_a_r_attackable"><td class="mdescLeft">&#160;</td><td class="mdescRight">アクターが攻撃できるかを確認する  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -154,7 +151,13 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_empty_can_8cpp_source.html#l00007">7</a> of file <a class="el" href="_empty_can_8cpp_source.html">EmptyCan.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">    8</span>{</div>
+<div class="line"><span class="lineno">    9</span>    PrimaryActorTick.bCanEverTick = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   10</span> </div>
+<div class="line"><span class="lineno">   11</span>    MeshComponent = CreateDefaultSubobject&lt;UStaticMeshComponent&gt;(TEXT(<span class="stringliteral">&quot;MeshComponent&quot;</span>));</div>
+<div class="line"><span class="lineno">   12</span>  RootComponent = MeshComponent;</div>
+<div class="line"><span class="lineno">   13</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
@@ -182,10 +185,11 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Start <a class="el" href="class_i_a_r_attackable.html" title="Interface for object that can be attacked in ARRanger project.">IARAttackable</a> Interface </p>
 
-<p>Reimplemented from <a class="el" href="class_i_a_r_attackable.html#afbc9c736b2854217214766e5c52bf16b">IARAttackable</a>.</p>
+<p>Reimplemented from <a class="el" href="class_i_a_r_attackable.html#ad96f7c60ab08ebd53285a5433abd3a1b">IARAttackable</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_empty_can_8h_source.html#l00026">26</a> of file <a class="el" href="_empty_can_8h_source.html">EmptyCan.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   26</span>{ <span class="keywordflow">return</span> <span class="keyword">this</span>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a7f04e8b223d237e5c2b3ed9f2f38892d" name="a7f04e8b223d237e5c2b3ed9f2f38892d"></a>
@@ -212,44 +216,10 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_empty_can_8cpp_source.html#l00014">14</a> of file <a class="el" href="_empty_can_8cpp_source.html">EmptyCan.cpp</a>.</p>
-
-</div>
-</div>
-<a id="aeb82cdea561a4c4c5f5ba1371628f2c4" name="aeb82cdea561a4c4c5f5ba1371628f2c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb82cdea561a4c4c5f5ba1371628f2c4">&#9670;&#160;</a></span>GetFlyForceByDamage()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float AEmptyCan::GetFlyForceByDamage </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>ダメージ量に適した飛ぶ力を取得する </p>
-<p>End <a class="el" href="class_i_a_r_attackable.html" title="Interface for object that can be attacked in ARRanger project.">IARAttackable</a> Interface </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">飛ぶ力</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>飛ぶ力 </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="_empty_can_8cpp_source.html#l00044">44</a> of file <a class="el" href="_empty_can_8cpp_source.html">EmptyCan.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   15</span>{</div>
+<div class="line"><span class="lineno">   16</span>    Super::BeginPlay();</div>
+<div class="line"><span class="lineno">   17</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a4ee328ae06689fc58568341753be2298" name="a4ee328ae06689fc58568341753be2298"></a>
@@ -284,10 +254,18 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="struct_f_a_r_attack_parameters.html" title="Parameter structure of attack behaviour.">FARAttackParameters</a> </dd></dl>
 
-<p>Reimplemented from <a class="el" href="class_i_a_r_attackable.html#a1c299a5915438d0f9aba95e3610c43d5">IARAttackable</a>.</p>
+<p>Reimplemented from <a class="el" href="class_i_a_r_attackable.html#a7836c7375627fc352fcaf4dd65e5c774">IARAttackable</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_empty_can_8cpp_source.html#l00029">29</a> of file <a class="el" href="_empty_can_8cpp_source.html">EmptyCan.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   30</span>{</div>
+<div class="line"><span class="lineno">   31</span>  <span class="keywordflow">if</span> ((MeshComponent != <span class="keyword">nullptr</span>) &amp;&amp; MeshComponent-&gt;IsSimulatingPhysics())</div>
+<div class="line"><span class="lineno">   32</span>  {</div>
+<div class="line"><span class="lineno">   33</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> power = 1500.0f;</div>
+<div class="line"><span class="lineno">   34</span>    MeshComponent-&gt;AddImpulse(InAttackParams.<a class="code hl_variable" href="struct_f_a_r_attack_parameters.html#a50e1872ea4af92a85f5ad2a89e89179c">LaunchDirection</a> * power, NAME_None, <span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">   35</span>  }</div>
+<div class="line"><span class="lineno">   36</span>}</div>
+<div class="ttc" id="astruct_f_a_r_attack_parameters_html_a50e1872ea4af92a85f5ad2a89e89179c"><div class="ttname"><a href="struct_f_a_r_attack_parameters.html#a50e1872ea4af92a85f5ad2a89e89179c">FARAttackParameters::LaunchDirection</a></div><div class="ttdeci">FVector LaunchDirection</div><div class="ttdef"><b>Definition</b> <a href="_i_a_r_attackable_8h_source.html#l00094">IARAttackable.h:94</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a7be48fe84f1d634dfa48c5779830e8d5" name="a7be48fe84f1d634dfa48c5779830e8d5"></a>
@@ -333,10 +311,16 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="struct_a_r_ranger_1_1_battle_1_1_f_a_r_attack_result.html" title="Parameter structure of attack result.">ARRanger::Battle::FARAttackResult</a> </dd></dl>
 
-<p>Reimplemented from <a class="el" href="class_i_a_r_attackable.html#a62ec80c41581046d3c40758c26243c52">IARAttackable</a>.</p>
+<p>Reimplemented from <a class="el" href="class_i_a_r_attackable.html#a60bdb3e5966fbfc2abd36374b956c67d">IARAttackable</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_empty_can_8cpp_source.html#l00023">23</a> of file <a class="el" href="_empty_can_8cpp_source.html">EmptyCan.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   24</span>{</div>
+<div class="line"><span class="lineno">   25</span>  <span class="comment">// Always make attack success</span></div>
+<div class="line"><span class="lineno">   26</span>  OutAttackResult.<a class="code hl_variable" href="struct_a_r_ranger_1_1_battle_1_1_f_a_r_attack_result.html#a5be6129ba70a28a3df80926dc2393473">Result</a> = <a class="code hl_enumvalue" href="namespace_a_r_ranger_1_1_battle.html#a97980e6bd92e9cc6363390b38d6fa0d1a505a83f220c02df2f85c3810cd9ceb38">ARRanger::Battle::EARAttackResult::Success</a>;</div>
+<div class="line"><span class="lineno">   27</span>}</div>
+<div class="ttc" id="anamespace_a_r_ranger_1_1_battle_html_a97980e6bd92e9cc6363390b38d6fa0d1a505a83f220c02df2f85c3810cd9ceb38"><div class="ttname"><a href="namespace_a_r_ranger_1_1_battle.html#a97980e6bd92e9cc6363390b38d6fa0d1a505a83f220c02df2f85c3810cd9ceb38">ARRanger::Battle::EARAttackResult::Success</a></div><div class="ttdeci">@ Success</div><div class="ttdef"><b>Definition</b> <a href="_i_a_r_attackable_8h_source.html#l00036">IARAttackable.h:36</a></div></div>
+<div class="ttc" id="astruct_a_r_ranger_1_1_battle_1_1_f_a_r_attack_result_html_a5be6129ba70a28a3df80926dc2393473"><div class="ttname"><a href="struct_a_r_ranger_1_1_battle_1_1_f_a_r_attack_result.html#a5be6129ba70a28a3df80926dc2393473">ARRanger::Battle::FARAttackResult::Result</a></div><div class="ttdeci">EARAttackResult Result</div><div class="ttdef"><b>Definition</b> <a href="_i_a_r_attackable_8h_source.html#l00049">IARAttackable.h:49</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae172360c05139d02246e9b70e3d6f3d4" name="ae172360c05139d02246e9b70e3d6f3d4"></a>
@@ -363,37 +347,15 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_empty_can_8cpp_source.html#l00018">18</a> of file <a class="el" href="_empty_can_8cpp_source.html">EmptyCan.cpp</a>.</p>
-
-</div>
-</div>
-<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
-<a id="a92ed6da87fb08f74d75bfe176e37aa64" name="a92ed6da87fb08f74d75bfe176e37aa64"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a92ed6da87fb08f74d75bfe176e37aa64">&#9670;&#160;</a></span>MeshComponent</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">TObjectPtr&lt;UStaticMeshComponent&gt; AEmptyCan::MeshComponent</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_empty_can_8h_source.html#l00048">48</a> of file <a class="el" href="_empty_can_8h_source.html">EmptyCan.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   19</span>{</div>
+<div class="line"><span class="lineno">   20</span>    Super::Tick(DeltaTime);</div>
+<div class="line"><span class="lineno">   21</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>D:/GithubRepository/ARRanger/Source/ARRanger/Public/Interactive/<a class="el" href="_empty_can_8h_source.html">EmptyCan.h</a></li>
-<li>D:/GithubRepository/ARRanger/Source/ARRanger/Private/Interactive/<a class="el" href="_empty_can_8cpp_source.html">EmptyCan.cpp</a></li>
+<li>ARRanger/Public/Interactive/<a class="el" href="_empty_can_8h_source.html">EmptyCan.h</a></li>
+<li>ARRanger/Private/Interactive/<a class="el" href="_empty_can_8cpp_source.html">EmptyCan.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

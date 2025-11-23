@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ARRanger: D:/GithubRepository/ARRanger/Source/ARRanger/Private/BlinkingSystem/BlinkingOutlineWorldSubsystem.cpp Source File</title>
+<title>ARRanger: ARRanger/Private/BlinkingSystem/BlinkingOutlineWorldSubsystem.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -109,8 +109,8 @@ $(function(){initNavTree('_blinking_outline_world_subsystem_8cpp_source.html',''
 <div class="foldopen" id="foldopen00020" data-start="{" data-end="}">
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_u_blinking_outline_world_subsystem.html#a7532daecb3d322bbf93898a24b6af3e9">   20</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_u_blinking_outline_world_subsystem.html#a7532daecb3d322bbf93898a24b6af3e9">UBlinkingOutlineWorldSubsystem::Deinitialize</a>()</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>{</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <a class="code hl_function" href="class_u_blinking_outline_world_subsystem.html#a5acf5bec8b88b4cff4f87264f007b3d3">UnBindDelegate</a>();</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <a class="code hl_variable" href="class_u_blinking_outline_world_subsystem.html#ab162c0eec5383553e8f25c81b3c1c855">m_OutlineSystem</a>.Reset();</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    UnBindDelegate();</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    m_OutlineSystem.Reset();</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    Super::Deinitialize();</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>}</div>
 </div>
@@ -124,66 +124,62 @@ $(function(){initNavTree('_blinking_outline_world_subsystem_8cpp_source.html',''
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    }</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <a class="code hl_variable" href="class_u_blinking_outline_world_subsystem.html#ab162c0eec5383553e8f25c81b3c1c855">m_OutlineSystem</a> = MakeUnique&lt;FOutlineSystem&gt;();</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <a class="code hl_variable" href="class_u_blinking_outline_world_subsystem.html#ab162c0eec5383553e8f25c81b3c1c855">m_OutlineSystem</a>-&gt;CreateTickingActor(world, tickActorClass);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    m_OutlineSystem = MakeUnique&lt;FOutlineSystem&gt;();</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    m_OutlineSystem-&gt;CreateTickingActor(world, tickActorClass);</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <a class="code hl_variable" href="class_u_blinking_outline_world_subsystem.html#aa86f40c17a87950080a1a5d42ffd5724">m_DetectorMagnetizableComponent</a> = detectorMagnetizableComp;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <a class="code hl_variable" href="class_u_blinking_outline_world_subsystem.html#aa85ebf4fe29908826d9a5f204c43d424">m_TickActorClass</a> = tickActorClass;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    m_DetectorMagnetizableComponent = detectorMagnetizableComp;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    m_TickActorClass = tickActorClass;</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <a class="code hl_function" href="class_u_blinking_outline_world_subsystem.html#a03cce8c025107b64a818e6a1a59c337a">BindBlinkingMagnetizableObjectDelegate</a>();</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    BindBlinkingMagnetizableObjectDelegate();</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>}</div>
 </div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">/*</span></div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">* @brief OutlineSystem の関数を DetectorMagnetizableComponent のデリゲートにバインド </span></div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">*/</span></div>
-<div class="foldopen" id="foldopen00047" data-start="{" data-end="}">
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="class_u_blinking_outline_world_subsystem.html#a03cce8c025107b64a818e6a1a59c337a">   47</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_u_blinking_outline_world_subsystem.html#a03cce8c025107b64a818e6a1a59c337a">UBlinkingOutlineWorldSubsystem::BindBlinkingMagnetizableObjectDelegate</a>()</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="keywordtype">void</span> UBlinkingOutlineWorldSubsystem::BindBlinkingMagnetizableObjectDelegate()</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>{</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_u_blinking_outline_world_subsystem.html#aa86f40c17a87950080a1a5d42ffd5724">m_DetectorMagnetizableComponent</a> != <span class="keyword">nullptr</span> &amp;&amp; <a class="code hl_variable" href="class_u_blinking_outline_world_subsystem.html#ab162c0eec5383553e8f25c81b3c1c855">m_OutlineSystem</a> != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordflow">if</span> (m_DetectorMagnetizableComponent != <span class="keyword">nullptr</span> &amp;&amp; m_OutlineSystem != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    {</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <a class="code hl_variable" href="class_u_blinking_outline_world_subsystem.html#aa86f40c17a87950080a1a5d42ffd5724">m_DetectorMagnetizableComponent</a>-&gt;SetMagnetizableObjectAtCursor.BindRaw(</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            <a class="code hl_variable" href="class_u_blinking_outline_world_subsystem.html#ab162c0eec5383553e8f25c81b3c1c855">m_OutlineSystem</a>.Get(),</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        m_DetectorMagnetizableComponent-&gt;SetMagnetizableObjectAtCursor.BindRaw(</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            m_OutlineSystem.Get(),</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            &amp;<a class="code hl_function" href="class_f_outline_system.html#a6df91964c9ca015cc26f5d02cfd94b14">FOutlineSystem::BlinkOutlineActorAtCursorDelegate</a></div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        );</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <a class="code hl_variable" href="class_u_blinking_outline_world_subsystem.html#aa86f40c17a87950080a1a5d42ffd5724">m_DetectorMagnetizableComponent</a>-&gt;UnsetMagnetizableObjectAtCursor.BindRaw(</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            <a class="code hl_variable" href="class_u_blinking_outline_world_subsystem.html#ab162c0eec5383553e8f25c81b3c1c855">m_OutlineSystem</a>.Get(),</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        m_DetectorMagnetizableComponent-&gt;UnsetMagnetizableObjectAtCursor.BindRaw(</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            m_OutlineSystem.Get(),</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            &amp;<a class="code hl_function" href="class_f_outline_system.html#a2027493eccb7fd158a62bc36ef134d8c">FOutlineSystem::StopBlinkOutlineActorAtCursorDelegate</a></div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        );</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <a class="code hl_variable" href="class_u_blinking_outline_world_subsystem.html#aa86f40c17a87950080a1a5d42ffd5724">m_DetectorMagnetizableComponent</a>-&gt;SetActorOnOutline.BindRaw(</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            <a class="code hl_variable" href="class_u_blinking_outline_world_subsystem.html#ab162c0eec5383553e8f25c81b3c1c855">m_OutlineSystem</a>.Get(),</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        m_DetectorMagnetizableComponent-&gt;SetActorOnOutline.BindRaw(</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            m_OutlineSystem.Get(),</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            &amp;<a class="code hl_function" href="class_f_outline_system.html#a5083edc10093f024426d17081ac3f3df">FOutlineSystem::AddOutlineActorDelegate</a></div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        );</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <a class="code hl_variable" href="class_u_blinking_outline_world_subsystem.html#aa86f40c17a87950080a1a5d42ffd5724">m_DetectorMagnetizableComponent</a>-&gt;UnsetActorOnOutline.BindRaw(</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            <a class="code hl_variable" href="class_u_blinking_outline_world_subsystem.html#ab162c0eec5383553e8f25c81b3c1c855">m_OutlineSystem</a>.Get(),</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        m_DetectorMagnetizableComponent-&gt;UnsetActorOnOutline.BindRaw(</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            m_OutlineSystem.Get(),</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            &amp;<a class="code hl_function" href="class_f_outline_system.html#af9622df829da6d2061a20efcc759f411">FOutlineSystem::RemoveOutlineActorDelegate</a></div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        );</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <a class="code hl_variable" href="class_u_blinking_outline_world_subsystem.html#aa86f40c17a87950080a1a5d42ffd5724">m_DetectorMagnetizableComponent</a>-&gt;SetActorOnBlinkingOutline.BindRaw(</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            <a class="code hl_variable" href="class_u_blinking_outline_world_subsystem.html#ab162c0eec5383553e8f25c81b3c1c855">m_OutlineSystem</a>.Get(),</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        m_DetectorMagnetizableComponent-&gt;SetActorOnBlinkingOutline.BindRaw(</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            m_OutlineSystem.Get(),</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            &amp;<a class="code hl_function" href="class_f_outline_system.html#abbc33b4690f58c539f1640bbd6a63b69">FOutlineSystem::AddBlinkingOutlineActorDelegate</a></div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        );</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        </div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    }</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>}</div>
-</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment">/*</span></div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment">* @brief バインドされているデリゲート関数をアンバインドする </span></div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment">*/</span></div>
-<div class="foldopen" id="foldopen00079" data-start="{" data-end="}">
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="class_u_blinking_outline_world_subsystem.html#a5acf5bec8b88b4cff4f87264f007b3d3">   79</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_u_blinking_outline_world_subsystem.html#a5acf5bec8b88b4cff4f87264f007b3d3">UBlinkingOutlineWorldSubsystem::UnBindDelegate</a>()</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="keywordtype">void</span> UBlinkingOutlineWorldSubsystem::UnBindDelegate()</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>{</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_u_blinking_outline_world_subsystem.html#aa86f40c17a87950080a1a5d42ffd5724">m_DetectorMagnetizableComponent</a> != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keywordflow">if</span> (m_DetectorMagnetizableComponent != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    {</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        <a class="code hl_variable" href="class_u_blinking_outline_world_subsystem.html#aa86f40c17a87950080a1a5d42ffd5724">m_DetectorMagnetizableComponent</a>-&gt;SetMagnetizableObjectAtCursor.Unbind();</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <a class="code hl_variable" href="class_u_blinking_outline_world_subsystem.html#aa86f40c17a87950080a1a5d42ffd5724">m_DetectorMagnetizableComponent</a>-&gt;UnsetMagnetizableObjectAtCursor.Unbind();</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        <a class="code hl_variable" href="class_u_blinking_outline_world_subsystem.html#aa86f40c17a87950080a1a5d42ffd5724">m_DetectorMagnetizableComponent</a>-&gt;SetActorOnOutline.Unbind();</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        <a class="code hl_variable" href="class_u_blinking_outline_world_subsystem.html#aa86f40c17a87950080a1a5d42ffd5724">m_DetectorMagnetizableComponent</a>-&gt;UnsetActorOnOutline.Unbind();</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        <a class="code hl_variable" href="class_u_blinking_outline_world_subsystem.html#aa86f40c17a87950080a1a5d42ffd5724">m_DetectorMagnetizableComponent</a>-&gt;SetActorOnBlinkingOutline.Unbind();</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        m_DetectorMagnetizableComponent-&gt;SetMagnetizableObjectAtCursor.Unbind();</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        m_DetectorMagnetizableComponent-&gt;UnsetMagnetizableObjectAtCursor.Unbind();</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        m_DetectorMagnetizableComponent-&gt;SetActorOnOutline.Unbind();</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        m_DetectorMagnetizableComponent-&gt;UnsetActorOnOutline.Unbind();</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        m_DetectorMagnetizableComponent-&gt;SetActorOnBlinkingOutline.Unbind();</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    }</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>}</div>
-</div>
 <div class="ttc" id="a_blinking_outline_world_subsystem_8h_html"><div class="ttname"><a href="_blinking_outline_world_subsystem_8h.html">BlinkingOutlineWorldSubsystem.h</a></div></div>
 <div class="ttc" id="a_detector_magnetizable_component_8h_html"><div class="ttname"><a href="_detector_magnetizable_component_8h.html">DetectorMagnetizableComponent.h</a></div></div>
 <div class="ttc" id="a_outline_tick_actor_8h_html"><div class="ttname"><a href="_outline_tick_actor_8h.html">OutlineTickActor.h</a></div></div>
@@ -192,21 +188,16 @@ $(function(){initNavTree('_blinking_outline_world_subsystem_8cpp_source.html',''
 <div class="ttc" id="aclass_f_outline_system_html_a6df91964c9ca015cc26f5d02cfd94b14"><div class="ttname"><a href="class_f_outline_system.html#a6df91964c9ca015cc26f5d02cfd94b14">FOutlineSystem::BlinkOutlineActorAtCursorDelegate</a></div><div class="ttdeci">void BlinkOutlineActorAtCursorDelegate(AActor *targetObject)</div><div class="ttdef"><b>Definition</b> <a href="_outline_system_8cpp_source.html#l00050">OutlineSystem.cpp:50</a></div></div>
 <div class="ttc" id="aclass_f_outline_system_html_abbc33b4690f58c539f1640bbd6a63b69"><div class="ttname"><a href="class_f_outline_system.html#abbc33b4690f58c539f1640bbd6a63b69">FOutlineSystem::AddBlinkingOutlineActorDelegate</a></div><div class="ttdeci">void AddBlinkingOutlineActorDelegate(AActor *targetObject)</div><div class="ttdef"><b>Definition</b> <a href="_outline_system_8cpp_source.html#l00108">OutlineSystem.cpp:108</a></div></div>
 <div class="ttc" id="aclass_f_outline_system_html_af9622df829da6d2061a20efcc759f411"><div class="ttname"><a href="class_f_outline_system.html#af9622df829da6d2061a20efcc759f411">FOutlineSystem::RemoveOutlineActorDelegate</a></div><div class="ttdeci">void RemoveOutlineActorDelegate(AActor *targetObject)</div><div class="ttdef"><b>Definition</b> <a href="_outline_system_8cpp_source.html#l00094">OutlineSystem.cpp:94</a></div></div>
-<div class="ttc" id="aclass_u_blinking_outline_world_subsystem_html_a03cce8c025107b64a818e6a1a59c337a"><div class="ttname"><a href="class_u_blinking_outline_world_subsystem.html#a03cce8c025107b64a818e6a1a59c337a">UBlinkingOutlineWorldSubsystem::BindBlinkingMagnetizableObjectDelegate</a></div><div class="ttdeci">void BindBlinkingMagnetizableObjectDelegate()</div><div class="ttdef"><b>Definition</b> <a href="#l00047">BlinkingOutlineWorldSubsystem.cpp:47</a></div></div>
 <div class="ttc" id="aclass_u_blinking_outline_world_subsystem_html_a39ef45196a1766c40be40ff28d2190b9"><div class="ttname"><a href="class_u_blinking_outline_world_subsystem.html#a39ef45196a1766c40be40ff28d2190b9">UBlinkingOutlineWorldSubsystem::SetupBlinkingSystem</a></div><div class="ttdeci">void SetupBlinkingSystem(UWorld *World, UDetectorMagnetizableComponent *lineTraceComp, TSubclassOf&lt; AOutlineTickActor &gt; tickActorClass)</div><div class="ttdef"><b>Definition</b> <a href="#l00027">BlinkingOutlineWorldSubsystem.cpp:27</a></div></div>
-<div class="ttc" id="aclass_u_blinking_outline_world_subsystem_html_a5acf5bec8b88b4cff4f87264f007b3d3"><div class="ttname"><a href="class_u_blinking_outline_world_subsystem.html#a5acf5bec8b88b4cff4f87264f007b3d3">UBlinkingOutlineWorldSubsystem::UnBindDelegate</a></div><div class="ttdeci">void UnBindDelegate()</div><div class="ttdef"><b>Definition</b> <a href="#l00079">BlinkingOutlineWorldSubsystem.cpp:79</a></div></div>
 <div class="ttc" id="aclass_u_blinking_outline_world_subsystem_html_a7532daecb3d322bbf93898a24b6af3e9"><div class="ttname"><a href="class_u_blinking_outline_world_subsystem.html#a7532daecb3d322bbf93898a24b6af3e9">UBlinkingOutlineWorldSubsystem::Deinitialize</a></div><div class="ttdeci">virtual void Deinitialize() override</div><div class="ttdef"><b>Definition</b> <a href="#l00020">BlinkingOutlineWorldSubsystem.cpp:20</a></div></div>
 <div class="ttc" id="aclass_u_blinking_outline_world_subsystem_html_a8dc477ea478252a913174487eb7c4886"><div class="ttname"><a href="class_u_blinking_outline_world_subsystem.html#a8dc477ea478252a913174487eb7c4886">UBlinkingOutlineWorldSubsystem::Initialize</a></div><div class="ttdeci">virtual void Initialize(FSubsystemCollectionBase &amp;Collection) override</div><div class="ttdoc">初期化処理</div><div class="ttdef"><b>Definition</b> <a href="#l00012">BlinkingOutlineWorldSubsystem.cpp:12</a></div></div>
-<div class="ttc" id="aclass_u_blinking_outline_world_subsystem_html_aa85ebf4fe29908826d9a5f204c43d424"><div class="ttname"><a href="class_u_blinking_outline_world_subsystem.html#aa85ebf4fe29908826d9a5f204c43d424">UBlinkingOutlineWorldSubsystem::m_TickActorClass</a></div><div class="ttdeci">TSubclassOf&lt; AOutlineTickActor &gt; m_TickActorClass</div><div class="ttdef"><b>Definition</b> <a href="_blinking_outline_world_subsystem_8h_source.html#l00055">BlinkingOutlineWorldSubsystem.h:55</a></div></div>
-<div class="ttc" id="aclass_u_blinking_outline_world_subsystem_html_aa86f40c17a87950080a1a5d42ffd5724"><div class="ttname"><a href="class_u_blinking_outline_world_subsystem.html#aa86f40c17a87950080a1a5d42ffd5724">UBlinkingOutlineWorldSubsystem::m_DetectorMagnetizableComponent</a></div><div class="ttdeci">TObjectPtr&lt; UDetectorMagnetizableComponent &gt; m_DetectorMagnetizableComponent</div><div class="ttdef"><b>Definition</b> <a href="_blinking_outline_world_subsystem_8h_source.html#l00053">BlinkingOutlineWorldSubsystem.h:53</a></div></div>
-<div class="ttc" id="aclass_u_blinking_outline_world_subsystem_html_ab162c0eec5383553e8f25c81b3c1c855"><div class="ttname"><a href="class_u_blinking_outline_world_subsystem.html#ab162c0eec5383553e8f25c81b3c1c855">UBlinkingOutlineWorldSubsystem::m_OutlineSystem</a></div><div class="ttdeci">TUniquePtr&lt; class FOutlineSystem &gt; m_OutlineSystem</div><div class="ttdef"><b>Definition</b> <a href="_blinking_outline_world_subsystem_8h_source.html#l00057">BlinkingOutlineWorldSubsystem.h:57</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="dir_db4b63894235d986ff0886d3d7147fc4.html">GithubRepository</a></li><li class="navelem"><a href="dir_b7f76808a72ae9b06e23f4ba1d7ec8e0.html">ARRanger</a></li><li class="navelem"><a href="dir_22deff83e5e51399b4644a6ac5e50e58.html">Source</a></li><li class="navelem"><a href="dir_765ba4c51118e23b05fd567f675cd5c3.html">ARRanger</a></li><li class="navelem"><a href="dir_01ca0bd49608f959e3dafd2b38229153.html">Private</a></li><li class="navelem"><a href="dir_290ddb267d51b50c3f178cc16d554f1e.html">BlinkingSystem</a></li><li class="navelem"><a href="_blinking_outline_world_subsystem_8cpp.html">BlinkingOutlineWorldSubsystem.cpp</a></li>
+    <li class="navelem"><a href="dir_da1fa48e9cd6aca15a5329e13710da8a.html">ARRanger</a></li><li class="navelem"><a href="dir_6306d44ac889cfd8733274aed159ebe8.html">Private</a></li><li class="navelem"><a href="dir_7b8e22d6cb049aa8a0d69119e60beb4e.html">BlinkingSystem</a></li><li class="navelem"><a href="_blinking_outline_world_subsystem_8cpp.html">BlinkingOutlineWorldSubsystem.cpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>

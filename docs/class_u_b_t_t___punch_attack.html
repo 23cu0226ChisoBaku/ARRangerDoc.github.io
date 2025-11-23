@@ -134,7 +134,10 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_b_t_t___punch_attack_8cpp_source.html#l00010">10</a> of file <a class="el" href="_b_t_t___punch_attack_8cpp_source.html">BTT_PunchAttack.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   11</span>{</div>
+<div class="line"><span class="lineno">   12</span>    NodeName = TEXT(<span class="stringliteral">&quot;Punch Attack&quot;</span>);</div>
+<div class="line"><span class="lineno">   13</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
@@ -166,7 +169,35 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_b_t_t___punch_attack_8cpp_source.html#l00015">15</a> of file <a class="el" href="_b_t_t___punch_attack_8cpp_source.html">BTT_PunchAttack.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   16</span>{</div>
+<div class="line"><span class="lineno">   17</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a7f1ef53fca3df645677a52fb2cdcddf4">AttackMontage</a> == <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">   18</span>  {</div>
+<div class="line"><span class="lineno">   19</span>    <span class="keywordflow">return</span> EBTNodeResult::Failed;</div>
+<div class="line"><span class="lineno">   20</span>  }</div>
+<div class="line"><span class="lineno">   21</span> </div>
+<div class="line"><span class="lineno">   22</span>  AAIController* AIController = OwnerComp.GetAIOwner();</div>
+<div class="line"><span class="lineno">   23</span>  <span class="keywordflow">if</span> (AIController != <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">   24</span>  {</div>
+<div class="line"><span class="lineno">   25</span>    <span class="keywordflow">if</span> (ACharacter* AICharacter = Cast&lt;ACharacter&gt;(AIController-&gt;GetPawn()))</div>
+<div class="line"><span class="lineno">   26</span>    {</div>
+<div class="line"><span class="lineno">   27</span>      <span class="keywordflow">if</span> (UAnimInstance* AnimInstance = AICharacter-&gt;GetMesh()-&gt;GetAnimInstance())</div>
+<div class="line"><span class="lineno">   28</span>      {</div>
+<div class="line"><span class="lineno">   29</span>        AnimInstance-&gt;Montage_Play(<a class="code hl_variable" href="#a7f1ef53fca3df645677a52fb2cdcddf4">AttackMontage</a>);</div>
+<div class="line"><span class="lineno">   30</span>  </div>
+<div class="line"><span class="lineno">   31</span>        FOnMontageEnded EndDelegate;</div>
+<div class="line"><span class="lineno">   32</span>        EndDelegate.BindUObject(<span class="keyword">this</span>, &amp;<a class="code hl_function" href="#a1f7959b0f414d75ce333626b4f1c623f">UBTT_PunchAttack::OnMontageEnded</a>, &amp;OwnerComp);</div>
+<div class="line"><span class="lineno">   33</span>        AnimInstance-&gt;Montage_SetEndDelegate(EndDelegate, <a class="code hl_variable" href="#a7f1ef53fca3df645677a52fb2cdcddf4">AttackMontage</a>);</div>
+<div class="line"><span class="lineno">   34</span>  </div>
+<div class="line"><span class="lineno">   35</span>        <span class="keywordflow">return</span> EBTNodeResult::InProgress;       </div>
+<div class="line"><span class="lineno">   36</span>      }</div>
+<div class="line"><span class="lineno">   37</span>    }</div>
+<div class="line"><span class="lineno">   38</span>  }</div>
+<div class="line"><span class="lineno">   39</span> </div>
+<div class="line"><span class="lineno">   40</span>  <span class="keywordflow">return</span> EBTNodeResult::Failed;</div>
+<div class="line"><span class="lineno">   41</span>}</div>
+<div class="ttc" id="aclass_u_b_t_t___punch_attack_html_a1f7959b0f414d75ce333626b4f1c623f"><div class="ttname"><a href="#a1f7959b0f414d75ce333626b4f1c623f">UBTT_PunchAttack::OnMontageEnded</a></div><div class="ttdeci">void OnMontageEnded(UAnimMontage *Montage, bool bInterrupted, UBehaviorTreeComponent *OwnerComp)</div><div class="ttdef"><b>Definition</b> <a href="_b_t_t___punch_attack_8cpp_source.html#l00043">BTT_PunchAttack.cpp:43</a></div></div>
+<div class="ttc" id="aclass_u_b_t_t___punch_attack_html_a7f1ef53fca3df645677a52fb2cdcddf4"><div class="ttname"><a href="#a7f1ef53fca3df645677a52fb2cdcddf4">UBTT_PunchAttack::AttackMontage</a></div><div class="ttdeci">UAnimMontage * AttackMontage</div><div class="ttdef"><b>Definition</b> <a href="_b_t_t___punch_attack_8h_source.html#l00037">BTT_PunchAttack.h:37</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a1f7959b0f414d75ce333626b4f1c623f" name="a1f7959b0f414d75ce333626b4f1c623f"></a>
@@ -194,7 +225,10 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_b_t_t___punch_attack_8cpp_source.html#l00043">43</a> of file <a class="el" href="_b_t_t___punch_attack_8cpp_source.html">BTT_PunchAttack.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   44</span>{</div>
+<div class="line"><span class="lineno">   45</span>  FinishLatentTask(*OwnerComp, EBTNodeResult::Succeeded);</div>
+<div class="line"><span class="lineno">   46</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
@@ -319,8 +353,8 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>D:/GithubRepository/ARRanger/Source/ARRanger/Public/Enemy/BTT/<a class="el" href="_b_t_t___punch_attack_8h_source.html">BTT_PunchAttack.h</a></li>
-<li>D:/GithubRepository/ARRanger/Source/ARRanger/Private/Enemy/<a class="el" href="_b_t_t___punch_attack_8cpp_source.html">BTT_PunchAttack.cpp</a></li>
+<li>ARRanger/Public/Enemy/BTT/<a class="el" href="_b_t_t___punch_attack_8h_source.html">BTT_PunchAttack.h</a></li>
+<li>ARRanger/Private/Enemy/<a class="el" href="_b_t_t___punch_attack_8cpp_source.html">BTT_PunchAttack.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

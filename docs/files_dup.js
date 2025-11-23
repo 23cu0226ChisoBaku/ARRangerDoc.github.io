@@ -1,4 +1,7 @@
 var files_dup =
 [
-    [ "GithubRepository", "dir_db4b63894235d986ff0886d3d7147fc4.html", "dir_db4b63894235d986ff0886d3d7147fc4" ]
+    [ "ARRanger", "dir_da1fa48e9cd6aca15a5329e13710da8a.html", "dir_da1fa48e9cd6aca15a5329e13710da8a" ],
+    [ "ARRangerEditor", "dir_d1d1cdd2dcf07178d93a224e45ea8eb7.html", "dir_d1d1cdd2dcf07178d93a224e45ea8eb7" ],
+    [ "ARRanger.Target.cs", "_a_r_ranger_8_target_8cs.html", "_a_r_ranger_8_target_8cs" ],
+    [ "ARRangerEditor.Target.cs", "_a_r_ranger_editor_8_target_8cs.html", "_a_r_ranger_editor_8_target_8cs" ]
 ];

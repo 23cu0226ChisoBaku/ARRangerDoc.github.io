@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ARRanger: D:/GithubRepository/ARRanger/Source/ARRanger/Private/Enemy/BTT/BTT_MoveToPreferredDistance.cpp Source File</title>
+<title>ARRanger: ARRanger/Private/Enemy/BTT/BTT_MoveToPreferredDistance.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -102,7 +102,7 @@ $(function(){initNavTree('_b_t_t___move_to_preferred_distance_8cpp_source.html',
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>{</div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    NodeName = TEXT(<span class="stringliteral">&quot;Move To Preferred Distance&quot;</span>);</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    bNotifyTick = <span class="keyword">true</span>; <span class="comment">// Tick‚ÅŠÄŽ‹‚·‚é</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <a class="code hl_variable" href="class_u_b_t_t___move_to_preferred_distance.html#a4cea2665914a51cfcdb8948c99981db4">bIsMoving</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    bIsMoving = <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>}</div>
 </div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
@@ -135,9 +135,9 @@ $(function(){initNavTree('_b_t_t___move_to_preferred_distance_8cpp_source.html',
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    FNavLocation Projected;</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordflow">if</span> (NavSys &amp;&amp; NavSys-&gt;ProjectPointToNavigation(DesiredLocation, Projected))</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    {</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <a class="code hl_variable" href="class_u_b_t_t___move_to_preferred_distance.html#a610d09c690325b9be227c1c86d757e14">CurrentMoveGoal</a> = Projected.Location;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        OwnerComp.GetAIOwner()-&gt;MoveToLocation(<a class="code hl_variable" href="class_u_b_t_t___move_to_preferred_distance.html#a610d09c690325b9be227c1c86d757e14">CurrentMoveGoal</a>, 50.0f); <span class="comment">// ”¼Œa50‚Å“ž’B”»’è</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <a class="code hl_variable" href="class_u_b_t_t___move_to_preferred_distance.html#a4cea2665914a51cfcdb8948c99981db4">bIsMoving</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        CurrentMoveGoal = Projected.Location;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        OwnerComp.GetAIOwner()-&gt;MoveToLocation(CurrentMoveGoal, 50.0f); <span class="comment">// ”¼Œa50‚Å“ž’B”»’è</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        bIsMoving = <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        <span class="keywordflow">return</span> EBTNodeResult::InProgress;</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    }</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
@@ -190,9 +190,7 @@ $(function(){initNavTree('_b_t_t___move_to_preferred_distance_8cpp_source.html',
 </div>
 <div class="ttc" id="a_b_t_t___move_to_preferred_distance_8h_html"><div class="ttname"><a href="_b_t_t___move_to_preferred_distance_8h.html">BTT_MoveToPreferredDistance.h</a></div></div>
 <div class="ttc" id="aclass_u_b_t_t___move_to_preferred_distance_html_a0c937ae35b97fcdfea325247869ba7a1"><div class="ttname"><a href="class_u_b_t_t___move_to_preferred_distance.html#a0c937ae35b97fcdfea325247869ba7a1">UBTT_MoveToPreferredDistance::TickTask</a></div><div class="ttdeci">virtual void TickTask(UBehaviorTreeComponent &amp;OwnerComp, uint8 *NodeMemory, float DeltaSeconds) override</div><div class="ttdef"><b>Definition</b> <a href="#l00051">BTT_MoveToPreferredDistance.cpp:51</a></div></div>
-<div class="ttc" id="aclass_u_b_t_t___move_to_preferred_distance_html_a4cea2665914a51cfcdb8948c99981db4"><div class="ttname"><a href="class_u_b_t_t___move_to_preferred_distance.html#a4cea2665914a51cfcdb8948c99981db4">UBTT_MoveToPreferredDistance::bIsMoving</a></div><div class="ttdeci">bool bIsMoving</div><div class="ttdef"><b>Definition</b> <a href="_b_t_t___move_to_preferred_distance_8h_source.html#l00024">BTT_MoveToPreferredDistance.h:24</a></div></div>
 <div class="ttc" id="aclass_u_b_t_t___move_to_preferred_distance_html_a5cc0534f61f94ba59cb508c7471f7942"><div class="ttname"><a href="class_u_b_t_t___move_to_preferred_distance.html#a5cc0534f61f94ba59cb508c7471f7942">UBTT_MoveToPreferredDistance::UBTT_MoveToPreferredDistance</a></div><div class="ttdeci">UBTT_MoveToPreferredDistance()</div><div class="ttdef"><b>Definition</b> <a href="#l00007">BTT_MoveToPreferredDistance.cpp:7</a></div></div>
-<div class="ttc" id="aclass_u_b_t_t___move_to_preferred_distance_html_a610d09c690325b9be227c1c86d757e14"><div class="ttname"><a href="class_u_b_t_t___move_to_preferred_distance.html#a610d09c690325b9be227c1c86d757e14">UBTT_MoveToPreferredDistance::CurrentMoveGoal</a></div><div class="ttdeci">FVector CurrentMoveGoal</div><div class="ttdef"><b>Definition</b> <a href="_b_t_t___move_to_preferred_distance_8h_source.html#l00021">BTT_MoveToPreferredDistance.h:21</a></div></div>
 <div class="ttc" id="aclass_u_b_t_t___move_to_preferred_distance_html_a8c548ce78724ea315a09b10a3aacacbe"><div class="ttname"><a href="class_u_b_t_t___move_to_preferred_distance.html#a8c548ce78724ea315a09b10a3aacacbe">UBTT_MoveToPreferredDistance::ExecuteTask</a></div><div class="ttdeci">virtual EBTNodeResult::Type ExecuteTask(UBehaviorTreeComponent &amp;OwnerComp, uint8 *NodeMemory) override</div><div class="ttdef"><b>Definition</b> <a href="#l00014">BTT_MoveToPreferredDistance.cpp:14</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -200,7 +198,7 @@ $(function(){initNavTree('_b_t_t___move_to_preferred_distance_8cpp_source.html',
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="dir_db4b63894235d986ff0886d3d7147fc4.html">GithubRepository</a></li><li class="navelem"><a href="dir_b7f76808a72ae9b06e23f4ba1d7ec8e0.html">ARRanger</a></li><li class="navelem"><a href="dir_22deff83e5e51399b4644a6ac5e50e58.html">Source</a></li><li class="navelem"><a href="dir_765ba4c51118e23b05fd567f675cd5c3.html">ARRanger</a></li><li class="navelem"><a href="dir_01ca0bd49608f959e3dafd2b38229153.html">Private</a></li><li class="navelem"><a href="dir_4e4d5c07696158b389eb767e6619f01b.html">Enemy</a></li><li class="navelem"><a href="dir_e065dd7123b7c0af7e4e4422720f965e.html">BTT</a></li><li class="navelem"><a href="_b_t_t___move_to_preferred_distance_8cpp.html">BTT_MoveToPreferredDistance.cpp</a></li>
+    <li class="navelem"><a href="dir_da1fa48e9cd6aca15a5329e13710da8a.html">ARRanger</a></li><li class="navelem"><a href="dir_6306d44ac889cfd8733274aed159ebe8.html">Private</a></li><li class="navelem"><a href="dir_4192645f31fc75abd1d19f1308e3f740.html">Enemy</a></li><li class="navelem"><a href="dir_7b551c86c3554c722b5753f933c7da3f.html">BTT</a></li><li class="navelem"><a href="_b_t_t___move_to_preferred_distance_8cpp.html">BTT_MoveToPreferredDistance.cpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>

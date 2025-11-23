@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['startbattle_0',['StartBattle',['../_i_a_r_battle_notify_handler_8h.html#ad8d843227c299ad6c01f7868e80ae313aecb30e02fc8fb02fc514b40278e7a591',1,'IARBattleNotifyHandler.h']]],
-  ['success_1',['Success',['../namespace_a_r_ranger_1_1_battle.html#a97980e6bd92e9cc6363390b38d6fa0d1a505a83f220c02df2f85c3810cd9ceb38',1,'ARRanger::Battle']]]
+  ['tt_5fgravity_0',['TT_Gravity',['../_a_r_physics_tick_types_8h.html#a2ca69442b049c2b8e082b97cb145ac2baf1eb76cb98a54fa1689a3a414e3ca24f',1,'ARPhysicsTickTypes.h']]],
+  ['tt_5fmagnetic_1',['TT_Magnetic',['../_a_r_physics_tick_types_8h.html#a2ca69442b049c2b8e082b97cb145ac2ba32476e6ec8ec2f0d8d4f99a702d0ec9b',1,'ARPhysicsTickTypes.h']]]
 ];

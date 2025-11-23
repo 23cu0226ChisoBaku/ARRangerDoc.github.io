@@ -102,53 +102,12 @@ Inheritance diagram for FARRangeDetectorComponentVisualizer:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a8cafb88c384785d514f6a9da39fbaffc" id="r_a8cafb88c384785d514f6a9da39fbaffc"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_a_r_range_detector_component_visualizer_8h.html#afb68279c39653a68dfdd6dbe188f27c9">UEEDITOR_API</a> TSharedPtr&lt; FComponentVisualizer &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8cafb88c384785d514f6a9da39fbaffc">MakeInstance</a> ()</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:abdc9cb441b263d70eadb6cd3d2fe99a1" id="r_abdc9cb441b263d70eadb6cd3d2fe99a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_a_r_range_detector_component_visualizer_8h.html#afb68279c39653a68dfdd6dbe188f27c9">UEEDITOR_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abdc9cb441b263d70eadb6cd3d2fe99a1">DrawVisualization</a> (const UActorComponent *Component, const FSceneView *View, FPrimitiveDrawInterface *PDI) override final</td></tr>
+<tr class="memitem:a8cafb88c384785d514f6a9da39fbaffc" id="r_a8cafb88c384785d514f6a9da39fbaffc"><td class="memItemLeft" align="right" valign="top">static ARRANGEREDITOR_API TSharedPtr&lt; FComponentVisualizer &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8cafb88c384785d514f6a9da39fbaffc">MakeInstance</a> ()</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock">
 <p class="definition">Definition at line <a class="el" href="_a_r_range_detector_component_visualizer_8h_source.html#l00012">12</a> of file <a class="el" href="_a_r_range_detector_component_visualizer_8h_source.html">ARRangeDetectorComponentVisualizer.h</a>.</p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="abdc9cb441b263d70eadb6cd3d2fe99a1" name="abdc9cb441b263d70eadb6cd3d2fe99a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abdc9cb441b263d70eadb6cd3d2fe99a1">&#9670;&#160;</a></span>DrawVisualization()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void FARRangeDetectorComponentVisualizer::DrawVisualization </td>
-          <td>(</td>
-          <td class="paramtype">const UActorComponent *</td>          <td class="paramname"><span class="paramname"><em>Component</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const FSceneView *</td>          <td class="paramname"><span class="paramname"><em>View</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">FPrimitiveDrawInterface *</td>          <td class="paramname"><span class="paramname"><em>PDI</em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel final">final</span><span class="mlabel override">override</span><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Start FComponentVisualizer Interface </p>
-
-<p class="definition">Definition at line <a class="el" href="_a_r_range_detector_component_visualizer_8cpp_source.html#l00013">13</a> of file <a class="el" href="_a_r_range_detector_component_visualizer_8cpp_source.html">ARRangeDetectorComponentVisualizer.cpp</a>.</p>
-
-</div>
-</div>
 <a id="a8cafb88c384785d514f6a9da39fbaffc" name="a8cafb88c384785d514f6a9da39fbaffc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8cafb88c384785d514f6a9da39fbaffc">&#9670;&#160;</a></span>MakeInstance()</h2>
 
@@ -173,12 +132,15 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_a_r_range_detector_component_visualizer_8cpp_source.html#l00008">8</a> of file <a class="el" href="_a_r_range_detector_component_visualizer_8cpp_source.html">ARRangeDetectorComponentVisualizer.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">    9</span>{</div>
+<div class="line"><span class="lineno">   10</span>  return ::MakeShared&lt;FARRangeDetectorComponentVisualizer&gt;();</div>
+<div class="line"><span class="lineno">   11</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>D:/GithubRepository/ARRanger/Source/ARRangerEditor/Public/CustomComponentVisualizer/<a class="el" href="_a_r_range_detector_component_visualizer_8h_source.html">ARRangeDetectorComponentVisualizer.h</a></li>
-<li>D:/GithubRepository/ARRanger/Source/ARRangerEditor/Private/CustomComponentVisualizer/<a class="el" href="_a_r_range_detector_component_visualizer_8cpp_source.html">ARRangeDetectorComponentVisualizer.cpp</a></li>
+<li>ARRangerEditor/Public/CustomComponentVisualizer/<a class="el" href="_a_r_range_detector_component_visualizer_8h_source.html">ARRangeDetectorComponentVisualizer.h</a></li>
+<li>ARRangerEditor/Private/CustomComponentVisualizer/<a class="el" href="_a_r_range_detector_component_visualizer_8cpp_source.html">ARRangeDetectorComponentVisualizer.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

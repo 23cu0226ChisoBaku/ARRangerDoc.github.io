@@ -147,7 +147,43 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_a_r_repository_asset_helper_8cpp_source.html#l00032">32</a> of file <a class="el" href="_a_r_repository_asset_helper_8cpp_source.html">ARRepositoryAssetHelper.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   33</span>{</div>
+<div class="line"><span class="lineno">   34</span>  <span class="keywordflow">if</span> ((AssetClass == <span class="keyword">nullptr</span>))</div>
+<div class="line"><span class="lineno">   35</span>  {</div>
+<div class="line"><span class="lineno">   36</span>    UE_LOG(LogAREditorAsset, Error, TEXT(<span class="stringliteral">&quot;Asset class is invalid&quot;</span>));</div>
+<div class="line"><span class="lineno">   37</span>    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">   38</span>  }</div>
+<div class="line"><span class="lineno">   39</span> </div>
+<div class="line"><span class="lineno">   40</span>  <span class="comment">// Load asset</span></div>
+<div class="line"><span class="lineno">   41</span>  UObject* asset = ::StaticLoadObject(AssetClass, <span class="keyword">nullptr</span>, *AssetPath);</div>
+<div class="line"><span class="lineno">   42</span> </div>
+<div class="line"><span class="lineno">   43</span>  <span class="comment">// Create one if asset is not exist and bCreateIfNotFound is true</span></div>
+<div class="line"><span class="lineno">   44</span>  <span class="keywordflow">if</span> ((asset == <span class="keyword">nullptr</span>) &amp;&amp; bCreateIfNotFound)</div>
+<div class="line"><span class="lineno">   45</span>  {</div>
+<div class="line"><span class="lineno">   46</span> </div>
+<div class="line"><span class="lineno">   47</span>    FAssetToolsModule&amp; assetToolsModule = FModuleManager::LoadModuleChecked&lt;FAssetToolsModule&gt;(<span class="stringliteral">&quot;AssetTools&quot;</span>);</div>
+<div class="line"><span class="lineno">   48</span>    IAssetTools&amp; assetTools = assetToolsModule.Get();</div>
+<div class="line"><span class="lineno">   49</span> </div>
+<div class="line"><span class="lineno">   50</span>    <span class="comment">// Check AssetFactory is able to create the desired asset</span></div>
+<div class="line"><span class="lineno">   51</span>    <span class="keywordflow">if</span> ((AssetFactory == <span class="keyword">nullptr</span>) || AssetFactory-&gt;SupportedClass != AssetClass)</div>
+<div class="line"><span class="lineno">   52</span>    {</div>
+<div class="line"><span class="lineno">   53</span>      UE_LOG(LogAREditorAsset, Error, TEXT(<span class="stringliteral">&quot;Can not create asset with given UFactory&quot;</span>));</div>
+<div class="line"><span class="lineno">   54</span>      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">   55</span>    }</div>
+<div class="line"><span class="lineno">   56</span>    <span class="comment">// Create asset</span></div>
+<div class="line"><span class="lineno">   57</span>    <span class="keyword">const</span> FString assetName = FPaths::GetBaseFilename(AssetPath);</div>
+<div class="line"><span class="lineno">   58</span>    asset = assetTools.CreateAsset(assetName, FPaths::GetPath(AssetPath), AssetClass, AssetFactory);</div>
+<div class="line"><span class="lineno">   59</span>  </div>
+<div class="line"><span class="lineno">   60</span>    <span class="comment">// Create asset failed</span></div>
+<div class="line"><span class="lineno">   61</span>    <span class="keywordflow">if</span> (asset == <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">   62</span>    {</div>
+<div class="line"><span class="lineno">   63</span>      UE_LOG(LogAREditorAsset, Error, TEXT(<span class="stringliteral">&quot;Create asset failed&quot;</span>));</div>
+<div class="line"><span class="lineno">   64</span>    }</div>
+<div class="line"><span class="lineno">   65</span>  }</div>
+<div class="line"><span class="lineno">   66</span> </div>
+<div class="line"><span class="lineno">   67</span>  <span class="keywordflow">return</span> asset;</div>
+<div class="line"><span class="lineno">   68</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a65731bc49303a6a1ee9a1b1a63d9155f" name="a65731bc49303a6a1ee9a1b1a63d9155f"></a>
@@ -174,12 +210,32 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_a_r_repository_asset_helper_8cpp_source.html#l00010">10</a> of file <a class="el" href="_a_r_repository_asset_helper_8cpp_source.html">ARRepositoryAssetHelper.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   11</span>{</div>
+<div class="line"><span class="lineno">   12</span>  UObject* asset = StaticLoadObject(UObject::StaticClass(), <span class="keyword">nullptr</span>, *AssetPath);</div>
+<div class="line"><span class="lineno">   13</span> </div>
+<div class="line"><span class="lineno">   14</span>  <span class="keywordflow">if</span> (asset == <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">   15</span>  {</div>
+<div class="line"><span class="lineno">   16</span>    UE_LOG(LogAREditorAsset, Error, TEXT(<span class="stringliteral">&quot;Asset is invalid. Asset path: [%s]&quot;</span>), *AssetPath);</div>
+<div class="line"><span class="lineno">   17</span>    <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   18</span>  }</div>
+<div class="line"><span class="lineno">   19</span> </div>
+<div class="line"><span class="lineno">   20</span>  UPackage* <span class="keyword">package </span>= asset-&gt;GetPackage();</div>
+<div class="line"><span class="lineno">   21</span> </div>
+<div class="line"><span class="lineno">   22</span>  <span class="keywordflow">if</span> (package == <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">   23</span>  {</div>
+<div class="line"><span class="lineno">   24</span>    UE_LOG(LogAREditorAsset, Error, TEXT(<span class="stringliteral">&quot;Package is invalid. Asset path: [%s]&quot;</span>), *AssetPath);</div>
+<div class="line"><span class="lineno">   25</span>    <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   26</span>  }</div>
+<div class="line"><span class="lineno">   27</span> </div>
+<div class="line"><span class="lineno">   28</span>  <span class="comment">// Save asset</span></div>
+<div class="line"><span class="lineno">   29</span>  UEditorLoadingAndSavingUtils::SavePackages({ <span class="keyword">package </span>}, false);</div>
+<div class="line"><span class="lineno">   30</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>D:/GithubRepository/ARRanger/Source/ARRangerEditor/Public/<a class="el" href="_a_r_repository_asset_helper_8h_source.html">ARRepositoryAssetHelper.h</a></li>
-<li>D:/GithubRepository/ARRanger/Source/ARRangerEditor/Private/<a class="el" href="_a_r_repository_asset_helper_8cpp_source.html">ARRepositoryAssetHelper.cpp</a></li>
+<li>ARRangerEditor/Public/<a class="el" href="_a_r_repository_asset_helper_8h_source.html">ARRepositoryAssetHelper.h</a></li>
+<li>ARRangerEditor/Private/<a class="el" href="_a_r_repository_asset_helper_8cpp_source.html">ARRepositoryAssetHelper.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

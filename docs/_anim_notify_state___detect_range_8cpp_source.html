@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ARRanger: D:/GithubRepository/ARRanger/Source/ARRanger/Private/Animations/AnimNotifies/AnimNotifyState_DetectRange.cpp Source File</title>
+<title>ARRanger: ARRanger/Private/Animations/AnimNotifies/AnimNotifyState_DetectRange.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -118,11 +118,11 @@ $(function(){initNavTree('_anim_notify_state___detect_range_8cpp_source.html',''
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  <a class="code hl_function" href="class_f_detect_tick_object___frame_base.html#a76b28da16bdf83d17fdc84107199572e">FDetectTickObject_FrameBase</a>(int32 InStartFrame, int32 InFrameInterval);</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_f_detect_tick_object___frame_base.html#ab963d85e676850a60195bec989236b3b">TickDetection</a>(USkeletalMeshComponent * MeshComp, UAnimSequenceBase * Animation, <span class="keywordtype">float</span> FrameDeltaTime) <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="class_f_detect_tick_object___frame_base.html#a2ed5beede8e84e29e7ddabef818c4c65">   27</a></span>  <span class="keyword">const</span> int32 <a class="code hl_variable" href="class_f_detect_tick_object___frame_base.html#a2ed5beede8e84e29e7ddabef818c4c65">FrameInterval</a>;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="class_f_detect_tick_object___frame_base.html#a1685938bfe160c083465a767654b3952">   29</a></span>  int32 <a class="code hl_variable" href="class_f_detect_tick_object___frame_base.html#a1685938bfe160c083465a767654b3952">CurrentFrame</a> = 0;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="class_f_detect_tick_object___frame_base.html#abe09bf4b508ac1692075125f7a3c7f67">   31</a></span>  int32 <a class="code hl_variable" href="class_f_detect_tick_object___frame_base.html#abe09bf4b508ac1692075125f7a3c7f67">FrameCnt</a> = 0;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <span class="keyword">const</span> int32 FrameInterval;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  int32 CurrentFrame = 0;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  int32 FrameCnt = 0;</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>};</div>
 </div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
@@ -134,9 +134,9 @@ $(function(){initNavTree('_anim_notify_state___detect_range_8cpp_source.html',''
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <a class="code hl_function" href="class_f_detect_tick_object___time_base.html#a2b498fd91a935aaadf247d85b21b7953">FDetectTickObject_TimeBase</a>(<span class="keywordtype">float</span> InTimeInterval);</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_f_detect_tick_object___time_base.html#ac6695347961cd7a0f44c0995ed19f6ab">TickDetection</a>(USkeletalMeshComponent * MeshComp, UAnimSequenceBase * Animation, <span class="keywordtype">float</span> FrameDeltaTime) <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="class_f_detect_tick_object___time_base.html#a6ddb7beaa62d896280e21e36033e58ca">   41</a></span>  <span class="keyword">const</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="class_f_detect_tick_object___time_base.html#a6ddb7beaa62d896280e21e36033e58ca">TimeInterval</a>;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="class_f_detect_tick_object___time_base.html#a4ab432ba0b5cedee24b15423e65f84ce">   43</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="class_f_detect_tick_object___time_base.html#a4ab432ba0b5cedee24b15423e65f84ce">TimeCnt</a>;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  <span class="keyword">const</span> <span class="keywordtype">float</span> TimeInterval;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  <span class="keywordtype">float</span> TimeCnt;</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>};</div>
 </div>
@@ -146,7 +146,7 @@ $(function(){initNavTree('_anim_notify_state___detect_range_8cpp_source.html',''
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>{</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  Super::NotifyBegin(MeshComp, Animation, TotalDuration, EventReference);</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="keywordflow">if</span> (<a class="code hl_function" href="class_u_anim_notify_state___detect_range.html#a4f858ebbd43ff29889e09c2ff5bde33a">ValidateParameters</a>(MeshComp))</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="keywordflow">if</span> (ValidateParameters(MeshComp))</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  {</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_u_anim_notify_state___detect_range.html#a0d3e7205d5fbfff74b6875b066d7a61b">RangeData</a> != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    {</div>
@@ -160,7 +160,7 @@ $(function(){initNavTree('_anim_notify_state___detect_range_8cpp_source.html',''
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>      URangeDetectorComponent* RDC = <a class="code hl_function" href="class_u_range_detector_helper.html#abdcbfaffc88556ba0a8af3f92d0d566c">URangeDetectorHelper::AttachRangeDetector</a>(DAE, MeshComp, <a class="code hl_variable" href="class_u_anim_notify_state___detect_range.html#a095e75c50b9375f46fb16b9c6f6515ce">SocketName</a>, <a class="code hl_variable" href="class_u_anim_notify_state___detect_range.html#a9ce7a6c009401e564924121371c07d2c">LocationOffset</a>, <a class="code hl_variable" href="class_u_anim_notify_state___detect_range.html#a2a35f9b20757b413b7d9d03a9aed8147">RotationOffset</a>, FVector::OneVector, EAttachLocation::KeepRelativeOffset, <span class="keyword">true</span>);</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>      <span class="keywordflow">if</span> (!<a class="code hl_variable" href="class_u_anim_notify_state___detect_range.html#aaf2933ce2a27fc09691b96a8d4ebde6a">m_detectTickObject</a>.IsValid() &amp;&amp; <a class="code hl_variable" href="class_u_anim_notify_state___detect_range.html#a34702717ab079e01be3866d2f4c3beb7">DetectionType</a> == EANS_DetectRange_NotifyDetectionType::NotifyDuringHit)</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>      <span class="keywordflow">if</span> (!m_detectTickObject.IsValid() &amp;&amp; <a class="code hl_variable" href="class_u_anim_notify_state___detect_range.html#a34702717ab079e01be3866d2f4c3beb7">DetectionType</a> == EANS_DetectRange_NotifyDetectionType::NotifyDuringHit)</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>      {</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <span class="keyword">using </span>enum <a class="code hl_enumeration" href="_anim_notify_state___detect_range_8h.html#af977556ec0bbc3ce36fe22ed7353dab1">EANS_DetectRange_NotifyDetectionFrequencyType</a>;</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        <span class="keywordflow">switch</span> (<a class="code hl_variable" href="class_u_anim_notify_state___detect_range.html#ad0eb77d2fdbc7410b7a62848ba5b6a19">FrequencyType</a>)</div>
@@ -169,20 +169,20 @@ $(function(){initNavTree('_anim_notify_state___detect_range_8cpp_source.html',''
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>          {</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            <span class="comment">// TODO Currently we do not use startFrame</span></div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            <span class="keyword">const</span> int32 startFrame = 0;</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            <a class="code hl_variable" href="class_u_anim_notify_state___detect_range.html#aaf2933ce2a27fc09691b96a8d4ebde6a">m_detectTickObject</a> = ::MakeUnique&lt;FDetectTickObject_FrameBase&gt;(startFrame, <a class="code hl_variable" href="class_u_anim_notify_state___detect_range.html#a04e560609a6c197e0b03c33f7f1b8aa8">FrameInterval</a>);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            m_detectTickObject = ::MakeUnique&lt;FDetectTickObject_FrameBase&gt;(startFrame, <a class="code hl_variable" href="class_u_anim_notify_state___detect_range.html#a04e560609a6c197e0b03c33f7f1b8aa8">FrameInterval</a>);</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>          }</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>          <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>          <span class="keywordflow">case</span> Notify_TimeBase:</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>          {</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            <a class="code hl_variable" href="class_u_anim_notify_state___detect_range.html#aaf2933ce2a27fc09691b96a8d4ebde6a">m_detectTickObject</a> = ::MakeUnique&lt;FDetectTickObject_TimeBase&gt;(<a class="code hl_variable" href="class_u_anim_notify_state___detect_range.html#a4a9163bebd3bc95cde471184a8297a89">TimeInterval</a>);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            m_detectTickObject = ::MakeUnique&lt;FDetectTickObject_TimeBase&gt;(<a class="code hl_variable" href="class_u_anim_notify_state___detect_range.html#a4a9163bebd3bc95cde471184a8297a89">TimeInterval</a>);</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>          }</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>          <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        }</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_u_anim_notify_state___detect_range.html#aaf2933ce2a27fc09691b96a8d4ebde6a">m_detectTickObject</a>.IsValid())</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        <span class="keywordflow">if</span> (m_detectTickObject.IsValid())</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        {</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>          <a class="code hl_variable" href="class_u_anim_notify_state___detect_range.html#aaf2933ce2a27fc09691b96a8d4ebde6a">m_detectTickObject</a>-&gt;DetectionNotify.BindUObject(<span class="keyword">this</span>, &amp;<a class="code hl_function" href="class_u_anim_notify_state___detect_range.html#a6f899e3c724021190ebba4cef9897e74">UAnimNotifyState_DetectRange::NotifyAbility</a>);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>          m_detectTickObject-&gt;DetectionNotify.BindUObject(<span class="keyword">this</span>, &amp;UAnimNotifyState_DetectRange::NotifyAbility);</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        }</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>      }</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
@@ -197,7 +197,7 @@ $(function(){initNavTree('_anim_notify_state___detect_range_8cpp_source.html',''
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    }</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>  }</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>  <a class="code hl_variable" href="class_u_anim_notify_state___detect_range.html#a25b256517f419de523e04edb984e26fa">m_notifiedActors</a>.Reset();</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>  m_notifiedActors.Reset();</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>}</div>
 </div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
@@ -207,15 +207,15 @@ $(function(){initNavTree('_anim_notify_state___detect_range_8cpp_source.html',''
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>  Super::NotifyTick(MeshComp, Animation, FrameDeltaTime, EventReference);</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>  <span class="comment">// Notify in tick object if its valid</span></div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_u_anim_notify_state___detect_range.html#aaf2933ce2a27fc09691b96a8d4ebde6a">m_detectTickObject</a>.IsValid())</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>  <span class="keywordflow">if</span> (m_detectTickObject.IsValid())</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>  {</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    <a class="code hl_variable" href="class_u_anim_notify_state___detect_range.html#aaf2933ce2a27fc09691b96a8d4ebde6a">m_detectTickObject</a>-&gt;TickDetection(MeshComp, Animation, FrameDeltaTime);</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    m_detectTickObject-&gt;TickDetection(MeshComp, Animation, FrameDeltaTime);</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>  }</div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>  <span class="comment">// Get result and notify once</span></div>
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>  <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>  {</div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <span class="comment">// Try to notify abilities</span></div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    <a class="code hl_function" href="class_u_anim_notify_state___detect_range.html#a6f899e3c724021190ebba4cef9897e74">NotifyAbility</a>(MeshComp, Animation);</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    NotifyAbility(MeshComp, Animation);</div>
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>  }</div>
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="preprocessor">#if WITH_EDITORONLY_DATA</span></div>
@@ -265,7 +265,7 @@ $(function(){initNavTree('_anim_notify_state___detect_range_8cpp_source.html',''
 <div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>  Super::NotifyEnd(MeshComp, Animation, EventReference);</div>
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span> </div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>  <a class="code hl_variable" href="class_u_anim_notify_state___detect_range.html#a25b256517f419de523e04edb984e26fa">m_notifiedActors</a>.Reset();</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>  m_notifiedActors.Reset();</div>
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span><span class="preprocessor">#if WITH_EDITOR</span></div>
 <div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
@@ -299,165 +299,160 @@ $(function(){initNavTree('_anim_notify_state___detect_range_8cpp_source.html',''
 <div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>}</div>
 </div>
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span> </div>
-<div class="foldopen" id="foldopen00197" data-start="{" data-end="}">
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno"><a class="line" href="class_u_anim_notify_state___detect_range.html#a4f858ebbd43ff29889e09c2ff5bde33a">  197</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="class_u_anim_notify_state___detect_range.html#a4f858ebbd43ff29889e09c2ff5bde33a">UAnimNotifyState_DetectRange::ValidateParameters</a>(USkeletalMeshComponent* MeshComp)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span><span class="keywordtype">bool</span> UAnimNotifyState_DetectRange::ValidateParameters(USkeletalMeshComponent* MeshComp)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="keyword"></span>{</div>
 <div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>  <span class="keywordtype">bool</span> bValid = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> </div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_u_anim_notify_state___detect_range.html#a0d3e7205d5fbfff74b6875b066d7a61b">RangeData</a> == <span class="keyword">nullptr</span>)</div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>  {</div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    bValid = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>  }</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!MeshComp-&gt;DoesSocketExist(<a class="code hl_variable" href="class_u_anim_notify_state___detect_range.html#a095e75c50b9375f46fb16b9c6f6515ce">SocketName</a>) &amp;&amp; MeshComp-&gt;GetBoneIndex(<a class="code hl_variable" href="class_u_anim_notify_state___detect_range.html#a095e75c50b9375f46fb16b9c6f6515ce">SocketName</a>) == INDEX_NONE)</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>  {</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>    bValid = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>  }</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span> </div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>  <span class="keywordflow">return</span> bValid;</div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>}</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_u_anim_notify_state___detect_range.html#a0d3e7205d5fbfff74b6875b066d7a61b">RangeData</a> == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>  {</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    bValid = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>  }</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!MeshComp-&gt;DoesSocketExist(<a class="code hl_variable" href="class_u_anim_notify_state___detect_range.html#a095e75c50b9375f46fb16b9c6f6515ce">SocketName</a>) &amp;&amp; MeshComp-&gt;GetBoneIndex(<a class="code hl_variable" href="class_u_anim_notify_state___detect_range.html#a095e75c50b9375f46fb16b9c6f6515ce">SocketName</a>) == INDEX_NONE)</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>  {</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    bValid = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>  }</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span> </div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>  <span class="keywordflow">return</span> bValid;</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>}</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span> </div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span><span class="keywordtype">void</span> UAnimNotifyState_DetectRange::NotifyAbility(USkeletalMeshComponent* MeshComp, UAnimSequenceBase * Animation)</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>{</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>  <span class="keywordflow">if</span> (MeshComp == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>  {</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>    <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>  }</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span> </div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>  TArray&lt;USceneComponent*&gt; children{};</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>  MeshComp-&gt;GetChildrenComponents(<span class="keyword">false</span>, children);</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span> </div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>  <span class="keywordflow">for</span> (USceneComponent* child : children)</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>  {</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>    URangeDetectorComponent* RDC = ::Cast&lt;URangeDetectorComponent&gt;(child);</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>    <span class="keywordflow">if</span> ((RDC == <span class="keyword">nullptr</span>) || !RDC-&gt;HasRangeData(<a class="code hl_variable" href="class_u_anim_notify_state___detect_range.html#a0d3e7205d5fbfff74b6875b066d7a61b">RangeData</a>))</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>    {</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>      <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>    } </div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span> </div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>    FRangeDetectorEvaluationResult result{};</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>    <span class="keyword">const</span> int32 resultCnt = RDC-&gt;GetResultByRangeData(<a class="code hl_variable" href="class_u_anim_notify_state___detect_range.html#a0d3e7205d5fbfff74b6875b066d7a61b">RangeData</a>, result);</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>    <span class="keywordflow">if</span> (resultCnt &lt;= 0)</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>    {</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>      <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>    }</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span> </div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>    <span class="comment">// Notify Ability</span></div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>    UARAbilitySystemComponent* ARASC = <a class="code hl_function" href="class_u_a_r_ability_system_component.html#ac89ad0a8db9c4635041701857320c494">UARAbilitySystemComponent::FindARAbilitySystemComponent</a>(MeshComp-&gt;GetOwner());</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>    <span class="keywordflow">if</span> (ARASC != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>    {</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>      <span class="keyword">const</span> <span class="keywordtype">bool</span> bIsOnlyNotifyOnce = <a class="code hl_variable" href="class_u_anim_notify_state___detect_range.html#a34702717ab079e01be3866d2f4c3beb7">DetectionType</a> == EANS_DetectRange_NotifyDetectionType::NotifyOnce;</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span> </div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>      <span class="keyword">const</span> TArray&lt;FGameplayAbilitySpec&gt;&amp; allActivatableAbilites = ARASC-&gt;GetActivatableAbilities();</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>      <span class="keywordflow">for</span> (<span class="keyword">const</span> FGameplayAbilitySpec&amp; activatableAbility : allActivatableAbilites)</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>      {</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>        <span class="keywordflow">if</span> (activatableAbility.IsActive())</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>        {</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>          <span class="keywordflow">if</span> (IARGameplayAbilityNotifyInterface* notifyInterface = ::Cast&lt;IARGameplayAbilityNotifyInterface&gt;(activatableAbility.GetPrimaryInstance()))</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>          {</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>            TArray&lt;FGANotify_ImpactResult&gt; impactResults{};</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span> </div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>            <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; detectedActor : result.<a class="code hl_variable" href="struct_f_range_detector_evaluation_result.html#ad13b066e3901359dcf8a8a47666473bf">DetectedActors</a>)</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>            {</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>              <span class="comment">// TODO Only for notify once use. Maybe we should need some other solution</span></div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>              <span class="keywordflow">if</span> (bIsOnlyNotifyOnce &amp;&amp; m_notifiedActors.Contains(detectedActor))</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>              {</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>                <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>              }</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span> </div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>              m_notifiedActors.Emplace(detectedActor);</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span> </div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>              FGANotify_ImpactResult impactResult{</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>                .SourceActor = MeshComp-&gt;GetOwner(),</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>                .HitActor = detectedActor,</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>                .OccurrenceComp = RDC,</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>                .ImpactLocation = RDC-&gt;GetComponentLocation()</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>              };</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span> </div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>              impactResults.Emplace(impactResult);</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>            }</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>            </div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>            notifyInterface-&gt;GANotify_ImpactResult(MeshComp, Animation, impactResults);</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>          }</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>        }</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>      }</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>    } </div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>  }</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>}</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span> </div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span><span class="preprocessor">#if WITH_EDITOR</span></div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span> </div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span><span class="keywordtype">void</span> UAnimNotifyState_DetectRange::DrawDebugRange(USceneComponent* RootComponent)</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>{</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>  <span class="keywordflow">if</span> (RootComponent != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>  {</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>    <span class="keywordflow">if</span> (bDrawDebugDuringActivation)</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>    {</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>      <span class="keyword">const</span> UWorld* world = RootComponent-&gt;GetWorld();</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>      <span class="keywordflow">if</span> (world != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>      {</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>        ULineBatchComponent* lineBatch = world-&gt;GetLineBatcher(UWorld::ELineBatcherType::WorldPersistent);</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span> </div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>        <span class="keywordflow">if</span> (lineBatch != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>        {</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>          lineBatch-&gt;Flush();</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>          TArray&lt;USceneComponent*&gt; children{};</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>          RootComponent-&gt;GetChildrenComponents(<span class="keyword">false</span>, children);</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>          <span class="keywordflow">for</span> (USceneComponent* child : children)</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>          {</div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>            <span class="keywordflow">if</span> (URangeDetectorComponent* RDC = ::Cast&lt;URangeDetectorComponent&gt;(child))</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>            {</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>              RDC-&gt;ED_DrawWithLineBatchComp(lineBatch);</div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>            }</div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>          }</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>        }</div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>      }    </div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>    }</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>  }</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>}</div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span> </div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span> </div>
+<div class="foldopen" id="foldopen00313" data-start="{" data-end="}">
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno"><a class="line" href="class_f_detect_tick_object___frame_base.html#a76b28da16bdf83d17fdc84107199572e">  313</a></span><a class="code hl_function" href="class_f_detect_tick_object___frame_base.html#a76b28da16bdf83d17fdc84107199572e">FDetectTickObject_FrameBase::FDetectTickObject_FrameBase</a>(int32 InStartFrame, int32 InFrameInterval)</div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>  : FrameInterval{InFrameInterval}</div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>  , CurrentFrame{InStartFrame}</div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>  , FrameCnt{InFrameInterval}</div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>{ }</div>
 </div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span> </div>
-<div class="foldopen" id="foldopen00213" data-start="{" data-end="}">
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno"><a class="line" href="class_u_anim_notify_state___detect_range.html#a6f899e3c724021190ebba4cef9897e74">  213</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_u_anim_notify_state___detect_range.html#a6f899e3c724021190ebba4cef9897e74">UAnimNotifyState_DetectRange::NotifyAbility</a>(USkeletalMeshComponent* MeshComp, UAnimSequenceBase * Animation)</div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>{</div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>  <span class="keywordflow">if</span> (MeshComp == <span class="keyword">nullptr</span>)</div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>  {</div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>    <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>  }</div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span> </div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>  TArray&lt;USceneComponent*&gt; children{};</div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>  MeshComp-&gt;GetChildrenComponents(<span class="keyword">false</span>, children);</div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span> </div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>  <span class="keywordflow">for</span> (USceneComponent* child : children)</div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>  {</div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>    URangeDetectorComponent* RDC = ::Cast&lt;URangeDetectorComponent&gt;(child);</div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>    <span class="keywordflow">if</span> ((RDC == <span class="keyword">nullptr</span>) || !RDC-&gt;HasRangeData(<a class="code hl_variable" href="class_u_anim_notify_state___detect_range.html#a0d3e7205d5fbfff74b6875b066d7a61b">RangeData</a>))</div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>    {</div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>      <span class="keywordflow">continue</span>;</div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>    } </div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span> </div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>    <a class="code hl_struct" href="struct_f_range_detector_evaluation_result.html">FRangeDetectorEvaluationResult</a> result{};</div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>    <span class="keyword">const</span> int32 resultCnt = RDC-&gt;GetResultByRangeData(<a class="code hl_variable" href="class_u_anim_notify_state___detect_range.html#a0d3e7205d5fbfff74b6875b066d7a61b">RangeData</a>, result);</div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>    <span class="keywordflow">if</span> (resultCnt &lt;= 0)</div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>    {</div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>      <span class="keywordflow">continue</span>;</div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>    }</div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span> </div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>    <span class="comment">// Notify Ability</span></div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>    <a class="code hl_class" href="class_u_a_r_ability_system_component.html">UARAbilitySystemComponent</a>* ARASC = <a class="code hl_function" href="class_u_a_r_ability_system_component.html#ac89ad0a8db9c4635041701857320c494">UARAbilitySystemComponent::FindARAbilitySystemComponent</a>(MeshComp-&gt;GetOwner());</div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>    <span class="keywordflow">if</span> (ARASC != <span class="keyword">nullptr</span>)</div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>    {</div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>      <span class="keyword">const</span> <span class="keywordtype">bool</span> bIsOnlyNotifyOnce = <a class="code hl_variable" href="class_u_anim_notify_state___detect_range.html#a34702717ab079e01be3866d2f4c3beb7">DetectionType</a> == EANS_DetectRange_NotifyDetectionType::NotifyOnce;</div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span> </div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>      <span class="keyword">const</span> TArray&lt;FGameplayAbilitySpec&gt;&amp; allActivatableAbilites = ARASC-&gt;GetActivatableAbilities();</div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>      <span class="keywordflow">for</span> (<span class="keyword">const</span> FGameplayAbilitySpec&amp; activatableAbility : allActivatableAbilites)</div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>      {</div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>        <span class="keywordflow">if</span> (activatableAbility.IsActive())</div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>        {</div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>          <span class="keywordflow">if</span> (<a class="code hl_class" href="class_i_a_r_gameplay_ability_notify_interface.html">IARGameplayAbilityNotifyInterface</a>* notifyInterface = ::Cast&lt;IARGameplayAbilityNotifyInterface&gt;(activatableAbility.GetPrimaryInstance()))</div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>          {</div>
-<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>            TArray&lt;FGANotify_ImpactResult&gt; impactResults{};</div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span> </div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>            <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; detectedActor : result.<a class="code hl_variable" href="struct_f_range_detector_evaluation_result.html#ad13b066e3901359dcf8a8a47666473bf">DetectedActors</a>)</div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>            {</div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>              <span class="comment">// TODO Only for notify once use. Maybe we should need some other solution</span></div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>              <span class="keywordflow">if</span> (bIsOnlyNotifyOnce &amp;&amp; <a class="code hl_variable" href="class_u_anim_notify_state___detect_range.html#a25b256517f419de523e04edb984e26fa">m_notifiedActors</a>.Contains(detectedActor))</div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>              {</div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>                <span class="keywordflow">continue</span>;</div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>              }</div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span> </div>
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>              <a class="code hl_variable" href="class_u_anim_notify_state___detect_range.html#a25b256517f419de523e04edb984e26fa">m_notifiedActors</a>.Emplace(detectedActor);</div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span> </div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>              <a class="code hl_struct" href="struct_f_g_a_notify___impact_result.html">FGANotify_ImpactResult</a> impactResult{</div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>                .SourceActor = MeshComp-&gt;GetOwner(),</div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>                .HitActor = detectedActor,</div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>                .OccurrenceComp = RDC,</div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>                .ImpactLocation = RDC-&gt;GetComponentLocation()</div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>              };</div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span> </div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>              impactResults.Emplace(impactResult);</div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>            }</div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>            </div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>            notifyInterface-&gt;GANotify_ImpactResult(MeshComp, Animation, impactResults);</div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>          }</div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>        }</div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>      }</div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>    } </div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>  }</div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>}</div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span> </div>
+<div class="foldopen" id="foldopen00319" data-start="{" data-end="}">
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno"><a class="line" href="class_f_detect_tick_object___frame_base.html#ab963d85e676850a60195bec989236b3b">  319</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_f_detect_tick_object___frame_base.html#ab963d85e676850a60195bec989236b3b">FDetectTickObject_FrameBase::TickDetection</a>(USkeletalMeshComponent * MeshComp, UAnimSequenceBase * Animation, <span class="keywordtype">float</span> FrameDeltaTime)</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>{</div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>  <span class="comment">// TODO Add Frame count each time tick detection is called</span></div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>  FrameCnt += 1;</div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>  <span class="keywordflow">if</span> (FrameCnt &gt;= FrameInterval)</div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>  {</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>    <a class="code hl_variable" href="class_u_anim_notify_state___detect_range_1_1_f_detect_tick_object.html#a4c3af39447b37dbc07f0768f2bfa0183">DetectionNotify</a>.ExecuteIfBound(MeshComp, Animation);</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>    FrameCnt = 0;</div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>  }</div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>}</div>
 </div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span> </div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span><span class="preprocessor">#if WITH_EDITOR</span></div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span> </div>
-<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span><span class="keywordtype">void</span> UAnimNotifyState_DetectRange::DrawDebugRange(USceneComponent* RootComponent)</div>
-<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>{</div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>  <span class="keywordflow">if</span> (RootComponent != <span class="keyword">nullptr</span>)</div>
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>  {</div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>    <span class="keyword">const</span> UWorld* world = RootComponent-&gt;GetWorld();</div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>    <span class="keywordflow">if</span> (world != <span class="keyword">nullptr</span>)</div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>    {</div>
-<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>      <span class="keywordflow">if</span> (bDrawDebugDuringActivation)</div>
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>      {</div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>        ULineBatchComponent* lineBatch = world-&gt;GetLineBatcher(UWorld::ELineBatcherType::WorldPersistent);</div>
-<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span> </div>
-<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>        <span class="keywordflow">if</span> (lineBatch != <span class="keyword">nullptr</span>)</div>
-<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>        {</div>
-<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>          lineBatch-&gt;Flush();</div>
-<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>          TArray&lt;USceneComponent*&gt; children{};</div>
-<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>          RootComponent-&gt;GetChildrenComponents(<span class="keyword">false</span>, children);</div>
-<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>          <span class="keywordflow">for</span> (USceneComponent* child : children)</div>
-<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>          {</div>
-<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>            <span class="keywordflow">if</span> (URangeDetectorComponent* RDC = ::Cast&lt;URangeDetectorComponent&gt;(child))</div>
-<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>            {</div>
-<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>              RDC-&gt;ED_DrawWithLineBatchComp(lineBatch);</div>
-<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>            }</div>
-<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>          }</div>
-<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>        }</div>
-<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>      }    </div>
-<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>    }</div>
-<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>  }</div>
-<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>}</div>
-<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span> </div>
-<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span> </div>
-<div class="foldopen" id="foldopen00314" data-start="{" data-end="}">
-<div class="line"><a id="l00314" name="l00314"></a><span class="lineno"><a class="line" href="class_f_detect_tick_object___frame_base.html#a76b28da16bdf83d17fdc84107199572e">  314</a></span><a class="code hl_function" href="class_f_detect_tick_object___frame_base.html#a76b28da16bdf83d17fdc84107199572e">FDetectTickObject_FrameBase::FDetectTickObject_FrameBase</a>(int32 InStartFrame, int32 InFrameInterval)</div>
-<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>  : <a class="code hl_variable" href="class_f_detect_tick_object___frame_base.html#a2ed5beede8e84e29e7ddabef818c4c65">FrameInterval</a>{InFrameInterval}</div>
-<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>  , <a class="code hl_variable" href="class_f_detect_tick_object___frame_base.html#a1685938bfe160c083465a767654b3952">CurrentFrame</a>{InStartFrame}</div>
-<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>  , <a class="code hl_variable" href="class_f_detect_tick_object___frame_base.html#abe09bf4b508ac1692075125f7a3c7f67">FrameCnt</a>{InFrameInterval}</div>
-<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>{ }</div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span> </div>
+<div class="foldopen" id="foldopen00330" data-start="{" data-end="}">
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno"><a class="line" href="class_f_detect_tick_object___time_base.html#a2b498fd91a935aaadf247d85b21b7953">  330</a></span><a class="code hl_function" href="class_f_detect_tick_object___time_base.html#a2b498fd91a935aaadf247d85b21b7953">FDetectTickObject_TimeBase::FDetectTickObject_TimeBase</a>(<span class="keywordtype">float</span> InTimeInterval)</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>  : TimeInterval{InTimeInterval}</div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>  , TimeCnt{InTimeInterval}</div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>{ }</div>
 </div>
-<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span> </div>
-<div class="foldopen" id="foldopen00320" data-start="{" data-end="}">
-<div class="line"><a id="l00320" name="l00320"></a><span class="lineno"><a class="line" href="class_f_detect_tick_object___frame_base.html#ab963d85e676850a60195bec989236b3b">  320</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_f_detect_tick_object___frame_base.html#ab963d85e676850a60195bec989236b3b">FDetectTickObject_FrameBase::TickDetection</a>(USkeletalMeshComponent * MeshComp, UAnimSequenceBase * Animation, <span class="keywordtype">float</span> FrameDeltaTime)</div>
-<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>{</div>
-<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>  <span class="comment">// TODO Add Frame count each time tick detection is called</span></div>
-<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>  <a class="code hl_variable" href="class_f_detect_tick_object___frame_base.html#abe09bf4b508ac1692075125f7a3c7f67">FrameCnt</a> += 1;</div>
-<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_f_detect_tick_object___frame_base.html#abe09bf4b508ac1692075125f7a3c7f67">FrameCnt</a> &gt;= <a class="code hl_variable" href="class_f_detect_tick_object___frame_base.html#a2ed5beede8e84e29e7ddabef818c4c65">FrameInterval</a>)</div>
-<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>  {</div>
-<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>    <a class="code hl_variable" href="class_u_anim_notify_state___detect_range_1_1_f_detect_tick_object.html#a4c3af39447b37dbc07f0768f2bfa0183">DetectionNotify</a>.ExecuteIfBound(MeshComp, Animation);</div>
-<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>    <a class="code hl_variable" href="class_f_detect_tick_object___frame_base.html#abe09bf4b508ac1692075125f7a3c7f67">FrameCnt</a> = 0;</div>
-<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>  }</div>
-<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>}</div>
-</div>
-<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span> </div>
-<div class="foldopen" id="foldopen00331" data-start="{" data-end="}">
-<div class="line"><a id="l00331" name="l00331"></a><span class="lineno"><a class="line" href="class_f_detect_tick_object___time_base.html#a2b498fd91a935aaadf247d85b21b7953">  331</a></span><a class="code hl_function" href="class_f_detect_tick_object___time_base.html#a2b498fd91a935aaadf247d85b21b7953">FDetectTickObject_TimeBase::FDetectTickObject_TimeBase</a>(<span class="keywordtype">float</span> InTimeInterval)</div>
-<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>  : <a class="code hl_variable" href="class_f_detect_tick_object___time_base.html#a6ddb7beaa62d896280e21e36033e58ca">TimeInterval</a>{InTimeInterval}</div>
-<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>  , <a class="code hl_variable" href="class_f_detect_tick_object___time_base.html#a4ab432ba0b5cedee24b15423e65f84ce">TimeCnt</a>{InTimeInterval}</div>
-<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>{ }</div>
-</div>
-<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span> </div>
-<div class="foldopen" id="foldopen00336" data-start="{" data-end="}">
-<div class="line"><a id="l00336" name="l00336"></a><span class="lineno"><a class="line" href="class_f_detect_tick_object___time_base.html#ac6695347961cd7a0f44c0995ed19f6ab">  336</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_f_detect_tick_object___time_base.html#ac6695347961cd7a0f44c0995ed19f6ab">FDetectTickObject_TimeBase::TickDetection</a>(USkeletalMeshComponent * MeshComp, UAnimSequenceBase * Animation, <span class="keywordtype">float</span> FrameDeltaTime)</div>
-<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>{</div>
-<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>  <a class="code hl_variable" href="class_f_detect_tick_object___time_base.html#a4ab432ba0b5cedee24b15423e65f84ce">TimeCnt</a> += FrameDeltaTime;</div>
-<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_f_detect_tick_object___time_base.html#a4ab432ba0b5cedee24b15423e65f84ce">TimeCnt</a> &gt;= <a class="code hl_variable" href="class_f_detect_tick_object___time_base.html#a6ddb7beaa62d896280e21e36033e58ca">TimeInterval</a>)</div>
-<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>  {</div>
-<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>    <a class="code hl_variable" href="class_u_anim_notify_state___detect_range_1_1_f_detect_tick_object.html#a4c3af39447b37dbc07f0768f2bfa0183">DetectionNotify</a>.ExecuteIfBound(MeshComp, Animation);</div>
-<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>    <a class="code hl_variable" href="class_f_detect_tick_object___time_base.html#a4ab432ba0b5cedee24b15423e65f84ce">TimeCnt</a> = 0.0f;</div>
-<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>  }</div>
-<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>}</div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span> </div>
+<div class="foldopen" id="foldopen00335" data-start="{" data-end="}">
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno"><a class="line" href="class_f_detect_tick_object___time_base.html#ac6695347961cd7a0f44c0995ed19f6ab">  335</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_f_detect_tick_object___time_base.html#ac6695347961cd7a0f44c0995ed19f6ab">FDetectTickObject_TimeBase::TickDetection</a>(USkeletalMeshComponent * MeshComp, UAnimSequenceBase * Animation, <span class="keywordtype">float</span> FrameDeltaTime)</div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>{</div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>  TimeCnt += FrameDeltaTime;</div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>  <span class="keywordflow">if</span> (TimeCnt &gt;= TimeInterval)</div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>  {</div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>    <a class="code hl_variable" href="class_u_anim_notify_state___detect_range_1_1_f_detect_tick_object.html#a4c3af39447b37dbc07f0768f2bfa0183">DetectionNotify</a>.ExecuteIfBound(MeshComp, Animation);</div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>    TimeCnt = 0.0f;</div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>  }</div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>}</div>
 </div>
 <div class="ttc" id="a_a_r_ability_system_component_8h_html"><div class="ttname"><a href="_a_r_ability_system_component_8h.html">ARAbilitySystemComponent.h</a></div></div>
 <div class="ttc" id="a_anim_notify_state___detect_range_8h_html"><div class="ttname"><a href="_anim_notify_state___detect_range_8h.html">AnimNotifyState_DetectRange.h</a></div></div>
@@ -469,46 +464,33 @@ $(function(){initNavTree('_anim_notify_state___detect_range_8cpp_source.html',''
 <div class="ttc" id="a_range_detector_component_8h_html"><div class="ttname"><a href="_range_detector_component_8h.html">RangeDetectorComponent.h</a></div></div>
 <div class="ttc" id="a_range_detector_component_8h_html_a6eecef4ebfa408e4c755af09c00341e8a3c1aac82863ed9e5a9aca8ce687f711d"><div class="ttname"><a href="_range_detector_component_8h.html#a6eecef4ebfa408e4c755af09c00341e8a3c1aac82863ed9e5a9aca8ce687f711d">EDetectorTargetType::Interface</a></div><div class="ttdeci">@ Interface</div><div class="ttdef"><b>Definition</b> <a href="_range_detector_component_8h_source.html#l00034">RangeDetectorComponent.h:34</a></div></div>
 <div class="ttc" id="a_range_detector_helper_8h_html"><div class="ttname"><a href="_range_detector_helper_8h.html">RangeDetectorHelper.h</a></div></div>
-<div class="ttc" id="aclass_f_detect_tick_object___frame_base_html_a1685938bfe160c083465a767654b3952"><div class="ttname"><a href="class_f_detect_tick_object___frame_base.html#a1685938bfe160c083465a767654b3952">FDetectTickObject_FrameBase::CurrentFrame</a></div><div class="ttdeci">int32 CurrentFrame</div><div class="ttdef"><b>Definition</b> <a href="#l00029">AnimNotifyState_DetectRange.cpp:29</a></div></div>
-<div class="ttc" id="aclass_f_detect_tick_object___frame_base_html_a2ed5beede8e84e29e7ddabef818c4c65"><div class="ttname"><a href="class_f_detect_tick_object___frame_base.html#a2ed5beede8e84e29e7ddabef818c4c65">FDetectTickObject_FrameBase::FrameInterval</a></div><div class="ttdeci">const int32 FrameInterval</div><div class="ttdef"><b>Definition</b> <a href="#l00027">AnimNotifyState_DetectRange.cpp:27</a></div></div>
-<div class="ttc" id="aclass_f_detect_tick_object___frame_base_html_a76b28da16bdf83d17fdc84107199572e"><div class="ttname"><a href="class_f_detect_tick_object___frame_base.html#a76b28da16bdf83d17fdc84107199572e">FDetectTickObject_FrameBase::FDetectTickObject_FrameBase</a></div><div class="ttdeci">FDetectTickObject_FrameBase(int32 InStartFrame, int32 InFrameInterval)</div><div class="ttdef"><b>Definition</b> <a href="#l00314">AnimNotifyState_DetectRange.cpp:314</a></div></div>
-<div class="ttc" id="aclass_f_detect_tick_object___frame_base_html_ab963d85e676850a60195bec989236b3b"><div class="ttname"><a href="class_f_detect_tick_object___frame_base.html#ab963d85e676850a60195bec989236b3b">FDetectTickObject_FrameBase::TickDetection</a></div><div class="ttdeci">void TickDetection(USkeletalMeshComponent *MeshComp, UAnimSequenceBase *Animation, float FrameDeltaTime) override</div><div class="ttdef"><b>Definition</b> <a href="#l00320">AnimNotifyState_DetectRange.cpp:320</a></div></div>
-<div class="ttc" id="aclass_f_detect_tick_object___frame_base_html_abe09bf4b508ac1692075125f7a3c7f67"><div class="ttname"><a href="class_f_detect_tick_object___frame_base.html#abe09bf4b508ac1692075125f7a3c7f67">FDetectTickObject_FrameBase::FrameCnt</a></div><div class="ttdeci">int32 FrameCnt</div><div class="ttdef"><b>Definition</b> <a href="#l00031">AnimNotifyState_DetectRange.cpp:31</a></div></div>
-<div class="ttc" id="aclass_f_detect_tick_object___time_base_html_a2b498fd91a935aaadf247d85b21b7953"><div class="ttname"><a href="class_f_detect_tick_object___time_base.html#a2b498fd91a935aaadf247d85b21b7953">FDetectTickObject_TimeBase::FDetectTickObject_TimeBase</a></div><div class="ttdeci">FDetectTickObject_TimeBase(float InTimeInterval)</div><div class="ttdef"><b>Definition</b> <a href="#l00331">AnimNotifyState_DetectRange.cpp:331</a></div></div>
-<div class="ttc" id="aclass_f_detect_tick_object___time_base_html_a4ab432ba0b5cedee24b15423e65f84ce"><div class="ttname"><a href="class_f_detect_tick_object___time_base.html#a4ab432ba0b5cedee24b15423e65f84ce">FDetectTickObject_TimeBase::TimeCnt</a></div><div class="ttdeci">float TimeCnt</div><div class="ttdef"><b>Definition</b> <a href="#l00043">AnimNotifyState_DetectRange.cpp:43</a></div></div>
-<div class="ttc" id="aclass_f_detect_tick_object___time_base_html_a6ddb7beaa62d896280e21e36033e58ca"><div class="ttname"><a href="class_f_detect_tick_object___time_base.html#a6ddb7beaa62d896280e21e36033e58ca">FDetectTickObject_TimeBase::TimeInterval</a></div><div class="ttdeci">const float TimeInterval</div><div class="ttdef"><b>Definition</b> <a href="#l00041">AnimNotifyState_DetectRange.cpp:41</a></div></div>
-<div class="ttc" id="aclass_f_detect_tick_object___time_base_html_ac6695347961cd7a0f44c0995ed19f6ab"><div class="ttname"><a href="class_f_detect_tick_object___time_base.html#ac6695347961cd7a0f44c0995ed19f6ab">FDetectTickObject_TimeBase::TickDetection</a></div><div class="ttdeci">void TickDetection(USkeletalMeshComponent *MeshComp, UAnimSequenceBase *Animation, float FrameDeltaTime) override</div><div class="ttdef"><b>Definition</b> <a href="#l00336">AnimNotifyState_DetectRange.cpp:336</a></div></div>
-<div class="ttc" id="aclass_i_a_r_gameplay_ability_notify_interface_html"><div class="ttname"><a href="class_i_a_r_gameplay_ability_notify_interface.html">IARGameplayAbilityNotifyInterface</a></div><div class="ttdef"><b>Definition</b> <a href="_i_a_r_gameplay_ability_notify_interface_8h_source.html#l00032">IARGameplayAbilityNotifyInterface.h:33</a></div></div>
-<div class="ttc" id="aclass_u_a_r_ability_system_component_html"><div class="ttname"><a href="class_u_a_r_ability_system_component.html">UARAbilitySystemComponent</a></div><div class="ttdef"><b>Definition</b> <a href="_a_r_ability_system_component_8h_source.html#l00023">ARAbilitySystemComponent.h:24</a></div></div>
-<div class="ttc" id="aclass_u_a_r_ability_system_component_html_ac89ad0a8db9c4635041701857320c494"><div class="ttname"><a href="class_u_a_r_ability_system_component.html#ac89ad0a8db9c4635041701857320c494">UARAbilitySystemComponent::FindARAbilitySystemComponent</a></div><div class="ttdeci">static UE_API UARAbilitySystemComponent * FindARAbilitySystemComponent(AActor *InActor)</div><div class="ttdef"><b>Definition</b> <a href="_a_r_ability_system_component_8cpp_source.html#l00222">ARAbilitySystemComponent.cpp:222</a></div></div>
+<div class="ttc" id="aclass_f_detect_tick_object___frame_base_html_a76b28da16bdf83d17fdc84107199572e"><div class="ttname"><a href="class_f_detect_tick_object___frame_base.html#a76b28da16bdf83d17fdc84107199572e">FDetectTickObject_FrameBase::FDetectTickObject_FrameBase</a></div><div class="ttdeci">FDetectTickObject_FrameBase(int32 InStartFrame, int32 InFrameInterval)</div><div class="ttdef"><b>Definition</b> <a href="#l00313">AnimNotifyState_DetectRange.cpp:313</a></div></div>
+<div class="ttc" id="aclass_f_detect_tick_object___frame_base_html_ab963d85e676850a60195bec989236b3b"><div class="ttname"><a href="class_f_detect_tick_object___frame_base.html#ab963d85e676850a60195bec989236b3b">FDetectTickObject_FrameBase::TickDetection</a></div><div class="ttdeci">void TickDetection(USkeletalMeshComponent *MeshComp, UAnimSequenceBase *Animation, float FrameDeltaTime) override</div><div class="ttdef"><b>Definition</b> <a href="#l00319">AnimNotifyState_DetectRange.cpp:319</a></div></div>
+<div class="ttc" id="aclass_f_detect_tick_object___time_base_html_a2b498fd91a935aaadf247d85b21b7953"><div class="ttname"><a href="class_f_detect_tick_object___time_base.html#a2b498fd91a935aaadf247d85b21b7953">FDetectTickObject_TimeBase::FDetectTickObject_TimeBase</a></div><div class="ttdeci">FDetectTickObject_TimeBase(float InTimeInterval)</div><div class="ttdef"><b>Definition</b> <a href="#l00330">AnimNotifyState_DetectRange.cpp:330</a></div></div>
+<div class="ttc" id="aclass_f_detect_tick_object___time_base_html_ac6695347961cd7a0f44c0995ed19f6ab"><div class="ttname"><a href="class_f_detect_tick_object___time_base.html#ac6695347961cd7a0f44c0995ed19f6ab">FDetectTickObject_TimeBase::TickDetection</a></div><div class="ttdeci">void TickDetection(USkeletalMeshComponent *MeshComp, UAnimSequenceBase *Animation, float FrameDeltaTime) override</div><div class="ttdef"><b>Definition</b> <a href="#l00335">AnimNotifyState_DetectRange.cpp:335</a></div></div>
+<div class="ttc" id="aclass_u_a_r_ability_system_component_html_ac89ad0a8db9c4635041701857320c494"><div class="ttname"><a href="class_u_a_r_ability_system_component.html#ac89ad0a8db9c4635041701857320c494">UARAbilitySystemComponent::FindARAbilitySystemComponent</a></div><div class="ttdeci">static ARRANGER_API UARAbilitySystemComponent * FindARAbilitySystemComponent(AActor *InActor)</div><div class="ttdef"><b>Definition</b> <a href="_a_r_ability_system_component_8cpp_source.html#l00222">ARAbilitySystemComponent.cpp:222</a></div></div>
 <div class="ttc" id="aclass_u_anim_notify_state___detect_range_1_1_f_detect_tick_object_html"><div class="ttname"><a href="class_u_anim_notify_state___detect_range_1_1_f_detect_tick_object.html">UAnimNotifyState_DetectRange::FDetectTickObject</a></div><div class="ttdef"><b>Definition</b> <a href="_anim_notify_state___detect_range_8h_source.html#l00039">AnimNotifyState_DetectRange.h:40</a></div></div>
 <div class="ttc" id="aclass_u_anim_notify_state___detect_range_1_1_f_detect_tick_object_html_a4c3af39447b37dbc07f0768f2bfa0183"><div class="ttname"><a href="class_u_anim_notify_state___detect_range_1_1_f_detect_tick_object.html#a4c3af39447b37dbc07f0768f2bfa0183">UAnimNotifyState_DetectRange::FDetectTickObject::DetectionNotify</a></div><div class="ttdeci">FOnDetectionNotify DetectionNotify</div><div class="ttdef"><b>Definition</b> <a href="_anim_notify_state___detect_range_8h_source.html#l00046">AnimNotifyState_DetectRange.h:46</a></div></div>
 <div class="ttc" id="aclass_u_anim_notify_state___detect_range_html_a04e560609a6c197e0b03c33f7f1b8aa8"><div class="ttname"><a href="class_u_anim_notify_state___detect_range.html#a04e560609a6c197e0b03c33f7f1b8aa8">UAnimNotifyState_DetectRange::FrameInterval</a></div><div class="ttdeci">int32 FrameInterval</div><div class="ttdef"><b>Definition</b> <a href="_anim_notify_state___detect_range_8h_source.html#l00077">AnimNotifyState_DetectRange.h:77</a></div></div>
 <div class="ttc" id="aclass_u_anim_notify_state___detect_range_html_a095e75c50b9375f46fb16b9c6f6515ce"><div class="ttname"><a href="class_u_anim_notify_state___detect_range.html#a095e75c50b9375f46fb16b9c6f6515ce">UAnimNotifyState_DetectRange::SocketName</a></div><div class="ttdeci">FName SocketName</div><div class="ttdef"><b>Definition</b> <a href="_anim_notify_state___detect_range_8h_source.html#l00062">AnimNotifyState_DetectRange.h:62</a></div></div>
 <div class="ttc" id="aclass_u_anim_notify_state___detect_range_html_a0d3e7205d5fbfff74b6875b066d7a61b"><div class="ttname"><a href="class_u_anim_notify_state___detect_range.html#a0d3e7205d5fbfff74b6875b066d7a61b">UAnimNotifyState_DetectRange::RangeData</a></div><div class="ttdeci">TObjectPtr&lt; UPrimitiveDetectorData &gt; RangeData</div><div class="ttdef"><b>Definition</b> <a href="_anim_notify_state___detect_range_8h_source.html#l00059">AnimNotifyState_DetectRange.h:59</a></div></div>
-<div class="ttc" id="aclass_u_anim_notify_state___detect_range_html_a25b256517f419de523e04edb984e26fa"><div class="ttname"><a href="class_u_anim_notify_state___detect_range.html#a25b256517f419de523e04edb984e26fa">UAnimNotifyState_DetectRange::m_notifiedActors</a></div><div class="ttdeci">TSet&lt; AActor * &gt; m_notifiedActors</div><div class="ttdef"><b>Definition</b> <a href="_anim_notify_state___detect_range_8h_source.html#l00107">AnimNotifyState_DetectRange.h:107</a></div></div>
 <div class="ttc" id="aclass_u_anim_notify_state___detect_range_html_a2a35f9b20757b413b7d9d03a9aed8147"><div class="ttname"><a href="class_u_anim_notify_state___detect_range.html#a2a35f9b20757b413b7d9d03a9aed8147">UAnimNotifyState_DetectRange::RotationOffset</a></div><div class="ttdeci">FRotator RotationOffset</div><div class="ttdef"><b>Definition</b> <a href="_anim_notify_state___detect_range_8h_source.html#l00068">AnimNotifyState_DetectRange.h:68</a></div></div>
-<div class="ttc" id="aclass_u_anim_notify_state___detect_range_html_a2c606d84056851dd86810389d41d58b5"><div class="ttname"><a href="class_u_anim_notify_state___detect_range.html#a2c606d84056851dd86810389d41d58b5">UAnimNotifyState_DetectRange::NotifyTick</a></div><div class="ttdeci">virtual UE_API void NotifyTick(USkeletalMeshComponent *MeshComp, UAnimSequenceBase *Animation, float FrameDeltaTime, const FAnimNotifyEventReference &amp;EventReference) override</div><div class="ttdef"><b>Definition</b> <a href="#l00105">AnimNotifyState_DetectRange.cpp:105</a></div></div>
+<div class="ttc" id="aclass_u_anim_notify_state___detect_range_html_a2c606d84056851dd86810389d41d58b5"><div class="ttname"><a href="class_u_anim_notify_state___detect_range.html#a2c606d84056851dd86810389d41d58b5">UAnimNotifyState_DetectRange::NotifyTick</a></div><div class="ttdeci">virtual ARRANGER_API void NotifyTick(USkeletalMeshComponent *MeshComp, UAnimSequenceBase *Animation, float FrameDeltaTime, const FAnimNotifyEventReference &amp;EventReference) override</div><div class="ttdef"><b>Definition</b> <a href="#l00105">AnimNotifyState_DetectRange.cpp:105</a></div></div>
 <div class="ttc" id="aclass_u_anim_notify_state___detect_range_html_a34702717ab079e01be3866d2f4c3beb7"><div class="ttname"><a href="class_u_anim_notify_state___detect_range.html#a34702717ab079e01be3866d2f4c3beb7">UAnimNotifyState_DetectRange::DetectionType</a></div><div class="ttdeci">EANS_DetectRange_NotifyDetectionType DetectionType</div><div class="ttdef"><b>Definition</b> <a href="_anim_notify_state___detect_range_8h_source.html#l00071">AnimNotifyState_DetectRange.h:71</a></div></div>
 <div class="ttc" id="aclass_u_anim_notify_state___detect_range_html_a4a9163bebd3bc95cde471184a8297a89"><div class="ttname"><a href="class_u_anim_notify_state___detect_range.html#a4a9163bebd3bc95cde471184a8297a89">UAnimNotifyState_DetectRange::TimeInterval</a></div><div class="ttdeci">float TimeInterval</div><div class="ttdef"><b>Definition</b> <a href="_anim_notify_state___detect_range_8h_source.html#l00080">AnimNotifyState_DetectRange.h:80</a></div></div>
-<div class="ttc" id="aclass_u_anim_notify_state___detect_range_html_a4f858ebbd43ff29889e09c2ff5bde33a"><div class="ttname"><a href="class_u_anim_notify_state___detect_range.html#a4f858ebbd43ff29889e09c2ff5bde33a">UAnimNotifyState_DetectRange::ValidateParameters</a></div><div class="ttdeci">bool ValidateParameters(USkeletalMeshComponent *MeshComp) const</div><div class="ttdef"><b>Definition</b> <a href="#l00197">AnimNotifyState_DetectRange.cpp:197</a></div></div>
-<div class="ttc" id="aclass_u_anim_notify_state___detect_range_html_a5f201777b3a87963c6e3934be9880c1d"><div class="ttname"><a href="class_u_anim_notify_state___detect_range.html#a5f201777b3a87963c6e3934be9880c1d">UAnimNotifyState_DetectRange::GetNotifyName_Implementation</a></div><div class="ttdeci">UE_API FString GetNotifyName_Implementation() const override</div><div class="ttdef"><b>Definition</b> <a href="#l00187">AnimNotifyState_DetectRange.cpp:187</a></div></div>
-<div class="ttc" id="aclass_u_anim_notify_state___detect_range_html_a6f899e3c724021190ebba4cef9897e74"><div class="ttname"><a href="class_u_anim_notify_state___detect_range.html#a6f899e3c724021190ebba4cef9897e74">UAnimNotifyState_DetectRange::NotifyAbility</a></div><div class="ttdeci">void NotifyAbility(USkeletalMeshComponent *MeshComp, UAnimSequenceBase *Animation)</div><div class="ttdef"><b>Definition</b> <a href="#l00213">AnimNotifyState_DetectRange.cpp:213</a></div></div>
+<div class="ttc" id="aclass_u_anim_notify_state___detect_range_html_a5f201777b3a87963c6e3934be9880c1d"><div class="ttname"><a href="class_u_anim_notify_state___detect_range.html#a5f201777b3a87963c6e3934be9880c1d">UAnimNotifyState_DetectRange::GetNotifyName_Implementation</a></div><div class="ttdeci">ARRANGER_API FString GetNotifyName_Implementation() const override</div><div class="ttdef"><b>Definition</b> <a href="#l00187">AnimNotifyState_DetectRange.cpp:187</a></div></div>
 <div class="ttc" id="aclass_u_anim_notify_state___detect_range_html_a7b39e281372b084554322cd07bfb7a42"><div class="ttname"><a href="class_u_anim_notify_state___detect_range.html#a7b39e281372b084554322cd07bfb7a42">UAnimNotifyState_DetectRange::bDestroyAtEnd</a></div><div class="ttdeci">bool bDestroyAtEnd</div><div class="ttdef"><b>Definition</b> <a href="_anim_notify_state___detect_range_8h_source.html#l00083">AnimNotifyState_DetectRange.h:83</a></div></div>
 <div class="ttc" id="aclass_u_anim_notify_state___detect_range_html_a9ce7a6c009401e564924121371c07d2c"><div class="ttname"><a href="class_u_anim_notify_state___detect_range.html#a9ce7a6c009401e564924121371c07d2c">UAnimNotifyState_DetectRange::LocationOffset</a></div><div class="ttdeci">FVector LocationOffset</div><div class="ttdef"><b>Definition</b> <a href="_anim_notify_state___detect_range_8h_source.html#l00065">AnimNotifyState_DetectRange.h:65</a></div></div>
-<div class="ttc" id="aclass_u_anim_notify_state___detect_range_html_aa2653972e97684a2802c14374fcc0698"><div class="ttname"><a href="class_u_anim_notify_state___detect_range.html#aa2653972e97684a2802c14374fcc0698">UAnimNotifyState_DetectRange::NotifyEnd</a></div><div class="ttdeci">virtual UE_API void NotifyEnd(USkeletalMeshComponent *MeshComp, UAnimSequenceBase *Animation, const FAnimNotifyEventReference &amp;EventReference) override</div><div class="ttdef"><b>Definition</b> <a href="#l00133">AnimNotifyState_DetectRange.cpp:133</a></div></div>
-<div class="ttc" id="aclass_u_anim_notify_state___detect_range_html_aaf2933ce2a27fc09691b96a8d4ebde6a"><div class="ttname"><a href="class_u_anim_notify_state___detect_range.html#aaf2933ce2a27fc09691b96a8d4ebde6a">UAnimNotifyState_DetectRange::m_detectTickObject</a></div><div class="ttdeci">TUniquePtr&lt; FDetectTickObject &gt; m_detectTickObject</div><div class="ttdef"><b>Definition</b> <a href="_anim_notify_state___detect_range_8h_source.html#l00104">AnimNotifyState_DetectRange.h:104</a></div></div>
+<div class="ttc" id="aclass_u_anim_notify_state___detect_range_html_aa2653972e97684a2802c14374fcc0698"><div class="ttname"><a href="class_u_anim_notify_state___detect_range.html#aa2653972e97684a2802c14374fcc0698">UAnimNotifyState_DetectRange::NotifyEnd</a></div><div class="ttdeci">virtual ARRANGER_API void NotifyEnd(USkeletalMeshComponent *MeshComp, UAnimSequenceBase *Animation, const FAnimNotifyEventReference &amp;EventReference) override</div><div class="ttdef"><b>Definition</b> <a href="#l00133">AnimNotifyState_DetectRange.cpp:133</a></div></div>
 <div class="ttc" id="aclass_u_anim_notify_state___detect_range_html_ad0eb77d2fdbc7410b7a62848ba5b6a19"><div class="ttname"><a href="class_u_anim_notify_state___detect_range.html#ad0eb77d2fdbc7410b7a62848ba5b6a19">UAnimNotifyState_DetectRange::FrequencyType</a></div><div class="ttdeci">EANS_DetectRange_NotifyDetectionFrequencyType FrequencyType</div><div class="ttdef"><b>Definition</b> <a href="_anim_notify_state___detect_range_8h_source.html#l00074">AnimNotifyState_DetectRange.h:74</a></div></div>
-<div class="ttc" id="aclass_u_anim_notify_state___detect_range_html_ae3925b6b198ee28aebc7851124477d42"><div class="ttname"><a href="class_u_anim_notify_state___detect_range.html#ae3925b6b198ee28aebc7851124477d42">UAnimNotifyState_DetectRange::NotifyBegin</a></div><div class="ttdeci">virtual UE_API void NotifyBegin(USkeletalMeshComponent *MeshComp, UAnimSequenceBase *Animation, float TotalDuration, const FAnimNotifyEventReference &amp;EventReference) override</div><div class="ttdef"><b>Definition</b> <a href="#l00047">AnimNotifyState_DetectRange.cpp:47</a></div></div>
-<div class="ttc" id="aclass_u_range_detector_helper_html_abdcbfaffc88556ba0a8af3f92d0d566c"><div class="ttname"><a href="class_u_range_detector_helper.html#abdcbfaffc88556ba0a8af3f92d0d566c">URangeDetectorHelper::AttachRangeDetector</a></div><div class="ttdeci">static UE_API URangeDetectorComponent * AttachRangeDetector(const FDetectorAssetEntry &amp;Entry, USceneComponent *AttachToComponent, FName AttachPointName, FVector Location, FRotator Rotation, FVector Scale, EAttachLocation::Type LocationType=EAttachLocation::KeepRelativeOffset, bool bStopWhenAttachedToDestroy=true)</div><div class="ttdef"><b>Definition</b> <a href="_range_detector_helper_8cpp_source.html#l00014">RangeDetectorHelper.cpp:14</a></div></div>
+<div class="ttc" id="aclass_u_anim_notify_state___detect_range_html_ae3925b6b198ee28aebc7851124477d42"><div class="ttname"><a href="class_u_anim_notify_state___detect_range.html#ae3925b6b198ee28aebc7851124477d42">UAnimNotifyState_DetectRange::NotifyBegin</a></div><div class="ttdeci">virtual ARRANGER_API void NotifyBegin(USkeletalMeshComponent *MeshComp, UAnimSequenceBase *Animation, float TotalDuration, const FAnimNotifyEventReference &amp;EventReference) override</div><div class="ttdef"><b>Definition</b> <a href="#l00047">AnimNotifyState_DetectRange.cpp:47</a></div></div>
+<div class="ttc" id="aclass_u_range_detector_helper_html_abdcbfaffc88556ba0a8af3f92d0d566c"><div class="ttname"><a href="class_u_range_detector_helper.html#abdcbfaffc88556ba0a8af3f92d0d566c">URangeDetectorHelper::AttachRangeDetector</a></div><div class="ttdeci">static ARRANGER_API URangeDetectorComponent * AttachRangeDetector(const FDetectorAssetEntry &amp;Entry, USceneComponent *AttachToComponent, FName AttachPointName, FVector Location, FRotator Rotation, FVector Scale, EAttachLocation::Type LocationType=EAttachLocation::KeepRelativeOffset, bool bStopWhenAttachedToDestroy=true)</div><div class="ttdef"><b>Definition</b> <a href="_range_detector_helper_8cpp_source.html#l00014">RangeDetectorHelper.cpp:14</a></div></div>
 <div class="ttc" id="astruct_f_detector_asset_entry_html"><div class="ttname"><a href="struct_f_detector_asset_entry.html">FDetectorAssetEntry</a></div><div class="ttdef"><b>Definition</b> <a href="_range_detector_component_8h_source.html#l00053">RangeDetectorComponent.h:54</a></div></div>
 <div class="ttc" id="astruct_f_detector_asset_entry_html_a5b3189f11726100f1388a2b01011e4a6"><div class="ttname"><a href="struct_f_detector_asset_entry.html#a5b3189f11726100f1388a2b01011e4a6">FDetectorAssetEntry::Priority</a></div><div class="ttdeci">int32 Priority</div><div class="ttdef"><b>Definition</b> <a href="_range_detector_component_8h_source.html#l00064">RangeDetectorComponent.h:64</a></div></div>
 <div class="ttc" id="astruct_f_detector_asset_entry_html_a6317d8e4b3d4e7080867f950867d3fbf"><div class="ttname"><a href="struct_f_detector_asset_entry.html#a6317d8e4b3d4e7080867f950867d3fbf">FDetectorAssetEntry::DetectorData</a></div><div class="ttdeci">TObjectPtr&lt; UPrimitiveDetectorData &gt; DetectorData</div><div class="ttdef"><b>Definition</b> <a href="_range_detector_component_8h_source.html#l00058">RangeDetectorComponent.h:58</a></div></div>
 <div class="ttc" id="astruct_f_detector_asset_entry_html_aea7c4556c4d1120d5f24e62069585b76"><div class="ttname"><a href="struct_f_detector_asset_entry.html#aea7c4556c4d1120d5f24e62069585b76">FDetectorAssetEntry::Target</a></div><div class="ttdeci">FDetectorTarget Target</div><div class="ttdef"><b>Definition</b> <a href="_range_detector_component_8h_source.html#l00061">RangeDetectorComponent.h:61</a></div></div>
 <div class="ttc" id="astruct_f_detector_target_html_aa3823235c008650678e54d62a41c288c"><div class="ttname"><a href="struct_f_detector_target.html#aa3823235c008650678e54d62a41c288c">FDetectorTarget::TargetType</a></div><div class="ttdeci">EDetectorTargetType TargetType</div><div class="ttdef"><b>Definition</b> <a href="_range_detector_component_8h_source.html#l00043">RangeDetectorComponent.h:43</a></div></div>
 <div class="ttc" id="astruct_f_detector_target_html_afac5c002272fa8f39a8f980c4e7b55f4"><div class="ttname"><a href="struct_f_detector_target.html#afac5c002272fa8f39a8f980c4e7b55f4">FDetectorTarget::TargetInterface</a></div><div class="ttdeci">TSubclassOf&lt; UInterface &gt; TargetInterface</div><div class="ttdef"><b>Definition</b> <a href="_range_detector_component_8h_source.html#l00049">RangeDetectorComponent.h:49</a></div></div>
-<div class="ttc" id="astruct_f_g_a_notify___impact_result_html"><div class="ttname"><a href="struct_f_g_a_notify___impact_result.html">FGANotify_ImpactResult</a></div><div class="ttdef"><b>Definition</b> <a href="_i_a_r_gameplay_ability_notify_interface_8h_source.html#l00014">IARGameplayAbilityNotifyInterface.h:15</a></div></div>
-<div class="ttc" id="astruct_f_range_detector_evaluation_result_html"><div class="ttname"><a href="struct_f_range_detector_evaluation_result.html">FRangeDetectorEvaluationResult</a></div><div class="ttdoc">Result struct of evaluated RangeDetector.</div><div class="ttdef"><b>Definition</b> <a href="_range_detector_8h_source.html#l00045">RangeDetector.h:46</a></div></div>
 <div class="ttc" id="astruct_f_range_detector_evaluation_result_html_ad13b066e3901359dcf8a8a47666473bf"><div class="ttname"><a href="struct_f_range_detector_evaluation_result.html#ad13b066e3901359dcf8a8a47666473bf">FRangeDetectorEvaluationResult::DetectedActors</a></div><div class="ttdeci">TArray&lt; AActor * &gt; DetectedActors</div><div class="ttdef"><b>Definition</b> <a href="_range_detector_8h_source.html#l00047">RangeDetector.h:47</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -516,7 +498,7 @@ $(function(){initNavTree('_anim_notify_state___detect_range_8cpp_source.html',''
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="dir_db4b63894235d986ff0886d3d7147fc4.html">GithubRepository</a></li><li class="navelem"><a href="dir_b7f76808a72ae9b06e23f4ba1d7ec8e0.html">ARRanger</a></li><li class="navelem"><a href="dir_22deff83e5e51399b4644a6ac5e50e58.html">Source</a></li><li class="navelem"><a href="dir_765ba4c51118e23b05fd567f675cd5c3.html">ARRanger</a></li><li class="navelem"><a href="dir_01ca0bd49608f959e3dafd2b38229153.html">Private</a></li><li class="navelem"><a href="dir_44aefff68e1502f77c9c5e71182d03ce.html">Animations</a></li><li class="navelem"><a href="dir_2b51bc8908b1d12830405deb50277e33.html">AnimNotifies</a></li><li class="navelem"><a href="_anim_notify_state___detect_range_8cpp.html">AnimNotifyState_DetectRange.cpp</a></li>
+    <li class="navelem"><a href="dir_da1fa48e9cd6aca15a5329e13710da8a.html">ARRanger</a></li><li class="navelem"><a href="dir_6306d44ac889cfd8733274aed159ebe8.html">Private</a></li><li class="navelem"><a href="dir_da3bbdbc491702ad387a53b5df522ae0.html">Animations</a></li><li class="navelem"><a href="dir_4d4cedb051959069437ae581f996c474.html">AnimNotifies</a></li><li class="navelem"><a href="_anim_notify_state___detect_range_8cpp.html">AnimNotifyState_DetectRange.cpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>

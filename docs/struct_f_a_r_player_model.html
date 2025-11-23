@@ -98,7 +98,9 @@ $(function(){initNavTree('struct_f_a_r_player_model.html','','struct_f_a_r_playe
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a9cef1cb3116d0069d574a9249462756d" id="r_a9cef1cb3116d0069d574a9249462756d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9cef1cb3116d0069d574a9249462756d">FARPlayerModel</a> ()</td></tr>
 <tr class="memitem:a7cb712846b20260fb9550ffa08dea79f" id="r_a7cb712846b20260fb9550ffa08dea79f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7cb712846b20260fb9550ffa08dea79f">Initialize</a> (<a class="el" href="class_a_a_r_ranger_character.html">AARRangerCharacter</a> *InViewCharacter)</td></tr>
+<tr class="memdesc:a7cb712846b20260fb9550ffa08dea79f"><td class="mdescLeft">&#160;</td><td class="mdescRight">プレイヤーモデルを初期化する  <br /></td></tr>
 <tr class="memitem:aa16ed7debc6bbbb9f780d4181ad9333c" id="r_aa16ed7debc6bbbb9f780d4181ad9333c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa16ed7debc6bbbb9f780d4181ad9333c">Reset</a> ()</td></tr>
+<tr class="memdesc:aa16ed7debc6bbbb9f780d4181ad9333c"><td class="mdescLeft">&#160;</td><td class="mdescRight">プレイヤーモデルを更新  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -124,7 +126,7 @@ Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_a_r_player_presenter_8h_source.html#l00029">29</a> of file <a class="el" href="_a_r_player_presenter_8h_source.html">ARPlayerPresenter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_a_r_player_presenter_8h_source.html#l00034">34</a> of file <a class="el" href="_a_r_player_presenter_8h_source.html">ARPlayerPresenter.h</a>.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a9cef1cb3116d0069d574a9249462756d" name="a9cef1cb3116d0069d574a9249462756d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9cef1cb3116d0069d574a9249462756d">&#9670;&#160;</a></span>FARPlayerModel()</h2>
@@ -141,8 +143,41 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_a_r_player_presenter_8cpp_source.html#l00020">20</a> of file <a class="el" href="_a_r_player_presenter_8cpp_source.html">ARPlayerPresenter.cpp</a>.</p>
-
+<p class="definition">Definition at line <a class="el" href="_a_r_player_presenter_8cpp_source.html#l00014">14</a> of file <a class="el" href="_a_r_player_presenter_8cpp_source.html">ARPlayerPresenter.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   15</span>  : <a class="code hl_variable" href="#ab96e97d85ff02ba0ad8a5924b0e32039">HealthComponent</a>{<span class="keyword">nullptr</span>}</div>
+<div class="line"><span class="lineno">   16</span>  , <a class="code hl_variable" href="#a072564d5666ab34197d477ddfa19dd41">ChargeStartFaceDir</a>{EForceInit::ForceInitToZero}</div>
+<div class="line"><span class="lineno">   17</span>  , <a class="code hl_variable" href="#a0b23773e347cb3c19b06b8bb8366d4f4">ClimbSurfaceNormal</a>{EForceInit::ForceInitToZero}</div>
+<div class="line"><span class="lineno">   18</span>  , <a class="code hl_variable" href="#a3dc1684ed92634fb48936afd05accef4">TargetSnapInputDirection</a>{EForceInit::ForceInitToZero}</div>
+<div class="line"><span class="lineno">   19</span>  , <a class="code hl_variable" href="#a44614663986b1712b7663294f2f2b8b7">LaunchPower</a>{400.0}</div>
+<div class="line"><span class="lineno">   20</span>  , <a class="code hl_variable" href="#adecfa681e543125971f5f0b210bf8f43">ChargeRotateHalfRange</a>{60.0}</div>
+<div class="line"><span class="lineno">   21</span>  , <a class="code hl_variable" href="#a7b153eca20612793fa7d8829dca4169c">TargetSnapDetectMaxRange</a>{200.0}</div>
+<div class="line"><span class="lineno">   22</span>  , <a class="code hl_variable" href="#ab9842d59cfc73c317014f227204f5b9c">SnapTimeInterval</a>{0.2f}</div>
+<div class="line"><span class="lineno">   23</span>  , <a class="code hl_variable" href="#a356b5663ce46f44db41ed7ff60179a62">SnapTimeCounter</a>{0.0f}</div>
+<div class="line"><span class="lineno">   24</span>  , <a class="code hl_variable" href="#afef861de540f770de698fcde217909a9">SnapTargetActor</a>{<span class="keyword">nullptr</span>}</div>
+<div class="line"><span class="lineno">   25</span>  , <a class="code hl_variable" href="#abbead27dea83cba5deae4a4ffe3e92de">bIsCharging</a>{<span class="keyword">false</span>}</div>
+<div class="line"><span class="lineno">   26</span>  , <a class="code hl_variable" href="#a518657c56efe8fc4a4278ef6966f2925">bIsInAir</a>{<span class="keyword">false</span>}</div>
+<div class="line"><span class="lineno">   27</span>  , <a class="code hl_variable" href="#a37cc4ecc7a67c50a6cfcac899fa4938d">bIsClimbing</a>{<span class="keyword">false</span>}</div>
+<div class="line"><span class="lineno">   28</span>  , <a class="code hl_variable" href="#ab1a0f941304bfc9b79751cce6ec3ef08">bIsInComboAction</a>{<span class="keyword">false</span>}</div>
+<div class="line"><span class="lineno">   29</span>  , <a class="code hl_variable" href="#a57a0e24d3b4a350c99fff1896db54dff">bCanUpdateSnapMovement</a>{<span class="keyword">false</span>}</div>
+<div class="line"><span class="lineno">   30</span>  , <a class="code hl_variable" href="#a7b6c869dba664f618120660c81d341b0">bIsReadyToSearchSnapTarget</a>{<span class="keyword">false</span>}</div>
+<div class="line"><span class="lineno">   31</span>{ }</div>
+<div class="ttc" id="astruct_f_a_r_player_model_html_a072564d5666ab34197d477ddfa19dd41"><div class="ttname"><a href="#a072564d5666ab34197d477ddfa19dd41">FARPlayerModel::ChargeStartFaceDir</a></div><div class="ttdeci">FVector ChargeStartFaceDir</div><div class="ttdef"><b>Definition</b> <a href="_a_r_player_presenter_8h_source.html#l00055">ARPlayerPresenter.h:55</a></div></div>
+<div class="ttc" id="astruct_f_a_r_player_model_html_a0b23773e347cb3c19b06b8bb8366d4f4"><div class="ttname"><a href="#a0b23773e347cb3c19b06b8bb8366d4f4">FARPlayerModel::ClimbSurfaceNormal</a></div><div class="ttdeci">FVector ClimbSurfaceNormal</div><div class="ttdef"><b>Definition</b> <a href="_a_r_player_presenter_8h_source.html#l00057">ARPlayerPresenter.h:57</a></div></div>
+<div class="ttc" id="astruct_f_a_r_player_model_html_a356b5663ce46f44db41ed7ff60179a62"><div class="ttname"><a href="#a356b5663ce46f44db41ed7ff60179a62">FARPlayerModel::SnapTimeCounter</a></div><div class="ttdeci">float SnapTimeCounter</div><div class="ttdef"><b>Definition</b> <a href="_a_r_player_presenter_8h_source.html#l00079">ARPlayerPresenter.h:79</a></div></div>
+<div class="ttc" id="astruct_f_a_r_player_model_html_a37cc4ecc7a67c50a6cfcac899fa4938d"><div class="ttname"><a href="#a37cc4ecc7a67c50a6cfcac899fa4938d">FARPlayerModel::bIsClimbing</a></div><div class="ttdeci">uint8 bIsClimbing</div><div class="ttdef"><b>Definition</b> <a href="_a_r_player_presenter_8h_source.html#l00085">ARPlayerPresenter.h:85</a></div></div>
+<div class="ttc" id="astruct_f_a_r_player_model_html_a3dc1684ed92634fb48936afd05accef4"><div class="ttname"><a href="#a3dc1684ed92634fb48936afd05accef4">FARPlayerModel::TargetSnapInputDirection</a></div><div class="ttdeci">FVector2D TargetSnapInputDirection</div><div class="ttdef"><b>Definition</b> <a href="_a_r_player_presenter_8h_source.html#l00065">ARPlayerPresenter.h:65</a></div></div>
+<div class="ttc" id="astruct_f_a_r_player_model_html_a44614663986b1712b7663294f2f2b8b7"><div class="ttname"><a href="#a44614663986b1712b7663294f2f2b8b7">FARPlayerModel::LaunchPower</a></div><div class="ttdeci">double LaunchPower</div><div class="ttdef"><b>Definition</b> <a href="_a_r_player_presenter_8h_source.html#l00068">ARPlayerPresenter.h:68</a></div></div>
+<div class="ttc" id="astruct_f_a_r_player_model_html_a518657c56efe8fc4a4278ef6966f2925"><div class="ttname"><a href="#a518657c56efe8fc4a4278ef6966f2925">FARPlayerModel::bIsInAir</a></div><div class="ttdeci">uint8 bIsInAir</div><div class="ttdef"><b>Definition</b> <a href="_a_r_player_presenter_8h_source.html#l00084">ARPlayerPresenter.h:84</a></div></div>
+<div class="ttc" id="astruct_f_a_r_player_model_html_a57a0e24d3b4a350c99fff1896db54dff"><div class="ttname"><a href="#a57a0e24d3b4a350c99fff1896db54dff">FARPlayerModel::bCanUpdateSnapMovement</a></div><div class="ttdeci">uint8 bCanUpdateSnapMovement</div><div class="ttdef"><b>Definition</b> <a href="_a_r_player_presenter_8h_source.html#l00087">ARPlayerPresenter.h:87</a></div></div>
+<div class="ttc" id="astruct_f_a_r_player_model_html_a7b153eca20612793fa7d8829dca4169c"><div class="ttname"><a href="#a7b153eca20612793fa7d8829dca4169c">FARPlayerModel::TargetSnapDetectMaxRange</a></div><div class="ttdeci">double TargetSnapDetectMaxRange</div><div class="ttdef"><b>Definition</b> <a href="_a_r_player_presenter_8h_source.html#l00074">ARPlayerPresenter.h:74</a></div></div>
+<div class="ttc" id="astruct_f_a_r_player_model_html_a7b6c869dba664f618120660c81d341b0"><div class="ttname"><a href="#a7b6c869dba664f618120660c81d341b0">FARPlayerModel::bIsReadyToSearchSnapTarget</a></div><div class="ttdeci">uint8 bIsReadyToSearchSnapTarget</div><div class="ttdef"><b>Definition</b> <a href="_a_r_player_presenter_8h_source.html#l00088">ARPlayerPresenter.h:88</a></div></div>
+<div class="ttc" id="astruct_f_a_r_player_model_html_ab1a0f941304bfc9b79751cce6ec3ef08"><div class="ttname"><a href="#ab1a0f941304bfc9b79751cce6ec3ef08">FARPlayerModel::bIsInComboAction</a></div><div class="ttdeci">uint8 bIsInComboAction</div><div class="ttdef"><b>Definition</b> <a href="_a_r_player_presenter_8h_source.html#l00086">ARPlayerPresenter.h:86</a></div></div>
+<div class="ttc" id="astruct_f_a_r_player_model_html_ab96e97d85ff02ba0ad8a5924b0e32039"><div class="ttname"><a href="#ab96e97d85ff02ba0ad8a5924b0e32039">FARPlayerModel::HealthComponent</a></div><div class="ttdeci">TObjectPtr&lt; UARHealthComponent &gt; HealthComponent</div><div class="ttdef"><b>Definition</b> <a href="_a_r_player_presenter_8h_source.html#l00053">ARPlayerPresenter.h:53</a></div></div>
+<div class="ttc" id="astruct_f_a_r_player_model_html_ab9842d59cfc73c317014f227204f5b9c"><div class="ttname"><a href="#ab9842d59cfc73c317014f227204f5b9c">FARPlayerModel::SnapTimeInterval</a></div><div class="ttdeci">float SnapTimeInterval</div><div class="ttdef"><b>Definition</b> <a href="_a_r_player_presenter_8h_source.html#l00077">ARPlayerPresenter.h:77</a></div></div>
+<div class="ttc" id="astruct_f_a_r_player_model_html_abbead27dea83cba5deae4a4ffe3e92de"><div class="ttname"><a href="#abbead27dea83cba5deae4a4ffe3e92de">FARPlayerModel::bIsCharging</a></div><div class="ttdeci">uint8 bIsCharging</div><div class="ttdef"><b>Definition</b> <a href="_a_r_player_presenter_8h_source.html#l00083">ARPlayerPresenter.h:83</a></div></div>
+<div class="ttc" id="astruct_f_a_r_player_model_html_adecfa681e543125971f5f0b210bf8f43"><div class="ttname"><a href="#adecfa681e543125971f5f0b210bf8f43">FARPlayerModel::ChargeRotateHalfRange</a></div><div class="ttdeci">double ChargeRotateHalfRange</div><div class="ttdef"><b>Definition</b> <a href="_a_r_player_presenter_8h_source.html#l00071">ARPlayerPresenter.h:71</a></div></div>
+<div class="ttc" id="astruct_f_a_r_player_model_html_afef861de540f770de698fcde217909a9"><div class="ttname"><a href="#afef861de540f770de698fcde217909a9">FARPlayerModel::SnapTargetActor</a></div><div class="ttdeci">TWeakObjectPtr&lt; AActor &gt; SnapTargetActor</div><div class="ttdef"><b>Definition</b> <a href="_a_r_player_presenter_8h_source.html#l00081">ARPlayerPresenter.h:81</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
@@ -161,8 +196,21 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_a_r_player_presenter_8cpp_source.html#l00039">39</a> of file <a class="el" href="_a_r_player_presenter_8cpp_source.html">ARPlayerPresenter.cpp</a>.</p>
+<p>プレイヤーモデルを初期化する </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">InViewCharacter</td><td>プレイヤーキャラクター </td></tr>
+  </table>
+  </dd>
+</dl>
 
+<p class="definition">Definition at line <a class="el" href="_a_r_player_presenter_8cpp_source.html#l00033">33</a> of file <a class="el" href="_a_r_player_presenter_8cpp_source.html">ARPlayerPresenter.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   34</span>{</div>
+<div class="line"><span class="lineno">   35</span>  check(InViewCharacter != <span class="keyword">nullptr</span>);</div>
+<div class="line"><span class="lineno">   36</span> </div>
+<div class="line"><span class="lineno">   37</span>  <a class="code hl_variable" href="#ab96e97d85ff02ba0ad8a5924b0e32039">HealthComponent</a> = <span class="keyword">static_cast&lt;</span>UARHealthComponent*<span class="keyword">&gt;</span>(InViewCharacter-&gt;GetComponentByClass(UARHealthComponent::StaticClass()));</div>
+<div class="line"><span class="lineno">   38</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa16ed7debc6bbbb9f780d4181ad9333c" name="aa16ed7debc6bbbb9f780d4181ad9333c"></a>
@@ -180,8 +228,13 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_a_r_player_presenter_8cpp_source.html#l00046">46</a> of file <a class="el" href="_a_r_player_presenter_8cpp_source.html">ARPlayerPresenter.cpp</a>.</p>
+<p>プレイヤーモデルを更新 </p>
 
+<p class="definition">Definition at line <a class="el" href="_a_r_player_presenter_8cpp_source.html#l00040">40</a> of file <a class="el" href="_a_r_player_presenter_8cpp_source.html">ARPlayerPresenter.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   41</span>{</div>
+<div class="line"><span class="lineno">   42</span>  <a class="code hl_variable" href="#ab96e97d85ff02ba0ad8a5924b0e32039">HealthComponent</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">   43</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
@@ -197,7 +250,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_a_r_player_presenter_8h_source.html#l00075">75</a> of file <a class="el" href="_a_r_player_presenter_8h_source.html">ARPlayerPresenter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_a_r_player_presenter_8h_source.html#l00087">87</a> of file <a class="el" href="_a_r_player_presenter_8h_source.html">ARPlayerPresenter.h</a>.</p>
 
 </div>
 </div>
@@ -213,7 +266,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_a_r_player_presenter_8h_source.html#l00071">71</a> of file <a class="el" href="_a_r_player_presenter_8h_source.html">ARPlayerPresenter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_a_r_player_presenter_8h_source.html#l00083">83</a> of file <a class="el" href="_a_r_player_presenter_8h_source.html">ARPlayerPresenter.h</a>.</p>
 
 </div>
 </div>
@@ -229,7 +282,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_a_r_player_presenter_8h_source.html#l00073">73</a> of file <a class="el" href="_a_r_player_presenter_8h_source.html">ARPlayerPresenter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_a_r_player_presenter_8h_source.html#l00085">85</a> of file <a class="el" href="_a_r_player_presenter_8h_source.html">ARPlayerPresenter.h</a>.</p>
 
 </div>
 </div>
@@ -245,7 +298,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_a_r_player_presenter_8h_source.html#l00072">72</a> of file <a class="el" href="_a_r_player_presenter_8h_source.html">ARPlayerPresenter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_a_r_player_presenter_8h_source.html#l00084">84</a> of file <a class="el" href="_a_r_player_presenter_8h_source.html">ARPlayerPresenter.h</a>.</p>
 
 </div>
 </div>
@@ -261,7 +314,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_a_r_player_presenter_8h_source.html#l00074">74</a> of file <a class="el" href="_a_r_player_presenter_8h_source.html">ARPlayerPresenter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_a_r_player_presenter_8h_source.html#l00086">86</a> of file <a class="el" href="_a_r_player_presenter_8h_source.html">ARPlayerPresenter.h</a>.</p>
 
 </div>
 </div>
@@ -277,7 +330,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_a_r_player_presenter_8h_source.html#l00076">76</a> of file <a class="el" href="_a_r_player_presenter_8h_source.html">ARPlayerPresenter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_a_r_player_presenter_8h_source.html#l00088">88</a> of file <a class="el" href="_a_r_player_presenter_8h_source.html">ARPlayerPresenter.h</a>.</p>
 
 </div>
 </div>
@@ -293,7 +346,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_a_r_player_presenter_8h_source.html#l00059">59</a> of file <a class="el" href="_a_r_player_presenter_8h_source.html">ARPlayerPresenter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_a_r_player_presenter_8h_source.html#l00071">71</a> of file <a class="el" href="_a_r_player_presenter_8h_source.html">ARPlayerPresenter.h</a>.</p>
 
 </div>
 </div>
@@ -309,7 +362,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_a_r_player_presenter_8h_source.html#l00043">43</a> of file <a class="el" href="_a_r_player_presenter_8h_source.html">ARPlayerPresenter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_a_r_player_presenter_8h_source.html#l00055">55</a> of file <a class="el" href="_a_r_player_presenter_8h_source.html">ARPlayerPresenter.h</a>.</p>
 
 </div>
 </div>
@@ -325,7 +378,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_a_r_player_presenter_8h_source.html#l00045">45</a> of file <a class="el" href="_a_r_player_presenter_8h_source.html">ARPlayerPresenter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_a_r_player_presenter_8h_source.html#l00057">57</a> of file <a class="el" href="_a_r_player_presenter_8h_source.html">ARPlayerPresenter.h</a>.</p>
 
 </div>
 </div>
@@ -341,7 +394,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_a_r_player_presenter_8h_source.html#l00041">41</a> of file <a class="el" href="_a_r_player_presenter_8h_source.html">ARPlayerPresenter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_a_r_player_presenter_8h_source.html#l00053">53</a> of file <a class="el" href="_a_r_player_presenter_8h_source.html">ARPlayerPresenter.h</a>.</p>
 
 </div>
 </div>
@@ -357,7 +410,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_a_r_player_presenter_8h_source.html#l00056">56</a> of file <a class="el" href="_a_r_player_presenter_8h_source.html">ARPlayerPresenter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_a_r_player_presenter_8h_source.html#l00068">68</a> of file <a class="el" href="_a_r_player_presenter_8h_source.html">ARPlayerPresenter.h</a>.</p>
 
 </div>
 </div>
@@ -373,7 +426,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_a_r_player_presenter_8h_source.html#l00049">49</a> of file <a class="el" href="_a_r_player_presenter_8h_source.html">ARPlayerPresenter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_a_r_player_presenter_8h_source.html#l00061">61</a> of file <a class="el" href="_a_r_player_presenter_8h_source.html">ARPlayerPresenter.h</a>.</p>
 
 </div>
 </div>
@@ -389,7 +442,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_a_r_player_presenter_8h_source.html#l00051">51</a> of file <a class="el" href="_a_r_player_presenter_8h_source.html">ARPlayerPresenter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_a_r_player_presenter_8h_source.html#l00063">63</a> of file <a class="el" href="_a_r_player_presenter_8h_source.html">ARPlayerPresenter.h</a>.</p>
 
 </div>
 </div>
@@ -405,7 +458,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_a_r_player_presenter_8h_source.html#l00069">69</a> of file <a class="el" href="_a_r_player_presenter_8h_source.html">ARPlayerPresenter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_a_r_player_presenter_8h_source.html#l00081">81</a> of file <a class="el" href="_a_r_player_presenter_8h_source.html">ARPlayerPresenter.h</a>.</p>
 
 </div>
 </div>
@@ -421,7 +474,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_a_r_player_presenter_8h_source.html#l00047">47</a> of file <a class="el" href="_a_r_player_presenter_8h_source.html">ARPlayerPresenter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_a_r_player_presenter_8h_source.html#l00059">59</a> of file <a class="el" href="_a_r_player_presenter_8h_source.html">ARPlayerPresenter.h</a>.</p>
 
 </div>
 </div>
@@ -437,7 +490,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_a_r_player_presenter_8h_source.html#l00067">67</a> of file <a class="el" href="_a_r_player_presenter_8h_source.html">ARPlayerPresenter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_a_r_player_presenter_8h_source.html#l00079">79</a> of file <a class="el" href="_a_r_player_presenter_8h_source.html">ARPlayerPresenter.h</a>.</p>
 
 </div>
 </div>
@@ -453,7 +506,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_a_r_player_presenter_8h_source.html#l00065">65</a> of file <a class="el" href="_a_r_player_presenter_8h_source.html">ARPlayerPresenter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_a_r_player_presenter_8h_source.html#l00077">77</a> of file <a class="el" href="_a_r_player_presenter_8h_source.html">ARPlayerPresenter.h</a>.</p>
 
 </div>
 </div>
@@ -469,7 +522,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_a_r_player_presenter_8h_source.html#l00062">62</a> of file <a class="el" href="_a_r_player_presenter_8h_source.html">ARPlayerPresenter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_a_r_player_presenter_8h_source.html#l00074">74</a> of file <a class="el" href="_a_r_player_presenter_8h_source.html">ARPlayerPresenter.h</a>.</p>
 
 </div>
 </div>
@@ -485,13 +538,13 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_a_r_player_presenter_8h_source.html#l00053">53</a> of file <a class="el" href="_a_r_player_presenter_8h_source.html">ARPlayerPresenter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_a_r_player_presenter_8h_source.html#l00065">65</a> of file <a class="el" href="_a_r_player_presenter_8h_source.html">ARPlayerPresenter.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
-<li>D:/GithubRepository/ARRanger/Source/ARRanger/Public/Presentation/<a class="el" href="_a_r_player_presenter_8h_source.html">ARPlayerPresenter.h</a></li>
-<li>D:/GithubRepository/ARRanger/Source/ARRanger/Private/Presentation/<a class="el" href="_a_r_player_presenter_8cpp_source.html">ARPlayerPresenter.cpp</a></li>
+<li>ARRanger/Public/Presentation/<a class="el" href="_a_r_player_presenter_8h_source.html">ARPlayerPresenter.h</a></li>
+<li>ARRanger/Private/Presentation/<a class="el" href="_a_r_player_presenter_8cpp_source.html">ARPlayerPresenter.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -149,7 +149,28 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_middle_boss_a_i_controller_8cpp_source.html#l00013">13</a> of file <a class="el" href="_middle_boss_a_i_controller_8cpp_source.html">MiddleBossAIController.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   14</span>{</div>
+<div class="line"><span class="lineno">   15</span>  <span class="keyword">static</span> ConstructorHelpers::FObjectFinder&lt;UBlackboardData&gt; BBAsset(TEXT(<span class="stringliteral">&quot;/Game/Enemy/BB_MiddleEnemy.BB_MiddleEnemy&quot;</span>));</div>
+<div class="line"><span class="lineno">   16</span>  <span class="keyword">static</span> ConstructorHelpers::FObjectFinder&lt;UBehaviorTree&gt; BTAsset(TEXT(<span class="stringliteral">&quot;/Game/Enemy/BT_MiddleEnemy.BT_MiddleEnemy&quot;</span>));</div>
+<div class="line"><span class="lineno">   17</span> </div>
+<div class="line"><span class="lineno">   18</span>  <span class="keywordflow">if</span> (BBAsset.Succeeded()) {</div>
+<div class="line"><span class="lineno">   19</span>      <a class="code hl_variable" href="class_a_zako_a_i_controller.html#aee0ef040691e695875b0a2bf63a5808b">BlackboardAsset</a> = BBAsset.Object;</div>
+<div class="line"><span class="lineno">   20</span>  }</div>
+<div class="line"><span class="lineno">   21</span> </div>
+<div class="line"><span class="lineno">   22</span>  <span class="keywordflow">if</span> (BTAsset.Succeeded()) {</div>
+<div class="line"><span class="lineno">   23</span>      <a class="code hl_variable" href="class_a_zako_a_i_controller.html#aedbb7f3d23d85cfa221cf3537933f089">BehaviorTreeAsset</a> = BTAsset.Object;</div>
+<div class="line"><span class="lineno">   24</span>  }</div>
+<div class="line"><span class="lineno">   25</span> </div>
+<div class="line"><span class="lineno">   26</span>  <a class="code hl_variable" href="class_a_zako_a_i_controller.html#a7e35560a95101f2bc3a9557edc4b6c2f">SightConfig</a>-&gt;SightRadius = 2000.0f;</div>
+<div class="line"><span class="lineno">   27</span>  <a class="code hl_variable" href="class_a_zako_a_i_controller.html#a7e35560a95101f2bc3a9557edc4b6c2f">SightConfig</a>-&gt;LoseSightRadius = 2500.0f;</div>
+<div class="line"><span class="lineno">   28</span>  <a class="code hl_variable" href="class_a_zako_a_i_controller.html#a7e35560a95101f2bc3a9557edc4b6c2f">SightConfig</a>-&gt;PeripheralVisionAngleDegrees = 120.0f;</div>
+<div class="line"><span class="lineno">   29</span> </div>
+<div class="line"><span class="lineno">   30</span> </div>
+<div class="line"><span class="lineno">   31</span>}</div>
+<div class="ttc" id="aclass_a_zako_a_i_controller_html_a7e35560a95101f2bc3a9557edc4b6c2f"><div class="ttname"><a href="class_a_zako_a_i_controller.html#a7e35560a95101f2bc3a9557edc4b6c2f">AZakoAIController::SightConfig</a></div><div class="ttdeci">TObjectPtr&lt; UAISenseConfig_Sight &gt; SightConfig</div><div class="ttdef"><b>Definition</b> <a href="_zako_a_i_controller_8h_source.html#l00032">ZakoAIController.h:32</a></div></div>
+<div class="ttc" id="aclass_a_zako_a_i_controller_html_aedbb7f3d23d85cfa221cf3537933f089"><div class="ttname"><a href="class_a_zako_a_i_controller.html#aedbb7f3d23d85cfa221cf3537933f089">AZakoAIController::BehaviorTreeAsset</a></div><div class="ttdeci">TObjectPtr&lt; UBehaviorTree &gt; BehaviorTreeAsset</div><div class="ttdef"><b>Definition</b> <a href="_zako_a_i_controller_8h_source.html#l00038">ZakoAIController.h:38</a></div></div>
+<div class="ttc" id="aclass_a_zako_a_i_controller_html_aee0ef040691e695875b0a2bf63a5808b"><div class="ttname"><a href="class_a_zako_a_i_controller.html#aee0ef040691e695875b0a2bf63a5808b">AZakoAIController::BlackboardAsset</a></div><div class="ttdeci">TObjectPtr&lt; UBlackboardData &gt; BlackboardAsset</div><div class="ttdef"><b>Definition</b> <a href="_zako_a_i_controller_8h_source.html#l00035">ZakoAIController.h:35</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
@@ -179,7 +200,15 @@ Additional Inherited Members</h2></td></tr>
 <p>Reimplemented from <a class="el" href="class_a_zako_a_i_controller.html#a0f55c3404bd7e46ab5401842aa550121">AZakoAIController</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_middle_boss_a_i_controller_8cpp_source.html#l00033">33</a> of file <a class="el" href="_middle_boss_a_i_controller_8cpp_source.html">MiddleBossAIController.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   34</span>{</div>
+<div class="line"><span class="lineno">   35</span>  Super::BeginPlay();</div>
+<div class="line"><span class="lineno">   36</span> </div>
+<div class="line"><span class="lineno">   37</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_a_zako_a_i_controller.html#aee0ef040691e695875b0a2bf63a5808b">BlackboardAsset</a> &amp;&amp; <a class="code hl_variable" href="class_a_zako_a_i_controller.html#aedbb7f3d23d85cfa221cf3537933f089">BehaviorTreeAsset</a>)</div>
+<div class="line"><span class="lineno">   38</span>  {</div>
+<div class="line"><span class="lineno">   39</span>    RunBehaviorTree(<a class="code hl_variable" href="class_a_zako_a_i_controller.html#aedbb7f3d23d85cfa221cf3537933f089">BehaviorTreeAsset</a>);</div>
+<div class="line"><span class="lineno">   40</span>  }</div>
+<div class="line"><span class="lineno">   41</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="abb5cf6195dcf029005f93b8d160b2226" name="abb5cf6195dcf029005f93b8d160b2226"></a>
@@ -208,7 +237,15 @@ Additional Inherited Members</h2></td></tr>
 <p>Reimplemented from <a class="el" href="class_a_zako_a_i_controller.html#a1c3d297649010338af7508b8e4328529">AZakoAIController</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_middle_boss_a_i_controller_8cpp_source.html#l00060">60</a> of file <a class="el" href="_middle_boss_a_i_controller_8cpp_source.html">MiddleBossAIController.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   61</span>{</div>
+<div class="line"><span class="lineno">   62</span>  Super::BroadcastAlert(SeenActor);</div>
+<div class="line"><span class="lineno">   63</span> </div>
+<div class="line"><span class="lineno">   64</span>  <span class="keywordflow">if</span> (UBlackboardComponent* BB = GetBlackboardComponent())</div>
+<div class="line"><span class="lineno">   65</span>  {</div>
+<div class="line"><span class="lineno">   66</span>    BB-&gt;SetValueAsBool(<span class="stringliteral">&quot;IsEnraged&quot;</span>, <span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">   67</span>  }</div>
+<div class="line"><span class="lineno">   68</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ab3a6540f1ef9c34bebd6936a4e13ed04" name="ab3a6540f1ef9c34bebd6936a4e13ed04"></a>
@@ -237,12 +274,29 @@ Additional Inherited Members</h2></td></tr>
 <p>Reimplemented from <a class="el" href="class_a_zako_a_i_controller.html#ac10851d3c59a38a393cb0147938fb002">AZakoAIController</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_middle_boss_a_i_controller_8cpp_source.html#l00043">43</a> of file <a class="el" href="_middle_boss_a_i_controller_8cpp_source.html">MiddleBossAIController.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   44</span>{</div>
+<div class="line"><span class="lineno">   45</span>    UBlackboardComponent* BB = GetBlackboardComponent();</div>
+<div class="line"><span class="lineno">   46</span>    <span class="keywordflow">if</span> (BB)</div>
+<div class="line"><span class="lineno">   47</span>    {</div>
+<div class="line"><span class="lineno">   48</span>      GetWorld()-&gt;GetTimerManager().SetTimer(</div>
+<div class="line"><span class="lineno">   49</span>          <a class="code hl_variable" href="class_a_zako_a_i_controller.html#a354ddef997733cd3f24ea47e8a0fe607">LostSightTimerHandle</a>,[BB, <span class="keyword">this</span>]()</div>
+<div class="line"><span class="lineno">   50</span>          {</div>
+<div class="line"><span class="lineno">   51</span>            BB-&gt;ClearValue(<a class="code hl_variable" href="class_a_zako_a_i_controller.html#ad551f636ce833141853fe070c99baf89">TargetActorKey</a>);</div>
+<div class="line"><span class="lineno">   52</span>            BB-&gt;SetValueAsBool(<span class="stringliteral">&quot;IsPlayerDetected&quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">   53</span>          },</div>
+<div class="line"><span class="lineno">   54</span>          5.0f,</div>
+<div class="line"><span class="lineno">   55</span>          false</div>
+<div class="line"><span class="lineno">   56</span>      );</div>
+<div class="line"><span class="lineno">   57</span>    }</div>
+<div class="line"><span class="lineno">   58</span>}</div>
+<div class="ttc" id="aclass_a_zako_a_i_controller_html_a354ddef997733cd3f24ea47e8a0fe607"><div class="ttname"><a href="class_a_zako_a_i_controller.html#a354ddef997733cd3f24ea47e8a0fe607">AZakoAIController::LostSightTimerHandle</a></div><div class="ttdeci">FTimerHandle LostSightTimerHandle</div><div class="ttdef"><b>Definition</b> <a href="_zako_a_i_controller_8h_source.html#l00049">ZakoAIController.h:49</a></div></div>
+<div class="ttc" id="aclass_a_zako_a_i_controller_html_ad551f636ce833141853fe070c99baf89"><div class="ttname"><a href="class_a_zako_a_i_controller.html#ad551f636ce833141853fe070c99baf89">AZakoAIController::TargetActorKey</a></div><div class="ttdeci">FName TargetActorKey</div><div class="ttdef"><b>Definition</b> <a href="_zako_a_i_controller_8h_source.html#l00041">ZakoAIController.h:41</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>D:/GithubRepository/ARRanger/Source/ARRanger/Public/Enemy/<a class="el" href="_middle_boss_a_i_controller_8h_source.html">MiddleBossAIController.h</a></li>
-<li>D:/GithubRepository/ARRanger/Source/ARRanger/Private/Enemy/<a class="el" href="_middle_boss_a_i_controller_8cpp_source.html">MiddleBossAIController.cpp</a></li>
+<li>ARRanger/Public/Enemy/<a class="el" href="_middle_boss_a_i_controller_8h_source.html">MiddleBossAIController.h</a></li>
+<li>ARRanger/Private/Enemy/<a class="el" href="_middle_boss_a_i_controller_8cpp_source.html">MiddleBossAIController.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -138,7 +138,9 @@ Public Attributes</h2></td></tr>
 <p><a class="el" href="_a_r_input_config_8cpp.html">ARInputConfig.cpp</a> </p>
 
 <p class="definition">Definition at line <a class="el" href="_a_r_input_config_8cpp_source.html#l00011">11</a> of file <a class="el" href="_a_r_input_config_8cpp_source.html">ARInputConfig.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   12</span>  : Super(ObjectInitializer)</div>
+<div class="line"><span class="lineno">   13</span>{ }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
@@ -167,7 +169,29 @@ Public Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>UInputAction Found UE native InputAction </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_a_r_input_config_8cpp_source.html#l00015">15</a> of file <a class="el" href="_a_r_input_config_8cpp_source.html">ARInputConfig.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   16</span>{</div>
+<div class="line"><span class="lineno">   17</span>  <span class="keyword">auto</span> searchAbilityInputPred = [&amp;InInputTag](<span class="keyword">const</span> FARInputAction&amp; Element)</div>
+<div class="line"><span class="lineno">   18</span>  {</div>
+<div class="line"><span class="lineno">   19</span>    <span class="keywordflow">return</span> Element.InputTag.MatchesTagExact(InInputTag);</div>
+<div class="line"><span class="lineno">   20</span>  };</div>
+<div class="line"><span class="lineno">   21</span> </div>
+<div class="line"><span class="lineno">   22</span>  <span class="keyword">const</span> FARInputAction* foundElement = <a class="code hl_variable" href="#a4e3bb4cba67f4ec7ed9bee4babcc8068">AbilityInputActions</a>.FindByPredicate(searchAbilityInputPred);</div>
+<div class="line"><span class="lineno">   23</span>  <span class="keywordflow">if</span> (foundElement != <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">   24</span>  {</div>
+<div class="line"><span class="lineno">   25</span>    <span class="keywordflow">return</span> foundElement-&gt;<a class="code hl_variable" href="struct_f_a_r_input_action.html#a5256e87b6d9b546a3a67691d60ee6864">InputAction</a>;</div>
+<div class="line"><span class="lineno">   26</span>  }</div>
+<div class="line"><span class="lineno">   27</span>  </div>
+<div class="line"><span class="lineno">   28</span><span class="preprocessor">#if WITH_EDITOR</span></div>
+<div class="line"><span class="lineno">   29</span> </div>
+<div class="line"><span class="lineno">   30</span>  UE_LOG(LogARInput, Error, TEXT(<span class="stringliteral">&quot;InputAction with Tag: [%s] is not found.&quot;</span>), *InInputTag.ToString());</div>
+<div class="line"><span class="lineno">   31</span> </div>
+<div class="line"><span class="lineno">   32</span><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="lineno">   33</span> </div>
+<div class="line"><span class="lineno">   34</span>  <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">   35</span>}</div>
+<div class="ttc" id="aclass_u_a_r_input_config_html_a4e3bb4cba67f4ec7ed9bee4babcc8068"><div class="ttname"><a href="#a4e3bb4cba67f4ec7ed9bee4babcc8068">UARInputConfig::AbilityInputActions</a></div><div class="ttdeci">TArray&lt; FARInputAction &gt; AbilityInputActions</div><div class="ttdef"><b>Definition</b> <a href="_a_r_input_config_8h_source.html#l00071">ARInputConfig.h:71</a></div></div>
+<div class="ttc" id="astruct_f_a_r_input_action_html_a5256e87b6d9b546a3a67691d60ee6864"><div class="ttname"><a href="struct_f_a_r_input_action.html#a5256e87b6d9b546a3a67691d60ee6864">FARInputAction::InputAction</a></div><div class="ttdeci">TObjectPtr&lt; const UInputAction &gt; InputAction</div><div class="ttdef"><b>Definition</b> <a href="_a_r_input_config_8h_source.html#l00026">ARInputConfig.h:26</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a3fd2019c8fede697f57941b121436a5f" name="a3fd2019c8fede697f57941b121436a5f"></a>
@@ -195,7 +219,28 @@ Public Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>UInputAction Found UE native InputAction </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_a_r_input_config_8cpp_source.html#l00037">37</a> of file <a class="el" href="_a_r_input_config_8cpp_source.html">ARInputConfig.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   38</span>{</div>
+<div class="line"><span class="lineno">   39</span>  <span class="keyword">auto</span> searchNativeInputPred = [&amp;InInputTag](<span class="keyword">const</span> FARInputAction&amp; Element)</div>
+<div class="line"><span class="lineno">   40</span>  {</div>
+<div class="line"><span class="lineno">   41</span>    <span class="keywordflow">return</span> Element.InputTag.MatchesTagExact(InInputTag);</div>
+<div class="line"><span class="lineno">   42</span>  };</div>
+<div class="line"><span class="lineno">   43</span> </div>
+<div class="line"><span class="lineno">   44</span>  <span class="keyword">const</span> FARInputAction* foundElement = <a class="code hl_variable" href="#aef9432623b8a3d285df964227a4fb0ca">NativeInputActions</a>.FindByPredicate(searchNativeInputPred);</div>
+<div class="line"><span class="lineno">   45</span>  <span class="keywordflow">if</span> (foundElement != <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">   46</span>  {</div>
+<div class="line"><span class="lineno">   47</span>    <span class="keywordflow">return</span> foundElement-&gt;<a class="code hl_variable" href="struct_f_a_r_input_action.html#a5256e87b6d9b546a3a67691d60ee6864">InputAction</a>;</div>
+<div class="line"><span class="lineno">   48</span>  }</div>
+<div class="line"><span class="lineno">   49</span> </div>
+<div class="line"><span class="lineno">   50</span><span class="preprocessor">#if WITH_EDITOR</span></div>
+<div class="line"><span class="lineno">   51</span> </div>
+<div class="line"><span class="lineno">   52</span>  UE_LOG(LogARInput, Error, TEXT(<span class="stringliteral">&quot;InputAction with Tag: [%s] is not found.&quot;</span>), *InInputTag.ToString());</div>
+<div class="line"><span class="lineno">   53</span> </div>
+<div class="line"><span class="lineno">   54</span><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="lineno">   55</span> </div>
+<div class="line"><span class="lineno">   56</span>  <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">   57</span>}</div>
+<div class="ttc" id="aclass_u_a_r_input_config_html_aef9432623b8a3d285df964227a4fb0ca"><div class="ttname"><a href="#aef9432623b8a3d285df964227a4fb0ca">UARInputConfig::NativeInputActions</a></div><div class="ttdeci">TArray&lt; FARInputAction &gt; NativeInputActions</div><div class="ttdef"><b>Definition</b> <a href="_a_r_input_config_8h_source.html#l00075">ARInputConfig.h:75</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
@@ -234,8 +279,8 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>D:/GithubRepository/ARRanger/Source/ARRanger/Public/Input/<a class="el" href="_a_r_input_config_8h_source.html">ARInputConfig.h</a></li>
-<li>D:/GithubRepository/ARRanger/Source/ARRanger/Private/Input/<a class="el" href="_a_r_input_config_8cpp_source.html">ARInputConfig.cpp</a></li>
+<li>ARRanger/Public/Input/<a class="el" href="_a_r_input_config_8h_source.html">ARInputConfig.h</a></li>
+<li>ARRanger/Private/Input/<a class="el" href="_a_r_input_config_8cpp_source.html">ARInputConfig.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

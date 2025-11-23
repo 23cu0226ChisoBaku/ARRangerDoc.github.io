@@ -150,12 +150,39 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="_hit_stop_helper_8cpp_source.html#l00014">14</a> of file <a class="el" href="_hit_stop_helper_8cpp_source.html">HitStopHelper.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   15</span>{</div>
+<div class="line"><span class="lineno">   16</span>    UWorld* world = GEngine-&gt;GetWorldFromContextObjectChecked(<span class="keywordtype">object</span>);</div>
+<div class="line"><span class="lineno">   17</span>    <span class="keywordflow">if</span> (world == <span class="keyword">nullptr</span>) </div>
+<div class="line"><span class="lineno">   18</span>    {</div>
+<div class="line"><span class="lineno">   19</span>        UE_LOG(LogTemp, Warning, TEXT(<span class="stringliteral">&quot;The world argument is null&quot;</span>));</div>
+<div class="line"><span class="lineno">   20</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   21</span>    }</div>
+<div class="line"><span class="lineno">   22</span> </div>
+<div class="line"><span class="lineno">   23</span>    <span class="keywordflow">if</span>(duration &lt;= 0.f)</div>
+<div class="line"><span class="lineno">   24</span>    {</div>
+<div class="line"><span class="lineno">   25</span>        UE_LOG(LogTemp, Warning, TEXT(<span class="stringliteral">&quot;The hit stop duration is 0 or less&quot;</span>));</div>
+<div class="line"><span class="lineno">   26</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   27</span>    }</div>
+<div class="line"><span class="lineno">   28</span> </div>
+<div class="line"><span class="lineno">   29</span>    <span class="comment">/*指定した時間でモーションさせる*/</span></div>
+<div class="line"><span class="lineno">   30</span>    UGameplayStatics::SetGlobalTimeDilation(world, motionSpeed);</div>
+<div class="line"><span class="lineno">   31</span> </div>
+<div class="line"><span class="lineno">   32</span>    <span class="comment">/*指定時間後にモーションを戻す*/</span></div>
+<div class="line"><span class="lineno">   33</span>    FTimerHandle TimerHandle;</div>
+<div class="line"><span class="lineno">   34</span>    world-&gt;GetTimerManager().SetTimer(TimerHandle, [world]()</div>
+<div class="line"><span class="lineno">   35</span>    {</div>
+<div class="line"><span class="lineno">   36</span>        <span class="keywordflow">if</span> (world != <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">   37</span>        {</div>
+<div class="line"><span class="lineno">   38</span>            UGameplayStatics::SetGlobalTimeDilation(world, 1.f);</div>
+<div class="line"><span class="lineno">   39</span>        }</div>
+<div class="line"><span class="lineno">   40</span>    }, duration * motionSpeed, <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">   41</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>D:/GithubRepository/ARRanger/Source/ARRanger/Public/<a class="el" href="_hit_stop_helper_8h_source.html">HitStopHelper.h</a></li>
-<li>D:/GithubRepository/ARRanger/Source/ARRanger/Private/<a class="el" href="_hit_stop_helper_8cpp_source.html">HitStopHelper.cpp</a></li>
+<li>ARRanger/Public/<a class="el" href="_hit_stop_helper_8h_source.html">HitStopHelper.h</a></li>
+<li>ARRanger/Private/<a class="el" href="_hit_stop_helper_8cpp_source.html">HitStopHelper.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

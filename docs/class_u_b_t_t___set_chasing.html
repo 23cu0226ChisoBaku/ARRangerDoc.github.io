@@ -133,7 +133,10 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_b_t_t___set_chasing_8cpp_source.html#l00008">8</a> of file <a class="el" href="_b_t_t___set_chasing_8cpp_source.html">BTT_SetChasing.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">    9</span>{</div>
+<div class="line"><span class="lineno">   10</span>  NodeName = TEXT(<span class="stringliteral">&quot;Set Chasing State&quot;</span>);</div>
+<div class="line"><span class="lineno">   11</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
@@ -165,7 +168,29 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_b_t_t___set_chasing_8cpp_source.html#l00013">13</a> of file <a class="el" href="_b_t_t___set_chasing_8cpp_source.html">BTT_SetChasing.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   14</span>{</div>
+<div class="line"><span class="lineno">   15</span>  <span class="keywordflow">if</span> (AAIController* AICon = OwnerComp.GetAIOwner())</div>
+<div class="line"><span class="lineno">   16</span>  {</div>
+<div class="line"><span class="lineno">   17</span>    <span class="keywordflow">if</span> (ACharacter* Char = Cast&lt;ACharacter&gt;(AICon-&gt;GetPawn()))</div>
+<div class="line"><span class="lineno">   18</span>    {</div>
+<div class="line"><span class="lineno">   19</span>      <span class="keywordflow">if</span> (USkeletalMeshComponent* Mesh = Char-&gt;GetMesh())</div>
+<div class="line"><span class="lineno">   20</span>      {</div>
+<div class="line"><span class="lineno">   21</span>        <span class="keywordflow">if</span> (UEnemyAnimInstance* EnemyAnim = Cast&lt;UEnemyAnimInstance&gt;(Mesh-&gt;GetAnimInstance()))</div>
+<div class="line"><span class="lineno">   22</span>        {</div>
+<div class="line"><span class="lineno">   23</span>          EnemyAnim-&gt;bIsChasing = <a class="code hl_variable" href="#a063eeefac11f3a85ff53b4a6af2be743">bChasing</a>;</div>
+<div class="line"><span class="lineno">   24</span>          EnemyAnim-&gt;bIsSearch = <a class="code hl_variable" href="#a94ab2156298c54cf77442903fbdeb936">bIsSearch</a>;</div>
+<div class="line"><span class="lineno">   25</span>          <span class="keywordflow">return</span> EBTNodeResult::Succeeded;</div>
+<div class="line"><span class="lineno">   26</span>        }</div>
+<div class="line"><span class="lineno">   27</span>      }</div>
+<div class="line"><span class="lineno">   28</span> </div>
+<div class="line"><span class="lineno">   29</span>    }</div>
+<div class="line"><span class="lineno">   30</span>  }</div>
+<div class="line"><span class="lineno">   31</span> </div>
+<div class="line"><span class="lineno">   32</span>  <span class="keywordflow">return</span> EBTNodeResult::Failed;</div>
+<div class="line"><span class="lineno">   33</span>}</div>
+<div class="ttc" id="aclass_u_b_t_t___set_chasing_html_a063eeefac11f3a85ff53b4a6af2be743"><div class="ttname"><a href="#a063eeefac11f3a85ff53b4a6af2be743">UBTT_SetChasing::bChasing</a></div><div class="ttdeci">bool bChasing</div><div class="ttdef"><b>Definition</b> <a href="_b_t_t___set_chasing_8h_source.html#l00018">BTT_SetChasing.h:18</a></div></div>
+<div class="ttc" id="aclass_u_b_t_t___set_chasing_html_a94ab2156298c54cf77442903fbdeb936"><div class="ttname"><a href="#a94ab2156298c54cf77442903fbdeb936">UBTT_SetChasing::bIsSearch</a></div><div class="ttdeci">bool bIsSearch</div><div class="ttdef"><b>Definition</b> <a href="_b_t_t___set_chasing_8h_source.html#l00021">BTT_SetChasing.h:21</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
@@ -218,8 +243,8 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>D:/GithubRepository/ARRanger/Source/ARRanger/Public/Enemy/BTT/<a class="el" href="_b_t_t___set_chasing_8h_source.html">BTT_SetChasing.h</a></li>
-<li>D:/GithubRepository/ARRanger/Source/ARRanger/Private/Enemy/<a class="el" href="_b_t_t___set_chasing_8cpp_source.html">BTT_SetChasing.cpp</a></li>
+<li>ARRanger/Public/Enemy/BTT/<a class="el" href="_b_t_t___set_chasing_8h_source.html">BTT_SetChasing.h</a></li>
+<li>ARRanger/Private/Enemy/<a class="el" href="_b_t_t___set_chasing_8cpp_source.html">BTT_SetChasing.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
